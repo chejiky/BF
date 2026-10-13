@@ -1,0 +1,984 @@
+{
+  "class": "paladin",
+  "class_name_en": "Paladin",
+  "class_name_ko": "팔라딘",
+  "skill_count": 30,
+  "skills": [
+    {
+      "id": "sacrifice",
+      "name_en": "Sacrifice",
+      "name_ko": "세크리파이스",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 1,
+        "col": 1
+      },
+      "icon_cel": 0,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "redemption",
+          "name_en": "Redemption",
+          "name_ko": "리뎀션"
+        },
+        {
+          "id": "fanaticism",
+          "name_en": "Fanaticism",
+          "name_ko": "파나티시즘"
+        }
+      ],
+      "description_ko": "자신의 생명을 희생하여 공격등급과 데미지를 향상 시킴",
+      "description_en": "increased accuracy and damage at the cost of life"
+    },
+    {
+      "id": "smite",
+      "name_en": "Smite",
+      "name_ko": "스마이트",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 2,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 2,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "적을 방패로 쳐서 일시적으로 기절 시킴",
+      "description_en": "temporarily stun your enemy by bashing it with your shield"
+    },
+    {
+      "id": "holy-bolt",
+      "name_en": "Holy Bolt",
+      "name_ko": "홀리 볼트",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "icon_cel": 10,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 32,
+      "mana_per_level": 1,
+      "element": "mag",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "prayer",
+          "name_en": "Prayer",
+          "name_ko": "프레이어"
+        },
+        {
+          "id": "fist-of-the-heavens",
+          "name_en": "Fist of the Heavens",
+          "name_ko": "피스트 오브 더 헤븐"
+        }
+      ],
+      "description_ko": "언데드계열의 몬스터에게 데미지를 주고 자신의 파티에게는 라이프를 채워주는 성스러운 에너지파",
+      "description_en": "a bolt of divine energy that damages undead enemies or heals allies"
+    },
+    {
+      "id": "zeal",
+      "name_en": "Zeal",
+      "name_ko": "질",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "icon_cel": 20,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 2,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "sacrifice",
+          "name_en": "Sacrifice",
+          "name_ko": "세크리파이스"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "sacrifice",
+          "name_en": "Sacrifice",
+          "name_ko": "세크리파이스"
+        }
+      ],
+      "description_ko": "한번의 공격으로 근접해 있는 모든 적들을 공격함",
+      "description_en": "allows you to attack multiple adjacent enemies with a single attack"
+    },
+    {
+      "id": "charge",
+      "name_en": "Charge",
+      "name_ko": "차지",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "icon_cel": 22,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 9,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "smite",
+          "name_en": "Smite",
+          "name_ko": "스마이트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "vigor",
+          "name_en": "Vigor",
+          "name_ko": "비거"
+        },
+        {
+          "id": "might",
+          "name_en": "Might",
+          "name_ko": "마이트"
+        }
+      ],
+      "description_ko": "전투중 조금 떨어진 적에게 돌진하여 공격함",
+      "description_en": "charge into battle and attack an enemy"
+    },
+    {
+      "id": "vengeance",
+      "name_en": "Vengeance",
+      "name_ko": "벤젠스",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "icon_cel": 40,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 16,
+      "mana_per_level": 1,
+      "element": "cold",
+      "prerequisites": [
+        {
+          "id": "zeal",
+          "name_en": "Zeal",
+          "name_ko": "질"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "resist-fire",
+          "name_en": "Resist Fire",
+          "name_ko": "레지스트 파이어"
+        },
+        {
+          "id": "salvation",
+          "name_en": "Salvation",
+          "name_ko": "셀베이션"
+        },
+        {
+          "id": "resist-cold",
+          "name_en": "Resist Cold",
+          "name_ko": "레지스트 콜드"
+        },
+        {
+          "id": "resist-lightning",
+          "name_en": "Resist Lightning",
+          "name_ko": "레지스트 라이트닝"
+        }
+      ],
+      "description_ko": "공격할 때 파이어, 라이트닝, 콜드 데미지 중 하나를 선택하여 적에게 주는 데미지를 추가함",
+      "description_en": "fire, lightning and cold damage are added to each successful attack"
+    },
+    {
+      "id": "blessed-hammer",
+      "name_en": "Blessed Hammer",
+      "name_ko": "블레시드 해머",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "icon_cel": 32,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 20,
+      "mana_per_level": 1,
+      "element": "mag",
+      "prerequisites": [
+        {
+          "id": "holy-bolt",
+          "name_en": "Holy Bolt",
+          "name_ko": "홀리 볼트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "vigor",
+          "name_en": "Vigor",
+          "name_ko": "비거"
+        },
+        {
+          "id": "blessed-aim",
+          "name_en": "Blessed Aim",
+          "name_ko": "블레시드 에임"
+        }
+      ],
+      "description_ko": "나선을 그리며 나가는 천상의 해머를 소환하여 적을 공격하며, 언데드 계열의 몬스터에게는 150 퍼센트의 데미지를 줌",
+      "description_en": "summons an ethereal hammer that spirals outwards damaging enemies it hits 150 Percent Damage to Undead"
+    },
+    {
+      "id": "conversion",
+      "name_en": "Conversion",
+      "name_ko": "컨버젼",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "icon_cel": 30,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 4,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "vengeance",
+          "name_en": "Vengeance",
+          "name_ko": "벤젠스"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "몬스터를 아군으로 전환 시켜 일정시간 동안 적들과 싸우게 함",
+      "description_en": "converts monsters to fight against other foul demons and beasts"
+    },
+    {
+      "id": "holy-shield",
+      "name_en": "Holy Shield",
+      "name_ko": "홀리 쉴드",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "icon_cel": 42,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 35,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "charge",
+          "name_en": "Charge",
+          "name_ko": "차지"
+        },
+        {
+          "id": "blessed-hammer",
+          "name_en": "Blessed Hammer",
+          "name_ko": "블레시드 해머"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "defiance",
+          "name_en": "Defiance",
+          "name_ko": "디파이언스"
+        }
+      ],
+      "description_ko": "신성한 힘으로 방패의 능력 향상",
+      "description_en": "enhances your shield with divine power"
+    },
+    {
+      "id": "fist-of-the-heavens",
+      "name_en": "Fist of the Heavens",
+      "name_ko": "피스트 오브 더 헤븐",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "icon_cel": 50,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 25,
+      "mana_per_level": 0,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "blessed-hammer",
+          "name_en": "Blessed Hammer",
+          "name_ko": "블레시드 해머"
+        },
+        {
+          "id": "conversion",
+          "name_en": "Conversion",
+          "name_ko": "컨버젼"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "holy-shock",
+          "name_en": "Holy Shock",
+          "name_ko": "홀리 쇼크"
+        }
+      ],
+      "description_ko": "적에게 라이트닝을 내리 친후 라이트닝이 퍼져나가 인근 몬스터에게 홀리볼트 데미지를 줌",
+      "description_en": "lightning strikes your target as holy bolts seek out nearby enemies"
+    },
+    {
+      "id": "might",
+      "name_en": "Might",
+      "name_ko": "마이트",
+      "tree": {
+        "page": 2,
+        "name_en": "Offensive Auras",
+        "name_ko": "공격 오오라"
+      },
+      "position": {
+        "row": 1,
+        "col": 1
+      },
+      "icon_cel": 4,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 자신과 파티의 공격력을 증가 시킴",
+      "description_en": "when active, aura increases the damage done by you and your party"
+    },
+    {
+      "id": "holy-fire",
+      "name_en": "Holy Fire",
+      "name_ko": "홀리 파이어",
+      "tree": {
+        "page": 2,
+        "name_en": "Offensive Auras",
+        "name_ko": "공격 오오라"
+      },
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "icon_cel": 12,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "might",
+          "name_en": "Might",
+          "name_ko": "마이트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "resist-fire",
+          "name_en": "Resist Fire",
+          "name_ko": "레지스트 파이어"
+        },
+        {
+          "id": "salvation",
+          "name_en": "Salvation",
+          "name_ko": "셀베이션"
+        }
+      ],
+      "description_ko": "오오라 - 오오라가 생성되면 근처의 적들에게 파이어 데미지를 줌",
+      "description_en": "when active, aura damages nearby enemies with heavenly flames"
+    },
+    {
+      "id": "thorns",
+      "name_en": "Thorns",
+      "name_ko": "쏜즈",
+      "tree": {
+        "page": 2,
+        "name_en": "Offensive Auras",
+        "name_ko": "공격 오오라"
+      },
+      "position": {
+        "row": 2,
+        "col": 3
+      },
+      "icon_cel": 14,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 자신과 파티가 적의 공격을 받을때 그 데미지 일부를 반사",
+      "description_en": "when active, aura reflects damage done to you back at your attacker"
+    },
+    {
+      "id": "blessed-aim",
+      "name_en": "Blessed Aim",
+      "name_ko": "블레시드 에임",
+      "tree": {
+        "page": 2,
+        "name_en": "Offensive Auras",
+        "name_ko": "공격 오오라"
+      },
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "icon_cel": 24,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "might",
+          "name_en": "Might",
+          "name_ko": "마이트"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 자신과 파티의 공격 등급 향상",
+      "description_en": "when active, aura increases the attack rating for you and your party"
+    },
+    {
+      "id": "concentration",
+      "name_en": "Concentration",
+      "name_ko": "컨센트레이션",
+      "tree": {
+        "page": 2,
+        "name_en": "Offensive Auras",
+        "name_ko": "공격 오오라"
+      },
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "icon_cel": 34,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "blessed-aim",
+          "name_en": "Blessed Aim",
+          "name_ko": "블레시드 에임"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 자신과 파티의 공격 데미지 향상시키고, 적의 공격에 의해 자신의 공격이 방해받을 확률을 낮춤",
+      "description_en": "when active, aura increases the damage and decreases the chance that the attack will be interrupted for you and your party"
+    },
+    {
+      "id": "holy-freeze",
+      "name_en": "Holy Freeze",
+      "name_ko": "홀리 프리즈",
+      "tree": {
+        "page": 2,
+        "name_en": "Offensive Auras",
+        "name_ko": "공격 오오라"
+      },
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "icon_cel": 36,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": "cold",
+      "prerequisites": [
+        {
+          "id": "holy-fire",
+          "name_en": "Holy Fire",
+          "name_ko": "홀리 파이어"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "resist-cold",
+          "name_en": "Resist Cold",
+          "name_ko": "레지스트 콜드"
+        },
+        {
+          "id": "salvation",
+          "name_en": "Salvation",
+          "name_ko": "셀베이션"
+        }
+      ],
+      "description_ko": "오오라 - 오오라가 생성되면 주변 몬스터의 움직임을 둔화 시킴",
+      "description_en": "when active, aura freezes nearby monsters"
+    },
+    {
+      "id": "holy-shock",
+      "name_en": "Holy Shock",
+      "name_ko": "홀리 쇼크",
+      "tree": {
+        "page": 2,
+        "name_en": "Offensive Auras",
+        "name_ko": "공격 오오라"
+      },
+      "position": {
+        "row": 5,
+        "col": 2
+      },
+      "icon_cel": 44,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "holy-freeze",
+          "name_en": "Holy Freeze",
+          "name_ko": "홀리 프리즈"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "resist-lightning",
+          "name_en": "Resist Lightning",
+          "name_ko": "레지스트 라이트닝"
+        },
+        {
+          "id": "salvation",
+          "name_en": "Salvation",
+          "name_ko": "셀베이션"
+        }
+      ],
+      "description_ko": "오오라가 생성되면 주변의 적에게 일렉트릭 펄스 데미지를 주고 라이트닝 데미지가 추가된 공격을 함",
+      "description_en": "when active, aura causes pulses of electricity to damage nearby enemies adds lightning damage to your attack"
+    },
+    {
+      "id": "sanctuary",
+      "name_en": "Sanctuary",
+      "name_ko": "생츄어리",
+      "tree": {
+        "page": 2,
+        "name_en": "Offensive Auras",
+        "name_ko": "공격 오오라"
+      },
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "icon_cel": 46,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 1,
+      "mana_per_level": 0,
+      "element": "mag",
+      "prerequisites": [
+        {
+          "id": "thorns",
+          "name_en": "Thorns",
+          "name_ko": "쏜즈"
+        },
+        {
+          "id": "holy-freeze",
+          "name_en": "Holy Freeze",
+          "name_ko": "홀리 프리즈"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "cleansing",
+          "name_en": "Cleansing",
+          "name_ko": "클렌징"
+        }
+      ],
+      "description_ko": "오오라 - 오오라가 생성되면 언데드에게 데미지를 주고 밀어냄",
+      "description_en": "when active, aura damages the undead and knocks them back"
+    },
+    {
+      "id": "fanaticism",
+      "name_en": "Fanaticism",
+      "name_ko": "파나티시즘",
+      "tree": {
+        "page": 2,
+        "name_en": "Offensive Auras",
+        "name_ko": "공격 오오라"
+      },
+      "position": {
+        "row": 6,
+        "col": 1
+      },
+      "icon_cel": 52,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "concentration",
+          "name_en": "Concentration",
+          "name_ko": "컨센트레이션"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "오오라가 생성되면 자신과 파티의 공격 속도, 데미지, 공격 등급 증가",
+      "description_en": "when active, aura increases damage, attack speed, and attack rating for you and your party"
+    },
+    {
+      "id": "conviction",
+      "name_en": "Conviction",
+      "name_ko": "컨빅션",
+      "tree": {
+        "page": 2,
+        "name_en": "Offensive Auras",
+        "name_ko": "공격 오오라"
+      },
+      "position": {
+        "row": 6,
+        "col": 3
+      },
+      "icon_cel": 56,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "sanctuary",
+          "name_en": "Sanctuary",
+          "name_ko": "생츄어리"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 적의 방어력과 마법 저항력이 저하 됨",
+      "description_en": "when active, aura reduces the defenses and resistances of nearby enemies"
+    },
+    {
+      "id": "prayer",
+      "name_en": "Prayer",
+      "name_ko": "프레이어",
+      "tree": {
+        "page": 3,
+        "name_en": "Defensive Auras",
+        "name_ko": "방어 오오라"
+      },
+      "position": {
+        "row": 1,
+        "col": 1
+      },
+      "icon_cel": 6,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 16,
+      "mana_per_level": 3,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 자신과 파티의 라이프를 천천히 재생",
+      "description_en": "when active, aura slowly regenerates the life of you and your party"
+    },
+    {
+      "id": "resist-fire",
+      "name_en": "Resist Fire",
+      "name_ko": "레지스트 파이어",
+      "tree": {
+        "page": 3,
+        "name_en": "Defensive Auras",
+        "name_ko": "방어 오오라"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 8,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 자신과 파티의 파이어 저항력을 높임",
+      "description_en": "when active, aura decreases fire damage done to you and your party"
+    },
+    {
+      "id": "defiance",
+      "name_en": "Defiance",
+      "name_ko": "디파이언스",
+      "tree": {
+        "page": 3,
+        "name_en": "Defensive Auras",
+        "name_ko": "방어 오오라"
+      },
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "icon_cel": 16,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 자신과 파티에게 방어율이 향상됨",
+      "description_en": "when active, aura increases the defense rating of you and your party"
+    },
+    {
+      "id": "resist-cold",
+      "name_en": "Resist Cold",
+      "name_ko": "레지스트 콜드",
+      "tree": {
+        "page": 3,
+        "name_en": "Defensive Auras",
+        "name_ko": "방어 오오라"
+      },
+      "position": {
+        "row": 2,
+        "col": 3
+      },
+      "icon_cel": 18,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 자신과 파티의 콜드 저항력을 높임",
+      "description_en": "when active, aura decreases cold damage done to you and your party"
+    },
+    {
+      "id": "cleansing",
+      "name_en": "Cleansing",
+      "name_ko": "클렌징",
+      "tree": {
+        "page": 3,
+        "name_en": "Defensive Auras",
+        "name_ko": "방어 오오라"
+      },
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "icon_cel": 38,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "prayer",
+          "name_en": "Prayer",
+          "name_ko": "프레이어"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 자신과 파티의 포이즌 중독시간과 저주에 걸린 시간을 단축함",
+      "description_en": "when active, aura reduces the length of time you and your party will remain poisoned or cursed"
+    },
+    {
+      "id": "resist-lightning",
+      "name_en": "Resist Lightning",
+      "name_ko": "레지스트 라이트닝",
+      "tree": {
+        "page": 3,
+        "name_en": "Defensive Auras",
+        "name_ko": "방어 오오라"
+      },
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "icon_cel": 28,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 자신과 파티의 라이트닝 저항력을 높임",
+      "description_en": "when active, aura decreases lightning damage done to you and your party"
+    },
+    {
+      "id": "vigor",
+      "name_en": "Vigor",
+      "name_ko": "비거",
+      "tree": {
+        "page": 3,
+        "name_en": "Defensive Auras",
+        "name_ko": "방어 오오라"
+      },
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "icon_cel": 26,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "cleansing",
+          "name_en": "Cleansing",
+          "name_ko": "클렌징"
+        },
+        {
+          "id": "defiance",
+          "name_en": "Defiance",
+          "name_ko": "디파이언스"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 자신과 파티의 이동 속도, 스태미나 회복 속도, 최대 스태미나를 증가 시킴",
+      "description_en": "when active, aura increases stamina recovery rate, maximum stamina and movement speed for you and your party"
+    },
+    {
+      "id": "meditation",
+      "name_en": "Meditation",
+      "name_ko": "메디테이션",
+      "tree": {
+        "page": 3,
+        "name_en": "Defensive Auras",
+        "name_ko": "방어 오오라"
+      },
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "icon_cel": 48,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "cleansing",
+          "name_en": "Cleansing",
+          "name_ko": "클렌징"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 자신과 파티의 마나 회복속도 증가",
+      "description_en": "when active, aura increases mana recovery for you and your party"
+    },
+    {
+      "id": "redemption",
+      "name_en": "Redemption",
+      "name_ko": "리뎀션",
+      "tree": {
+        "page": 3,
+        "name_en": "Defensive Auras",
+        "name_ko": "방어 오오라"
+      },
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "icon_cel": 54,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "vigor",
+          "name_en": "Vigor",
+          "name_ko": "비거"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 자신과 파티의 주변에 있는 시체로 부터 그 영혼을 승천시키고, 그들로 부터 라이프와 마나를 흡수할 수 있게 함",
+      "description_en": "when active, aura attempts to redeem the souls of slain enemies to give you life and mana"
+    },
+    {
+      "id": "salvation",
+      "name_en": "Salvation",
+      "name_ko": "셀베이션",
+      "tree": {
+        "page": 3,
+        "name_en": "Defensive Auras",
+        "name_ko": "방어 오오라"
+      },
+      "position": {
+        "row": 6,
+        "col": 3
+      },
+      "icon_cel": 58,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "오오라 - 오오라가 생성되면 자신과 파티의 파이어, 콜드, 라이트닝 저항력을 향상 시킴",
+      "description_en": "when active, aura decreases fire, cold and lightning damage done to you and your party"
+    }
+  ]
+}

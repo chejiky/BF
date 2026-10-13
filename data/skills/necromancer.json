@@ -1,0 +1,1079 @@
+{
+  "class": "necromancer",
+  "class_name_en": "Necromancer",
+  "class_name_ko": "네크로맨서",
+  "skill_count": 30,
+  "skills": [
+    {
+      "id": "amplify-damage",
+      "name_en": "Amplify Damage",
+      "name_ko": "앰플리파이 데미지",
+      "tree": {
+        "page": 1,
+        "name_en": "Curses",
+        "name_ko": "저주"
+      },
+      "position": {
+        "row": 1,
+        "col": 2
+      },
+      "icon_cel": 0,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 4,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "저주 - 마법을 제외한 공격에 대한 데미지를 증가",
+      "description_en": "curses a group of enemies, increasing the non-magic damage they receive"
+    },
+    {
+      "id": "dim-vision",
+      "name_en": "Dim Vision",
+      "name_ko": "딤 비젼",
+      "tree": {
+        "page": 1,
+        "name_en": "Curses",
+        "name_ko": "저주"
+      },
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "icon_cel": 10,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 9,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "저주 - 한무리의 몬스터 시력을 저하시켜 공격범위를 감소 시킴",
+      "description_en": "curses a group of monsters, reducing their vision radius"
+    },
+    {
+      "id": "weaken",
+      "name_en": "Weaken",
+      "name_ko": "위큰",
+      "tree": {
+        "page": 1,
+        "name_en": "Curses",
+        "name_ko": "저주"
+      },
+      "position": {
+        "row": 2,
+        "col": 3
+      },
+      "icon_cel": 12,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 4,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "amplify-damage",
+          "name_en": "Amplify Damage",
+          "name_ko": "앰플리파이 데미지"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "저주 - 한무리의 적에게 그들의 체력을 약화시켜 공격 데미지를 감소 시킴",
+      "description_en": "curses a group of enemies, reducing the amount of damage they inflict"
+    },
+    {
+      "id": "iron-maiden",
+      "name_en": "Iron Maiden",
+      "name_ko": "아이언 메이든",
+      "tree": {
+        "page": 1,
+        "name_en": "Curses",
+        "name_ko": "저주"
+      },
+      "position": {
+        "row": 3,
+        "col": 2
+      },
+      "icon_cel": 20,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 5,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "amplify-damage",
+          "name_en": "Amplify Damage",
+          "name_ko": "앰플리파이 데미지"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "저주 - 한무리의 적에게 받은 데미지를 반사하여 자신이 받은 데미지를 돌려줌",
+      "description_en": "curses a group of enemies, causing them to damage themselves when damaging others"
+    },
+    {
+      "id": "terror",
+      "name_en": "Terror",
+      "name_ko": "테러",
+      "tree": {
+        "page": 1,
+        "name_en": "Curses",
+        "name_ko": "저주"
+      },
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "icon_cel": 22,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 7,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "weaken",
+          "name_en": "Weaken",
+          "name_ko": "위큰"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "저주 - 한무리의 몬스터를 겁에 질리도록 하여 도망치도록 함",
+      "description_en": "curses a group of monsters, causing them to flee in terror"
+    },
+    {
+      "id": "confuse",
+      "name_en": "Confuse",
+      "name_ko": "컨퓨즈",
+      "tree": {
+        "page": 1,
+        "name_en": "Curses",
+        "name_ko": "저주"
+      },
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "icon_cel": 30,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 13,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "dim-vision",
+          "name_en": "Dim Vision",
+          "name_ko": "딤 비젼"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "저주 - 한무리의 몬스터에게 혼란을 주어 근접한 모든 것을 무조건 공격",
+      "description_en": "curses a monster to force it to attack random targets"
+    },
+    {
+      "id": "life-tap",
+      "name_en": "Life Tap",
+      "name_ko": "라이프 탭",
+      "tree": {
+        "page": 1,
+        "name_en": "Curses",
+        "name_ko": "저주"
+      },
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "icon_cel": 32,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 9,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "iron-maiden",
+          "name_en": "Iron Maiden",
+          "name_ko": "아이언 메이든"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "저주 - 한무리의 적에게 저주를 걸어 공격한 만큼 생명력을 취함",
+      "description_en": "curses a group of monsters so that damaging them gives the attacker life"
+    },
+    {
+      "id": "attract",
+      "name_en": "Attract",
+      "name_ko": "어트랙트",
+      "tree": {
+        "page": 1,
+        "name_en": "Curses",
+        "name_ko": "저주"
+      },
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "icon_cel": 40,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 17,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "confuse",
+          "name_en": "Confuse",
+          "name_ko": "컨퓨즈"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "주변의 모든 적에게 공격을 받는 저주를 내림 이 저주는 다른 저주에 의해 무효화 되지 않음",
+      "description_en": "curses a monster to become the target of all nearby monsters this curse may not be overridden by another curse"
+    },
+    {
+      "id": "decrepify",
+      "name_en": "Decrepify",
+      "name_ko": "디크리피파이",
+      "tree": {
+        "page": 1,
+        "name_en": "Curses",
+        "name_ko": "저주"
+      },
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "icon_cel": 42,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 11,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "terror",
+          "name_en": "Terror",
+          "name_ko": "테러"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "저주 - 주변의 적들에게 저주를 걸어, 움직임을 둔화시킴",
+      "description_en": "curses a group of enemies to make them slow, weak and take amplified damage"
+    },
+    {
+      "id": "lower-resist",
+      "name_en": "Lower Resist",
+      "name_ko": "로우어 레지스트",
+      "tree": {
+        "page": 1,
+        "name_en": "Curses",
+        "name_ko": "저주"
+      },
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "icon_cel": 50,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 22,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "life-tap",
+          "name_en": "Life Tap",
+          "name_ko": "라이프 탭"
+        },
+        {
+          "id": "decrepify",
+          "name_en": "Decrepify",
+          "name_ko": "디크리피파이"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "저주 - 한무리의 적이나 몬스터에게 그들이 가진 마법 저항력을 낮추어 모든 마법공격 데미지를 높임",
+      "description_en": "curses an enemy to take more damage from all magical attacks lowers resistances of monsters lowers maximum resistances of hostile players"
+    },
+    {
+      "id": "teeth",
+      "name_en": "Teeth",
+      "name_ko": "티스",
+      "tree": {
+        "page": 2,
+        "name_en": "Poison and Bone",
+        "name_ko": "포이즌 & 본 스펠"
+      },
+      "position": {
+        "row": 1,
+        "col": 2
+      },
+      "icon_cel": 2,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 6,
+      "mana_per_level": 1,
+      "element": "mag",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "bone-wall",
+          "name_en": "Bone Wall",
+          "name_ko": "본 월"
+        },
+        {
+          "id": "bone-prison",
+          "name_en": "Bone Prison",
+          "name_ko": "본 프리즌"
+        },
+        {
+          "id": "bone-spear",
+          "name_en": "Bone Spear",
+          "name_ko": "본 스피어"
+        },
+        {
+          "id": "bone-spirit",
+          "name_en": "Bone Spirit",
+          "name_ko": "본 스피리트"
+        }
+      ],
+      "description_ko": "여러 개의 뼈조각을 소환하여 공격함",
+      "description_en": "fires a barrage of summoned barbed teeth"
+    },
+    {
+      "id": "bone-armor",
+      "name_en": "Bone Armor",
+      "name_ko": "본 아머",
+      "tree": {
+        "page": 2,
+        "name_en": "Poison and Bone",
+        "name_ko": "포이즌 & 본 스펠"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 4,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 11,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "bone-wall",
+          "name_en": "Bone Wall",
+          "name_ko": "본 월"
+        },
+        {
+          "id": "bone-prison",
+          "name_en": "Bone Prison",
+          "name_ko": "본 프리즌"
+        }
+      ],
+      "description_ko": "근접전에서 적의 공격 데미지를 흡수하는 뼈로된 보호막",
+      "description_en": "creates an orbiting shield of bone that absorbs melee damage"
+    },
+    {
+      "id": "poison-dagger",
+      "name_en": "Poison Dagger",
+      "name_ko": "포이즌 데거",
+      "tree": {
+        "page": 2,
+        "name_en": "Poison and Bone",
+        "name_ko": "포이즌 & 본 스펠"
+      },
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "icon_cel": 14,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 12,
+      "mana_per_level": 1,
+      "element": "pois",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "poison-explosion",
+          "name_en": "Poison Explosion",
+          "name_ko": "포이즌 익스플로젼"
+        },
+        {
+          "id": "poison-nova",
+          "name_en": "Poison Nova",
+          "name_ko": "포이즌 노바"
+        }
+      ],
+      "description_ko": "데거에 포이즌 데미지 추가",
+      "description_en": "adds poison to your dagger attacks"
+    },
+    {
+      "id": "corpse-explosion",
+      "name_en": "Corpse Explosion",
+      "name_ko": "커프스 익스플로젼",
+      "tree": {
+        "page": 2,
+        "name_en": "Poison and Bone",
+        "name_ko": "포이즌 & 본 스펠"
+      },
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "icon_cel": 16,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 15,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "teeth",
+          "name_en": "Teeth",
+          "name_ko": "티스"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "주변의 시체를 이용하여 근접해 있는 적들에게 폭발로 인한 데미지를 줌",
+      "description_en": "cast on the corpse of a slain monster, it explodes, damaging nearby enemies"
+    },
+    {
+      "id": "bone-wall",
+      "name_en": "Bone Wall",
+      "name_ko": "본 월",
+      "tree": {
+        "page": 2,
+        "name_en": "Poison and Bone",
+        "name_ko": "포이즌 & 본 스펠"
+      },
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "icon_cel": 24,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 17,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "bone-armor",
+          "name_en": "Bone Armor",
+          "name_ko": "본 아머"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "bone-armor",
+          "name_en": "Bone Armor",
+          "name_ko": "본 아머"
+        },
+        {
+          "id": "bone-prison",
+          "name_en": "Bone Prison",
+          "name_ko": "본 프리즌"
+        }
+      ],
+      "description_ko": "뼈와 그 잔재를 이용하여 통과할 수 없는 벽을 만듬",
+      "description_en": "creates an impassable barrier of bone and debris"
+    },
+    {
+      "id": "poison-explosion",
+      "name_en": "Poison Explosion",
+      "name_ko": "포이즌 익스플로젼",
+      "tree": {
+        "page": 2,
+        "name_en": "Poison and Bone",
+        "name_ko": "포이즌 & 본 스펠"
+      },
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "icon_cel": 34,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 8,
+      "mana_per_level": 0,
+      "element": "pois",
+      "prerequisites": [
+        {
+          "id": "poison-dagger",
+          "name_en": "Poison Dagger",
+          "name_ko": "포이즌 데거"
+        },
+        {
+          "id": "corpse-explosion",
+          "name_en": "Corpse Explosion",
+          "name_ko": "커프스 익스플로젼"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "poison-dagger",
+          "name_en": "Poison Dagger",
+          "name_ko": "포이즌 데거"
+        },
+        {
+          "id": "poison-nova",
+          "name_en": "Poison Nova",
+          "name_ko": "포이즌 노바"
+        }
+      ],
+      "description_ko": "주변의 시체를 이용하여 근접해 있는 적들에게 폭발로 인한 포이즌 데미지를 줌",
+      "description_en": "cast on the corpse of a slain monster, toxic gas is released that poisons nearby monsters"
+    },
+    {
+      "id": "bone-spear",
+      "name_en": "Bone Spear",
+      "name_ko": "본 스피어",
+      "tree": {
+        "page": 2,
+        "name_en": "Poison and Bone",
+        "name_ko": "포이즌 & 본 스펠"
+      },
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "icon_cel": 36,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 28,
+      "mana_per_level": 1,
+      "element": "mag",
+      "prerequisites": [
+        {
+          "id": "corpse-explosion",
+          "name_en": "Corpse Explosion",
+          "name_ko": "커프스 익스플로젼"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "bone-wall",
+          "name_en": "Bone Wall",
+          "name_ko": "본 월"
+        },
+        {
+          "id": "bone-prison",
+          "name_en": "Bone Prison",
+          "name_ko": "본 프리즌"
+        },
+        {
+          "id": "teeth",
+          "name_en": "Teeth",
+          "name_ko": "티스"
+        },
+        {
+          "id": "bone-spirit",
+          "name_en": "Bone Spirit",
+          "name_ko": "본 스피리트"
+        }
+      ],
+      "description_ko": "적을 관통할 수 있는 뼈로된 창을 소환하여 공격함",
+      "description_en": "summons a deadly spike of bone to impale your enemies"
+    },
+    {
+      "id": "bone-prison",
+      "name_en": "Bone Prison",
+      "name_ko": "본 프리즌",
+      "tree": {
+        "page": 2,
+        "name_en": "Poison and Bone",
+        "name_ko": "포이즌 & 본 스펠"
+      },
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "icon_cel": 44,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 27,
+      "mana_per_level": -1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "bone-wall",
+          "name_en": "Bone Wall",
+          "name_ko": "본 월"
+        },
+        {
+          "id": "bone-spear",
+          "name_en": "Bone Spear",
+          "name_ko": "본 스피어"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "bone-armor",
+          "name_en": "Bone Armor",
+          "name_ko": "본 아머"
+        },
+        {
+          "id": "bone-wall",
+          "name_en": "Bone Wall",
+          "name_ko": "본 월"
+        }
+      ],
+      "description_ko": "목표 주위에 뼈로된 장벽을 소환",
+      "description_en": "creates a barrier of fossilized bone around your target"
+    },
+    {
+      "id": "poison-nova",
+      "name_en": "Poison Nova",
+      "name_ko": "포이즌 노바",
+      "tree": {
+        "page": 2,
+        "name_en": "Poison and Bone",
+        "name_ko": "포이즌 & 본 스펠"
+      },
+      "position": {
+        "row": 6,
+        "col": 1
+      },
+      "icon_cel": 52,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 20,
+      "mana_per_level": 0,
+      "element": "pois",
+      "prerequisites": [
+        {
+          "id": "poison-explosion",
+          "name_en": "Poison Explosion",
+          "name_ko": "포이즌 익스플로젼"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "poison-dagger",
+          "name_en": "Poison Dagger",
+          "name_ko": "포이즌 데거"
+        },
+        {
+          "id": "poison-explosion",
+          "name_en": "Poison Explosion",
+          "name_ko": "포이즌 익스플로젼"
+        }
+      ],
+      "description_ko": "다수의 적에게 원형으로 포이즌을 발사하여 데미지를 줌",
+      "description_en": "emits an expanding ring of concentrated poison"
+    },
+    {
+      "id": "bone-spirit",
+      "name_en": "Bone Spirit",
+      "name_ko": "본 스피리트",
+      "tree": {
+        "page": 2,
+        "name_en": "Poison and Bone",
+        "name_ko": "포이즌 & 본 스펠"
+      },
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "icon_cel": 54,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 24,
+      "mana_per_level": 1,
+      "element": "mag",
+      "prerequisites": [
+        {
+          "id": "bone-spear",
+          "name_en": "Bone Spear",
+          "name_ko": "본 스피어"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "bone-wall",
+          "name_en": "Bone Wall",
+          "name_ko": "본 월"
+        },
+        {
+          "id": "bone-prison",
+          "name_en": "Bone Prison",
+          "name_ko": "본 프리즌"
+        },
+        {
+          "id": "teeth",
+          "name_en": "Teeth",
+          "name_ko": "티스"
+        },
+        {
+          "id": "bone-spear",
+          "name_en": "Bone Spear",
+          "name_ko": "본 스피어"
+        }
+      ],
+      "description_ko": "목표물을 추적하거나 스스로 적을 찾는 죽은 자의 영혼을 소환하여 적을 공격함",
+      "description_en": "releases a spirit of the restless undead that tracks its target or finds one of its own"
+    },
+    {
+      "id": "skeleton-mastery",
+      "name_en": "Skeleton Mastery",
+      "name_ko": "스켈레톤 마스터리",
+      "tree": {
+        "page": 3,
+        "name_en": "Summoning",
+        "name_ko": "소환 스킬"
+      },
+      "position": {
+        "row": 1,
+        "col": 1
+      },
+      "icon_cel": 6,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "raise-skeleton",
+          "name_en": "Raise Skeleton",
+          "name_ko": "레이즈 스켈레톤"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "패시브 - 마법에 의하여 소환된 몬스터의 라이프와 데미지를 증가 시킴",
+      "description_en": "passive - increases life and damage of raised skeletons and revived creatures"
+    },
+    {
+      "id": "raise-skeleton",
+      "name_en": "Raise Skeleton",
+      "name_ko": "레이즈 스켈레톤",
+      "tree": {
+        "page": 3,
+        "name_en": "Summoning",
+        "name_ko": "소환 스킬"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 8,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 6,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "죽은 몬스터의 시체를 이용하여 소환된 스켈레톤을 대신 싸우게 함",
+      "description_en": "cast on the corpse of a slain monster, this raises a skeleton warrior that fights for you"
+    },
+    {
+      "id": "clay-golem",
+      "name_en": "Clay Golem",
+      "name_ko": "클레이 골렘",
+      "tree": {
+        "page": 3,
+        "name_en": "Summoning",
+        "name_ko": "소환 스킬"
+      },
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "icon_cel": 18,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 15,
+      "mana_per_level": 3,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "fire-golem",
+          "name_en": "Fire Golem",
+          "name_ko": "파이어 골렘"
+        },
+        {
+          "id": "iron-golem",
+          "name_en": "Iron Golem",
+          "name_ko": "아이언 골렘"
+        },
+        {
+          "id": "blood-golem",
+          "name_en": "Blood Golem",
+          "name_ko": "블러드 골렘"
+        }
+      ],
+      "description_ko": "대지로부터 골렘을 소환하여 자기 대신 싸우게 함",
+      "description_en": "creates a golem from the earth to fight by your side"
+    },
+    {
+      "id": "golem-mastery",
+      "name_en": "Golem Mastery",
+      "name_ko": "골렘 마스터리",
+      "tree": {
+        "page": 3,
+        "name_en": "Summoning",
+        "name_ko": "소환 스킬"
+      },
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "icon_cel": 26,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "clay-golem",
+          "name_en": "Clay Golem",
+          "name_ko": "클레이 골렘"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "패시브 - 소환된 골렘의 라이프와 스피드를 강화 시킴",
+      "description_en": "Enhances Speed and Life of all your Golems"
+    },
+    {
+      "id": "raise-skeletal-mage",
+      "name_en": "Raise Skeletal Mage",
+      "name_ko": "레이즈 스켈레톤 메이지",
+      "tree": {
+        "page": 3,
+        "name_en": "Summoning",
+        "name_ko": "소환 스킬"
+      },
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "icon_cel": 28,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 8,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "raise-skeleton",
+          "name_en": "Raise Skeleton",
+          "name_ko": "레이즈 스켈레톤"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "죽은 몬스터의 시체를 이용하여 스켈레톤 메이지를 소환하고 대신 싸우게 함",
+      "description_en": "cast on the corpse of a slain monster, this raises a skeleton mage that fights for you"
+    },
+    {
+      "id": "blood-golem",
+      "name_en": "Blood Golem",
+      "name_ko": "블러드 골렘",
+      "tree": {
+        "page": 3,
+        "name_en": "Summoning",
+        "name_ko": "소환 스킬"
+      },
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "icon_cel": 38,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 25,
+      "mana_per_level": 3,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "clay-golem",
+          "name_en": "Clay Golem",
+          "name_ko": "클레이 골렘"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "clay-golem",
+          "name_en": "Clay Golem",
+          "name_ko": "클레이 골렘"
+        },
+        {
+          "id": "fire-golem",
+          "name_en": "Fire Golem",
+          "name_ko": "파이어 골렘"
+        },
+        {
+          "id": "iron-golem",
+          "name_en": "Iron Golem",
+          "name_ko": "아이언 골렘"
+        }
+      ],
+      "description_ko": "마법으로 자신의 라이프를 공유하는 골렘을 소환하여 적 공격시 그 생명력을 취함",
+      "description_en": "creates a golem that shares with you the life it steals and damage it receives"
+    },
+    {
+      "id": "summon-resist",
+      "name_en": "Summon Resist",
+      "name_ko": "써몬 레지스트",
+      "tree": {
+        "page": 3,
+        "name_en": "Summoning",
+        "name_ko": "소환 스킬"
+      },
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "icon_cel": 46,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 44,
+      "mana_per_level": -3,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "golem-mastery",
+          "name_en": "Golem Mastery",
+          "name_ko": "골렘 마스터리"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "패시브 - 마법으로 소환한 모든 몬스터의 마법 저항력을 높임",
+      "description_en": "passive - increases the resistances of all summoned creatures"
+    },
+    {
+      "id": "iron-golem",
+      "name_en": "Iron Golem",
+      "name_ko": "아이언 골렘",
+      "tree": {
+        "page": 3,
+        "name_en": "Summoning",
+        "name_ko": "소환 스킬"
+      },
+      "position": {
+        "row": 5,
+        "col": 2
+      },
+      "icon_cel": 48,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 35,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "blood-golem",
+          "name_en": "Blood Golem",
+          "name_ko": "블러드 골렘"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "clay-golem",
+          "name_en": "Clay Golem",
+          "name_ko": "클레이 골렘"
+        },
+        {
+          "id": "fire-golem",
+          "name_en": "Fire Golem",
+          "name_ko": "파이어 골렘"
+        },
+        {
+          "id": "blood-golem",
+          "name_en": "Blood Golem",
+          "name_ko": "블러드 골렘"
+        }
+      ],
+      "description_ko": "금속 아이템을 사용하여 골렘을 소환하고 그 속성을 가지게 함",
+      "description_en": "transforms a metallic item into a golem that gains the properties of the item"
+    },
+    {
+      "id": "fire-golem",
+      "name_en": "Fire Golem",
+      "name_ko": "파이어 골렘",
+      "tree": {
+        "page": 3,
+        "name_en": "Summoning",
+        "name_ko": "소환 스킬"
+      },
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "icon_cel": 56,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 50,
+      "mana_per_level": 8,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "iron-golem",
+          "name_en": "Iron Golem",
+          "name_ko": "아이언 골렘"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "clay-golem",
+          "name_en": "Clay Golem",
+          "name_ko": "클레이 골렘"
+        },
+        {
+          "id": "iron-golem",
+          "name_en": "Iron Golem",
+          "name_ko": "아이언 골렘"
+        },
+        {
+          "id": "blood-golem",
+          "name_en": "Blood Golem",
+          "name_ko": "블러드 골렘"
+        }
+      ],
+      "description_ko": "자신이 받는 파이어 데미지를 생명력으로 전환하는 골렘 소환",
+      "description_en": "creates a golem that converts the damage it receives from fire into life"
+    },
+    {
+      "id": "revive",
+      "name_en": "Revive",
+      "name_ko": "리바이브",
+      "tree": {
+        "page": 3,
+        "name_en": "Summoning",
+        "name_ko": "소환 스킬"
+      },
+      "position": {
+        "row": 6,
+        "col": 3
+      },
+      "icon_cel": 58,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 45,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "raise-skeletal-mage",
+          "name_en": "Raise Skeletal Mage",
+          "name_ko": "레이즈 스켈레톤 메이지"
+        },
+        {
+          "id": "iron-golem",
+          "name_en": "Iron Golem",
+          "name_ko": "아이언 골렘"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "죽은 몬스터를 소환하여 자신 대신 싸우게 함",
+      "description_en": "returns a monster to life to fight by your side"
+    }
+  ]
+}

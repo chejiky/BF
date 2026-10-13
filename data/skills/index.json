@@ -1,0 +1,53 @@
+{
+  "classes": [
+    {
+      "slug": "amazon",
+      "name_en": "Amazon",
+      "name_ko": "아마존",
+      "skill_count": 30,
+      "file": "amazon.json"
+    },
+    {
+      "slug": "assassin",
+      "name_en": "Assassin",
+      "name_ko": "어쎄신",
+      "skill_count": 30,
+      "file": "assassin.json"
+    },
+    {
+      "slug": "barbarian",
+      "name_en": "Barbarian",
+      "name_ko": "바바리안",
+      "skill_count": 30,
+      "file": "barbarian.json"
+    },
+    {
+      "slug": "druid",
+      "name_en": "Druid",
+      "name_ko": "드루이드",
+      "skill_count": 30,
+      "file": "druid.json"
+    },
+    {
+      "slug": "necromancer",
+      "name_en": "Necromancer",
+      "name_ko": "네크로맨서",
+      "skill_count": 30,
+      "file": "necromancer.json"
+    },
+    {
+      "slug": "paladin",
+      "name_en": "Paladin",
+      "name_ko": "팔라딘",
+      "skill_count": 30,
+      "file": "paladin.json"
+    },
+    {
+      "slug": "sorceress",
+      "name_en": "Sorceress",
+      "name_ko": "소서리스",
+      "skill_count": 30,
+      "file": "sorceress.json"
+    }
+  ]
+}

@@ -1,0 +1,1000 @@
+{
+  "class": "barbarian",
+  "class_name_en": "Barbarian",
+  "class_name_ko": "바바리안",
+  "skill_count": 30,
+  "skills": [
+    {
+      "id": "bash",
+      "name_en": "Bash",
+      "name_ko": "배쉬",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 1,
+        "col": 2
+      },
+      "icon_cel": 0,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 2,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "stun",
+          "name_en": "Stun",
+          "name_ko": "스턴"
+        },
+        {
+          "id": "concentrate",
+          "name_en": "Concentrate",
+          "name_ko": "컨센트레이트"
+        }
+      ],
+      "description_ko": "공격 데미지와 등급을 향상 시키고, 목표물을 뒤로 밀쳐 냄",
+      "description_en": "powerful blow that increases the damage done to enemies and knocks them back"
+    },
+    {
+      "id": "leap",
+      "name_en": "Leap",
+      "name_ko": "리프",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "icon_cel": 12,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 2,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "위험한 상황을 벗어나거나 앞의 장애물을 뛰어 넘음",
+      "description_en": "leaps away from danger or into the fray"
+    },
+    {
+      "id": "double-swing",
+      "name_en": "Double Swing",
+      "name_ko": "더블 스윙",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 2,
+        "col": 3
+      },
+      "icon_cel": 14,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 8,
+      "mana_per_level": -1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "bash",
+          "name_en": "Bash",
+          "name_ko": "배쉬"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "bash",
+          "name_en": "Bash",
+          "name_ko": "배쉬"
+        }
+      ],
+      "description_ko": "두 무기를 들고 싸울 때, 한 표적에게 두번 연속 공격하거나 두 표적을 동시에 공격함",
+      "description_en": "when two weapons are equipped attacks two targets if possible, or one target twice"
+    },
+    {
+      "id": "stun",
+      "name_en": "Stun",
+      "name_ko": "스턴",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 3,
+        "col": 2
+      },
+      "icon_cel": 26,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 2,
+      "mana_per_level": 0,
+      "element": "stun",
+      "prerequisites": [
+        {
+          "id": "bash",
+          "name_en": "Bash",
+          "name_ko": "배쉬"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "bash",
+          "name_en": "Bash",
+          "name_ko": "배쉬"
+        },
+        {
+          "id": "concentrate",
+          "name_en": "Concentrate",
+          "name_ko": "컨센트레이트"
+        },
+        {
+          "id": "war-cry",
+          "name_en": "War Cry",
+          "name_ko": "워 크라이"
+        }
+      ],
+      "description_ko": "공격등급을 향상 시키고, 짧은 시간동안 적을 기절 시킴",
+      "description_en": "stuns your target for a short time and increases your attack rating"
+    },
+    {
+      "id": "double-throw",
+      "name_en": "Double Throw",
+      "name_ko": "더블 스로우",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "icon_cel": 28,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 1,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "double-swing",
+          "name_en": "Double Swing",
+          "name_ko": "더블 스윙"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "double-swing",
+          "name_en": "Double Swing",
+          "name_ko": "더블 스윙"
+        }
+      ],
+      "description_ko": "종류가 다른 스로우계열의 무기를 동시에 던질 수 있게 함",
+      "description_en": "allows you to throw two different throwing weapons at the same time"
+    },
+    {
+      "id": "leap-attack",
+      "name_en": "Leap Attack",
+      "name_ko": "리프 어택",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "icon_cel": 34,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 10,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "leap",
+          "name_en": "Leap",
+          "name_ko": "리프"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "leap",
+          "name_en": "Leap",
+          "name_ko": "리프"
+        }
+      ],
+      "description_ko": "지정한 적이 있는 곳을 향해 점프하여 신속하게 공격함",
+      "description_en": "leaps to and attacks target enemy in one swift assault"
+    },
+    {
+      "id": "concentrate",
+      "name_en": "Concentrate",
+      "name_ko": "컨센트레이트",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "icon_cel": 36,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 2,
+      "mana_per_level": 0,
+      "element": "mag",
+      "prerequisites": [
+        {
+          "id": "stun",
+          "name_en": "Stun",
+          "name_ko": "스턴"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "bash",
+          "name_en": "Bash",
+          "name_ko": "배쉬"
+        },
+        {
+          "id": "battle-orders",
+          "name_en": "Battle Orders",
+          "name_ko": "배틀 오더스"
+        },
+        {
+          "id": "berserk",
+          "name_en": "Berserk",
+          "name_ko": "버서크"
+        }
+      ],
+      "description_ko": "공격등급 및 방어력을 향상 시키고, 적의 공격에 의해 자신의 공격이 실패할 확률을 낮춤",
+      "description_en": "attack that is not interruptible and improves attack and defense rating"
+    },
+    {
+      "id": "frenzy",
+      "name_en": "Frenzy",
+      "name_ko": "프렌지",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "icon_cel": 42,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 3,
+      "mana_per_level": 0,
+      "element": "mag",
+      "prerequisites": [
+        {
+          "id": "double-throw",
+          "name_en": "Double Throw",
+          "name_ko": "더블 스로우"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "increased-stamina",
+          "name_en": "Increased Stamina",
+          "name_ko": "인크리즈드 스태미나"
+        },
+        {
+          "id": "double-swing",
+          "name_en": "Double Swing",
+          "name_ko": "더블 스윙"
+        },
+        {
+          "id": "taunt",
+          "name_en": "Taunt",
+          "name_ko": "타운트"
+        },
+        {
+          "id": "berserk",
+          "name_en": "Berserk",
+          "name_ko": "버서크"
+        }
+      ],
+      "description_ko": "공격이 성공했을 때마다 공격 속도와 움직임의 속도를 증가 시킴",
+      "description_en": "allows you to swing two weapons at once each successful attack increases your overall speed requires you to equip two weapons"
+    },
+    {
+      "id": "whirlwind",
+      "name_en": "Whirlwind",
+      "name_ko": "훨윈드",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 6,
+        "col": 1
+      },
+      "icon_cel": 50,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 25,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "leap-attack",
+          "name_en": "Leap Attack",
+          "name_ko": "리프 어택"
+        },
+        {
+          "id": "concentrate",
+          "name_en": "Concentrate",
+          "name_ko": "컨센트레이트"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "적들이 있는 곳에 들어가 수 많은 적들 사이를 아주 빠르게 회전하면서 공격함",
+      "description_en": "a whirling dance of death that cuts a path through the legions of your enemies"
+    },
+    {
+      "id": "berserk",
+      "name_en": "Berserk",
+      "name_ko": "버서크",
+      "tree": {
+        "page": 1,
+        "name_en": "Combat Skills",
+        "name_ko": "전투 스킬"
+      },
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "icon_cel": 52,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 4,
+      "mana_per_level": 0,
+      "element": "mag",
+      "prerequisites": [
+        {
+          "id": "concentrate",
+          "name_en": "Concentrate",
+          "name_ko": "컨센트레이트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "howl",
+          "name_en": "Howl",
+          "name_ko": "하울"
+        },
+        {
+          "id": "battle-orders",
+          "name_en": "Battle Orders",
+          "name_ko": "배틀 오더스"
+        }
+      ],
+      "description_ko": "방어력을 저하시키는 대신 공격 데미지와 공격등급을 크게 향상 시켜 보다 파괴적인 공격을 할 수 있게 함",
+      "description_en": "a powerful but reckless attack that increases damage and attack rating but decreases defense rating"
+    },
+    {
+      "id": "sword-mastery",
+      "name_en": "Sword Mastery",
+      "name_ko": "소드 마스터리",
+      "tree": {
+        "page": 2,
+        "name_en": "Combat Masteries",
+        "name_ko": "전투 마스터리"
+      },
+      "position": {
+        "row": 1,
+        "col": 1
+      },
+      "icon_cel": 2,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 소드를 사용할 때 공격 데미지와 등급 향상",
+      "description_en": "passive - improves sword fighting skill"
+    },
+    {
+      "id": "axe-mastery",
+      "name_en": "Axe Mastery",
+      "name_ko": "액스 마스터리",
+      "tree": {
+        "page": 2,
+        "name_en": "Combat Masteries",
+        "name_ko": "전투 마스터리"
+      },
+      "position": {
+        "row": 1,
+        "col": 2
+      },
+      "icon_cel": 4,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 액스를 사용할 때 공격 데미지와 등급 향상",
+      "description_en": "passive - improves axe fighting skill"
+    },
+    {
+      "id": "mace-mastery",
+      "name_en": "Mace Mastery",
+      "name_ko": "메이스 마스터리",
+      "tree": {
+        "page": 2,
+        "name_en": "Combat Masteries",
+        "name_ko": "전투 마스터리"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 6,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 메이스를 사용할 때 공격 데미지와 등급 향상",
+      "description_en": "passive - improves mace fighting skill"
+    },
+    {
+      "id": "pole-arm-mastery",
+      "name_en": "Pole Arm Mastery",
+      "name_ko": "폴 암 마스터리",
+      "tree": {
+        "page": 2,
+        "name_en": "Combat Masteries",
+        "name_ko": "전투 마스터리"
+      },
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "icon_cel": 16,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 폴 암계열의 무기를 사용할 때 공격 데미지와 등급 향상",
+      "description_en": "passive - improves pole arm skill"
+    },
+    {
+      "id": "throwing-mastery",
+      "name_en": "Throwing Mastery",
+      "name_ko": "스로잉 마스터리",
+      "tree": {
+        "page": 2,
+        "name_en": "Combat Masteries",
+        "name_ko": "전투 마스터리"
+      },
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "icon_cel": 18,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 스로잉계열의 무기를 사용할 때 공격 데미지와 등급 향상",
+      "description_en": "passive - improves thrown weapon skill"
+    },
+    {
+      "id": "spear-mastery",
+      "name_en": "Spear Mastery",
+      "name_ko": "스피어 마스터리",
+      "tree": {
+        "page": 2,
+        "name_en": "Combat Masteries",
+        "name_ko": "전투 마스터리"
+      },
+      "position": {
+        "row": 2,
+        "col": 3
+      },
+      "icon_cel": 20,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 스피어계열의 무기를 사용할 때 공격 데미지와 등급 향상",
+      "description_en": "passive - improves spear fighting skill"
+    },
+    {
+      "id": "increased-stamina",
+      "name_en": "Increased Stamina",
+      "name_ko": "인크리즈드 스태미나",
+      "tree": {
+        "page": 2,
+        "name_en": "Combat Masteries",
+        "name_ko": "전투 마스터리"
+      },
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "icon_cel": 30,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 스태미나 상승",
+      "description_en": "passive - increases your stamina"
+    },
+    {
+      "id": "iron-skin",
+      "name_en": "Iron Skin",
+      "name_ko": "아이언 스킨",
+      "tree": {
+        "page": 2,
+        "name_en": "Combat Masteries",
+        "name_ko": "전투 마스터리"
+      },
+      "position": {
+        "row": 4,
+        "col": 3
+      },
+      "icon_cel": 38,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 방어력 향상",
+      "description_en": "passive - improves defense rating"
+    },
+    {
+      "id": "increased-speed",
+      "name_en": "Increased Speed",
+      "name_ko": "인크리즈드 스피드",
+      "tree": {
+        "page": 2,
+        "name_en": "Combat Masteries",
+        "name_ko": "전투 마스터리"
+      },
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "icon_cel": 44,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "increased-stamina",
+          "name_en": "Increased Stamina",
+          "name_ko": "인크리즈드 스태미나"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "패시브 - 걷거나 달리는 속도 증가",
+      "description_en": "passive - increases walk and run speed"
+    },
+    {
+      "id": "natural-resistance",
+      "name_en": "Natural Resistance",
+      "name_ko": "네츄럴 레지스턴스",
+      "tree": {
+        "page": 2,
+        "name_en": "Combat Masteries",
+        "name_ko": "전투 마스터리"
+      },
+      "position": {
+        "row": 6,
+        "col": 3
+      },
+      "icon_cel": 54,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "iron-skin",
+          "name_en": "Iron Skin",
+          "name_ko": "아이언 스킨"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "패시브 - 파이어, 콜드, 라이트닝과 포이즌에 대한 저항력 향상",
+      "description_en": "passive - increases natural resistances to elemental and poison damage"
+    },
+    {
+      "id": "howl",
+      "name_en": "Howl",
+      "name_ko": "하울",
+      "tree": {
+        "page": 3,
+        "name_en": "Warcries",
+        "name_ko": "함성"
+      },
+      "position": {
+        "row": 1,
+        "col": 1
+      },
+      "icon_cel": 8,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 4,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "주변에 있는 몬스터들을 두려움에 떨게 하여 도망치게 함",
+      "description_en": "sends nearby monsters scrambling away in fear"
+    },
+    {
+      "id": "find-potion",
+      "name_en": "Find Potion",
+      "name_ko": "파인드 포션",
+      "tree": {
+        "page": 3,
+        "name_en": "Warcries",
+        "name_ko": "함성"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 10,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 2,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "죽은 시체에서 포션을 획득할 확률을 높임",
+      "description_en": "use on the corpse of a slain monster for a chance to find a potion"
+    },
+    {
+      "id": "taunt",
+      "name_en": "Taunt",
+      "name_ko": "타운트",
+      "tree": {
+        "page": 3,
+        "name_en": "Warcries",
+        "name_ko": "함성"
+      },
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "icon_cel": 22,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 3,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "howl",
+          "name_en": "Howl",
+          "name_ko": "하울"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "주변의 몬스터를 흥분시켜 자신을 공격하도록 함",
+      "description_en": "enrages a monster into relentlessly attacking"
+    },
+    {
+      "id": "shout",
+      "name_en": "Shout",
+      "name_ko": "샤우트",
+      "tree": {
+        "page": 3,
+        "name_en": "Warcries",
+        "name_ko": "함성"
+      },
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "icon_cel": 24,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 6,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "howl",
+          "name_en": "Howl",
+          "name_ko": "하울"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "battle-orders",
+          "name_en": "Battle Orders",
+          "name_ko": "배틀 오더스"
+        },
+        {
+          "id": "battle-command",
+          "name_en": "Battle Command",
+          "name_ko": "배틀 커멘드"
+        }
+      ],
+      "description_ko": "주변 상황의 위험함을 경고하여 자신과 파티의 방어등급을 향상",
+      "description_en": "warns of impending danger and improves the defense rating of you and your party"
+    },
+    {
+      "id": "find-item",
+      "name_en": "Find Item",
+      "name_ko": "파인드 아이템",
+      "tree": {
+        "page": 3,
+        "name_en": "Warcries",
+        "name_ko": "함성"
+      },
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "icon_cel": 32,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 7,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "find-potion",
+          "name_en": "Find Potion",
+          "name_ko": "파인드 포션"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "find-potion",
+          "name_en": "Find Potion",
+          "name_ko": "파인드 포션"
+        }
+      ],
+      "description_ko": "죽은 시체에서 마법이나 그외 아이템을 발견할 확률을 높임",
+      "description_en": "use on the corpse of a slain monster to find hidden treasures"
+    },
+    {
+      "id": "battle-cry",
+      "name_en": "Battle Cry",
+      "name_ko": "배틀 크라이",
+      "tree": {
+        "page": 3,
+        "name_en": "Warcries",
+        "name_ko": "함성"
+      },
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "icon_cel": 40,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 5,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "taunt",
+          "name_en": "Taunt",
+          "name_ko": "타운트"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "공포스러운 함성을 질러 적의 방어력과 공격 데미지를 저하 시킴",
+      "description_en": "fearsome cry that decreases enemies' defense rating and damage"
+    },
+    {
+      "id": "battle-orders",
+      "name_en": "Battle Orders",
+      "name_ko": "배틀 오더스",
+      "tree": {
+        "page": 3,
+        "name_en": "Warcries",
+        "name_ko": "함성"
+      },
+      "position": {
+        "row": 5,
+        "col": 2
+      },
+      "icon_cel": 46,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 7,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "shout",
+          "name_en": "Shout",
+          "name_ko": "샤우트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "shout",
+          "name_en": "Shout",
+          "name_ko": "샤우트"
+        },
+        {
+          "id": "battle-command",
+          "name_en": "Battle Command",
+          "name_ko": "배틀 커멘드"
+        }
+      ],
+      "description_ko": "자신과 파티의 라이프와 마나, 스태미나 증가 시킴",
+      "description_en": "improves the maximum mana, life and stamina of you and your party"
+    },
+    {
+      "id": "grim-ward",
+      "name_en": "Grim Ward",
+      "name_ko": "그림 워드",
+      "tree": {
+        "page": 3,
+        "name_en": "Warcries",
+        "name_ko": "함성"
+      },
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "icon_cel": 48,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 4,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "find-item",
+          "name_en": "Find Item",
+          "name_ko": "파인드 아이템"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "find-potion",
+          "name_en": "Find Potion",
+          "name_ko": "파인드 포션"
+        }
+      ],
+      "description_ko": "몬스터를 두려움에 떨고  달아나게 하는 토템을 죽은 몬스터를 사용해 만듬",
+      "description_en": "use on the corpse of a slain monster to create a frightening totem that causes nearby monsters to flee"
+    },
+    {
+      "id": "war-cry",
+      "name_en": "War Cry",
+      "name_ko": "워 크라이",
+      "tree": {
+        "page": 3,
+        "name_en": "Warcries",
+        "name_ko": "함성"
+      },
+      "position": {
+        "row": 6,
+        "col": 1
+      },
+      "icon_cel": 56,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 40,
+      "mana_per_level": 3,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "battle-cry",
+          "name_en": "Battle Cry",
+          "name_ko": "배틀 크라이"
+        },
+        {
+          "id": "battle-orders",
+          "name_en": "Battle Orders",
+          "name_ko": "배틀 오더스"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "howl",
+          "name_en": "Howl",
+          "name_ko": "하울"
+        },
+        {
+          "id": "taunt",
+          "name_en": "Taunt",
+          "name_ko": "타운트"
+        },
+        {
+          "id": "battle-cry",
+          "name_en": "Battle Cry",
+          "name_ko": "배틀 크라이"
+        }
+      ],
+      "description_ko": "주변의 모든 몬스터들에게 데미지를 주고 기절 시킴",
+      "description_en": "injures and stuns all nearby enemies"
+    },
+    {
+      "id": "battle-command",
+      "name_en": "Battle Command",
+      "name_ko": "배틀 커멘드",
+      "tree": {
+        "page": 3,
+        "name_en": "Warcries",
+        "name_ko": "함성"
+      },
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "icon_cel": 58,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 11,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "battle-orders",
+          "name_en": "Battle Orders",
+          "name_ko": "배틀 오더스"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "shout",
+          "name_en": "Shout",
+          "name_ko": "샤우트"
+        },
+        {
+          "id": "battle-orders",
+          "name_en": "Battle Orders",
+          "name_ko": "배틀 오더스"
+        }
+      ],
+      "description_ko": "일시적으로 자신과 파티의 모든 스킬 레벨 상승",
+      "description_en": "increases all current skill levels for you and your party"
+    }
+  ]
+}

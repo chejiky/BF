@@ -1,0 +1,1061 @@
+{
+  "class": "assassin",
+  "class_name_en": "Assassin",
+  "class_name_ko": "어쎄신",
+  "skill_count": 30,
+  "skills": [
+    {
+      "id": "fire-blast",
+      "name_en": "Fire Blast",
+      "name_ko": "파이어 블라스트",
+      "tree": {
+        "page": 1,
+        "name_en": "Traps",
+        "name_ko": "트랩"
+      },
+      "position": {
+        "row": 1,
+        "col": 2
+      },
+      "icon_cel": 0,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 24,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "shock-web",
+          "name_en": "Shock Web",
+          "name_ko": "쇼크 웹"
+        },
+        {
+          "id": "charged-bolt-sentry",
+          "name_en": "Charged Bolt Sentry",
+          "name_ko": "차지드 볼트 센트리"
+        },
+        {
+          "id": "lightning-sentry",
+          "name_en": "Lightning Sentry",
+          "name_ko": "라이트닝 센트리"
+        },
+        {
+          "id": "wake-of-fire",
+          "name_en": "Wake of Fire",
+          "name_ko": "웨이크 오브 파이어"
+        },
+        {
+          "id": "wake-of-inferno",
+          "name_en": "Wake of Inferno",
+          "name_ko": "웨이크 오브 인페르노"
+        }
+      ],
+      "description_ko": "파이어 폭탄을 던져서 적을 공격함",
+      "description_en": "throw a fire bomb to blast your enemies to bits"
+    },
+    {
+      "id": "shock-web",
+      "name_en": "Shock Web",
+      "name_ko": "쇼크 웹",
+      "tree": {
+        "page": 1,
+        "name_en": "Traps",
+        "name_ko": "트랩"
+      },
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "icon_cel": 2,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 6,
+      "mana_per_level": 0,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "fire-blast",
+          "name_en": "Fire Blast",
+          "name_ko": "파이어 블라스트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "fire-blast",
+          "name_en": "Fire Blast",
+          "name_ko": "파이어 블라스트"
+        },
+        {
+          "id": "charged-bolt-sentry",
+          "name_en": "Charged Bolt Sentry",
+          "name_ko": "차지드 볼트 센트리"
+        },
+        {
+          "id": "lightning-sentry",
+          "name_en": "Lightning Sentry",
+          "name_ko": "라이트닝 센트리"
+        }
+      ],
+      "description_ko": "적에게 충격을 주는 라이트닝 웹 발사",
+      "description_en": "throw a web of lightning to shock your enemies"
+    },
+    {
+      "id": "blade-sentinel",
+      "name_en": "Blade Sentinel",
+      "name_ko": "블레이드 센티널",
+      "tree": {
+        "page": 1,
+        "name_en": "Traps",
+        "name_ko": "트랩"
+      },
+      "position": {
+        "row": 2,
+        "col": 3
+      },
+      "icon_cel": 4,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 7,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "blade-fury",
+          "name_en": "Blade Fury",
+          "name_ko": "블레이드 퓨리"
+        },
+        {
+          "id": "blade-shield",
+          "name_en": "Blade Shield",
+          "name_ko": "블레이드 쉴드"
+        }
+      ],
+      "description_ko": "목표지점과 당신사이에 스피닝 블레이드 배치",
+      "description_en": "set a spinning blade to patrol between you and target point"
+    },
+    {
+      "id": "charged-bolt-sentry",
+      "name_en": "Charged Bolt Sentry",
+      "name_ko": "차지드 볼트 센트리",
+      "tree": {
+        "page": 1,
+        "name_en": "Traps",
+        "name_ko": "트랩"
+      },
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "icon_cel": 6,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 13,
+      "mana_per_level": 0,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "shock-web",
+          "name_en": "Shock Web",
+          "name_ko": "쇼크 웹"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "fire-blast",
+          "name_en": "Fire Blast",
+          "name_ko": "파이어 블라스트"
+        },
+        {
+          "id": "shock-web",
+          "name_en": "Shock Web",
+          "name_ko": "쇼크 웹"
+        },
+        {
+          "id": "lightning-sentry",
+          "name_en": "Lightning Sentry",
+          "name_ko": "라이트닝 센트리"
+        },
+        {
+          "id": "death-sentry",
+          "name_en": "Death Sentry",
+          "name_ko": "데쓰 센트리"
+        }
+      ],
+      "description_ko": "차지드 볼트를 방출하는 트랩으로 지나가는 적을 공격",
+      "description_en": "a trap that emits charged bolts at enemies that pass near"
+    },
+    {
+      "id": "wake-of-fire",
+      "name_en": "Wake of Fire",
+      "name_ko": "웨이크 오브 파이어",
+      "tree": {
+        "page": 1,
+        "name_en": "Traps",
+        "name_ko": "트랩"
+      },
+      "position": {
+        "row": 3,
+        "col": 2
+      },
+      "icon_cel": 8,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 13,
+      "mana_per_level": 0,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "fire-blast",
+          "name_en": "Fire Blast",
+          "name_ko": "파이어 블라스트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "fire-blast",
+          "name_en": "Fire Blast",
+          "name_ko": "파이어 블라스트"
+        },
+        {
+          "id": "wake-of-inferno",
+          "name_en": "Wake of Inferno",
+          "name_ko": "웨이크 오브 인페르노"
+        }
+      ],
+      "description_ko": "웨이브 파이어를 방출하는 트랩설치",
+      "description_en": "a trap that emits waves of fire"
+    },
+    {
+      "id": "blade-fury",
+      "name_en": "Blade Fury",
+      "name_ko": "블레이드 퓨리",
+      "tree": {
+        "page": 1,
+        "name_en": "Traps",
+        "name_ko": "트랩"
+      },
+      "position": {
+        "row": 4,
+        "col": 3
+      },
+      "icon_cel": 10,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 8,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "blade-sentinel",
+          "name_en": "Blade Sentinel",
+          "name_ko": "블레이드 센티널"
+        },
+        {
+          "id": "wake-of-fire",
+          "name_en": "Wake of Fire",
+          "name_ko": "웨이크 오브 파이어"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "blade-sentinel",
+          "name_en": "Blade Sentinel",
+          "name_ko": "블레이드 센티널"
+        },
+        {
+          "id": "blade-shield",
+          "name_en": "Blade Shield",
+          "name_ko": "블레이드 쉴드"
+        }
+      ],
+      "description_ko": "적을 조각내는 스피닝 블레이드 던지기",
+      "description_en": "throw spinning blades to slice up your enemies"
+    },
+    {
+      "id": "lightning-sentry",
+      "name_en": "Lightning Sentry",
+      "name_ko": "라이트닝 센트리",
+      "tree": {
+        "page": 1,
+        "name_en": "Traps",
+        "name_ko": "트랩"
+      },
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "icon_cel": 12,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 20,
+      "mana_per_level": 0,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "charged-bolt-sentry",
+          "name_en": "Charged Bolt Sentry",
+          "name_ko": "차지드 볼트 센트리"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "shock-web",
+          "name_en": "Shock Web",
+          "name_ko": "쇼크 웹"
+        },
+        {
+          "id": "charged-bolt-sentry",
+          "name_en": "Charged Bolt Sentry",
+          "name_ko": "차지드 볼트 센트리"
+        },
+        {
+          "id": "death-sentry",
+          "name_en": "Death Sentry",
+          "name_ko": "데쓰 센트리"
+        }
+      ],
+      "description_ko": "라이트닝 트랩을 설치하여 지나가는 적을 공격",
+      "description_en": "a trap that shoots lightning to scorch passing enemies"
+    },
+    {
+      "id": "wake-of-inferno",
+      "name_en": "Wake of Inferno",
+      "name_ko": "웨이크 오브 인페르노",
+      "tree": {
+        "page": 1,
+        "name_en": "Traps",
+        "name_ko": "트랩"
+      },
+      "position": {
+        "row": 5,
+        "col": 2
+      },
+      "icon_cel": 14,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 20,
+      "mana_per_level": 0,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "wake-of-fire",
+          "name_en": "Wake of Fire",
+          "name_ko": "웨이크 오브 파이어"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "fire-blast",
+          "name_en": "Fire Blast",
+          "name_ko": "파이어 블라스트"
+        },
+        {
+          "id": "wake-of-fire",
+          "name_en": "Wake of Fire",
+          "name_ko": "웨이크 오브 파이어"
+        },
+        {
+          "id": "death-sentry",
+          "name_en": "Death Sentry",
+          "name_ko": "데쓰 센트리"
+        }
+      ],
+      "description_ko": "화염을 내뿜는 트랩을 설치하여 지나가는 적을 공격",
+      "description_en": "trap that sprays fire at passing enemies"
+    },
+    {
+      "id": "death-sentry",
+      "name_en": "Death Sentry",
+      "name_ko": "데쓰 센트리",
+      "tree": {
+        "page": 1,
+        "name_en": "Traps",
+        "name_ko": "트랩"
+      },
+      "position": {
+        "row": 6,
+        "col": 1
+      },
+      "icon_cel": 16,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 20,
+      "mana_per_level": 0,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "lightning-sentry",
+          "name_en": "Lightning Sentry",
+          "name_ko": "라이트닝 센트리"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "fire-blast",
+          "name_en": "Fire Blast",
+          "name_ko": "파이어 블라스트"
+        },
+        {
+          "id": "lightning-sentry",
+          "name_en": "Lightning Sentry",
+          "name_ko": "라이트닝 센트리"
+        }
+      ],
+      "description_ko": "시체를 폭발시켜 적을 공격하거나 적에게 라이트닝을 발사하는 트랩설치",
+      "description_en": "trap that shoots lightning at your enemies or explodes nearby corpses laying waste to more enemies"
+    },
+    {
+      "id": "blade-shield",
+      "name_en": "Blade Shield",
+      "name_ko": "블레이드 쉴드",
+      "tree": {
+        "page": 1,
+        "name_en": "Traps",
+        "name_ko": "트랩"
+      },
+      "position": {
+        "row": 6,
+        "col": 3
+      },
+      "icon_cel": 18,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 27,
+      "mana_per_level": 2,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "blade-fury",
+          "name_en": "Blade Fury",
+          "name_ko": "블레이드 퓨리"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "blade-sentinel",
+          "name_en": "Blade Sentinel",
+          "name_ko": "블레이드 센티널"
+        },
+        {
+          "id": "blade-fury",
+          "name_en": "Blade Fury",
+          "name_ko": "블레이드 퓨리"
+        }
+      ],
+      "description_ko": "스피닝 블레이드를 배치하여 주변의 적을 공격",
+      "description_en": "spinning blades slice enemies who stray too close"
+    },
+    {
+      "id": "claw-mastery",
+      "name_en": "Claw Mastery",
+      "name_ko": "클러 마스터리",
+      "tree": {
+        "page": 2,
+        "name_en": "Shadow Disciplines",
+        "name_ko": "쉐도우 디서플린"
+      },
+      "position": {
+        "row": 1,
+        "col": 2
+      },
+      "icon_cel": 20,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 클러 계열 무기를 사용하는 기술 향상",
+      "description_en": "passive - improves your skill with claw-class weapons"
+    },
+    {
+      "id": "psychic-hammer",
+      "name_en": "Psychic Hammer",
+      "name_ko": "싸이킥 해머",
+      "tree": {
+        "page": 2,
+        "name_en": "Shadow Disciplines",
+        "name_ko": "쉐도우 디서플린"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 22,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 16,
+      "mana_per_level": 1,
+      "element": "mag",
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "정신의 힘으로 사이킥 블라스트를 만들어 적을 공격하고 물러나게 함",
+      "description_en": "use the power of your mind to create a psychic blast to crush and knock back your enemies"
+    },
+    {
+      "id": "burst-of-speed",
+      "name_en": "Burst of Speed",
+      "name_ko": "버스트 오브 스피드",
+      "tree": {
+        "page": 2,
+        "name_en": "Shadow Disciplines",
+        "name_ko": "쉐도우 디서플린"
+      },
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "icon_cel": 36,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 10,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "claw-mastery",
+          "name_en": "Claw Mastery",
+          "name_ko": "클러 마스터리"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "일정시간동안 공격 및 이동속도 증가",
+      "description_en": "increases attack and movement speed for a period of time"
+    },
+    {
+      "id": "weapon-block",
+      "name_en": "Weapon Block",
+      "name_ko": "웨폰 블록",
+      "tree": {
+        "page": 2,
+        "name_en": "Shadow Disciplines",
+        "name_ko": "쉐도우 디서플린"
+      },
+      "position": {
+        "row": 3,
+        "col": 2
+      },
+      "icon_cel": 26,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "claw-mastery",
+          "name_en": "Claw Mastery",
+          "name_ko": "클러 마스터리"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "패시브 - 방어확률 높임 (듀얼 클러계열 무기 사용시)",
+      "description_en": "passive - chance to block when you are using dual claw-class weapons"
+    },
+    {
+      "id": "cloak-of-shadows",
+      "name_en": "Cloak of Shadows",
+      "name_ko": "클럭 오브 쉐도우",
+      "tree": {
+        "page": 2,
+        "name_en": "Shadow Disciplines",
+        "name_ko": "쉐도우 디서플린"
+      },
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "icon_cel": 24,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 13,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "psychic-hammer",
+          "name_en": "Psychic Hammer",
+          "name_ko": "싸이킥 해머"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "쉐도우를 시전하여 적의 시야를 좁히고 일정 시간동안 적의 방어력 낮춤",
+      "description_en": "cast a shadow to blind nearby enemies lowering their defenses for a period of time"
+    },
+    {
+      "id": "fade",
+      "name_en": "Fade",
+      "name_ko": "페이드",
+      "tree": {
+        "page": 2,
+        "name_en": "Shadow Disciplines",
+        "name_ko": "쉐도우 디서플린"
+      },
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "icon_cel": 30,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 10,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "burst-of-speed",
+          "name_en": "Burst of Speed",
+          "name_ko": "버스트 오브 스피드"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "일정 시간동안 모든 저항력과 저주에 대한 저항력 증가",
+      "description_en": "raise all resistances and resist curses for a period of time"
+    },
+    {
+      "id": "shadow-warrior",
+      "name_en": "Shadow Warrior",
+      "name_ko": "쉐도우 워리어",
+      "tree": {
+        "page": 2,
+        "name_en": "Shadow Disciplines",
+        "name_ko": "쉐도우 디서플린"
+      },
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "icon_cel": 38,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 54,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "cloak-of-shadows",
+          "name_en": "Cloak of Shadows",
+          "name_ko": "클럭 오브 쉐도우"
+        },
+        {
+          "id": "weapon-block",
+          "name_en": "Weapon Block",
+          "name_ko": "웨폰 블록"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "스킬과 공격을 흉내내는 쉐도우 소환",
+      "description_en": "summon a shadow of yourself that mimics your skills and fights by your side"
+    },
+    {
+      "id": "mind-blast",
+      "name_en": "Mind Blast",
+      "name_ko": "마인드 블라스트",
+      "tree": {
+        "page": 2,
+        "name_en": "Shadow Disciplines",
+        "name_ko": "쉐도우 디서플린"
+      },
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "icon_cel": 34,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 15,
+      "mana_per_level": 0,
+      "element": "stun",
+      "prerequisites": [
+        {
+          "id": "cloak-of-shadows",
+          "name_en": "Cloak of Shadows",
+          "name_ko": "클럭 오브 쉐도우"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "psychic-hammer",
+          "name_en": "Psychic Hammer",
+          "name_ko": "싸이킥 해머"
+        }
+      ],
+      "description_ko": "정신의 힘으로 집단의 적을 기절시키고 정신력을 떨어뜨림",
+      "description_en": "using the power of your mind stun a group of enemies and convert the feeble-minded"
+    },
+    {
+      "id": "venom",
+      "name_en": "Venom",
+      "name_ko": "베넘",
+      "tree": {
+        "page": 2,
+        "name_en": "Shadow Disciplines",
+        "name_ko": "쉐도우 디서플린"
+      },
+      "position": {
+        "row": 6,
+        "col": 1
+      },
+      "icon_cel": 28,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 12,
+      "mana_per_level": 0,
+      "element": "pois",
+      "prerequisites": [
+        {
+          "id": "fade",
+          "name_en": "Fade",
+          "name_ko": "페이드"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "무기에 포이즌 데미지 부여",
+      "description_en": "add poison damage to your weapons"
+    },
+    {
+      "id": "shadow-master",
+      "name_en": "Shadow Master",
+      "name_ko": "쉐도우 마스터",
+      "tree": {
+        "page": 2,
+        "name_en": "Shadow Disciplines",
+        "name_ko": "쉐도우 디서플린"
+      },
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "icon_cel": 32,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 70,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "shadow-warrior",
+          "name_en": "Shadow Warrior",
+          "name_ko": "쉐도우 워리어"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "강력한 자신의 쉐도우를 소환하여 같이 싸우게함",
+      "description_en": "summon a powerful shadow of yourself to fight by your side"
+    },
+    {
+      "id": "tiger-strike",
+      "name_en": "Tiger Strike",
+      "name_ko": "타이거 스트라이크",
+      "tree": {
+        "page": 3,
+        "name_en": "Martial Arts",
+        "name_ko": "마샬 아트"
+      },
+      "position": {
+        "row": 1,
+        "col": 2
+      },
+      "icon_cel": 40,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 1,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "차지-업 스킬 데미지 보너스가 증가된 피니싱 무브로 연속공격 차지를 방출하여 드레곤 피니싱 무브나 일반공격을 함",
+      "description_en": "Charge-up Skill consecutive hits add damage bonuses to finishing moves must use a dragon finishing move or normal attack to release charges"
+    },
+    {
+      "id": "dragon-talon",
+      "name_en": "Dragon Talon",
+      "name_ko": "드래곤 탈런",
+      "tree": {
+        "page": 3,
+        "name_en": "Martial Arts",
+        "name_ko": "마샬 아트"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 42,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 6,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "피니싱 무브 적을 걷어차서 날려버림 차지드-업 보너스 추가",
+      "description_en": "Finishing Move kick your enemies out of your way adds charged-up bonuses to the kick"
+    },
+    {
+      "id": "fists-of-fire",
+      "name_en": "Fists of Fire",
+      "name_ko": "피스트 오브 파이어",
+      "tree": {
+        "page": 3,
+        "name_en": "Martial Arts",
+        "name_ko": "마샬 아트"
+      },
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "icon_cel": 44,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 2,
+      "mana_per_level": 0,
+      "element": "fire",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "phoenix-strike",
+          "name_en": "Phoenix Strike",
+          "name_ko": "피닉스 스트라이크"
+        }
+      ],
+      "description_ko": "차지-업 스킬 파이어 데미지가 추가된 피니싱 무브로 연속공격 (클러계열 무기사용시) 차지를 방출하여 드레곤 피니싱 무브나 일반공격을 함",
+      "description_en": "Charge-up Skill consecutive hits add fire damage to finishing moves can only be used with claw-class weapons must use a dragon finishing move or normal attack to release charges"
+    },
+    {
+      "id": "dragon-claw",
+      "name_en": "Dragon Claw",
+      "name_ko": "드래곤 클러",
+      "tree": {
+        "page": 3,
+        "name_en": "Martial Arts",
+        "name_ko": "마샬 아트"
+      },
+      "position": {
+        "row": 2,
+        "col": 3
+      },
+      "icon_cel": 46,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 2,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "dragon-talon",
+          "name_en": "Dragon Talon",
+          "name_ko": "드래곤 탈런"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "claw-mastery",
+          "name_en": "Claw Mastery",
+          "name_ko": "클러 마스터리"
+        }
+      ],
+      "description_ko": "피니싱 무브 듀얼 클러 무기로 적을 조각냄 (양손에 클러계열 무기 장착시) 차지드-업 보너스 추가",
+      "description_en": "Finishing Move slice and dice your enemies with your dual claw-class weapons adds charged-up bonuses to both claw attacks"
+    },
+    {
+      "id": "cobra-strike",
+      "name_en": "Cobra Strike",
+      "name_ko": "코브라 스트라이크",
+      "tree": {
+        "page": 3,
+        "name_en": "Martial Arts",
+        "name_ko": "마샬 아트"
+      },
+      "position": {
+        "row": 3,
+        "col": 2
+      },
+      "icon_cel": 50,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 2,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "tiger-strike",
+          "name_en": "Tiger Strike",
+          "name_ko": "타이거 스트라이크"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "차지-업 스킬 라이프와 마나스틸이 추가된 피니싱 무브로 연속공격 차지를 방출하여 드레곤 피니싱 무브나 일반공격을 함",
+      "description_en": "Charge-up Skill consecutive hits add life and mana stealing to finishing moves must use a dragon finishing move or normal attack to release charges"
+    },
+    {
+      "id": "claws-of-thunder",
+      "name_en": "Claws of Thunder",
+      "name_ko": "클러 오브 선더",
+      "tree": {
+        "page": 3,
+        "name_en": "Martial Arts",
+        "name_ko": "마샬 아트"
+      },
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "icon_cel": 58,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 4,
+      "mana_per_level": 0,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "fists-of-fire",
+          "name_en": "Fists of Fire",
+          "name_ko": "피스트 오브 파이어"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "phoenix-strike",
+          "name_en": "Phoenix Strike",
+          "name_ko": "피닉스 스트라이크"
+        }
+      ],
+      "description_ko": "차지-업 스킬 라이트닝 데미지가 추가된 피니싱 무브로 연속공격 (클러계열 무기사용시) 차지를 방출하여 드레곤 피니싱 무브나 일반공격을 함",
+      "description_en": "Charge-up Skill consecutive hits add lightning damage to finishing moves can only be used with claw-class weapons must use a dragon finishing move or normal attack to release charges"
+    },
+    {
+      "id": "dragon-tail",
+      "name_en": "Dragon Tail",
+      "name_ko": "드래곤 테일",
+      "tree": {
+        "page": 3,
+        "name_en": "Martial Arts",
+        "name_ko": "마샬 아트"
+      },
+      "position": {
+        "row": 4,
+        "col": 3
+      },
+      "icon_cel": 48,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 10,
+      "mana_per_level": 0,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "dragon-claw",
+          "name_en": "Dragon Claw",
+          "name_ko": "드래곤 클러"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "피니싱 무브 폭발적인 되받아차기로 공격 차지드-업 보너스 추가",
+      "description_en": "Finishing Move knock back your enemies with an explosive kick adds charged-up bonuses to the kick"
+    },
+    {
+      "id": "blades-of-ice",
+      "name_en": "Blades of Ice",
+      "name_ko": "블레이드 오브 아이스",
+      "tree": {
+        "page": 3,
+        "name_en": "Martial Arts",
+        "name_ko": "마샬 아트"
+      },
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "icon_cel": 52,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 3,
+      "mana_per_level": 0,
+      "element": "cold",
+      "prerequisites": [
+        {
+          "id": "claws-of-thunder",
+          "name_en": "Claws of Thunder",
+          "name_ko": "클러 오브 선더"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "phoenix-strike",
+          "name_en": "Phoenix Strike",
+          "name_ko": "피닉스 스트라이크"
+        }
+      ],
+      "description_ko": "차지-업 스킬 콜드 데미지가 추가된 피니싱 무브로 연속공격 (클러계열 무기사용시) 차지를 방출하여 드레곤 피니싱 무브나 일반공격을 함",
+      "description_en": "Charge-up Skill consecutive hits add cold damage to finishing moves can only be used with claw-class weapons must use a dragon finishing move or normal attack to release charges"
+    },
+    {
+      "id": "dragon-flight",
+      "name_en": "Dragon Flight",
+      "name_ko": "드래곤 플라이트",
+      "tree": {
+        "page": 3,
+        "name_en": "Martial Arts",
+        "name_ko": "마샬 아트"
+      },
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "icon_cel": 54,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 15,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "dragon-tail",
+          "name_en": "Dragon Tail",
+          "name_ko": "드래곤 테일"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "피니싱 무브 적에게 순간이동하여 폭발킥을 사용함 차지드-업 보너스 추가",
+      "description_en": "Finishing Move teleport to your enemies and destroy them with a kick adds charged-up bonuses to the kick"
+    },
+    {
+      "id": "phoenix-strike",
+      "name_en": "Phoenix Strike",
+      "name_ko": "피닉스 스트라이크",
+      "tree": {
+        "page": 3,
+        "name_en": "Martial Arts",
+        "name_ko": "마샬 아트"
+      },
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "icon_cel": 56,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 4,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "cobra-strike",
+          "name_en": "Cobra Strike",
+          "name_ko": "코브라 스트라이크"
+        },
+        {
+          "id": "blades-of-ice",
+          "name_en": "Blades of Ice",
+          "name_ko": "블레이드 오브 아이스"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "차지-업 스킬 엘리먼틀 노바가 추가된 피니싱 무브로 공격 차지를 방출하여 드레곤 피니싱 무브나 일반공격을 함",
+      "description_en": "Charge-up Skill adds elemental novas to finishing moves must use a dragon finishing move or normal attack to release charges"
+    }
+  ]
+}

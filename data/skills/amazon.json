@@ -1,0 +1,1082 @@
+{
+  "class": "amazon",
+  "class_name_en": "Amazon",
+  "class_name_ko": "아마존",
+  "skill_count": 30,
+  "skills": [
+    {
+      "id": "magic-arrow",
+      "name_en": "Magic Arrow",
+      "name_ko": "매직 애로우",
+      "tree": {
+        "page": 1,
+        "name_en": "Bow and Crossbow",
+        "name_ko": "보우 & 크로스보우 스킬"
+      },
+      "position": {
+        "row": 1,
+        "col": 2
+      },
+      "icon_cel": 0,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 12,
+      "mana_per_level": -1,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "추가적인 데미지를 입히는 마법화살을 만듬",
+      "description_en": "creates a magical arrow or bolt that does extra damage"
+    },
+    {
+      "id": "fire-arrow",
+      "name_en": "Fire Arrow",
+      "name_ko": "파이어 애로우",
+      "tree": {
+        "page": 1,
+        "name_en": "Bow and Crossbow",
+        "name_ko": "보우 & 크로스보우 스킬"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 2,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 24,
+      "mana_per_level": 0,
+      "element": "fire",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "exploding-arrow",
+          "name_en": "Exploding Arrow",
+          "name_ko": "익스플로딩 애로우"
+        }
+      ],
+      "description_ko": "적중시 화살에 파이어 데미지 추가",
+      "description_en": "magically enhances your arrows or bolts with fire"
+    },
+    {
+      "id": "cold-arrow",
+      "name_en": "Cold Arrow",
+      "name_ko": "콜드 애로우",
+      "tree": {
+        "page": 1,
+        "name_en": "Bow and Crossbow",
+        "name_ko": "보우 & 크로스보우 스킬"
+      },
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "icon_cel": 10,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 28,
+      "mana_per_level": 1,
+      "element": "cold",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "ice-arrow",
+          "name_en": "Ice Arrow",
+          "name_ko": "아이스 애로우"
+        }
+      ],
+      "description_ko": "화살의 데미지를 1/2 정도 낮추는 대신 콜드 데미지를 주고 몬스터의 움직임을 둔화시킴 항상 명중",
+      "description_en": "magically enhances your arrows or bolts by adding cold damage and a slowing effect cold arrows only do half of their regular damage"
+    },
+    {
+      "id": "multiple-shot",
+      "name_en": "Multiple Shot",
+      "name_ko": "멀티플 샷",
+      "tree": {
+        "page": 1,
+        "name_en": "Bow and Crossbow",
+        "name_ko": "보우 & 크로스보우 스킬"
+      },
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "icon_cel": 12,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 4,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "magic-arrow",
+          "name_en": "Magic Arrow",
+          "name_ko": "매직 애로우"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "guided-arrow",
+          "name_en": "Guided Arrow",
+          "name_ko": "가이드 애로우"
+        }
+      ],
+      "description_ko": "마법으로 하나의 화살을 여러 개로 나누어 공격",
+      "description_en": "magically splits one arrow or bolt into many"
+    },
+    {
+      "id": "exploding-arrow",
+      "name_en": "Exploding Arrow",
+      "name_ko": "익스플로딩 애로우",
+      "tree": {
+        "page": 1,
+        "name_en": "Bow and Crossbow",
+        "name_ko": "보우 & 크로스보우 스킬"
+      },
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "icon_cel": 20,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 20,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "fire-arrow",
+          "name_en": "Fire Arrow",
+          "name_ko": "파이어 애로우"
+        },
+        {
+          "id": "multiple-shot",
+          "name_en": "Multiple Shot",
+          "name_ko": "멀티플 샷"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "fire-arrow",
+          "name_en": "Fire Arrow",
+          "name_ko": "파이어 애로우"
+        }
+      ],
+      "description_ko": "적중 했을 때 폭발하여 주변 적에게 데미지를 줌",
+      "description_en": "enchants an arrow or bolt that explodes on contact, damaging all nearby enemies"
+    },
+    {
+      "id": "ice-arrow",
+      "name_en": "Ice Arrow",
+      "name_ko": "아이스 애로우",
+      "tree": {
+        "page": 1,
+        "name_en": "Bow and Crossbow",
+        "name_ko": "보우 & 크로스보우 스킬"
+      },
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "icon_cel": 30,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 16,
+      "mana_per_level": 1,
+      "element": "cold",
+      "prerequisites": [
+        {
+          "id": "cold-arrow",
+          "name_en": "Cold Arrow",
+          "name_ko": "콜드 애로우"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "cold-arrow",
+          "name_en": "Cold Arrow",
+          "name_ko": "콜드 애로우"
+        },
+        {
+          "id": "freezing-arrow",
+          "name_en": "Freezing Arrow",
+          "name_ko": "프리징 애로우"
+        }
+      ],
+      "description_ko": "적중시 콜드 데미지를 주고 몬스터를 결빙시켜 움직임을 둔화시킴 항상명중",
+      "description_en": "magically enhances your arrow or bolt to freeze your enemies"
+    },
+    {
+      "id": "guided-arrow",
+      "name_en": "Guided Arrow",
+      "name_ko": "가이드 애로우",
+      "tree": {
+        "page": 1,
+        "name_en": "Bow and Crossbow",
+        "name_ko": "보우 & 크로스보우 스킬"
+      },
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "icon_cel": 32,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 32,
+      "mana_per_level": -1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "cold-arrow",
+          "name_en": "Cold Arrow",
+          "name_ko": "콜드 애로우"
+        },
+        {
+          "id": "multiple-shot",
+          "name_en": "Multiple Shot",
+          "name_ko": "멀티플 샷"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "multiple-shot",
+          "name_en": "Multiple Shot",
+          "name_ko": "멀티플 샷"
+        }
+      ],
+      "description_ko": "목표물을 추적할 수 있도록 화살에 마법을 부여함 항상명중",
+      "description_en": "enhances your arrows and bolts to track your target or seek one of its own always hits"
+    },
+    {
+      "id": "strafe",
+      "name_en": "Strafe",
+      "name_ko": "스트레이프",
+      "tree": {
+        "page": 1,
+        "name_en": "Bow and Crossbow",
+        "name_ko": "보우 & 크로스보우 스킬"
+      },
+      "position": {
+        "row": 5,
+        "col": 2
+      },
+      "icon_cel": 40,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 11,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "guided-arrow",
+          "name_en": "Guided Arrow",
+          "name_ko": "가이드 애로우"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "guided-arrow",
+          "name_en": "Guided Arrow",
+          "name_ko": "가이드 애로우"
+        },
+        {
+          "id": "multiple-shot",
+          "name_en": "Multiple Shot",
+          "name_ko": "멀티플 샷"
+        }
+      ],
+      "description_ko": "주변에 있는 다수의 적을 향하여 하나의 화살을 나누어 공격함",
+      "description_en": "magically splits one arrow into several that target multiple nearby enemies"
+    },
+    {
+      "id": "immolation-arrow",
+      "name_en": "Immolation Arrow",
+      "name_ko": "이몰레이션 애로우",
+      "tree": {
+        "page": 1,
+        "name_en": "Bow and Crossbow",
+        "name_ko": "보우 & 크로스보우 스킬"
+      },
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "icon_cel": 42,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 24,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "exploding-arrow",
+          "name_en": "Exploding Arrow",
+          "name_ko": "익스플로딩 애로우"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "exploding-arrow",
+          "name_en": "Exploding Arrow",
+          "name_ko": "익스플로딩 애로우"
+        }
+      ],
+      "description_ko": "적중시 불기둥을 형성하여 다수의 적에게 파이어 데미지를 줌",
+      "description_en": "enhances arrows or bolts to cause severe fire damage and creates a pyre upon impact"
+    },
+    {
+      "id": "freezing-arrow",
+      "name_en": "Freezing Arrow",
+      "name_ko": "프리징 애로우",
+      "tree": {
+        "page": 1,
+        "name_en": "Bow and Crossbow",
+        "name_ko": "보우 & 크로스보우 스킬"
+      },
+      "position": {
+        "row": 6,
+        "col": 1
+      },
+      "icon_cel": 50,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 36,
+      "mana_per_level": 1,
+      "element": "cold",
+      "prerequisites": [
+        {
+          "id": "ice-arrow",
+          "name_en": "Ice Arrow",
+          "name_ko": "아이스 애로우"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "cold-arrow",
+          "name_en": "Cold Arrow",
+          "name_ko": "콜드 애로우"
+        },
+        {
+          "id": "ice-arrow",
+          "name_en": "Ice Arrow",
+          "name_ko": "아이스 애로우"
+        }
+      ],
+      "description_ko": "적중시 다수의 적에게 콜드 데미지를 주고 결빙시켜 움직이지 못하게 함 항상명중",
+      "description_en": "magically enhances an arrow or bolt to freeze entire groups of monsters"
+    },
+    {
+      "id": "inner-sight",
+      "name_en": "Inner Sight",
+      "name_ko": "이너 사이트",
+      "tree": {
+        "page": 2,
+        "name_en": "Passive and Magic",
+        "name_ko": "패시브 & 마법 스킬"
+      },
+      "position": {
+        "row": 1,
+        "col": 1
+      },
+      "icon_cel": 4,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 10,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "파티 구성원들이 공격하기 쉽도록 범위 안의 몬스터를 비추고, 방어력을 약화시킴",
+      "description_en": "illuminates nearby enemies making them easier to hit for you and your party"
+    },
+    {
+      "id": "critical-strike",
+      "name_en": "Critical Strike",
+      "name_ko": "크리티컬 스트라이크",
+      "tree": {
+        "page": 2,
+        "name_en": "Passive and Magic",
+        "name_ko": "패시브 & 마법 스킬"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 6,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 2배의 기본 데미지로 공격 확률을 높임",
+      "description_en": "passive - your attacks have a chance to do double damage"
+    },
+    {
+      "id": "dodge",
+      "name_en": "Dodge",
+      "name_ko": "닷지",
+      "tree": {
+        "page": 2,
+        "name_en": "Passive and Magic",
+        "name_ko": "패시브 & 마법 스킬"
+      },
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "icon_cel": 14,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 서 있는 상태에서 근접 공격시 피할 수 있는 확률을 증가시킴",
+      "description_en": "passive - you have a chance to dodge a melee attack when attacking or standing still"
+    },
+    {
+      "id": "slow-missiles",
+      "name_en": "Slow Missiles",
+      "name_ko": "슬로우 미사일",
+      "tree": {
+        "page": 2,
+        "name_en": "Passive and Magic",
+        "name_ko": "패시브 & 마법 스킬"
+      },
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "icon_cel": 22,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 10,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "inner-sight",
+          "name_en": "Inner Sight",
+          "name_ko": "이너 사이트"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "근처의 몬스터를 비추고 그들의 원거리 공격속도를 둔화시킴",
+      "description_en": "illuminates nearby enemies and slows their ranged attacks"
+    },
+    {
+      "id": "avoid",
+      "name_en": "Avoid",
+      "name_ko": "어보이드",
+      "tree": {
+        "page": 2,
+        "name_en": "Passive and Magic",
+        "name_ko": "패시브 & 마법 스킬"
+      },
+      "position": {
+        "row": 3,
+        "col": 2
+      },
+      "icon_cel": 24,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "dodge",
+          "name_en": "Dodge",
+          "name_ko": "닷지"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "패시브 - 서 있는 상태에서 몬스터의 원거리 공격을 피할수 있는 확률을 증가시킴",
+      "description_en": "passive - you have a chance to dodge enemy missiles when attacking or standing still"
+    },
+    {
+      "id": "penetrate",
+      "name_en": "Penetrate",
+      "name_ko": "페니트레이트",
+      "tree": {
+        "page": 2,
+        "name_en": "Passive and Magic",
+        "name_ko": "패시브 & 마법 스킬"
+      },
+      "position": {
+        "row": 4,
+        "col": 3
+      },
+      "icon_cel": 34,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "critical-strike",
+          "name_en": "Critical Strike",
+          "name_ko": "크리티컬 스트라이크"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "패시브 - 공격등급 향상 시킴",
+      "description_en": "passive - increases your attack rating"
+    },
+    {
+      "id": "decoy",
+      "name_en": "Decoy",
+      "name_ko": "디코이",
+      "tree": {
+        "page": 2,
+        "name_en": "Passive and Magic",
+        "name_ko": "패시브 & 마법 스킬"
+      },
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "icon_cel": 44,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 76,
+      "mana_per_level": -3,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "slow-missiles",
+          "name_en": "Slow Missiles",
+          "name_ko": "슬로우 미사일"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "적의 공격을 유도하는 자신의 허상을 만듬",
+      "description_en": "creates a duplicate of yourself that draws fire from enemies"
+    },
+    {
+      "id": "evade",
+      "name_en": "Evade",
+      "name_ko": "이베이드",
+      "tree": {
+        "page": 2,
+        "name_en": "Passive and Magic",
+        "name_ko": "패시브 & 마법 스킬"
+      },
+      "position": {
+        "row": 5,
+        "col": 2
+      },
+      "icon_cel": 46,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "avoid",
+          "name_en": "Avoid",
+          "name_ko": "어보이드"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "패시브 - 이동중에 적의 근거리나 원거리 공격을 회피할 확률을 높임",
+      "description_en": "passive - you have a chance to dodge a melee or missile attack when walking or running"
+    },
+    {
+      "id": "valkyrie",
+      "name_en": "Valkyrie",
+      "name_ko": "발키리",
+      "tree": {
+        "page": 2,
+        "name_en": "Passive and Magic",
+        "name_ko": "패시브 & 마법 스킬"
+      },
+      "position": {
+        "row": 6,
+        "col": 1
+      },
+      "icon_cel": 52,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 25,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "decoy",
+          "name_en": "Decoy",
+          "name_ko": "디코이"
+        },
+        {
+          "id": "evade",
+          "name_en": "Evade",
+          "name_ko": "이베이드"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "decoy",
+          "name_en": "Decoy",
+          "name_ko": "디코이"
+        },
+        {
+          "id": "dodge",
+          "name_en": "Dodge",
+          "name_ko": "닷지"
+        },
+        {
+          "id": "avoid",
+          "name_en": "Avoid",
+          "name_ko": "어보이드"
+        },
+        {
+          "id": "evade",
+          "name_en": "Evade",
+          "name_ko": "이베이드"
+        },
+        {
+          "id": "critical-strike",
+          "name_en": "Critical Strike",
+          "name_ko": "크리티컬 스트라이크"
+        },
+        {
+          "id": "penetrate",
+          "name_en": "Penetrate",
+          "name_ko": "페니트레이트"
+        }
+      ],
+      "description_ko": "발키리를 소환하여 함께 적과 싸움",
+      "description_en": "summons a powerful Valkyrie ally"
+    },
+    {
+      "id": "pierce",
+      "name_en": "Pierce",
+      "name_ko": "피어스",
+      "tree": {
+        "page": 2,
+        "name_en": "Passive and Magic",
+        "name_ko": "패시브 & 마법 스킬"
+      },
+      "position": {
+        "row": 6,
+        "col": 3
+      },
+      "icon_cel": 54,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "penetrate",
+          "name_en": "Penetrate",
+          "name_ko": "페니트레이트"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "패시브 - 원거리 공격시 적을 관통하여 다수의 적에게 데미지를 줌",
+      "description_en": "passive - your missiles have a chance to pass through enemies that they hit"
+    },
+    {
+      "id": "jab",
+      "name_en": "Jab",
+      "name_ko": "잽",
+      "tree": {
+        "page": 3,
+        "name_en": "Javelin and Spear",
+        "name_ko": "재벌린 & 스피어 스킬"
+      },
+      "position": {
+        "row": 1,
+        "col": 1
+      },
+      "icon_cel": 8,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 8,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "재벌린이나 스피어 종류 무기를 이용한 신속한 공격",
+      "description_en": "attacks with a series of rapid thrusts using a javelin or spear class weapon"
+    },
+    {
+      "id": "power-strike",
+      "name_en": "Power Strike",
+      "name_ko": "파워 스트라이크",
+      "tree": {
+        "page": 3,
+        "name_en": "Javelin and Spear",
+        "name_ko": "재벌린 & 스피어 스킬"
+      },
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "icon_cel": 16,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 8,
+      "mana_per_level": 1,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "jab",
+          "name_en": "Jab",
+          "name_ko": "잽"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "lightning-strike",
+          "name_en": "Lightning Strike",
+          "name_ko": "라이트닝 스트라이크"
+        },
+        {
+          "id": "lightning-bolt",
+          "name_en": "Lightning Bolt",
+          "name_ko": "라이트닝 볼트"
+        },
+        {
+          "id": "charged-strike",
+          "name_en": "Charged Strike",
+          "name_ko": "차지드 스트라이크"
+        }
+      ],
+      "description_ko": "재벌린과 스피어 종류의 무기에 라이트닝 데미지 추가",
+      "description_en": "adds lightning damage to attacks with javelin and spear class weapons"
+    },
+    {
+      "id": "poison-javelin",
+      "name_en": "Poison Javelin",
+      "name_ko": "포이즌 재벌린",
+      "tree": {
+        "page": 3,
+        "name_en": "Javelin and Spear",
+        "name_ko": "재벌린 & 스피어 스킬"
+      },
+      "position": {
+        "row": 2,
+        "col": 3
+      },
+      "icon_cel": 18,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 16,
+      "mana_per_level": 1,
+      "element": "pois",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "plague-javelin",
+          "name_en": "Plague Javelin",
+          "name_ko": "플레이그 재벌린"
+        }
+      ],
+      "description_ko": "던지는 방향을 따라 포이즌 구름이 형성되고 재벌린에 포이즌 데미지를 추가함",
+      "description_en": "magically enhances your javelin to leave a trail of poison clouds"
+    },
+    {
+      "id": "impale",
+      "name_en": "Impale",
+      "name_ko": "임페일",
+      "tree": {
+        "page": 3,
+        "name_en": "Javelin and Spear",
+        "name_ko": "재벌린 & 스피어 스킬"
+      },
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "icon_cel": 26,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 3,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "jab",
+          "name_en": "Jab",
+          "name_ko": "잽"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "데미지는 증가하나 무기의 내구력을 급속히 약화 시킴",
+      "description_en": "increases attack damage but rapidly degrades the weapon"
+    },
+    {
+      "id": "lightning-bolt",
+      "name_en": "Lightning Bolt",
+      "name_ko": "라이트닝 볼트",
+      "tree": {
+        "page": 3,
+        "name_en": "Javelin and Spear",
+        "name_ko": "재벌린 & 스피어 스킬"
+      },
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "icon_cel": 28,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 24,
+      "mana_per_level": 1,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "poison-javelin",
+          "name_en": "Poison Javelin",
+          "name_ko": "포이즌 재벌린"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "lightning-strike",
+          "name_en": "Lightning Strike",
+          "name_ko": "라이트닝 스트라이크"
+        },
+        {
+          "id": "power-strike",
+          "name_en": "Power Strike",
+          "name_ko": "파워 스트라이크"
+        },
+        {
+          "id": "charged-strike",
+          "name_en": "Charged Strike",
+          "name_ko": "차지드 스트라이크"
+        },
+        {
+          "id": "lightning-fury",
+          "name_en": "Lightning Fury",
+          "name_ko": "라이트닝 퓨리"
+        }
+      ],
+      "description_ko": "재벌린을 라이트닝으로 전환하여 던짐",
+      "description_en": "magically converts your javelin into a bolt of lightning"
+    },
+    {
+      "id": "charged-strike",
+      "name_en": "Charged Strike",
+      "name_ko": "차지드 스트라이크",
+      "tree": {
+        "page": 3,
+        "name_en": "Javelin and Spear",
+        "name_ko": "재벌린 & 스피어 스킬"
+      },
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "icon_cel": 36,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 16,
+      "mana_per_level": 1,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "power-strike",
+          "name_en": "Power Strike",
+          "name_ko": "파워 스트라이크"
+        },
+        {
+          "id": "lightning-bolt",
+          "name_en": "Lightning Bolt",
+          "name_ko": "라이트닝 볼트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "lightning-strike",
+          "name_en": "Lightning Strike",
+          "name_ko": "라이트닝 스트라이크"
+        },
+        {
+          "id": "lightning-bolt",
+          "name_en": "Lightning Bolt",
+          "name_ko": "라이트닝 볼트"
+        },
+        {
+          "id": "power-strike",
+          "name_en": "Power Strike",
+          "name_ko": "파워 스트라이크"
+        }
+      ],
+      "description_ko": "재벌린과 스피어 종류 무기에 라이트닝 계열(차지드 볼트) 데미지 추가",
+      "description_en": "adds lightning damage to javelin and spear class weapons and releases charged bolts upon impact"
+    },
+    {
+      "id": "plague-javelin",
+      "name_en": "Plague Javelin",
+      "name_ko": "플레이그 재벌린",
+      "tree": {
+        "page": 3,
+        "name_en": "Javelin and Spear",
+        "name_ko": "재벌린 & 스피어 스킬"
+      },
+      "position": {
+        "row": 4,
+        "col": 3
+      },
+      "icon_cel": 38,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 14,
+      "mana_per_level": 1,
+      "element": "pois",
+      "prerequisites": [
+        {
+          "id": "lightning-bolt",
+          "name_en": "Lightning Bolt",
+          "name_ko": "라이트닝 볼트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "poison-javelin",
+          "name_en": "Poison Javelin",
+          "name_ko": "포이즌 재벌린"
+        }
+      ],
+      "description_ko": "적중시 독구름(포이즌)을 형성하여 주변 다수의 적에게 포이즌 데미지를 줌",
+      "description_en": "magically enhances your javelin to release expanding clouds of poison upon impact"
+    },
+    {
+      "id": "fend",
+      "name_en": "Fend",
+      "name_ko": "펜드",
+      "tree": {
+        "page": 3,
+        "name_en": "Javelin and Spear",
+        "name_ko": "재벌린 & 스피어 스킬"
+      },
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "icon_cel": 48,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 5,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "impale",
+          "name_en": "Impale",
+          "name_ko": "임페일"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "근접전에서 주변의 모든 적을 공격",
+      "description_en": "attacks all adjacent targets"
+    },
+    {
+      "id": "lightning-strike",
+      "name_en": "Lightning Strike",
+      "name_ko": "라이트닝 스트라이크",
+      "tree": {
+        "page": 3,
+        "name_en": "Javelin and Spear",
+        "name_ko": "재벌린 & 스피어 스킬"
+      },
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "icon_cel": 56,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 9,
+      "mana_per_level": 0,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "charged-strike",
+          "name_en": "Charged Strike",
+          "name_ko": "차지드 스트라이크"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "charged-strike",
+          "name_en": "Charged Strike",
+          "name_ko": "차지드 스트라이크"
+        },
+        {
+          "id": "lightning-bolt",
+          "name_en": "Lightning Bolt",
+          "name_ko": "라이트닝 볼트"
+        },
+        {
+          "id": "power-strike",
+          "name_en": "Power Strike",
+          "name_ko": "파워 스트라이크"
+        }
+      ],
+      "description_ko": "재벌린과 스피어류의 무기에 강력한 라이트닝 데미지를 추가하고, 근접전의 적에게 라이트닝이 연쇄적으로 퍼져나감",
+      "description_en": "adds lightning damage to javelin and spear class weapons and releases chain lightning upon impact"
+    },
+    {
+      "id": "lightning-fury",
+      "name_en": "Lightning Fury",
+      "name_ko": "라이트닝 퓨리",
+      "tree": {
+        "page": 3,
+        "name_en": "Javelin and Spear",
+        "name_ko": "재벌린 & 스피어 스킬"
+      },
+      "position": {
+        "row": 6,
+        "col": 3
+      },
+      "icon_cel": 58,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 20,
+      "mana_per_level": 1,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "plague-javelin",
+          "name_en": "Plague Javelin",
+          "name_ko": "플레이그 재벌린"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "charged-strike",
+          "name_en": "Charged Strike",
+          "name_ko": "차지드 스트라이크"
+        },
+        {
+          "id": "lightning-bolt",
+          "name_en": "Lightning Bolt",
+          "name_ko": "라이트닝 볼트"
+        },
+        {
+          "id": "power-strike",
+          "name_en": "Power Strike",
+          "name_ko": "파워 스트라이크"
+        },
+        {
+          "id": "lightning-strike",
+          "name_en": "Lightning Strike",
+          "name_ko": "라이트닝 스트라이크"
+        }
+      ],
+      "description_ko": "재벌린에 강력한 라이트닝 데미지를 가하고, 원거리 적에게 라이트닝이 연쇄적으로 퍼저나감",
+      "description_en": "changes a thrown javelin into a powerful bolt of lightning that splits on impact"
+    }
+  ]
+}

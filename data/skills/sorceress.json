@@ -1,0 +1,1129 @@
+{
+  "class": "sorceress",
+  "class_name_en": "Sorceress",
+  "class_name_ko": "소서리스",
+  "skill_count": 30,
+  "skills": [
+    {
+      "id": "fire-bolt",
+      "name_en": "Fire Bolt",
+      "name_ko": "파이어 볼트",
+      "tree": {
+        "page": 1,
+        "name_en": "Fire Spells",
+        "name_ko": "파이어 스펠"
+      },
+      "position": {
+        "row": 1,
+        "col": 2
+      },
+      "icon_cel": 0,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 5,
+      "mana_per_level": 0,
+      "element": "fire",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "fire-ball",
+          "name_en": "Fire Ball",
+          "name_ko": "파이어 볼"
+        },
+        {
+          "id": "meteor",
+          "name_en": "Meteor",
+          "name_ko": "메테오"
+        }
+      ],
+      "description_ko": "마법으로 파이어 불트를 생성하여 적에게 파이어 데미지를 줌",
+      "description_en": "creates a magical flaming missile"
+    },
+    {
+      "id": "warmth",
+      "name_en": "Warmth",
+      "name_ko": "웜쓰",
+      "tree": {
+        "page": 1,
+        "name_en": "Fire Spells",
+        "name_ko": "파이어 스펠"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 2,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": "fire",
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 마나 회복속도 증가",
+      "description_en": "passive - increases the rate at which you recover mana"
+    },
+    {
+      "id": "inferno",
+      "name_en": "Inferno",
+      "name_ko": "인페르노",
+      "tree": {
+        "page": 1,
+        "name_en": "Fire Spells",
+        "name_ko": "파이어 스펠"
+      },
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "icon_cel": 10,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 24,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "warmth",
+          "name_en": "Warmth",
+          "name_ko": "웜쓰"
+        }
+      ],
+      "description_ko": "마법으로 파이어를 지속적으로 분사하여 적에게 파이어 데미지를 줌",
+      "description_en": "creates a continuous jet of flame to scorch your enemies"
+    },
+    {
+      "id": "blaze",
+      "name_en": "Blaze",
+      "name_ko": "블레이즈",
+      "tree": {
+        "page": 1,
+        "name_en": "Fire Spells",
+        "name_ko": "파이어 스펠"
+      },
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "icon_cel": 20,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 22,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "inferno",
+          "name_en": "Inferno",
+          "name_ko": "인페르노"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "warmth",
+          "name_en": "Warmth",
+          "name_ko": "웜쓰"
+        }
+      ],
+      "description_ko": "마법으로 걷거나 뛸 때 그 길을 따라 불의 장벽을 생성하여 다수의 적에게 파이어 데미지를 줌",
+      "description_en": "creates a wall of fire in your wake to scorch your enemies"
+    },
+    {
+      "id": "fire-ball",
+      "name_en": "Fire Ball",
+      "name_ko": "파이어 볼",
+      "tree": {
+        "page": 1,
+        "name_en": "Fire Spells",
+        "name_ko": "파이어 스펠"
+      },
+      "position": {
+        "row": 3,
+        "col": 2
+      },
+      "icon_cel": 22,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 10,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "fire-bolt",
+          "name_en": "Fire Bolt",
+          "name_ko": "파이어 볼트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "fire-bolt",
+          "name_en": "Fire Bolt",
+          "name_ko": "파이어 볼트"
+        },
+        {
+          "id": "meteor",
+          "name_en": "Meteor",
+          "name_ko": "메테오"
+        }
+      ],
+      "description_ko": "마법으로 파이어 볼을 생성하며 적중시 폭발로 인하여 다수의 적에게 파이어 데미지를 줌",
+      "description_en": "creates an explosive sphere of fiery death to engulf your enemies"
+    },
+    {
+      "id": "fire-wall",
+      "name_en": "Fire Wall",
+      "name_ko": "파이어 월",
+      "tree": {
+        "page": 1,
+        "name_en": "Fire Spells",
+        "name_ko": "파이어 스펠"
+      },
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "icon_cel": 30,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 22,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "blaze",
+          "name_en": "Blaze",
+          "name_ko": "블레이즈"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "warmth",
+          "name_en": "Warmth",
+          "name_ko": "웜쓰"
+        },
+        {
+          "id": "inferno",
+          "name_en": "Inferno",
+          "name_ko": "인페르노"
+        }
+      ],
+      "description_ko": "마법으로 파이어 장벽을 만들어 다수의 적에게 파이어 데미지를 줌",
+      "description_en": "creates a wall of flame that blocks or burns your enemies"
+    },
+    {
+      "id": "enchant",
+      "name_en": "Enchant",
+      "name_ko": "인첸트",
+      "tree": {
+        "page": 1,
+        "name_en": "Fire Spells",
+        "name_ko": "파이어 스펠"
+      },
+      "position": {
+        "row": 4,
+        "col": 3
+      },
+      "icon_cel": 32,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 25,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "warmth",
+          "name_en": "Warmth",
+          "name_ko": "웜쓰"
+        },
+        {
+          "id": "fire-ball",
+          "name_en": "Fire Ball",
+          "name_ko": "파이어 볼"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "warmth",
+          "name_en": "Warmth",
+          "name_ko": "웜쓰"
+        }
+      ],
+      "description_ko": "마법으로 무기에 파이어 데미지를 추가하여 근거리 공격시 적에게 파이어 데미지를 주고 원거리 공격시에는 1/3 파이어 데미지를 추가함",
+      "description_en": "enchants equipped weapon of targeted character or minion adds fire damage to melee weapons adds one-third fire damage to ranged weapons"
+    },
+    {
+      "id": "meteor",
+      "name_en": "Meteor",
+      "name_ko": "메테오",
+      "tree": {
+        "page": 1,
+        "name_en": "Fire Spells",
+        "name_ko": "파이어 스펠"
+      },
+      "position": {
+        "row": 5,
+        "col": 2
+      },
+      "icon_cel": 40,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 34,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "fire-ball",
+          "name_en": "Fire Ball",
+          "name_ko": "파이어 볼"
+        },
+        {
+          "id": "fire-wall",
+          "name_en": "Fire Wall",
+          "name_ko": "파이어 월"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "fire-bolt",
+          "name_en": "Fire Bolt",
+          "name_ko": "파이어 볼트"
+        },
+        {
+          "id": "fire-ball",
+          "name_en": "Fire Ball",
+          "name_ko": "파이어 볼"
+        }
+      ],
+      "description_ko": "마법으로 유성을 소환하여 다수의 적에게 강력한 파이어 데미지를 줌",
+      "description_en": "summons a meteor from the heavens to crush and incinerate your enemies"
+    },
+    {
+      "id": "fire-mastery",
+      "name_en": "Fire Mastery",
+      "name_ko": "파이어 마스터리",
+      "tree": {
+        "page": 1,
+        "name_en": "Fire Spells",
+        "name_ko": "파이어 스펠"
+      },
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "icon_cel": 50,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": "fire",
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 모든 파이어 스킬 계열의 데미지 증가",
+      "description_en": "passive - increases all damage caused by your fire spells"
+    },
+    {
+      "id": "hydra",
+      "name_en": "Hydra",
+      "name_ko": "하이드라",
+      "tree": {
+        "page": 1,
+        "name_en": "Fire Spells",
+        "name_ko": "파이어 스펠"
+      },
+      "position": {
+        "row": 6,
+        "col": 3
+      },
+      "icon_cel": 52,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 40,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "enchant",
+          "name_en": "Enchant",
+          "name_ko": "인첸트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "fire-bolt",
+          "name_en": "Fire Bolt",
+          "name_ko": "파이어 볼트"
+        },
+        {
+          "id": "fire-ball",
+          "name_en": "Fire Ball",
+          "name_ko": "파이어 볼"
+        }
+      ],
+      "description_ko": "파이어 볼트를 쏘는 하이드라를 소환하여 적들에게 파이어 데미지를 줌",
+      "description_en": "summons a multi-headed beast of flame to reduce your enemies to ashes"
+    },
+    {
+      "id": "charged-bolt",
+      "name_en": "Charged Bolt",
+      "name_ko": "차지드 볼트",
+      "tree": {
+        "page": 2,
+        "name_en": "Lightning Spells",
+        "name_ko": "라이트닝 스펠"
+      },
+      "position": {
+        "row": 1,
+        "col": 2
+      },
+      "icon_cel": 4,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 24,
+      "mana_per_level": 4,
+      "element": "ltng",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "lightning",
+          "name_en": "Lightning",
+          "name_ko": "라이트닝"
+        }
+      ],
+      "description_ko": "마법에 의한 여러 개의 라이트닝 파장으로 다수의 적에게 라이트닝 데미지를 줌",
+      "description_en": "creates multiple, randomly directed bolts of electrical energy"
+    },
+    {
+      "id": "static-field",
+      "name_en": "Static Field",
+      "name_ko": "스태틱 필드",
+      "tree": {
+        "page": 2,
+        "name_en": "Lightning Spells",
+        "name_ko": "라이트닝 스펠"
+      },
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "icon_cel": 12,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 9,
+      "mana_per_level": 0,
+      "element": "ltng",
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "전기 파장을 형성하여 가까운 적에게 데미지를 줌",
+      "description_en": "creates an electrical field that reduces life of all nearby enemies"
+    },
+    {
+      "id": "telekinesis",
+      "name_en": "Telekinesis",
+      "name_ko": "텔레키네시스",
+      "tree": {
+        "page": 2,
+        "name_en": "Lightning Spells",
+        "name_ko": "라이트닝 스펠"
+      },
+      "position": {
+        "row": 2,
+        "col": 3
+      },
+      "icon_cel": 14,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 7,
+      "mana_per_level": 0,
+      "element": "ltng",
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "염력으로 아이템을 줍거나, 사용하며 적에게 마법 데미지를 줌",
+      "description_en": "uses the power of your mind to pick up items, use objects, and knock back enemies"
+    },
+    {
+      "id": "nova",
+      "name_en": "Nova",
+      "name_ko": "노바",
+      "tree": {
+        "page": 2,
+        "name_en": "Lightning Spells",
+        "name_ko": "라이트닝 스펠"
+      },
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "icon_cel": 24,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 13,
+      "mana_per_level": 1,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "static-field",
+          "name_en": "Static Field",
+          "name_ko": "스태틱 필드"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "static-field",
+          "name_en": "Static Field",
+          "name_ko": "스태틱 필드"
+        }
+      ],
+      "description_ko": "마법으로 원형 라이트닝을 생성하여 다수의 적에게 라이트닝 데미지를 줌",
+      "description_en": "creates an expanding ring of lightning to shock nearby enemies"
+    },
+    {
+      "id": "lightning",
+      "name_en": "Lightning",
+      "name_ko": "라이트닝",
+      "tree": {
+        "page": 2,
+        "name_en": "Lightning Spells",
+        "name_ko": "라이트닝 스펠"
+      },
+      "position": {
+        "row": 3,
+        "col": 2
+      },
+      "icon_cel": 26,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 16,
+      "mana_per_level": 1,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "charged-bolt",
+          "name_en": "Charged Bolt",
+          "name_ko": "차지드 볼트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "charged-bolt",
+          "name_en": "Charged Bolt",
+          "name_ko": "차지드 볼트"
+        },
+        {
+          "id": "chain-lightning",
+          "name_en": "Chain Lightning",
+          "name_ko": "체인 라이트닝"
+        },
+        {
+          "id": "nova",
+          "name_en": "Nova",
+          "name_ko": "노바"
+        }
+      ],
+      "description_ko": "마법으로 라이트닝 줄기를 생성하여 다수의 적에게 라이트닝 데미지를 줌",
+      "description_en": "creates a powerful lightning bolt to lay waste to your enemies"
+    },
+    {
+      "id": "chain-lightning",
+      "name_en": "Chain Lightning",
+      "name_ko": "체인 라이트닝",
+      "tree": {
+        "page": 2,
+        "name_en": "Lightning Spells",
+        "name_ko": "라이트닝 스펠"
+      },
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "icon_cel": 34,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 9,
+      "mana_per_level": 1,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "lightning",
+          "name_en": "Lightning",
+          "name_ko": "라이트닝"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "charged-bolt",
+          "name_en": "Charged Bolt",
+          "name_ko": "차지드 볼트"
+        },
+        {
+          "id": "lightning",
+          "name_en": "Lightning",
+          "name_ko": "라이트닝"
+        },
+        {
+          "id": "nova",
+          "name_en": "Nova",
+          "name_ko": "노바"
+        }
+      ],
+      "description_ko": "마법으로 라이트닝 줄기를 생성하여 적중시 주변에 있는 적에게 연쇄적으로 라이트닝 데미지를 줌",
+      "description_en": "creates a bolt of lightning that arcs through several targets"
+    },
+    {
+      "id": "teleport",
+      "name_en": "Teleport",
+      "name_ko": "텔레포트",
+      "tree": {
+        "page": 2,
+        "name_en": "Lightning Spells",
+        "name_ko": "라이트닝 스펠"
+      },
+      "position": {
+        "row": 4,
+        "col": 3
+      },
+      "icon_cel": 36,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 24,
+      "mana_per_level": -1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "telekinesis",
+          "name_en": "Telekinesis",
+          "name_ko": "텔레키네시스"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "시야 내의 원하는 지역으로 이동",
+      "description_en": "instantly moves to a destination within your line of sight"
+    },
+    {
+      "id": "thunder-storm",
+      "name_en": "Thunder Storm",
+      "name_ko": "썬더 스톰",
+      "tree": {
+        "page": 2,
+        "name_en": "Lightning Spells",
+        "name_ko": "라이트닝 스펠"
+      },
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "icon_cel": 42,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 19,
+      "mana_per_level": 0,
+      "element": "ltng",
+      "prerequisites": [
+        {
+          "id": "nova",
+          "name_en": "Nova",
+          "name_ko": "노바"
+        },
+        {
+          "id": "chain-lightning",
+          "name_en": "Chain Lightning",
+          "name_ko": "체인 라이트닝"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "static-field",
+          "name_en": "Static Field",
+          "name_ko": "스태틱 필드"
+        }
+      ],
+      "description_ko": "마법으로 주변의 적에게 벼락이 하늘에서 떨어져 치명적인 라이트닝 데미지를 줌",
+      "description_en": "summons a deadly thunderstorm that strikes your enemies with bolts of lightning"
+    },
+    {
+      "id": "energy-shield",
+      "name_en": "Energy Shield",
+      "name_ko": "에너지 쉴드",
+      "tree": {
+        "page": 2,
+        "name_en": "Lightning Spells",
+        "name_ko": "라이트닝 스펠"
+      },
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "icon_cel": 44,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 5,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "teleport",
+          "name_en": "Teleport",
+          "name_ko": "텔레포트"
+        },
+        {
+          "id": "chain-lightning",
+          "name_en": "Chain Lightning",
+          "name_ko": "체인 라이트닝"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "telekinesis",
+          "name_en": "Telekinesis",
+          "name_ko": "텔레키네시스"
+        }
+      ],
+      "description_ko": "적에게 받는 데미지를 마나로 흡수하여 라이프 소모량을 감소 시킴",
+      "description_en": "creates a magical shield that consumes mana instead of health when you take damage"
+    },
+    {
+      "id": "lightning-mastery",
+      "name_en": "Lightning Mastery",
+      "name_ko": "라이트닝 마스터리",
+      "tree": {
+        "page": 2,
+        "name_en": "Lightning Spells",
+        "name_ko": "라이트닝 스펠"
+      },
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "icon_cel": 54,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 라이트닝계열 마법데미지 증가",
+      "description_en": "passive - increases all damage caused by your lightning spells"
+    },
+    {
+      "id": "ice-bolt",
+      "name_en": "Ice Bolt",
+      "name_ko": "아이스 볼트",
+      "tree": {
+        "page": 3,
+        "name_en": "Cold Spells",
+        "name_ko": "콜드 스펠"
+      },
+      "position": {
+        "row": 1,
+        "col": 2
+      },
+      "icon_cel": 6,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 3,
+      "mana_per_level": 0,
+      "element": "cold",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "frost-nova",
+          "name_en": "Frost Nova",
+          "name_ko": "프로스트 노바"
+        },
+        {
+          "id": "ice-blast",
+          "name_en": "Ice Blast",
+          "name_ko": "아이스 블래스트"
+        },
+        {
+          "id": "glacial-spike",
+          "name_en": "Glacial Spike",
+          "name_ko": "글래셜 스파이크"
+        },
+        {
+          "id": "blizzard",
+          "name_en": "Blizzard",
+          "name_ko": "블리자드"
+        },
+        {
+          "id": "frozen-orb",
+          "name_en": "Frozen Orb",
+          "name_ko": "프로즌 오브"
+        }
+      ],
+      "description_ko": "마법으로 콜트계열의 볼트를 만들어 적에게 콜드 데미지를 주고 움직임을 둔화 시킴",
+      "description_en": "creates a magical bolt of ice that damages and slows your enemies"
+    },
+    {
+      "id": "frozen-armor",
+      "name_en": "Frozen Armor",
+      "name_ko": "프로즌 아머",
+      "tree": {
+        "page": 3,
+        "name_en": "Cold Spells",
+        "name_ko": "콜드 스펠"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 8,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 7,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "shiver-armor",
+          "name_en": "Shiver Armor",
+          "name_ko": "쉬버 아머"
+        },
+        {
+          "id": "chilling-armor",
+          "name_en": "Chilling Armor",
+          "name_ko": "칠링 아머"
+        }
+      ],
+      "description_ko": "마법으로 방어율을 향상 시키고, 공격하는 적에게 콜드 데미지를 주어 움직임을 둔화 시킴",
+      "description_en": "increases your defense rating and freezes enemies that hit you"
+    },
+    {
+      "id": "frost-nova",
+      "name_en": "Frost Nova",
+      "name_ko": "프로스트 노바",
+      "tree": {
+        "page": 3,
+        "name_en": "Cold Spells",
+        "name_ko": "콜드 스펠"
+      },
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "icon_cel": 16,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 9,
+      "mana_per_level": 1,
+      "element": "cold",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "blizzard",
+          "name_en": "Blizzard",
+          "name_ko": "블리자드"
+        },
+        {
+          "id": "frozen-orb",
+          "name_en": "Frozen Orb",
+          "name_ko": "프로즌 오브"
+        }
+      ],
+      "description_ko": "마법으로 원형 아이스를 생성하여 다수의 적에게 콜드 데미지를 주고, 움직임을 둔화 시킴",
+      "description_en": "creates an expanding ring of ice that damages and slows all nearby enemies"
+    },
+    {
+      "id": "ice-blast",
+      "name_en": "Ice Blast",
+      "name_ko": "아이스 블래스트",
+      "tree": {
+        "page": 3,
+        "name_en": "Cold Spells",
+        "name_ko": "콜드 스펠"
+      },
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "icon_cel": 18,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 12,
+      "mana_per_level": 1,
+      "element": "cold",
+      "prerequisites": [
+        {
+          "id": "ice-bolt",
+          "name_en": "Ice Bolt",
+          "name_ko": "아이스 볼트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "ice-bolt",
+          "name_en": "Ice Bolt",
+          "name_ko": "아이스 볼트"
+        },
+        {
+          "id": "blizzard",
+          "name_en": "Blizzard",
+          "name_ko": "블리자드"
+        },
+        {
+          "id": "frozen-orb",
+          "name_en": "Frozen Orb",
+          "name_ko": "프로즌 오브"
+        },
+        {
+          "id": "glacial-spike",
+          "name_en": "Glacial Spike",
+          "name_ko": "글래셜 스파이크"
+        }
+      ],
+      "description_ko": "마법으로 강한 아이스 볼트를 생성하여 적에게 콜드 데미지를 주고, 결빙시켜 움직이지 못하게 함",
+      "description_en": "creates a magical sphere of ice that damages and freezes your enemy"
+    },
+    {
+      "id": "shiver-armor",
+      "name_en": "Shiver Armor",
+      "name_ko": "쉬버 아머",
+      "tree": {
+        "page": 3,
+        "name_en": "Cold Spells",
+        "name_ko": "콜드 스펠"
+      },
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "icon_cel": 28,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 11,
+      "mana_per_level": 0,
+      "element": "cold",
+      "prerequisites": [
+        {
+          "id": "ice-blast",
+          "name_en": "Ice Blast",
+          "name_ko": "아이스 블래스트"
+        },
+        {
+          "id": "frozen-armor",
+          "name_en": "Frozen Armor",
+          "name_ko": "프로즌 아머"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "frozen-armor",
+          "name_en": "Frozen Armor",
+          "name_ko": "프로즌 아머"
+        },
+        {
+          "id": "chilling-armor",
+          "name_en": "Chilling Armor",
+          "name_ko": "칠링 아머"
+        }
+      ],
+      "description_ko": "마법으로 방어율을 향상 시키고, 공격하는 적에게 콜드 데미지를 주어 움직이지 못하게 함",
+      "description_en": "increases your defense rating freezes and damages enemies that hit you"
+    },
+    {
+      "id": "glacial-spike",
+      "name_en": "Glacial Spike",
+      "name_ko": "글래셜 스파이크",
+      "tree": {
+        "page": 3,
+        "name_en": "Cold Spells",
+        "name_ko": "콜드 스펠"
+      },
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "icon_cel": 38,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 20,
+      "mana_per_level": 1,
+      "element": "cold",
+      "prerequisites": [
+        {
+          "id": "ice-blast",
+          "name_en": "Ice Blast",
+          "name_ko": "아이스 블래스트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "blizzard",
+          "name_en": "Blizzard",
+          "name_ko": "블리자드"
+        },
+        {
+          "id": "ice-bolt",
+          "name_en": "Ice Bolt",
+          "name_ko": "아이스 볼트"
+        },
+        {
+          "id": "ice-blast",
+          "name_en": "Ice Blast",
+          "name_ko": "아이스 블래스트"
+        },
+        {
+          "id": "frozen-orb",
+          "name_en": "Frozen Orb",
+          "name_ko": "프로즌 오브"
+        }
+      ],
+      "description_ko": "마법으로 강력한 아이스 볼트를 생성하여 다수의 적에게 콜드 데미지를 주고, 결빙시켜 움직이지 못하게 함",
+      "description_en": "creates a magical ice comet that freezes or kills nearby enemies"
+    },
+    {
+      "id": "blizzard",
+      "name_en": "Blizzard",
+      "name_ko": "블리자드",
+      "tree": {
+        "page": 3,
+        "name_en": "Cold Spells",
+        "name_ko": "콜드 스펠"
+      },
+      "position": {
+        "row": 5,
+        "col": 1
+      },
+      "icon_cel": 46,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 23,
+      "mana_per_level": 1,
+      "element": "cold",
+      "prerequisites": [
+        {
+          "id": "frost-nova",
+          "name_en": "Frost Nova",
+          "name_ko": "프로스트 노바"
+        },
+        {
+          "id": "glacial-spike",
+          "name_en": "Glacial Spike",
+          "name_ko": "글래셜 스파이크"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "ice-bolt",
+          "name_en": "Ice Bolt",
+          "name_ko": "아이스 볼트"
+        },
+        {
+          "id": "ice-blast",
+          "name_en": "Ice Blast",
+          "name_ko": "아이스 블래스트"
+        },
+        {
+          "id": "glacial-spike",
+          "name_en": "Glacial Spike",
+          "name_ko": "글래셜 스파이크"
+        }
+      ],
+      "description_ko": "방대한 지역에 얼음 폭풍을 소환하여 다수의 적에게 콜드 데미지를 주고, 움직임을 둔화시킴",
+      "description_en": "summons massive shards of ice to destroy your enemies"
+    },
+    {
+      "id": "chilling-armor",
+      "name_en": "Chilling Armor",
+      "name_ko": "칠링 아머",
+      "tree": {
+        "page": 3,
+        "name_en": "Cold Spells",
+        "name_ko": "콜드 스펠"
+      },
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "icon_cel": 48,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 17,
+      "mana_per_level": 0,
+      "element": "cold",
+      "prerequisites": [
+        {
+          "id": "shiver-armor",
+          "name_en": "Shiver Armor",
+          "name_ko": "쉬버 아머"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "frozen-armor",
+          "name_en": "Frozen Armor",
+          "name_ko": "프로즌 아머"
+        },
+        {
+          "id": "shiver-armor",
+          "name_en": "Shiver Armor",
+          "name_ko": "쉬버 아머"
+        }
+      ],
+      "description_ko": "방어력을 향상 시키고, 원거리 공격을 하는 적에게 아이스 볼트를 되돌려 줌",
+      "description_en": "increases defense and discharges an ice bolt in retaliation against ranged attackers"
+    },
+    {
+      "id": "frozen-orb",
+      "name_en": "Frozen Orb",
+      "name_ko": "프로즌 오브",
+      "tree": {
+        "page": 3,
+        "name_en": "Cold Spells",
+        "name_ko": "콜드 스펠"
+      },
+      "position": {
+        "row": 6,
+        "col": 1
+      },
+      "icon_cel": 56,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 50,
+      "mana_per_level": 1,
+      "element": "cold",
+      "prerequisites": [
+        {
+          "id": "blizzard",
+          "name_en": "Blizzard",
+          "name_ko": "블리자드"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "ice-bolt",
+          "name_en": "Ice Bolt",
+          "name_ko": "아이스 볼트"
+        }
+      ],
+      "description_ko": "구형으로 발사되는 강한 아이스 볼트를 사방에 퍼뜨려 적에게 콜드 데미지를 주고, 움직임을 둔화시킴",
+      "description_en": "creates a magical globe that sprays a torrent of ice bolts to lay waste to your enemies"
+    },
+    {
+      "id": "cold-mastery",
+      "name_en": "Cold Mastery",
+      "name_ko": "콜드 마스터리",
+      "tree": {
+        "page": 3,
+        "name_en": "Cold Spells",
+        "name_ko": "콜드 스펠"
+      },
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "icon_cel": 58,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "패시브 - 모든 콜드계열 스킬사용시 상대의 저항력 감소효과",
+      "description_en": "passive - increases the damage of your cold attacks by piercing enemies' resistances to cold"
+    }
+  ]
+}
