@@ -198,6 +198,11 @@ details.cat summary .cnt{color:var(--faint); font-size:.78rem; font-weight:400}
 .recipe-row .cond{color:var(--faint); font-size:.74rem; margin-top:.2rem}
 .toggle{display:flex; align-items:center; gap:.4rem; color:var(--muted); font-size:.82rem; margin:.3rem 0 .6rem}
 .toggle input{accent-color:var(--gold)}
+.lv-bar{display:flex; flex-wrap:wrap; align-items:center; gap:.5rem .8rem; margin:.3rem 0 .5rem}
+.lv-label{font-size:.9rem; color:var(--muted)} .lv-label b{color:var(--gold); font-size:1.05rem}
+.lv-bar input[type=range]{flex:1 1 10rem; accent-color:var(--gold); min-width:8rem}
+.lv-quick{display:flex; gap:.3rem} .lv-quick .chip{padding:.2rem .55rem; font-size:.8rem}
+.lv-quick .chip.on{color:var(--text); border-color:var(--gold-dim); background:var(--raised)}
 .aff-note{color:var(--muted); font-size:.85rem; background:var(--surface-2); border-radius:10px; padding:.6rem .8rem; margin:.4rem 0 1rem}
 .foot{color:var(--faint); font-size:.72rem; text-align:center; margin-top:2.5rem; line-height:1.7}
 .foot a{color:var(--muted)}
@@ -248,6 +253,18 @@ $back.addEventListener("click", () => {
 });
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+// 게임 문자열 포맷(%d, %+d, %s, %%) 적용
+const fmtNum = v => (typeof v === "number") ? (Number.isInteger(v) ? String(v) : v.toFixed(1)) : String(v);
+function sprintf(fmt, args){
+  let i = 0;
+  return fmt.replace(/%(\+?)(d|s|%)/g, (m, plus, t) => {
+    if(t === "%") return "%";
+    const v = args[i++]; if(v === undefined) return "";
+    let txt = fmtNum(v);
+    if(t === "d" && plus && !txt.startsWith("-")) txt = "+" + txt;
+    return txt;
+  });
+}
 // 스킬 아이콘: 클래스별 6×5 스프라이트 시트에서 배열 인덱스로 위치 계산
 function iconHtml(cls, id){
   const i = DATA[cls] ? DATA[cls].skills.findIndex(s => s.id===id) : -1;
@@ -432,13 +449,51 @@ function renderSkill(cls,id){
     <div class="badges">${badges}</div>
     <div class="desc"><p class="ko">${esc(s.description_ko)}</p>${s.description_en?`<span class="en">${esc(s.description_en)}</span>`:""}</div>
     ${s.description_long_ko && s.description_long_ko!==s.description_ko ? `<div class="desc"><p class="ko">${esc(s.description_long_ko)}</p></div>`:""}
+    ${tooltipHtml(s)}
     ${sec("선행 스킬", s.prerequisites)}
-    ${sec("시너지", s.synergies, "이 스킬들에 투자하면 효과가 강해집니다 (게임 수식 기준)")}
+    ${s.tooltip && s.tooltip.synergies.length ? `<div class="d-sec"><h2>시너지</h2>
+      <ul class="props">${s.tooltip.synergies.map((t,i)=>`<li${i===0?' class="base-stat" style="color:var(--gold)"':""}>${esc(t)}</li>`).join("")}</ul>
+      ${s.synergies.length?`<ul class="chips" style="margin-top:.5rem">${s.synergies.map(chip).join("")}</ul>`:""}
+      <p class="hint">시너지 스킬에 투자한 레벨 × 위 퍼센트만큼 추가됩니다 (하드 포인트 기준)</p></div>`
+      : sec("시너지", s.synergies, "이 스킬들에 투자하면 효과가 강해집니다 (게임 수식 기준)")}
     ${sec("이 스킬이 필요한 스킬", dependents.map(x=>({id:x.id,name_ko:x.name_ko})))}
     <div class="d-sec"><h2>Tree</h2>
       <ul class="chips"><li><button class="chip plain" data-go="c-${cls}">${esc(d.class_name_ko)} · ${esc(s.tree.name_ko)} 트리 보기</button></li></ul>
     </div>
   </div>`;
+  bindTooltip(s);
+}
+
+// 레벨별 수치 블록 (슬라이더 + 인게임 툴팁 문구)
+function tooltipHtml(s){
+  const t = s.tooltip;
+  if(!t || (!t.per_level.length && !t.static.length)) return "";
+  const lv = s._lv || 1;
+  const lines = t.per_level.map(l => `<li data-fmt="${esc(l.fmt)}">${esc(sprintf(l.fmt, l.v[lv-1]))}</li>`).join("");
+  const stat = t.static.map(x => `<li class="base-stat">${esc(x)}</li>`).join("");
+  return `<div class="d-sec" id="tipBox">
+    <h2>레벨별 수치</h2>
+    <div class="lv-bar">
+      <span class="lv-label">레벨 <b id="lvNum">${lv}</b></span>
+      <input type="range" id="lvSlider" min="1" max="20" value="${lv}" aria-label="스킬 레벨">
+      <div class="lv-quick">${[1,5,10,15,20].map(n=>`<button class="chip plain${n===lv?" on":""}" data-lv="${n}">${n}</button>`).join("")}</div>
+    </div>
+    <ul class="props" id="tipLines">${lines}${stat}</ul>
+    <p class="hint">스킬 레벨만 반영한 기본 수치 (시너지·숙련·장비 보너스 제외). 게임 툴팁과 같은 수식으로 계산.</p>
+  </div>`;
+}
+function bindTooltip(s){
+  const slider = document.getElementById("lvSlider"); if(!slider) return;
+  const apply = lv => {
+    s._lv = lv; slider.value = lv;
+    document.getElementById("lvNum").textContent = lv;
+    const t = s.tooltip;
+    const lis = document.querySelectorAll("#tipLines li[data-fmt]");
+    t.per_level.forEach((l, i) => { if(lis[i]) lis[i].textContent = sprintf(l.fmt, l.v[lv-1]); });
+    document.querySelectorAll("#tipBox .lv-quick .chip").forEach(b => b.classList.toggle("on", +b.dataset.lv===lv));
+  };
+  slider.addEventListener("input", () => apply(+slider.value));
+  document.querySelectorAll("#tipBox .lv-quick [data-lv]").forEach(b => b.addEventListener("click", () => apply(+b.dataset.lv)));
 }
 
 /* ── 유니크 아이템 ── */

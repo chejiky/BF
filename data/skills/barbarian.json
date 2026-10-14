@@ -39,7 +39,150 @@
         }
       ],
       "description_ko": "강력한 타격으로 적에게 주는 피해량이 증가하고 적을 뒤로 밀쳐냅니다.",
-      "description_en": "powerful blow that increases the damage done to enemies and knocks them back"
+      "description_en": "powerful blow that increases the damage done to enemies and knocks them back",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "공격력: %+d",
+            "v": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                3
+              ],
+              [
+                4
+              ],
+              [
+                5
+              ],
+              [
+                6
+              ],
+              [
+                7
+              ],
+              [
+                8
+              ],
+              [
+                9
+              ],
+              [
+                10
+              ],
+              [
+                11
+              ],
+              [
+                12
+              ],
+              [
+                13
+              ],
+              [
+                14
+              ],
+              [
+                15
+              ],
+              [
+                16
+              ],
+              [
+                17
+              ],
+              [
+                18
+              ],
+              [
+                19
+              ],
+              [
+                20
+              ]
+            ]
+          },
+          {
+            "fmt": "공격력: %+d%%",
+            "v": [
+              [
+                50
+              ],
+              [
+                55
+              ],
+              [
+                60
+              ],
+              [
+                65
+              ],
+              [
+                70
+              ],
+              [
+                75
+              ],
+              [
+                80
+              ],
+              [
+                85
+              ],
+              [
+                90
+              ],
+              [
+                95
+              ],
+              [
+                100
+              ],
+              [
+                105
+              ],
+              [
+                110
+              ],
+              [
+                115
+              ],
+              [
+                120
+              ],
+              [
+                125
+              ],
+              [
+                130
+              ],
+              [
+                135
+              ],
+              [
+                140
+              ],
+              [
+                145
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "명중률: +0%",
+          "마나 소모: 2"
+        ],
+        "synergies": [
+          "강격에 보너스 적용:",
+          "지각 강타: 레벨당 피해 +5%",
+          "대학살: 레벨당 명중률 +5%"
+        ]
+      }
     },
     {
       "id": "leap",
@@ -64,7 +207,145 @@
       "prerequisites": [],
       "synergies": [],
       "description_ko": "공중으로 도약한 후 착지하여 주위의 적을 뒤로 밀쳐냅니다.",
-      "description_en": "Jump into the air and knock back nearby enemies when you land"
+      "description_en": "Jump into the air and knock back nearby enemies when you land",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "밀쳐내기 반경: %d미터",
+            "v": [
+              [
+                2.67
+              ],
+              [
+                3.33
+              ],
+              [
+                4.0
+              ],
+              [
+                4.67
+              ],
+              [
+                5.33
+              ],
+              [
+                6.0
+              ],
+              [
+                6.67
+              ],
+              [
+                7.33
+              ],
+              [
+                8.0
+              ],
+              [
+                8.67
+              ],
+              [
+                9.33
+              ],
+              [
+                10.0
+              ],
+              [
+                10.67
+              ],
+              [
+                11.33
+              ],
+              [
+                12.0
+              ],
+              [
+                12.67
+              ],
+              [
+                13.33
+              ],
+              [
+                14.0
+              ],
+              [
+                14.67
+              ],
+              [
+                15.33
+              ]
+            ]
+          },
+          {
+            "fmt": "범위 반경: %d미터",
+            "v": [
+              [
+                7.33
+              ],
+              [
+                8.67
+              ],
+              [
+                10.0
+              ],
+              [
+                11.33
+              ],
+              [
+                12.67
+              ],
+              [
+                13.33
+              ],
+              [
+                13.33
+              ],
+              [
+                14.0
+              ],
+              [
+                14.67
+              ],
+              [
+                14.67
+              ],
+              [
+                15.33
+              ],
+              [
+                16.0
+              ],
+              [
+                16.0
+              ],
+              [
+                16.0
+              ],
+              [
+                16.67
+              ],
+              [
+                16.67
+              ],
+              [
+                16.67
+              ],
+              [
+                17.33
+              ],
+              [
+                17.33
+              ],
+              [
+                17.33
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "마나 소모: 2"
+        ],
+        "synergies": []
+      }
     },
     {
       "id": "double-swing",
@@ -101,7 +382,148 @@
         }
       ],
       "description_ko": "두 개의 무기를 장착하고 있을 때 가능하면 두 명의 대상을 공격하며 아니면 한 대상을 두 번 공격합니다.",
-      "description_en": "when two weapons are equipped attacks two targets if possible, or one target twice"
+      "description_en": "when two weapons are equipped attacks two targets if possible, or one target twice",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "마나 소모: %d",
+            "v": [
+              [
+                2.0
+              ],
+              [
+                1.75
+              ],
+              [
+                1.5
+              ],
+              [
+                1.25
+              ],
+              [
+                1.0
+              ],
+              [
+                0.75
+              ],
+              [
+                0.5
+              ],
+              [
+                0.25
+              ],
+              [
+                0.0
+              ],
+              [
+                0.0
+              ],
+              [
+                0.0
+              ],
+              [
+                0.0
+              ],
+              [
+                0.0
+              ],
+              [
+                0.0
+              ],
+              [
+                0.0
+              ],
+              [
+                0.0
+              ],
+              [
+                0.0
+              ],
+              [
+                0.0
+              ],
+              [
+                0.0
+              ],
+              [
+                0.0
+              ]
+            ]
+          },
+          {
+            "fmt": "명중률: %+d%%",
+            "v": [
+              [
+                15
+              ],
+              [
+                20
+              ],
+              [
+                25
+              ],
+              [
+                30
+              ],
+              [
+                35
+              ],
+              [
+                40
+              ],
+              [
+                45
+              ],
+              [
+                50
+              ],
+              [
+                55
+              ],
+              [
+                60
+              ],
+              [
+                65
+              ],
+              [
+                70
+              ],
+              [
+                75
+              ],
+              [
+                80
+              ],
+              [
+                85
+              ],
+              [
+                90
+              ],
+              [
+                95
+              ],
+              [
+                100
+              ],
+              [
+                105
+              ],
+              [
+                110
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "공격력: +0%"
+        ],
+        "synergies": [
+          "이중 타격에 보너스 적용:",
+          "강격: 레벨당 피해 +10%"
+        ]
+      }
     },
     {
       "id": "stun",
@@ -148,7 +570,87 @@
         }
       ],
       "description_ko": "대상을 강타하여 충격파를 발생시켜 땅을 갈라 원뿔 범위의 적들에게 피해를 줍니다 필요: 양손 지팡이, 검, 철퇴, 도끼 또는 미늘창",
-      "description_en": "slams your target and causes a shockwave that unearths the ground damaging enemies in a cone Requires: 2h Staves, Swords, Maces, Axes or Polearms"
+      "description_en": "slams your target and causes a shockwave that unearths the ground damaging enemies in a cone Requires: 2h Staves, Swords, Maces, Axes or Polearms",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "기절 지속시간: %d초",
+            "v": [
+              [
+                1.2
+              ],
+              [
+                1.4
+              ],
+              [
+                1.6
+              ],
+              [
+                1.8
+              ],
+              [
+                2.0
+              ],
+              [
+                2.2
+              ],
+              [
+                2.4
+              ],
+              [
+                2.6
+              ],
+              [
+                2.8
+              ],
+              [
+                3.0
+              ],
+              [
+                3.2
+              ],
+              [
+                3.4
+              ],
+              [
+                3.6
+              ],
+              [
+                3.8
+              ],
+              [
+                4.0
+              ],
+              [
+                4.2
+              ],
+              [
+                4.28
+              ],
+              [
+                4.36
+              ],
+              [
+                4.44
+              ],
+              [
+                4.52
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "명중률: +0%",
+          "마나 소모: 2",
+          "공격력: +0%"
+        ],
+        "synergies": [
+          "지각 강타에 보너스 적용:",
+          "강격: 레벨당 피해 +8%",
+          "대학살: 레벨당 명중률 +5%",
+          "전장의 함성: 레벨당 지속시간 +5%"
+        ]
+      }
     },
     {
       "id": "double-throw",
@@ -185,7 +687,148 @@
         }
       ],
       "description_ko": "서로 다른 투척 무기 두 개를 동시에 투척할 수 있습니다.",
-      "description_en": "allows you to throw two different throwing weapons at the same time"
+      "description_en": "allows you to throw two different throwing weapons at the same time",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "공격력: %+d%%",
+            "v": [
+              [
+                16
+              ],
+              [
+                24
+              ],
+              [
+                32
+              ],
+              [
+                40
+              ],
+              [
+                48
+              ],
+              [
+                56
+              ],
+              [
+                64
+              ],
+              [
+                72
+              ],
+              [
+                80
+              ],
+              [
+                88
+              ],
+              [
+                96
+              ],
+              [
+                104
+              ],
+              [
+                112
+              ],
+              [
+                120
+              ],
+              [
+                128
+              ],
+              [
+                136
+              ],
+              [
+                144
+              ],
+              [
+                152
+              ],
+              [
+                160
+              ],
+              [
+                168
+              ]
+            ]
+          },
+          {
+            "fmt": "명중률: %+d%%",
+            "v": [
+              [
+                20
+              ],
+              [
+                30
+              ],
+              [
+                40
+              ],
+              [
+                50
+              ],
+              [
+                60
+              ],
+              [
+                70
+              ],
+              [
+                80
+              ],
+              [
+                90
+              ],
+              [
+                100
+              ],
+              [
+                110
+              ],
+              [
+                120
+              ],
+              [
+                130
+              ],
+              [
+                140
+              ],
+              [
+                150
+              ],
+              [
+                160
+              ],
+              [
+                170
+              ],
+              [
+                180
+              ],
+              [
+                190
+              ],
+              [
+                200
+              ],
+              [
+                210
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "마나 소모: 2"
+        ],
+        "synergies": [
+          "이중 투척에 보너스 적용:",
+          "이중 타격: 레벨당 피해 +8%"
+        ]
+      }
     },
     {
       "id": "leap-attack",
@@ -222,7 +865,234 @@
         }
       ],
       "description_ko": "대상 적에게 도약 공격하여 주위 적들에게 피해를 줍니다.",
-      "description_en": "leaps to and attacks target enemy and damages surrounding enemies"
+      "description_en": "leaps to and attacks target enemy and damages surrounding enemies",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "공격력: %+d%%",
+            "v": [
+              [
+                200
+              ],
+              [
+                230
+              ],
+              [
+                260
+              ],
+              [
+                290
+              ],
+              [
+                320
+              ],
+              [
+                350
+              ],
+              [
+                380
+              ],
+              [
+                410
+              ],
+              [
+                440
+              ],
+              [
+                470
+              ],
+              [
+                500
+              ],
+              [
+                530
+              ],
+              [
+                560
+              ],
+              [
+                590
+              ],
+              [
+                620
+              ],
+              [
+                650
+              ],
+              [
+                680
+              ],
+              [
+                710
+              ],
+              [
+                740
+              ],
+              [
+                770
+              ]
+            ]
+          },
+          {
+            "fmt": "명중률: %+d%%",
+            "v": [
+              [
+                100
+              ],
+              [
+                120
+              ],
+              [
+                140
+              ],
+              [
+                160
+              ],
+              [
+                180
+              ],
+              [
+                200
+              ],
+              [
+                220
+              ],
+              [
+                240
+              ],
+              [
+                260
+              ],
+              [
+                280
+              ],
+              [
+                300
+              ],
+              [
+                320
+              ],
+              [
+                340
+              ],
+              [
+                360
+              ],
+              [
+                380
+              ],
+              [
+                400
+              ],
+              [
+                420
+              ],
+              [
+                440
+              ],
+              [
+                460
+              ],
+              [
+                480
+              ]
+            ]
+          },
+          {
+            "fmt": "공격력: %d-%d",
+            "v": [
+              [
+                10,
+                20
+              ],
+              [
+                14,
+                28
+              ],
+              [
+                18,
+                36
+              ],
+              [
+                22,
+                44
+              ],
+              [
+                26,
+                52
+              ],
+              [
+                30,
+                60
+              ],
+              [
+                34,
+                68
+              ],
+              [
+                38,
+                76
+              ],
+              [
+                46,
+                92
+              ],
+              [
+                54,
+                108
+              ],
+              [
+                62,
+                124
+              ],
+              [
+                70,
+                140
+              ],
+              [
+                78,
+                156
+              ],
+              [
+                86,
+                172
+              ],
+              [
+                94,
+                188
+              ],
+              [
+                102,
+                204
+              ],
+              [
+                114,
+                228
+              ],
+              [
+                126,
+                252
+              ],
+              [
+                138,
+                276
+              ],
+              [
+                150,
+                300
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "반경: 4.7미터",
+          "마나 소모: 10"
+        ],
+        "synergies": [
+          "도약 공격에 보너스 적용:",
+          "도약: 레벨당 피해 +10%"
+        ]
+      }
     },
     {
       "id": "concentrate",
@@ -269,7 +1139,216 @@
         }
       ],
       "description_ko": "살과 뼈를 찢는 야만적인 일격으로 피의 회오리를 일으켜 근처의 적을 추격합니다 범위는 기본 스킬 레벨에 따라 증가합니다",
-      "description_en": "Savage strike rending flesh and bone unleashing a whirlwind of carnage that seeks out nearby foes"
+      "description_en": "Savage strike rending flesh and bone unleashing a whirlwind of carnage that seeks out nearby foes",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "방어력: %+d%%",
+            "v": [
+              [
+                100
+              ],
+              [
+                110
+              ],
+              [
+                120
+              ],
+              [
+                130
+              ],
+              [
+                140
+              ],
+              [
+                150
+              ],
+              [
+                160
+              ],
+              [
+                170
+              ],
+              [
+                180
+              ],
+              [
+                190
+              ],
+              [
+                200
+              ],
+              [
+                210
+              ],
+              [
+                220
+              ],
+              [
+                230
+              ],
+              [
+                240
+              ],
+              [
+                250
+              ],
+              [
+                260
+              ],
+              [
+                270
+              ],
+              [
+                280
+              ],
+              [
+                290
+              ]
+            ]
+          },
+          {
+            "fmt": "공격력: %+d%%",
+            "v": [
+              [
+                70
+              ],
+              [
+                75
+              ],
+              [
+                80
+              ],
+              [
+                85
+              ],
+              [
+                90
+              ],
+              [
+                95
+              ],
+              [
+                100
+              ],
+              [
+                105
+              ],
+              [
+                110
+              ],
+              [
+                115
+              ],
+              [
+                120
+              ],
+              [
+                125
+              ],
+              [
+                130
+              ],
+              [
+                135
+              ],
+              [
+                140
+              ],
+              [
+                145
+              ],
+              [
+                150
+              ],
+              [
+                155
+              ],
+              [
+                160
+              ],
+              [
+                165
+              ]
+            ]
+          },
+          {
+            "fmt": "명중률: %+d%%",
+            "v": [
+              [
+                60
+              ],
+              [
+                70
+              ],
+              [
+                80
+              ],
+              [
+                90
+              ],
+              [
+                100
+              ],
+              [
+                110
+              ],
+              [
+                120
+              ],
+              [
+                130
+              ],
+              [
+                140
+              ],
+              [
+                150
+              ],
+              [
+                160
+              ],
+              [
+                170
+              ],
+              [
+                180
+              ],
+              [
+                190
+              ],
+              [
+                200
+              ],
+              [
+                210
+              ],
+              [
+                220
+              ],
+              [
+                230
+              ],
+              [
+                240
+              ],
+              [
+                250
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "마나 소모: 2",
+          "마법 피해: +0%"
+        ],
+        "synergies": [
+          "대학살에 보너스 적용:",
+          "강격: 레벨당 피해 +5%",
+          "전투 지시: 레벨당 피해 +10%",
+          "광폭화: 레벨당 마법 피해 +1%"
+        ]
+      }
     },
     {
       "id": "frenzy",
@@ -321,7 +1400,238 @@
         }
       ],
       "description_ko": "두 개의 무기를 한번에 휘두릅니다. 공격이 적중할 때마다 전체 속도가 증가합니다. 두 개의 무기를 장착해야 합니다.",
-      "description_en": "allows you to swing two weapons at once each successful attack increases your overall speed requires you to equip two weapons"
+      "description_en": "allows you to swing two weapons at once each successful attack increases your overall speed requires you to equip two weapons",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "공격 속도: 중첩당 %+d%%",
+            "v": [
+              [
+                7.5,
+                7
+              ],
+              [
+                7.5,
+                13
+              ],
+              [
+                7.5,
+                18
+              ],
+              [
+                7.5,
+                22
+              ],
+              [
+                7.5,
+                25
+              ],
+              [
+                7.5,
+                27
+              ],
+              [
+                7.5,
+                29
+              ],
+              [
+                7.5,
+                31
+              ],
+              [
+                7.5,
+                33
+              ],
+              [
+                7.5,
+                34
+              ],
+              [
+                7.5,
+                35
+              ],
+              [
+                7.5,
+                36
+              ],
+              [
+                7.5,
+                37
+              ],
+              [
+                7.5,
+                38
+              ],
+              [
+                7.5,
+                39
+              ],
+              [
+                7.5,
+                40
+              ],
+              [
+                7.5,
+                40
+              ],
+              [
+                7.5,
+                41
+              ],
+              [
+                7.5,
+                41
+              ],
+              [
+                7.5,
+                42
+              ]
+            ]
+          },
+          {
+            "fmt": "공격력: %+d%%",
+            "v": [
+              [
+                90
+              ],
+              [
+                95
+              ],
+              [
+                100
+              ],
+              [
+                105
+              ],
+              [
+                110
+              ],
+              [
+                115
+              ],
+              [
+                120
+              ],
+              [
+                125
+              ],
+              [
+                130
+              ],
+              [
+                135
+              ],
+              [
+                140
+              ],
+              [
+                145
+              ],
+              [
+                150
+              ],
+              [
+                155
+              ],
+              [
+                160
+              ],
+              [
+                165
+              ],
+              [
+                170
+              ],
+              [
+                175
+              ],
+              [
+                180
+              ],
+              [
+                185
+              ]
+            ]
+          },
+          {
+            "fmt": "명중률: %+d%%",
+            "v": [
+              [
+                100
+              ],
+              [
+                107
+              ],
+              [
+                114
+              ],
+              [
+                121
+              ],
+              [
+                128
+              ],
+              [
+                135
+              ],
+              [
+                142
+              ],
+              [
+                149
+              ],
+              [
+                156
+              ],
+              [
+                163
+              ],
+              [
+                170
+              ],
+              [
+                177
+              ],
+              [
+                184
+              ],
+              [
+                191
+              ],
+              [
+                198
+              ],
+              [
+                205
+              ],
+              [
+                212
+              ],
+              [
+                219
+              ],
+              [
+                226
+              ],
+              [
+                233
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "마나 소모: 3",
+          "지속시간: 6초",
+          "마법 피해: +0%"
+        ],
+        "synergies": [
+          "광분에 보너스 적용:",
+          "이중 타격: 레벨당 피해 +8%",
+          "도발: 레벨당 피해 +8%",
+          "심연의 균열: 레벨당 +0.4초",
+          "광폭화: 레벨당 마법 피해 +1%"
+        ]
+      }
     },
     {
       "id": "whirlwind",
@@ -357,7 +1667,208 @@
       ],
       "synergies": [],
       "description_ko": "소용돌이치는 죽음의 무도로 적 군단을 돌파합니다.",
-      "description_en": "a whirling dance of death that cuts a path through the legions of your enemies"
+      "description_en": "a whirling dance of death that cuts a path through the legions of your enemies",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "마나 소모: %d",
+            "v": [
+              [
+                12.5
+              ],
+              [
+                13.0
+              ],
+              [
+                13.5
+              ],
+              [
+                14.0
+              ],
+              [
+                14.5
+              ],
+              [
+                15.0
+              ],
+              [
+                15.5
+              ],
+              [
+                16.0
+              ],
+              [
+                16.5
+              ],
+              [
+                17.0
+              ],
+              [
+                17.5
+              ],
+              [
+                18.0
+              ],
+              [
+                18.5
+              ],
+              [
+                19.0
+              ],
+              [
+                19.5
+              ],
+              [
+                20.0
+              ],
+              [
+                20.5
+              ],
+              [
+                21.0
+              ],
+              [
+                21.5
+              ],
+              [
+                22.0
+              ]
+            ]
+          },
+          {
+            "fmt": "공격력: %+d%%",
+            "v": [
+              [
+                30
+              ],
+              [
+                35
+              ],
+              [
+                40
+              ],
+              [
+                45
+              ],
+              [
+                50
+              ],
+              [
+                55
+              ],
+              [
+                60
+              ],
+              [
+                65
+              ],
+              [
+                70
+              ],
+              [
+                75
+              ],
+              [
+                80
+              ],
+              [
+                85
+              ],
+              [
+                90
+              ],
+              [
+                95
+              ],
+              [
+                100
+              ],
+              [
+                105
+              ],
+              [
+                110
+              ],
+              [
+                115
+              ],
+              [
+                120
+              ],
+              [
+                125
+              ]
+            ]
+          },
+          {
+            "fmt": "명중률: %+d%%",
+            "v": [
+              [
+                50
+              ],
+              [
+                55
+              ],
+              [
+                60
+              ],
+              [
+                65
+              ],
+              [
+                70
+              ],
+              [
+                75
+              ],
+              [
+                80
+              ],
+              [
+                85
+              ],
+              [
+                90
+              ],
+              [
+                95
+              ],
+              [
+                100
+              ],
+              [
+                105
+              ],
+              [
+                110
+              ],
+              [
+                115
+              ],
+              [
+                120
+              ],
+              [
+                125
+              ],
+              [
+                130
+              ],
+              [
+                135
+              ],
+              [
+                140
+              ],
+              [
+                145
+              ]
+            ]
+          }
+        ],
+        "static": [],
+        "synergies": []
+      }
     },
     {
       "id": "berserk",
@@ -399,7 +1910,214 @@
         }
       ],
       "description_ko": "강력하지만 무모한 공격으로 공격력과 명중률이 증가하지만 방어력이 감소합니다.",
-      "description_en": "a powerful but reckless attack that increases damage and attack rating but decreases defense"
+      "description_en": "a powerful but reckless attack that increases damage and attack rating but decreases defense",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "지속시간: %d초",
+            "v": [
+              [
+                2.69
+              ],
+              [
+                2.45
+              ],
+              [
+                2.27
+              ],
+              [
+                2.12
+              ],
+              [
+                2.0
+              ],
+              [
+                1.9
+              ],
+              [
+                1.82
+              ],
+              [
+                1.74
+              ],
+              [
+                1.68
+              ],
+              [
+                1.62
+              ],
+              [
+                1.58
+              ],
+              [
+                1.53
+              ],
+              [
+                1.49
+              ],
+              [
+                1.46
+              ],
+              [
+                1.43
+              ],
+              [
+                1.4
+              ],
+              [
+                1.37
+              ],
+              [
+                1.35
+              ],
+              [
+                1.33
+              ],
+              [
+                1.31
+              ]
+            ]
+          },
+          {
+            "fmt": "마법 피해: %+d%%",
+            "v": [
+              [
+                150
+              ],
+              [
+                165
+              ],
+              [
+                180
+              ],
+              [
+                195
+              ],
+              [
+                210
+              ],
+              [
+                225
+              ],
+              [
+                240
+              ],
+              [
+                255
+              ],
+              [
+                270
+              ],
+              [
+                285
+              ],
+              [
+                300
+              ],
+              [
+                315
+              ],
+              [
+                330
+              ],
+              [
+                345
+              ],
+              [
+                360
+              ],
+              [
+                375
+              ],
+              [
+                390
+              ],
+              [
+                405
+              ],
+              [
+                420
+              ],
+              [
+                435
+              ]
+            ]
+          },
+          {
+            "fmt": "명중률: %+d%%",
+            "v": [
+              [
+                100
+              ],
+              [
+                115
+              ],
+              [
+                130
+              ],
+              [
+                145
+              ],
+              [
+                160
+              ],
+              [
+                175
+              ],
+              [
+                190
+              ],
+              [
+                205
+              ],
+              [
+                220
+              ],
+              [
+                235
+              ],
+              [
+                250
+              ],
+              [
+                265
+              ],
+              [
+                280
+              ],
+              [
+                295
+              ],
+              [
+                310
+              ],
+              [
+                325
+              ],
+              [
+                340
+              ],
+              [
+                355
+              ],
+              [
+                370
+              ],
+              [
+                385
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "마나 소모: 4"
+        ],
+        "synergies": [
+          "광폭화에 보너스 적용:",
+          "포효: 레벨당 마법 피해 +10%",
+          "전투 지시: 레벨당 마법 피해 +10%"
+        ]
+      }
     },
     {
       "id": "sword-mastery",
@@ -424,7 +2142,12 @@
       "prerequisites": [],
       "synergies": [],
       "description_ko": "패시브 - 근접 전투 능력을 향상시킴",
-      "description_en": "passive - improves melee fighting skill"
+      "description_en": "passive - improves melee fighting skill",
+      "tooltip": {
+        "per_level": [],
+        "static": [],
+        "synergies": []
+      }
     },
     {
       "id": "axe-mastery",
@@ -449,7 +2172,12 @@
       "prerequisites": [],
       "synergies": [],
       "description_ko": "패시브 - 방패 숙련도를 향상시킴",
-      "description_en": "passive - improves shield proficiency"
+      "description_en": "passive - improves shield proficiency",
+      "tooltip": {
+        "per_level": [],
+        "static": [],
+        "synergies": []
+      }
     },
     {
       "id": "mace-mastery",
@@ -474,7 +2202,12 @@
       "prerequisites": [],
       "synergies": [],
       "description_ko": "패시브 - 보물 찾기 능력을 향상시킴",
-      "description_en": "passive - improves treasure hunting skills"
+      "description_en": "passive - improves treasure hunting skills",
+      "tooltip": {
+        "per_level": [],
+        "static": [],
+        "synergies": []
+      }
     },
     {
       "id": "pole-arm-mastery",
@@ -499,7 +2232,12 @@
       "prerequisites": [],
       "synergies": [],
       "description_ko": "느리게 움직이는 바위를 던져 높은 피해를 입히며 같은 적을 여러 번 맞출 수 있습니다 투척 무기가 필요합니다",
-      "description_en": "throw a slow moving rock that deals high damage can hit the same enemy multiple times requires throwing weapon"
+      "description_en": "throw a slow moving rock that deals high damage can hit the same enemy multiple times requires throwing weapon",
+      "tooltip": {
+        "per_level": [],
+        "static": [],
+        "synergies": []
+      }
     },
     {
       "id": "throwing-mastery",
@@ -524,7 +2262,14 @@
       "prerequisites": [],
       "synergies": [],
       "description_ko": "지속 효과 - 투척 무기 전투 숙련도가 향상됩니다.",
-      "description_en": "passive - improves throwing weapon skill"
+      "description_en": "passive - improves throwing weapon skill",
+      "tooltip": {
+        "per_level": [],
+        "static": [
+          "극대화 시 수량 회복"
+        ],
+        "synergies": []
+      }
     },
     {
       "id": "spear-mastery",
@@ -549,7 +2294,12 @@
       "prerequisites": [],
       "synergies": [],
       "description_ko": "원뿔 모양으로 투사체를 던져 분열한 후 무작위 인근 적을 추적하며 무기 피해와 냉기 피해를 입힙니다 투척 무기가 필요합니다",
-      "description_en": "throw projectiles in a cone that break apart and lock onto random nearby enemies dealing weapon and cold damage requires throwing weapon"
+      "description_en": "throw projectiles in a cone that break apart and lock onto random nearby enemies dealing weapon and cold damage requires throwing weapon",
+      "tooltip": {
+        "per_level": [],
+        "static": [],
+        "synergies": []
+      }
     },
     {
       "id": "increased-stamina",
@@ -574,7 +2324,78 @@
       "prerequisites": [],
       "synergies": [],
       "description_ko": "강하게 던진 무기가 근처의 적에게 순간이동하는 듯하며 위에서 바위가 떨어져 적을 내리칩니다 투척 무기가 필요합니다",
-      "description_en": "fiercely thrown weapon that appears to teleport into nearby enemies causing rocks to slam into them from above requires throwing weapon"
+      "description_en": "fiercely thrown weapon that appears to teleport into nearby enemies causing rocks to slam into them from above requires throwing weapon",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "최대 지구력: %+d%%",
+            "v": [
+              [
+                30
+              ],
+              [
+                45
+              ],
+              [
+                60
+              ],
+              [
+                75
+              ],
+              [
+                90
+              ],
+              [
+                105
+              ],
+              [
+                120
+              ],
+              [
+                135
+              ],
+              [
+                150
+              ],
+              [
+                165
+              ],
+              [
+                180
+              ],
+              [
+                195
+              ],
+              [
+                210
+              ],
+              [
+                225
+              ],
+              [
+                240
+              ],
+              [
+                255
+              ],
+              [
+                270
+              ],
+              [
+                285
+              ],
+              [
+                300
+              ],
+              [
+                315
+              ]
+            ]
+          }
+        ],
+        "static": [],
+        "synergies": []
+      }
     },
     {
       "id": "iron-skin",
@@ -599,7 +2420,78 @@
       "prerequisites": [],
       "synergies": [],
       "description_ko": "지속 효과 - 방어력이 향상됩니다.",
-      "description_en": "passive - improves defense"
+      "description_en": "passive - improves defense",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "방어력: %+d%%",
+            "v": [
+              [
+                30
+              ],
+              [
+                40
+              ],
+              [
+                50
+              ],
+              [
+                60
+              ],
+              [
+                70
+              ],
+              [
+                80
+              ],
+              [
+                90
+              ],
+              [
+                100
+              ],
+              [
+                110
+              ],
+              [
+                120
+              ],
+              [
+                130
+              ],
+              [
+                140
+              ],
+              [
+                150
+              ],
+              [
+                160
+              ],
+              [
+                170
+              ],
+              [
+                180
+              ],
+              [
+                190
+              ],
+              [
+                200
+              ],
+              [
+                210
+              ],
+              [
+                220
+              ]
+            ]
+          }
+        ],
+        "static": [],
+        "synergies": []
+      }
     },
     {
       "id": "increased-speed",
@@ -630,7 +2522,78 @@
       ],
       "synergies": [],
       "description_ko": "지속 효과 - 걷거나 달리는 속도가 증가합니다.",
-      "description_en": "passive - increases walk and run speed"
+      "description_en": "passive - increases walk and run speed",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "걷기/달리기 속도: %+d%%",
+            "v": [
+              [
+                13
+              ],
+              [
+                18
+              ],
+              [
+                22
+              ],
+              [
+                25
+              ],
+              [
+                28
+              ],
+              [
+                30
+              ],
+              [
+                32
+              ],
+              [
+                33
+              ],
+              [
+                35
+              ],
+              [
+                36
+              ],
+              [
+                37
+              ],
+              [
+                38
+              ],
+              [
+                39
+              ],
+              [
+                40
+              ],
+              [
+                40
+              ],
+              [
+                41
+              ],
+              [
+                41
+              ],
+              [
+                42
+              ],
+              [
+                42
+              ],
+              [
+                43
+              ]
+            ]
+          }
+        ],
+        "static": [],
+        "synergies": []
+      }
     },
     {
       "id": "natural-resistance",
@@ -661,7 +2624,78 @@
       ],
       "synergies": [],
       "description_ko": "지속 효과 - 원소 및 독 피해에 대한 타고난 저항이 증가합니다.",
-      "description_en": "passive - increases natural resistances to elemental and poison damage"
+      "description_en": "passive - increases natural resistances to elemental and poison damage",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "모든 저항: %+d%%",
+            "v": [
+              [
+                12
+              ],
+              [
+                21
+              ],
+              [
+                28
+              ],
+              [
+                35
+              ],
+              [
+                40
+              ],
+              [
+                44
+              ],
+              [
+                47
+              ],
+              [
+                49
+              ],
+              [
+                52
+              ],
+              [
+                54
+              ],
+              [
+                56
+              ],
+              [
+                58
+              ],
+              [
+                60
+              ],
+              [
+                61
+              ],
+              [
+                62
+              ],
+              [
+                64
+              ],
+              [
+                64
+              ],
+              [
+                65
+              ],
+              [
+                66
+              ],
+              [
+                67
+              ]
+            ]
+          }
+        ],
+        "static": [],
+        "synergies": []
+      }
     },
     {
       "id": "howl",
@@ -686,7 +2720,210 @@
       "prerequisites": [],
       "synergies": [],
       "description_ko": "크게 외쳐 원뿔 형태로 피해를 줍니다",
-      "description_en": "yell loudly, causing damage in a cone"
+      "description_en": "yell loudly, causing damage in a cone",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "지속시간: %d초",
+            "v": [
+              [
+                3.0
+              ],
+              [
+                4.0
+              ],
+              [
+                5.0
+              ],
+              [
+                6.0
+              ],
+              [
+                7.0
+              ],
+              [
+                8.0
+              ],
+              [
+                9.0
+              ],
+              [
+                10.0
+              ],
+              [
+                11.0
+              ],
+              [
+                12.0
+              ],
+              [
+                13.0
+              ],
+              [
+                14.0
+              ],
+              [
+                15.0
+              ],
+              [
+                16.0
+              ],
+              [
+                17.0
+              ],
+              [
+                18.0
+              ],
+              [
+                19.0
+              ],
+              [
+                20.0
+              ],
+              [
+                21.0
+              ],
+              [
+                22.0
+              ]
+            ]
+          },
+          {
+            "fmt": "괴물 도망 거리 최대 %d미터",
+            "v": [
+              [
+                16.0
+              ],
+              [
+                19.33
+              ],
+              [
+                22.67
+              ],
+              [
+                26.0
+              ],
+              [
+                29.33
+              ],
+              [
+                32.67
+              ],
+              [
+                36.0
+              ],
+              [
+                39.33
+              ],
+              [
+                42.67
+              ],
+              [
+                46.0
+              ],
+              [
+                49.33
+              ],
+              [
+                52.67
+              ],
+              [
+                56.0
+              ],
+              [
+                59.33
+              ],
+              [
+                62.67
+              ],
+              [
+                66.0
+              ],
+              [
+                69.33
+              ],
+              [
+                72.67
+              ],
+              [
+                76.0
+              ],
+              [
+                79.33
+              ]
+            ]
+          },
+          {
+            "fmt": "반경: %d미터",
+            "v": [
+              [
+                3.0
+              ],
+              [
+                3.67
+              ],
+              [
+                4.33
+              ],
+              [
+                5.0
+              ],
+              [
+                5.67
+              ],
+              [
+                6.33
+              ],
+              [
+                7.0
+              ],
+              [
+                7.67
+              ],
+              [
+                8.33
+              ],
+              [
+                9.0
+              ],
+              [
+                9.67
+              ],
+              [
+                10.33
+              ],
+              [
+                11.0
+              ],
+              [
+                11.67
+              ],
+              [
+                12.33
+              ],
+              [
+                13.0
+              ],
+              [
+                13.67
+              ],
+              [
+                14.33
+              ],
+              [
+                15.0
+              ],
+              [
+                15.67
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "마나 소모: 4"
+        ],
+        "synergies": []
+      }
     },
     {
       "id": "find-potion",
@@ -711,7 +2948,80 @@
       "prerequisites": [],
       "synergies": [],
       "description_ko": "처치한 괴물의 시체에 사용하여 일정 확률로 물약을 발견합니다.",
-      "description_en": "use on the corpse of a slain monster for a chance to find a potion"
+      "description_en": "use on the corpse of a slain monster for a chance to find a potion",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "%d%% 확률",
+            "v": [
+              [
+                15
+              ],
+              [
+                27
+              ],
+              [
+                36
+              ],
+              [
+                44
+              ],
+              [
+                50
+              ],
+              [
+                55
+              ],
+              [
+                59
+              ],
+              [
+                62
+              ],
+              [
+                66
+              ],
+              [
+                68
+              ],
+              [
+                71
+              ],
+              [
+                73
+              ],
+              [
+                75
+              ],
+              [
+                77
+              ],
+              [
+                78
+              ],
+              [
+                80
+              ],
+              [
+                81
+              ],
+              [
+                82
+              ],
+              [
+                83
+              ],
+              [
+                84
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "마나 소모: 2"
+        ],
+        "synergies": []
+      }
     },
     {
       "id": "taunt",
@@ -742,7 +3052,145 @@
       ],
       "synergies": [],
       "description_ko": "주위의 괴물을 격분시켜 맹렬히 공격하게 합니다.",
-      "description_en": "enrages a monster into relentlessly attacking"
+      "description_en": "enrages a monster into relentlessly attacking",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "적 공격력: %+d%%",
+            "v": [
+              [
+                -5
+              ],
+              [
+                -7
+              ],
+              [
+                -9
+              ],
+              [
+                -11
+              ],
+              [
+                -13
+              ],
+              [
+                -15
+              ],
+              [
+                -17
+              ],
+              [
+                -19
+              ],
+              [
+                -21
+              ],
+              [
+                -23
+              ],
+              [
+                -25
+              ],
+              [
+                -27
+              ],
+              [
+                -29
+              ],
+              [
+                -31
+              ],
+              [
+                -33
+              ],
+              [
+                -35
+              ],
+              [
+                -37
+              ],
+              [
+                -39
+              ],
+              [
+                -41
+              ],
+              [
+                -43
+              ]
+            ]
+          },
+          {
+            "fmt": "대상의 명중률: %+d%%",
+            "v": [
+              [
+                -5
+              ],
+              [
+                -7
+              ],
+              [
+                -9
+              ],
+              [
+                -11
+              ],
+              [
+                -13
+              ],
+              [
+                -15
+              ],
+              [
+                -17
+              ],
+              [
+                -19
+              ],
+              [
+                -21
+              ],
+              [
+                -23
+              ],
+              [
+                -25
+              ],
+              [
+                -27
+              ],
+              [
+                -29
+              ],
+              [
+                -31
+              ],
+              [
+                -33
+              ],
+              [
+                -35
+              ],
+              [
+                -37
+              ],
+              [
+                -39
+              ],
+              [
+                -41
+              ],
+              [
+                -43
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "마나 소모: 3"
+        ],
+        "synergies": []
+      }
     },
     {
       "id": "shout",
@@ -784,7 +3232,86 @@
         }
       ],
       "description_ko": "임박한 위험을 경고하여 자신과 파티원의 방어력을 증가시킵니다.",
-      "description_en": "warns of impending danger and improves the defense rating of you and your party"
+      "description_en": "warns of impending danger and improves the defense rating of you and your party",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "방어력: %+d%%",
+            "v": [
+              [
+                100
+              ],
+              [
+                110
+              ],
+              [
+                120
+              ],
+              [
+                130
+              ],
+              [
+                140
+              ],
+              [
+                150
+              ],
+              [
+                160
+              ],
+              [
+                170
+              ],
+              [
+                180
+              ],
+              [
+                190
+              ],
+              [
+                200
+              ],
+              [
+                210
+              ],
+              [
+                220
+              ],
+              [
+                230
+              ],
+              [
+                240
+              ],
+              [
+                250
+              ],
+              [
+                260
+              ],
+              [
+                270
+              ],
+              [
+                280
+              ],
+              [
+                290
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "지속시간: 0초",
+          "반경: 12.7미터",
+          "마나 소모: 6"
+        ],
+        "synergies": [
+          "외침에 보너스 적용:",
+          "전투 지시: 레벨당 +5초",
+          "전투 명령: 레벨당 +5초"
+        ]
+      }
     },
     {
       "id": "find-item",
@@ -821,7 +3348,83 @@
         }
       ],
       "description_ko": "처치한 괴물의 시체에 사용하여 일정 확률로 숨겨진 보물을 발견합니다.",
-      "description_en": "use on the corpse of a slain monster to find hidden treasures"
+      "description_en": "use on the corpse of a slain monster to find hidden treasures",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "%d%% 확률",
+            "v": [
+              [
+                13
+              ],
+              [
+                19
+              ],
+              [
+                24
+              ],
+              [
+                29
+              ],
+              [
+                32
+              ],
+              [
+                35
+              ],
+              [
+                37
+              ],
+              [
+                39
+              ],
+              [
+                41
+              ],
+              [
+                42
+              ],
+              [
+                44
+              ],
+              [
+                45
+              ],
+              [
+                46
+              ],
+              [
+                47
+              ],
+              [
+                47
+              ],
+              [
+                49
+              ],
+              [
+                49
+              ],
+              [
+                50
+              ],
+              [
+                50
+              ],
+              [
+                51
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "마나 소모: 7"
+        ],
+        "synergies": [
+          "아이템 발견에 보너스 적용:",
+          "물약 발견: 레벨당 확률 +1%"
+        ]
+      }
     },
     {
       "id": "battle-cry",
@@ -852,7 +3455,211 @@
       ],
       "synergies": [],
       "description_ko": "적의 물리 피해 감소 및 피해량을 감소시키는 무시무시한 외침",
-      "description_en": "fearsome cry that decreases enemies' physical damage reduction and damage"
+      "description_en": "fearsome cry that decreases enemies' physical damage reduction and damage",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "지속시간: %d초",
+            "v": [
+              [
+                12.0
+              ],
+              [
+                14.4
+              ],
+              [
+                16.8
+              ],
+              [
+                19.2
+              ],
+              [
+                21.6
+              ],
+              [
+                24.0
+              ],
+              [
+                26.4
+              ],
+              [
+                28.8
+              ],
+              [
+                31.2
+              ],
+              [
+                33.6
+              ],
+              [
+                36.0
+              ],
+              [
+                38.4
+              ],
+              [
+                40.8
+              ],
+              [
+                43.2
+              ],
+              [
+                45.6
+              ],
+              [
+                48.0
+              ],
+              [
+                50.4
+              ],
+              [
+                52.8
+              ],
+              [
+                55.2
+              ],
+              [
+                57.6
+              ]
+            ]
+          },
+          {
+            "fmt": "적 방어력: %+d%%",
+            "v": [
+              [
+                -50
+              ],
+              [
+                -52
+              ],
+              [
+                -54
+              ],
+              [
+                -56
+              ],
+              [
+                -58
+              ],
+              [
+                -60
+              ],
+              [
+                -62
+              ],
+              [
+                -64
+              ],
+              [
+                -66
+              ],
+              [
+                -68
+              ],
+              [
+                -70
+              ],
+              [
+                -72
+              ],
+              [
+                -74
+              ],
+              [
+                -76
+              ],
+              [
+                -78
+              ],
+              [
+                -80
+              ],
+              [
+                -82
+              ],
+              [
+                -84
+              ],
+              [
+                -86
+              ],
+              [
+                -88
+              ]
+            ]
+          },
+          {
+            "fmt": "적 공격력: %+d%%",
+            "v": [
+              [
+                -25
+              ],
+              [
+                -26
+              ],
+              [
+                -27
+              ],
+              [
+                -28
+              ],
+              [
+                -29
+              ],
+              [
+                -30
+              ],
+              [
+                -31
+              ],
+              [
+                -32
+              ],
+              [
+                -33
+              ],
+              [
+                -34
+              ],
+              [
+                -35
+              ],
+              [
+                -36
+              ],
+              [
+                -37
+              ],
+              [
+                -38
+              ],
+              [
+                -39
+              ],
+              [
+                -40
+              ],
+              [
+                -41
+              ],
+              [
+                -42
+              ],
+              [
+                -43
+              ],
+              [
+                -44
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "반경: 3.3미터",
+          "마나 소모: 5"
+        ],
+        "synergies": []
+      }
     },
     {
       "id": "battle-orders",
@@ -894,7 +3701,216 @@
         }
       ],
       "description_ko": "자신과 파티원의 최대 마나, 생명력, 지구력이 증가합니다.",
-      "description_en": "improves the maximum mana, life and stamina of you and your party"
+      "description_en": "improves the maximum mana, life and stamina of you and your party",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "최대 지구력: %+d%%",
+            "v": [
+              [
+                35
+              ],
+              [
+                38
+              ],
+              [
+                41
+              ],
+              [
+                44
+              ],
+              [
+                47
+              ],
+              [
+                50
+              ],
+              [
+                53
+              ],
+              [
+                56
+              ],
+              [
+                59
+              ],
+              [
+                62
+              ],
+              [
+                65
+              ],
+              [
+                68
+              ],
+              [
+                71
+              ],
+              [
+                74
+              ],
+              [
+                77
+              ],
+              [
+                80
+              ],
+              [
+                83
+              ],
+              [
+                86
+              ],
+              [
+                89
+              ],
+              [
+                92
+              ]
+            ]
+          },
+          {
+            "fmt": "최대 마나: %+d%%",
+            "v": [
+              [
+                35
+              ],
+              [
+                38
+              ],
+              [
+                41
+              ],
+              [
+                44
+              ],
+              [
+                47
+              ],
+              [
+                50
+              ],
+              [
+                53
+              ],
+              [
+                56
+              ],
+              [
+                59
+              ],
+              [
+                62
+              ],
+              [
+                65
+              ],
+              [
+                68
+              ],
+              [
+                71
+              ],
+              [
+                74
+              ],
+              [
+                77
+              ],
+              [
+                80
+              ],
+              [
+                83
+              ],
+              [
+                86
+              ],
+              [
+                89
+              ],
+              [
+                92
+              ]
+            ]
+          },
+          {
+            "fmt": "최대 생명력: %+d%%",
+            "v": [
+              [
+                35
+              ],
+              [
+                38
+              ],
+              [
+                41
+              ],
+              [
+                44
+              ],
+              [
+                47
+              ],
+              [
+                50
+              ],
+              [
+                53
+              ],
+              [
+                56
+              ],
+              [
+                59
+              ],
+              [
+                62
+              ],
+              [
+                65
+              ],
+              [
+                68
+              ],
+              [
+                71
+              ],
+              [
+                74
+              ],
+              [
+                77
+              ],
+              [
+                80
+              ],
+              [
+                83
+              ],
+              [
+                86
+              ],
+              [
+                89
+              ],
+              [
+                92
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "지속시간: 0초",
+          "반경: 12.7미터",
+          "마나 소모: 7"
+        ],
+        "synergies": [
+          "전투 지시에 보너스 적용:",
+          "외침: 레벨당 +5초",
+          "전투 명령: 레벨당 +5초"
+        ]
+      }
     },
     {
       "id": "grim-ward",
@@ -931,7 +3947,150 @@
         }
       ],
       "description_ko": "고대 콜릭의 화신이 되어 투척 무기 피해가 증가하고 추가 냉기 피해를 얻습니다",
-      "description_en": "become an avatar of the ancient Korlic increasing the damage of thrown weapons and gaining bonus cold damage"
+      "description_en": "become an avatar of the ancient Korlic increasing the damage of thrown weapons and gaining bonus cold damage",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "적 감속: %d%%",
+            "v": [
+              [
+                11
+              ],
+              [
+                20
+              ],
+              [
+                27
+              ],
+              [
+                33
+              ],
+              [
+                37
+              ],
+              [
+                41
+              ],
+              [
+                44
+              ],
+              [
+                46
+              ],
+              [
+                49
+              ],
+              [
+                51
+              ],
+              [
+                53
+              ],
+              [
+                54
+              ],
+              [
+                56
+              ],
+              [
+                57
+              ],
+              [
+                58
+              ],
+              [
+                60
+              ],
+              [
+                60
+              ],
+              [
+                61
+              ],
+              [
+                62
+              ],
+              [
+                63
+              ]
+            ]
+          },
+          {
+            "fmt": "반경: %d미터",
+            "v": [
+              [
+                4.0
+              ],
+              [
+                4.67
+              ],
+              [
+                5.33
+              ],
+              [
+                6.0
+              ],
+              [
+                6.67
+              ],
+              [
+                7.33
+              ],
+              [
+                8.0
+              ],
+              [
+                8.67
+              ],
+              [
+                9.33
+              ],
+              [
+                10.0
+              ],
+              [
+                10.67
+              ],
+              [
+                11.33
+              ],
+              [
+                12.0
+              ],
+              [
+                12.67
+              ],
+              [
+                13.33
+              ],
+              [
+                14.0
+              ],
+              [
+                14.67
+              ],
+              [
+                15.33
+              ],
+              [
+                16.0
+              ],
+              [
+                16.67
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "마나 소모: 4",
+          "지속시간: 40초",
+          "적이 받는 피해: +20%"
+        ],
+        "synergies": [
+          "콜릭의 분노에 보너스 적용:",
+          "물약 발견: 레벨당 받는 피해 +5%"
+        ]
+      }
     },
     {
       "id": "war-cry",
@@ -983,7 +4142,235 @@
         }
       ],
       "description_ko": "전투의 함성으로 주변 적에게 피해를 입히며 메아리치는 충격파를 발생시킵니다",
-      "description_en": "yell loudly to injure nearby enemies with a war cry and cause an echoing shockwave off nearby enemies"
+      "description_en": "yell loudly to injure nearby enemies with a war cry and cause an echoing shockwave off nearby enemies",
+      "tooltip": {
+        "per_level": [
+          {
+            "fmt": "마나 소모: %d",
+            "v": [
+              [
+                10.0
+              ],
+              [
+                10.75
+              ],
+              [
+                11.5
+              ],
+              [
+                12.25
+              ],
+              [
+                13.0
+              ],
+              [
+                13.75
+              ],
+              [
+                14.5
+              ],
+              [
+                15.25
+              ],
+              [
+                16.0
+              ],
+              [
+                16.75
+              ],
+              [
+                17.5
+              ],
+              [
+                18.25
+              ],
+              [
+                19.0
+              ],
+              [
+                19.75
+              ],
+              [
+                20.5
+              ],
+              [
+                21.25
+              ],
+              [
+                22.0
+              ],
+              [
+                22.75
+              ],
+              [
+                23.5
+              ],
+              [
+                24.25
+              ]
+            ]
+          },
+          {
+            "fmt": "기절 지속시간: %d초",
+            "v": [
+              [
+                1.0
+              ],
+              [
+                1.2
+              ],
+              [
+                1.4
+              ],
+              [
+                1.6
+              ],
+              [
+                1.8
+              ],
+              [
+                2.0
+              ],
+              [
+                2.2
+              ],
+              [
+                2.4
+              ],
+              [
+                2.6
+              ],
+              [
+                2.8
+              ],
+              [
+                3.0
+              ],
+              [
+                3.2
+              ],
+              [
+                3.4
+              ],
+              [
+                3.6
+              ],
+              [
+                3.8
+              ],
+              [
+                4.0
+              ],
+              [
+                4.2
+              ],
+              [
+                4.4
+              ],
+              [
+                4.6
+              ],
+              [
+                4.8
+              ]
+            ]
+          },
+          {
+            "fmt": "공격력: %d-%d",
+            "v": [
+              [
+                30,
+                40
+              ],
+              [
+                38,
+                48
+              ],
+              [
+                46,
+                56
+              ],
+              [
+                54,
+                64
+              ],
+              [
+                62,
+                72
+              ],
+              [
+                70,
+                80
+              ],
+              [
+                78,
+                88
+              ],
+              [
+                86,
+                96
+              ],
+              [
+                95,
+                105
+              ],
+              [
+                104,
+                114
+              ],
+              [
+                113,
+                123
+              ],
+              [
+                122,
+                132
+              ],
+              [
+                131,
+                141
+              ],
+              [
+                140,
+                150
+              ],
+              [
+                149,
+                159
+              ],
+              [
+                158,
+                168
+              ],
+              [
+                168,
+                178
+              ],
+              [
+                178,
+                188
+              ],
+              [
+                188,
+                198
+              ],
+              [
+                198,
+                208
+              ]
+            ]
+          }
+        ],
+        "static": [
+          "반경: 4.7미터"
+        ],
+        "synergies": [
+          "전장의 함성에 보너스 적용:",
+          "포효: 레벨당 피해 +6%",
+          "도발: 레벨당 피해 +6%",
+          "전투의 함성: 레벨당 피해 +6%"
+        ]
+      }
     },
     {
       "id": "battle-command",
@@ -1025,7 +4412,20 @@
         }
       ],
       "description_ko": "자신과 파티원의 현재 기술 레벨이 모두 증가합니다.",
-      "description_en": "increases all current skill levels for you and your party"
+      "description_en": "increases all current skill levels for you and your party",
+      "tooltip": {
+        "per_level": [],
+        "static": [
+          "지속시간: 0초",
+          "반경: 12.7미터",
+          "마나 소모: 11"
+        ],
+        "synergies": [
+          "전투 명령에 보너스 적용:",
+          "외침: 레벨당 +5초",
+          "전투 지시: 레벨당 +5초"
+        ]
+      }
     }
   ]
 }
