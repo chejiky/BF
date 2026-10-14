@@ -7,11 +7,12 @@
     {
       "id": "raven",
       "name_en": "Raven",
-      "name_ko": "레이번",
+      "name_ko": "큰까마귀",
+      "name_ko_classic": "레이번",
       "tree": {
         "page": 1,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 1,
@@ -28,30 +29,31 @@
         {
           "id": "summon-spirit-wolf",
           "name_en": "Summon Spirit Wolf",
-          "name_ko": "스피리트 울프"
+          "name_ko": "영혼 늑대 소환"
         },
         {
           "id": "summon-dire-wolf",
           "name_en": "Summon Dire Wolf",
-          "name_ko": "다이어 울프"
+          "name_ko": "광포한 늑대 소환"
         },
         {
           "id": "summon-grizzly",
           "name_en": "Summon Grizzly",
-          "name_ko": "그리즐리"
+          "name_ko": "회색곰 소환"
         }
       ],
-      "description_ko": "레이번을 소환하여 적의 눈을 멀게함",
+      "description_ko": "큰까마귀를 소환하여 적의 눈을 파먹게 합니다.",
       "description_en": "summon ravens to peck out the eyes of your enemies"
     },
     {
       "id": "poison-creeper",
       "name_en": "Poison Creeper",
-      "name_ko": "포이즌 크리퍼",
+      "name_ko": "맹독 덩굴",
+      "name_ko_classic": "포이즌 크리퍼",
       "tree": {
         "page": 1,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 1,
@@ -68,7 +70,7 @@
         {
           "id": "rabies",
           "name_en": "Rabies",
-          "name_ko": "레이비즈"
+          "name_ko": "광견병"
         }
       ],
       "description_ko": "적을 공격하는 독성 덩굴을 소환함",
@@ -77,11 +79,12 @@
     {
       "id": "oak-sage",
       "name_en": "Oak Sage",
-      "name_ko": "오크 세이지",
+      "name_ko": "참나무 현자",
+      "name_ko_classic": "오크 세이지",
       "tree": {
         "page": 1,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 2,
@@ -95,17 +98,18 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "스피리트 페트를 소환하여 자신과 파티원의 라이프 증가",
+      "description_ko": "영혼 소환수를 소환하여 자신과 파티원의 생명력을 증가시킵니다.",
       "description_en": "summon a spirit pet that increases life for you and your party"
     },
     {
       "id": "summon-spirit-wolf",
       "name_en": "Summon Spirit Wolf",
-      "name_ko": "스피리트 울프",
+      "name_ko": "영혼 늑대 소환",
+      "name_ko_classic": "스피리트 울프",
       "tree": {
         "page": 1,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 2,
@@ -121,21 +125,22 @@
         {
           "id": "raven",
           "name_en": "Raven",
-          "name_ko": "레이번"
+          "name_ko": "큰까마귀"
         }
       ],
       "synergies": [],
-      "description_ko": "순간이동능력이 있는 늑대를 소환하여 싸우게함",
-      "description_en": "summon a wolf with teleporting ability to fight by your side"
+      "description_ko": "주변 적에게 회오리를 시전할 수 있는 늑대를 소환합니다",
+      "description_en": "summon a wolf with that can cast twisters at nearby enemies"
     },
     {
       "id": "carrion-vine",
       "name_en": "Carrion Vine",
-      "name_ko": "캐리언 바인",
+      "name_ko": "청소부 덩굴",
+      "name_ko_classic": "캐리언 바인",
       "tree": {
         "page": 1,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 3,
@@ -151,21 +156,22 @@
         {
           "id": "poison-creeper",
           "name_en": "Poison Creeper",
-          "name_ko": "포이즌 크리퍼"
+          "name_ko": "맹독 덩굴"
         }
       ],
       "synergies": [],
-      "description_ko": "시체를 흡수하여 라이프를 올려주는 바인소환",
-      "description_en": "summon a vine that eats corpses and replenishes your life"
+      "description_ko": "시체를 먹고 생명력과 마나를 회복시켜주는 덩굴을 소환합니다",
+      "description_en": "summon a vine that eats corpses and replenishes your life and mana"
     },
     {
       "id": "heart-of-wolverine",
       "name_en": "Heart of Wolverine",
-      "name_ko": "하트 오브 울버린",
+      "name_ko": "울버린의 심장",
+      "name_ko_classic": "하트 오브 울버린",
       "tree": {
         "page": 1,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 4,
@@ -181,21 +187,22 @@
         {
           "id": "oak-sage",
           "name_en": "Oak Sage",
-          "name_ko": "오크 세이지"
+          "name_ko": "참나무 현자"
         }
       ],
       "synergies": [],
-      "description_ko": "스피리트 페트를 소환하여 자신과 파티원의 데미지등급과 공격등급 증가",
-      "description_en": "summon a spirit pet that adds to the damage and attack rating of you and your party"
+      "description_ko": "자신과 파티의 피해, 명중률, 공격 속도, 시전 속도를 증가시키는 정령을 소환합니다",
+      "description_en": "summon a spirit pet that adds to the damage, attack rating, attack speed and cast speed of you and your party"
     },
     {
       "id": "summon-dire-wolf",
       "name_en": "Summon Dire Wolf",
-      "name_ko": "다이어 울프",
+      "name_ko": "광포한 늑대 소환",
+      "name_ko_classic": "다이어 울프",
       "tree": {
         "page": 1,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 4,
@@ -211,26 +218,27 @@
         {
           "id": "oak-sage",
           "name_en": "Oak Sage",
-          "name_ko": "오크 세이지"
+          "name_ko": "참나무 현자"
         },
         {
           "id": "summon-spirit-wolf",
           "name_en": "Summon Spirit Wolf",
-          "name_ko": "스피리트 울프"
+          "name_ko": "영혼 늑대 소환"
         }
       ],
       "synergies": [],
-      "description_ko": "시체를 흡수하여 적에게 주는 데미지가 증가된 격노한 울프소환",
-      "description_en": "summon a wolf that becomes enraged, eating corpses to increase damage it does to enemies"
+      "description_ko": "적에게 화염 폭풍을 시전할 수 있는 불의 늑대를 소환합니다",
+      "description_en": "summon a fire wolf that has a chance to cast firestorm at its enemies"
     },
     {
       "id": "solar-creeper",
       "name_en": "Solar Creeper",
-      "name_ko": "솔라 크리퍼",
+      "name_ko": "태양의 덩굴",
+      "name_ko_classic": "솔라 크리퍼",
       "tree": {
         "page": 1,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 5,
@@ -246,21 +254,22 @@
         {
           "id": "carrion-vine",
           "name_en": "Carrion Vine",
-          "name_ko": "캐리언 바인"
+          "name_ko": "청소부 덩굴"
         }
       ],
       "synergies": [],
-      "description_ko": "시체를 흡수하여 마나를 올려주는 바인 소환",
-      "description_en": "summon a vine that eats corpses and replenishes your mana"
+      "description_ko": "적에게 돌진해 피해를 주는 덩굴을 소환하여 땅에 피해를 주는 촉수를 퍼뜨립니다",
+      "description_en": "Summon a vine that smashes into an enemy to spread a floor of damaging tendrils"
     },
     {
       "id": "spirit-of-barbs",
       "name_en": "Spirit of Barbs",
-      "name_ko": "스피리트 오브 바브",
+      "name_ko": "가시의 영혼",
+      "name_ko_classic": "스피리트 오브 바브",
       "tree": {
         "page": 1,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 6,
@@ -276,21 +285,22 @@
         {
           "id": "heart-of-wolverine",
           "name_en": "Heart of Wolverine",
-          "name_ko": "하트 오브 울버린"
+          "name_ko": "울버린의 심장"
         }
       ],
       "synergies": [],
-      "description_ko": "스피리트 페트를 소환하여 자신과 파티원에게 데미지를 반사하는 능력부여",
-      "description_en": "summon spirit pet that reflects damage taken by you and your party back at your enemies"
+      "description_ko": "주변 적의 저항력을 낮춰 그들을 취약하게 만드는 정령을 소환합니다",
+      "description_en": "summon spirit pet that makes nearby enemies vulnerable by reducing their resistances"
     },
     {
       "id": "summon-grizzly",
       "name_en": "Summon Grizzly",
-      "name_ko": "그리즐리",
+      "name_ko": "회색곰 소환",
+      "name_ko_classic": "그리즐리",
       "tree": {
         "page": 1,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 6,
@@ -306,21 +316,22 @@
         {
           "id": "summon-dire-wolf",
           "name_en": "Summon Dire Wolf",
-          "name_ko": "다이어 울프"
+          "name_ko": "광포한 늑대 소환"
         }
       ],
       "synergies": [],
-      "description_ko": "포악한 그리즐리베어 소환",
-      "description_en": "summon a ferocious grizzly bear"
+      "description_ko": "근처 적을 잠시 기절시키는 충격파를 발생시킬 수 있는 사나운 회색곰을 소환합니다",
+      "description_en": "summon a ferocious grizzly bear that has a chance to cause a shockwave to briefly stun nearby enemies"
     },
     {
       "id": "werewolf",
       "name_en": "Werewolf",
-      "name_ko": "워울프",
+      "name_ko": "늑대인간",
+      "name_ko_classic": "워울프",
       "tree": {
         "page": 2,
         "name_en": "Shape Shifting",
-        "name_ko": "쉐이프 쉬프팅 스킬"
+        "name_ko": "변신"
       },
       "position": {
         "row": 1,
@@ -334,7 +345,7 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "워울프로 변신",
+      "description_ko": "늑대인간으로 변신합니다.",
       "description_en": "transform into a werewolf"
     },
     {
@@ -344,7 +355,7 @@
       "tree": {
         "page": 2,
         "name_en": "Shape Shifting",
-        "name_ko": "쉐이프 쉬프팅 스킬"
+        "name_ko": "변신"
       },
       "position": {
         "row": 1,
@@ -360,21 +371,22 @@
         {
           "id": "werewolf",
           "name_en": "Werewolf",
-          "name_ko": "워울프"
+          "name_ko": "늑대인간"
         }
       ],
       "synergies": [],
-      "description_ko": "패시브 - 지속시간과 라이프 향상 워울프 또는 워베어 상태일때",
-      "description_en": "passive - improves duration and life when in werewolf or werebear form"
+      "description_ko": "패시브 - 늑대인간 또는 곰인간 형태일 때 생명력이 증가하고 늑대인간은 최대 모든 저항 증가, 곰인간은 물리 피해 감소 증가, 야성의 분노와 강타의 지속 시간이 증가합니다",
+      "description_en": "passive - improves life when in werewolf or werebear form improves dodge chance for werewolf, improves physical damage reduction for werebear and increases duration of feral rage and maul"
     },
     {
       "id": "werebear",
       "name_en": "Werebear",
-      "name_ko": "워베어",
+      "name_ko": "곰인간",
+      "name_ko_classic": "워베어",
       "tree": {
         "page": 2,
         "name_en": "Shape Shifting",
-        "name_ko": "쉐이프 쉬프팅 스킬"
+        "name_ko": "변신"
       },
       "position": {
         "row": 2,
@@ -388,17 +400,18 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "워베어로 변신",
-      "description_en": "transform into a werebear"
+      "description_ko": "저지 불가 공격을 가하는 곰인간으로 변신합니다.",
+      "description_en": "transform into a werebear with unstoppable attacks"
     },
     {
       "id": "feral-rage",
       "name_en": "Feral Rage",
-      "name_ko": "피어럴 레이지",
+      "name_ko": "흉포한 격노",
+      "name_ko_classic": "피어럴 레이지",
       "tree": {
         "page": 2,
         "name_en": "Shape Shifting",
-        "name_ko": "쉐이프 쉬프팅 스킬"
+        "name_ko": "변신"
       },
       "position": {
         "row": 3,
@@ -414,21 +427,22 @@
         {
           "id": "werewolf",
           "name_en": "Werewolf",
-          "name_ko": "워울프"
+          "name_ko": "늑대인간"
         }
       ],
       "synergies": [],
-      "description_ko": "워울프 상태일때 사납게 공격하여 적의 라이프 흡수 (명중시)",
-      "description_en": "when in werewolf form, go into a frenzied rage to steal increasing amounts of life from your enemies with successive hits"
+      "description_ko": "늑대인간 형태일 때 광란에 빠져, 연속 적중할 때마다 적의 생명력을 더 많이 흡수하고 방어구를 찢어발깁니다.",
+      "description_en": "When in werewolf form, go into a frenzied rage to steal increasing amounts of life from and shred the armor of your enemies with each successive hit."
     },
     {
       "id": "maul",
       "name_en": "Maul",
-      "name_ko": "마울",
+      "name_ko": "후려치기",
+      "name_ko_classic": "마울",
       "tree": {
         "page": 2,
         "name_en": "Shape Shifting",
-        "name_ko": "쉐이프 쉬프팅 스킬"
+        "name_ko": "변신"
       },
       "position": {
         "row": 3,
@@ -444,21 +458,22 @@
         {
           "id": "werebear",
           "name_en": "Werebear",
-          "name_ko": "워베어"
+          "name_ko": "곰인간"
         }
       ],
       "synergies": [],
-      "description_ko": "워베어 상태일때 추가 데미지를 주는 마울 공격 (명중시)",
-      "description_en": "when in werebear form, maul your enemies for increasing extra damage with successive hits"
+      "description_ko": "곰인간 형태일 때 적을 후려쳐 연속 적중할 때마다 추가 피해와 야성이 증가합니다",
+      "description_en": "When in werebear form, maul your enemies for increasing extra damage and savagery with each successive hit."
     },
     {
       "id": "rabies",
       "name_en": "Rabies",
-      "name_ko": "레이비즈",
+      "name_ko": "광견병",
+      "name_ko_classic": "레이비즈",
       "tree": {
         "page": 2,
         "name_en": "Shape Shifting",
-        "name_ko": "쉐이프 쉬프팅 스킬"
+        "name_ko": "변신"
       },
       "position": {
         "row": 4,
@@ -474,27 +489,28 @@
         {
           "id": "feral-rage",
           "name_en": "Feral Rage",
-          "name_ko": "피어럴 레이지"
+          "name_ko": "흉포한 격노"
         }
       ],
       "synergies": [
         {
           "id": "poison-creeper",
           "name_en": "Poison Creeper",
-          "name_ko": "포이즌 크리퍼"
+          "name_ko": "맹독 덩굴"
         }
       ],
-      "description_ko": "워울프상태일때, 적을 물어뜯어 다른적에게도 전염시키는 일격을 가함",
-      "description_en": "when in werewolf form, bite your enemies to inflict them with disease that spreads to other monsters"
+      "description_ko": "늑대인간 또는 곰인간 상태에서 적을 물어 질병을 감염시키고, 그 질병은 다른 몬스터에게 전염됩니다",
+      "description_en": "when in werewolf or werebear form, bite your enemies to inflict them with disease that spreads to other monsters"
     },
     {
       "id": "fire-claws",
       "name_en": "Fire Claws",
-      "name_ko": "파이러 클러",
+      "name_ko": "화염 발톱",
+      "name_ko_classic": "파이러 클러",
       "tree": {
         "page": 2,
         "name_en": "Shape Shifting",
-        "name_ko": "쉐이프 쉬프팅 스킬"
+        "name_ko": "변신"
       },
       "position": {
         "row": 4,
@@ -510,37 +526,38 @@
         {
           "id": "feral-rage",
           "name_en": "Feral Rage",
-          "name_ko": "피어럴 레이지"
+          "name_ko": "흉포한 격노"
         },
         {
           "id": "maul",
           "name_en": "Maul",
-          "name_ko": "마울"
+          "name_ko": "후려치기"
         }
       ],
       "synergies": [
         {
           "id": "firestorm",
           "name_en": "Firestorm",
-          "name_ko": "파이어스톰"
+          "name_ko": "화염폭풍"
         },
         {
           "id": "molten-boulder",
           "name_en": "Molten Boulder",
-          "name_ko": "몰튼 보울더"
+          "name_ko": "타오르는 바위"
         }
       ],
-      "description_ko": "워울프 또는 워베어상태일때, 파이어리 클러계열의 마울 공격",
+      "description_ko": "늑대인간이나 곰인간 형태일 때 화염 발톱으로 적을 강하게 후려칩니다.",
       "description_en": "when in werewolf or werebear form, maul your enemies with a fiery claw attack"
     },
     {
       "id": "hunger",
       "name_en": "Hunger",
-      "name_ko": "헝거",
+      "name_ko": "맹독 송곳니",
+      "name_ko_classic": "헝거",
       "tree": {
         "page": 2,
         "name_en": "Shape Shifting",
-        "name_ko": "쉐이프 쉬프팅 스킬"
+        "name_ko": "변신"
       },
       "position": {
         "row": 5,
@@ -556,21 +573,22 @@
         {
           "id": "fire-claws",
           "name_en": "Fire Claws",
-          "name_ko": "파이러 클러"
+          "name_ko": "화염 발톱"
         }
       ],
       "synergies": [],
-      "description_ko": "워울프 또는 워베어상태일때, 적을 물어뜯어 라이프와 마나를 흡수함",
-      "description_en": "when in werewolf or werebear form, bite your enemies to gain life and mana"
+      "description_ko": "늑대인간 또는 곰인간 형태일 때, 치명적인 독 송곳니로 적을 물어뜯습니다",
+      "description_en": "When in werewolf or werebear form, bite your enemies with deadly toxic fangs"
     },
     {
       "id": "shock-wave",
       "name_en": "Shock Wave",
-      "name_ko": "쇼크 웨이브",
+      "name_ko": "충격파",
+      "name_ko_classic": "쇼크 웨이브",
       "tree": {
         "page": 2,
         "name_en": "Shape Shifting",
-        "name_ko": "쉐이프 쉬프팅 스킬"
+        "name_ko": "변신"
       },
       "position": {
         "row": 5,
@@ -586,27 +604,28 @@
         {
           "id": "maul",
           "name_en": "Maul",
-          "name_ko": "마울"
+          "name_ko": "후려치기"
         }
       ],
       "synergies": [
         {
           "id": "maul",
           "name_en": "Maul",
-          "name_ko": "마울"
+          "name_ko": "후려치기"
         }
       ],
-      "description_ko": "워베어 상태일때, 스턴의 효과가 있는 쇼크웨이브로 주위 적을 짓밟음",
-      "description_en": "when in werebear form, stomp to create a shock wave that stuns nearby enemies"
+      "description_ko": "근처의 적을 향한 야성적인 공격으로 무작위로 땅을 갈라뜨려 주변 적들에게 피해를 줍니다 필요: 곰인간 형상",
+      "description_en": "A feral attack against a nearby enemy that randomly shatters the ground damaging nearby foes Requires: Werebear form"
     },
     {
       "id": "fury",
       "name_en": "Fury",
-      "name_ko": "퓨리",
+      "name_ko": "분노",
+      "name_ko_classic": "퓨리",
       "tree": {
         "page": 2,
         "name_en": "Shape Shifting",
-        "name_ko": "쉐이프 쉬프팅 스킬"
+        "name_ko": "변신"
       },
       "position": {
         "row": 6,
@@ -622,21 +641,22 @@
         {
           "id": "rabies",
           "name_en": "Rabies",
-          "name_ko": "레이비즈"
+          "name_ko": "광견병"
         }
       ],
       "synergies": [],
-      "description_ko": "워울프상태일때, 복수의 적 혹은 하나의 적에게 여러 번의 공격을 함",
+      "description_ko": "늑대인간 형태일 때 인접한 다수의 대상을 동시에 공격하거나 하나의 대상을 여러 번 공격합니다.",
       "description_en": "when in werewolf form, attack either multiple adjacent targets or one target multiple times"
     },
     {
       "id": "firestorm",
       "name_en": "Firestorm",
-      "name_ko": "파이어스톰",
+      "name_ko": "화염폭풍",
+      "name_ko_classic": "파이어스톰",
       "tree": {
         "page": 3,
         "name_en": "Elemental",
-        "name_ko": "엘러멘틀 스킬"
+        "name_ko": "원소"
       },
       "position": {
         "row": 1,
@@ -653,25 +673,26 @@
         {
           "id": "molten-boulder",
           "name_en": "Molten Boulder",
-          "name_ko": "몰튼 보울더"
+          "name_ko": "타오르는 바위"
         },
         {
           "id": "fissure",
           "name_en": "Fissure",
-          "name_ko": "피셔"
+          "name_ko": "균열"
         }
       ],
-      "description_ko": "파이어리 카오스를 불러내 적을 태워버림",
+      "description_ko": "혼돈의 화염을 방출하여 적을 불태웁니다.",
       "description_en": "unleash fiery chaos to burn your enemies"
     },
     {
       "id": "molten-boulder",
       "name_en": "Molten Boulder",
-      "name_ko": "몰튼 보울더",
+      "name_ko": "타오르는 바위",
+      "name_ko_classic": "몰튼 보울더",
       "tree": {
         "page": 3,
         "name_en": "Elemental",
-        "name_ko": "엘러멘틀 스킬"
+        "name_ko": "원소"
       },
       "position": {
         "row": 2,
@@ -687,32 +708,33 @@
         {
           "id": "firestorm",
           "name_en": "Firestorm",
-          "name_ko": "파이어스톰"
+          "name_ko": "화염폭풍"
         }
       ],
       "synergies": [
         {
           "id": "volcano",
           "name_en": "Volcano",
-          "name_ko": "볼케이노"
+          "name_ko": "화산"
         },
         {
           "id": "firestorm",
           "name_en": "Firestorm",
-          "name_ko": "파이어스톰"
+          "name_ko": "화염폭풍"
         }
       ],
-      "description_ko": "마그마를 뿜어내는 보울더를 발사하여 적을 공격함",
+      "description_ko": "타오르는 용암 바위를 날려 적을 뒤로 밀쳐냅니다.",
       "description_en": "launch a boulder of flaming hot magma that knocks back your enemies"
     },
     {
       "id": "arctic-blast",
       "name_en": "Arctic Blast",
-      "name_ko": "아틱 블라스트",
+      "name_ko": "극지 돌풍",
+      "name_ko_classic": "아틱 블라스트",
       "tree": {
         "page": 3,
         "name_en": "Elemental",
-        "name_ko": "엘러멘틀 스킬"
+        "name_ko": "원소"
       },
       "position": {
         "row": 2,
@@ -729,20 +751,21 @@
         {
           "id": "cyclone-armor",
           "name_en": "Cyclone Armor",
-          "name_ko": "사이클론 아머"
+          "name_ko": "회오리 갑옷"
         }
       ],
-      "description_ko": "아이스 제트를 연속발사하여 적을 얼려버림",
-      "description_en": "blast a continuous jet of ice to burn your enemies with frost"
+      "description_ko": "냉기 바람으로 일정 범위를 강타하여 지속 냉기 피해를 줍니다",
+      "description_en": "blast an area with cold winds dealing cold damage over time"
     },
     {
       "id": "fissure",
       "name_en": "Fissure",
-      "name_ko": "피셔",
+      "name_ko": "균열",
+      "name_ko_classic": "피셔",
       "tree": {
         "page": 3,
         "name_en": "Elemental",
-        "name_ko": "엘러멘틀 스킬"
+        "name_ko": "원소"
       },
       "position": {
         "row": 3,
@@ -758,32 +781,33 @@
         {
           "id": "molten-boulder",
           "name_en": "Molten Boulder",
-          "name_ko": "몰튼 보울더"
+          "name_ko": "타오르는 바위"
         }
       ],
       "synergies": [
         {
           "id": "firestorm",
           "name_en": "Firestorm",
-          "name_ko": "파이어스톰"
+          "name_ko": "화염폭풍"
         },
         {
           "id": "volcano",
           "name_en": "Volcano",
-          "name_ko": "볼케이노"
+          "name_ko": "화산"
         }
       ],
-      "description_ko": "적이 서있는 곳에 분화구를 만들어 태워버림",
+      "description_ko": "적의 발밑에 화도를 열어 대상을 까맣게 불태웁니다.",
       "description_en": "open volcanic vents below your enemies, burning them to a crisp"
     },
     {
       "id": "cyclone-armor",
       "name_en": "Cyclone Armor",
-      "name_ko": "사이클론 아머",
+      "name_ko": "회오리 갑옷",
+      "name_ko_classic": "사이클론 아머",
       "tree": {
         "page": 3,
         "name_en": "Elemental",
-        "name_ko": "엘러멘틀 스킬"
+        "name_ko": "원소"
       },
       "position": {
         "row": 3,
@@ -799,19 +823,19 @@
         {
           "id": "arctic-blast",
           "name_en": "Arctic Blast",
-          "name_ko": "아틱 블라스트"
+          "name_ko": "극지 돌풍"
         }
       ],
       "synergies": [
         {
           "id": "twister",
           "name_en": "Twister",
-          "name_ko": "트위스터"
+          "name_ko": "돌개바람"
         },
         {
           "id": "tornado",
           "name_en": "Tornado",
-          "name_ko": "토네이도"
+          "name_ko": "회오리바람"
         },
         {
           "id": "hurricane",
@@ -819,17 +843,18 @@
           "name_ko": "허리케인"
         }
       ],
-      "description_ko": "파이어, 콜드, 라이트닝 계열의 데미지로부터 보호",
+      "description_ko": "화염, 냉기, 번개 피해로부터 자신을 보호합니다.",
       "description_en": "shield yourself from damage caused by fire, cold, and lightning"
     },
     {
       "id": "twister",
       "name_en": "Twister",
-      "name_ko": "트위스터",
+      "name_ko": "돌개바람",
+      "name_ko_classic": "트위스터",
       "tree": {
         "page": 3,
         "name_en": "Elemental",
-        "name_ko": "엘러멘틀 스킬"
+        "name_ko": "원소"
       },
       "position": {
         "row": 4,
@@ -845,19 +870,19 @@
         {
           "id": "cyclone-armor",
           "name_en": "Cyclone Armor",
-          "name_ko": "사이클론 아머"
+          "name_ko": "회오리 갑옷"
         }
       ],
       "synergies": [
         {
           "id": "arctic-blast",
           "name_en": "Arctic Blast",
-          "name_ko": "아틱 블라스트"
+          "name_ko": "극지 돌풍"
         },
         {
           "id": "tornado",
           "name_en": "Tornado",
-          "name_ko": "토네이도"
+          "name_ko": "회오리바람"
         },
         {
           "id": "hurricane",
@@ -865,17 +890,18 @@
           "name_ko": "허리케인"
         }
       ],
-      "description_ko": "작은 회오리바람을 방출하여 적의 길을 차단함",
+      "description_ko": "적들을 뚫고 지나가는 작은 회오리바람을 여럿 내보냅니다.",
       "description_en": "release several small whirlwinds that cut a path through your enemies"
     },
     {
       "id": "volcano",
       "name_en": "Volcano",
-      "name_ko": "볼케이노",
+      "name_ko": "화산",
+      "name_ko_classic": "볼케이노",
       "tree": {
         "page": 3,
         "name_en": "Elemental",
-        "name_ko": "엘러멘틀 스킬"
+        "name_ko": "원소"
       },
       "position": {
         "row": 5,
@@ -891,37 +917,38 @@
         {
           "id": "fissure",
           "name_en": "Fissure",
-          "name_ko": "피셔"
+          "name_ko": "균열"
         }
       ],
       "synergies": [
         {
           "id": "molten-boulder",
           "name_en": "Molten Boulder",
-          "name_ko": "몰튼 보울더"
+          "name_ko": "타오르는 바위"
         },
         {
           "id": "fissure",
           "name_en": "Fissure",
-          "name_ko": "피셔"
+          "name_ko": "균열"
         },
         {
           "id": "armageddon",
           "name_en": "Armageddon",
-          "name_ko": "아마게돈"
+          "name_ko": "아마겟돈"
         }
       ],
-      "description_ko": "적에게 죽음과 파괴를 안겨주는 볼케이노 소환",
+      "description_ko": "화산을 소환하여 적에게 죽음과 파괴의 비를 퍼붓습니다.",
       "description_en": "summon forth a volcano to rain death and destruction over your enemies"
     },
     {
       "id": "tornado",
       "name_en": "Tornado",
-      "name_ko": "토네이도",
+      "name_ko": "회오리바람",
+      "name_ko_classic": "토네이도",
       "tree": {
         "page": 3,
         "name_en": "Elemental",
-        "name_ko": "엘러멘틀 스킬"
+        "name_ko": "원소"
       },
       "position": {
         "row": 5,
@@ -937,19 +964,19 @@
         {
           "id": "twister",
           "name_en": "Twister",
-          "name_ko": "트위스터"
+          "name_ko": "돌개바람"
         }
       ],
       "synergies": [
         {
           "id": "cyclone-armor",
           "name_en": "Cyclone Armor",
-          "name_ko": "사이클론 아머"
+          "name_ko": "회오리 갑옷"
         },
         {
           "id": "twister",
           "name_en": "Twister",
-          "name_ko": "트위스터"
+          "name_ko": "돌개바람"
         },
         {
           "id": "hurricane",
@@ -957,17 +984,18 @@
           "name_ko": "허리케인"
         }
       ],
-      "description_ko": "바람과 파편을 불러들여 적을 날려버림",
+      "description_ko": "바람과 잔해의 회오리 바람으로 적을 강타합니다.",
       "description_en": "create a funnel of wind and debris to blast your enemies"
     },
     {
       "id": "armageddon",
       "name_en": "Armageddon",
-      "name_ko": "아마게돈",
+      "name_ko": "아마겟돈",
+      "name_ko_classic": "아마게돈",
       "tree": {
         "page": 3,
         "name_en": "Elemental",
-        "name_ko": "엘러멘틀 스킬"
+        "name_ko": "원소"
       },
       "position": {
         "row": 6,
@@ -983,32 +1011,32 @@
         {
           "id": "volcano",
           "name_en": "Volcano",
-          "name_ko": "볼케이노"
+          "name_ko": "화산"
         }
       ],
       "synergies": [
         {
           "id": "fissure",
           "name_en": "Fissure",
-          "name_ko": "피셔"
+          "name_ko": "균열"
         },
         {
           "id": "volcano",
           "name_en": "Volcano",
-          "name_ko": "볼케이노"
+          "name_ko": "화산"
         },
         {
           "id": "molten-boulder",
           "name_en": "Molten Boulder",
-          "name_ko": "몰튼 보울더"
+          "name_ko": "타오르는 바위"
         },
         {
           "id": "firestorm",
           "name_en": "Firestorm",
-          "name_ko": "파이어스톰"
+          "name_ko": "화염폭풍"
         }
       ],
-      "description_ko": "작은 유성들의 비를 생성하여 근처의 적에게 화염공격을 함",
+      "description_ko": "유성우를 생성하여 주위의 적에게 불타는 파괴의 비를 퍼붓습니다.",
       "description_en": "create a meteor shower to rain fiery destruction on nearby enemies"
     },
     {
@@ -1018,7 +1046,7 @@
       "tree": {
         "page": 3,
         "name_en": "Elemental",
-        "name_ko": "엘러멘틀 스킬"
+        "name_ko": "원소"
       },
       "position": {
         "row": 6,
@@ -1034,27 +1062,27 @@
         {
           "id": "tornado",
           "name_en": "Tornado",
-          "name_ko": "토네이도"
+          "name_ko": "회오리바람"
         }
       ],
       "synergies": [
         {
           "id": "cyclone-armor",
           "name_en": "Cyclone Armor",
-          "name_ko": "사이클론 아머"
+          "name_ko": "회오리 갑옷"
         },
         {
           "id": "twister",
           "name_en": "Twister",
-          "name_ko": "트위스터"
+          "name_ko": "돌개바람"
         },
         {
           "id": "tornado",
           "name_en": "Tornado",
-          "name_ko": "토네이도"
+          "name_ko": "회오리바람"
         }
       ],
-      "description_ko": "적에게 고통을 안겨주는 바람과 파편의 거대한 폭풍 소환",
+      "description_ko": "거대한 바람과 잔해의 폭풍을 생성하여 적을 산산이 조각냅니다.",
       "description_en": "create a massive storm of wind and debris to pound your enemies to bits"
     }
   ]

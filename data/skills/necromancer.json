@@ -1,13 +1,15 @@
 {
   "class": "necromancer",
   "class_name_en": "Necromancer",
-  "class_name_ko": "네크로맨서",
+  "class_name_ko": "강령술사",
+  "class_name_ko_classic": "네크로맨서",
   "skill_count": 30,
   "skills": [
     {
       "id": "amplify-damage",
       "name_en": "Amplify Damage",
-      "name_ko": "앰플리파이 데미지",
+      "name_ko": "피해 증폭",
+      "name_ko_classic": "앰플리파이 데미지",
       "tree": {
         "page": 1,
         "name_en": "Curses",
@@ -25,13 +27,14 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "저주 - 마법을 제외한 공격에 대한 데미지를 증가",
+      "description_ko": "적 무리에 저주를 걸어 대상이 받는 비마법 피해를 증가시킵니다.",
       "description_en": "curses a group of enemies, increasing the non-magic damage they receive"
     },
     {
       "id": "dim-vision",
       "name_en": "Dim Vision",
-      "name_ko": "딤 비젼",
+      "name_ko": "시야 흐리기",
+      "name_ko_classic": "딤 비젼",
       "tree": {
         "page": 1,
         "name_en": "Curses",
@@ -49,13 +52,14 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "저주 - 한무리의 몬스터 시력을 저하시켜 공격범위를 감소 시킴",
+      "description_ko": "괴물 무리에 저주를 걸어 대상의 시야 범위를 감소시킵니다.",
       "description_en": "curses a group of monsters, reducing their vision radius"
     },
     {
       "id": "weaken",
       "name_en": "Weaken",
-      "name_ko": "위큰",
+      "name_ko": "약화",
+      "name_ko_classic": "위큰",
       "tree": {
         "page": 1,
         "name_en": "Curses",
@@ -75,17 +79,18 @@
         {
           "id": "amplify-damage",
           "name_en": "Amplify Damage",
-          "name_ko": "앰플리파이 데미지"
+          "name_ko": "피해 증폭"
         }
       ],
       "synergies": [],
-      "description_ko": "저주 - 한무리의 적에게 그들의 체력을 약화시켜 공격 데미지를 감소 시킴",
-      "description_en": "curses a group of enemies, reducing the amount of damage they inflict"
+      "description_ko": "적 무리에게 저주를 걸어 그들이 주는 피해를 감소시키고 받는 마법 피해를 증가시킵니다",
+      "description_en": "curses a group of enemies, reducing the amount of damage they inflict and increasing the amount of magic damage taken"
     },
     {
       "id": "iron-maiden",
       "name_en": "Iron Maiden",
-      "name_ko": "아이언 메이든",
+      "name_ko": "가시 박힌 철관",
+      "name_ko_classic": "아이언 메이든",
       "tree": {
         "page": 1,
         "name_en": "Curses",
@@ -105,17 +110,18 @@
         {
           "id": "amplify-damage",
           "name_en": "Amplify Damage",
-          "name_ko": "앰플리파이 데미지"
+          "name_ko": "피해 증폭"
         }
       ],
       "synergies": [],
-      "description_ko": "저주 - 한무리의 적에게 받은 데미지를 반사하여 자신이 받은 데미지를 돌려줌",
+      "description_ko": "적 무리에 저주를 걸어 대상이 근접 공격으로 피해를 줄 때 자신도 피해를 입게 합니다.",
       "description_en": "curses a group of enemies, causing them to damage themselves when damaging others"
     },
     {
       "id": "terror",
       "name_en": "Terror",
-      "name_ko": "테러",
+      "name_ko": "공포",
+      "name_ko_classic": "테러",
       "tree": {
         "page": 1,
         "name_en": "Curses",
@@ -135,17 +141,18 @@
         {
           "id": "weaken",
           "name_en": "Weaken",
-          "name_ko": "위큰"
+          "name_ko": "약화"
         }
       ],
       "synergies": [],
-      "description_ko": "저주 - 한무리의 몬스터를 겁에 질리도록 하여 도망치도록 함",
+      "description_ko": "괴물 무리에 저주를 걸어 공포에 질려 달아나게 합니다.",
       "description_en": "curses a group of monsters, causing them to flee in terror"
     },
     {
       "id": "confuse",
       "name_en": "Confuse",
-      "name_ko": "컨퓨즈",
+      "name_ko": "시체의 땅",
+      "name_ko_classic": "컨퓨즈",
       "tree": {
         "page": 1,
         "name_en": "Curses",
@@ -165,17 +172,18 @@
         {
           "id": "dim-vision",
           "name_en": "Dim Vision",
-          "name_ko": "딤 비젼"
+          "name_ko": "시야 흐리기"
         }
       ],
       "synergies": [],
-      "description_ko": "저주 - 한무리의 몬스터에게 혼란을 주어 근접한 모든 것을 무조건 공격",
-      "description_en": "curses a monster to force it to attack random targets"
+      "description_ko": "시체의 땅을 만들어 하수인 군단을 성장시킵니다 참고: 체력이 1인 부활할 수 없는 몬스터 입니다",
+      "description_en": "plant a field of corpses to grow your minion army note: 1 HP mob that cannot be revived"
     },
     {
       "id": "life-tap",
       "name_en": "Life Tap",
-      "name_ko": "라이프 탭",
+      "name_ko": "생명력 추출",
+      "name_ko_classic": "라이프 탭",
       "tree": {
         "page": 1,
         "name_en": "Curses",
@@ -195,17 +203,18 @@
         {
           "id": "iron-maiden",
           "name_en": "Iron Maiden",
-          "name_ko": "아이언 메이든"
+          "name_ko": "가시 박힌 철관"
         }
       ],
       "synergies": [],
-      "description_ko": "저주 - 한무리의 적에게 저주를 걸어 공격한 만큼 생명력을 취함",
+      "description_ko": "괴물 무리에 저주를 걸어 대상을 공격하면 공격자가 생명력을 회복하게 합니다.",
       "description_en": "curses a group of monsters so that damaging them gives the attacker life"
     },
     {
       "id": "attract",
       "name_en": "Attract",
-      "name_ko": "어트랙트",
+      "name_ko": "유혹",
+      "name_ko_classic": "어트랙트",
       "tree": {
         "page": 1,
         "name_en": "Curses",
@@ -225,17 +234,18 @@
         {
           "id": "confuse",
           "name_en": "Confuse",
-          "name_ko": "컨퓨즈"
+          "name_ko": "시체의 땅"
         }
       ],
       "synergies": [],
-      "description_ko": "주변의 모든 적에게 공격을 받는 저주를 내림 이 저주는 다른 저주에 의해 무효화 되지 않음",
+      "description_ko": "괴물에 저주를 걸어 주위 모든 괴물의 공격 대상이 되게 합니다. 이 저주는 다른 저주에 무효화될 수 없습니다.",
       "description_en": "curses a monster to become the target of all nearby monsters this curse may not be overridden by another curse"
     },
     {
       "id": "decrepify",
       "name_en": "Decrepify",
-      "name_ko": "디크리피파이",
+      "name_ko": "노화",
+      "name_ko_classic": "디크리피파이",
       "tree": {
         "page": 1,
         "name_en": "Curses",
@@ -255,17 +265,18 @@
         {
           "id": "terror",
           "name_en": "Terror",
-          "name_ko": "테러"
+          "name_ko": "공포"
         }
       ],
       "synergies": [],
-      "description_ko": "저주 - 주변의 적들에게 저주를 걸어, 움직임을 둔화시킴",
+      "description_ko": "적 무리에 저주를 걸어 대상의 이동 속도를 감소시키고, 약화시켜 받는 피해를 증가시킵니다.",
       "description_en": "curses a group of enemies to make them slow, weak and take amplified damage"
     },
     {
       "id": "lower-resist",
       "name_en": "Lower Resist",
-      "name_ko": "로우어 레지스트",
+      "name_ko": "저항 감소",
+      "name_ko_classic": "로우어 레지스트",
       "tree": {
         "page": 1,
         "name_en": "Curses",
@@ -285,26 +296,27 @@
         {
           "id": "life-tap",
           "name_en": "Life Tap",
-          "name_ko": "라이프 탭"
+          "name_ko": "생명력 추출"
         },
         {
           "id": "decrepify",
           "name_en": "Decrepify",
-          "name_ko": "디크리피파이"
+          "name_ko": "노화"
         }
       ],
       "synergies": [],
-      "description_ko": "저주 - 한무리의 적이나 몬스터에게 그들이 가진 마법 저항력을 낮추어 모든 마법공격 데미지를 높임",
-      "description_en": "curses an enemy to take more damage from all magical attacks lowers resistances of monsters lowers maximum resistances of hostile players"
+      "description_ko": "적에 저주를 걸어 모든 마법 공격으로 받는 피해를 증가시킵니다. 괴물들의 저항을 감소시킵니다. 적대적 플레이어의 최대 저항을 감소시킵니다.",
+      "description_en": "curses an enemy to take more damage from all elemental attacks lowers resistances of monsters lowers maximum resistances of hostile players"
     },
     {
       "id": "teeth",
       "name_en": "Teeth",
-      "name_ko": "티스",
+      "name_ko": "이빨",
+      "name_ko_classic": "티스",
       "tree": {
         "page": 2,
         "name_en": "Poison and Bone",
-        "name_ko": "포이즌 & 본 스펠"
+        "name_ko": "독과 뼈"
       },
       "position": {
         "row": 1,
@@ -321,35 +333,36 @@
         {
           "id": "bone-wall",
           "name_en": "Bone Wall",
-          "name_ko": "본 월"
+          "name_ko": "뼈의 벽"
         },
         {
           "id": "bone-prison",
           "name_en": "Bone Prison",
-          "name_ko": "본 프리즌"
+          "name_ko": "뼈 감옥"
         },
         {
           "id": "bone-spear",
           "name_en": "Bone Spear",
-          "name_ko": "본 스피어"
+          "name_ko": "뼈 창"
         },
         {
           "id": "bone-spirit",
           "name_en": "Bone Spirit",
-          "name_ko": "본 스피리트"
+          "name_ko": "뼈 영혼"
         }
       ],
-      "description_ko": "여러 개의 뼈조각을 소환하여 공격함",
+      "description_ko": "가시 이빨을 소환하여 연속으로 발사합니다.",
       "description_en": "fires a barrage of summoned barbed teeth"
     },
     {
       "id": "bone-armor",
       "name_en": "Bone Armor",
-      "name_ko": "본 아머",
+      "name_ko": "뼈 갑옷",
+      "name_ko_classic": "본 아머",
       "tree": {
         "page": 2,
         "name_en": "Poison and Bone",
-        "name_ko": "포이즌 & 본 스펠"
+        "name_ko": "독과 뼈"
       },
       "position": {
         "row": 1,
@@ -366,25 +379,26 @@
         {
           "id": "bone-wall",
           "name_en": "Bone Wall",
-          "name_ko": "본 월"
+          "name_ko": "뼈의 벽"
         },
         {
           "id": "bone-prison",
           "name_en": "Bone Prison",
-          "name_ko": "본 프리즌"
+          "name_ko": "뼈 감옥"
         }
       ],
-      "description_ko": "근접전에서 적의 공격 데미지를 흡수하는 뼈로된 보호막",
+      "description_ko": "자신의 주위를 도는 뼈의 방패를 만들어 근접 피해를 흡수합니다.",
       "description_en": "creates an orbiting shield of bone that absorbs melee damage"
     },
     {
       "id": "poison-dagger",
       "name_en": "Poison Dagger",
-      "name_ko": "포이즌 데거",
+      "name_ko": "맹독 일격",
+      "name_ko_classic": "포이즌 데거",
       "tree": {
         "page": 2,
         "name_en": "Poison and Bone",
-        "name_ko": "포이즌 & 본 스펠"
+        "name_ko": "독과 뼈"
       },
       "position": {
         "row": 2,
@@ -401,25 +415,26 @@
         {
           "id": "poison-explosion",
           "name_en": "Poison Explosion",
-          "name_ko": "포이즌 익스플로젼"
+          "name_ko": "맹독 일제사격"
         },
         {
           "id": "poison-nova",
           "name_en": "Poison Nova",
-          "name_ko": "포이즌 노바"
+          "name_ko": "맹독 확산"
         }
       ],
-      "description_ko": "데거에 포이즌 데미지 추가",
-      "description_en": "adds poison to your dagger attacks"
+      "description_ko": "근접 공격에 독 피해를 추가합니다.",
+      "description_en": "adds poison to your melee attacks"
     },
     {
       "id": "corpse-explosion",
       "name_en": "Corpse Explosion",
-      "name_ko": "커프스 익스플로젼",
+      "name_ko": "시체 폭발",
+      "name_ko_classic": "커프스 익스플로젼",
       "tree": {
         "page": 2,
         "name_en": "Poison and Bone",
-        "name_ko": "포이즌 & 본 스펠"
+        "name_ko": "독과 뼈"
       },
       "position": {
         "row": 2,
@@ -435,21 +450,22 @@
         {
           "id": "teeth",
           "name_en": "Teeth",
-          "name_ko": "티스"
+          "name_ko": "이빨"
         }
       ],
       "synergies": [],
-      "description_ko": "주변의 시체를 이용하여 근접해 있는 적들에게 폭발로 인한 데미지를 줌",
+      "description_ko": "처치한 괴물의 시체에 시전하여 폭발시키고 주위의 적에게 피해를 줍니다.",
       "description_en": "cast on the corpse of a slain monster, it explodes, damaging nearby enemies"
     },
     {
       "id": "bone-wall",
       "name_en": "Bone Wall",
-      "name_ko": "본 월",
+      "name_ko": "뼈의 벽",
+      "name_ko_classic": "본 월",
       "tree": {
         "page": 2,
         "name_en": "Poison and Bone",
-        "name_ko": "포이즌 & 본 스펠"
+        "name_ko": "독과 뼈"
       },
       "position": {
         "row": 3,
@@ -465,32 +481,33 @@
         {
           "id": "bone-armor",
           "name_en": "Bone Armor",
-          "name_ko": "본 아머"
+          "name_ko": "뼈 갑옷"
         }
       ],
       "synergies": [
         {
           "id": "bone-armor",
           "name_en": "Bone Armor",
-          "name_ko": "본 아머"
+          "name_ko": "뼈 갑옷"
         },
         {
           "id": "bone-prison",
           "name_en": "Bone Prison",
-          "name_ko": "본 프리즌"
+          "name_ko": "뼈 감옥"
         }
       ],
-      "description_ko": "뼈와 그 잔재를 이용하여 통과할 수 없는 벽을 만듬",
+      "description_ko": "뼈와 잔해로 지나갈 수 없는 방벽을 생성합니다.",
       "description_en": "creates an impassable barrier of bone and debris"
     },
     {
       "id": "poison-explosion",
       "name_en": "Poison Explosion",
-      "name_ko": "포이즌 익스플로젼",
+      "name_ko": "맹독 일제사격",
+      "name_ko_classic": "포이즌 익스플로젼",
       "tree": {
         "page": 2,
         "name_en": "Poison and Bone",
-        "name_ko": "포이즌 & 본 스펠"
+        "name_ko": "독과 뼈"
       },
       "position": {
         "row": 4,
@@ -506,37 +523,38 @@
         {
           "id": "poison-dagger",
           "name_en": "Poison Dagger",
-          "name_ko": "포이즌 데거"
+          "name_ko": "맹독 일격"
         },
         {
           "id": "corpse-explosion",
           "name_en": "Corpse Explosion",
-          "name_ko": "커프스 익스플로젼"
+          "name_ko": "시체 폭발"
         }
       ],
       "synergies": [
         {
           "id": "poison-dagger",
           "name_en": "Poison Dagger",
-          "name_ko": "포이즌 데거"
+          "name_ko": "맹독 일격"
         },
         {
           "id": "poison-nova",
           "name_en": "Poison Nova",
-          "name_ko": "포이즌 노바"
+          "name_ko": "맹독 확산"
         }
       ],
-      "description_ko": "주변의 시체를 이용하여 근접해 있는 적들에게 폭발로 인한 포이즌 데미지를 줌",
-      "description_en": "cast on the corpse of a slain monster, toxic gas is released that poisons nearby monsters"
+      "description_ko": "독이 든 투사체를 발사하거나 던집니다. 최대 5개 투사체",
+      "description_en": "Shoots or throws a poison projectile, max 5 projectiles"
     },
     {
       "id": "bone-spear",
       "name_en": "Bone Spear",
-      "name_ko": "본 스피어",
+      "name_ko": "뼈 창",
+      "name_ko_classic": "본 스피어",
       "tree": {
         "page": 2,
         "name_en": "Poison and Bone",
-        "name_ko": "포이즌 & 본 스펠"
+        "name_ko": "독과 뼈"
       },
       "position": {
         "row": 4,
@@ -552,42 +570,43 @@
         {
           "id": "corpse-explosion",
           "name_en": "Corpse Explosion",
-          "name_ko": "커프스 익스플로젼"
+          "name_ko": "시체 폭발"
         }
       ],
       "synergies": [
         {
           "id": "bone-wall",
           "name_en": "Bone Wall",
-          "name_ko": "본 월"
+          "name_ko": "뼈의 벽"
         },
         {
           "id": "bone-prison",
           "name_en": "Bone Prison",
-          "name_ko": "본 프리즌"
+          "name_ko": "뼈 감옥"
         },
         {
           "id": "teeth",
           "name_en": "Teeth",
-          "name_ko": "티스"
+          "name_ko": "이빨"
         },
         {
           "id": "bone-spirit",
           "name_en": "Bone Spirit",
-          "name_ko": "본 스피리트"
+          "name_ko": "뼈 영혼"
         }
       ],
-      "description_ko": "적을 관통할 수 있는 뼈로된 창을 소환하여 공격함",
+      "description_ko": "치명적인 뼈 쐐기를 소환하여 적을 관통합니다.",
       "description_en": "summons a deadly spike of bone to impale your enemies"
     },
     {
       "id": "bone-prison",
       "name_en": "Bone Prison",
-      "name_ko": "본 프리즌",
+      "name_ko": "뼈 감옥",
+      "name_ko_classic": "본 프리즌",
       "tree": {
         "page": 2,
         "name_en": "Poison and Bone",
-        "name_ko": "포이즌 & 본 스펠"
+        "name_ko": "독과 뼈"
       },
       "position": {
         "row": 5,
@@ -603,37 +622,38 @@
         {
           "id": "bone-wall",
           "name_en": "Bone Wall",
-          "name_ko": "본 월"
+          "name_ko": "뼈의 벽"
         },
         {
           "id": "bone-spear",
           "name_en": "Bone Spear",
-          "name_ko": "본 스피어"
+          "name_ko": "뼈 창"
         }
       ],
       "synergies": [
         {
           "id": "bone-armor",
           "name_en": "Bone Armor",
-          "name_ko": "본 아머"
+          "name_ko": "뼈 갑옷"
         },
         {
           "id": "bone-wall",
           "name_en": "Bone Wall",
-          "name_ko": "본 월"
+          "name_ko": "뼈의 벽"
         }
       ],
-      "description_ko": "목표 주위에 뼈로된 장벽을 소환",
+      "description_ko": "대상 주위에 화석화된 뼈의 방벽을 생성합니다.",
       "description_en": "creates a barrier of fossilized bone around your target"
     },
     {
       "id": "poison-nova",
       "name_en": "Poison Nova",
-      "name_ko": "포이즌 노바",
+      "name_ko": "맹독 확산",
+      "name_ko_classic": "포이즌 노바",
       "tree": {
         "page": 2,
         "name_en": "Poison and Bone",
-        "name_ko": "포이즌 & 본 스펠"
+        "name_ko": "독과 뼈"
       },
       "position": {
         "row": 6,
@@ -649,32 +669,33 @@
         {
           "id": "poison-explosion",
           "name_en": "Poison Explosion",
-          "name_ko": "포이즌 익스플로젼"
+          "name_ko": "맹독 일제사격"
         }
       ],
       "synergies": [
         {
           "id": "poison-dagger",
           "name_en": "Poison Dagger",
-          "name_ko": "포이즌 데거"
+          "name_ko": "맹독 일격"
         },
         {
           "id": "poison-explosion",
           "name_en": "Poison Explosion",
-          "name_ko": "포이즌 익스플로젼"
+          "name_ko": "맹독 일제사격"
         }
       ],
-      "description_ko": "다수의 적에게 원형으로 포이즌을 발사하여 데미지를 줌",
+      "description_ko": "사방으로 퍼지는 맹독을 방출합니다.",
       "description_en": "emits an expanding ring of concentrated poison"
     },
     {
       "id": "bone-spirit",
       "name_en": "Bone Spirit",
-      "name_ko": "본 스피리트",
+      "name_ko": "뼈 영혼",
+      "name_ko_classic": "본 스피리트",
       "tree": {
         "page": 2,
         "name_en": "Poison and Bone",
-        "name_ko": "포이즌 & 본 스펠"
+        "name_ko": "독과 뼈"
       },
       "position": {
         "row": 6,
@@ -690,42 +711,43 @@
         {
           "id": "bone-spear",
           "name_en": "Bone Spear",
-          "name_ko": "본 스피어"
+          "name_ko": "뼈 창"
         }
       ],
       "synergies": [
         {
           "id": "bone-wall",
           "name_en": "Bone Wall",
-          "name_ko": "본 월"
+          "name_ko": "뼈의 벽"
         },
         {
           "id": "bone-prison",
           "name_en": "Bone Prison",
-          "name_ko": "본 프리즌"
+          "name_ko": "뼈 감옥"
         },
         {
           "id": "teeth",
           "name_en": "Teeth",
-          "name_ko": "티스"
+          "name_ko": "이빨"
         },
         {
           "id": "bone-spear",
           "name_en": "Bone Spear",
-          "name_ko": "본 스피어"
+          "name_ko": "뼈 창"
         }
       ],
-      "description_ko": "목표물을 추적하거나 스스로 적을 찾는 죽은 자의 영혼을 소환하여 적을 공격함",
+      "description_ko": "안식을 찾지 못한 언데드 영혼을 내보내 대상을 추적하거나 동족을 찾게 합니다.",
       "description_en": "releases a spirit of the restless undead that tracks its target or finds one of its own"
     },
     {
       "id": "skeleton-mastery",
       "name_en": "Skeleton Mastery",
-      "name_ko": "스켈레톤 마스터리",
+      "name_ko": "해골 숙련",
+      "name_ko_classic": "스켈레톤 마스터리",
       "tree": {
         "page": 3,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 1,
@@ -741,21 +763,22 @@
         {
           "id": "raise-skeleton",
           "name_en": "Raise Skeleton",
-          "name_ko": "레이즈 스켈레톤"
+          "name_ko": "해골 되살리기"
         }
       ],
       "synergies": [],
-      "description_ko": "패시브 - 마법에 의하여 소환된 몬스터의 라이프와 데미지를 증가 시킴",
+      "description_ko": "지속 효과 - 되살린 해골과 생물의 생명력과 공격력이 증가합니다.",
       "description_en": "passive - increases life and damage of raised skeletons and revived creatures"
     },
     {
       "id": "raise-skeleton",
       "name_en": "Raise Skeleton",
-      "name_ko": "레이즈 스켈레톤",
+      "name_ko": "해골 되살리기",
+      "name_ko_classic": "레이즈 스켈레톤",
       "tree": {
         "page": 3,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 1,
@@ -769,17 +792,18 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "죽은 몬스터의 시체를 이용하여 소환된 스켈레톤을 대신 싸우게 함",
+      "description_ko": "처치한 괴물의 시체에 시전하여 해골 전사로 되살리고 전투를 돕게 합니다.",
       "description_en": "cast on the corpse of a slain monster, this raises a skeleton warrior that fights for you"
     },
     {
       "id": "clay-golem",
       "name_en": "Clay Golem",
-      "name_ko": "클레이 골렘",
+      "name_ko": "점토 골렘",
+      "name_ko_classic": "클레이 골렘",
       "tree": {
         "page": 3,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 2,
@@ -796,30 +820,31 @@
         {
           "id": "fire-golem",
           "name_en": "Fire Golem",
-          "name_ko": "파이어 골렘"
+          "name_ko": "화염 골렘"
         },
         {
           "id": "iron-golem",
           "name_en": "Iron Golem",
-          "name_ko": "아이언 골렘"
+          "name_ko": "강철 골렘"
         },
         {
           "id": "blood-golem",
           "name_en": "Blood Golem",
-          "name_ko": "블러드 골렘"
+          "name_ko": "피 골렘"
         }
       ],
-      "description_ko": "대지로부터 골렘을 소환하여 자기 대신 싸우게 함",
-      "description_en": "creates a golem from the earth to fight by your side"
+      "description_ko": "대지에서 골렘을 소환하여 당신과 함께 싸우게 하고 주변 아군의 방어력을 높입니다",
+      "description_en": "creates a golem from the earth to fight by your side and increase the defenses of nearby allies"
     },
     {
       "id": "golem-mastery",
       "name_en": "Golem Mastery",
-      "name_ko": "골렘 마스터리",
+      "name_ko": "골렘 숙련",
+      "name_ko_classic": "골렘 마스터리",
       "tree": {
         "page": 3,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 3,
@@ -835,21 +860,22 @@
         {
           "id": "clay-golem",
           "name_en": "Clay Golem",
-          "name_ko": "클레이 골렘"
+          "name_ko": "점토 골렘"
         }
       ],
       "synergies": [],
-      "description_ko": "패시브 - 소환된 골렘의 라이프와 스피드를 강화 시킴",
-      "description_en": "Enhances Speed and Life of all your Golems"
+      "description_ko": "지속 효과 - 모든 골렘의 속도, 생명력, 피해 및 명중률을 증가시킵니다",
+      "description_en": "Passive - Increases Speed, Life, Damage, and Attack Rating of all of your Golems"
     },
     {
       "id": "raise-skeletal-mage",
       "name_en": "Raise Skeletal Mage",
-      "name_ko": "레이즈 스켈레톤 메이지",
+      "name_ko": "해골 마법학자 되살리기",
+      "name_ko_classic": "레이즈 스켈레톤 메이지",
       "tree": {
         "page": 3,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 3,
@@ -865,21 +891,22 @@
         {
           "id": "raise-skeleton",
           "name_en": "Raise Skeleton",
-          "name_ko": "레이즈 스켈레톤"
+          "name_ko": "해골 되살리기"
         }
       ],
       "synergies": [],
-      "description_ko": "죽은 몬스터의 시체를 이용하여 스켈레톤 메이지를 소환하고 대신 싸우게 함",
+      "description_ko": "처치한 괴물의 시체에 시전하여 해골 마법학자로 되살리고 전투를 돕게 합니다.",
       "description_en": "cast on the corpse of a slain monster, this raises a skeleton mage that fights for you"
     },
     {
       "id": "blood-golem",
       "name_en": "Blood Golem",
-      "name_ko": "블러드 골렘",
+      "name_ko": "피 골렘",
+      "name_ko_classic": "블러드 골렘",
       "tree": {
         "page": 3,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 4,
@@ -895,37 +922,38 @@
         {
           "id": "clay-golem",
           "name_en": "Clay Golem",
-          "name_ko": "클레이 골렘"
+          "name_ko": "점토 골렘"
         }
       ],
       "synergies": [
         {
           "id": "clay-golem",
           "name_en": "Clay Golem",
-          "name_ko": "클레이 골렘"
+          "name_ko": "점토 골렘"
         },
         {
           "id": "fire-golem",
           "name_en": "Fire Golem",
-          "name_ko": "파이어 골렘"
+          "name_ko": "화염 골렘"
         },
         {
           "id": "iron-golem",
           "name_en": "Iron Golem",
-          "name_ko": "아이언 골렘"
+          "name_ko": "강철 골렘"
         }
       ],
-      "description_ko": "마법으로 자신의 라이프를 공유하는 골렘을 소환하여 적 공격시 그 생명력을 취함",
-      "description_en": "creates a golem that shares with you the life it steals and damage it receives"
+      "description_ko": "추가 피해를 제공하는 대신 마나 대신 생명력을 소모하게 하는 혈마법 오라를 제공하는 골렘을 소환합니다",
+      "description_en": "creates a golem that provides a blood magic aura that allows you to spend life over mana in exchange for bonus damage"
     },
     {
       "id": "summon-resist",
       "name_en": "Summon Resist",
-      "name_ko": "써몬 레지스트",
+      "name_ko": "소환수 저항",
+      "name_ko_classic": "써몬 레지스트",
       "tree": {
         "page": 3,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 5,
@@ -941,21 +969,22 @@
         {
           "id": "golem-mastery",
           "name_en": "Golem Mastery",
-          "name_ko": "골렘 마스터리"
+          "name_ko": "골렘 숙련"
         }
       ],
       "synergies": [],
-      "description_ko": "패시브 - 마법으로 소환한 모든 몬스터의 마법 저항력을 높임",
+      "description_ko": "지속 효과 - 모든 소환수의 저항을 증가시킵니다.",
       "description_en": "passive - increases the resistances of all summoned creatures"
     },
     {
       "id": "iron-golem",
       "name_en": "Iron Golem",
-      "name_ko": "아이언 골렘",
+      "name_ko": "강철 골렘",
+      "name_ko_classic": "아이언 골렘",
       "tree": {
         "page": 3,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 5,
@@ -971,37 +1000,38 @@
         {
           "id": "blood-golem",
           "name_en": "Blood Golem",
-          "name_ko": "블러드 골렘"
+          "name_ko": "피 골렘"
         }
       ],
       "synergies": [
         {
           "id": "clay-golem",
           "name_en": "Clay Golem",
-          "name_ko": "클레이 골렘"
+          "name_ko": "점토 골렘"
         },
         {
           "id": "fire-golem",
           "name_en": "Fire Golem",
-          "name_ko": "파이어 골렘"
+          "name_ko": "화염 골렘"
         },
         {
           "id": "blood-golem",
           "name_en": "Blood Golem",
-          "name_ko": "블러드 골렘"
+          "name_ko": "피 골렘"
         }
       ],
-      "description_ko": "금속 아이템을 사용하여 골렘을 소환하고 그 속성을 가지게 함",
+      "description_ko": "금속 아이템을 해당 아이템의 속성을 계승하는 골렘으로 변화시킵니다.",
       "description_en": "transforms a metallic item into a golem that gains the properties of the item"
     },
     {
       "id": "fire-golem",
       "name_en": "Fire Golem",
-      "name_ko": "파이어 골렘",
+      "name_ko": "화염 골렘",
+      "name_ko_classic": "파이어 골렘",
       "tree": {
         "page": 3,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 6,
@@ -1017,37 +1047,38 @@
         {
           "id": "iron-golem",
           "name_en": "Iron Golem",
-          "name_ko": "아이언 골렘"
+          "name_ko": "강철 골렘"
         }
       ],
       "synergies": [
         {
           "id": "clay-golem",
           "name_en": "Clay Golem",
-          "name_ko": "클레이 골렘"
+          "name_ko": "점토 골렘"
         },
         {
           "id": "iron-golem",
           "name_en": "Iron Golem",
-          "name_ko": "아이언 골렘"
+          "name_ko": "강철 골렘"
         },
         {
           "id": "blood-golem",
           "name_en": "Blood Golem",
-          "name_ko": "블러드 골렘"
+          "name_ko": "피 골렘"
         }
       ],
-      "description_ko": "자신이 받는 파이어 데미지를 생명력으로 전환하는 골렘 소환",
-      "description_en": "creates a golem that converts the damage it receives from fire into life"
+      "description_ko": "받은 화염 피해를 생명력으로 전환하고, 주변 아군에게 추가 화염 피해를 부여하는 골렘을 소환합니다",
+      "description_en": "creates a golem that converts the damage it receives from fire into life and gives nearby allies bonus fire damage"
     },
     {
       "id": "revive",
       "name_en": "Revive",
-      "name_ko": "리바이브",
+      "name_ko": "부활",
+      "name_ko_classic": "리바이브",
       "tree": {
         "page": 3,
         "name_en": "Summoning",
-        "name_ko": "소환 스킬"
+        "name_ko": "소환"
       },
       "position": {
         "row": 6,
@@ -1063,16 +1094,16 @@
         {
           "id": "raise-skeletal-mage",
           "name_en": "Raise Skeletal Mage",
-          "name_ko": "레이즈 스켈레톤 메이지"
+          "name_ko": "해골 마법학자 되살리기"
         },
         {
           "id": "iron-golem",
           "name_en": "Iron Golem",
-          "name_ko": "아이언 골렘"
+          "name_ko": "강철 골렘"
         }
       ],
       "synergies": [],
-      "description_ko": "죽은 몬스터를 소환하여 자신 대신 싸우게 함",
+      "description_ko": "괴물을 되살려 전투를 돕게 합니다.",
       "description_en": "returns a monster to life to fight by your side"
     }
   ]

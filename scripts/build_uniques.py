@@ -124,10 +124,10 @@ class Renderer:
             per = (par or 0) / 8
             label_map = {
                 "dmg%": "증가된 데미지(%)", "dmg": "최대 데미지",
-                "hp": "라이프", "mana": "마나",
-                "ac": "방어력", "att": "공격력(AR)", "str": "힘", "dex": "민첩성",
-                "vit": "활력", "stam": "스태미나", "gold%": "몬스터가 떨어뜨리는 금화(%)",
-                "mag%": "매직 아이템 발견 확률(%)", "thorns": "공격자가 받는 데미지",
+                "hp": "생명력", "mana": "마나",
+                "ac": "방어력", "att": "공격 등급", "str": "힘", "dex": "민첩",
+                "vit": "활력", "stam": "지구력", "gold%": "골드 획득량(%)",
+                "mag%": "마법 아이템 발견 확률(%)", "thorns": "공격자가 받는 데미지",
                 "dmg-und": "언데드에게 추가 데미지(%)", "att-und": "언데드 상대 공격력",
                 "dmg-dem": "악마에게 추가 데미지(%)", "att-dem": "악마 상대 공격력",
                 "res-ltng": "번개 저항(%)", "abs-cold": "냉기 흡수",
@@ -273,9 +273,9 @@ class Renderer:
         if p == "mana-kill":
             add(f"적 처치 시 마나 {rng(mn,mx)}", 45); return out
         if p == "heal-kill":
-            add(f"적 처치 시 라이프 {rng(mn,mx)}", 45); return out
+            add(f"적 처치 시 생명력 {rng(mn,mx)}", 45); return out
         if p == "demon-heal":
-            add(f"악마 처치 시 라이프 {rng(mn,mx)}", 45); return out
+            add(f"악마 처치 시 생명력 {rng(mn,mx)}", 45); return out
         if p == "dmg-to-mana":
             add(f"받은 데미지의 {rng(mn,mx,pct=True,sign=False)}가 마나로 전환", 44)
             return out
@@ -323,7 +323,7 @@ class Renderer:
             return out
         pct = stat in PERCENT_STATS
         lbl = lbl.strip().rstrip(":")
-        if "%d" in lbl or "%i" in lbl:
+        if any(ph in lbl for ph in ("%+d", "%d", "%i")):
             # 라벨에 printf 플레이스홀더가 포함된 경우 값을 치환
             val = rng(mn, mx, pct=False, sign="%+d" in lbl)
             lbl = lbl.replace("%+d", val).replace("%d", val).replace("%i", val)
@@ -343,6 +343,9 @@ def main():
     ap.add_argument("--supplement", required=True)
     ap.add_argument("--skills-dir", required=True, help="data/skills (트리명/스킬명 참조)")
     ap.add_argument("--archives", default=None, help="d2archives uniqueAndSetData.json (이미지 매핑)")
+    ap.add_argument("--d2r", default=None,
+                    help="D2R 재번역 문자열 덤프 — 지정 시 D2R 명칭·라벨이 기본, "
+                         "구작(TBL) 명칭은 name_ko_classic으로 병기")
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
     src = Path(args.d2data)
@@ -356,10 +359,42 @@ def main():
     kor = load("localestrings-kor")
     eng = load("localestrings-eng")
     supp = json.load(open(args.supplement, encoding="utf-8"))
+    d2r = {}
+    if args.d2r and Path(args.d2r).exists():
+        d2r = json.load(open(args.d2r, encoding="utf-8"))
 
-    def ko(key, default=""):
+    def ko_classic(key, default=""):
+        """구작(TBL) 한국어."""
         if not key:
             return default
+        v = kor.get(key, "").strip()
+        return strip_color(v) if v else default
+
+    # 키 표기가 다른 경우(Vampiregaze ↔ Vampire Gaze)를 위한 정규화 색인
+    d2r_norm = {}
+    for k, v in d2r.items():
+        if v["ko"].strip():
+            d2r_norm.setdefault(re.sub(r"[^a-z0-9]", "", k.lower()), v)
+
+    def d2r_get(*keys):
+        for k in keys:
+            if not k:
+                continue
+            d = d2r.get(k)
+            if d and d["ko"].strip():
+                return d
+            d = d2r_norm.get(re.sub(r"[^a-z0-9]", "", k.lower()))
+            if d:
+                return d
+        return None
+
+    def ko(key, default=""):
+        """D2R 재번역 우선, 없으면 구작 → 보충 파일 순."""
+        if not key:
+            return default
+        d = d2r.get(key)
+        if d and d["ko"].strip():
+            return strip_color(d["ko"])
         v = kor.get(key, "").strip()
         if v:
             return strip_color(v)
@@ -432,7 +467,8 @@ def main():
         "circ": "서클릿", "pelt": "드루이드 투구", "head": "네크로맨서 두개골",
         "ashd": "팔라딘 방패", "phlm": "바바리안 투구", "barb": "바바리안 투구",
         "tiar": "서클릿", "grim": "마도서(그리무아르)",
-        "scha": "차암", "mcha": "차암", "lcha": "차암", "char": "차암",
+        "scha": "부적(차암)", "mcha": "부적(차암)", "lcha": "부적(차암)",
+        "char": "부적(차암)",
     }
 
     def tier_of(b):
@@ -464,7 +500,11 @@ def main():
         if not b:
             continue
         name_en = en(idx, idx)
-        name_ko = ko(idx, name_en)
+        dr = d2r_get(idx, name_en)
+        name_ko = strip_color(dr["ko"]) if dr else ko_classic(idx, name_en) or name_en
+        name_ko_classic = ko_classic(idx)
+        if name_ko_classic == name_ko:
+            name_ko_classic = ""
 
         # 레인보우 패싯: 동명 8종을 원소·발동 조건으로 구분
         if idx == "Rainbow Facet":
@@ -481,6 +521,8 @@ def main():
             if elem or trigger:
                 name_ko = f"{name_ko} ({elem}·{trigger})"
                 name_en = f"{name_en} ({elem} {trigger})"
+                if name_ko_classic:
+                    name_ko_classic = f"{name_ko_classic} ({elem}·{trigger})"
 
         lines = []
         for i in range(1, 13):
@@ -508,11 +550,16 @@ def main():
         else:
             seen_slugs[slug] = 1
 
+        base_ko = ko(code, code)
+        base_ko_classic = ko_classic(code)
         entry = {
             "id": slug,
             "name_en": name_en,
             "name_ko": name_ko,
-            "base": {"code": code, "name_en": en(code, code), "name_ko": ko(code, code)},
+            **({"name_ko_classic": name_ko_classic} if name_ko_classic else {}),
+            "base": {"code": code, "name_en": en(code, code), "name_ko": base_ko,
+                     **({"name_ko_classic": base_ko_classic}
+                        if base_ko_classic and base_ko_classic != base_ko else {})},
             "kind": kind,
             "category_ko": cat_ko,
             "tier": tier_of(b),

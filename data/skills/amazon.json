@@ -7,11 +7,12 @@
     {
       "id": "magic-arrow",
       "name_en": "Magic Arrow",
-      "name_ko": "매직 애로우",
+      "name_ko": "마법 화살",
+      "name_ko_classic": "매직 애로우",
       "tree": {
         "page": 1,
         "name_en": "Bow and Crossbow",
-        "name_ko": "보우 & 크로스보우 스킬"
+        "name_ko": "활과 쇠뇌"
       },
       "position": {
         "row": 1,
@@ -25,17 +26,18 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "추가적인 데미지를 입히는 마법화살을 만듬",
+      "description_ko": "추가 피해를 주는 마법 화살을 생성합니다.",
       "description_en": "creates a magical arrow or bolt that does extra damage"
     },
     {
       "id": "fire-arrow",
       "name_en": "Fire Arrow",
-      "name_ko": "파이어 애로우",
+      "name_ko": "불꽃 화살",
+      "name_ko_classic": "파이어 애로우",
       "tree": {
         "page": 1,
         "name_en": "Bow and Crossbow",
-        "name_ko": "보우 & 크로스보우 스킬"
+        "name_ko": "활과 쇠뇌"
       },
       "position": {
         "row": 1,
@@ -52,20 +54,21 @@
         {
           "id": "exploding-arrow",
           "name_en": "Exploding Arrow",
-          "name_ko": "익스플로딩 애로우"
+          "name_ko": "폭발 화살"
         }
       ],
-      "description_ko": "적중시 화살에 파이어 데미지 추가",
+      "description_ko": "마법으로 화살을 강화하여 화염 피해를 줍니다.",
       "description_en": "magically enhances your arrows or bolts with fire"
     },
     {
       "id": "cold-arrow",
       "name_en": "Cold Arrow",
-      "name_ko": "콜드 애로우",
+      "name_ko": "냉기 화살",
+      "name_ko_classic": "콜드 애로우",
       "tree": {
         "page": 1,
         "name_en": "Bow and Crossbow",
-        "name_ko": "보우 & 크로스보우 스킬"
+        "name_ko": "활과 쇠뇌"
       },
       "position": {
         "row": 2,
@@ -82,20 +85,21 @@
         {
           "id": "ice-arrow",
           "name_en": "Ice Arrow",
-          "name_ko": "아이스 애로우"
+          "name_ko": "빙하 보주 화살"
         }
       ],
-      "description_ko": "화살의 데미지를 1/2 정도 낮추는 대신 콜드 데미지를 주고 몬스터의 움직임을 둔화시킴 항상 명중",
+      "description_ko": "마법으로 화살을 강화하여 냉기 피해와 감속 효과를 추가합니다. 냉기 화살은 일반 피해의 절반에 해당하는 피해를 줍니다.",
       "description_en": "magically enhances your arrows or bolts by adding cold damage and a slowing effect cold arrows only do half of their regular damage"
     },
     {
       "id": "multiple-shot",
       "name_en": "Multiple Shot",
-      "name_ko": "멀티플 샷",
+      "name_ko": "다발 사격",
+      "name_ko_classic": "멀티플 샷",
       "tree": {
         "page": 1,
         "name_en": "Bow and Crossbow",
-        "name_ko": "보우 & 크로스보우 스킬"
+        "name_ko": "활과 쇠뇌"
       },
       "position": {
         "row": 2,
@@ -111,27 +115,28 @@
         {
           "id": "magic-arrow",
           "name_en": "Magic Arrow",
-          "name_ko": "매직 애로우"
+          "name_ko": "마법 화살"
         }
       ],
       "synergies": [
         {
           "id": "guided-arrow",
           "name_en": "Guided Arrow",
-          "name_ko": "가이드 애로우"
+          "name_ko": "유도 화살"
         }
       ],
-      "description_ko": "마법으로 하나의 화살을 여러 개로 나누어 공격",
+      "description_ko": "마법으로 하나의 화살을 여러 개로 분열시킵니다.",
       "description_en": "magically splits one arrow or bolt into many"
     },
     {
       "id": "exploding-arrow",
       "name_en": "Exploding Arrow",
-      "name_ko": "익스플로딩 애로우",
+      "name_ko": "폭발 화살",
+      "name_ko_classic": "익스플로딩 애로우",
       "tree": {
         "page": 1,
         "name_en": "Bow and Crossbow",
-        "name_ko": "보우 & 크로스보우 스킬"
+        "name_ko": "활과 쇠뇌"
       },
       "position": {
         "row": 3,
@@ -147,32 +152,33 @@
         {
           "id": "fire-arrow",
           "name_en": "Fire Arrow",
-          "name_ko": "파이어 애로우"
+          "name_ko": "불꽃 화살"
         },
         {
           "id": "multiple-shot",
           "name_en": "Multiple Shot",
-          "name_ko": "멀티플 샷"
+          "name_ko": "다발 사격"
         }
       ],
       "synergies": [
         {
           "id": "fire-arrow",
           "name_en": "Fire Arrow",
-          "name_ko": "파이어 애로우"
+          "name_ko": "불꽃 화살"
         }
       ],
-      "description_ko": "적중 했을 때 폭발하여 주변 적에게 데미지를 줌",
+      "description_ko": "화살을 강화하여 접촉 시 폭발을 일으키고 주위의 모든 적에게 피해를 줍니다.",
       "description_en": "enchants an arrow or bolt that explodes on contact, damaging all nearby enemies"
     },
     {
       "id": "ice-arrow",
       "name_en": "Ice Arrow",
-      "name_ko": "아이스 애로우",
+      "name_ko": "빙하 보주 화살",
+      "name_ko_classic": "아이스 애로우",
       "tree": {
         "page": 1,
         "name_en": "Bow and Crossbow",
-        "name_ko": "보우 & 크로스보우 스킬"
+        "name_ko": "활과 쇠뇌"
       },
       "position": {
         "row": 4,
@@ -188,32 +194,33 @@
         {
           "id": "cold-arrow",
           "name_en": "Cold Arrow",
-          "name_ko": "콜드 애로우"
+          "name_ko": "냉기 화살"
         }
       ],
       "synergies": [
         {
           "id": "cold-arrow",
           "name_en": "Cold Arrow",
-          "name_ko": "콜드 애로우"
+          "name_ko": "냉기 화살"
         },
         {
           "id": "freezing-arrow",
           "name_en": "Freezing Arrow",
-          "name_ko": "프리징 애로우"
+          "name_ko": "빙결 화살"
         }
       ],
-      "description_ko": "적중시 콜드 데미지를 주고 몬스터를 결빙시켜 움직임을 둔화시킴 항상명중",
+      "description_ko": "마법으로 화살을 강화하여 적을 빙결시킵니다.",
       "description_en": "magically enhances your arrow or bolt to freeze your enemies"
     },
     {
       "id": "guided-arrow",
       "name_en": "Guided Arrow",
-      "name_ko": "가이드 애로우",
+      "name_ko": "유도 화살",
+      "name_ko_classic": "가이드 애로우",
       "tree": {
         "page": 1,
         "name_en": "Bow and Crossbow",
-        "name_ko": "보우 & 크로스보우 스킬"
+        "name_ko": "활과 쇠뇌"
       },
       "position": {
         "row": 4,
@@ -229,32 +236,33 @@
         {
           "id": "cold-arrow",
           "name_en": "Cold Arrow",
-          "name_ko": "콜드 애로우"
+          "name_ko": "냉기 화살"
         },
         {
           "id": "multiple-shot",
           "name_en": "Multiple Shot",
-          "name_ko": "멀티플 샷"
+          "name_ko": "다발 사격"
         }
       ],
       "synergies": [
         {
           "id": "multiple-shot",
           "name_en": "Multiple Shot",
-          "name_ko": "멀티플 샷"
+          "name_ko": "다발 사격"
         }
       ],
-      "description_ko": "목표물을 추적할 수 있도록 화살에 마법을 부여함 항상명중",
-      "description_en": "enhances your arrows and bolts to track your target or seek one of its own always hits"
+      "description_ko": "화살을 강화하여 대상 또는 다른 적을 추적하게 합니다.",
+      "description_en": "enhances your arrows and bolts to track your target or seek one of its own"
     },
     {
       "id": "strafe",
       "name_en": "Strafe",
-      "name_ko": "스트레이프",
+      "name_ko": "속사",
+      "name_ko_classic": "스트레이프",
       "tree": {
         "page": 1,
         "name_en": "Bow and Crossbow",
-        "name_ko": "보우 & 크로스보우 스킬"
+        "name_ko": "활과 쇠뇌"
       },
       "position": {
         "row": 5,
@@ -270,32 +278,33 @@
         {
           "id": "guided-arrow",
           "name_en": "Guided Arrow",
-          "name_ko": "가이드 애로우"
+          "name_ko": "유도 화살"
         }
       ],
       "synergies": [
         {
           "id": "guided-arrow",
           "name_en": "Guided Arrow",
-          "name_ko": "가이드 애로우"
+          "name_ko": "유도 화살"
         },
         {
           "id": "multiple-shot",
           "name_en": "Multiple Shot",
-          "name_ko": "멀티플 샷"
+          "name_ko": "다발 사격"
         }
       ],
-      "description_ko": "주변에 있는 다수의 적을 향하여 하나의 화살을 나누어 공격함",
+      "description_ko": "마법으로 하나의 화살을 여러 개로 분열시켜 주위의 적 다수를 공격합니다.",
       "description_en": "magically splits one arrow into several that target multiple nearby enemies"
     },
     {
       "id": "immolation-arrow",
       "name_en": "Immolation Arrow",
-      "name_ko": "이몰레이션 애로우",
+      "name_ko": "운석 화살",
+      "name_ko_classic": "이몰레이션 애로우",
       "tree": {
         "page": 1,
         "name_en": "Bow and Crossbow",
-        "name_ko": "보우 & 크로스보우 스킬"
+        "name_ko": "활과 쇠뇌"
       },
       "position": {
         "row": 5,
@@ -311,27 +320,28 @@
         {
           "id": "exploding-arrow",
           "name_en": "Exploding Arrow",
-          "name_ko": "익스플로딩 애로우"
+          "name_ko": "폭발 화살"
         }
       ],
       "synergies": [
         {
           "id": "exploding-arrow",
           "name_en": "Exploding Arrow",
-          "name_ko": "익스플로딩 애로우"
+          "name_ko": "폭발 화살"
         }
       ],
-      "description_ko": "적중시 불기둥을 형성하여 다수의 적에게 파이어 데미지를 줌",
+      "description_ko": "화살을 강화하여 큰 화염 피해를 주고 적중 시 거대한 불길을 생성합니다.",
       "description_en": "enhances arrows or bolts to cause severe fire damage and creates a pyre upon impact"
     },
     {
       "id": "freezing-arrow",
       "name_en": "Freezing Arrow",
-      "name_ko": "프리징 애로우",
+      "name_ko": "빙결 화살",
+      "name_ko_classic": "프리징 애로우",
       "tree": {
         "page": 1,
         "name_en": "Bow and Crossbow",
-        "name_ko": "보우 & 크로스보우 스킬"
+        "name_ko": "활과 쇠뇌"
       },
       "position": {
         "row": 6,
@@ -347,32 +357,33 @@
         {
           "id": "ice-arrow",
           "name_en": "Ice Arrow",
-          "name_ko": "아이스 애로우"
+          "name_ko": "빙하 보주 화살"
         }
       ],
       "synergies": [
         {
           "id": "cold-arrow",
           "name_en": "Cold Arrow",
-          "name_ko": "콜드 애로우"
+          "name_ko": "냉기 화살"
         },
         {
           "id": "ice-arrow",
           "name_en": "Ice Arrow",
-          "name_ko": "아이스 애로우"
+          "name_ko": "빙하 보주 화살"
         }
       ],
-      "description_ko": "적중시 다수의 적에게 콜드 데미지를 주고 결빙시켜 움직이지 못하게 함 항상명중",
+      "description_ko": "마법으로 화살을 강화하여 적 무리를 모두 빙결시킵니다.",
       "description_en": "magically enhances an arrow or bolt to freeze entire groups of monsters"
     },
     {
       "id": "inner-sight",
       "name_en": "Inner Sight",
-      "name_ko": "이너 사이트",
+      "name_ko": "내면의 시야",
+      "name_ko_classic": "이너 사이트",
       "tree": {
         "page": 2,
         "name_en": "Passive and Magic",
-        "name_ko": "패시브 & 마법 스킬"
+        "name_ko": "지속 효과와 마법"
       },
       "position": {
         "row": 1,
@@ -386,17 +397,18 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "파티 구성원들이 공격하기 쉽도록 범위 안의 몬스터를 비추고, 방어력을 약화시킴",
+      "description_ko": "주위의 적에게 빛을 비춰 자신과 파티원의 적중률을 향상시킵니다.",
       "description_en": "illuminates nearby enemies making them easier to hit for you and your party"
     },
     {
       "id": "critical-strike",
       "name_en": "Critical Strike",
-      "name_ko": "크리티컬 스트라이크",
+      "name_ko": "치명타",
+      "name_ko_classic": "크리티컬 스트라이크",
       "tree": {
         "page": 2,
         "name_en": "Passive and Magic",
-        "name_ko": "패시브 & 마법 스킬"
+        "name_ko": "지속 효과와 마법"
       },
       "position": {
         "row": 1,
@@ -410,17 +422,18 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "패시브 - 2배의 기본 데미지로 공격 확률을 높임",
+      "description_ko": "지속 효과 - 공격할 때 일정 확률로 2배의 피해를 줍니다.",
       "description_en": "passive - your attacks have a chance to do double damage"
     },
     {
       "id": "dodge",
       "name_en": "Dodge",
-      "name_ko": "닷지",
+      "name_ko": "흘리기 & 회피",
+      "name_ko_classic": "닷지",
       "tree": {
         "page": 2,
         "name_en": "Passive and Magic",
-        "name_ko": "패시브 & 마법 스킬"
+        "name_ko": "지속 효과와 마법"
       },
       "position": {
         "row": 2,
@@ -434,17 +447,18 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "패시브 - 서 있는 상태에서 근접 공격시 피할 수 있는 확률을 증가시킴",
-      "description_en": "passive - you have a chance to dodge a melee attack when attacking or standing still"
+      "description_ko": "지속 효과 - 공격하거나 가만히 서 있을 때 일정 확률로 근접 공격과 투사체를 흘려 내고 회피합니다.",
+      "description_en": "passive - you have a chance to dodge melee attacks and missiles when attacking or standing still"
     },
     {
       "id": "slow-missiles",
       "name_en": "Slow Missiles",
-      "name_ko": "슬로우 미사일",
+      "name_ko": "투사체 감속",
+      "name_ko_classic": "슬로우 미사일",
       "tree": {
         "page": 2,
         "name_en": "Passive and Magic",
-        "name_ko": "패시브 & 마법 스킬"
+        "name_ko": "지속 효과와 마법"
       },
       "position": {
         "row": 3,
@@ -460,21 +474,22 @@
         {
           "id": "inner-sight",
           "name_en": "Inner Sight",
-          "name_ko": "이너 사이트"
+          "name_ko": "내면의 시야"
         }
       ],
       "synergies": [],
-      "description_ko": "근처의 몬스터를 비추고 그들의 원거리 공격속도를 둔화시킴",
+      "description_ko": "주위의 적에게 빛을 비추고 대상의 투사체 속도를 감소시킵니다.",
       "description_en": "illuminates nearby enemies and slows their ranged attacks"
     },
     {
       "id": "avoid",
       "name_en": "Avoid",
-      "name_ko": "어보이드",
+      "name_ko": "원소 계약",
+      "name_ko_classic": "어보이드",
       "tree": {
         "page": 2,
         "name_en": "Passive and Magic",
-        "name_ko": "패시브 & 마법 스킬"
+        "name_ko": "지속 효과와 마법"
       },
       "position": {
         "row": 3,
@@ -490,21 +505,22 @@
         {
           "id": "dodge",
           "name_en": "Dodge",
-          "name_ko": "닷지"
+          "name_ko": "흘리기 & 회피"
         }
       ],
       "synergies": [],
-      "description_ko": "패시브 - 서 있는 상태에서 몬스터의 원거리 공격을 피할수 있는 확률을 증가시킴",
-      "description_en": "passive - you have a chance to dodge enemy missiles when attacking or standing still"
+      "description_ko": "전사와 원소 사이의 계약으로 최대 원소 저항을 희생하여 적의 저항을 관통합니다. 자신 오라 - 화염, 냉기, 번개, 독에 영향",
+      "description_en": "a covenant between warrior and elements exchanging your maximum elemental resistances in order to pierce enemy resistances self aura - affects fire, cold, lightning, and poison"
     },
     {
       "id": "penetrate",
       "name_en": "Penetrate",
-      "name_ko": "페니트레이트",
+      "name_ko": "간파",
+      "name_ko_classic": "페니트레이트",
       "tree": {
         "page": 2,
         "name_en": "Passive and Magic",
-        "name_ko": "패시브 & 마법 스킬"
+        "name_ko": "지속 효과와 마법"
       },
       "position": {
         "row": 4,
@@ -520,21 +536,22 @@
         {
           "id": "critical-strike",
           "name_en": "Critical Strike",
-          "name_ko": "크리티컬 스트라이크"
+          "name_ko": "치명타"
         }
       ],
       "synergies": [],
-      "description_ko": "패시브 - 공격등급 향상 시킴",
-      "description_en": "passive - increases your attack rating"
+      "description_ko": "지속 효과 - 명중률이 증가합니다.",
+      "description_en": "Passive - increases your attack rating"
     },
     {
       "id": "decoy",
       "name_en": "Decoy",
-      "name_ko": "디코이",
+      "name_ko": "거인의 서약",
+      "name_ko_classic": "디코이",
       "tree": {
         "page": 2,
         "name_en": "Passive and Magic",
-        "name_ko": "패시브 & 마법 스킬"
+        "name_ko": "지속 효과와 마법"
       },
       "position": {
         "row": 5,
@@ -550,21 +567,22 @@
         {
           "id": "slow-missiles",
           "name_en": "Slow Missiles",
-          "name_ko": "슬로우 미사일"
+          "name_ko": "투사체 감속"
         }
       ],
       "synergies": [],
-      "description_ko": "적의 공격을 유도하는 자신의 허상을 만듬",
-      "description_en": "creates a duplicate of yourself that draws fire from enemies"
+      "description_ko": "전사와 육체 사이의 계약으로 공격 속도와 물리 피해 감소를 희생하고 물리 피해와 강타 확률을 증가시킵니다. 자신 오라",
+      "description_en": "a covenant between warrior and body exchanging speed and physical damage reduction for increased physical damage and crushing blow self aura"
     },
     {
       "id": "evade",
       "name_en": "Evade",
-      "name_ko": "이베이드",
+      "name_ko": "피하기",
+      "name_ko_classic": "이베이드",
       "tree": {
         "page": 2,
         "name_en": "Passive and Magic",
-        "name_ko": "패시브 & 마법 스킬"
+        "name_ko": "지속 효과와 마법"
       },
       "position": {
         "row": 5,
@@ -580,11 +598,11 @@
         {
           "id": "avoid",
           "name_en": "Avoid",
-          "name_ko": "어보이드"
+          "name_ko": "원소 계약"
         }
       ],
       "synergies": [],
-      "description_ko": "패시브 - 이동중에 적의 근거리나 원거리 공격을 회피할 확률을 높임",
+      "description_ko": "지속 효과 - 걷거나 뛰고 있을 때 일정 확률로 근접 또는 투사체 공격을 회피합니다.",
       "description_en": "passive - you have a chance to dodge a melee or missile attack when walking or running"
     },
     {
@@ -594,7 +612,7 @@
       "tree": {
         "page": 2,
         "name_en": "Passive and Magic",
-        "name_ko": "패시브 & 마법 스킬"
+        "name_ko": "지속 효과와 마법"
       },
       "position": {
         "row": 6,
@@ -610,57 +628,58 @@
         {
           "id": "decoy",
           "name_en": "Decoy",
-          "name_ko": "디코이"
+          "name_ko": "거인의 서약"
         },
         {
           "id": "evade",
           "name_en": "Evade",
-          "name_ko": "이베이드"
+          "name_ko": "피하기"
         }
       ],
       "synergies": [
         {
           "id": "decoy",
           "name_en": "Decoy",
-          "name_ko": "디코이"
+          "name_ko": "거인의 서약"
         },
         {
           "id": "dodge",
           "name_en": "Dodge",
-          "name_ko": "닷지"
+          "name_ko": "흘리기 & 회피"
         },
         {
           "id": "avoid",
           "name_en": "Avoid",
-          "name_ko": "어보이드"
+          "name_ko": "원소 계약"
         },
         {
           "id": "evade",
           "name_en": "Evade",
-          "name_ko": "이베이드"
+          "name_ko": "피하기"
         },
         {
           "id": "critical-strike",
           "name_en": "Critical Strike",
-          "name_ko": "크리티컬 스트라이크"
+          "name_ko": "치명타"
         },
         {
           "id": "penetrate",
           "name_en": "Penetrate",
-          "name_ko": "페니트레이트"
+          "name_ko": "간파"
         }
       ],
-      "description_ko": "발키리를 소환하여 함께 적과 싸움",
+      "description_ko": "강력한 발키리 동료를 소환합니다.",
       "description_en": "summons a powerful Valkyrie ally"
     },
     {
       "id": "pierce",
       "name_en": "Pierce",
-      "name_ko": "피어스",
+      "name_ko": "관통",
+      "name_ko_classic": "피어스",
       "tree": {
         "page": 2,
         "name_en": "Passive and Magic",
-        "name_ko": "패시브 & 마법 스킬"
+        "name_ko": "지속 효과와 마법"
       },
       "position": {
         "row": 6,
@@ -676,21 +695,22 @@
         {
           "id": "penetrate",
           "name_en": "Penetrate",
-          "name_ko": "페니트레이트"
+          "name_ko": "간파"
         }
       ],
       "synergies": [],
-      "description_ko": "패시브 - 원거리 공격시 적을 관통하여 다수의 적에게 데미지를 줌",
+      "description_ko": "지속 효과 - 투사체가 일정 확률로 적중한 적을 관통합니다.",
       "description_en": "passive - your missiles have a chance to pass through enemies that they hit"
     },
     {
       "id": "jab",
       "name_en": "Jab",
-      "name_ko": "잽",
+      "name_ko": "찌르기",
+      "name_ko_classic": "잽",
       "tree": {
         "page": 3,
         "name_en": "Javelin and Spear",
-        "name_ko": "재벌린 & 스피어 스킬"
+        "name_ko": "투창과 창"
       },
       "position": {
         "row": 1,
@@ -704,17 +724,18 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "재벌린이나 스피어 종류 무기를 이용한 신속한 공격",
+      "description_ko": "투창 또는 창 유형의 무기를 빠르게 연속으로 찔러 공격합니다.",
       "description_en": "attacks with a series of rapid thrusts using a javelin or spear class weapon"
     },
     {
       "id": "power-strike",
       "name_en": "Power Strike",
-      "name_ko": "파워 스트라이크",
+      "name_ko": "독성 소용돌이",
+      "name_ko_classic": "파워 스트라이크",
       "tree": {
         "page": 3,
         "name_en": "Javelin and Spear",
-        "name_ko": "재벌린 & 스피어 스킬"
+        "name_ko": "투창과 창"
       },
       "position": {
         "row": 2,
@@ -730,37 +751,38 @@
         {
           "id": "jab",
           "name_en": "Jab",
-          "name_ko": "잽"
+          "name_ko": "찌르기"
         }
       ],
       "synergies": [
         {
           "id": "lightning-strike",
           "name_en": "Lightning Strike",
-          "name_ko": "라이트닝 스트라이크"
+          "name_ko": "번개의 일격"
         },
         {
           "id": "lightning-bolt",
           "name_en": "Lightning Bolt",
-          "name_ko": "라이트닝 볼트"
+          "name_ko": "번갯불"
         },
         {
           "id": "charged-strike",
           "name_en": "Charged Strike",
-          "name_ko": "차지드 스트라이크"
+          "name_ko": "전류의 일격"
         }
       ],
-      "description_ko": "재벌린과 스피어 종류의 무기에 라이트닝 데미지 추가",
-      "description_en": "adds lightning damage to attacks with javelin and spear class weapons"
+      "description_ko": "창이나 투창 공격이 대상을 중심으로 한 맹독성 공기 교란을 방출합니다",
+      "description_en": "a javelin or spear strike that releases a poisonous air disruption centered on the target"
     },
     {
       "id": "poison-javelin",
       "name_en": "Poison Javelin",
-      "name_ko": "포이즌 재벌린",
+      "name_ko": "맹독 투창",
+      "name_ko_classic": "포이즌 재벌린",
       "tree": {
         "page": 3,
         "name_en": "Javelin and Spear",
-        "name_ko": "재벌린 & 스피어 스킬"
+        "name_ko": "투창과 창"
       },
       "position": {
         "row": 2,
@@ -777,20 +799,21 @@
         {
           "id": "plague-javelin",
           "name_en": "Plague Javelin",
-          "name_ko": "플레이그 재벌린"
+          "name_ko": "역병 투창"
         }
       ],
-      "description_ko": "던지는 방향을 따라 포이즌 구름이 형성되고 재벌린에 포이즌 데미지를 추가함",
-      "description_en": "magically enhances your javelin to leave a trail of poison clouds"
+      "description_ko": "마법으로 투창을 강화하여 독 구름의 흔적을 남기고 적을 중독시킵니다",
+      "description_en": "Magically enhances your javelin to poison enemies, tailed by poison clouds"
     },
     {
       "id": "impale",
       "name_en": "Impale",
-      "name_ko": "임페일",
+      "name_ko": "꿰뚫기",
+      "name_ko_classic": "임페일",
       "tree": {
         "page": 3,
         "name_en": "Javelin and Spear",
-        "name_ko": "재벌린 & 스피어 스킬"
+        "name_ko": "투창과 창"
       },
       "position": {
         "row": 3,
@@ -806,21 +829,22 @@
         {
           "id": "jab",
           "name_en": "Jab",
-          "name_ko": "잽"
+          "name_ko": "찌르기"
         }
       ],
       "synergies": [],
-      "description_ko": "데미지는 증가하나 무기의 내구력을 급속히 약화 시킴",
-      "description_en": "increases attack damage but rapidly degrades the weapon"
+      "description_ko": "공격력이 증가하지만 무기가 빠르게 손상됩니다.",
+      "description_en": "thrust with your spear dealing damage to the target and those beyond it"
     },
     {
       "id": "lightning-bolt",
       "name_en": "Lightning Bolt",
-      "name_ko": "라이트닝 볼트",
+      "name_ko": "번갯불",
+      "name_ko_classic": "라이트닝 볼트",
       "tree": {
         "page": 3,
         "name_en": "Javelin and Spear",
-        "name_ko": "재벌린 & 스피어 스킬"
+        "name_ko": "투창과 창"
       },
       "position": {
         "row": 3,
@@ -836,42 +860,43 @@
         {
           "id": "poison-javelin",
           "name_en": "Poison Javelin",
-          "name_ko": "포이즌 재벌린"
+          "name_ko": "맹독 투창"
         }
       ],
       "synergies": [
         {
           "id": "lightning-strike",
           "name_en": "Lightning Strike",
-          "name_ko": "라이트닝 스트라이크"
+          "name_ko": "번개의 일격"
         },
         {
           "id": "power-strike",
           "name_en": "Power Strike",
-          "name_ko": "파워 스트라이크"
+          "name_ko": "독성 소용돌이"
         },
         {
           "id": "charged-strike",
           "name_en": "Charged Strike",
-          "name_ko": "차지드 스트라이크"
+          "name_ko": "전류의 일격"
         },
         {
           "id": "lightning-fury",
           "name_en": "Lightning Fury",
-          "name_ko": "라이트닝 퓨리"
+          "name_ko": "번개의 격노"
         }
       ],
-      "description_ko": "재벌린을 라이트닝으로 전환하여 던짐",
-      "description_en": "magically converts your javelin into a bolt of lightning"
+      "description_ko": "번개의 힘이 깃든 투창을 적에게 던져 자신과 천상의 심판으로 그들을 타격합니다",
+      "description_en": "throw a lightning charged javelin into an enemy striking them with your judgement and that of the heavens"
     },
     {
       "id": "charged-strike",
       "name_en": "Charged Strike",
-      "name_ko": "차지드 스트라이크",
+      "name_ko": "전류의 일격",
+      "name_ko_classic": "차지드 스트라이크",
       "tree": {
         "page": 3,
         "name_en": "Javelin and Spear",
-        "name_ko": "재벌린 & 스피어 스킬"
+        "name_ko": "투창과 창"
       },
       "position": {
         "row": 4,
@@ -887,42 +912,43 @@
         {
           "id": "power-strike",
           "name_en": "Power Strike",
-          "name_ko": "파워 스트라이크"
+          "name_ko": "독성 소용돌이"
         },
         {
           "id": "lightning-bolt",
           "name_en": "Lightning Bolt",
-          "name_ko": "라이트닝 볼트"
+          "name_ko": "번갯불"
         }
       ],
       "synergies": [
         {
           "id": "lightning-strike",
           "name_en": "Lightning Strike",
-          "name_ko": "라이트닝 스트라이크"
+          "name_ko": "번개의 일격"
         },
         {
           "id": "lightning-bolt",
           "name_en": "Lightning Bolt",
-          "name_ko": "라이트닝 볼트"
+          "name_ko": "번갯불"
         },
         {
           "id": "power-strike",
           "name_en": "Power Strike",
-          "name_ko": "파워 스트라이크"
+          "name_ko": "독성 소용돌이"
         }
       ],
-      "description_ko": "재벌린과 스피어 종류 무기에 라이트닝 계열(차지드 볼트) 데미지 추가",
+      "description_ko": "투창 및 창 유형의 무기에 번개 피해를 추가하고, 적중 시 번개 줄기를 방출하게 합니다.",
       "description_en": "adds lightning damage to javelin and spear class weapons and releases charged bolts upon impact"
     },
     {
       "id": "plague-javelin",
       "name_en": "Plague Javelin",
-      "name_ko": "플레이그 재벌린",
+      "name_ko": "역병 투창",
+      "name_ko_classic": "플레이그 재벌린",
       "tree": {
         "page": 3,
         "name_en": "Javelin and Spear",
-        "name_ko": "재벌린 & 스피어 스킬"
+        "name_ko": "투창과 창"
       },
       "position": {
         "row": 4,
@@ -938,27 +964,28 @@
         {
           "id": "lightning-bolt",
           "name_en": "Lightning Bolt",
-          "name_ko": "라이트닝 볼트"
+          "name_ko": "번갯불"
         }
       ],
       "synergies": [
         {
           "id": "poison-javelin",
           "name_en": "Poison Javelin",
-          "name_ko": "포이즌 재벌린"
+          "name_ko": "맹독 투창"
         }
       ],
-      "description_ko": "적중시 독구름(포이즌)을 형성하여 주변 다수의 적에게 포이즌 데미지를 줌",
-      "description_en": "magically enhances your javelin to release expanding clouds of poison upon impact"
+      "description_ko": "마법으로 투창을 강화하여 적중 시 확산되는 독 구름을 방출합니다 관통하지 않습니다",
+      "description_en": "Magically enhances your javelin to release expanding clouds of poison upon impact Does not pierce"
     },
     {
       "id": "fend",
       "name_en": "Fend",
-      "name_ko": "펜드",
+      "name_ko": "난격",
+      "name_ko_classic": "펜드",
       "tree": {
         "page": 3,
         "name_en": "Javelin and Spear",
-        "name_ko": "재벌린 & 스피어 스킬"
+        "name_ko": "투창과 창"
       },
       "position": {
         "row": 5,
@@ -974,21 +1001,22 @@
         {
           "id": "impale",
           "name_en": "Impale",
-          "name_ko": "임페일"
+          "name_ko": "꿰뚫기"
         }
       ],
       "synergies": [],
-      "description_ko": "근접전에서 주변의 모든 적을 공격",
-      "description_en": "attacks all adjacent targets"
+      "description_ko": "투창 또는 창으로 공격하고 공격이 적중 한 경우 추가 투사체들을 발사하여 주변 적을 공격합니다 자신: 일시적으로 막기 비활성화",
+      "description_en": "strike with a javelin or spear and release additional missiles copying the attack to nearby enemies Self: temporarily disables block"
     },
     {
       "id": "lightning-strike",
       "name_en": "Lightning Strike",
-      "name_ko": "라이트닝 스트라이크",
+      "name_ko": "번개의 일격",
+      "name_ko_classic": "라이트닝 스트라이크",
       "tree": {
         "page": 3,
         "name_en": "Javelin and Spear",
-        "name_ko": "재벌린 & 스피어 스킬"
+        "name_ko": "투창과 창"
       },
       "position": {
         "row": 6,
@@ -1004,37 +1032,38 @@
         {
           "id": "charged-strike",
           "name_en": "Charged Strike",
-          "name_ko": "차지드 스트라이크"
+          "name_ko": "전류의 일격"
         }
       ],
       "synergies": [
         {
           "id": "charged-strike",
           "name_en": "Charged Strike",
-          "name_ko": "차지드 스트라이크"
+          "name_ko": "전류의 일격"
         },
         {
           "id": "lightning-bolt",
           "name_en": "Lightning Bolt",
-          "name_ko": "라이트닝 볼트"
+          "name_ko": "번갯불"
         },
         {
           "id": "power-strike",
           "name_en": "Power Strike",
-          "name_ko": "파워 스트라이크"
+          "name_ko": "독성 소용돌이"
         }
       ],
-      "description_ko": "재벌린과 스피어류의 무기에 강력한 라이트닝 데미지를 추가하고, 근접전의 적에게 라이트닝이 연쇄적으로 퍼져나감",
+      "description_ko": "투창 및 창 유형의 무기에 번개 피해를 추가하고, 적중 시 연쇄 번개를 방출하게 합니다.",
       "description_en": "adds lightning damage to javelin and spear class weapons and releases chain lightning upon impact"
     },
     {
       "id": "lightning-fury",
       "name_en": "Lightning Fury",
-      "name_ko": "라이트닝 퓨리",
+      "name_ko": "번개의 격노",
+      "name_ko_classic": "라이트닝 퓨리",
       "tree": {
         "page": 3,
         "name_en": "Javelin and Spear",
-        "name_ko": "재벌린 & 스피어 스킬"
+        "name_ko": "투창과 창"
       },
       "position": {
         "row": 6,
@@ -1050,32 +1079,32 @@
         {
           "id": "plague-javelin",
           "name_en": "Plague Javelin",
-          "name_ko": "플레이그 재벌린"
+          "name_ko": "역병 투창"
         }
       ],
       "synergies": [
         {
           "id": "charged-strike",
           "name_en": "Charged Strike",
-          "name_ko": "차지드 스트라이크"
+          "name_ko": "전류의 일격"
         },
         {
           "id": "lightning-bolt",
           "name_en": "Lightning Bolt",
-          "name_ko": "라이트닝 볼트"
+          "name_ko": "번갯불"
         },
         {
           "id": "power-strike",
           "name_en": "Power Strike",
-          "name_ko": "파워 스트라이크"
+          "name_ko": "독성 소용돌이"
         },
         {
           "id": "lightning-strike",
           "name_en": "Lightning Strike",
-          "name_ko": "라이트닝 스트라이크"
+          "name_ko": "번개의 일격"
         }
       ],
-      "description_ko": "재벌린에 강력한 라이트닝 데미지를 가하고, 원거리 적에게 라이트닝이 연쇄적으로 퍼저나감",
+      "description_ko": "투척한 투창을 강력한 번개의 창으로 변형하고 적중 시 여러 개로 분열시킵니다.",
       "description_en": "changes a thrown javelin into a powerful bolt of lightning that splits on impact"
     }
   ]

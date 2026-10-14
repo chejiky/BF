@@ -1,17 +1,19 @@
 {
   "class": "assassin",
   "class_name_en": "Assassin",
-  "class_name_ko": "어쎄신",
+  "class_name_ko": "암살자",
+  "class_name_ko_classic": "어쎄신",
   "skill_count": 30,
   "skills": [
     {
       "id": "fire-blast",
       "name_en": "Fire Blast",
-      "name_ko": "파이어 블라스트",
+      "name_ko": "화염 작렬",
+      "name_ko_classic": "파이어 블라스트",
       "tree": {
         "page": 1,
         "name_en": "Traps",
-        "name_ko": "트랩"
+        "name_ko": "덫"
       },
       "position": {
         "row": 1,
@@ -28,40 +30,41 @@
         {
           "id": "shock-web",
           "name_en": "Shock Web",
-          "name_ko": "쇼크 웹"
+          "name_ko": "감전 그물"
         },
         {
           "id": "charged-bolt-sentry",
           "name_en": "Charged Bolt Sentry",
-          "name_ko": "차지드 볼트 센트리"
+          "name_ko": "번개 줄기 파수기"
         },
         {
           "id": "lightning-sentry",
           "name_en": "Lightning Sentry",
-          "name_ko": "라이트닝 센트리"
+          "name_ko": "번개 파수기"
         },
         {
           "id": "wake-of-fire",
           "name_en": "Wake of Fire",
-          "name_ko": "웨이크 오브 파이어"
+          "name_ko": "불의 파동"
         },
         {
           "id": "wake-of-inferno",
           "name_en": "Wake of Inferno",
-          "name_ko": "웨이크 오브 인페르노"
+          "name_ko": "화염폭발 파수기"
         }
       ],
-      "description_ko": "파이어 폭탄을 던져서 적을 공격함",
+      "description_ko": "화염 폭탄을 투척하여 적을 산산이 조각냅니다.",
       "description_en": "throw a fire bomb to blast your enemies to bits"
     },
     {
       "id": "shock-web",
       "name_en": "Shock Web",
-      "name_ko": "쇼크 웹",
+      "name_ko": "감전 그물",
+      "name_ko_classic": "쇼크 웹",
       "tree": {
         "page": 1,
         "name_en": "Traps",
-        "name_ko": "트랩"
+        "name_ko": "덫"
       },
       "position": {
         "row": 2,
@@ -77,37 +80,38 @@
         {
           "id": "fire-blast",
           "name_en": "Fire Blast",
-          "name_ko": "파이어 블라스트"
+          "name_ko": "화염 작렬"
         }
       ],
       "synergies": [
         {
           "id": "fire-blast",
           "name_en": "Fire Blast",
-          "name_ko": "파이어 블라스트"
+          "name_ko": "화염 작렬"
         },
         {
           "id": "charged-bolt-sentry",
           "name_en": "Charged Bolt Sentry",
-          "name_ko": "차지드 볼트 센트리"
+          "name_ko": "번개 줄기 파수기"
         },
         {
           "id": "lightning-sentry",
           "name_en": "Lightning Sentry",
-          "name_ko": "라이트닝 센트리"
+          "name_ko": "번개 파수기"
         }
       ],
-      "description_ko": "적에게 충격을 주는 라이트닝 웹 발사",
+      "description_ko": "번개 그물을 투척하여 적을 감전시킵니다.",
       "description_en": "throw a web of lightning to shock your enemies"
     },
     {
       "id": "blade-sentinel",
       "name_en": "Blade Sentinel",
-      "name_ko": "블레이드 센티널",
+      "name_ko": "파수꾼의 칼날",
+      "name_ko_classic": "블레이드 센티널",
       "tree": {
         "page": 1,
         "name_en": "Traps",
-        "name_ko": "트랩"
+        "name_ko": "덫"
       },
       "position": {
         "row": 2,
@@ -124,25 +128,26 @@
         {
           "id": "blade-fury",
           "name_en": "Blade Fury",
-          "name_ko": "블레이드 퓨리"
+          "name_ko": "분노의 칼날"
         },
         {
           "id": "blade-shield",
           "name_en": "Blade Shield",
-          "name_ko": "블레이드 쉴드"
+          "name_ko": "칼날 방패"
         }
       ],
-      "description_ko": "목표지점과 당신사이에 스피닝 블레이드 배치",
+      "description_ko": "회전하는 칼날을 내보내 자신과 목표 지점 사이를 오가게 합니다.",
       "description_en": "set a spinning blade to patrol between you and target point"
     },
     {
       "id": "charged-bolt-sentry",
       "name_en": "Charged Bolt Sentry",
-      "name_ko": "차지드 볼트 센트리",
+      "name_ko": "번개 줄기 파수기",
+      "name_ko_classic": "차지드 볼트 센트리",
       "tree": {
         "page": 1,
         "name_en": "Traps",
-        "name_ko": "트랩"
+        "name_ko": "덫"
       },
       "position": {
         "row": 3,
@@ -158,42 +163,43 @@
         {
           "id": "shock-web",
           "name_en": "Shock Web",
-          "name_ko": "쇼크 웹"
+          "name_ko": "감전 그물"
         }
       ],
       "synergies": [
         {
           "id": "fire-blast",
           "name_en": "Fire Blast",
-          "name_ko": "파이어 블라스트"
+          "name_ko": "화염 작렬"
         },
         {
           "id": "shock-web",
           "name_en": "Shock Web",
-          "name_ko": "쇼크 웹"
+          "name_ko": "감전 그물"
         },
         {
           "id": "lightning-sentry",
           "name_en": "Lightning Sentry",
-          "name_ko": "라이트닝 센트리"
+          "name_ko": "번개 파수기"
         },
         {
           "id": "death-sentry",
           "name_en": "Death Sentry",
-          "name_ko": "데쓰 센트리"
+          "name_ko": "죽음 파수기"
         }
       ],
-      "description_ko": "차지드 볼트를 방출하는 트랩으로 지나가는 적을 공격",
+      "description_ko": "근처를 지나가는 적에게 번개 줄기를 방출하는 덫을 설치합니다.",
       "description_en": "a trap that emits charged bolts at enemies that pass near"
     },
     {
       "id": "wake-of-fire",
       "name_en": "Wake of Fire",
-      "name_ko": "웨이크 오브 파이어",
+      "name_ko": "불의 파동",
+      "name_ko_classic": "웨이크 오브 파이어",
       "tree": {
         "page": 1,
         "name_en": "Traps",
-        "name_ko": "트랩"
+        "name_ko": "덫"
       },
       "position": {
         "row": 3,
@@ -209,32 +215,33 @@
         {
           "id": "fire-blast",
           "name_en": "Fire Blast",
-          "name_ko": "파이어 블라스트"
+          "name_ko": "화염 작렬"
         }
       ],
       "synergies": [
         {
           "id": "fire-blast",
           "name_en": "Fire Blast",
-          "name_ko": "파이어 블라스트"
+          "name_ko": "화염 작렬"
         },
         {
           "id": "wake-of-inferno",
           "name_en": "Wake of Inferno",
-          "name_ko": "웨이크 오브 인페르노"
+          "name_ko": "화염폭발 파수기"
         }
       ],
-      "description_ko": "웨이브 파이어를 방출하는 트랩설치",
+      "description_ko": "화염 파동을 방출하는 덫을 설치합니다.",
       "description_en": "a trap that emits waves of fire"
     },
     {
       "id": "blade-fury",
       "name_en": "Blade Fury",
-      "name_ko": "블레이드 퓨리",
+      "name_ko": "분노의 칼날",
+      "name_ko_classic": "블레이드 퓨리",
       "tree": {
         "page": 1,
         "name_en": "Traps",
-        "name_ko": "트랩"
+        "name_ko": "덫"
       },
       "position": {
         "row": 4,
@@ -250,37 +257,38 @@
         {
           "id": "blade-sentinel",
           "name_en": "Blade Sentinel",
-          "name_ko": "블레이드 센티널"
+          "name_ko": "파수꾼의 칼날"
         },
         {
           "id": "wake-of-fire",
           "name_en": "Wake of Fire",
-          "name_ko": "웨이크 오브 파이어"
+          "name_ko": "불의 파동"
         }
       ],
       "synergies": [
         {
           "id": "blade-sentinel",
           "name_en": "Blade Sentinel",
-          "name_ko": "블레이드 센티널"
+          "name_ko": "파수꾼의 칼날"
         },
         {
           "id": "blade-shield",
           "name_en": "Blade Shield",
-          "name_ko": "블레이드 쉴드"
+          "name_ko": "칼날 방패"
         }
       ],
-      "description_ko": "적을 조각내는 스피닝 블레이드 던지기",
-      "description_en": "throw spinning blades to slice up your enemies"
+      "description_ko": "적들 사이를 튕겨 다니는 회전 칼날을 던집니다",
+      "description_en": "throw spinning blades that ricochet between enemies"
     },
     {
       "id": "lightning-sentry",
       "name_en": "Lightning Sentry",
-      "name_ko": "라이트닝 센트리",
+      "name_ko": "번개 파수기",
+      "name_ko_classic": "라이트닝 센트리",
       "tree": {
         "page": 1,
         "name_en": "Traps",
-        "name_ko": "트랩"
+        "name_ko": "덫"
       },
       "position": {
         "row": 5,
@@ -296,37 +304,38 @@
         {
           "id": "charged-bolt-sentry",
           "name_en": "Charged Bolt Sentry",
-          "name_ko": "차지드 볼트 센트리"
+          "name_ko": "번개 줄기 파수기"
         }
       ],
       "synergies": [
         {
           "id": "shock-web",
           "name_en": "Shock Web",
-          "name_ko": "쇼크 웹"
+          "name_ko": "감전 그물"
         },
         {
           "id": "charged-bolt-sentry",
           "name_en": "Charged Bolt Sentry",
-          "name_ko": "차지드 볼트 센트리"
+          "name_ko": "번개 줄기 파수기"
         },
         {
           "id": "death-sentry",
           "name_en": "Death Sentry",
-          "name_ko": "데쓰 센트리"
+          "name_ko": "죽음 파수기"
         }
       ],
-      "description_ko": "라이트닝 트랩을 설치하여 지나가는 적을 공격",
-      "description_en": "a trap that shoots lightning to scorch passing enemies"
+      "description_ko": "여러 적 사이를 연쇄하며 퍼져 나가는 번개를 방출하는 덫을 설치합니다.",
+      "description_en": "a trap that emits chain lightning"
     },
     {
       "id": "wake-of-inferno",
       "name_en": "Wake of Inferno",
-      "name_ko": "웨이크 오브 인페르노",
+      "name_ko": "화염폭발 파수기",
+      "name_ko_classic": "웨이크 오브 인페르노",
       "tree": {
         "page": 1,
         "name_en": "Traps",
-        "name_ko": "트랩"
+        "name_ko": "덫"
       },
       "position": {
         "row": 5,
@@ -342,37 +351,38 @@
         {
           "id": "wake-of-fire",
           "name_en": "Wake of Fire",
-          "name_ko": "웨이크 오브 파이어"
+          "name_ko": "불의 파동"
         }
       ],
       "synergies": [
         {
           "id": "fire-blast",
           "name_en": "Fire Blast",
-          "name_ko": "파이어 블라스트"
+          "name_ko": "화염 작렬"
         },
         {
           "id": "wake-of-fire",
           "name_en": "Wake of Fire",
-          "name_ko": "웨이크 오브 파이어"
+          "name_ko": "불의 파동"
         },
         {
           "id": "death-sentry",
           "name_en": "Death Sentry",
-          "name_ko": "데쓰 센트리"
+          "name_ko": "죽음 파수기"
         }
       ],
-      "description_ko": "화염을 내뿜는 트랩을 설치하여 지나가는 적을 공격",
-      "description_en": "trap that sprays fire at passing enemies"
+      "description_ko": "주변 적을 추적하는 불꽃 화살의 고리를 방출하는 덫을 설치합니다.",
+      "description_en": "a trap unleashing a ring of fiery bolts that seek out nearby foes"
     },
     {
       "id": "death-sentry",
       "name_en": "Death Sentry",
-      "name_ko": "데쓰 센트리",
+      "name_ko": "죽음 파수기",
+      "name_ko_classic": "데쓰 센트리",
       "tree": {
         "page": 1,
         "name_en": "Traps",
-        "name_ko": "트랩"
+        "name_ko": "덫"
       },
       "position": {
         "row": 6,
@@ -388,32 +398,33 @@
         {
           "id": "lightning-sentry",
           "name_en": "Lightning Sentry",
-          "name_ko": "라이트닝 센트리"
+          "name_ko": "번개 파수기"
         }
       ],
       "synergies": [
         {
           "id": "fire-blast",
           "name_en": "Fire Blast",
-          "name_ko": "파이어 블라스트"
+          "name_ko": "화염 작렬"
         },
         {
           "id": "lightning-sentry",
           "name_en": "Lightning Sentry",
-          "name_ko": "라이트닝 센트리"
+          "name_ko": "번개 파수기"
         }
       ],
-      "description_ko": "시체를 폭발시켜 적을 공격하거나 적에게 라이트닝을 발사하는 트랩설치",
-      "description_en": "trap that shoots lightning at your enemies or explodes nearby corpses laying waste to more enemies"
+      "description_ko": "회전하는 죽음의 메아리를 발사하는 덫을 설치하여 외부로 파동을 퍼뜨린 뒤 다시 수축하며 치명적인 마법 피해를 입힙니다.",
+      "description_en": "trap that shoots an swirling echo of death that pulses out until collapsing back on itself to deal deadly magic damage"
     },
     {
       "id": "blade-shield",
       "name_en": "Blade Shield",
-      "name_ko": "블레이드 쉴드",
+      "name_ko": "칼날 방패",
+      "name_ko_classic": "블레이드 쉴드",
       "tree": {
         "page": 1,
         "name_en": "Traps",
-        "name_ko": "트랩"
+        "name_ko": "덫"
       },
       "position": {
         "row": 6,
@@ -429,32 +440,33 @@
         {
           "id": "blade-fury",
           "name_en": "Blade Fury",
-          "name_ko": "블레이드 퓨리"
+          "name_ko": "분노의 칼날"
         }
       ],
       "synergies": [
         {
           "id": "blade-sentinel",
           "name_en": "Blade Sentinel",
-          "name_ko": "블레이드 센티널"
+          "name_ko": "파수꾼의 칼날"
         },
         {
           "id": "blade-fury",
           "name_en": "Blade Fury",
-          "name_ko": "블레이드 퓨리"
+          "name_ko": "분노의 칼날"
         }
       ],
-      "description_ko": "스피닝 블레이드를 배치하여 주변의 적을 공격",
+      "description_ko": "칼날이 주변을 회전하여 가까이 다가오는 적을 벱니다.",
       "description_en": "spinning blades slice enemies who stray too close"
     },
     {
       "id": "claw-mastery",
       "name_en": "Claw Mastery",
-      "name_ko": "클러 마스터리",
+      "name_ko": "손톱 숙련",
+      "name_ko_classic": "클러 마스터리",
       "tree": {
         "page": 2,
         "name_en": "Shadow Disciplines",
-        "name_ko": "쉐도우 디서플린"
+        "name_ko": "그림자 단련"
       },
       "position": {
         "row": 1,
@@ -468,17 +480,18 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "패시브 - 클러 계열 무기를 사용하는 기술 향상",
-      "description_en": "passive - improves your skill with claw-class weapons"
+      "description_ko": "지속 효과 - 손톱 유형 무기의 숙련도를 향상시킵니다.",
+      "description_en": "passive - improves your skill with claw class weapons"
     },
     {
       "id": "psychic-hammer",
       "name_en": "Psychic Hammer",
-      "name_ko": "싸이킥 해머",
+      "name_ko": "얼음 탄막",
+      "name_ko_classic": "싸이킥 해머",
       "tree": {
         "page": 2,
         "name_en": "Shadow Disciplines",
-        "name_ko": "쉐도우 디서플린"
+        "name_ko": "그림자 단련"
       },
       "position": {
         "row": 1,
@@ -492,17 +505,18 @@
       "element": "mag",
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "정신의 힘으로 사이킥 블라스트를 만들어 적을 공격하고 물러나게 함",
-      "description_en": "use the power of your mind to create a psychic blast to crush and knock back your enemies"
+      "description_ko": "폭탄을 연속으로 투척하여 충돌 시 냉기 파장으로 폭발시킵니다.",
+      "description_en": "toss a barrage of bombs that explode into icy novas on impact"
     },
     {
       "id": "burst-of-speed",
       "name_en": "Burst of Speed",
-      "name_ko": "버스트 오브 스피드",
+      "name_ko": "폭발적인 속도",
+      "name_ko_classic": "버스트 오브 스피드",
       "tree": {
         "page": 2,
         "name_en": "Shadow Disciplines",
-        "name_ko": "쉐도우 디서플린"
+        "name_ko": "그림자 단련"
       },
       "position": {
         "row": 2,
@@ -518,21 +532,22 @@
         {
           "id": "claw-mastery",
           "name_en": "Claw Mastery",
-          "name_ko": "클러 마스터리"
+          "name_ko": "손톱 숙련"
         }
       ],
       "synergies": [],
-      "description_ko": "일정시간동안 공격 및 이동속도 증가",
+      "description_ko": "일정 시간 동안 공격 및 이동 속도가 증가합니다.",
       "description_en": "increases attack and movement speed for a period of time"
     },
     {
       "id": "weapon-block",
       "name_en": "Weapon Block",
-      "name_ko": "웨폰 블록",
+      "name_ko": "무기 막기",
+      "name_ko_classic": "웨폰 블록",
       "tree": {
         "page": 2,
         "name_en": "Shadow Disciplines",
-        "name_ko": "쉐도우 디서플린"
+        "name_ko": "그림자 단련"
       },
       "position": {
         "row": 3,
@@ -548,21 +563,22 @@
         {
           "id": "claw-mastery",
           "name_en": "Claw Mastery",
-          "name_ko": "클러 마스터리"
+          "name_ko": "손톱 숙련"
         }
       ],
       "synergies": [],
-      "description_ko": "패시브 - 방어확률 높임 (듀얼 클러계열 무기 사용시)",
-      "description_en": "passive - chance to block when you are using dual claw-class weapons"
+      "description_ko": "지속 효과 - 쌍수 손톱 유형의 무기를 사용할 때 일정 확률로 적의 공격을 막습니다.",
+      "description_en": "passive - chance to block when you are using dual claw class weapons"
     },
     {
       "id": "cloak-of-shadows",
       "name_en": "Cloak of Shadows",
-      "name_ko": "클럭 오브 쉐도우",
+      "name_ko": "눈꽃 채찍 파수기",
+      "name_ko_classic": "클럭 오브 쉐도우",
       "tree": {
         "page": 2,
         "name_en": "Shadow Disciplines",
-        "name_ko": "쉐도우 디서플린"
+        "name_ko": "그림자 단련"
       },
       "position": {
         "row": 3,
@@ -578,21 +594,22 @@
         {
           "id": "psychic-hammer",
           "name_en": "Psychic Hammer",
-          "name_ko": "싸이킥 해머"
+          "name_ko": "얼음 탄막"
         }
       ],
       "synergies": [],
-      "description_ko": "쉐도우를 시전하여 적의 시야를 좁히고 일정 시간동안 적의 방어력 낮춤",
-      "description_en": "cast a shadow to blind nearby enemies lowering their defenses for a period of time"
+      "description_ko": "표면에 튕겨 나가며 적들을 채찍질하듯 공격하고, 여러 대상에게 연쇄되는 얼음 화살을 방출하는 덫을 설치합니다.",
+      "description_en": "a trap that unleashes bolts of ice that lash out at enemies bouncing off surfaces and chaining through multiple targets"
     },
     {
       "id": "fade",
       "name_en": "Fade",
-      "name_ko": "페이드",
+      "name_ko": "흐리기",
+      "name_ko_classic": "페이드",
       "tree": {
         "page": 2,
         "name_en": "Shadow Disciplines",
-        "name_ko": "쉐도우 디서플린"
+        "name_ko": "그림자 단련"
       },
       "position": {
         "row": 4,
@@ -608,21 +625,22 @@
         {
           "id": "burst-of-speed",
           "name_en": "Burst of Speed",
-          "name_ko": "버스트 오브 스피드"
+          "name_ko": "폭발적인 속도"
         }
       ],
       "synergies": [],
-      "description_ko": "일정 시간동안 모든 저항력과 저주에 대한 저항력 증가",
+      "description_ko": "일정 시간 동안 모든 저항을 증가시키고 저주에 저항합니다.",
       "description_en": "raise all resistances and resist curses for a period of time"
     },
     {
       "id": "shadow-warrior",
       "name_en": "Shadow Warrior",
-      "name_ko": "쉐도우 워리어",
+      "name_ko": "그림자 전사",
+      "name_ko_classic": "쉐도우 워리어",
       "tree": {
         "page": 2,
         "name_en": "Shadow Disciplines",
-        "name_ko": "쉐도우 디서플린"
+        "name_ko": "그림자 단련"
       },
       "position": {
         "row": 4,
@@ -638,26 +656,27 @@
         {
           "id": "cloak-of-shadows",
           "name_en": "Cloak of Shadows",
-          "name_ko": "클럭 오브 쉐도우"
+          "name_ko": "눈꽃 채찍 파수기"
         },
         {
           "id": "weapon-block",
           "name_en": "Weapon Block",
-          "name_ko": "웨폰 블록"
+          "name_ko": "무기 막기"
         }
       ],
       "synergies": [],
-      "description_ko": "스킬과 공격을 흉내내는 쉐도우 소환",
+      "description_ko": "자신의 그림자를 소환하여 자신의 기술을 흉내내며 전투를 돕게 합니다.",
       "description_en": "summon a shadow of yourself that mimics your skills and fights by your side"
     },
     {
       "id": "mind-blast",
       "name_en": "Mind Blast",
-      "name_ko": "마인드 블라스트",
+      "name_ko": "빙하 폭발 파수기",
+      "name_ko_classic": "마인드 블라스트",
       "tree": {
         "page": 2,
         "name_en": "Shadow Disciplines",
-        "name_ko": "쉐도우 디서플린"
+        "name_ko": "그림자 단련"
       },
       "position": {
         "row": 5,
@@ -673,27 +692,28 @@
         {
           "id": "cloak-of-shadows",
           "name_en": "Cloak of Shadows",
-          "name_ko": "클럭 오브 쉐도우"
+          "name_ko": "눈꽃 채찍 파수기"
         }
       ],
       "synergies": [
         {
           "id": "psychic-hammer",
           "name_en": "Psychic Hammer",
-          "name_ko": "싸이킥 해머"
+          "name_ko": "얼음 탄막"
         }
       ],
-      "description_ko": "정신의 힘으로 집단의 적을 기절시키고 정신력을 떨어뜨림",
-      "description_en": "using the power of your mind stun a group of enemies and convert the feeble-minded"
+      "description_ko": "빙하 가시를 발사하는 덫을 설치합니다.",
+      "description_en": "a trap that creates a burst of glacial spikes"
     },
     {
       "id": "venom",
       "name_en": "Venom",
-      "name_ko": "베넘",
+      "name_ko": "맹독",
+      "name_ko_classic": "베넘",
       "tree": {
         "page": 2,
         "name_en": "Shadow Disciplines",
-        "name_ko": "쉐도우 디서플린"
+        "name_ko": "그림자 단련"
       },
       "position": {
         "row": 6,
@@ -709,21 +729,22 @@
         {
           "id": "fade",
           "name_en": "Fade",
-          "name_ko": "페이드"
+          "name_ko": "흐리기"
         }
       ],
       "synergies": [],
-      "description_ko": "무기에 포이즌 데미지 부여",
+      "description_ko": "무기에 독 피해를 추가합니다.",
       "description_en": "add poison damage to your weapons"
     },
     {
       "id": "shadow-master",
       "name_en": "Shadow Master",
-      "name_ko": "쉐도우 마스터",
+      "name_ko": "그림자 달인",
+      "name_ko_classic": "쉐도우 마스터",
       "tree": {
         "page": 2,
         "name_en": "Shadow Disciplines",
-        "name_ko": "쉐도우 디서플린"
+        "name_ko": "그림자 단련"
       },
       "position": {
         "row": 6,
@@ -739,21 +760,22 @@
         {
           "id": "shadow-warrior",
           "name_en": "Shadow Warrior",
-          "name_ko": "쉐도우 워리어"
+          "name_ko": "그림자 전사"
         }
       ],
       "synergies": [],
-      "description_ko": "강력한 자신의 쉐도우를 소환하여 같이 싸우게함",
+      "description_ko": "자신의 강력한 그림자를 소환하여 전투를 돕게 합니다.",
       "description_en": "summon a powerful shadow of yourself to fight by your side"
     },
     {
       "id": "tiger-strike",
       "name_en": "Tiger Strike",
-      "name_ko": "타이거 스트라이크",
+      "name_ko": "호랑이 일격",
+      "name_ko_classic": "타이거 스트라이크",
       "tree": {
         "page": 3,
         "name_en": "Martial Arts",
-        "name_ko": "마샬 아트"
+        "name_ko": "무술"
       },
       "position": {
         "row": 1,
@@ -767,17 +789,18 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "차지-업 스킬 데미지 보너스가 증가된 피니싱 무브로 연속공격 차지를 방출하여 드레곤 피니싱 무브나 일반공격을 함",
+      "description_ko": "충전 기술 연속으로 공격을 적중시키면 필살기의 공격력이 증가합니다. 용 필살기 또는 일반 공격을 사용하여 충전을 방출해야 합니다.",
       "description_en": "Charge-up Skill consecutive hits add damage bonuses to finishing moves must use a dragon finishing move or normal attack to release charges"
     },
     {
       "id": "dragon-talon",
       "name_en": "Dragon Talon",
-      "name_ko": "드래곤 탈런",
+      "name_ko": "용의 발톱",
+      "name_ko_classic": "드래곤 탈런",
       "tree": {
         "page": 3,
         "name_en": "Martial Arts",
-        "name_ko": "마샬 아트"
+        "name_ko": "무술"
       },
       "position": {
         "row": 1,
@@ -791,17 +814,18 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "피니싱 무브 적을 걷어차서 날려버림 차지드-업 보너스 추가",
+      "description_ko": "필살기 적을 걷어차서 날려버립니다. 발차기 기술에 충전 보너스가 추가됩니다.",
       "description_en": "Finishing Move kick your enemies out of your way adds charged-up bonuses to the kick"
     },
     {
       "id": "fists-of-fire",
       "name_en": "Fists of Fire",
-      "name_ko": "피스트 오브 파이어",
+      "name_ko": "화염의 주먹",
+      "name_ko_classic": "피스트 오브 파이어",
       "tree": {
         "page": 3,
         "name_en": "Martial Arts",
-        "name_ko": "마샬 아트"
+        "name_ko": "무술"
       },
       "position": {
         "row": 2,
@@ -818,20 +842,21 @@
         {
           "id": "phoenix-strike",
           "name_en": "Phoenix Strike",
-          "name_ko": "피닉스 스트라이크"
+          "name_ko": "불사조 일격"
         }
       ],
-      "description_ko": "차지-업 스킬 파이어 데미지가 추가된 피니싱 무브로 연속공격 (클러계열 무기사용시) 차지를 방출하여 드레곤 피니싱 무브나 일반공격을 함",
-      "description_en": "Charge-up Skill consecutive hits add fire damage to finishing moves can only be used with claw-class weapons must use a dragon finishing move or normal attack to release charges"
+      "description_ko": "충전 기술 연속으로 공격을 적중시키면 필살기에 화염 피해가 추가됩니다. 손톱 유형의 무기로만 사용할 수 있습니다. 용 필살기 또는 일반 공격을 사용하여 충전을 방출해야 합니다.",
+      "description_en": "Charge-up Skill consecutive hits add fire damage to finishing moves can only be used with claw class weapons must use a dragon finishing move or normal attack to release charges"
     },
     {
       "id": "dragon-claw",
       "name_en": "Dragon Claw",
-      "name_ko": "드래곤 클러",
+      "name_ko": "용의 손톱",
+      "name_ko_classic": "드래곤 클러",
       "tree": {
         "page": 3,
         "name_en": "Martial Arts",
-        "name_ko": "마샬 아트"
+        "name_ko": "무술"
       },
       "position": {
         "row": 2,
@@ -847,27 +872,28 @@
         {
           "id": "dragon-talon",
           "name_en": "Dragon Talon",
-          "name_ko": "드래곤 탈런"
+          "name_ko": "용의 발톱"
         }
       ],
       "synergies": [
         {
           "id": "claw-mastery",
           "name_en": "Claw Mastery",
-          "name_ko": "클러 마스터리"
+          "name_ko": "손톱 숙련"
         }
       ],
-      "description_ko": "피니싱 무브 듀얼 클러 무기로 적을 조각냄 (양손에 클러계열 무기 장착시) 차지드-업 보너스 추가",
-      "description_en": "Finishing Move slice and dice your enemies with your dual claw-class weapons adds charged-up bonuses to both claw attacks"
+      "description_ko": "필살기 쌍수 손톱 유형의 무기로 적을 난도질합니다. 양손의 손톱 공격에 충전 보너스를 추가합니다.",
+      "description_en": "Finishing Move slice and dice your enemies with your dual claw class weapons adds charged-up bonuses to both claw attacks"
     },
     {
       "id": "cobra-strike",
       "name_en": "Cobra Strike",
-      "name_ko": "코브라 스트라이크",
+      "name_ko": "코브라 일격",
+      "name_ko_classic": "코브라 스트라이크",
       "tree": {
         "page": 3,
         "name_en": "Martial Arts",
-        "name_ko": "마샬 아트"
+        "name_ko": "무술"
       },
       "position": {
         "row": 3,
@@ -883,21 +909,22 @@
         {
           "id": "tiger-strike",
           "name_en": "Tiger Strike",
-          "name_ko": "타이거 스트라이크"
+          "name_ko": "호랑이 일격"
         }
       ],
       "synergies": [],
-      "description_ko": "차지-업 스킬 라이프와 마나스틸이 추가된 피니싱 무브로 연속공격 차지를 방출하여 드레곤 피니싱 무브나 일반공격을 함",
+      "description_ko": "충전 기술 연속으로 공격을 적중시키면 필살기에 생명력 및 마나 훔치기 효과가 추가됩니다. 용 필살기 또는 일반 공격을 사용하여 충전을 방출해야 합니다.",
       "description_en": "Charge-up Skill consecutive hits add life and mana stealing to finishing moves must use a dragon finishing move or normal attack to release charges"
     },
     {
       "id": "claws-of-thunder",
       "name_en": "Claws of Thunder",
-      "name_ko": "클러 오브 선더",
+      "name_ko": "천둥의 손톱",
+      "name_ko_classic": "클러 오브 선더",
       "tree": {
         "page": 3,
         "name_en": "Martial Arts",
-        "name_ko": "마샬 아트"
+        "name_ko": "무술"
       },
       "position": {
         "row": 4,
@@ -913,27 +940,28 @@
         {
           "id": "fists-of-fire",
           "name_en": "Fists of Fire",
-          "name_ko": "피스트 오브 파이어"
+          "name_ko": "화염의 주먹"
         }
       ],
       "synergies": [
         {
           "id": "phoenix-strike",
           "name_en": "Phoenix Strike",
-          "name_ko": "피닉스 스트라이크"
+          "name_ko": "불사조 일격"
         }
       ],
-      "description_ko": "차지-업 스킬 라이트닝 데미지가 추가된 피니싱 무브로 연속공격 (클러계열 무기사용시) 차지를 방출하여 드레곤 피니싱 무브나 일반공격을 함",
-      "description_en": "Charge-up Skill consecutive hits add lightning damage to finishing moves can only be used with claw-class weapons must use a dragon finishing move or normal attack to release charges"
+      "description_ko": "충전 기술 연속으로 공격을 적중시키면 필살기에 번개 피해가 추가됩니다. 손톱 유형의 무기로만 사용할 수 있습니다. 용 필살기 또는 일반 공격을 사용하여 충전을 방출해야 합니다.",
+      "description_en": "Charge-up Skill consecutive hits add lightning damage to finishing moves can only be used with claw class weapons must use a dragon finishing move or normal attack to release charges"
     },
     {
       "id": "dragon-tail",
       "name_en": "Dragon Tail",
-      "name_ko": "드래곤 테일",
+      "name_ko": "용의 꼬리",
+      "name_ko_classic": "드래곤 테일",
       "tree": {
         "page": 3,
         "name_en": "Martial Arts",
-        "name_ko": "마샬 아트"
+        "name_ko": "무술"
       },
       "position": {
         "row": 4,
@@ -949,21 +977,22 @@
         {
           "id": "dragon-claw",
           "name_en": "Dragon Claw",
-          "name_ko": "드래곤 클러"
+          "name_ko": "용의 손톱"
         }
       ],
       "synergies": [],
-      "description_ko": "피니싱 무브 폭발적인 되받아차기로 공격 차지드-업 보너스 추가",
+      "description_ko": "필살기 폭발적인 힘으로 적을 걷어차 뒤로 밀쳐냅니다. 발차기 기술에 충전 보너스가 추가됩니다.",
       "description_en": "Finishing Move knock back your enemies with an explosive kick adds charged-up bonuses to the kick"
     },
     {
       "id": "blades-of-ice",
       "name_en": "Blades of Ice",
-      "name_ko": "블레이드 오브 아이스",
+      "name_ko": "얼음 칼날",
+      "name_ko_classic": "블레이드 오브 아이스",
       "tree": {
         "page": 3,
         "name_en": "Martial Arts",
-        "name_ko": "마샬 아트"
+        "name_ko": "무술"
       },
       "position": {
         "row": 5,
@@ -979,27 +1008,28 @@
         {
           "id": "claws-of-thunder",
           "name_en": "Claws of Thunder",
-          "name_ko": "클러 오브 선더"
+          "name_ko": "천둥의 손톱"
         }
       ],
       "synergies": [
         {
           "id": "phoenix-strike",
           "name_en": "Phoenix Strike",
-          "name_ko": "피닉스 스트라이크"
+          "name_ko": "불사조 일격"
         }
       ],
-      "description_ko": "차지-업 스킬 콜드 데미지가 추가된 피니싱 무브로 연속공격 (클러계열 무기사용시) 차지를 방출하여 드레곤 피니싱 무브나 일반공격을 함",
-      "description_en": "Charge-up Skill consecutive hits add cold damage to finishing moves can only be used with claw-class weapons must use a dragon finishing move or normal attack to release charges"
+      "description_ko": "충전 기술 연속으로 공격을 적중시키면 필살기에 냉기 피해가 추가됩니다. 손톱 유형의 무기로만 사용할 수 있습니다. 용 필살기 또는 일반 공격을 사용하여 충전을 방출해야 합니다.",
+      "description_en": "Charge-up Skill consecutive hits add cold damage to finishing moves can only be used with claw class weapons must use a dragon finishing move or normal attack to release charges"
     },
     {
       "id": "dragon-flight",
       "name_en": "Dragon Flight",
-      "name_ko": "드래곤 플라이트",
+      "name_ko": "용의 비상",
+      "name_ko_classic": "드래곤 플라이트",
       "tree": {
         "page": 3,
         "name_en": "Martial Arts",
-        "name_ko": "마샬 아트"
+        "name_ko": "무술"
       },
       "position": {
         "row": 5,
@@ -1015,21 +1045,22 @@
         {
           "id": "dragon-tail",
           "name_en": "Dragon Tail",
-          "name_ko": "드래곤 테일"
+          "name_ko": "용의 꼬리"
         }
       ],
       "synergies": [],
-      "description_ko": "피니싱 무브 적에게 순간이동하여 폭발킥을 사용함 차지드-업 보너스 추가",
+      "description_ko": "필살기 적에게 순간이동한 후 걷어차 대상을 파괴합니다. 발차기 기술에 충전 보너스가 추가됩니다.",
       "description_en": "Finishing Move teleport to your enemies and destroy them with a kick adds charged-up bonuses to the kick"
     },
     {
       "id": "phoenix-strike",
       "name_en": "Phoenix Strike",
-      "name_ko": "피닉스 스트라이크",
+      "name_ko": "불사조 일격",
+      "name_ko_classic": "피닉스 스트라이크",
       "tree": {
         "page": 3,
         "name_en": "Martial Arts",
-        "name_ko": "마샬 아트"
+        "name_ko": "무술"
       },
       "position": {
         "row": 6,
@@ -1045,16 +1076,16 @@
         {
           "id": "cobra-strike",
           "name_en": "Cobra Strike",
-          "name_ko": "코브라 스트라이크"
+          "name_ko": "코브라 일격"
         },
         {
           "id": "blades-of-ice",
           "name_en": "Blades of Ice",
-          "name_ko": "블레이드 오브 아이스"
+          "name_ko": "얼음 칼날"
         }
       ],
       "synergies": [],
-      "description_ko": "차지-업 스킬 엘리먼틀 노바가 추가된 피니싱 무브로 공격 차지를 방출하여 드레곤 피니싱 무브나 일반공격을 함",
+      "description_ko": "충전 기술 필살기에 원소 공격이 추가됩니다. 용 필살기 또는 일반 공격을 사용하여 충전을 방출해야 합니다.",
       "description_en": "Charge-up Skill adds elemental novas to finishing moves must use a dragon finishing move or normal attack to release charges"
     }
   ]

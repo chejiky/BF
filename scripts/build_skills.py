@@ -65,6 +65,9 @@ def main():
     ap.add_argument("--supplement", default=None,
                     help="워록(ROTW) 등 d2data 로케일에 없는 문자열 보충 파일 "
                          "(data/raw/warlock-strings.json)")
+    ap.add_argument("--d2r", default=None,
+                    help="D2R 재번역 문자열 덤프 (data/raw/d2r-strings.json). "
+                         "지정 시 D2R 명칭이 기본, 구작(TBL) 명칭은 *_classic로 병기")
     args = ap.parse_args()
     src = Path(args.d2data)
     out = Path(args.out)
@@ -74,6 +77,9 @@ def main():
     supp = {}
     if args.supplement and Path(args.supplement).exists():
         supp = json.load(open(args.supplement, encoding="utf-8"))
+    d2r = {}
+    if args.d2r and Path(args.d2r).exists():
+        d2r = json.load(open(args.d2r, encoding="utf-8"))
 
     skills_raw = json.load(open(src / "skills.json", encoding="utf-8"))
     # skills.json은 인덱스 키이므로 내부 스킬명('skill' 필드)으로 재색인
@@ -120,15 +126,28 @@ def main():
         return " ".join(l.strip() for l in text.split("\n") if l.strip())
 
     def name_pair(key, fallback):
-        """이름 문자열: 구 로케일 → 보충 파일 순으로 찾는다."""
+        """이름 문자열 (en, ko[, ko_classic]): D2R 재번역을 기본으로 하고
+        구작(TBL) 명칭이 다르면 세 번째 값으로 돌려준다."""
+        en_v = ko_v = classic = ""
         if key in eng or key in kor:
-            return eng.get(key, fallback).strip(), kor.get(key, eng.get(key, fallback)).strip()
-        if key in supp:
-            return supp[key]["en"] or fallback, supp[key]["ko"] or supp[key]["en"] or fallback
-        return fallback, fallback
+            en_v = eng.get(key, fallback).strip()
+            classic = kor.get(key, en_v).strip()
+        elif key in supp:
+            en_v = supp[key]["en"] or fallback
+            classic = supp[key]["ko"] or en_v
+        else:
+            en_v = classic = fallback
+        d = d2r.get(key)
+        ko_v = (d["ko"].strip() if d and d["ko"].strip() else classic)
+        if ko_v == classic:
+            classic = ""
+        return en_v, ko_v, classic
 
     def desc_pair(key):
-        """설명 문자열 (ko, en): 구 로케일은 역순 보정, 보충 파일은 자연 순서."""
+        """설명 문자열 (ko, en): D2R(자연 순서) 우선, 구 로케일은 역순 보정."""
+        d = d2r.get(key)
+        if d and d["ko"].strip():
+            return natural(d["ko"]), natural(d["en"]) or fix_lines(eng.get(key, ""))
         if key in kor or key in eng:
             return fix_lines(ko_str(key)), fix_lines(eng.get(key, ""))
         if key in supp:
@@ -148,7 +167,7 @@ def main():
             if d:
                 ov = OVERRIDES.get(skill_key, {})
                 nk = ov.get("name_key") or d.get("str name", "")
-                en_name, ko_name = name_pair(nk, skill_key)
+                en_name, ko_name, _ = name_pair(nk, skill_key)
                 res = {"id": slugify(en_name), "name_en": en_name, "name_ko": ko_name}
         if res is None:
             res = {"id": slugify(skill_key), "name_en": skill_key, "name_ko": skill_key}
@@ -174,7 +193,10 @@ def main():
             # (예: 소서리스 page 3 = Cold = SkillCategorySo1). 워록은 정방향.
             cat_idx = page if code == "war" else 4 - page
             cat_key = f"SkillCategory{CLASS_TAB_KEY[code]}{cat_idx}"
-            if cat_key in supp:
+            dc = d2r.get(cat_key)
+            if dc and dc["ko"].strip():
+                tree_en, tree_ko = dc["en"] or eng.get(cat_key, f"Tree {page}"), dc["ko"]
+            elif cat_key in supp:
                 tree_en, tree_ko = supp[cat_key]["en"], supp[cat_key]["ko"]
             else:
                 tree_en = eng.get(cat_key, f"Tree {page}")
@@ -190,11 +212,12 @@ def main():
 
             prereqs = [s[f"reqskill{i}"] for i in (1, 2, 3) if s.get(f"reqskill{i}")]
 
-            en_name, ko_name = name_pair(nk, skill_key)
+            en_name, ko_name, ko_classic = name_pair(nk, skill_key)
             entry = {
                 "id": slugify(en_name),
                 "name_en": en_name,
                 "name_ko": ko_name,
+                **({"name_ko_classic": ko_classic} if ko_classic else {}),
                 "tree": {"page": page, "name_en": tree_en, "name_ko": tree_ko},
                 "position": {"row": d.get("SkillRow"), "col": d.get("SkillColumn")},
                 "icon_cel": d.get("IconCel"),
@@ -215,11 +238,12 @@ def main():
 
         cls_skills.sort(key=lambda e: (e["tree"]["page"], e["required_level"],
                                        e["position"]["row"] or 0, e["position"]["col"] or 0))
-        cls_en, cls_ko = name_pair(meta["en"], meta["en"])
+        cls_en, cls_ko, cls_classic = name_pair(meta["en"], meta["en"])
         payload = {
             "class": meta["slug"],
             "class_name_en": cls_en,
             "class_name_ko": cls_ko,
+            **({"class_name_ko_classic": cls_classic} if cls_classic else {}),
             "skill_count": len(cls_skills),
             "skills": cls_skills,
         }
@@ -229,6 +253,7 @@ def main():
             "slug": meta["slug"],
             "name_en": meta["en"],
             "name_ko": payload["class_name_ko"],
+            **({"name_ko_classic": cls_classic} if cls_classic else {}),
             "skill_count": len(cls_skills),
             "file": f"{meta['slug']}.json",
         })

@@ -208,6 +208,9 @@ const $back = document.getElementById("btnBack");
 $back.addEventListener("click", () => history.back());
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const norm = s => String(s||"").replace(/\s+/g,"").toLowerCase();
+// D2R 정식 명칭 + 구작 명칭 중 질의와 일치하는 것이 있는지 (공백 무시)
+const matchName = (q, ...names) => names.some(n => n && norm(n).includes(q));
 const icon = (cls,id) => `assets/skills/${cls}/${id}.png`;
 const skillOf = (cls,id) => DATA[cls].skills.find(s => s.id===id);
 const tabState = {}; // 클래스별 마지막 탭
@@ -219,14 +222,15 @@ function renderHome(){
   setHdr("D2R 스킬 사전","Diablo II: Resurrected",false);
   const cards = CLASS_ORDER.map(c => {
     const d = DATA[c];
+    const alias = d.class_name_ko_classic ? `${esc(d.class_name_ko_classic)} · ` : "";
     return `<button class="class-card" data-go="c-${c}">
       <img src="${icon(c,CLASS_FACE[c])}" alt="" loading="lazy">
-      <span><span class="nm">${esc(d.class_name_ko)}</span><span class="en">${esc(d.class_name_en)}</span></span>
+      <span><span class="nm">${esc(d.class_name_ko)}</span><span class="en">${alias}${esc(d.class_name_en)}</span></span>
     </button>`;
   }).join("");
   $app.innerHTML = `<div class="view">
     <input class="search" id="q" type="search" placeholder="스킬 검색 (한글/영문)" autocomplete="off">
-    <p class="home-note">8개 클래스 240개 스킬 · 공식 한국어 명칭 기준</p>
+    <p class="home-note">8개 클래스 240개 스킬 · 유니크 391종 — 레저렉션 정식 명칭 기준, 구작 명칭 병기·검색 지원</p>
     <div id="searchOut"></div>
     <div id="homeMain">
       <div class="sec-label">Classes</div>
@@ -250,17 +254,17 @@ function doSearch(query){
   const main = document.getElementById("homeMain");
   if(!query){ out.innerHTML=""; main.hidden=false; return; }
   main.hidden = true;
-  const ql = query.toLowerCase();
+  const ql = norm(query);
   const hits = [];
   for(const c of CLASS_ORDER){
     for(const s of DATA[c].skills){
-      if(s.name_ko.includes(query) || s.name_en.toLowerCase().includes(ql)) hits.push([c,s]);
+      if(matchName(ql, s.name_ko, s.name_ko_classic, s.name_en)) hits.push([c,s]);
       if(hits.length >= 30) break;
     }
   }
   const ihits = ITEMS.filter(e =>
-    e.name_ko.includes(query) || e.name_en.toLowerCase().includes(ql) ||
-    e.base.name_ko.includes(query)).slice(0, 30);
+    matchName(ql, e.name_ko, e.name_ko_classic, e.name_en,
+              e.base.name_ko, e.base.name_ko_classic)).slice(0, 30);
   let html = "";
   if(hits.length) html += `<div class="sec-label">스킬</div><ul class="rows">` +
     hits.map(([c,s]) => rowHtml(c,s,true)).join("") + `</ul>`;
@@ -271,9 +275,10 @@ function doSearch(query){
 
 function rowHtml(c,s,withClass){
   const sub = (withClass ? `${esc(DATA[c].class_name_ko)} · ` : "") + esc(s.tree.name_ko);
+  const alias = s.name_ko_classic ? `${esc(s.name_ko_classic)} · ` : "";
   return `<li><button class="row" data-go="s-${c}-${s.id}">
     <img src="${icon(c,s.id)}" alt="" loading="lazy">
-    <span class="b"><span class="nm">${esc(s.name_ko)} <span class="en" style="color:var(--faint);font-size:.74rem">${esc(s.name_en)}</span></span>
+    <span class="b"><span class="nm">${esc(s.name_ko)} <span class="en" style="color:var(--faint);font-size:.74rem">${alias}${esc(s.name_en)}</span></span>
     <span class="sub">${sub}</span></span>
     <span class="lv">Lv ${s.required_level}</span>
   </button></li>`;
@@ -353,7 +358,8 @@ function renderSkill(cls,id){
   $app.innerHTML = `<div class="view">
     <div class="d-head">
       <img src="${icon(cls,s.id)}" alt="">
-      <div><h1>${esc(s.name_ko)}</h1><span class="en">${esc(s.name_en)}</span></div>
+      <div><h1>${esc(s.name_ko)}</h1>
+        <span class="en">${s.name_ko_classic?`${esc(s.name_ko_classic)} · `:""}${esc(s.name_en)}</span></div>
     </div>
     <div class="badges">${badges}</div>
     <div class="desc"><p class="ko">${esc(s.description_ko)}</p>${s.description_en?`<span class="en">${esc(s.description_en)}</span>`:""}</div>
@@ -370,9 +376,10 @@ function renderSkill(cls,id){
 /* ── 유니크 아이템 ── */
 function itemRowHtml(e){
   const img = e.image_src ? `<img src="assets/items/${e.image_src}" alt="" loading="lazy">` : "";
+  const alias = e.name_ko_classic ? ` <span class="en" style="color:var(--faint);font-size:.74rem">${esc(e.name_ko_classic)}</span>` : "";
   return `<li><button class="row" data-go="i-${e.id}">
     <span class="thumb-i">${img}</span>
-    <span class="b"><span class="nm" style="color:var(--gold)">${esc(e.name_ko)}</span>
+    <span class="b"><span class="nm" style="color:var(--gold)">${esc(e.name_ko)}</span>${alias}
     <span class="sub">${esc(e.base.name_ko)} · ${TIER_KO[e.tier]||e.tier}</span></span>
     <span class="lv">Lv ${e.required_level}</span>
   </button></li>`;
@@ -415,7 +422,7 @@ function renderItem(id){
       <span class="pic">${img}</span>
       <div><h1>${esc(e.name_ko)}</h1>
         <span class="base">${esc(e.base.name_ko)}</span>
-        <span class="en">${esc(e.name_en)} · ${esc(e.base.name_en)}</span></div>
+        <span class="en">${e.name_ko_classic?`${esc(e.name_ko_classic)} · `:""}${esc(e.name_en)} · ${esc(e.base.name_en)}</span></div>
     </div>
     <div class="badges">
       <span class="badge"><b>${esc(e.category_ko)}</b></span>

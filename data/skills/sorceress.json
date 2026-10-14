@@ -1,17 +1,19 @@
 {
   "class": "sorceress",
   "class_name_en": "Sorceress",
-  "class_name_ko": "소서리스",
+  "class_name_ko": "원소술사",
+  "class_name_ko_classic": "소서리스",
   "skill_count": 30,
   "skills": [
     {
       "id": "fire-bolt",
       "name_en": "Fire Bolt",
-      "name_ko": "파이어 볼트",
+      "name_ko": "화염탄",
+      "name_ko_classic": "파이어 볼트",
       "tree": {
         "page": 1,
         "name_en": "Fire Spells",
-        "name_ko": "파이어 스펠"
+        "name_ko": "화염 주문"
       },
       "position": {
         "row": 1,
@@ -28,25 +30,26 @@
         {
           "id": "fire-ball",
           "name_en": "Fire Ball",
-          "name_ko": "파이어 볼"
+          "name_ko": "화염구"
         },
         {
           "id": "meteor",
           "name_en": "Meteor",
-          "name_ko": "메테오"
+          "name_ko": "운석 낙하"
         }
       ],
-      "description_ko": "마법으로 파이어 불트를 생성하여 적에게 파이어 데미지를 줌",
+      "description_ko": "불타오르는 마법 투사체를 생성합니다.",
       "description_en": "creates a magical flaming missile"
     },
     {
       "id": "warmth",
       "name_en": "Warmth",
-      "name_ko": "웜쓰",
+      "name_ko": "온기",
+      "name_ko_classic": "웜쓰",
       "tree": {
         "page": 1,
         "name_en": "Fire Spells",
-        "name_ko": "파이어 스펠"
+        "name_ko": "화염 주문"
       },
       "position": {
         "row": 1,
@@ -60,17 +63,18 @@
       "element": "fire",
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "패시브 - 마나 회복속도 증가",
+      "description_ko": "지속 효과 - 마나 회복 속도가 증가합니다.",
       "description_en": "passive - increases the rate at which you recover mana"
     },
     {
       "id": "inferno",
       "name_en": "Inferno",
-      "name_ko": "인페르노",
+      "name_ko": "지옥불",
+      "name_ko_classic": "인페르노",
       "tree": {
         "page": 1,
         "name_en": "Fire Spells",
-        "name_ko": "파이어 스펠"
+        "name_ko": "화염 주문"
       },
       "position": {
         "row": 2,
@@ -87,20 +91,21 @@
         {
           "id": "warmth",
           "name_en": "Warmth",
-          "name_ko": "웜쓰"
+          "name_ko": "온기"
         }
       ],
-      "description_ko": "마법으로 파이어를 지속적으로 분사하여 적에게 파이어 데미지를 줌",
+      "description_ko": "연속으로 불줄기를 방출하여 적을 불태웁니다.",
       "description_en": "creates a continuous jet of flame to scorch your enemies"
     },
     {
       "id": "blaze",
       "name_en": "Blaze",
-      "name_ko": "블레이즈",
+      "name_ko": "불길",
+      "name_ko_classic": "블레이즈",
       "tree": {
         "page": 1,
         "name_en": "Fire Spells",
-        "name_ko": "파이어 스펠"
+        "name_ko": "화염 주문"
       },
       "position": {
         "row": 3,
@@ -116,27 +121,28 @@
         {
           "id": "inferno",
           "name_en": "Inferno",
-          "name_ko": "인페르노"
+          "name_ko": "지옥불"
         }
       ],
       "synergies": [
         {
           "id": "warmth",
           "name_en": "Warmth",
-          "name_ko": "웜쓰"
+          "name_ko": "온기"
         }
       ],
-      "description_ko": "마법으로 걷거나 뛸 때 그 길을 따라 불의 장벽을 생성하여 다수의 적에게 파이어 데미지를 줌",
+      "description_ko": "지나간 자리에 불길을 남겨 적을 불태웁니다.",
       "description_en": "creates a wall of fire in your wake to scorch your enemies"
     },
     {
       "id": "fire-ball",
       "name_en": "Fire Ball",
-      "name_ko": "파이어 볼",
+      "name_ko": "화염구",
+      "name_ko_classic": "파이어 볼",
       "tree": {
         "page": 1,
         "name_en": "Fire Spells",
-        "name_ko": "파이어 스펠"
+        "name_ko": "화염 주문"
       },
       "position": {
         "row": 3,
@@ -152,32 +158,33 @@
         {
           "id": "fire-bolt",
           "name_en": "Fire Bolt",
-          "name_ko": "파이어 볼트"
+          "name_ko": "화염탄"
         }
       ],
       "synergies": [
         {
           "id": "fire-bolt",
           "name_en": "Fire Bolt",
-          "name_ko": "파이어 볼트"
+          "name_ko": "화염탄"
         },
         {
           "id": "meteor",
           "name_en": "Meteor",
-          "name_ko": "메테오"
+          "name_ko": "운석 낙하"
         }
       ],
-      "description_ko": "마법으로 파이어 볼을 생성하며 적중시 폭발로 인하여 다수의 적에게 파이어 데미지를 줌",
+      "description_ko": "폭발하는 죽음의 화염 구체를 생성하여 적을 덮칩니다.",
       "description_en": "creates an explosive sphere of fiery death to engulf your enemies"
     },
     {
       "id": "fire-wall",
       "name_en": "Fire Wall",
-      "name_ko": "파이어 월",
+      "name_ko": "화염벽",
+      "name_ko_classic": "파이어 월",
       "tree": {
         "page": 1,
         "name_en": "Fire Spells",
-        "name_ko": "파이어 스펠"
+        "name_ko": "화염 주문"
       },
       "position": {
         "row": 4,
@@ -193,32 +200,33 @@
         {
           "id": "blaze",
           "name_en": "Blaze",
-          "name_ko": "블레이즈"
+          "name_ko": "불길"
         }
       ],
       "synergies": [
         {
           "id": "warmth",
           "name_en": "Warmth",
-          "name_ko": "웜쓰"
+          "name_ko": "온기"
         },
         {
           "id": "inferno",
           "name_en": "Inferno",
-          "name_ko": "인페르노"
+          "name_ko": "지옥불"
         }
       ],
-      "description_ko": "마법으로 파이어 장벽을 만들어 다수의 적에게 파이어 데미지를 줌",
-      "description_en": "creates a wall of flame that blocks or burns your enemies"
+      "description_ko": "화염벽을 생성하여 주위의 적을 불태웁니다.",
+      "description_en": "creates a wall of flame that burns nearby enemies"
     },
     {
       "id": "enchant",
       "name_en": "Enchant",
-      "name_ko": "인첸트",
+      "name_ko": "마법부여",
+      "name_ko_classic": "인첸트",
       "tree": {
         "page": 1,
         "name_en": "Fire Spells",
-        "name_ko": "파이어 스펠"
+        "name_ko": "화염 주문"
       },
       "position": {
         "row": 4,
@@ -234,32 +242,33 @@
         {
           "id": "warmth",
           "name_en": "Warmth",
-          "name_ko": "웜쓰"
+          "name_ko": "온기"
         },
         {
           "id": "fire-ball",
           "name_en": "Fire Ball",
-          "name_ko": "파이어 볼"
+          "name_ko": "화염구"
         }
       ],
       "synergies": [
         {
           "id": "warmth",
           "name_en": "Warmth",
-          "name_ko": "웜쓰"
+          "name_ko": "온기"
         }
       ],
-      "description_ko": "마법으로 무기에 파이어 데미지를 추가하여 근거리 공격시 적에게 파이어 데미지를 주고 원거리 공격시에는 1/3 파이어 데미지를 추가함",
-      "description_en": "enchants equipped weapon of targeted character or minion adds fire damage to melee weapons adds one-third fire damage to ranged weapons"
+      "description_ko": "대상 캐릭터 또는 하수인이 장착한 무기에 마법을 부여합니다. 모든 무기에 화염 피해를 추가합니다.",
+      "description_en": "enchants equipped weapon of targeted character or minion adds fire damage to all weapons"
     },
     {
       "id": "meteor",
       "name_en": "Meteor",
-      "name_ko": "메테오",
+      "name_ko": "운석 낙하",
+      "name_ko_classic": "메테오",
       "tree": {
         "page": 1,
         "name_en": "Fire Spells",
-        "name_ko": "파이어 스펠"
+        "name_ko": "화염 주문"
       },
       "position": {
         "row": 5,
@@ -275,37 +284,38 @@
         {
           "id": "fire-ball",
           "name_en": "Fire Ball",
-          "name_ko": "파이어 볼"
+          "name_ko": "화염구"
         },
         {
           "id": "fire-wall",
           "name_en": "Fire Wall",
-          "name_ko": "파이어 월"
+          "name_ko": "화염벽"
         }
       ],
       "synergies": [
         {
           "id": "fire-bolt",
           "name_en": "Fire Bolt",
-          "name_ko": "파이어 볼트"
+          "name_ko": "화염탄"
         },
         {
           "id": "fire-ball",
           "name_en": "Fire Ball",
-          "name_ko": "파이어 볼"
+          "name_ko": "화염구"
         }
       ],
-      "description_ko": "마법으로 유성을 소환하여 다수의 적에게 강력한 파이어 데미지를 줌",
+      "description_ko": "하늘에서 운석을 소환하여 적을 으스러뜨리고 불태웁니다.",
       "description_en": "summons a meteor from the heavens to crush and incinerate your enemies"
     },
     {
       "id": "fire-mastery",
       "name_en": "Fire Mastery",
-      "name_ko": "파이어 마스터리",
+      "name_ko": "화염 숙련",
+      "name_ko_classic": "파이어 마스터리",
       "tree": {
         "page": 1,
         "name_en": "Fire Spells",
-        "name_ko": "파이어 스펠"
+        "name_ko": "화염 주문"
       },
       "position": {
         "row": 6,
@@ -319,17 +329,18 @@
       "element": "fire",
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "패시브 - 모든 파이어 스킬 계열의 데미지 증가",
+      "description_ko": "지속 효과 - 화염 주문으로 주는 모든 피해가 증가합니다.",
       "description_en": "passive - increases all damage caused by your fire spells"
     },
     {
       "id": "hydra",
       "name_en": "Hydra",
-      "name_ko": "하이드라",
+      "name_ko": "히드라",
+      "name_ko_classic": "하이드라",
       "tree": {
         "page": 1,
         "name_en": "Fire Spells",
-        "name_ko": "파이어 스펠"
+        "name_ko": "화염 주문"
       },
       "position": {
         "row": 6,
@@ -345,32 +356,33 @@
         {
           "id": "enchant",
           "name_en": "Enchant",
-          "name_ko": "인첸트"
+          "name_ko": "마법부여"
         }
       ],
       "synergies": [
         {
           "id": "fire-bolt",
           "name_en": "Fire Bolt",
-          "name_ko": "파이어 볼트"
+          "name_ko": "화염탄"
         },
         {
           "id": "fire-ball",
           "name_en": "Fire Ball",
-          "name_ko": "파이어 볼"
+          "name_ko": "화염구"
         }
       ],
-      "description_ko": "파이어 볼트를 쏘는 하이드라를 소환하여 적들에게 파이어 데미지를 줌",
+      "description_ko": "머리가 여러 개인 화염의 야수를 소환하여 적을 잿더미로 만듭니다.",
       "description_en": "summons a multi-headed beast of flame to reduce your enemies to ashes"
     },
     {
       "id": "charged-bolt",
       "name_en": "Charged Bolt",
-      "name_ko": "차지드 볼트",
+      "name_ko": "번개 줄기",
+      "name_ko_classic": "차지드 볼트",
       "tree": {
         "page": 2,
         "name_en": "Lightning Spells",
-        "name_ko": "라이트닝 스펠"
+        "name_ko": "번개 주문"
       },
       "position": {
         "row": 1,
@@ -387,20 +399,21 @@
         {
           "id": "lightning",
           "name_en": "Lightning",
-          "name_ko": "라이트닝"
+          "name_ko": "번개"
         }
       ],
-      "description_ko": "마법에 의한 여러 개의 라이트닝 파장으로 다수의 적에게 라이트닝 데미지를 줌",
+      "description_ko": "무작위 방향으로 날아가는 전기 마력 줄기를 다수 생성합니다.",
       "description_en": "creates multiple, randomly directed bolts of electrical energy"
     },
     {
       "id": "static-field",
       "name_en": "Static Field",
-      "name_ko": "스태틱 필드",
+      "name_ko": "전자기장",
+      "name_ko_classic": "스태틱 필드",
       "tree": {
         "page": 2,
         "name_en": "Lightning Spells",
-        "name_ko": "라이트닝 스펠"
+        "name_ko": "번개 주문"
       },
       "position": {
         "row": 2,
@@ -414,17 +427,18 @@
       "element": "ltng",
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "전기 파장을 형성하여 가까운 적에게 데미지를 줌",
+      "description_ko": "전기장을 생성하여 주위 모든 적의 생명력을 감소시킵니다.",
       "description_en": "creates an electrical field that reduces life of all nearby enemies"
     },
     {
       "id": "telekinesis",
       "name_en": "Telekinesis",
-      "name_ko": "텔레키네시스",
+      "name_ko": "염력",
+      "name_ko_classic": "텔레키네시스",
       "tree": {
         "page": 2,
         "name_en": "Lightning Spells",
-        "name_ko": "라이트닝 스펠"
+        "name_ko": "번개 주문"
       },
       "position": {
         "row": 2,
@@ -438,17 +452,18 @@
       "element": "ltng",
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "염력으로 아이템을 줍거나, 사용하며 적에게 마법 데미지를 줌",
+      "description_ko": "정신의 힘을 사용하여 아이템을 줍거나, 물체를 사용하거나, 적을 뒤로 밀쳐냅니다.",
       "description_en": "uses the power of your mind to pick up items, use objects, and knock back enemies"
     },
     {
       "id": "nova",
       "name_en": "Nova",
-      "name_ko": "노바",
+      "name_ko": "번개 파장",
+      "name_ko_classic": "노바",
       "tree": {
         "page": 2,
         "name_en": "Lightning Spells",
-        "name_ko": "라이트닝 스펠"
+        "name_ko": "번개 주문"
       },
       "position": {
         "row": 3,
@@ -464,27 +479,28 @@
         {
           "id": "static-field",
           "name_en": "Static Field",
-          "name_ko": "스태틱 필드"
+          "name_ko": "전자기장"
         }
       ],
       "synergies": [
         {
           "id": "static-field",
           "name_en": "Static Field",
-          "name_ko": "스태틱 필드"
+          "name_ko": "전자기장"
         }
       ],
-      "description_ko": "마법으로 원형 라이트닝을 생성하여 다수의 적에게 라이트닝 데미지를 줌",
+      "description_ko": "번개 파장을 방출하여 주위의 적에게 충격을 줍니다.",
       "description_en": "creates an expanding ring of lightning to shock nearby enemies"
     },
     {
       "id": "lightning",
       "name_en": "Lightning",
-      "name_ko": "라이트닝",
+      "name_ko": "번개",
+      "name_ko_classic": "라이트닝",
       "tree": {
         "page": 2,
         "name_en": "Lightning Spells",
-        "name_ko": "라이트닝 스펠"
+        "name_ko": "번개 주문"
       },
       "position": {
         "row": 3,
@@ -500,37 +516,38 @@
         {
           "id": "charged-bolt",
           "name_en": "Charged Bolt",
-          "name_ko": "차지드 볼트"
+          "name_ko": "번개 줄기"
         }
       ],
       "synergies": [
         {
           "id": "charged-bolt",
           "name_en": "Charged Bolt",
-          "name_ko": "차지드 볼트"
+          "name_ko": "번개 줄기"
         },
         {
           "id": "chain-lightning",
           "name_en": "Chain Lightning",
-          "name_ko": "체인 라이트닝"
+          "name_ko": "연쇄 번개"
         },
         {
           "id": "nova",
           "name_en": "Nova",
-          "name_ko": "노바"
+          "name_ko": "번개 파장"
         }
       ],
-      "description_ko": "마법으로 라이트닝 줄기를 생성하여 다수의 적에게 라이트닝 데미지를 줌",
+      "description_ko": "강력한 번개를 생성하여 적을 사멸시킵니다.",
       "description_en": "creates a powerful lightning bolt to lay waste to your enemies"
     },
     {
       "id": "chain-lightning",
       "name_en": "Chain Lightning",
-      "name_ko": "체인 라이트닝",
+      "name_ko": "연쇄 번개",
+      "name_ko_classic": "체인 라이트닝",
       "tree": {
         "page": 2,
         "name_en": "Lightning Spells",
-        "name_ko": "라이트닝 스펠"
+        "name_ko": "번개 주문"
       },
       "position": {
         "row": 4,
@@ -546,37 +563,38 @@
         {
           "id": "lightning",
           "name_en": "Lightning",
-          "name_ko": "라이트닝"
+          "name_ko": "번개"
         }
       ],
       "synergies": [
         {
           "id": "charged-bolt",
           "name_en": "Charged Bolt",
-          "name_ko": "차지드 볼트"
+          "name_ko": "번개 줄기"
         },
         {
           "id": "lightning",
           "name_en": "Lightning",
-          "name_ko": "라이트닝"
+          "name_ko": "번개"
         },
         {
           "id": "nova",
           "name_en": "Nova",
-          "name_ko": "노바"
+          "name_ko": "번개 파장"
         }
       ],
-      "description_ko": "마법으로 라이트닝 줄기를 생성하여 적중시 주변에 있는 적에게 연쇄적으로 라이트닝 데미지를 줌",
+      "description_ko": "다수의 대상에게 튕기는 강력한 번개를 생성합니다.",
       "description_en": "creates a bolt of lightning that arcs through several targets"
     },
     {
       "id": "teleport",
       "name_en": "Teleport",
-      "name_ko": "텔레포트",
+      "name_ko": "순간이동",
+      "name_ko_classic": "텔레포트",
       "tree": {
         "page": 2,
         "name_en": "Lightning Spells",
-        "name_ko": "라이트닝 스펠"
+        "name_ko": "번개 주문"
       },
       "position": {
         "row": 4,
@@ -592,21 +610,22 @@
         {
           "id": "telekinesis",
           "name_en": "Telekinesis",
-          "name_ko": "텔레키네시스"
+          "name_ko": "염력"
         }
       ],
       "synergies": [],
-      "description_ko": "시야 내의 원하는 지역으로 이동",
+      "description_ko": "시야 내의 목적지로 즉시 이동합니다.",
       "description_en": "instantly moves to a destination within your line of sight"
     },
     {
       "id": "thunder-storm",
       "name_en": "Thunder Storm",
-      "name_ko": "썬더 스톰",
+      "name_ko": "뇌우",
+      "name_ko_classic": "썬더 스톰",
       "tree": {
         "page": 2,
         "name_en": "Lightning Spells",
-        "name_ko": "라이트닝 스펠"
+        "name_ko": "번개 주문"
       },
       "position": {
         "row": 5,
@@ -622,32 +641,33 @@
         {
           "id": "nova",
           "name_en": "Nova",
-          "name_ko": "노바"
+          "name_ko": "번개 파장"
         },
         {
           "id": "chain-lightning",
           "name_en": "Chain Lightning",
-          "name_ko": "체인 라이트닝"
+          "name_ko": "연쇄 번개"
         }
       ],
       "synergies": [
         {
           "id": "static-field",
           "name_en": "Static Field",
-          "name_ko": "스태틱 필드"
+          "name_ko": "전자기장"
         }
       ],
-      "description_ko": "마법으로 주변의 적에게 벼락이 하늘에서 떨어져 치명적인 라이트닝 데미지를 줌",
-      "description_en": "summons a deadly thunderstorm that strikes your enemies with bolts of lightning"
+      "description_ko": "적을 번개로 타격하는 치명적인 천둥 폭풍을 소환하며, 작은 노바를 생성합니다",
+      "description_en": "summons a deadly thunderstorm that strikes your enemies with bolts of lightning that create a small nova"
     },
     {
       "id": "energy-shield",
       "name_en": "Energy Shield",
-      "name_ko": "에너지 쉴드",
+      "name_ko": "마력 보호막",
+      "name_ko_classic": "에너지 쉴드",
       "tree": {
         "page": 2,
         "name_en": "Lightning Spells",
-        "name_ko": "라이트닝 스펠"
+        "name_ko": "번개 주문"
       },
       "position": {
         "row": 5,
@@ -663,32 +683,33 @@
         {
           "id": "teleport",
           "name_en": "Teleport",
-          "name_ko": "텔레포트"
+          "name_ko": "순간이동"
         },
         {
           "id": "chain-lightning",
           "name_en": "Chain Lightning",
-          "name_ko": "체인 라이트닝"
+          "name_ko": "연쇄 번개"
         }
       ],
       "synergies": [
         {
           "id": "telekinesis",
           "name_en": "Telekinesis",
-          "name_ko": "텔레키네시스"
+          "name_ko": "염력"
         }
       ],
-      "description_ko": "적에게 받는 데미지를 마나로 흡수하여 라이프 소모량을 감소 시킴",
+      "description_ko": "마법 보호막을 생성하여 피해를 받을 때 생명력 대신 마나를 소모합니다.",
       "description_en": "creates a magical shield that consumes mana instead of health when you take damage"
     },
     {
       "id": "lightning-mastery",
       "name_en": "Lightning Mastery",
-      "name_ko": "라이트닝 마스터리",
+      "name_ko": "번개 숙련",
+      "name_ko_classic": "라이트닝 마스터리",
       "tree": {
         "page": 2,
         "name_en": "Lightning Spells",
-        "name_ko": "라이트닝 스펠"
+        "name_ko": "번개 주문"
       },
       "position": {
         "row": 6,
@@ -702,17 +723,18 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "패시브 - 라이트닝계열 마법데미지 증가",
+      "description_ko": "지속 효과 - 번개 주문으로 주는 모든 피해가 증가합니다.",
       "description_en": "passive - increases all damage caused by your lightning spells"
     },
     {
       "id": "ice-bolt",
       "name_en": "Ice Bolt",
-      "name_ko": "아이스 볼트",
+      "name_ko": "얼음살",
+      "name_ko_classic": "아이스 볼트",
       "tree": {
         "page": 3,
         "name_en": "Cold Spells",
-        "name_ko": "콜드 스펠"
+        "name_ko": "냉기 주문"
       },
       "position": {
         "row": 1,
@@ -729,40 +751,41 @@
         {
           "id": "frost-nova",
           "name_en": "Frost Nova",
-          "name_ko": "프로스트 노바"
+          "name_ko": "서릿발"
         },
         {
           "id": "ice-blast",
           "name_en": "Ice Blast",
-          "name_ko": "아이스 블래스트"
+          "name_ko": "얼음 작렬"
         },
         {
           "id": "glacial-spike",
           "name_en": "Glacial Spike",
-          "name_ko": "글래셜 스파이크"
+          "name_ko": "빙하 가시"
         },
         {
           "id": "blizzard",
           "name_en": "Blizzard",
-          "name_ko": "블리자드"
+          "name_ko": "눈보라"
         },
         {
           "id": "frozen-orb",
           "name_en": "Frozen Orb",
-          "name_ko": "프로즌 오브"
+          "name_ko": "얼음 보주"
         }
       ],
-      "description_ko": "마법으로 콜트계열의 볼트를 만들어 적에게 콜드 데미지를 주고 움직임을 둔화 시킴",
+      "description_ko": "마법 얼음 화살을 생성하여 적에게 피해를 주고 이동 속도를 감소시킵니다.",
       "description_en": "creates a magical bolt of ice that damages and slows your enemies"
     },
     {
       "id": "frozen-armor",
       "name_en": "Frozen Armor",
-      "name_ko": "프로즌 아머",
+      "name_ko": "얼어붙은 갑옷",
+      "name_ko_classic": "프로즌 아머",
       "tree": {
         "page": 3,
         "name_en": "Cold Spells",
-        "name_ko": "콜드 스펠"
+        "name_ko": "냉기 주문"
       },
       "position": {
         "row": 1,
@@ -779,25 +802,26 @@
         {
           "id": "shiver-armor",
           "name_en": "Shiver Armor",
-          "name_ko": "쉬버 아머"
+          "name_ko": "오한 갑옷"
         },
         {
           "id": "chilling-armor",
           "name_en": "Chilling Armor",
-          "name_ko": "칠링 아머"
+          "name_ko": "냉기 갑옷"
         }
       ],
-      "description_ko": "마법으로 방어율을 향상 시키고, 공격하는 적에게 콜드 데미지를 주어 움직임을 둔화 시킴",
-      "description_en": "increases your defense rating and freezes enemies that hit you"
+      "description_ko": "자신의 방어력을 증가시키고 자신을 공격한 적을 빙결시킵니다.",
+      "description_en": "increases your defense and freezes enemies that hit you"
     },
     {
       "id": "frost-nova",
       "name_en": "Frost Nova",
-      "name_ko": "프로스트 노바",
+      "name_ko": "서릿발",
+      "name_ko_classic": "프로스트 노바",
       "tree": {
         "page": 3,
         "name_en": "Cold Spells",
-        "name_ko": "콜드 스펠"
+        "name_ko": "냉기 주문"
       },
       "position": {
         "row": 2,
@@ -814,25 +838,26 @@
         {
           "id": "blizzard",
           "name_en": "Blizzard",
-          "name_ko": "블리자드"
+          "name_ko": "눈보라"
         },
         {
           "id": "frozen-orb",
           "name_en": "Frozen Orb",
-          "name_ko": "프로즌 오브"
+          "name_ko": "얼음 보주"
         }
       ],
-      "description_ko": "마법으로 원형 아이스를 생성하여 다수의 적에게 콜드 데미지를 주고, 움직임을 둔화 시킴",
+      "description_ko": "냉기 파장을 방출하여 주위의 모든 적에게 피해를 주고 이동 속도를 감소시킵니다.",
       "description_en": "creates an expanding ring of ice that damages and slows all nearby enemies"
     },
     {
       "id": "ice-blast",
       "name_en": "Ice Blast",
-      "name_ko": "아이스 블래스트",
+      "name_ko": "얼음 작렬",
+      "name_ko_classic": "아이스 블래스트",
       "tree": {
         "page": 3,
         "name_en": "Cold Spells",
-        "name_ko": "콜드 스펠"
+        "name_ko": "냉기 주문"
       },
       "position": {
         "row": 2,
@@ -848,42 +873,43 @@
         {
           "id": "ice-bolt",
           "name_en": "Ice Bolt",
-          "name_ko": "아이스 볼트"
+          "name_ko": "얼음살"
         }
       ],
       "synergies": [
         {
           "id": "ice-bolt",
           "name_en": "Ice Bolt",
-          "name_ko": "아이스 볼트"
+          "name_ko": "얼음살"
         },
         {
           "id": "blizzard",
           "name_en": "Blizzard",
-          "name_ko": "블리자드"
+          "name_ko": "눈보라"
         },
         {
           "id": "frozen-orb",
           "name_en": "Frozen Orb",
-          "name_ko": "프로즌 오브"
+          "name_ko": "얼음 보주"
         },
         {
           "id": "glacial-spike",
           "name_en": "Glacial Spike",
-          "name_ko": "글래셜 스파이크"
+          "name_ko": "빙하 가시"
         }
       ],
-      "description_ko": "마법으로 강한 아이스 볼트를 생성하여 적에게 콜드 데미지를 주고, 결빙시켜 움직이지 못하게 함",
+      "description_ko": "마법 얼음 구체를 생성하여 적에게 피해를 주고 빙결시킵니다.",
       "description_en": "creates a magical sphere of ice that damages and freezes your enemy"
     },
     {
       "id": "shiver-armor",
       "name_en": "Shiver Armor",
-      "name_ko": "쉬버 아머",
+      "name_ko": "오한 갑옷",
+      "name_ko_classic": "쉬버 아머",
       "tree": {
         "page": 3,
         "name_en": "Cold Spells",
-        "name_ko": "콜드 스펠"
+        "name_ko": "냉기 주문"
       },
       "position": {
         "row": 3,
@@ -899,37 +925,38 @@
         {
           "id": "ice-blast",
           "name_en": "Ice Blast",
-          "name_ko": "아이스 블래스트"
+          "name_ko": "얼음 작렬"
         },
         {
           "id": "frozen-armor",
           "name_en": "Frozen Armor",
-          "name_ko": "프로즌 아머"
+          "name_ko": "얼어붙은 갑옷"
         }
       ],
       "synergies": [
         {
           "id": "frozen-armor",
           "name_en": "Frozen Armor",
-          "name_ko": "프로즌 아머"
+          "name_ko": "얼어붙은 갑옷"
         },
         {
           "id": "chilling-armor",
           "name_en": "Chilling Armor",
-          "name_ko": "칠링 아머"
+          "name_ko": "냉기 갑옷"
         }
       ],
-      "description_ko": "마법으로 방어율을 향상 시키고, 공격하는 적에게 콜드 데미지를 주어 움직이지 못하게 함",
-      "description_en": "increases your defense rating freezes and damages enemies that hit you"
+      "description_ko": "자신의 방어력을 증가시키고 공격한 적에게 피해를 주고 빙결시킵니다.",
+      "description_en": "increases your defense freezes and damages enemies that hit you"
     },
     {
       "id": "glacial-spike",
       "name_en": "Glacial Spike",
-      "name_ko": "글래셜 스파이크",
+      "name_ko": "빙하 가시",
+      "name_ko_classic": "글래셜 스파이크",
       "tree": {
         "page": 3,
         "name_en": "Cold Spells",
-        "name_ko": "콜드 스펠"
+        "name_ko": "냉기 주문"
       },
       "position": {
         "row": 4,
@@ -945,42 +972,43 @@
         {
           "id": "ice-blast",
           "name_en": "Ice Blast",
-          "name_ko": "아이스 블래스트"
+          "name_ko": "얼음 작렬"
         }
       ],
       "synergies": [
         {
           "id": "blizzard",
           "name_en": "Blizzard",
-          "name_ko": "블리자드"
+          "name_ko": "눈보라"
         },
         {
           "id": "ice-bolt",
           "name_en": "Ice Bolt",
-          "name_ko": "아이스 볼트"
+          "name_ko": "얼음살"
         },
         {
           "id": "ice-blast",
           "name_en": "Ice Blast",
-          "name_ko": "아이스 블래스트"
+          "name_ko": "얼음 작렬"
         },
         {
           "id": "frozen-orb",
           "name_en": "Frozen Orb",
-          "name_ko": "프로즌 오브"
+          "name_ko": "얼음 보주"
         }
       ],
-      "description_ko": "마법으로 강력한 아이스 볼트를 생성하여 다수의 적에게 콜드 데미지를 주고, 결빙시켜 움직이지 못하게 함",
+      "description_ko": "마법 얼음 혜성을 생성하여 주위의 적을 빙결시키고 피해를 줍니다.",
       "description_en": "creates a magical ice comet that freezes or kills nearby enemies"
     },
     {
       "id": "blizzard",
       "name_en": "Blizzard",
-      "name_ko": "블리자드",
+      "name_ko": "눈보라",
+      "name_ko_classic": "블리자드",
       "tree": {
         "page": 3,
         "name_en": "Cold Spells",
-        "name_ko": "콜드 스펠"
+        "name_ko": "냉기 주문"
       },
       "position": {
         "row": 5,
@@ -996,42 +1024,43 @@
         {
           "id": "frost-nova",
           "name_en": "Frost Nova",
-          "name_ko": "프로스트 노바"
+          "name_ko": "서릿발"
         },
         {
           "id": "glacial-spike",
           "name_en": "Glacial Spike",
-          "name_ko": "글래셜 스파이크"
+          "name_ko": "빙하 가시"
         }
       ],
       "synergies": [
         {
           "id": "ice-bolt",
           "name_en": "Ice Bolt",
-          "name_ko": "아이스 볼트"
+          "name_ko": "얼음살"
         },
         {
           "id": "ice-blast",
           "name_en": "Ice Blast",
-          "name_ko": "아이스 블래스트"
+          "name_ko": "얼음 작렬"
         },
         {
           "id": "glacial-spike",
           "name_en": "Glacial Spike",
-          "name_ko": "글래셜 스파이크"
+          "name_ko": "빙하 가시"
         }
       ],
-      "description_ko": "방대한 지역에 얼음 폭풍을 소환하여 다수의 적에게 콜드 데미지를 주고, 움직임을 둔화시킴",
+      "description_ko": "거대한 얼음 조각들을 쏟아부어 적을 파괴합니다.",
       "description_en": "summons massive shards of ice to destroy your enemies"
     },
     {
       "id": "chilling-armor",
       "name_en": "Chilling Armor",
-      "name_ko": "칠링 아머",
+      "name_ko": "냉기 갑옷",
+      "name_ko_classic": "칠링 아머",
       "tree": {
         "page": 3,
         "name_en": "Cold Spells",
-        "name_ko": "콜드 스펠"
+        "name_ko": "냉기 주문"
       },
       "position": {
         "row": 5,
@@ -1047,32 +1076,33 @@
         {
           "id": "shiver-armor",
           "name_en": "Shiver Armor",
-          "name_ko": "쉬버 아머"
+          "name_ko": "오한 갑옷"
         }
       ],
       "synergies": [
         {
           "id": "frozen-armor",
           "name_en": "Frozen Armor",
-          "name_ko": "프로즌 아머"
+          "name_ko": "얼어붙은 갑옷"
         },
         {
           "id": "shiver-armor",
           "name_en": "Shiver Armor",
-          "name_ko": "쉬버 아머"
+          "name_ko": "오한 갑옷"
         }
       ],
-      "description_ko": "방어력을 향상 시키고, 원거리 공격을 하는 적에게 아이스 볼트를 되돌려 줌",
+      "description_ko": "방어력이 증가하고 원거리 공격자에게 얼음살을 방출하여 보복합니다.",
       "description_en": "increases defense and discharges an ice bolt in retaliation against ranged attackers"
     },
     {
       "id": "frozen-orb",
       "name_en": "Frozen Orb",
-      "name_ko": "프로즌 오브",
+      "name_ko": "얼음 보주",
+      "name_ko_classic": "프로즌 오브",
       "tree": {
         "page": 3,
         "name_en": "Cold Spells",
-        "name_ko": "콜드 스펠"
+        "name_ko": "냉기 주문"
       },
       "position": {
         "row": 6,
@@ -1088,27 +1118,28 @@
         {
           "id": "blizzard",
           "name_en": "Blizzard",
-          "name_ko": "블리자드"
+          "name_ko": "눈보라"
         }
       ],
       "synergies": [
         {
           "id": "ice-bolt",
           "name_en": "Ice Bolt",
-          "name_ko": "아이스 볼트"
+          "name_ko": "얼음살"
         }
       ],
-      "description_ko": "구형으로 발사되는 강한 아이스 볼트를 사방에 퍼뜨려 적에게 콜드 데미지를 주고, 움직임을 둔화시킴",
+      "description_ko": "얼음살을 퍼붓는 마법 구체를 생성하여 적을 사멸시킵니다.",
       "description_en": "creates a magical globe that sprays a torrent of ice bolts to lay waste to your enemies"
     },
     {
       "id": "cold-mastery",
       "name_en": "Cold Mastery",
-      "name_ko": "콜드 마스터리",
+      "name_ko": "냉기 숙련",
+      "name_ko_classic": "콜드 마스터리",
       "tree": {
         "page": 3,
         "name_en": "Cold Spells",
-        "name_ko": "콜드 스펠"
+        "name_ko": "냉기 주문"
       },
       "position": {
         "row": 6,
@@ -1122,8 +1153,8 @@
       "element": null,
       "prerequisites": [],
       "synergies": [],
-      "description_ko": "패시브 - 모든 콜드계열 스킬사용시 상대의 저항력 감소효과",
-      "description_en": "passive - increases the damage of your cold attacks by piercing enemies' resistances to cold"
+      "description_ko": "지속 효과 - 적의 냉기 저항을 감소시켜 냉기 주문으로 주는 피해가 증가합니다.",
+      "description_en": "passive - increases the damage of your cold spells by piercing enemies' resistances to cold"
     }
   ]
 }

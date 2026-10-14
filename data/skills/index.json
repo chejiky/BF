@@ -10,14 +10,16 @@
     {
       "slug": "assassin",
       "name_en": "Assassin",
-      "name_ko": "어쎄신",
+      "name_ko": "암살자",
+      "name_ko_classic": "어쎄신",
       "skill_count": 30,
       "file": "assassin.json"
     },
     {
       "slug": "barbarian",
       "name_en": "Barbarian",
-      "name_ko": "바바리안",
+      "name_ko": "야만용사",
+      "name_ko_classic": "바바리안",
       "skill_count": 30,
       "file": "barbarian.json"
     },
@@ -31,21 +33,24 @@
     {
       "slug": "necromancer",
       "name_en": "Necromancer",
-      "name_ko": "네크로맨서",
+      "name_ko": "강령술사",
+      "name_ko_classic": "네크로맨서",
       "skill_count": 30,
       "file": "necromancer.json"
     },
     {
       "slug": "paladin",
       "name_en": "Paladin",
-      "name_ko": "팔라딘",
+      "name_ko": "성기사",
+      "name_ko_classic": "팔라딘",
       "skill_count": 30,
       "file": "paladin.json"
     },
     {
       "slug": "sorceress",
       "name_en": "Sorceress",
-      "name_ko": "소서리스",
+      "name_ko": "원소술사",
+      "name_ko_classic": "소서리스",
       "skill_count": 30,
       "file": "sorceress.json"
     },
