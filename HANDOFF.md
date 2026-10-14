@@ -56,6 +56,10 @@
   uniqueitems, setitems, sets, runes, magicprefix/suffix, cubemain, missiles, properties, itemstatcost, itemtypes, weapons/armor/misc)
 - D2R 한국어 문자열 + 워록 아이콘 스프라이트: github **D2R-Reimagined/d2r-reimagined-mod**
   (data/local/lng/strings/*.json — UTF-8 BOM, `utf-8-sig`로 읽기; data/hd/global/ui/spells/warlock/waskillicon.sprite)
+  - **주의**: 모드의 워록 한국어는 구버전 팬 번역이 섞여 있음. Summon Trickster(키 SummonDefiler)는
+    모드 koKR "악마 말썽꾼 소환"이지만 **실제 게임은 "파멸자 소환"** — warlock-strings.json에 교정해 둠
+    (재추출 시 덮어쓰지 말 것). 나머지 29개 스킬명·트리명(악마/기괴/혼돈)은 인벤·나무위키 대조로 일치 확인(2026-10-14).
+    웹 검색 도구(WebSearch)는 인벤·나무위키 내용을 읽을 수 있음(직접 fetch는 차단).
 - 클래식 스킬 아이콘: github **d2planner/d2planner** (src/assets/1.14D/game_images/<class>_tree_N.jpg, GPL-3)
 - 아이템·룬 이미지: github **bartosz-kasprzyk/d2archives** (src/images/items, src/images/Runes, src/common/config/uniqueAndSetData.json)
 - 네트워크: npm, GitHub(add_repo로 공개 저장소 clone)는 됨. namu.wiki, fandom 등 대부분 웹사이트는 차단.
