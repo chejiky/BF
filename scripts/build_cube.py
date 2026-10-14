@@ -74,6 +74,10 @@ def main():
         s = supp.get(key)
         return strip_color(s["ko"]) if s and s["ko"] else default
 
+    def ko_classic(key):
+        v = kor.get(key, "").strip()
+        return strip_color(v).split("\n")[0] if v else ""
+
     def en(key, default=""):
         v = eng.get(key, "").strip()
         if v:
@@ -137,8 +141,10 @@ def main():
             return types[tok].get("ItemType", tok)
         return None  # 미해석
 
+    aliases = set()
+
     def spec_ko(spec):
-        """'\"fhl,mag,upg\"' 같은 명세 → (한국어, 미해석여부)"""
+        """'\"fhl,mag,upg\"' 같은 명세 → (한국어, 미해석여부). 구작 별칭은 aliases에 누적."""
         spec = str(spec).strip().strip('"')
         toks = spec.split(",")
         parts, unknown = [], False
@@ -161,6 +167,12 @@ def main():
             label = f"{' '.join(quals)} {label}"
         if qty:
             label = f"{label} {qty}"
+        # 구작 명칭(검색 별칭)
+        for t in toks:
+            if t in codes or t in unique_idx:
+                c = re.sub(r"\s*\(#\d+\)", "", ko_classic(t)).strip()
+                if c and c != name:
+                    aliases.add(c)
         return label, unknown
 
     def output_ko(r):
@@ -240,6 +252,7 @@ def main():
         desc = r.get("description", "")
         inputs = []
         bad = False
+        aliases.clear()
         for i in range(1, (r.get("numinputs") or 7) + 1):
             spec = r.get(f"input {i}")
             if not spec:
@@ -253,10 +266,14 @@ def main():
         if m:
             out = f"{CRAFT_KO[m.group(1)]} 크래프트 {spec_ko(str(r.get('input 1','')))[0].split()[-1]}"
             out = re.sub(r"×\d+$", "", out).strip()
+        out_spec = str(r.get("output", "")).strip().strip('"')
+        if out_spec in unique_idx or out_spec in codes:
+            spec_ko(out_spec)  # 결과물의 구작 별칭도 수집
         entry = {
             "inputs_ko": inputs,
             "output_ko": out,
             "desc_en": desc,
+            **({"aliases_ko": sorted(aliases)} if aliases else {}),
         }
         mods = mods_of(r)
         if mods:

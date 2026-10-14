@@ -190,6 +190,14 @@ details.cat summary .cnt{color:var(--faint); font-size:.78rem; font-weight:400}
 .affix-row .nm .en{color:var(--faint); font-size:.74rem}
 .affix-row .mods{color:#7f9ddb; font-size:.9rem; margin:.1rem 0}
 .affix-row .cond{color:var(--faint); font-size:.74rem}
+.recipe-row{border:1px solid var(--border-soft); background:var(--surface); border-radius:10px; padding:.5rem .75rem; margin-bottom:.4rem}
+.recipe-row .rin{font-size:.9rem; line-height:1.45}
+.recipe-row .op{color:var(--faint); margin:0 .1rem}
+.recipe-row .rout{color:var(--gold); font-size:.9rem; margin-top:.15rem}
+.recipe-row .rmods{display:block; color:#7f9ddb; font-size:.82rem; margin-top:.1rem}
+.recipe-row .cond{color:var(--faint); font-size:.74rem; margin-top:.2rem}
+.toggle{display:flex; align-items:center; gap:.4rem; color:var(--muted); font-size:.82rem; margin:.3rem 0 .6rem}
+.toggle input{accent-color:var(--gold)}
 .aff-note{color:var(--muted); font-size:.85rem; background:var(--surface-2); border-radius:10px; padding:.6rem .8rem; margin:.4rem 0 1rem}
 .foot{color:var(--faint); font-size:.72rem; text-align:center; margin-top:2.5rem; line-height:1.7}
 .foot a{color:var(--muted)}
@@ -750,19 +758,42 @@ function renderCharmAffixes(code){
 /* ── 큐브 레시피 ── */
 function renderCube(){
   setHdr("호라드림 큐브 레시피", "Horadric Cube", true);
-  const recipeRow = r => `<div class="affix-row">
-    <div class="nm">${r.inputs_ko.map(esc).join(" <span style='color:var(--faint)'>+</span> ")}</div>
-    <div class="mods" style="color:var(--gold)">→ ${esc(r.output_ko)}</div>
-    ${r.output_mods_ko?`<div class="mods">${r.output_mods_ko.map(esc).join(" · ")}</div>`:""}
-    <div class="cond">${esc(r.desc_en)}</div>
-  </div>`;
+  const st = listState.cube || (listState.cube = {q:"", cat:CUBE.categories[0].label, en:false});
+  const all = [];
+  for(const c of CUBE.categories) for(const r of c.recipes) all.push([c.label, r]);
   $app.innerHTML = `<div class="view">
-    <p class="aff-note">${esc(CUBE.note)}</p>
-    ${CUBE.categories.map((c,i) => `
-      <details class="cat"${i===0?" open":""}><summary>${esc(c.label)} <span class="cnt">${c.recipes.length}개</span></summary>
-        ${c.recipes.map(recipeRow).join("")}
-      </details>`).join("")}
+    <input class="search" id="lq" type="search" placeholder="재료·결과물 검색 (예: 조던, 엘 룬, 소켓, 크래프트)" autocomplete="off" value="${esc(st.q)}">
+    <div class="chips-bar" id="cubeChips">
+      ${CUBE.categories.map(c => `<button class="chip plain${st.cat===c.label?" on":""}" data-cat="${esc(c.label)}">${esc(c.label)} (${c.recipes.length})</button>`).join("")}
+    </div>
+    <label class="toggle"><input type="checkbox" id="enToggle"${st.en?" checked":""}> 영문 원문 표시</label>
+    <div id="listOut"></div>
   </div>`;
+  const row = ([cat, r]) => `<div class="recipe-row">
+    <div class="rin">${r.inputs_ko.map(esc).join(` <span class="op">+</span> `)}</div>
+    <div class="rout">→ ${esc(r.output_ko)}${r.output_mods_ko?` <span class="rmods">${r.output_mods_ko.map(esc).join(" · ")}</span>`:""}</div>
+    ${st.en?`<div class="cond">${esc(r.desc_en)}</div>`:""}
+    ${st.q?`<div class="cond">${esc(cat)}</div>`:""}
+  </div>`;
+  const draw = () => {
+    const ql = norm(st.q);
+    const rows = ql
+      ? all.filter(([cat, r]) => matchName(ql, r.output_ko, r.desc_en, cat, ...r.inputs_ko, ...(r.aliases_ko||[]), ...(r.output_mods_ko||[])))
+      : all.filter(([cat]) => cat===st.cat);
+    document.getElementById("listOut").innerHTML = rows.length
+      ? `<div class="cat-head">${ql?`검색 결과`:esc(st.cat)} <span style="color:var(--faint);font-weight:400">(${rows.length})</span></div>` + rows.map(row).join("")
+      : `<p class="empty">조건에 맞는 레시피가 없습니다</p>`;
+  };
+  const q = document.getElementById("lq");
+  q.addEventListener("input", () => { st.q = q.value.trim(); draw(); });
+  document.getElementById("cubeChips").addEventListener("click", e => {
+    const b = e.target.closest("[data-cat]"); if(!b) return;
+    st.cat = b.dataset.cat; st.q = ""; q.value = "";
+    document.querySelectorAll("#cubeChips .chip").forEach(x => x.classList.toggle("on", x===b));
+    draw();
+  });
+  document.getElementById("enToggle").addEventListener("change", e => { st.en = e.target.checked; draw(); });
+  draw();
 }
 
 /* ── 라우터 ── */
