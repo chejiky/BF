@@ -1,0 +1,1122 @@
+{
+  "class": "warlock",
+  "class_name_en": "Warlock",
+  "class_name_ko": "악마술사",
+  "skill_count": 30,
+  "skills": [
+    {
+      "id": "demonic-mastery",
+      "name_en": "Demonic Mastery",
+      "name_ko": "악마 숙련",
+      "tree": {
+        "page": 1,
+        "name_en": "Demon",
+        "name_ko": "악마"
+      },
+      "position": {
+        "row": 1,
+        "col": 1
+      },
+      "icon_cel": 0,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "summon-goatman",
+          "name_en": "Summon Goatman",
+          "name_ko": "염소인간 소환"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "지속 효과 - 소환하고 속박한 악마들을 강화합니다.",
+      "description_en": "Passive - Enhances your summoned and bound demons"
+    },
+    {
+      "id": "summon-goatman",
+      "name_en": "Summon Goatman",
+      "name_ko": "염소인간 소환",
+      "tree": {
+        "page": 1,
+        "name_en": "Demon",
+        "name_ko": "악마"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 2,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 30,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "death-mark",
+          "name_en": "Death Mark",
+          "name_ko": "죽음의 징표"
+        },
+        {
+          "id": "demonic-mastery",
+          "name_en": "Demonic Mastery",
+          "name_ko": "악마 숙련"
+        }
+      ],
+      "description_ko": "염소인간을 소환하여 전투를 돕게 합니다.",
+      "description_en": "Summons a Goatman to fight by your side"
+    },
+    {
+      "id": "blood-oath",
+      "name_en": "Blood Oath",
+      "name_ko": "피의 맹세",
+      "tree": {
+        "page": 1,
+        "name_en": "Demon",
+        "name_ko": "악마"
+      },
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "icon_cel": 4,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "demonic-mastery",
+          "name_en": "Demonic Mastery",
+          "name_ko": "악마 숙련"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "지속 효과 - 악마의 생기를 속박하여 적의 공격을 막습니다.",
+      "description_en": "Passive - Bind the lifeforce of your demon to protect from enemy attacks"
+    },
+    {
+      "id": "death-mark",
+      "name_en": "Death Mark",
+      "name_ko": "죽음의 징표",
+      "tree": {
+        "page": 1,
+        "name_en": "Demon",
+        "name_ko": "악마"
+      },
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "icon_cel": 6,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 9,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "summon-goatman",
+          "name_en": "Summon Goatman",
+          "name_ko": "염소인간 소환"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "악마가 적에게 순간이동하여 공격하게 합니다.",
+      "description_en": "Forces your demon to teleport to and attack an enemy"
+    },
+    {
+      "id": "summon-tainted",
+      "name_en": "Summon Tainted",
+      "name_ko": "오염된 자 소환",
+      "tree": {
+        "page": 1,
+        "name_en": "Demon",
+        "name_ko": "악마"
+      },
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "icon_cel": 8,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 50,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "summon-goatman",
+          "name_en": "Summon Goatman",
+          "name_ko": "염소인간 소환"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "demonic-mastery",
+          "name_en": "Demonic Mastery",
+          "name_ko": "악마 숙련"
+        },
+        {
+          "id": "blood-boil",
+          "name_en": "Blood Boil",
+          "name_ko": "끓는 피"
+        }
+      ],
+      "description_ko": "오염된 자를 소환하여 전투를 돕게 합니다.",
+      "description_en": "Summons a Tainted to fight by your side"
+    },
+    {
+      "id": "blood-boil",
+      "name_en": "Blood Boil",
+      "name_ko": "끓는 피",
+      "tree": {
+        "page": 1,
+        "name_en": "Demon",
+        "name_ko": "악마"
+      },
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "icon_cel": 14,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 15,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "death-mark",
+          "name_en": "Death Mark",
+          "name_ko": "죽음의 징표"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "engorge",
+          "name_en": "Engorge",
+          "name_ko": "포식"
+        },
+        {
+          "id": "blood-oath",
+          "name_en": "Blood Oath",
+          "name_ko": "피의 맹세"
+        }
+      ],
+      "description_ko": "악마의 피를 분출시켜 주위 적들에게 피해를 줍니다.",
+      "description_en": "Erupt your demon's blood to damage nearby enemies"
+    },
+    {
+      "id": "summon-trickster",
+      "name_en": "Summon Trickster",
+      "name_ko": "악마 말썽꾼 소환",
+      "tree": {
+        "page": 1,
+        "name_en": "Demon",
+        "name_ko": "악마"
+      },
+      "position": {
+        "row": 4,
+        "col": 3
+      },
+      "icon_cel": 10,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 70,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "summon-tainted",
+          "name_en": "Summon Tainted",
+          "name_ko": "오염된 자 소환"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "demonic-mastery",
+          "name_en": "Demonic Mastery",
+          "name_ko": "악마 숙련"
+        }
+      ],
+      "description_ko": "적들의 영혼을 속박하여 피해를 공유하게 하는 악마 말썽꾼을 소환합니다.",
+      "description_en": "Summons a demonic trickster that binds enemy souls together to take shared damage"
+    },
+    {
+      "id": "engorge",
+      "name_en": "Engorge",
+      "name_ko": "포식",
+      "tree": {
+        "page": 1,
+        "name_en": "Demon",
+        "name_ko": "악마"
+      },
+      "position": {
+        "row": 5,
+        "col": 2
+      },
+      "icon_cel": 12,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 12,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "blood-boil",
+          "name_en": "Blood Boil",
+          "name_ko": "끓는 피"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "blood-oath",
+          "name_en": "Blood Oath",
+          "name_ko": "피의 맹세"
+        }
+      ],
+      "description_ko": "악마에게 시체를 먹여 치유하고 강화합니다.",
+      "description_en": "Heal and empower your demon by feeding it a corpse"
+    },
+    {
+      "id": "consume",
+      "name_en": "Consume",
+      "name_ko": "소모",
+      "tree": {
+        "page": 1,
+        "name_en": "Demon",
+        "name_ko": "악마"
+      },
+      "position": {
+        "row": 6,
+        "col": 1
+      },
+      "icon_cel": 16,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 25,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "blood-oath",
+          "name_en": "Blood Oath",
+          "name_ko": "피의 맹세"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "악마를 희생시켜 힘을 얻습니다.",
+      "description_en": "Sacrifice your demon in exchange for power"
+    },
+    {
+      "id": "bind-demon",
+      "name_en": "Bind Demon",
+      "name_ko": "악마 속박",
+      "tree": {
+        "page": 1,
+        "name_en": "Demon",
+        "name_ko": "악마"
+      },
+      "position": {
+        "row": 6,
+        "col": 3
+      },
+      "icon_cel": 18,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 50,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "engorge",
+          "name_en": "Engorge",
+          "name_ko": "포식"
+        },
+        {
+          "id": "summon-trickster",
+          "name_en": "Summon Trickster",
+          "name_ko": "악마 말썽꾼 소환"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "부상당한 악마가 명령을 따르도록 만듭니다.",
+      "description_en": "Force an injured demon to do your bidding"
+    },
+    {
+      "id": "levitation-mastery",
+      "name_en": "Levitation Mastery",
+      "name_ko": "공중 부양 숙련",
+      "tree": {
+        "page": 2,
+        "name_en": "Eldritch",
+        "name_ko": "기괴"
+      },
+      "position": {
+        "row": 1,
+        "col": 1
+      },
+      "icon_cel": 20,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "지속 효과 - 장착 중인 무기를 정신력으로 공중에 띄우는 능력을 향상시킵니다.",
+      "description_en": "Passive - Improve your ability to levitate your equipped weapon with your mind"
+    },
+    {
+      "id": "hex-bane",
+      "name_en": "Hex: Bane",
+      "name_ko": "주술: 재앙",
+      "tree": {
+        "page": 2,
+        "name_en": "Eldritch",
+        "name_ko": "기괴"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 24,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 12,
+      "mana_per_level": 1,
+      "element": "mag",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "eldritch-blast",
+          "name_en": "Eldritch Blast",
+          "name_ko": "기괴한 작렬"
+        },
+        {
+          "id": "consume",
+          "name_en": "Consume",
+          "name_ko": "소모"
+        },
+        {
+          "id": "hex-purge",
+          "name_en": "Hex: Purge",
+          "name_ko": "주술: 처단"
+        },
+        {
+          "id": "mirrored-blades",
+          "name_en": "Mirrored Blades",
+          "name_ko": "거울상 칼날"
+        }
+      ],
+      "description_ko": "무기에 주술을 걸어 적들에게 장애를 유발하게 하고 마법 피해를 추가합니다.",
+      "description_en": "Hexes your weapon to impair enemies and add magic damage"
+    },
+    {
+      "id": "cleave",
+      "name_en": "Cleave",
+      "name_ko": "가르기",
+      "tree": {
+        "page": 2,
+        "name_en": "Eldritch",
+        "name_ko": "기괴"
+      },
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "icon_cel": 36,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 3,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "levitation-mastery",
+          "name_en": "Levitation Mastery",
+          "name_ko": "공중 부양 숙련"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "mirrored-blades",
+          "name_en": "Mirrored Blades",
+          "name_ko": "거울상 칼날"
+        },
+        {
+          "id": "hex-purge",
+          "name_en": "Hex: Purge",
+          "name_ko": "주술: 처단"
+        },
+        {
+          "id": "eldritch-blast",
+          "name_en": "Eldritch Blast",
+          "name_ko": "기괴한 작렬"
+        }
+      ],
+      "description_ko": "뻗어 나아가는 호를 그리며 모든 적을 공격합니다.",
+      "description_en": "Attack all enemies in an expanding arc"
+    },
+    {
+      "id": "echoing-strike",
+      "name_en": "Echoing Strike",
+      "name_ko": "메아리치는 타격",
+      "tree": {
+        "page": 2,
+        "name_en": "Eldritch",
+        "name_ko": "기괴"
+      },
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "icon_cel": 30,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 14,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "levitation-mastery",
+          "name_en": "Levitation Mastery",
+          "name_ko": "공중 부양 숙련"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "mirrored-blades",
+          "name_en": "Mirrored Blades",
+          "name_ko": "거울상 칼날"
+        },
+        {
+          "id": "blade-warp",
+          "name_en": "Blade Warp",
+          "name_ko": "칼날 이동"
+        }
+      ],
+      "description_ko": "적들을 관통하는 근접 무기의 메아리를 생성합니다.",
+      "description_en": "Create echoes of your melee weapon that pierce through enemies"
+    },
+    {
+      "id": "hex-purge",
+      "name_en": "Hex: Purge",
+      "name_ko": "주술: 처단",
+      "tree": {
+        "page": 2,
+        "name_en": "Eldritch",
+        "name_ko": "기괴"
+      },
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "icon_cel": 32,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 25,
+      "mana_per_level": 1,
+      "element": "mag",
+      "prerequisites": [
+        {
+          "id": "hex-bane",
+          "name_en": "Hex: Bane",
+          "name_ko": "주술: 재앙"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "eldritch-blast",
+          "name_en": "Eldritch Blast",
+          "name_ko": "기괴한 작렬"
+        },
+        {
+          "id": "sigil-death",
+          "name_en": "Sigil: Death",
+          "name_ko": "인장: 죽음"
+        },
+        {
+          "id": "hex-bane",
+          "name_en": "Hex: Bane",
+          "name_ko": "주술: 재앙"
+        }
+      ],
+      "description_ko": "무기에 주술을 걸어 적들을 뒤틀고 적중당하면 일정 확률로 터지게 만듭니다.",
+      "description_en": "Hexes your weapon to warp enemies creating a chance they will erupt when hit"
+    },
+    {
+      "id": "blade-warp",
+      "name_en": "Blade Warp",
+      "name_ko": "칼날 이동",
+      "tree": {
+        "page": 2,
+        "name_en": "Eldritch",
+        "name_ko": "기괴"
+      },
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "icon_cel": 34,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 15,
+      "mana_per_level": 0,
+      "element": "mag",
+      "prerequisites": [
+        {
+          "id": "echoing-strike",
+          "name_en": "Echoing Strike",
+          "name_ko": "메아리치는 타격"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "echoing-strike",
+          "name_en": "Echoing Strike",
+          "name_ko": "메아리치는 타격"
+        },
+        {
+          "id": "mirrored-blades",
+          "name_en": "Mirrored Blades",
+          "name_ko": "거울상 칼날"
+        }
+      ],
+      "description_ko": "천공의 무기를 던져, 무기가 충돌한 지점으로 순간이동합니다.",
+      "description_en": "Hurl an astral weapon that teleports you to its impact"
+    },
+    {
+      "id": "psychic-ward",
+      "name_en": "Psychic Ward",
+      "name_ko": "정신 결계",
+      "tree": {
+        "page": 2,
+        "name_en": "Eldritch",
+        "name_ko": "기괴"
+      },
+      "position": {
+        "row": 4,
+        "col": 2
+      },
+      "icon_cel": 22,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 20,
+      "mana_per_level": 2,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "cleave",
+          "name_en": "Cleave",
+          "name_ko": "가르기"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "levitation-mastery",
+          "name_en": "Levitation Mastery",
+          "name_ko": "공중 부양 숙련"
+        },
+        {
+          "id": "cleave",
+          "name_en": "Cleave",
+          "name_ko": "가르기"
+        }
+      ],
+      "description_ko": "공격의 피해를 흡수하고 일정 확률로 근접 공격자를 기절시키는 정신적 보호막을 만듭니다.",
+      "description_en": "Creates a mental shield that absorbs damage from attacks and can stun melee attackers"
+    },
+    {
+      "id": "eldritch-blast",
+      "name_en": "Eldritch Blast",
+      "name_ko": "기괴한 작렬",
+      "tree": {
+        "page": 2,
+        "name_en": "Eldritch",
+        "name_ko": "기괴"
+      },
+      "position": {
+        "row": 5,
+        "col": 2
+      },
+      "icon_cel": 28,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 11,
+      "mana_per_level": 1,
+      "element": "mag",
+      "prerequisites": [
+        {
+          "id": "psychic-ward",
+          "name_en": "Psychic Ward",
+          "name_ko": "정신 결계"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "psychic-ward",
+          "name_en": "Psychic Ward",
+          "name_ko": "정신 결계"
+        },
+        {
+          "id": "blade-warp",
+          "name_en": "Blade Warp",
+          "name_ko": "칼날 이동"
+        },
+        {
+          "id": "hex-purge",
+          "name_en": "Hex: Purge",
+          "name_ko": "주술: 처단"
+        }
+      ],
+      "description_ko": "주술에 걸린 적을 작렬에 노출시킵니다. 작렬은 생명력을 흡수하는 마법 피해를 주고, 현재 활성화된 주술의 지속시간을 초기화합니다.",
+      "description_en": "Blast hexed enemies with draining magical damage and refresh the duration of their active hex"
+    },
+    {
+      "id": "hex-siphon",
+      "name_en": "Hex: Siphon",
+      "name_ko": "주술: 흡수",
+      "tree": {
+        "page": 2,
+        "name_en": "Eldritch",
+        "name_ko": "기괴"
+      },
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "icon_cel": 26,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 25,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "hex-purge",
+          "name_en": "Hex: Purge",
+          "name_ko": "주술: 처단"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "engorge",
+          "name_en": "Engorge",
+          "name_ko": "포식"
+        },
+        {
+          "id": "eldritch-blast",
+          "name_en": "Eldritch Blast",
+          "name_ko": "기괴한 작렬"
+        }
+      ],
+      "description_ko": "무기에 주술을 걸어 쓰러뜨린 적의 생기를 빨아들입니다.",
+      "description_en": "Hexes your weapon to extract the lifeforce of slain enemies"
+    },
+    {
+      "id": "mirrored-blades",
+      "name_en": "Mirrored Blades",
+      "name_ko": "거울상 칼날",
+      "tree": {
+        "page": 2,
+        "name_en": "Eldritch",
+        "name_ko": "기괴"
+      },
+      "position": {
+        "row": 6,
+        "col": 2
+      },
+      "icon_cel": 38,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 10,
+      "mana_per_level": 1,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "blade-warp",
+          "name_en": "Blade Warp",
+          "name_ko": "칼날 이동"
+        },
+        {
+          "id": "eldritch-blast",
+          "name_en": "Eldritch Blast",
+          "name_ko": "기괴한 작렬"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "blade-warp",
+          "name_en": "Blade Warp",
+          "name_ko": "칼날 이동"
+        },
+        {
+          "id": "echoing-strike",
+          "name_en": "Echoing Strike",
+          "name_ko": "메아리치는 타격"
+        }
+      ],
+      "description_ko": "무기의 거울상 복제물로 공격합니다.",
+      "description_en": "Attack with mirror duplicates of your weapon"
+    },
+    {
+      "id": "miasma-bolt",
+      "name_en": "Miasma Bolt",
+      "name_ko": "독기 볼트",
+      "tree": {
+        "page": 3,
+        "name_en": "Chaos",
+        "name_ko": "혼돈"
+      },
+      "position": {
+        "row": 1,
+        "col": 3
+      },
+      "icon_cel": 46,
+      "required_level": 1,
+      "max_level": 20,
+      "mana_cost": 4,
+      "mana_per_level": 1,
+      "element": "mag",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "miasma-chain",
+          "name_en": "Miasma Chain",
+          "name_ko": "독기 사슬"
+        },
+        {
+          "id": "abyss",
+          "name_en": "Abyss",
+          "name_ko": "심연"
+        }
+      ],
+      "description_ko": "엔트로피의 구름을 방출하는 어둠의 볼트를 발사합니다.",
+      "description_en": "Fires a bolt of darkness that releases a cloud of entropy"
+    },
+    {
+      "id": "ring-of-fire",
+      "name_en": "Ring of Fire",
+      "name_ko": "화염 고리",
+      "tree": {
+        "page": 3,
+        "name_en": "Chaos",
+        "name_ko": "혼돈"
+      },
+      "position": {
+        "row": 2,
+        "col": 1
+      },
+      "icon_cel": 42,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 16,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [],
+      "synergies": [
+        {
+          "id": "flame-wave",
+          "name_en": "Flame Wave",
+          "name_ko": "화염 파도"
+        },
+        {
+          "id": "apocalypse",
+          "name_en": "Apocalypse",
+          "name_ko": "종말"
+        }
+      ],
+      "description_ko": "사방으로 퍼지며 적들을 밀쳐내는 지옥불 세례를 퍼붓습니다.",
+      "description_en": "Releases a volley of expanding hellfire in all directions that pushes enemies away"
+    },
+    {
+      "id": "sigil-lethargy",
+      "name_en": "Sigil: Lethargy",
+      "name_ko": "인장: 무기력",
+      "tree": {
+        "page": 3,
+        "name_en": "Chaos",
+        "name_ko": "혼돈"
+      },
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "icon_cel": 40,
+      "required_level": 6,
+      "max_level": 20,
+      "mana_cost": 4,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [],
+      "synergies": [],
+      "description_ko": "지면에 적을 감속시키고 약화하는 인장을 배치합니다.",
+      "description_en": "Lay a sigil on the ground that slows and weakens enemies"
+    },
+    {
+      "id": "sigil-rancor",
+      "name_en": "Sigil: Rancor",
+      "name_ko": "인장: 울분",
+      "tree": {
+        "page": 3,
+        "name_en": "Chaos",
+        "name_ko": "혼돈"
+      },
+      "position": {
+        "row": 3,
+        "col": 2
+      },
+      "icon_cel": 44,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 12,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "sigil-lethargy",
+          "name_en": "Sigil: Lethargy",
+          "name_ko": "인장: 무기력"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "안에 들어오는 자를 격분시키고 일정 확률로 적이 서로 공격하게 하는 인장을 지면에 배치합니다.",
+      "description_en": "Lay a sigil on the ground that enrages those who enter and has a chance for enemies to attack one another"
+    },
+    {
+      "id": "miasma-chain",
+      "name_en": "Miasma Chain",
+      "name_ko": "독기 사슬",
+      "tree": {
+        "page": 3,
+        "name_en": "Chaos",
+        "name_ko": "혼돈"
+      },
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "icon_cel": 52,
+      "required_level": 12,
+      "max_level": 20,
+      "mana_cost": 9,
+      "mana_per_level": 1,
+      "element": "mag",
+      "prerequisites": [
+        {
+          "id": "miasma-bolt",
+          "name_en": "Miasma Bolt",
+          "name_ko": "독기 볼트"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "miasma-bolt",
+          "name_en": "Miasma Bolt",
+          "name_ko": "독기 볼트"
+        },
+        {
+          "id": "abyss",
+          "name_en": "Abyss",
+          "name_ko": "심연"
+        }
+      ],
+      "description_ko": "플레이어와 대상 사이에 숨 막히는 독기를 방출하는 그림자 사슬을 소환합니다.",
+      "description_en": "Summon shadowy chains that emit a suffocating miasma between you and the target"
+    },
+    {
+      "id": "flame-wave",
+      "name_en": "Flame Wave",
+      "name_ko": "화염 파도",
+      "tree": {
+        "page": 3,
+        "name_en": "Chaos",
+        "name_ko": "혼돈"
+      },
+      "position": {
+        "row": 4,
+        "col": 1
+      },
+      "icon_cel": 50,
+      "required_level": 18,
+      "max_level": 20,
+      "mana_cost": 14,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "ring-of-fire",
+          "name_en": "Ring of Fire",
+          "name_ko": "화염 고리"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "ring-of-fire",
+          "name_en": "Ring of Fire",
+          "name_ko": "화염 고리"
+        },
+        {
+          "id": "apocalypse",
+          "name_en": "Apocalypse",
+          "name_ko": "종말"
+        }
+      ],
+      "description_ko": "밀려가며 지나간 자리의 지면을 불태우는 불길의 벽을 방출합니다.",
+      "description_en": "Unleashes a rolling wall of fire that burns the ground in its wake"
+    },
+    {
+      "id": "sigil-death",
+      "name_en": "Sigil: Death",
+      "name_ko": "인장: 죽음",
+      "tree": {
+        "page": 3,
+        "name_en": "Chaos",
+        "name_ko": "혼돈"
+      },
+      "position": {
+        "row": 5,
+        "col": 2
+      },
+      "icon_cel": 48,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 20,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "sigil-rancor",
+          "name_en": "Sigil: Rancor",
+          "name_ko": "인장: 울분"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "격렬한 폭발을 일으켜 부상당한 적들의 죽음을 가속하는 인장을 지면에 배치합니다.",
+      "description_en": "Lay a sigil on the ground that hastens the death of injured enemies in a violent explosion"
+    },
+    {
+      "id": "enhanced-entropy",
+      "name_en": "Enhanced Entropy",
+      "name_ko": "향상된 엔트로피",
+      "tree": {
+        "page": 3,
+        "name_en": "Chaos",
+        "name_ko": "혼돈"
+      },
+      "position": {
+        "row": 5,
+        "col": 3
+      },
+      "icon_cel": 54,
+      "required_level": 24,
+      "max_level": 20,
+      "mana_cost": 0,
+      "mana_per_level": 0,
+      "element": null,
+      "prerequisites": [
+        {
+          "id": "miasma-chain",
+          "name_en": "Miasma Chain",
+          "name_ko": "독기 사슬"
+        }
+      ],
+      "synergies": [],
+      "description_ko": "지속 효과 - 암흑 마법의 엔트로피적 힘을 다루는 능력을 강화합니다.",
+      "description_en": "Passive - Improve your mastery over the entropic forces of shadow magic"
+    },
+    {
+      "id": "apocalypse",
+      "name_en": "Apocalypse",
+      "name_ko": "종말",
+      "tree": {
+        "page": 3,
+        "name_en": "Chaos",
+        "name_ko": "혼돈"
+      },
+      "position": {
+        "row": 6,
+        "col": 1
+      },
+      "icon_cel": 56,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 32,
+      "mana_per_level": 1,
+      "element": "fire",
+      "prerequisites": [
+        {
+          "id": "flame-wave",
+          "name_en": "Flame Wave",
+          "name_ko": "화염 파도"
+        },
+        {
+          "id": "sigil-death",
+          "name_en": "Sigil: Death",
+          "name_ko": "인장: 죽음"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "ring-of-fire",
+          "name_en": "Ring of Fire",
+          "name_ko": "화염 고리"
+        },
+        {
+          "id": "flame-wave",
+          "name_en": "Flame Wave",
+          "name_ko": "화염 파도"
+        }
+      ],
+      "description_ko": "모든 적을 지옥불로 휩싸는 오각성을 그립니다. 종말이 주는 피해에 대한 적의 화염 저항을 감소시킵니다.",
+      "description_en": "Create a pentagram that engulfs all enemies in hellfire Reduces enemy fire resistance for apocalypse’s damage"
+    },
+    {
+      "id": "abyss",
+      "name_en": "Abyss",
+      "name_ko": "심연",
+      "tree": {
+        "page": 3,
+        "name_en": "Chaos",
+        "name_ko": "혼돈"
+      },
+      "position": {
+        "row": 6,
+        "col": 3
+      },
+      "icon_cel": 58,
+      "required_level": 30,
+      "max_level": 20,
+      "mana_cost": 23,
+      "mana_per_level": 1,
+      "element": "mag",
+      "prerequisites": [
+        {
+          "id": "enhanced-entropy",
+          "name_en": "Enhanced Entropy",
+          "name_ko": "향상된 엔트로피"
+        }
+      ],
+      "synergies": [
+        {
+          "id": "miasma-bolt",
+          "name_en": "Miasma Bolt",
+          "name_ko": "독기 볼트"
+        },
+        {
+          "id": "miasma-chain",
+          "name_en": "Miasma Chain",
+          "name_ko": "독기 사슬"
+        }
+      ],
+      "description_ko": "현실의 조직을 찢어 틈을 만듭니다. 틈은 적들을 끌어당긴 후 격렬하게 붕괴합니다.",
+      "description_en": "Create a tear in the fabric of reality which pulls enemies close before violently collapsing"
+    }
+  ]
+}

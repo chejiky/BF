@@ -20,6 +20,15 @@
   `scripts/build_skills.py`로 가공해 생성했습니다. 한국어/영어 명칭과 설명은 게임
   클라이언트의 공식 로컬라이제이션 문자열을 그대로 사용합니다.
 
+## 악마술사(Warlock) 데이터 출처
+
+- 확장팩 "악마술사의 군림"의 스킬 명칭·설명(`data/raw/warlock-strings.json`)은
+  아직 d2data 로케일에 반영되지 않아, [D2R-Reimagined](https://github.com/D2R-Reimagined/d2r-reimagined-mod)
+  저장소에 포함된 게임 원본 문자열 파일(`data/local/lng/strings/`)에서 추출했습니다.
+  해당 텍스트의 저작권 역시 Blizzard Entertainment에 있습니다.
+- `assets/skills/warlock/` 아이콘은 같은 저장소에 포함된 게임 원본 스프라이트
+  (`waskillicon.sprite`)에서 `scripts/extract_sprite_icons.py`로 추출했습니다.
+
 ## 아이콘 이미지 출처
 
 - `assets/skills/` 하위 아이콘은 GPL-3.0으로 공개된

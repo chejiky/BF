@@ -48,6 +48,13 @@
       "name_ko": "소서리스",
       "skill_count": 30,
       "file": "sorceress.json"
+    },
+    {
+      "slug": "warlock",
+      "name_en": "Warlock",
+      "name_ko": "악마술사",
+      "skill_count": 30,
+      "file": "warlock.json"
     }
   ]
 }

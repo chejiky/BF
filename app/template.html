@@ -156,10 +156,11 @@ img{max-width:100%}
 
 <script>
 const DATA = __SKILL_DATA__;
-const CLASS_ORDER = ["amazon","assassin","barbarian","druid","necromancer","paladin","sorceress"];
+const CLASS_ORDER = ["amazon","assassin","barbarian","druid","necromancer","paladin","sorceress","warlock"];
 const CLASS_FACE = { // 홈 카드 대표 아이콘
   amazon:"multiple-shot", assassin:"dragon-talon", barbarian:"whirlwind",
-  druid:"werewolf", necromancer:"raise-skeleton", paladin:"blessed-hammer", sorceress:"frozen-orb"
+  druid:"werewolf", necromancer:"raise-skeleton", paladin:"blessed-hammer",
+  sorceress:"frozen-orb", warlock:"bind-demon"
 };
 const ELEM_KO = {fire:"화염", cold:"냉기", ltng:"번개", pois:"독", mag:"마법", phys:"물리", stun:"기절"};
 
@@ -187,7 +188,7 @@ function renderHome(){
   }).join("");
   $app.innerHTML = `<div class="view">
     <input class="search" id="q" type="search" placeholder="스킬 검색 (한글/영문)" autocomplete="off">
-    <p class="home-note">전 클래스 210개 스킬 · 공식 한국어 명칭 기준</p>
+    <p class="home-note">8개 클래스 240개 스킬 · 공식 한국어 명칭 기준</p>
     <div id="searchOut"></div>
     <div id="homeMain">
       <div class="sec-label">Classes</div>

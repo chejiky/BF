@@ -1,0 +1,378 @@
+{
+ "AbyssAN": {
+  "en": "Abyss",
+  "ko": "심연"
+ },
+ "AbyssLongDesc": {
+  "en": "Create a tear in the fabric of reality which pulls enemies\n close before violently collapsing",
+  "ko": "현실의 조직을 찢어 틈을 만듭니다. 틈은 적들을 끌어당긴 후\n 격렬하게 붕괴합니다."
+ },
+ "AbyssName": {
+  "en": "Abyss",
+  "ko": "심연"
+ },
+ "ApocalypseAN": {
+  "en": "Apocalypse",
+  "ko": "종말"
+ },
+ "ApocalypseLongDesc": {
+  "en": "Create a pentagram that engulfs all enemies in hellfire\nReduces enemy fire resistance for apocalypse’s damage",
+  "ko": "모든 적을 지옥불로 휩싸는 오각성을 그립니다.\n종말이 주는 피해에 대한 적의 화염 저항을 감소시킵니다."
+ },
+ "ApocalypseName": {
+  "en": "Apocalypse",
+  "ko": "종말"
+ },
+ "BaneHexAN": {
+  "en": "Hex: Bane",
+  "ko": "주술: 재앙"
+ },
+ "BaneHexLongDesc": {
+  "en": "Hexes your weapon to impair enemies and add magic damage",
+  "ko": "무기에 주술을 걸어 적들에게 장애를 유발하게 하고 마법 피해를 추가합니다."
+ },
+ "BaneHexName": {
+  "en": "Hex: Bane",
+  "ko": "주술: 재앙"
+ },
+ "BindDemonAN": {
+  "en": "Bind Demon",
+  "ko": "악마 속박"
+ },
+ "BindDemonLongDesc": {
+  "en": "Force an injured demon to do your bidding",
+  "ko": "부상당한 악마가 명령을 따르도록 만듭니다."
+ },
+ "BindDemonName": {
+  "en": "Bind Demon",
+  "ko": "악마 속박"
+ },
+ "BladeWarpAN": {
+  "en": "Blade Warp",
+  "ko": "칼날 이동"
+ },
+ "BladeWarpLongDesc": {
+  "en": "Hurl an astral weapon that teleports you to its impact",
+  "ko": "천공의 무기를 던져, 무기가 충돌한 지점으로 순간이동합니다."
+ },
+ "BladeWarpName": {
+  "en": "Blade Warp",
+  "ko": "칼날 이동"
+ },
+ "BloodBoilAN": {
+  "en": "Blood Boil",
+  "ko": "끓는 피"
+ },
+ "BloodBoilLongDesc": {
+  "en": "Erupt your demon's blood to damage nearby enemies",
+  "ko": "악마의 피를 분출시켜 주위 적들에게 피해를 줍니다."
+ },
+ "BloodBoilName": {
+  "en": "Blood Boil",
+  "ko": "끓는 피"
+ },
+ "BloodOathAN": {
+  "en": "Blood Oath",
+  "ko": "피의 맹세"
+ },
+ "BloodOathLongDesc": {
+  "en": "Passive - Bind the lifeforce of your demon \n to protect from enemy attacks",
+  "ko": "지속 효과 - 악마의 생기를 속박하여 \n 적의 공격을 막습니다."
+ },
+ "BloodOathName": {
+  "en": "Blood Oath",
+  "ko": "피의 맹세"
+ },
+ "CleaveAN": {
+  "en": "Cleave",
+  "ko": "가르기"
+ },
+ "CleaveLongDesc": {
+  "en": "Attack all enemies in an expanding arc",
+  "ko": "뻗어 나아가는 호를 그리며 모든 적을 공격합니다."
+ },
+ "CleaveName": {
+  "en": "Cleave",
+  "ko": "가르기"
+ },
+ "ConsumeAN": {
+  "en": "Consume",
+  "ko": "소모"
+ },
+ "ConsumeLongDesc": {
+  "en": "Sacrifice your demon in exchange for power",
+  "ko": "악마를 희생시켜 힘을 얻습니다."
+ },
+ "ConsumeName": {
+  "en": "Consume",
+  "ko": "소모"
+ },
+ "DeathMarkAN": {
+  "en": "Death Mark",
+  "ko": "죽음의 징표"
+ },
+ "DeathMarkLongDesc": {
+  "en": "Forces your demon to teleport to and attack an enemy",
+  "ko": "악마가 적에게 순간이동하여 공격하게 합니다."
+ },
+ "DeathMarkName": {
+  "en": "Death Mark",
+  "ko": "죽음의 징표"
+ },
+ "DeathSigilAN": {
+  "en": "Sigil: Death",
+  "ko": "인장: 죽음"
+ },
+ "DeathSigilLongDesc": {
+  "en": "Lay a sigil on the ground that hastens the death\n of injured enemies in a violent explosion",
+  "ko": "격렬한 폭발을 일으켜 부상당한 적들의 죽음을 가속하는\n 인장을 지면에 배치합니다."
+ },
+ "DeathSigilName": {
+  "en": "Sigil: Death",
+  "ko": "인장: 죽음"
+ },
+ "DemonicMasteryAN": {
+  "en": "Demonic Mastery",
+  "ko": "악마 숙련"
+ },
+ "DemonicMasteryLongDesc": {
+  "en": "Passive - Enhances your summoned and bound demons",
+  "ko": "지속 효과 - 소환하고 속박한 악마들을 강화합니다."
+ },
+ "DemonicMasteryName": {
+  "en": "Demonic Mastery",
+  "ko": "악마 숙련"
+ },
+ "EchoingStrikeAN": {
+  "en": "Echoing Strike",
+  "ko": "메아리치는 타격"
+ },
+ "EchoingStrikeLongDesc": {
+  "en": "Create echoes of your melee weapon that pierce through enemies",
+  "ko": "적들을 관통하는 근접 무기의 메아리를 생성합니다."
+ },
+ "EchoingStrikeName": {
+  "en": "Echoing Strike",
+  "ko": "메아리치는 타격"
+ },
+ "EldritchBlastAN": {
+  "en": "Eldritch Blast",
+  "ko": "기괴한 작렬"
+ },
+ "EldritchBlastLongDesc": {
+  "en": "Blast hexed enemies with draining magical damage \n and refresh the duration of their active hex",
+  "ko": "주술에 걸린 적을 작렬에 노출시킵니다. 작렬은 생명력을 흡수하는 마법 피해를 주고, \n 현재 활성화된 주술의 지속시간을 초기화합니다."
+ },
+ "EldritchBlastName": {
+  "en": "Eldritch Blast",
+  "ko": "기괴한 작렬"
+ },
+ "EngorgeAN": {
+  "en": "Engorge",
+  "ko": "포식"
+ },
+ "EngorgeLongDesc": {
+  "en": "Heal and empower your demon by feeding it a corpse",
+  "ko": "악마에게 시체를 먹여 치유하고 강화합니다."
+ },
+ "EngorgeName": {
+  "en": "Engorge",
+  "ko": "포식"
+ },
+ "EnhancedEntropyAN": {
+  "en": "Enhanced Entropy",
+  "ko": "향상된 엔트로피"
+ },
+ "EnhancedEntropyLongDesc": {
+  "en": "Passive - Improve your mastery over the entropic forces \n of shadow magic",
+  "ko": "지속 효과 - 암흑 마법의 엔트로피적 힘을 다루는 \n 능력을 강화합니다."
+ },
+ "EnhancedEntropyName": {
+  "en": "Enhanced Entropy",
+  "ko": "향상된 엔트로피"
+ },
+ "FlameWaveAN": {
+  "en": "Flame Wave",
+  "ko": "화염 파도"
+ },
+ "FlameWaveLongDesc": {
+  "en": "Unleashes a rolling wall of fire that burns the ground in\n its wake",
+  "ko": "밀려가며 지나간 자리의 지면을 불태우는 불길의 벽을\n 방출합니다."
+ },
+ "FlameWaveName": {
+  "en": "Flame Wave",
+  "ko": "화염 파도"
+ },
+ "LethargySigilAN": {
+  "en": "Sigil: Lethargy",
+  "ko": "인장: 무기력"
+ },
+ "LethargySigilLongDesc": {
+  "en": "Lay a sigil on the ground that slows and weakens enemies",
+  "ko": "지면에 적을 감속시키고 약화하는 인장을 배치합니다."
+ },
+ "LethargySigilName": {
+  "en": "Sigil: Lethargy",
+  "ko": "인장: 무기력"
+ },
+ "LevitateAN": {
+  "en": "Levitation Mastery",
+  "ko": "공중 부양 숙련"
+ },
+ "LevitateLongDesc": {
+  "en": "Passive - Improve your ability to levitate your equipped\n weapon with your mind",
+  "ko": "지속 효과 - 장착 중인 무기를 정신력으로 공중에 띄우는 능력을\n 향상시킵니다."
+ },
+ "LevitateName": {
+  "en": "Levitation Mastery",
+  "ko": "공중 부양 숙련"
+ },
+ "MiasmaBoltAN": {
+  "en": "Miasma Bolt",
+  "ko": "독기 볼트"
+ },
+ "MiasmaBoltLongDesc": {
+  "en": "Fires a bolt of darkness that releases a cloud of entropy",
+  "ko": "엔트로피의 구름을 방출하는 어둠의 볼트를 발사합니다."
+ },
+ "MiasmaBoltName": {
+  "en": "Miasma Bolt",
+  "ko": "독기 볼트"
+ },
+ "MiasmaChainAN": {
+  "en": "Miasma Chain",
+  "ko": "독기 사슬"
+ },
+ "MiasmaChainLongDesc": {
+  "en": "Summon shadowy chains that emit a suffocating miasma \n between you and the target",
+  "ko": "플레이어와 대상 사이에 숨 막히는 독기를 방출하는 그림자 \n 사슬을 소환합니다."
+ },
+ "MiasmaChainName": {
+  "en": "Miasma Chain",
+  "ko": "독기 사슬"
+ },
+ "MirroredBladesAN": {
+  "en": "Mirrored Blades",
+  "ko": "거울상 칼날"
+ },
+ "MirroredBladesLongDesc": {
+  "en": "Attack with mirror duplicates of your weapon",
+  "ko": "무기의 거울상 복제물로 공격합니다."
+ },
+ "MirroredBladesName": {
+  "en": "Mirrored Blades",
+  "ko": "거울상 칼날"
+ },
+ "PsychicWardAN": {
+  "en": "Psychic Ward",
+  "ko": "정신 결계"
+ },
+ "PsychicWardLongDesc": {
+  "en": "Creates a mental shield that absorbs damage from \n attacks and can stun melee attackers",
+  "ko": "공격의 피해를 흡수하고 일정 확률로 근접 공격자를 기절시키는 \n 정신적 보호막을 만듭니다."
+ },
+ "PsychicWardName": {
+  "en": "Psychic Ward",
+  "ko": "정신 결계"
+ },
+ "PurgeHexAN": {
+  "en": "Hex: Purge",
+  "ko": "주술: 처단"
+ },
+ "PurgeHexLongDesc": {
+  "en": "Hexes your weapon to warp enemies creating a chance\n they will erupt when hit",
+  "ko": "무기에 주술을 걸어 적들을 뒤틀고 적중당하면\n 일정 확률로 터지게 만듭니다."
+ },
+ "PurgeHexName": {
+  "en": "Hex: Purge",
+  "ko": "주술: 처단"
+ },
+ "RancorSigilAN": {
+  "en": "Sigil: Rancor",
+  "ko": "인장: 울분"
+ },
+ "RancorSigilLongDesc": {
+  "en": "Lay a sigil on the ground that enrages those who enter\n and has a chance for enemies to attack one another",
+  "ko": "안에 들어오는 자를 격분시키고 일정 확률로\n 적이 서로 공격하게 하는 인장을 지면에 배치합니다."
+ },
+ "RancorSigilName": {
+  "en": "Sigil: Rancor",
+  "ko": "인장: 울분"
+ },
+ "RingOfFireAN": {
+  "en": "Ring of Fire",
+  "ko": "화염 고리"
+ },
+ "RingOfFireLongDesc": {
+  "en": "Releases a volley of expanding hellfire in all directions that pushes \n enemies away",
+  "ko": "사방으로 퍼지며 적들을 밀쳐내는 지옥불 세례를 \n 퍼붓습니다."
+ },
+ "RingOfFireName": {
+  "en": "Ring of Fire",
+  "ko": "화염 고리"
+ },
+ "SiphonHexAN": {
+  "en": "Hex: Siphon",
+  "ko": "주술: 흡수"
+ },
+ "SiphonHexLongDesc": {
+  "en": "Hexes your weapon to extract the lifeforce of slain enemies",
+  "ko": "무기에 주술을 걸어 쓰러뜨린 적의 생기를 빨아들입니다."
+ },
+ "SiphonHexName": {
+  "en": "Hex: Siphon",
+  "ko": "주술: 흡수"
+ },
+ "SkillCategoryWa1": {
+  "en": "Demon",
+  "ko": "악마"
+ },
+ "SkillCategoryWa2": {
+  "en": "Eldritch",
+  "ko": "기괴"
+ },
+ "SkillCategoryWa3": {
+  "en": "Chaos",
+  "ko": "혼돈"
+ },
+ "SummonDefilerAN": {
+  "en": "Summon Trickster",
+  "ko": "악마 말썽꾼 소환"
+ },
+ "SummonDefilerLongDesc": {
+  "en": "Summons a demonic trickster that binds enemy souls together \n to take shared damage",
+  "ko": "적들의 영혼을 속박하여 피해를 공유하게 하는 \n 악마 말썽꾼을 소환합니다."
+ },
+ "SummonDefilerName": {
+  "en": "Summon Trickster",
+  "ko": "악마 말썽꾼 소환"
+ },
+ "SummonGoatmanAN": {
+  "en": "Summon Goatman",
+  "ko": "염소인간 소환"
+ },
+ "SummonGoatmanLongDesc": {
+  "en": "Summons a Goatman to fight by your side",
+  "ko": "염소인간을 소환하여 전투를 돕게 합니다."
+ },
+ "SummonGoatmanName": {
+  "en": "Summon Goatman",
+  "ko": "염소인간 소환"
+ },
+ "SummonTaintedAN": {
+  "en": "Summon Tainted",
+  "ko": "오염된 자 소환"
+ },
+ "SummonTaintedLongDesc": {
+  "en": "Summons a Tainted to fight by your side",
+  "ko": "오염된 자를 소환하여 전투를 돕게 합니다."
+ },
+ "SummonTaintedName": {
+  "en": "Summon Tainted",
+  "ko": "오염된 자 소환"
+ },
+ "Warlock": {
+  "en": "Warlock",
+  "ko": "악마술사"
+ }
+}

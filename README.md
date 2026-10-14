@@ -12,7 +12,7 @@
 
 ### `data/skills/` — 클래스별 스킬 데이터 (JSON)
 
-7개 클래스 × 30개 스킬 = 총 210개. `index.json`이 클래스 목록을 담고 있습니다.
+8개 클래스 × 30개 스킬 = 총 240개. `index.json`이 클래스 목록을 담고 있습니다.
 
 | 파일 | 클래스 |
 |---|---|
@@ -23,6 +23,7 @@
 | `necromancer.json` | 네크로맨서 |
 | `paladin.json` | 팔라딘 |
 | `sorceress.json` | 소서리스 |
+| `warlock.json` | 악마술사 (확장팩 "악마술사의 군림") |
 
 스킬 명칭과 설명은 **게임 클라이언트의 공식 한국어/영어 문자열**을 그대로 사용합니다.
 
@@ -65,9 +66,19 @@ npm pack @blizzhackers/d2data && tar xzf blizzhackers-d2data-*.tgz
 # 2) 스킬 JSON 생성
 python3 scripts/build_skills.py --d2data ./package/json --out ./data/skills
 
-# 3) 아이콘 추출 (d2planner 저장소 필요)
+# 3) 아이콘 추출 (d2planner 저장소 필요, 기존 7클래스)
 git clone --depth 1 https://github.com/d2planner/d2planner /tmp/d2planner
 python3 scripts/extract_icons.py \
     --images /tmp/d2planner/d2planner/src/assets/1.14D/game_images \
     --data ./data/skills --out ./assets/skills
+
+# 4) 악마술사(워록): d2data 로케일에 아직 없는 문자열은 보충 파일로,
+#    아이콘은 D2R .sprite 시트에서 추출
+#    (보충 문자열 원본: D2R 게임 데이터의 strings/skills.json·ui.json —
+#     https://github.com/D2R-Reimagined/d2r-reimagined-mod 에 포함된 사본 사용)
+python3 scripts/build_skills.py --d2data ./package/json --out ./data/skills \
+    --supplement ./data/raw/warlock-strings.json
+python3 scripts/extract_sprite_icons.py \
+    --sprite <...>/data/hd/global/ui/spells/warlock/waskillicon.sprite \
+    --data ./data/skills/warlock.json --out ./assets/skills/warlock
 ```

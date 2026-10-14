@@ -23,11 +23,12 @@ CLASSES = {
     "nec": {"en": "Necromancer", "slug": "necromancer"},
     "pal": {"en": "Paladin", "slug": "paladin"},
     "sor": {"en": "Sorceress", "slug": "sorceress"},
+    "war": {"en": "Warlock", "slug": "warlock"},
 }
 
 CLASS_TAB_KEY = {
     "ama": "Am", "ass": "As", "bar": "Ba", "dru": "Dr",
-    "nec": "Ne", "pal": "Pa", "sor": "So",
+    "nec": "Ne", "pal": "Pa", "sor": "So", "war": "Wa",
 }
 
 SYNERGY_RE = re.compile(r"skill\('([^']+)'\.blvl\)")
@@ -61,10 +62,18 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--d2data", required=True)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--supplement", default=None,
+                    help="워록(ROTW) 등 d2data 로케일에 없는 문자열 보충 파일 "
+                         "(data/raw/warlock-strings.json)")
     args = ap.parse_args()
     src = Path(args.d2data)
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
+
+    # 보충 문자열: 구버전 .tbl과 달리 줄 순서가 자연스러운 신규(D2R json) 문자열
+    supp = {}
+    if args.supplement and Path(args.supplement).exists():
+        supp = json.load(open(args.supplement, encoding="utf-8"))
 
     skills_raw = json.load(open(src / "skills.json", encoding="utf-8"))
     # skills.json은 인덱스 키이므로 내부 스킬명('skill' 필드)으로 재색인
@@ -106,6 +115,26 @@ def main():
             v = kor.get(key.replace("skillxld", "skillld"), "")
         return v
 
+    def natural(text):
+        """신규 문자열은 역순이 아니므로 줄바꿈만 공백으로 합친다."""
+        return " ".join(l.strip() for l in text.split("\n") if l.strip())
+
+    def name_pair(key, fallback):
+        """이름 문자열: 구 로케일 → 보충 파일 순으로 찾는다."""
+        if key in eng or key in kor:
+            return eng.get(key, fallback).strip(), kor.get(key, eng.get(key, fallback)).strip()
+        if key in supp:
+            return supp[key]["en"] or fallback, supp[key]["ko"] or supp[key]["en"] or fallback
+        return fallback, fallback
+
+    def desc_pair(key):
+        """설명 문자열 (ko, en): 구 로케일은 역순 보정, 보충 파일은 자연 순서."""
+        if key in kor or key in eng:
+            return fix_lines(ko_str(key)), fix_lines(eng.get(key, ""))
+        if key in supp:
+            return natural(supp[key]["ko"]), natural(supp[key]["en"])
+        return "", ""
+
     # 내부 스킬 키 → (영문명, 한글명, slug) 매핑 (선행스킬/시너지 표기용)
     name_cache = {}
 
@@ -119,8 +148,7 @@ def main():
             if d:
                 ov = OVERRIDES.get(skill_key, {})
                 nk = ov.get("name_key") or d.get("str name", "")
-                en_name = eng.get(nk, skill_key).strip()
-                ko_name = kor.get(nk, en_name).strip()
+                en_name, ko_name = name_pair(nk, skill_key)
                 res = {"id": slugify(en_name), "name_en": en_name, "name_ko": ko_name}
         if res is None:
             res = {"id": slugify(skill_key), "name_en": skill_key, "name_ko": skill_key}
@@ -142,11 +170,15 @@ def main():
             nk, sk = ov.get("name_key") or d.get("str name", ""), d.get("str short", "")
             lk = d.get("str long", sk)
             page = d["SkillPage"]
-            # SkillPage(1~3)와 SkillCategory 번호는 서로 역순이다
-            # (예: 소서리스 page 3 = Cold = SkillCategorySo1)
-            cat_key = f"SkillCategory{CLASS_TAB_KEY[code]}{4 - page}"
-            tree_en = eng.get(cat_key, f"Tree {page}")
-            tree_ko = tab_ko(tree_en)
+            # 기존 7클래스는 SkillPage(1~3)와 SkillCategory 번호가 역순이다
+            # (예: 소서리스 page 3 = Cold = SkillCategorySo1). 워록은 정방향.
+            cat_idx = page if code == "war" else 4 - page
+            cat_key = f"SkillCategory{CLASS_TAB_KEY[code]}{cat_idx}"
+            if cat_key in supp:
+                tree_en, tree_ko = supp[cat_key]["en"], supp[cat_key]["ko"]
+            else:
+                tree_en = eng.get(cat_key, f"Tree {page}")
+                tree_ko = tab_ko(tree_en)
 
             # 시너지: 수식 필드 내 skill('X'.blvl) 패턴 (블리자드의 시너지 표준 표기)
             syn = []
@@ -158,11 +190,11 @@ def main():
 
             prereqs = [s[f"reqskill{i}"] for i in (1, 2, 3) if s.get(f"reqskill{i}")]
 
-            en_name = eng.get(nk, skill_key).strip()
+            en_name, ko_name = name_pair(nk, skill_key)
             entry = {
                 "id": slugify(en_name),
                 "name_en": en_name,
-                "name_ko": kor.get(nk, en_name).strip(),
+                "name_ko": ko_name,
                 "tree": {"page": page, "name_en": tree_en, "name_ko": tree_ko},
                 "position": {"row": d.get("SkillRow"), "col": d.get("SkillColumn")},
                 "icon_cel": d.get("IconCel"),
@@ -173,20 +205,21 @@ def main():
                 "element": s.get("EType"),
                 "prerequisites": [display_names(p) for p in prereqs],
                 "synergies": [display_names(x) for x in syn],
-                "description_ko": ov.get("description_ko") or fix_lines(ko_str(sk)),
-                "description_en": ov.get("description_en") or fix_lines(eng.get(sk, "")),
+                "description_ko": ov.get("description_ko") or desc_pair(sk)[0],
+                "description_en": ov.get("description_en") or desc_pair(sk)[1],
             }
-            lk_ko = fix_lines(ko_str(lk))
+            lk_ko = desc_pair(lk)[0]
             if not ov and lk != sk and lk_ko and lk_ko != entry["description_ko"]:
                 entry["description_long_ko"] = lk_ko
             cls_skills.append(entry)
 
         cls_skills.sort(key=lambda e: (e["tree"]["page"], e["required_level"],
                                        e["position"]["row"] or 0, e["position"]["col"] or 0))
+        cls_en, cls_ko = name_pair(meta["en"], meta["en"])
         payload = {
             "class": meta["slug"],
-            "class_name_en": meta["en"],
-            "class_name_ko": kor.get(meta["en"], meta["en"]),
+            "class_name_en": cls_en,
+            "class_name_ko": cls_ko,
             "skill_count": len(cls_skills),
             "skills": cls_skills,
         }
