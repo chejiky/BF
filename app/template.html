@@ -198,7 +198,7 @@ details.cat summary .cnt{color:var(--faint); font-size:.78rem; font-weight:400}
 <header class="hdr">
   <button class="back" id="btnBack" hidden aria-label="뒤로">‹</button>
   <div class="hdr-title">
-    <div class="t1" id="hdrT1">D2R 스킬 사전</div>
+    <div class="t1" id="hdrT1">D2R 사전</div>
     <div class="t2 en" id="hdrT2">Diablo II: Resurrected</div>
   </div>
 </header>
@@ -230,7 +230,10 @@ const ELEM_KO = {fire:"화염", cold:"냉기", ltng:"번개", pois:"독", mag:"�
 const $app = document.getElementById("app");
 const $t1 = document.getElementById("hdrT1"), $t2 = document.getElementById("hdrT2");
 const $back = document.getElementById("btnBack");
-$back.addEventListener("click", () => history.back());
+// 홈 화면 앱으로 직접 열린 경우처럼 돌아갈 기록이 없으면 홈으로 이동
+$back.addEventListener("click", () => {
+  if(history.length > 1) history.back(); else location.hash = "";
+});
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 // 스킬 아이콘: 클래스별 6×5 스프라이트 시트에서 배열 인덱스로 위치 계산
@@ -249,7 +252,7 @@ function setHdr(t1,t2,showBack){ $t1.textContent=t1; $t2.textContent=t2; $back.h
 
 /* ── 홈 ── */
 function renderHome(){
-  setHdr("D2R 스킬 사전","Diablo II: Resurrected",false);
+  setHdr("D2R 사전","Diablo II: Resurrected",false);
   const cards = CLASS_ORDER.map(c => {
     const d = DATA[c];
     const alias = d.class_name_ko_classic ? `${esc(d.class_name_ko_classic)} · ` : "";

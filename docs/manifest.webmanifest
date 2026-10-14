@@ -1,0 +1,30 @@
+{
+ "name": "D2R 스킬·아이템 사전",
+ "short_name": "D2R 사전",
+ "description": "디아블로 2 레저렉션 스킬·유니크·세트·룬워드·부적·큐브 레시피 사전 (비공식 팬 프로젝트)",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "lang": "ko",
+ "background_color": "#0c0907",
+ "theme_color": "#0c0907",
+ "icons": [
+  {
+   "src": "icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
