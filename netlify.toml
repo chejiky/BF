@@ -1,0 +1,15 @@
+# Netlify 배포 설정 — docs/ 폴더(완성된 PWA)를 그대로 게시한다. 빌드 명령 없음.
+[build]
+  publish = "docs"
+  command = ""
+
+# 서비스워커는 항상 최신 파일을 받도록 캐시 금지
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
