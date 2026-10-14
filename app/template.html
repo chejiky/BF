@@ -174,6 +174,19 @@ img{max-width:100%}
 .props li{color:#7f9ddb; padding:.14rem 0; font-size:.94rem}
 .props li.req{color:var(--muted); font-size:.85rem}
 .props li.base-stat{color:var(--text)}
+
+/* ─ 부적 접사 표 ─ */
+details.cat{border:1px solid var(--border-soft); border-radius:10px; background:var(--surface); margin-bottom:.45rem}
+details.cat summary{cursor:pointer; padding:.6rem .8rem; font-weight:600; list-style:none; display:flex; justify-content:space-between; align-items:center}
+details.cat summary::after{content:"▾"; color:var(--faint); transition:transform .15s}
+details.cat[open] summary::after{transform:rotate(180deg)}
+details.cat summary .cnt{color:var(--faint); font-size:.78rem; font-weight:400}
+.affix-row{border-top:1px solid var(--border-soft); padding:.5rem .8rem}
+.affix-row .nm{font-weight:500}
+.affix-row .nm .en{color:var(--faint); font-size:.74rem}
+.affix-row .mods{color:#7f9ddb; font-size:.9rem; margin:.1rem 0}
+.affix-row .cond{color:var(--faint); font-size:.74rem}
+.aff-note{color:var(--muted); font-size:.85rem; background:var(--surface-2); border-radius:10px; padding:.6rem .8rem; margin:.4rem 0 1rem}
 .foot{color:var(--faint); font-size:.72rem; text-align:center; margin-top:2.5rem; line-height:1.7}
 .foot a{color:var(--muted)}
 @media (prefers-reduced-motion:no-preference){
@@ -197,6 +210,7 @@ const ITEMS = __ITEM_DATA__;
 const SETS = __SETS_DATA__;
 const RWS = __RW_DATA__;
 const CHARMS = __CHARM_DATA__;
+const CHARM_AFFIXES = __CHARM_AFFIX_DATA__;
 const ITEM_BY_ID = Object.fromEntries(ITEMS.map(e => [e.id, e]));
 const SET_BY_ID = Object.fromEntries(SETS.map(s => [s.id, s]));
 const SET_ITEM_BY_ID = {};
@@ -572,14 +586,18 @@ function renderRW(id){
 /* ── 부적 ── */
 function renderCharms(){
   setHdr("부적 (차암)", "Charms", true);
-  const basics = CHARMS.basics.map(b => `
+  const basics = CHARMS.basics.map(b => {
+    const szMap = {cm1:"scha", cm2:"mcha", cm3:"lcha"};
+    return `
     <div class="recipe" style="margin-bottom:.5rem">
       <div style="display:flex;justify-content:space-between;align-items:baseline">
         <b>${esc(b.name_ko)}</b>
         <span style="color:var(--faint);font-size:.8rem">${b.name_ko_classic?esc(b.name_ko_classic)+" · ":""}${esc(b.name_en)} · ${b.size}칸</span>
       </div>
       <p style="margin:.3rem 0 0;color:var(--muted);font-size:.88rem">${esc(b.note)}</p>
-    </div>`).join("");
+      <button class="chip plain" style="margin-top:.5rem" data-go="ca-${szMap[b.code]}">가능 속성 전체 표 보기 →</button>
+    </div>`;
+  }).join("");
   const uniq = CHARMS.unique_ids.map(id => ITEM_BY_ID[id]).filter(Boolean);
   const sunder = CHARMS.sunder.map(g => `
     <div class="recipe" style="margin-bottom:.5rem">
@@ -599,6 +617,39 @@ function renderCharms(){
     <div class="sec-label">분쇄 부적 (면역 관통)</div>
     <p class="subtitle" style="color:var(--muted);font-size:.85rem">몬스터의 원소 면역을 깨는 거대 부적. 지옥 난이도에서 잠복형이 드롭되며, 호라드림 큐브로 제작형으로 바꿀 수 있습니다. 대신 해당 원소 저항이 감소합니다.</p>
     ${sunder}
+  </div>`;
+}
+
+/* ── 부적 접사 상세표 ── */
+function renderCharmAffixes(code){
+  const sz = CHARM_AFFIXES.sizes.find(s => s.code===code);
+  if(!sz) return renderCharms();
+  setHdr(`${sz.name_ko} — 가능 속성`, "Magic Charm Affixes", true);
+  const affRow = a => `<div class="affix-row">
+    <div class="nm">${esc(a.name_ko)} <span class="en">${a.name_ko_classic?esc(a.name_ko_classic)+" · ":""}${esc(a.name_en)}</span></div>
+    <div class="mods">${a.mods_ko.map(esc).join(" · ")}</div>
+    <div class="cond">아이템 레벨 ${a.alvl}+${a.max_alvl?`~${a.max_alvl}`:""} · 착용 레벨 ${a.levelreq}</div>
+  </div>`;
+  const section = (title, cats) => cats.length ? `
+    <div class="sec-label">${title}</div>` + cats.map((c,i) => `
+    <details class="cat"${i===0?" open":""}><summary>${esc(c.label)} <span class="cnt">${c.affixes.length}개 티어</span></summary>
+      ${c.affixes.map(affRow).join("")}
+    </details>`).join("") : "";
+  let skillers = "";
+  if(code==="lcha"){
+    skillers = `<div class="sec-label">스킬러 접두어 (+1 스킬 탭)</div>
+      <p class="aff-note">아이템 레벨 50+, 착용 레벨 42. 거대 부적 전용 — 해당 클래스의 스킬 탭 하나에 +1.</p>` +
+      CHARM_AFFIXES.skillers.map(s => `<div class="affix-row" style="border:1px solid var(--border-soft);border-radius:10px;margin-bottom:.4rem;background:var(--surface)">
+        <div class="nm">${esc(s.class_ko)} <span class="en">${esc(s.class_en)}</span></div>
+        <div class="mods">${s.tabs.map(t => `${esc(t.prefix_ko)}<span style="color:var(--faint)">(${esc(t.tree_ko)}${t.prefix_classic?` · ${esc(t.prefix_classic)}`:""})</span>`).join(" · ")}</div>
+      </div>`).join("");
+  }
+  $app.innerHTML = `<div class="view">
+    <p class="aff-note">${esc(CHARM_AFFIXES.note)} 접사의 실제 등장 여부는 떨어진 지역·몬스터의 아이템 레벨(ilvl)에 따라 결정됩니다.</p>
+    ${section("접두어 (1개까지)", sz.prefixes)}
+    ${section("접미어 (1개까지)", sz.suffixes)}
+    ${skillers}
+    <div class="d-sec"><h2>부적</h2><ul class="chips"><li><button class="chip plain" data-go="charms">부적 종류 안내로 돌아가기</button></li></ul></div>
   </div>`;
 }
 
@@ -624,6 +675,8 @@ function route(){
     renderRW(h.slice(2));
   } else if(h === "charms"){
     renderCharms();
+  } else if(h.startsWith("ca-")){
+    renderCharmAffixes(h.slice(3));
   } else if(h.startsWith("s-")){
     const rest = h.slice(2);
     const cls = CLASS_ORDER.find(c => rest.startsWith(c+"-"));

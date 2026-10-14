@@ -1,0 +1,3593 @@
+{
+ "sizes": [
+  {
+   "code": "scha",
+   "name_ko": "작은 부적",
+   "prefixes": [
+    {
+     "label": "마나",
+     "affixes": [
+      {
+       "name_en": "Lizard's",
+       "name_ko": "도마뱀의",
+       "name_ko_classic": "리자즈",
+       "alvl": 16,
+       "levelreq": 12,
+       "mods_ko": [
+        "마나 +1~2"
+       ]
+      },
+      {
+       "name_en": "Lizard's",
+       "name_ko": "도마뱀의",
+       "name_ko_classic": "리자즈",
+       "alvl": 16,
+       "levelreq": 12,
+       "mods_ko": [
+        "마나 +3~7"
+       ]
+      },
+      {
+       "name_en": "Snake's",
+       "name_ko": "뱀의",
+       "name_ko_classic": "스네익스",
+       "alvl": 32,
+       "levelreq": 24,
+       "mods_ko": [
+        "마나 +8~12"
+       ]
+      },
+      {
+       "name_en": "Serpent's",
+       "name_ko": "구렁이의",
+       "name_ko_classic": "서펀츠",
+       "alvl": 48,
+       "levelreq": 40,
+       "mods_ko": [
+        "마나 +13~17"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "방어력",
+     "affixes": [
+      {
+       "name_en": "Stout",
+       "name_ko": "강건한",
+       "name_ko_classic": "스타우트",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "방어력 +1"
+       ]
+      },
+      {
+       "name_en": "Stout",
+       "name_ko": "강건한",
+       "name_ko_classic": "스타우트",
+       "alvl": 21,
+       "levelreq": 15,
+       "mods_ko": [
+        "방어력 +4~8"
+       ]
+      },
+      {
+       "name_en": "Burly",
+       "name_ko": "훤칠한",
+       "name_ko_classic": "버얼리",
+       "alvl": 36,
+       "levelreq": 28,
+       "mods_ko": [
+        "방어력 +15~20"
+       ]
+      },
+      {
+       "name_en": "Stalwart",
+       "name_ko": "건장한",
+       "name_ko_classic": "스톨워트",
+       "alvl": 48,
+       "levelreq": 40,
+       "mods_ko": [
+        "방어력 +20~30"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "공격 등급",
+     "affixes": [
+      {
+       "name_en": "Bronze",
+       "name_ko": "청동의",
+       "name_ko_classic": "브론즈",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "명중률 +2~4"
+       ]
+      },
+      {
+       "name_en": "Bronze",
+       "name_ko": "청동의",
+       "name_ko_classic": "브론즈",
+       "alvl": 21,
+       "levelreq": 15,
+       "mods_ko": [
+        "명중률 +6~12"
+       ]
+      },
+      {
+       "name_en": "Fine",
+       "name_ko": "우수한",
+       "name_ko_classic": "파인",
+       "alvl": 28,
+       "levelreq": 21,
+       "mods_ko": [
+        "최대 데미지 +1~3",
+        "명중률 +10~20"
+       ]
+      },
+      {
+       "name_en": "Iron",
+       "name_ko": "철의",
+       "name_ko_classic": "아이언",
+       "alvl": 39,
+       "levelreq": 31,
+       "mods_ko": [
+        "명중률 +13~24"
+       ]
+      },
+      {
+       "name_en": "Steel",
+       "name_ko": "강철의",
+       "name_ko_classic": "스틸",
+       "alvl": 57,
+       "levelreq": 49,
+       "mods_ko": [
+        "명중률 +25~36"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "최대 데미지",
+     "affixes": [
+      {
+       "name_en": "Jagged",
+       "name_ko": "톱날의",
+       "name_ko_classic": "재기드",
+       "alvl": 81,
+       "levelreq": 73,
+       "mods_ko": [
+        "최대 데미지 +1"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "최소 데미지",
+     "affixes": [
+      {
+       "name_en": "Red",
+       "name_ko": "붉은색",
+       "name_ko_classic": "레드",
+       "alvl": 90,
+       "levelreq": 82,
+       "mods_ko": [
+        "최소 데미지 +1"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "독 데미지",
+     "affixes": [
+      {
+       "name_en": "Septic",
+       "name_ko": "패혈성의",
+       "name_ko_classic": "셉틱",
+       "alvl": 18,
+       "levelreq": 13,
+       "mods_ko": [
+        "독 데미지 +52~52 (3초)"
+       ]
+      },
+      {
+       "name_en": "Foul",
+       "name_ko": "더러운",
+       "name_ko_classic": "파울",
+       "alvl": 39,
+       "levelreq": 31,
+       "mods_ko": [
+        "독 데미지 +128~128 (4초)"
+       ]
+      },
+      {
+       "name_en": "Toxic",
+       "name_ko": "독성의",
+       "name_ko_classic": "톡시크",
+       "alvl": 63,
+       "levelreq": 55,
+       "mods_ko": [
+        "독 데미지 +205~205 (5초)"
+       ]
+      },
+      {
+       "name_en": "Pestilent",
+       "name_ko": "질병의",
+       "name_ko_classic": "페스털런트",
+       "alvl": 88,
+       "levelreq": 80,
+       "mods_ko": [
+        "독 데미지 +299~299 (6초)"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "모든 저항",
+     "affixes": [
+      {
+       "name_en": "Shimmering",
+       "name_ko": "반작이는",
+       "name_ko_classic": "쉬머링",
+       "alvl": 33,
+       "levelreq": 25,
+       "mods_ko": [
+        "모든 저항 +3~5%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "화염 저항",
+     "affixes": [
+      {
+       "name_en": "Crimson",
+       "name_ko": "심홍색",
+       "name_ko_classic": "크림슨",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "화염 저항 +3~5%"
+       ]
+      },
+      {
+       "name_en": "Russet",
+       "name_ko": "적갈색",
+       "name_ko_classic": "러셋",
+       "alvl": 14,
+       "levelreq": 10,
+       "mods_ko": [
+        "화염 저항 +6~7%"
+       ]
+      },
+      {
+       "name_en": "Garnet",
+       "name_ko": "석류석",
+       "name_ko_classic": "가넷",
+       "alvl": 27,
+       "levelreq": 20,
+       "mods_ko": [
+        "화염 저항 +8~9%"
+       ]
+      },
+      {
+       "name_en": "Ruby",
+       "name_ko": "루비색",
+       "name_ko_classic": "루비",
+       "alvl": 40,
+       "levelreq": 32,
+       "mods_ko": [
+        "화염 저항 +10~11%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "번개 저항",
+     "affixes": [
+      {
+       "name_en": "Tangerine",
+       "name_ko": "귤색",
+       "name_ko_classic": "텐저린",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "번개 저항 +3~5%"
+       ]
+      },
+      {
+       "name_en": "Ocher",
+       "name_ko": "황갈색",
+       "name_ko_classic": "오우커",
+       "alvl": 14,
+       "levelreq": 10,
+       "mods_ko": [
+        "번개 저항 +6~7%"
+       ]
+      },
+      {
+       "name_en": "Coral",
+       "name_ko": "산호색",
+       "name_ko_classic": "코럴",
+       "alvl": 27,
+       "levelreq": 20,
+       "mods_ko": [
+        "번개 저항 +8~9%"
+       ]
+      },
+      {
+       "name_en": "Amber",
+       "name_ko": "호박색",
+       "name_ko_classic": "앰버",
+       "alvl": 40,
+       "levelreq": 32,
+       "mods_ko": [
+        "번개 저항 +10~11%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "냉기 저항",
+     "affixes": [
+      {
+       "name_en": "Azure",
+       "name_ko": "하늘색",
+       "name_ko_classic": "에이져",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "냉기 저항 +3~5%"
+       ]
+      },
+      {
+       "name_en": "Lapis",
+       "name_ko": "청금석",
+       "name_ko_classic": "래피스",
+       "alvl": 14,
+       "levelreq": 10,
+       "mods_ko": [
+        "냉기 저항 +6~7%"
+       ]
+      },
+      {
+       "name_en": "Cobalt",
+       "name_ko": "군청색",
+       "name_ko_classic": "코발트",
+       "alvl": 27,
+       "levelreq": 20,
+       "mods_ko": [
+        "냉기 저항 +8~9%"
+       ]
+      },
+      {
+       "name_en": "Sapphire",
+       "name_ko": "사파이어색",
+       "name_ko_classic": "사파이어",
+       "alvl": 40,
+       "levelreq": 32,
+       "mods_ko": [
+        "냉기 저항 +10~11%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "독 저항",
+     "affixes": [
+      {
+       "name_en": "Beryl",
+       "name_ko": "녹주색",
+       "name_ko_classic": "베럴",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "독 저항 +3~5%"
+       ]
+      },
+      {
+       "name_en": "Viridian",
+       "name_ko": "청록색",
+       "name_ko_classic": "비리디언",
+       "alvl": 14,
+       "levelreq": 10,
+       "mods_ko": [
+        "독 저항 +6~7%"
+       ]
+      },
+      {
+       "name_en": "Jade",
+       "name_ko": "비취색",
+       "name_ko_classic": "제이드",
+       "alvl": 27,
+       "levelreq": 20,
+       "mods_ko": [
+        "독 저항 +8~9%"
+       ]
+      },
+      {
+       "name_en": "Emerald",
+       "name_ko": "에메랄드색",
+       "name_ko_classic": "에머랄드",
+       "alvl": 40,
+       "levelreq": 32,
+       "mods_ko": [
+        "독 저항 +10~11%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "지구력",
+     "affixes": [
+      {
+       "name_en": "Rugged",
+       "name_ko": "다부진",
+       "name_ko_classic": "러기드",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "최대 지구력 +4~8"
+       ]
+      },
+      {
+       "name_en": "Rugged",
+       "name_ko": "다부진",
+       "name_ko_classic": "러기드",
+       "alvl": 21,
+       "levelreq": 15,
+       "mods_ko": [
+        "최대 지구력 +9~16"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "기타",
+     "affixes": [
+      {
+       "name_en": "Fiery",
+       "name_ko": "불 같은",
+       "name_ko_classic": "파이어리",
+       "alvl": 21,
+       "levelreq": 15,
+       "mods_ko": [
+        "최소 화염 데미지 +1",
+        "최대 화염 데미지 +2~3"
+       ]
+      },
+      {
+       "name_en": "Static",
+       "name_ko": "정전기의",
+       "name_ko_classic": "스태틱",
+       "alvl": 23,
+       "levelreq": 17,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +6~11"
+       ]
+      },
+      {
+       "name_en": "Snowy",
+       "name_ko": "눈발의",
+       "name_ko_classic": "스노우",
+       "alvl": 27,
+       "levelreq": 20,
+       "mods_ko": [
+        "최소 냉기 데미지 +1~2",
+        "최대 냉기 데미지 +2~4"
+       ]
+      },
+      {
+       "name_en": "Smoldering",
+       "name_ko": "타오르는",
+       "name_ko_classic": "스모울더링",
+       "alvl": 40,
+       "levelreq": 32,
+       "mods_ko": [
+        "최소 화염 데미지 +2~3",
+        "최대 화염 데미지 +4~10"
+       ]
+      },
+      {
+       "name_en": "Glowing",
+       "name_ko": "이채로운",
+       "name_ko_classic": "글로잉",
+       "alvl": 41,
+       "levelreq": 33,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +12~24"
+       ]
+      },
+      {
+       "name_en": "Shivering",
+       "name_ko": "오한의",
+       "name_ko_classic": "쉬버링",
+       "alvl": 42,
+       "levelreq": 34,
+       "mods_ko": [
+        "최소 냉기 데미지 +3~4",
+        "최대 냉기 데미지 +5~8"
+       ]
+      },
+      {
+       "name_en": "Smoking",
+       "name_ko": "연기 나는",
+       "name_ko_classic": "스모킹",
+       "alvl": 64,
+       "levelreq": 56,
+       "mods_ko": [
+        "최소 화염 데미지 +4~9",
+        "최대 화염 데미지 +11~19"
+       ]
+      },
+      {
+       "name_en": "Arcing",
+       "name_ko": "뻗어나가는",
+       "name_ko_classic": "아킹",
+       "alvl": 65,
+       "levelreq": 57,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +25~43"
+       ]
+      },
+      {
+       "name_en": "Boreal",
+       "name_ko": "북녘의",
+       "name_ko_classic": "보오리얼",
+       "alvl": 66,
+       "levelreq": 58,
+       "mods_ko": [
+        "최소 냉기 데미지 +5~7",
+        "최대 냉기 데미지 +9~14"
+       ]
+      },
+      {
+       "name_en": "Flaming",
+       "name_ko": "불타오르는",
+       "name_ko_classic": "플레이밍",
+       "alvl": 89,
+       "levelreq": 81,
+       "mods_ko": [
+        "최소 화염 데미지 +10~19",
+        "최대 화염 데미지 +20~29"
+       ]
+      },
+      {
+       "name_en": "Shocking",
+       "name_ko": "충격적인",
+       "name_ko_classic": "샤킹",
+       "alvl": 90,
+       "levelreq": 82,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +44~71"
+       ]
+      },
+      {
+       "name_en": "Hibernal",
+       "name_ko": "동절의",
+       "name_ko_classic": "하이버널",
+       "alvl": 91,
+       "levelreq": 83,
+       "mods_ko": [
+        "최소 냉기 데미지 +8~10",
+        "최대 냉기 데미지 +15~20"
+       ]
+      }
+     ]
+    }
+   ],
+   "suffixes": [
+    {
+     "label": "생명력",
+     "affixes": [
+      {
+       "name_en": "of Life",
+       "name_ko": "생명력의",
+       "name_ko_classic": "오브 라이프",
+       "alvl": 1,
+       "levelreq": 14,
+       "mods_ko": [
+        "생명력 +5~10"
+       ]
+      },
+      {
+       "name_en": "of Sustenance",
+       "name_ko": "자양의",
+       "name_ko_classic": "오브 서스터넌스",
+       "alvl": 23,
+       "levelreq": 17,
+       "mods_ko": [
+        "생명력 +11~15"
+       ]
+      },
+      {
+       "name_en": "of Vita",
+       "name_ko": "활기의",
+       "name_ko_classic": "오브 비타",
+       "alvl": 47,
+       "levelreq": 39,
+       "mods_ko": [
+        "생명력 +16~20"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "최대 데미지",
+     "affixes": [
+      {
+       "name_en": "of Craftmanship",
+       "name_ko": "세공술의",
+       "name_ko_classic": "오브 크래프트맨십",
+       "alvl": 85,
+       "levelreq": 77,
+       "mods_ko": [
+        "최대 데미지 +1"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "독 데미지",
+     "affixes": [
+      {
+       "name_en": "of Blight",
+       "name_ko": "괴멸의",
+       "name_ko_classic": "오브 블라이트",
+       "alvl": 9,
+       "levelreq": 6,
+       "mods_ko": [
+        "독 데미지 +21~21 (3초)"
+       ]
+      },
+      {
+       "name_en": "of Venom",
+       "name_ko": "맹독의",
+       "name_ko_classic": "오브 베넘",
+       "alvl": 20,
+       "levelreq": 15,
+       "mods_ko": [
+        "독 데미지 +39~39 (4초)"
+       ]
+      },
+      {
+       "name_en": "of Pestilence",
+       "name_ko": "해충의",
+       "name_ko_classic": "오브 페스털런스",
+       "alvl": 32,
+       "levelreq": 24,
+       "mods_ko": [
+        "독 데미지 +52~52 (5초)"
+       ]
+      },
+      {
+       "name_en": "of Anthrax",
+       "name_ko": "탄저병의",
+       "name_ko_classic": "오브 앤쓰랙스",
+       "alvl": 44,
+       "levelreq": 36,
+       "mods_ko": [
+        "독 데미지 +86~86 (6초)"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "타격 회복 속도",
+     "affixes": [
+      {
+       "name_en": "of Balance",
+       "name_ko": "균형의",
+       "name_ko_classic": "오브 밸런스",
+       "alvl": 37,
+       "levelreq": 29,
+       "mods_ko": [
+        "타격 회복 속도 +5%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "달리기/걷기 속도",
+     "affixes": [
+      {
+       "name_en": "of Inertia",
+       "name_ko": "관성의",
+       "name_ko_classic": "오브 이너시어",
+       "alvl": 35,
+       "levelreq": 27,
+       "mods_ko": [
+        "달리기/걷기 속도 +3%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "마법 아이템 발견",
+     "affixes": [
+      {
+       "name_en": "of Fortune",
+       "name_ko": "행운의",
+       "name_ko_classic": "오브 포츈",
+       "alvl": 31,
+       "levelreq": 18,
+       "mods_ko": [
+        "마법 아이템 발견 확률 3~5% 증가"
+       ]
+      },
+      {
+       "name_en": "of Good Luck",
+       "name_ko": "대운의",
+       "name_ko_classic": "오브 굿 럭",
+       "alvl": 47,
+       "levelreq": 33,
+       "mods_ko": [
+        "마법 아이템 발견 확률 6~7% 증가"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "골드 획득",
+     "affixes": [
+      {
+       "name_en": "of Greed",
+       "name_ko": "욕심의",
+       "name_ko_classic": "오브 그리드",
+       "alvl": 1,
+       "levelreq": 15,
+       "mods_ko": [
+        "괴물에게서 얻는 금화 5~10% 증가"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "힘",
+     "affixes": [
+      {
+       "name_en": "of Strength",
+       "name_ko": "힘의",
+       "name_ko_classic": "오브 스트랭쓰",
+       "alvl": 7,
+       "levelreq": 5,
+       "mods_ko": [
+        "힘 +1"
+       ]
+      },
+      {
+       "name_en": "of Strength",
+       "name_ko": "힘의",
+       "name_ko_classic": "오브 스트랭쓰",
+       "alvl": 22,
+       "levelreq": 16,
+       "mods_ko": [
+        "힘 +2"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "민첩",
+     "affixes": [
+      {
+       "name_en": "of Dexterity",
+       "name_ko": "민첩의",
+       "name_ko_classic": "오브 덱스터리티",
+       "alvl": 7,
+       "levelreq": 5,
+       "mods_ko": [
+        "민첩 +1"
+       ]
+      },
+      {
+       "name_en": "of Dexterity",
+       "name_ko": "민첩의",
+       "name_ko_classic": "오브 덱스터리티",
+       "alvl": 22,
+       "levelreq": 16,
+       "mods_ko": [
+        "민첩 +2"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "기타",
+     "affixes": [
+      {
+       "name_en": "of Flame",
+       "name_ko": "불꽃의",
+       "name_ko_classic": "오브 플래임",
+       "alvl": 11,
+       "levelreq": 8,
+       "mods_ko": [
+        "최소 화염 데미지 +1",
+        "최대 화염 데미지 +2"
+       ]
+      },
+      {
+       "name_en": "of Shock",
+       "name_ko": "충격의",
+       "name_ko_classic": "오브 쇼크",
+       "alvl": 12,
+       "levelreq": 9,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +3~6"
+       ]
+      },
+      {
+       "name_en": "of Frost",
+       "name_ko": "서리의",
+       "name_ko_classic": "오브 프로스트",
+       "alvl": 14,
+       "levelreq": 10,
+       "mods_ko": [
+        "최소 냉기 데미지 +1",
+        "최대 냉기 데미지 +2"
+       ]
+      },
+      {
+       "name_en": "of Fire",
+       "name_ko": "불의",
+       "name_ko_classic": "오브 파이어",
+       "alvl": 20,
+       "levelreq": 15,
+       "mods_ko": [
+        "최소 화염 데미지 +2",
+        "최대 화염 데미지 +3~4"
+       ]
+      },
+      {
+       "name_en": "of the Icicle",
+       "name_ko": "고드름의",
+       "name_ko_classic": "오브 아이시클",
+       "alvl": 21,
+       "levelreq": 15,
+       "mods_ko": [
+        "최소 냉기 데미지 +2",
+        "최대 냉기 데미지 +3~4"
+       ]
+      },
+      {
+       "name_en": "of Lightning",
+       "name_ko": "번개의",
+       "name_ko_classic": "오브 라이트닝",
+       "alvl": 21,
+       "levelreq": 15,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +7~10"
+       ]
+      },
+      {
+       "name_en": "of Burning",
+       "name_ko": "작열의",
+       "name_ko_classic": "오브 버닝",
+       "alvl": 32,
+       "levelreq": 24,
+       "mods_ko": [
+        "최소 화염 데미지 +3~4",
+        "최대 화염 데미지 +5~8"
+       ]
+      },
+      {
+       "name_en": "of the Glacier",
+       "name_ko": "빙하의",
+       "name_ko_classic": "오브 더 글래시어",
+       "alvl": 33,
+       "levelreq": 25,
+       "mods_ko": [
+        "최소 냉기 데미지 +3",
+        "최대 냉기 데미지 +5~6"
+       ]
+      },
+      {
+       "name_en": "of Thunder",
+       "name_ko": "천둥의",
+       "name_ko_classic": "오브 선더",
+       "alvl": 33,
+       "levelreq": 25,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +11~18"
+       ]
+      },
+      {
+       "name_en": "of Incineration",
+       "name_ko": "소각의",
+       "name_ko_classic": "오브 인시너레이션",
+       "alvl": 45,
+       "levelreq": 37,
+       "mods_ko": [
+        "최소 화염 데미지 +5~7",
+        "최대 화염 데미지 +9~13"
+       ]
+      },
+      {
+       "name_en": "of Storms",
+       "name_ko": "폭풍의",
+       "name_ko_classic": "오브 스톰스",
+       "alvl": 45,
+       "levelreq": 37,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +19~28"
+       ]
+      },
+      {
+       "name_en": "of Winter",
+       "name_ko": "겨울의",
+       "name_ko_classic": "오브 윈터",
+       "alvl": 46,
+       "levelreq": 38,
+       "mods_ko": [
+        "최소 냉기 데미지 +4~5",
+        "최대 냉기 데미지 +7~9"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "mcha",
+   "name_ko": "큰 부적",
+   "prefixes": [
+    {
+     "label": "마나",
+     "affixes": [
+      {
+       "name_en": "Lizard's",
+       "name_ko": "도마뱀의",
+       "name_ko_classic": "리자즈",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "마나 +2~4"
+       ]
+      },
+      {
+       "name_en": "Lizard's",
+       "name_ko": "도마뱀의",
+       "name_ko_classic": "리자즈",
+       "alvl": 9,
+       "levelreq": 6,
+       "mods_ko": [
+        "마나 +5~7"
+       ]
+      },
+      {
+       "name_en": "Lizard's",
+       "name_ko": "도마뱀의",
+       "name_ko_classic": "리자즈",
+       "alvl": 17,
+       "levelreq": 12,
+       "mods_ko": [
+        "마나 +8~12"
+       ]
+      },
+      {
+       "name_en": "Snake's",
+       "name_ko": "뱀의",
+       "name_ko_classic": "스네익스",
+       "alvl": 25,
+       "levelreq": 18,
+       "mods_ko": [
+        "마나 +13~18"
+       ]
+      },
+      {
+       "name_en": "Snake's",
+       "name_ko": "뱀의",
+       "name_ko_classic": "스네익스",
+       "alvl": 33,
+       "levelreq": 25,
+       "mods_ko": [
+        "마나 +19~23"
+       ]
+      },
+      {
+       "name_en": "Serpent's",
+       "name_ko": "구렁이의",
+       "name_ko_classic": "서펀츠",
+       "alvl": 41,
+       "levelreq": 33,
+       "mods_ko": [
+        "마나 +24~29"
+       ]
+      },
+      {
+       "name_en": "Serpent's",
+       "name_ko": "구렁이의",
+       "name_ko_classic": "서펀츠",
+       "alvl": 49,
+       "levelreq": 41,
+       "mods_ko": [
+        "마나 +30~34"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "방어력",
+     "affixes": [
+      {
+       "name_en": "Stout",
+       "name_ko": "강건한",
+       "name_ko_classic": "스타우트",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "방어력 +2~3"
+       ]
+      },
+      {
+       "name_en": "Stout",
+       "name_ko": "강건한",
+       "name_ko_classic": "스타우트",
+       "alvl": 14,
+       "levelreq": 10,
+       "mods_ko": [
+        "방어력 +4~6"
+       ]
+      },
+      {
+       "name_en": "Stout",
+       "name_ko": "강건한",
+       "name_ko_classic": "스타우트",
+       "alvl": 20,
+       "levelreq": 15,
+       "mods_ko": [
+        "방어력 +8~12"
+       ]
+      },
+      {
+       "name_en": "Burly",
+       "name_ko": "훤칠한",
+       "name_ko_classic": "버얼리",
+       "alvl": 26,
+       "levelreq": 19,
+       "mods_ko": [
+        "방어력 +13~18"
+       ]
+      },
+      {
+       "name_en": "Burly",
+       "name_ko": "훤칠한",
+       "name_ko_classic": "버얼리",
+       "alvl": 32,
+       "levelreq": 24,
+       "mods_ko": [
+        "방어력 +20~30"
+       ]
+      },
+      {
+       "name_en": "Stalwart",
+       "name_ko": "건장한",
+       "name_ko_classic": "스톨워트",
+       "alvl": 38,
+       "levelreq": 30,
+       "mods_ko": [
+        "방어력 +30~40"
+       ]
+      },
+      {
+       "name_en": "Stalwart",
+       "name_ko": "건장한",
+       "name_ko_classic": "스톨워트",
+       "alvl": 45,
+       "levelreq": 37,
+       "mods_ko": [
+        "방어력 +45~60"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "공격 등급",
+     "affixes": [
+      {
+       "name_en": "Bronze",
+       "name_ko": "청동의",
+       "name_ko_classic": "브론즈",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "명중률 +4~8"
+       ]
+      },
+      {
+       "name_en": "Bronze",
+       "name_ko": "청동의",
+       "name_ko_classic": "브론즈",
+       "alvl": 7,
+       "levelreq": 5,
+       "mods_ko": [
+        "명중률 +6~12"
+       ]
+      },
+      {
+       "name_en": "Bronze",
+       "name_ko": "청동의",
+       "name_ko_classic": "브론즈",
+       "alvl": 16,
+       "levelreq": 12,
+       "mods_ko": [
+        "명중률 +13~25"
+       ]
+      },
+      {
+       "name_en": "Fine",
+       "name_ko": "우수한",
+       "name_ko_classic": "파인",
+       "alvl": 19,
+       "levelreq": 14,
+       "mods_ko": [
+        "최대 데미지 +1~3",
+        "명중률 +10~20"
+       ]
+      },
+      {
+       "name_en": "Iron",
+       "name_ko": "철의",
+       "name_ko_classic": "아이언",
+       "alvl": 25,
+       "levelreq": 18,
+       "mods_ko": [
+        "명중률 +26~38"
+       ]
+      },
+      {
+       "name_en": "Sharp",
+       "name_ko": "날카로운",
+       "name_ko_classic": "샤프",
+       "alvl": 28,
+       "levelreq": 21,
+       "mods_ko": [
+        "최대 데미지 +4~6",
+        "명중률 +21~48"
+       ]
+      },
+      {
+       "name_en": "Iron",
+       "name_ko": "철의",
+       "name_ko_classic": "아이언",
+       "alvl": 34,
+       "levelreq": 26,
+       "mods_ko": [
+        "명중률 +39~51"
+       ]
+      },
+      {
+       "name_en": "Steel",
+       "name_ko": "강철의",
+       "name_ko_classic": "스틸",
+       "alvl": 43,
+       "levelreq": 36,
+       "mods_ko": [
+        "명중률 +52~64"
+       ]
+      },
+      {
+       "name_en": "Steel",
+       "name_ko": "강철의",
+       "name_ko_classic": "스틸",
+       "alvl": 52,
+       "levelreq": 44,
+       "mods_ko": [
+        "명중률 +65~77"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "최대 데미지",
+     "affixes": [
+      {
+       "name_en": "Jagged",
+       "name_ko": "톱날의",
+       "name_ko_classic": "재기드",
+       "alvl": 22,
+       "levelreq": 16,
+       "mods_ko": [
+        "최대 데미지 +1"
+       ]
+      },
+      {
+       "name_en": "Forked",
+       "name_ko": "갈린",
+       "name_ko_classic": "포크트",
+       "alvl": 52,
+       "levelreq": 44,
+       "mods_ko": [
+        "최대 데미지 +2"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "최소 데미지",
+     "affixes": [
+      {
+       "name_en": "Red",
+       "name_ko": "붉은색",
+       "name_ko_classic": "레드",
+       "alvl": 30,
+       "levelreq": 22,
+       "mods_ko": [
+        "최소 데미지 +1"
+       ]
+      },
+      {
+       "name_en": "Sanguinary",
+       "name_ko": "유혈의",
+       "name_ko_classic": "생궈너리",
+       "alvl": 60,
+       "levelreq": 52,
+       "mods_ko": [
+        "최소 데미지 +2"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "독 데미지",
+     "affixes": [
+      {
+       "name_en": "Septic",
+       "name_ko": "패혈성의",
+       "name_ko_classic": "셉틱",
+       "alvl": 9,
+       "levelreq": 6,
+       "mods_ko": [
+        "독 데미지 +35~35 (3초)"
+       ]
+      },
+      {
+       "name_en": "Foul",
+       "name_ko": "더러운",
+       "name_ko_classic": "파울",
+       "alvl": 26,
+       "levelreq": 19,
+       "mods_ko": [
+        "독 데미지 +77~77 (4초)"
+       ]
+      },
+      {
+       "name_en": "Toxic",
+       "name_ko": "독성의",
+       "name_ko_classic": "톡시크",
+       "alvl": 46,
+       "levelreq": 38,
+       "mods_ko": [
+        "독 데미지 +185~185 (5초)"
+       ]
+      },
+      {
+       "name_en": "Pestilent",
+       "name_ko": "질병의",
+       "name_ko_classic": "페스털런트",
+       "alvl": 66,
+       "levelreq": 58,
+       "mods_ko": [
+        "독 데미지 +299~299 (6초)"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "모든 저항",
+     "affixes": [
+      {
+       "name_en": "Shimmering",
+       "name_ko": "반작이는",
+       "name_ko_classic": "쉬머링",
+       "alvl": 17,
+       "max_alvl": 33,
+       "levelreq": 12,
+       "mods_ko": [
+        "모든 저항 +3~5%"
+       ]
+      },
+      {
+       "name_en": "Shimmering",
+       "name_ko": "반작이는",
+       "name_ko_classic": "쉬머링",
+       "alvl": 34,
+       "levelreq": 26,
+       "mods_ko": [
+        "모든 저항 +6~8%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "화염 저항",
+     "affixes": [
+      {
+       "name_en": "Crimson",
+       "name_ko": "심홍색",
+       "name_ko_classic": "크림슨",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "화염 저항 +4~7%"
+       ]
+      },
+      {
+       "name_en": "Russet",
+       "name_ko": "적갈색",
+       "name_ko_classic": "러셋",
+       "alvl": 16,
+       "levelreq": 12,
+       "mods_ko": [
+        "화염 저항 +8~10%"
+       ]
+      },
+      {
+       "name_en": "Garnet",
+       "name_ko": "석류석",
+       "name_ko_classic": "가넷",
+       "alvl": 25,
+       "levelreq": 18,
+       "mods_ko": [
+        "화염 저항 +11~12%"
+       ]
+      },
+      {
+       "name_en": "Ruby",
+       "name_ko": "루비색",
+       "name_ko_classic": "루비",
+       "alvl": 35,
+       "levelreq": 27,
+       "mods_ko": [
+        "화염 저항 +13~15%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "번개 저항",
+     "affixes": [
+      {
+       "name_en": "Tangerine",
+       "name_ko": "귤색",
+       "name_ko_classic": "텐저린",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "번개 저항 +4~7%"
+       ]
+      },
+      {
+       "name_en": "Ocher",
+       "name_ko": "황갈색",
+       "name_ko_classic": "오우커",
+       "alvl": 16,
+       "levelreq": 12,
+       "mods_ko": [
+        "번개 저항 +8~10%"
+       ]
+      },
+      {
+       "name_en": "Coral",
+       "name_ko": "산호색",
+       "name_ko_classic": "코럴",
+       "alvl": 25,
+       "levelreq": 18,
+       "mods_ko": [
+        "번개 저항 +11~12%"
+       ]
+      },
+      {
+       "name_en": "Amber",
+       "name_ko": "호박색",
+       "name_ko_classic": "앰버",
+       "alvl": 35,
+       "levelreq": 27,
+       "mods_ko": [
+        "번개 저항 +13~15%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "냉기 저항",
+     "affixes": [
+      {
+       "name_en": "Azure",
+       "name_ko": "하늘색",
+       "name_ko_classic": "에이져",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "냉기 저항 +4~7%"
+       ]
+      },
+      {
+       "name_en": "Lapis",
+       "name_ko": "청금석",
+       "name_ko_classic": "래피스",
+       "alvl": 16,
+       "levelreq": 12,
+       "mods_ko": [
+        "냉기 저항 +8~10%"
+       ]
+      },
+      {
+       "name_en": "Cobalt",
+       "name_ko": "군청색",
+       "name_ko_classic": "코발트",
+       "alvl": 25,
+       "levelreq": 18,
+       "mods_ko": [
+        "냉기 저항 +11~12%"
+       ]
+      },
+      {
+       "name_en": "Sapphire",
+       "name_ko": "사파이어색",
+       "name_ko_classic": "사파이어",
+       "alvl": 35,
+       "levelreq": 27,
+       "mods_ko": [
+        "냉기 저항 +13~15%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "독 저항",
+     "affixes": [
+      {
+       "name_en": "Beryl",
+       "name_ko": "녹주색",
+       "name_ko_classic": "베럴",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "독 저항 +4~7%"
+       ]
+      },
+      {
+       "name_en": "Viridian",
+       "name_ko": "청록색",
+       "name_ko_classic": "비리디언",
+       "alvl": 16,
+       "levelreq": 12,
+       "mods_ko": [
+        "독 저항 +8~10%"
+       ]
+      },
+      {
+       "name_en": "Jade",
+       "name_ko": "비취색",
+       "name_ko_classic": "제이드",
+       "alvl": 25,
+       "levelreq": 18,
+       "mods_ko": [
+        "독 저항 +11~12%"
+       ]
+      },
+      {
+       "name_en": "Emerald",
+       "name_ko": "에메랄드색",
+       "name_ko_classic": "에머랄드",
+       "alvl": 35,
+       "levelreq": 27,
+       "mods_ko": [
+        "독 저항 +13~15%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "마법 아이템 발견",
+     "affixes": [
+      {
+       "name_en": "Lucky",
+       "name_ko": "길운의",
+       "name_ko_classic": "럭키",
+       "alvl": 34,
+       "levelreq": 1,
+       "mods_ko": [
+        "마법 아이템 발견 확률 1% 증가"
+       ]
+      },
+      {
+       "name_en": "Lucky",
+       "name_ko": "길운의",
+       "name_ko_classic": "럭키",
+       "alvl": 51,
+       "levelreq": 1,
+       "mods_ko": [
+        "마법 아이템 발견 확률 4~6% 증가"
+       ]
+      },
+      {
+       "name_en": "Lucky",
+       "name_ko": "길운의",
+       "name_ko_classic": "럭키",
+       "alvl": 53,
+       "levelreq": 1,
+       "mods_ko": [
+        "마법 아이템 발견 확률 2~3% 증가"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "지구력",
+     "affixes": [
+      {
+       "name_en": "Rugged",
+       "name_ko": "다부진",
+       "name_ko_classic": "러기드",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "최대 지구력 +8~16"
+       ]
+      },
+      {
+       "name_en": "Rugged",
+       "name_ko": "다부진",
+       "name_ko_classic": "러기드",
+       "alvl": 7,
+       "levelreq": 5,
+       "mods_ko": [
+        "최대 지구력 +17~25"
+       ]
+      },
+      {
+       "name_en": "Rugged",
+       "name_ko": "다부진",
+       "name_ko_classic": "러기드",
+       "alvl": 21,
+       "levelreq": 15,
+       "mods_ko": [
+        "최대 지구력 +26~32"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "기타",
+     "affixes": [
+      {
+       "name_en": "Fiery",
+       "name_ko": "불 같은",
+       "name_ko_classic": "파이어리",
+       "alvl": 13,
+       "levelreq": 9,
+       "mods_ko": [
+        "최소 화염 데미지 +1",
+        "최대 화염 데미지 +2~3"
+       ]
+      },
+      {
+       "name_en": "Static",
+       "name_ko": "정전기의",
+       "name_ko_classic": "스태틱",
+       "alvl": 14,
+       "levelreq": 10,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +5~9"
+       ]
+      },
+      {
+       "name_en": "Snowy",
+       "name_ko": "눈발의",
+       "name_ko_classic": "스노우",
+       "alvl": 18,
+       "levelreq": 13,
+       "mods_ko": [
+        "최소 냉기 데미지 +2~3",
+        "최대 냉기 데미지 +3~5"
+       ]
+      },
+      {
+       "name_en": "Smoldering",
+       "name_ko": "타오르는",
+       "name_ko_classic": "스모울더링",
+       "alvl": 27,
+       "levelreq": 20,
+       "mods_ko": [
+        "최소 화염 데미지 +2~3",
+        "최대 화염 데미지 +4~12"
+       ]
+      },
+      {
+       "name_en": "Glowing",
+       "name_ko": "이채로운",
+       "name_ko_classic": "글로잉",
+       "alvl": 28,
+       "levelreq": 20,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +10~26"
+       ]
+      },
+      {
+       "name_en": "Shivering",
+       "name_ko": "오한의",
+       "name_ko_classic": "쉬버링",
+       "alvl": 29,
+       "levelreq": 21,
+       "mods_ko": [
+        "최소 냉기 데미지 +4~5",
+        "최대 냉기 데미지 +6~10"
+       ]
+      },
+      {
+       "name_en": "Smoking",
+       "name_ko": "연기 나는",
+       "name_ko_classic": "스모킹",
+       "alvl": 47,
+       "levelreq": 39,
+       "mods_ko": [
+        "최소 화염 데미지 +4~9",
+        "최대 화염 데미지 +13~27"
+       ]
+      },
+      {
+       "name_en": "Arcing",
+       "name_ko": "뻗어나가는",
+       "name_ko_classic": "아킹",
+       "alvl": 48,
+       "levelreq": 40,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +27~58"
+       ]
+      },
+      {
+       "name_en": "Boreal",
+       "name_ko": "북녘의",
+       "name_ko_classic": "보오리얼",
+       "alvl": 49,
+       "levelreq": 41,
+       "mods_ko": [
+        "최소 냉기 데미지 +6~10",
+        "최대 냉기 데미지 +11~20"
+       ]
+      },
+      {
+       "name_en": "Flaming",
+       "name_ko": "불타오르는",
+       "name_ko_classic": "플레이밍",
+       "alvl": 67,
+       "levelreq": 59,
+       "mods_ko": [
+        "최소 화염 데미지 +10~27",
+        "최대 화염 데미지 +28~43"
+       ]
+      },
+      {
+       "name_en": "Shocking",
+       "name_ko": "충격적인",
+       "name_ko_classic": "샤킹",
+       "alvl": 68,
+       "levelreq": 60,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +59~90"
+       ]
+      },
+      {
+       "name_en": "Hibernal",
+       "name_ko": "동절의",
+       "name_ko_classic": "하이버널",
+       "alvl": 69,
+       "levelreq": 61,
+       "mods_ko": [
+        "최소 냉기 데미지 +11~15",
+        "최대 냉기 데미지 +21~30"
+       ]
+      }
+     ]
+    }
+   ],
+   "suffixes": [
+    {
+     "label": "생명력",
+     "affixes": [
+      {
+       "name_en": "of Life",
+       "name_ko": "생명력의",
+       "name_ko_classic": "오브 라이프",
+       "alvl": 1,
+       "levelreq": 9,
+       "mods_ko": [
+        "생명력 +6~10"
+       ]
+      },
+      {
+       "name_en": "of Life",
+       "name_ko": "생명력의",
+       "name_ko_classic": "오브 라이프",
+       "alvl": 12,
+       "levelreq": 9,
+       "mods_ko": [
+        "생명력 +11~15"
+       ]
+      },
+      {
+       "name_en": "of Sustenance",
+       "name_ko": "자양의",
+       "name_ko_classic": "오브 서스터넌스",
+       "alvl": 26,
+       "levelreq": 19,
+       "mods_ko": [
+        "생명력 +16~20"
+       ]
+      },
+      {
+       "name_en": "of Sustenance",
+       "name_ko": "자양의",
+       "name_ko_classic": "오브 서스터넌스",
+       "alvl": 42,
+       "levelreq": 34,
+       "mods_ko": [
+        "생명력 +21~25"
+       ]
+      },
+      {
+       "name_en": "of Vita",
+       "name_ko": "활기의",
+       "name_ko_classic": "오브 비타",
+       "alvl": 58,
+       "levelreq": 50,
+       "mods_ko": [
+        "생명력 +26~30"
+       ]
+      },
+      {
+       "name_en": "of Vita",
+       "name_ko": "활기의",
+       "name_ko_classic": "오브 비타",
+       "alvl": 74,
+       "levelreq": 66,
+       "mods_ko": [
+        "생명력 +31~35"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "최대 데미지",
+     "affixes": [
+      {
+       "name_en": "of Craftmanship",
+       "name_ko": "세공술의",
+       "name_ko_classic": "오브 크래프트맨십",
+       "alvl": 26,
+       "levelreq": 19,
+       "mods_ko": [
+        "최대 데미지 +1"
+       ]
+      },
+      {
+       "name_en": "of Quality",
+       "name_ko": "품질의",
+       "name_ko_classic": "오브 퀄리티",
+       "alvl": 56,
+       "levelreq": 48,
+       "mods_ko": [
+        "최대 데미지 +2"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "독 데미지",
+     "affixes": [
+      {
+       "name_en": "of Blight",
+       "name_ko": "괴멸의",
+       "name_ko_classic": "오브 블라이트",
+       "alvl": 5,
+       "levelreq": 3,
+       "mods_ko": [
+        "독 데미지 +21~21 (3초)"
+       ]
+      },
+      {
+       "name_en": "of Venom",
+       "name_ko": "맹독의",
+       "name_ko_classic": "오브 베넘",
+       "alvl": 13,
+       "levelreq": 9,
+       "mods_ko": [
+        "독 데미지 +39~39 (4초)"
+       ]
+      },
+      {
+       "name_en": "of Pestilence",
+       "name_ko": "해충의",
+       "name_ko_classic": "오브 페스털런스",
+       "alvl": 23,
+       "levelreq": 17,
+       "mods_ko": [
+        "독 데미지 +52~52 (5초)"
+       ]
+      },
+      {
+       "name_en": "of Anthrax",
+       "name_ko": "탄저병의",
+       "name_ko_classic": "오브 앤쓰랙스",
+       "alvl": 33,
+       "levelreq": 25,
+       "mods_ko": [
+        "독 데미지 +86~86 (6초)"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "타격 회복 속도",
+     "affixes": [
+      {
+       "name_en": "of Balance",
+       "name_ko": "균형의",
+       "name_ko_classic": "오브 밸런스",
+       "alvl": 19,
+       "levelreq": 14,
+       "mods_ko": [
+        "타격 회복 속도 +8%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "달리기/걷기 속도",
+     "affixes": [
+      {
+       "name_en": "of Inertia",
+       "name_ko": "관성의",
+       "name_ko_classic": "오브 이너시어",
+       "alvl": 24,
+       "levelreq": 18,
+       "mods_ko": [
+        "달리기/걷기 속도 +5%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "골드 획득",
+     "affixes": [
+      {
+       "name_en": "of Greed",
+       "name_ko": "욕심의",
+       "name_ko_classic": "오브 그리드",
+       "alvl": 1,
+       "levelreq": 5,
+       "mods_ko": [
+        "괴물에게서 얻는 금화 5~10% 증가"
+       ]
+      },
+      {
+       "name_en": "of Greed",
+       "name_ko": "욕심의",
+       "name_ko_classic": "오브 그리드",
+       "alvl": 20,
+       "levelreq": 15,
+       "mods_ko": [
+        "괴물에게서 얻는 금화 11~22% 증가"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "힘",
+     "affixes": [
+      {
+       "name_en": "of Strength",
+       "name_ko": "힘의",
+       "name_ko_classic": "오브 스트랭쓰",
+       "alvl": 3,
+       "levelreq": 2,
+       "mods_ko": [
+        "힘 +2~3"
+       ]
+      },
+      {
+       "name_en": "of Strength",
+       "name_ko": "힘의",
+       "name_ko_classic": "오브 스트랭쓰",
+       "alvl": 18,
+       "levelreq": 13,
+       "mods_ko": [
+        "힘 +4~5"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "민첩",
+     "affixes": [
+      {
+       "name_en": "of Dexterity",
+       "name_ko": "민첩의",
+       "name_ko_classic": "오브 덱스터리티",
+       "alvl": 3,
+       "levelreq": 2,
+       "mods_ko": [
+        "민첩 +2~3"
+       ]
+      },
+      {
+       "name_en": "of Dexterity",
+       "name_ko": "민첩의",
+       "name_ko_classic": "오브 덱스터리티",
+       "alvl": 18,
+       "levelreq": 13,
+       "mods_ko": [
+        "민첩 +4~5"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "기타",
+     "affixes": [
+      {
+       "name_en": "of Flame",
+       "name_ko": "불꽃의",
+       "name_ko_classic": "오브 플래임",
+       "alvl": 7,
+       "levelreq": 5,
+       "mods_ko": [
+        "최소 화염 데미지 +1",
+        "최대 화염 데미지 +2"
+       ]
+      },
+      {
+       "name_en": "of Shock",
+       "name_ko": "충격의",
+       "name_ko_classic": "오브 쇼크",
+       "alvl": 7,
+       "levelreq": 5,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +3~5"
+       ]
+      },
+      {
+       "name_en": "of Frost",
+       "name_ko": "서리의",
+       "name_ko_classic": "오브 프로스트",
+       "alvl": 9,
+       "levelreq": 6,
+       "mods_ko": [
+        "최소 냉기 데미지 +1",
+        "최대 냉기 데미지 +2~3"
+       ]
+      },
+      {
+       "name_en": "of Fire",
+       "name_ko": "불의",
+       "name_ko_classic": "오브 파이어",
+       "alvl": 14,
+       "levelreq": 10,
+       "mods_ko": [
+        "최소 화염 데미지 +2",
+        "최대 화염 데미지 +3~5"
+       ]
+      },
+      {
+       "name_en": "of Lightning",
+       "name_ko": "번개의",
+       "name_ko_classic": "오브 라이트닝",
+       "alvl": 14,
+       "levelreq": 10,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +6~13"
+       ]
+      },
+      {
+       "name_en": "of the Icicle",
+       "name_ko": "고드름의",
+       "name_ko_classic": "오브 아이시클",
+       "alvl": 15,
+       "levelreq": 11,
+       "mods_ko": [
+        "최소 냉기 데미지 +2",
+        "최대 냉기 데미지 +4~5"
+       ]
+      },
+      {
+       "name_en": "of Burning",
+       "name_ko": "작열의",
+       "name_ko_classic": "오브 버닝",
+       "alvl": 24,
+       "levelreq": 18,
+       "mods_ko": [
+        "최소 화염 데미지 +3~5",
+        "최대 화염 데미지 +6~11"
+       ]
+      },
+      {
+       "name_en": "of Thunder",
+       "name_ko": "천둥의",
+       "name_ko_classic": "오브 선더",
+       "alvl": 24,
+       "levelreq": 18,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +14~25"
+       ]
+      },
+      {
+       "name_en": "of the Glacier",
+       "name_ko": "빙하의",
+       "name_ko_classic": "오브 더 글래시어",
+       "alvl": 25,
+       "levelreq": 18,
+       "mods_ko": [
+        "최소 냉기 데미지 +3",
+        "최대 냉기 데미지 +6~8"
+       ]
+      },
+      {
+       "name_en": "of Incineration",
+       "name_ko": "소각의",
+       "name_ko_classic": "오브 인시너레이션",
+       "alvl": 34,
+       "levelreq": 26,
+       "mods_ko": [
+        "최소 화염 데미지 +6~10",
+        "최대 화염 데미지 +12~17"
+       ]
+      },
+      {
+       "name_en": "of Storms",
+       "name_ko": "폭풍의",
+       "name_ko_classic": "오브 스톰스",
+       "alvl": 34,
+       "levelreq": 26,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +26~38"
+       ]
+      },
+      {
+       "name_en": "of Winter",
+       "name_ko": "겨울의",
+       "name_ko_classic": "오브 윈터",
+       "alvl": 35,
+       "levelreq": 27,
+       "mods_ko": [
+        "최소 냉기 데미지 +4~6",
+        "최대 냉기 데미지 +9~12"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "lcha",
+   "name_ko": "거대 부적",
+   "prefixes": [
+    {
+     "label": "마나",
+     "affixes": [
+      {
+       "name_en": "Lizard's",
+       "name_ko": "도마뱀의",
+       "name_ko_classic": "리자즈",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "마나 +3~7"
+       ]
+      },
+      {
+       "name_en": "Lizard's",
+       "name_ko": "도마뱀의",
+       "name_ko_classic": "리자즈",
+       "alvl": 7,
+       "levelreq": 5,
+       "mods_ko": [
+        "마나 +8~13"
+       ]
+      },
+      {
+       "name_en": "Lizard's",
+       "name_ko": "도마뱀의",
+       "name_ko_classic": "리자즈",
+       "alvl": 13,
+       "levelreq": 9,
+       "mods_ko": [
+        "마나 +14~20"
+       ]
+      },
+      {
+       "name_en": "Snake's",
+       "name_ko": "뱀의",
+       "name_ko_classic": "스네익스",
+       "alvl": 19,
+       "levelreq": 14,
+       "mods_ko": [
+        "마나 +21~26"
+       ]
+      },
+      {
+       "name_en": "Snake's",
+       "name_ko": "뱀의",
+       "name_ko_classic": "스네익스",
+       "alvl": 25,
+       "levelreq": 18,
+       "mods_ko": [
+        "마나 +27~33"
+       ]
+      },
+      {
+       "name_en": "Snake's",
+       "name_ko": "뱀의",
+       "name_ko_classic": "스네익스",
+       "alvl": 31,
+       "levelreq": 23,
+       "mods_ko": [
+        "마나 +34~39"
+       ]
+      },
+      {
+       "name_en": "Serpent's",
+       "name_ko": "구렁이의",
+       "name_ko_classic": "서펀츠",
+       "alvl": 37,
+       "levelreq": 29,
+       "mods_ko": [
+        "마나 +40~46"
+       ]
+      },
+      {
+       "name_en": "Serpent's",
+       "name_ko": "구렁이의",
+       "name_ko_classic": "서펀츠",
+       "alvl": 43,
+       "levelreq": 35,
+       "mods_ko": [
+        "마나 +47~52"
+       ]
+      },
+      {
+       "name_en": "Serpent's",
+       "name_ko": "구렁이의",
+       "name_ko_classic": "서펀츠",
+       "alvl": 49,
+       "levelreq": 41,
+       "mods_ko": [
+        "마나 +53~59"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "방어력",
+     "affixes": [
+      {
+       "name_en": "Stout",
+       "name_ko": "강건한",
+       "name_ko_classic": "스타우트",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "방어력 +3~5"
+       ]
+      },
+      {
+       "name_en": "Stout",
+       "name_ko": "강건한",
+       "name_ko_classic": "스타우트",
+       "alvl": 7,
+       "levelreq": 5,
+       "mods_ko": [
+        "방어력 +6~9"
+       ]
+      },
+      {
+       "name_en": "Stout",
+       "name_ko": "강건한",
+       "name_ko_classic": "스타우트",
+       "alvl": 12,
+       "levelreq": 9,
+       "mods_ko": [
+        "방어력 +10~12"
+       ]
+      },
+      {
+       "name_en": "Burly",
+       "name_ko": "훤칠한",
+       "name_ko_classic": "버얼리",
+       "alvl": 17,
+       "levelreq": 12,
+       "mods_ko": [
+        "방어력 +13~15"
+       ]
+      },
+      {
+       "name_en": "Burly",
+       "name_ko": "훤칠한",
+       "name_ko_classic": "버얼리",
+       "alvl": 22,
+       "levelreq": 16,
+       "mods_ko": [
+        "방어력 +16~22"
+       ]
+      },
+      {
+       "name_en": "Burly",
+       "name_ko": "훤칠한",
+       "name_ko_classic": "버얼리",
+       "alvl": 27,
+       "levelreq": 20,
+       "mods_ko": [
+        "방어력 +23~30"
+       ]
+      },
+      {
+       "name_en": "Stalwart",
+       "name_ko": "건장한",
+       "name_ko_classic": "스톨워트",
+       "alvl": 32,
+       "levelreq": 24,
+       "mods_ko": [
+        "방어력 +33~40"
+       ]
+      },
+      {
+       "name_en": "Stalwart",
+       "name_ko": "건장한",
+       "name_ko_classic": "스톨워트",
+       "alvl": 37,
+       "levelreq": 29,
+       "mods_ko": [
+        "방어력 +44~50"
+       ]
+      },
+      {
+       "name_en": "Stalwart",
+       "name_ko": "건장한",
+       "name_ko_classic": "스톨워트",
+       "alvl": 42,
+       "levelreq": 34,
+       "mods_ko": [
+        "방어력 +60~100"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "공격 등급",
+     "affixes": [
+      {
+       "name_en": "Bronze",
+       "name_ko": "청동의",
+       "name_ko_classic": "브론즈",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "명중률 +6~12"
+       ]
+      },
+      {
+       "name_en": "Bronze",
+       "name_ko": "청동의",
+       "name_ko_classic": "브론즈",
+       "alvl": 7,
+       "levelreq": 5,
+       "mods_ko": [
+        "명중률 +13~27"
+       ]
+      },
+      {
+       "name_en": "Bronze",
+       "name_ko": "청동의",
+       "name_ko_classic": "브론즈",
+       "alvl": 13,
+       "levelreq": 9,
+       "mods_ko": [
+        "명중률 +28~42"
+       ]
+      },
+      {
+       "name_en": "Fine",
+       "name_ko": "우수한",
+       "name_ko_classic": "파인",
+       "alvl": 15,
+       "levelreq": 11,
+       "mods_ko": [
+        "최대 데미지 +1~3",
+        "명중률 +10~20"
+       ]
+      },
+      {
+       "name_en": "Iron",
+       "name_ko": "철의",
+       "name_ko_classic": "아이언",
+       "alvl": 19,
+       "levelreq": 14,
+       "mods_ko": [
+        "명중률 +43~57"
+       ]
+      },
+      {
+       "name_en": "Fine",
+       "name_ko": "우수한",
+       "name_ko_classic": "파인",
+       "alvl": 22,
+       "levelreq": 16,
+       "mods_ko": [
+        "최대 데미지 +4~6",
+        "명중률 +21~48"
+       ]
+      },
+      {
+       "name_en": "Iron",
+       "name_ko": "철의",
+       "name_ko_classic": "아이언",
+       "alvl": 25,
+       "levelreq": 18,
+       "mods_ko": [
+        "명중률 +58~72"
+       ]
+      },
+      {
+       "name_en": "Sharp",
+       "name_ko": "날카로운",
+       "name_ko_classic": "샤프",
+       "alvl": 29,
+       "levelreq": 21,
+       "mods_ko": [
+        "최대 데미지 +7~10",
+        "명중률 +49~76"
+       ]
+      },
+      {
+       "name_en": "Iron",
+       "name_ko": "철의",
+       "name_ko_classic": "아이언",
+       "alvl": 31,
+       "levelreq": 23,
+       "mods_ko": [
+        "명중률 +73~87"
+       ]
+      },
+      {
+       "name_en": "Steel",
+       "name_ko": "강철의",
+       "name_ko_classic": "스틸",
+       "alvl": 37,
+       "levelreq": 29,
+       "mods_ko": [
+        "명중률 +88~102"
+       ]
+      },
+      {
+       "name_en": "Steel",
+       "name_ko": "강철의",
+       "name_ko_classic": "스틸",
+       "alvl": 43,
+       "levelreq": 35,
+       "mods_ko": [
+        "명중률 +103~117"
+       ]
+      },
+      {
+       "name_en": "Steel",
+       "name_ko": "강철의",
+       "name_ko_classic": "스틸",
+       "alvl": 49,
+       "levelreq": 41,
+       "mods_ko": [
+        "명중률 +118~132"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "최대 데미지",
+     "affixes": [
+      {
+       "name_en": "Jagged",
+       "name_ko": "톱날의",
+       "name_ko_classic": "재기드",
+       "alvl": 7,
+       "levelreq": 5,
+       "mods_ko": [
+        "최대 데미지 +1"
+       ]
+      },
+      {
+       "name_en": "Forked",
+       "name_ko": "갈린",
+       "name_ko_classic": "포크트",
+       "alvl": 37,
+       "levelreq": 29,
+       "mods_ko": [
+        "최대 데미지 +2"
+       ]
+      },
+      {
+       "name_en": "Serrated",
+       "name_ko": "톱니",
+       "name_ko_classic": "세레이티드",
+       "alvl": 67,
+       "levelreq": 59,
+       "mods_ko": [
+        "최대 데미지 +3"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "최소 데미지",
+     "affixes": [
+      {
+       "name_en": "Red",
+       "name_ko": "붉은색",
+       "name_ko_classic": "레드",
+       "alvl": 15,
+       "levelreq": 11,
+       "mods_ko": [
+        "최소 데미지 +1"
+       ]
+      },
+      {
+       "name_en": "Sanguinary",
+       "name_ko": "유혈의",
+       "name_ko_classic": "생궈너리",
+       "alvl": 45,
+       "levelreq": 37,
+       "mods_ko": [
+        "최소 데미지 +2"
+       ]
+      },
+      {
+       "name_en": "Bloody",
+       "name_ko": "핏빛",
+       "name_ko_classic": "블러디",
+       "alvl": 75,
+       "levelreq": 67,
+       "mods_ko": [
+        "최소 데미지 +3"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "독 데미지",
+     "affixes": [
+      {
+       "name_en": "Septic",
+       "name_ko": "패혈성의",
+       "name_ko_classic": "셉틱",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "독 데미지 +18~18 (3초)"
+       ]
+      },
+      {
+       "name_en": "Foul",
+       "name_ko": "더러운",
+       "name_ko_classic": "파울",
+       "alvl": 12,
+       "levelreq": 9,
+       "mods_ko": [
+        "독 데미지 +39~39 (4초)"
+       ]
+      },
+      {
+       "name_en": "Toxic",
+       "name_ko": "독성의",
+       "name_ko_classic": "톡시크",
+       "alvl": 27,
+       "levelreq": 20,
+       "mods_ko": [
+        "독 데미지 +103~103 (5초)"
+       ]
+      },
+      {
+       "name_en": "Pestilent",
+       "name_ko": "질병의",
+       "name_ko_classic": "페스털런트",
+       "alvl": 42,
+       "levelreq": 34,
+       "mods_ko": [
+        "독 데미지 +171~171 (6초)"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "모든 저항",
+     "affixes": [
+      {
+       "name_en": "Shimmering",
+       "name_ko": "반작이는",
+       "name_ko_classic": "쉬머링",
+       "alvl": 8,
+       "max_alvl": 13,
+       "levelreq": 6,
+       "mods_ko": [
+        "모든 저항 +3~6%"
+       ]
+      },
+      {
+       "name_en": "Shimmering",
+       "name_ko": "반작이는",
+       "name_ko_classic": "쉬머링",
+       "alvl": 14,
+       "max_alvl": 34,
+       "levelreq": 10,
+       "mods_ko": [
+        "모든 저항 +8~12%"
+       ]
+      },
+      {
+       "name_en": "Shimmering",
+       "name_ko": "반작이는",
+       "name_ko_classic": "쉬머링",
+       "alvl": 35,
+       "levelreq": 27,
+       "mods_ko": [
+        "모든 저항 +13~15%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "화염 저항",
+     "affixes": [
+      {
+       "name_en": "Crimson",
+       "name_ko": "심홍색",
+       "name_ko_classic": "크림슨",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "화염 저항 +7~15%"
+       ]
+      },
+      {
+       "name_en": "Russet",
+       "name_ko": "적갈색",
+       "name_ko_classic": "러셋",
+       "alvl": 10,
+       "levelreq": 7,
+       "mods_ko": [
+        "화염 저항 +16~20%"
+       ]
+      },
+      {
+       "name_en": "Garnet",
+       "name_ko": "석류석",
+       "name_ko_classic": "가넷",
+       "alvl": 20,
+       "levelreq": 15,
+       "mods_ko": [
+        "화염 저항 +21~25%"
+       ]
+      },
+      {
+       "name_en": "Ruby",
+       "name_ko": "루비색",
+       "name_ko_classic": "루비",
+       "alvl": 30,
+       "levelreq": 22,
+       "mods_ko": [
+        "화염 저항 +26~30%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "번개 저항",
+     "affixes": [
+      {
+       "name_en": "Tangerine",
+       "name_ko": "귤색",
+       "name_ko_classic": "텐저린",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "번개 저항 +7~15%"
+       ]
+      },
+      {
+       "name_en": "Ocher",
+       "name_ko": "황갈색",
+       "name_ko_classic": "오우커",
+       "alvl": 10,
+       "levelreq": 7,
+       "mods_ko": [
+        "번개 저항 +16~20%"
+       ]
+      },
+      {
+       "name_en": "Coral",
+       "name_ko": "산호색",
+       "name_ko_classic": "코럴",
+       "alvl": 20,
+       "levelreq": 15,
+       "mods_ko": [
+        "번개 저항 +21~25%"
+       ]
+      },
+      {
+       "name_en": "Amber",
+       "name_ko": "호박색",
+       "name_ko_classic": "앰버",
+       "alvl": 30,
+       "levelreq": 22,
+       "mods_ko": [
+        "번개 저항 +26~30%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "냉기 저항",
+     "affixes": [
+      {
+       "name_en": "Azure",
+       "name_ko": "하늘색",
+       "name_ko_classic": "에이져",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "냉기 저항 +7~15%"
+       ]
+      },
+      {
+       "name_en": "Lapis",
+       "name_ko": "청금석",
+       "name_ko_classic": "래피스",
+       "alvl": 10,
+       "levelreq": 7,
+       "mods_ko": [
+        "냉기 저항 +16~20%"
+       ]
+      },
+      {
+       "name_en": "Cobalt",
+       "name_ko": "군청색",
+       "name_ko_classic": "코발트",
+       "alvl": 20,
+       "levelreq": 15,
+       "mods_ko": [
+        "냉기 저항 +21~25%"
+       ]
+      },
+      {
+       "name_en": "Sapphire",
+       "name_ko": "사파이어색",
+       "name_ko_classic": "사파이어",
+       "alvl": 30,
+       "levelreq": 22,
+       "mods_ko": [
+        "냉기 저항 +26~30%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "독 저항",
+     "affixes": [
+      {
+       "name_en": "Beryl",
+       "name_ko": "녹주색",
+       "name_ko_classic": "베럴",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "독 저항 +7~15%"
+       ]
+      },
+      {
+       "name_en": "Viridian",
+       "name_ko": "청록색",
+       "name_ko_classic": "비리디언",
+       "alvl": 10,
+       "levelreq": 7,
+       "mods_ko": [
+        "독 저항 +16~20%"
+       ]
+      },
+      {
+       "name_en": "Jade",
+       "name_ko": "비취색",
+       "name_ko_classic": "제이드",
+       "alvl": 20,
+       "levelreq": 15,
+       "mods_ko": [
+        "독 저항 +21~25%"
+       ]
+      },
+      {
+       "name_en": "Emerald",
+       "name_ko": "에메랄드색",
+       "name_ko_classic": "에머랄드",
+       "alvl": 30,
+       "levelreq": 22,
+       "mods_ko": [
+        "독 저항 +26~30%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "마법 아이템 발견",
+     "affixes": [
+      {
+       "name_en": "Lucky",
+       "name_ko": "길운의",
+       "name_ko_classic": "럭키",
+       "alvl": 21,
+       "levelreq": 1,
+       "mods_ko": [
+        "마법 아이템 발견 확률 1~4% 증가"
+       ]
+      },
+      {
+       "name_en": "Lucky",
+       "name_ko": "길운의",
+       "name_ko_classic": "럭키",
+       "alvl": 38,
+       "levelreq": 1,
+       "mods_ko": [
+        "마법 아이템 발견 확률 5~7% 증가"
+       ]
+      },
+      {
+       "name_en": "Lucky",
+       "name_ko": "길운의",
+       "name_ko_classic": "럭키",
+       "alvl": 55,
+       "levelreq": 1,
+       "mods_ko": [
+        "마법 아이템 발견 확률 8~12% 증가"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "지구력",
+     "affixes": [
+      {
+       "name_en": "Rugged",
+       "name_ko": "다부진",
+       "name_ko_classic": "러기드",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "최대 지구력 +12~24"
+       ]
+      },
+      {
+       "name_en": "Rugged",
+       "name_ko": "다부진",
+       "name_ko_classic": "러기드",
+       "alvl": 7,
+       "levelreq": 5,
+       "mods_ko": [
+        "최대 지구력 +25~36"
+       ]
+      },
+      {
+       "name_en": "Rugged",
+       "name_ko": "다부진",
+       "name_ko_classic": "러기드",
+       "alvl": 21,
+       "levelreq": 15,
+       "mods_ko": [
+        "최대 지구력 +37~50"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "기타",
+     "affixes": [
+      {
+       "name_en": "Fiery",
+       "name_ko": "불 같은",
+       "name_ko_classic": "파이어리",
+       "alvl": 5,
+       "levelreq": 3,
+       "mods_ko": [
+        "최소 화염 데미지 +1",
+        "최대 화염 데미지 +2~3"
+       ]
+      },
+      {
+       "name_en": "Static",
+       "name_ko": "정전기의",
+       "name_ko_classic": "스태틱",
+       "alvl": 7,
+       "levelreq": 5,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +4~5"
+       ]
+      },
+      {
+       "name_en": "Snowy",
+       "name_ko": "눈발의",
+       "name_ko_classic": "스노우",
+       "alvl": 9,
+       "levelreq": 6,
+       "mods_ko": [
+        "최소 냉기 데미지 +1",
+        "최대 냉기 데미지 +2~3"
+       ]
+      },
+      {
+       "name_en": "Glowing",
+       "name_ko": "이채로운",
+       "name_ko_classic": "글로잉",
+       "alvl": 14,
+       "levelreq": 10,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +6~17"
+       ]
+      },
+      {
+       "name_en": "Shivering",
+       "name_ko": "오한의",
+       "name_ko_classic": "쉬버링",
+       "alvl": 15,
+       "levelreq": 11,
+       "mods_ko": [
+        "최소 냉기 데미지 +2~4",
+        "최대 냉기 데미지 +4~8"
+       ]
+      },
+      {
+       "name_en": "Smoldering",
+       "name_ko": "타오르는",
+       "name_ko_classic": "스모울더링",
+       "alvl": 15,
+       "levelreq": 11,
+       "mods_ko": [
+        "최소 화염 데미지 +2~3",
+        "최대 화염 데미지 +4~7"
+       ]
+      },
+      {
+       "name_en": "Smoking",
+       "name_ko": "연기 나는",
+       "name_ko_classic": "스모킹",
+       "alvl": 28,
+       "levelreq": 21,
+       "mods_ko": [
+        "최소 화염 데미지 +4~7",
+        "최대 화염 데미지 +8~19"
+       ]
+      },
+      {
+       "name_en": "Arcing",
+       "name_ko": "뻗어나가는",
+       "name_ko_classic": "아킹",
+       "alvl": 29,
+       "levelreq": 21,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +18~44"
+       ]
+      },
+      {
+       "name_en": "Boreal",
+       "name_ko": "북녘의",
+       "name_ko_classic": "보오리얼",
+       "alvl": 30,
+       "levelreq": 22,
+       "mods_ko": [
+        "최소 냉기 데미지 +5~7",
+        "최대 냉기 데미지 +9~15"
+       ]
+      },
+      {
+       "name_en": "Flaming",
+       "name_ko": "불타오르는",
+       "name_ko_classic": "플레이밍",
+       "alvl": 43,
+       "levelreq": 35,
+       "mods_ko": [
+        "최소 화염 데미지 +8~18",
+        "최대 화염 데미지 +20~36"
+       ]
+      },
+      {
+       "name_en": "Shocking",
+       "name_ko": "충격적인",
+       "name_ko_classic": "샤킹",
+       "alvl": 44,
+       "levelreq": 36,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +45~79"
+       ]
+      },
+      {
+       "name_en": "Hibernal",
+       "name_ko": "동절의",
+       "name_ko_classic": "하이버널",
+       "alvl": 45,
+       "levelreq": 38,
+       "mods_ko": [
+        "최소 냉기 데미지 +8~13",
+        "최대 냉기 데미지 +16~25"
+       ]
+      }
+     ]
+    }
+   ],
+   "suffixes": [
+    {
+     "label": "생명력",
+     "affixes": [
+      {
+       "name_en": "of Life",
+       "name_ko": "생명력의",
+       "name_ko_classic": "오브 라이프",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "생명력 +5~10"
+       ]
+      },
+      {
+       "name_en": "of Life",
+       "name_ko": "생명력의",
+       "name_ko_classic": "오브 라이프",
+       "alvl": 9,
+       "levelreq": 6,
+       "mods_ko": [
+        "생명력 +11~15"
+       ]
+      },
+      {
+       "name_en": "of Life",
+       "name_ko": "생명력의",
+       "name_ko_classic": "오브 라이프",
+       "alvl": 19,
+       "levelreq": 14,
+       "mods_ko": [
+        "생명력 +16~20"
+       ]
+      },
+      {
+       "name_en": "of Sustenance",
+       "name_ko": "자양의",
+       "name_ko_classic": "오브 서스터넌스",
+       "alvl": 31,
+       "levelreq": 23,
+       "mods_ko": [
+        "생명력 +21~25"
+       ]
+      },
+      {
+       "name_en": "of Sustenance",
+       "name_ko": "자양의",
+       "name_ko_classic": "오브 서스터넌스",
+       "alvl": 45,
+       "levelreq": 37,
+       "mods_ko": [
+        "생명력 +26~30"
+       ]
+      },
+      {
+       "name_en": "of Sustenance",
+       "name_ko": "자양의",
+       "name_ko_classic": "오브 서스터넌스",
+       "alvl": 61,
+       "levelreq": 53,
+       "mods_ko": [
+        "생명력 +31~35"
+       ]
+      },
+      {
+       "name_en": "of Vita",
+       "name_ko": "활기의",
+       "name_ko_classic": "오브 비타",
+       "alvl": 77,
+       "levelreq": 69,
+       "mods_ko": [
+        "생명력 +36~40"
+       ]
+      },
+      {
+       "name_en": "of Vita",
+       "name_ko": "활기의",
+       "name_ko_classic": "오브 비타",
+       "alvl": 91,
+       "levelreq": 83,
+       "mods_ko": [
+        "생명력 +41~45"
+       ]
+      },
+      {
+       "name_en": "of Vita",
+       "name_ko": "활기의",
+       "name_ko_classic": "오브 비타",
+       "alvl": 110,
+       "levelreq": 97,
+       "mods_ko": [
+        "생명력 +46~50"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "최대 데미지",
+     "affixes": [
+      {
+       "name_en": "of Craftmanship",
+       "name_ko": "세공술의",
+       "name_ko_classic": "오브 크래프트맨십",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "최대 데미지 +1"
+       ]
+      },
+      {
+       "name_en": "of Quality",
+       "name_ko": "품질의",
+       "name_ko_classic": "오브 퀄리티",
+       "alvl": 41,
+       "levelreq": 33,
+       "mods_ko": [
+        "최대 데미지 +2"
+       ]
+      },
+      {
+       "name_en": "of Maiming",
+       "name_ko": "폭행의",
+       "name_ko_classic": "오브 메이밍",
+       "alvl": 71,
+       "levelreq": 63,
+       "mods_ko": [
+        "최대 데미지 +3~4"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "독 데미지",
+     "affixes": [
+      {
+       "name_en": "of Blight",
+       "name_ko": "괴멸의",
+       "name_ko_classic": "오브 블라이트",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "독 데미지 +21~21 (3초)"
+       ]
+      },
+      {
+       "name_en": "of Venom",
+       "name_ko": "맹독의",
+       "name_ko_classic": "오브 베넘",
+       "alvl": 6,
+       "levelreq": 4,
+       "mods_ko": [
+        "독 데미지 +39~39 (4초)"
+       ]
+      },
+      {
+       "name_en": "of Pestilence",
+       "name_ko": "해충의",
+       "name_ko_classic": "오브 페스털런스",
+       "alvl": 14,
+       "levelreq": 10,
+       "mods_ko": [
+        "독 데미지 +52~52 (5초)"
+       ]
+      },
+      {
+       "name_en": "of Anthrax",
+       "name_ko": "탄저병의",
+       "name_ko_classic": "오브 앤쓰랙스",
+       "alvl": 21,
+       "levelreq": 15,
+       "mods_ko": [
+        "독 데미지 +86~86 (6초)"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "타격 회복 속도",
+     "affixes": [
+      {
+       "name_en": "of Balance",
+       "name_ko": "균형의",
+       "name_ko_classic": "오브 밸런스",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "타격 회복 속도 +12%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "달리기/걷기 속도",
+     "affixes": [
+      {
+       "name_en": "of Inertia",
+       "name_ko": "관성의",
+       "name_ko_classic": "오브 이너시어",
+       "alvl": 19,
+       "levelreq": 14,
+       "mods_ko": [
+        "달리기/걷기 속도 +7%"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "골드 획득",
+     "affixes": [
+      {
+       "name_en": "of Greed",
+       "name_ko": "욕심의",
+       "name_ko_classic": "오브 그리드",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "괴물에게서 얻는 금화 10~20% 증가"
+       ]
+      },
+      {
+       "name_en": "of Greed",
+       "name_ko": "욕심의",
+       "name_ko_classic": "오브 그리드",
+       "alvl": 7,
+       "levelreq": 5,
+       "mods_ko": [
+        "괴물에게서 얻는 금화 21~30% 증가"
+       ]
+      },
+      {
+       "name_en": "of Greed",
+       "name_ko": "욕심의",
+       "name_ko_classic": "오브 그리드",
+       "alvl": 19,
+       "levelreq": 14,
+       "mods_ko": [
+        "괴물에게서 얻는 금화 31~40% 증가"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "힘",
+     "affixes": [
+      {
+       "name_en": "of Strength",
+       "name_ko": "힘의",
+       "name_ko_classic": "오브 스트랭쓰",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "힘 +3~4"
+       ]
+      },
+      {
+       "name_en": "of Strength",
+       "name_ko": "힘의",
+       "name_ko_classic": "오브 스트랭쓰",
+       "alvl": 14,
+       "levelreq": 10,
+       "mods_ko": [
+        "힘 +5~6"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "민첩",
+     "affixes": [
+      {
+       "name_en": "of Dexterity",
+       "name_ko": "민첩의",
+       "name_ko_classic": "오브 덱스터리티",
+       "alvl": 1,
+       "levelreq": 1,
+       "mods_ko": [
+        "민첩 +3~4"
+       ]
+      },
+      {
+       "name_en": "of Dexterity",
+       "name_ko": "민첩의",
+       "name_ko_classic": "오브 덱스터리티",
+       "alvl": 14,
+       "levelreq": 10,
+       "mods_ko": [
+        "민첩 +5~6"
+       ]
+      }
+     ]
+    },
+    {
+     "label": "기타",
+     "affixes": [
+      {
+       "name_en": "of Flame",
+       "name_ko": "불꽃의",
+       "name_ko_classic": "오브 플래임",
+       "alvl": 3,
+       "levelreq": 2,
+       "mods_ko": [
+        "최소 화염 데미지 +1",
+        "최대 화염 데미지 +2"
+       ]
+      },
+      {
+       "name_en": "of Shock",
+       "name_ko": "충격의",
+       "name_ko_classic": "오브 쇼크",
+       "alvl": 4,
+       "levelreq": 3,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +2~3"
+       ]
+      },
+      {
+       "name_en": "of Frost",
+       "name_ko": "서리의",
+       "name_ko_classic": "오브 프로스트",
+       "alvl": 5,
+       "levelreq": 3,
+       "mods_ko": [
+        "최소 냉기 데미지 +1",
+        "최대 냉기 데미지 +2"
+       ]
+      },
+      {
+       "name_en": "of Lightning",
+       "name_ko": "번개의",
+       "name_ko_classic": "오브 라이트닝",
+       "alvl": 7,
+       "levelreq": 5,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +4~7"
+       ]
+      },
+      {
+       "name_en": "of the Icicle",
+       "name_ko": "고드름의",
+       "name_ko_classic": "오브 아이시클",
+       "alvl": 8,
+       "levelreq": 6,
+       "mods_ko": [
+        "최소 냉기 데미지 +2",
+        "최대 냉기 데미지 +3~4"
+       ]
+      },
+      {
+       "name_en": "of Fire",
+       "name_ko": "불의",
+       "name_ko_classic": "오브 파이어",
+       "alvl": 8,
+       "levelreq": 6,
+       "mods_ko": [
+        "최소 화염 데미지 +1~2",
+        "최대 화염 데미지 +3"
+       ]
+      },
+      {
+       "name_en": "of Burning",
+       "name_ko": "작열의",
+       "name_ko_classic": "오브 버닝",
+       "alvl": 14,
+       "levelreq": 10,
+       "mods_ko": [
+        "최소 화염 데미지 +2~3",
+        "최대 화염 데미지 +4~7"
+       ]
+      },
+      {
+       "name_en": "of the Glacier",
+       "name_ko": "빙하의",
+       "name_ko_classic": "오브 더 글래시어",
+       "alvl": 15,
+       "levelreq": 11,
+       "mods_ko": [
+        "최소 냉기 데미지 +3",
+        "최대 냉기 데미지 +5~7"
+       ]
+      },
+      {
+       "name_en": "of Thunder",
+       "name_ko": "천둥의",
+       "name_ko_classic": "오브 선더",
+       "alvl": 15,
+       "levelreq": 11,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +8~21"
+       ]
+      },
+      {
+       "name_en": "of Incineration",
+       "name_ko": "소각의",
+       "name_ko_classic": "오브 인시너레이션",
+       "alvl": 22,
+       "levelreq": 16,
+       "mods_ko": [
+        "최소 화염 데미지 +4~7",
+        "최대 화염 데미지 +8~14"
+       ]
+      },
+      {
+       "name_en": "of Storms",
+       "name_ko": "폭풍의",
+       "name_ko_classic": "오브 스톰스",
+       "alvl": 22,
+       "levelreq": 16,
+       "mods_ko": [
+        "최소 번개 데미지 +1",
+        "최대 번개 데미지 +22~33"
+       ]
+      },
+      {
+       "name_en": "of Winter",
+       "name_ko": "겨울의",
+       "name_ko_classic": "오브 윈터",
+       "alvl": 23,
+       "levelreq": 17,
+       "mods_ko": [
+        "최소 냉기 데미지 +4~6",
+        "최대 냉기 데미지 +8~11"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skillers": [
+  {
+   "class_ko": "아마존",
+   "class_en": "Amazon",
+   "tabs": [
+    {
+     "prefix_ko": "곡예의",
+     "prefix_classic": "아크로배틱",
+     "tree_ko": "지속 효과와 마법",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "작살꾼의",
+     "prefix_classic": "하푼니스트",
+     "tree_ko": "투창과 창",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "화살장이의",
+     "prefix_classic": "플레쳐즈",
+     "tree_ko": "활과 쇠뇌",
+     "alvl": 50,
+     "levelreq": 42
+    }
+   ]
+  },
+  {
+   "class_ko": "원소술사",
+   "class_en": "Sorceress",
+   "tabs": [
+    {
+     "prefix_ko": "싸늘한",
+     "prefix_classic": "칠링",
+     "tree_ko": "냉기 주문",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "불꽃 튀는",
+     "prefix_classic": "스파킹",
+     "tree_ko": "번개 주문",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "불타는",
+     "prefix_classic": "버닝",
+     "tree_ko": "화염 주문",
+     "alvl": 50,
+     "levelreq": 42
+    }
+   ]
+  },
+  {
+   "class_ko": "강령술사",
+   "class_en": "Necromancer",
+   "tabs": [
+    {
+     "prefix_ko": "진균의",
+     "prefix_classic": "팡거얼",
+     "tree_ko": "독과 뼈",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "도굴꾼의",
+     "prefix_classic": "그레이브로버",
+     "tree_ko": "소환",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "사술",
+     "prefix_classic": "헥싱",
+     "tree_ko": "저주",
+     "alvl": 50,
+     "levelreq": 42
+    }
+   ]
+  },
+  {
+   "class_ko": "성기사",
+   "class_en": "Paladin",
+   "tabs": [
+    {
+     "prefix_ko": "대장의",
+     "prefix_classic": "캡틴",
+     "tree_ko": "공격 오라",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "보존자의",
+     "prefix_classic": "프리저버",
+     "tree_ko": "방어 오라",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "사자 낙인의",
+     "prefix_classic": "라이온 브랜디드",
+     "tree_ko": "전투 기술",
+     "alvl": 50,
+     "levelreq": 42
+    }
+   ]
+  },
+  {
+   "class_ko": "야만용사",
+   "class_en": "Barbarian",
+   "tabs": [
+    {
+     "prefix_ko": "광신자",
+     "prefix_classic": "파나틱",
+     "tree_ko": "숙련 및 투척 기술",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "고수의",
+     "prefix_classic": "엑스퍼트",
+     "tree_ko": "전투 기술",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "울려퍼지는",
+     "prefix_classic": "사운딩",
+     "tree_ko": "함성",
+     "alvl": 50,
+     "levelreq": 42
+    }
+   ]
+  },
+  {
+   "class_ko": "드루이드",
+   "class_en": "Druid",
+   "tabs": [
+    {
+     "prefix_ko": "영적인",
+     "prefix_classic": "스피리츄얼",
+     "tree_ko": "변신",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "교관의",
+     "prefix_classic": "트레이너",
+     "tree_ko": "소환",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "자연적인",
+     "prefix_classic": "네츄럴",
+     "tree_ko": "원소",
+     "alvl": 50,
+     "levelreq": 42
+    }
+   ]
+  },
+  {
+   "class_ko": "암살자",
+   "class_en": "Assassin",
+   "tabs": [
+    {
+     "prefix_ko": "독심술사의",
+     "prefix_classic": "멘틀리스트",
+     "tree_ko": "그림자 단련",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "사로잡는",
+     "prefix_classic": "엔트랩핑",
+     "tree_ko": "덫",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "쇼구쿠샤의",
+     "prefix_classic": "쇼구쿠샤",
+     "tree_ko": "무술",
+     "alvl": 50,
+     "levelreq": 42
+    }
+   ]
+  },
+  {
+   "class_ko": "악마술사",
+   "class_en": "Warlock",
+   "tabs": [
+    {
+     "prefix_ko": "더럽혀진",
+     "prefix_classic": "",
+     "tree_ko": "기괴",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "극악한",
+     "prefix_classic": "",
+     "tree_ko": "악마",
+     "alvl": 50,
+     "levelreq": 42
+    },
+    {
+     "prefix_ko": "혼돈",
+     "prefix_classic": "케이오틱",
+     "tree_ko": "혼돈",
+     "alvl": 50,
+     "levelreq": 42
+    }
+   ]
+  }
+ ],
+ "note": "매직 부적은 접두어 1개 + 접미어 1개까지 붙는다. alvl은 해당 접사가 등장하기 시작하는 아이템 레벨."
+}

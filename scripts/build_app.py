@@ -25,12 +25,15 @@ def main():
     sets = json.load(open(items_dir / "sets.json", encoding="utf-8"))["sets"]
     rws = json.load(open(items_dir / "runewords.json", encoding="utf-8"))["runewords"]
     charms = json.load(open(items_dir / "charms.json", encoding="utf-8"))
+    charm_affixes = json.load(open(items_dir / "charm_affixes.json",
+                                   encoding="utf-8"))
     tpl = (ROOT / "app" / "template.html").read_text(encoding="utf-8")
     out = tpl.replace("__SKILL_DATA__", minify(data))
     out = out.replace("__ITEM_DATA__", minify(items))
     out = out.replace("__SETS_DATA__", minify(sets))
     out = out.replace("__RW_DATA__", minify(rws))
     out = out.replace("__CHARM_DATA__", minify(charms))
+    out = out.replace("__CHARM_AFFIX_DATA__", minify(charm_affixes))
     (ROOT / "app" / "index.html").write_text(out, encoding="utf-8")
     print(f"app/index.html: {len(out):,} bytes")
 
