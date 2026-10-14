@@ -1865,7 +1865,7 @@
     {
       "id": "summon-trickster",
       "name_en": "Summon Trickster",
-      "name_ko": "악마 말썽꾼 소환",
+      "name_ko": "파멸자 소환",
       "tree": {
         "page": 1,
         "name_en": "Demon",
@@ -1895,7 +1895,7 @@
           "name_ko": "악마 숙련"
         }
       ],
-      "description_ko": "적들의 영혼을 속박하여 피해를 공유하게 하는 악마 말썽꾼을 소환합니다.",
+      "description_ko": "적들의 영혼을 속박하여 피해를 공유하게 하는 파멸자를 소환합니다.",
       "description_en": "Summons a demonic trickster that binds enemy souls together to take shared damage",
       "tooltip": {
         "per_level": [
@@ -2735,7 +2735,7 @@
         {
           "id": "summon-trickster",
           "name_en": "Summon Trickster",
-          "name_ko": "악마 말썽꾼 소환"
+          "name_ko": "파멸자 소환"
         }
       ],
       "synergies": [],

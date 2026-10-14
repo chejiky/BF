@@ -337,15 +337,15 @@
  },
  "SummonDefilerAN": {
   "en": "Summon Trickster",
-  "ko": "악마 말썽꾼 소환"
+  "ko": "파멸자 소환"
  },
  "SummonDefilerLongDesc": {
   "en": "Summons a demonic trickster that binds enemy souls together \n to take shared damage",
-  "ko": "적들의 영혼을 속박하여 피해를 공유하게 하는 \n 악마 말썽꾼을 소환합니다."
+  "ko": "적들의 영혼을 속박하여 피해를 공유하게 하는 \n 파멸자를 소환합니다."
  },
  "SummonDefilerName": {
   "en": "Summon Trickster",
-  "ko": "악마 말썽꾼 소환"
+  "ko": "파멸자 소환"
  },
  "SummonGoatmanAN": {
   "en": "Summon Goatman",
