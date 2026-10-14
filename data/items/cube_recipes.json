@@ -1,0 +1,1661 @@
+{
+ "categories": [
+  {
+   "label": "룬 업그레이드",
+   "recipes": [
+    {
+     "inputs_ko": [
+      "엘 룬 ×3"
+     ],
+     "output_ko": "엘드 룬",
+     "desc_en": "3 El Runes -> Eld Rune"
+    },
+    {
+     "inputs_ko": [
+      "엘드 룬 ×3"
+     ],
+     "output_ko": "티르 룬",
+     "desc_en": "3 Eld Runes -> Tir Rune"
+    },
+    {
+     "inputs_ko": [
+      "티르 룬 ×3"
+     ],
+     "output_ko": "네프 룬",
+     "desc_en": "3 Tir Runes -> Nef Rune"
+    },
+    {
+     "inputs_ko": [
+      "네프 룬 ×3"
+     ],
+     "output_ko": "에드 룬",
+     "desc_en": "3 Nef Runes -> Eth Rune"
+    },
+    {
+     "inputs_ko": [
+      "에드 룬 ×3"
+     ],
+     "output_ko": "아이드 룬",
+     "desc_en": "3 Eth Runes -> Ith Rune"
+    },
+    {
+     "inputs_ko": [
+      "아이드 룬 ×3"
+     ],
+     "output_ko": "탈 룬",
+     "desc_en": "3 Ith Runes -> Tal Rune"
+    },
+    {
+     "inputs_ko": [
+      "탈 룬 ×3"
+     ],
+     "output_ko": "랄 룬",
+     "desc_en": "3 Tal Runes -> Ral Rune"
+    },
+    {
+     "inputs_ko": [
+      "랄 룬 ×3"
+     ],
+     "output_ko": "오르트 룬",
+     "desc_en": "3 Ral Runes -> Ort Rune"
+    },
+    {
+     "inputs_ko": [
+      "오르트 룬 ×3"
+     ],
+     "output_ko": "주울 룬",
+     "desc_en": "3 Ort Runes -> Thul Rune"
+    },
+    {
+     "inputs_ko": [
+      "주울 룬 ×3",
+      "최하급 토파즈"
+     ],
+     "output_ko": "앰 룬",
+     "desc_en": "3 Thul Runes + 1 Chipped Topaz -> Amn Rune"
+    },
+    {
+     "inputs_ko": [
+      "앰 룬 ×3",
+      "최하급 자수정"
+     ],
+     "output_ko": "솔 룬",
+     "desc_en": "3 Amn Runes + 1 Chipped Amethyst -> Sol Rune"
+    },
+    {
+     "inputs_ko": [
+      "솔 룬 ×3",
+      "최하급 사파이어"
+     ],
+     "output_ko": "샤엘 룬",
+     "desc_en": "3 Sol Runes + 1 Chipped Sapphire -> Shael Rune"
+    },
+    {
+     "inputs_ko": [
+      "샤엘 룬 ×3",
+      "최하급 루비"
+     ],
+     "output_ko": "돌 룬",
+     "desc_en": "3 Shael Runes + 1 Chipped Ruby -> Dol Rune"
+    },
+    {
+     "inputs_ko": [
+      "돌 룬 ×3",
+      "최하급 에메랄드"
+     ],
+     "output_ko": "헬 룬",
+     "desc_en": "3 Dol Runes + 1 Chipped Emerald -> Hel Rune"
+    },
+    {
+     "inputs_ko": [
+      "헬 룬 ×3",
+      "최하급 다이아몬드"
+     ],
+     "output_ko": "이오 룬",
+     "desc_en": "3 Hel Runes + 1 Chipped Diamond -> Io Rune"
+    },
+    {
+     "inputs_ko": [
+      "이오 룬 ×3",
+      "하급 토파즈"
+     ],
+     "output_ko": "룸 룬",
+     "desc_en": "3 Io Runes + 1 Flawed Topaz -> Lum Rune"
+    },
+    {
+     "inputs_ko": [
+      "룸 룬 ×3",
+      "하급 자수정"
+     ],
+     "output_ko": "코 룬",
+     "desc_en": "3 Lum Runes + 1 Flawed Amethyst -> Ko Rune"
+    },
+    {
+     "inputs_ko": [
+      "코 룬 ×3",
+      "하급 사파이어"
+     ],
+     "output_ko": "팔 룬",
+     "desc_en": "3 Ko Runes + 1 Flawed Sapphire -> Fal Rune"
+    },
+    {
+     "inputs_ko": [
+      "팔 룬 ×3",
+      "하급 루비"
+     ],
+     "output_ko": "렘 룬",
+     "desc_en": "3 Fal Runes + 1 Flawed Ruby -> Lem Rune"
+    },
+    {
+     "inputs_ko": [
+      "렘 룬 ×3",
+      "하급 에메랄드"
+     ],
+     "output_ko": "풀 룬",
+     "desc_en": "3 Lem Runes + 1 Flawed Emerald -> Pul Rune"
+    },
+    {
+     "inputs_ko": [
+      "풀 룬 ×2",
+      "하급 다이아몬드"
+     ],
+     "output_ko": "우움 룬",
+     "desc_en": "2 Pul Runes + 1 Flawed Diamond -> Um Rune"
+    },
+    {
+     "inputs_ko": [
+      "우움 룬 ×2",
+      "토파즈"
+     ],
+     "output_ko": "말 룬",
+     "desc_en": "2 Um Runes + 1 Standard Topaz -> Mal Rune"
+    },
+    {
+     "inputs_ko": [
+      "말 룬 ×2",
+      "자수정"
+     ],
+     "output_ko": "이스트 룬",
+     "desc_en": "2 Mal Runes + 1 Standard Amethyst -> Ist Rune"
+    },
+    {
+     "inputs_ko": [
+      "이스트 룬 ×2",
+      "사파이어"
+     ],
+     "output_ko": "굴 룬",
+     "desc_en": "2 Ist Runes + 1 Standard Sapphire -> Gul Rune"
+    },
+    {
+     "inputs_ko": [
+      "굴 룬 ×2",
+      "루비"
+     ],
+     "output_ko": "벡스 룬",
+     "desc_en": "2 Gul Runes + 1 Standard Ruby -> Vex Rune"
+    },
+    {
+     "inputs_ko": [
+      "벡스 룬 ×2",
+      "에메랄드"
+     ],
+     "output_ko": "오움 룬",
+     "desc_en": "2 Vex Runes + 1 Standard Emerald -> Ohm Rune"
+    },
+    {
+     "inputs_ko": [
+      "오움 룬 ×2",
+      "다이아몬드"
+     ],
+     "output_ko": "로 룬",
+     "desc_en": "2 Ohm Runes + 1 Standard Diamond -> Lo Rune"
+    },
+    {
+     "inputs_ko": [
+      "로 룬 ×2",
+      "상급 토파즈"
+     ],
+     "output_ko": "수르 룬",
+     "desc_en": "2 Lo Runes + 1 Flawless Topaz -> Sur Rune"
+    },
+    {
+     "inputs_ko": [
+      "수르 룬 ×2",
+      "상급 자수정"
+     ],
+     "output_ko": "베르 룬",
+     "desc_en": "2 Sur Runes + 1 Flawless Amethyst -> Ber Rune"
+    },
+    {
+     "inputs_ko": [
+      "베르 룬 ×2",
+      "상급 사파이어"
+     ],
+     "output_ko": "자 룬",
+     "desc_en": "2 Ber Runes + 1 Flawless Sapphire -> Jah Rune"
+    },
+    {
+     "inputs_ko": [
+      "자 룬 ×2",
+      "상급 루비"
+     ],
+     "output_ko": "참 룬",
+     "desc_en": "2 Jah Runes + 1 Flawless Ruby -> Cham Rune"
+    },
+    {
+     "inputs_ko": [
+      "참 룬 ×2",
+      "상급 에메랄드"
+     ],
+     "output_ko": "조드 룬",
+     "desc_en": "2 Cham Runes + 1 Flawless Emerald -> Zod Rune"
+    }
+   ]
+  },
+  {
+   "label": "보석 업그레이드",
+   "recipes": [
+    {
+     "inputs_ko": [
+      "최하급 자수정 ×3"
+     ],
+     "output_ko": "하급 자수정",
+     "desc_en": "3 Chipped Amethysts -> Flawed Amethyst"
+    },
+    {
+     "inputs_ko": [
+      "하급 자수정 ×3"
+     ],
+     "output_ko": "자수정",
+     "desc_en": "3 Flawed Amethysts -> Standard Amethyst"
+    },
+    {
+     "inputs_ko": [
+      "자수정 ×3"
+     ],
+     "output_ko": "상급 자수정",
+     "desc_en": "3 Standard Amethysts -> Flawless Amethyst"
+    },
+    {
+     "inputs_ko": [
+      "상급 자수정 ×3"
+     ],
+     "output_ko": "최상급 자수정",
+     "desc_en": "3 Flawless Amethysts -> Perfect Amethyst"
+    },
+    {
+     "inputs_ko": [
+      "최하급 루비 ×3"
+     ],
+     "output_ko": "하급 루비",
+     "desc_en": "3 Chipped Rubies -> Flawed Ruby"
+    },
+    {
+     "inputs_ko": [
+      "하급 루비 ×3"
+     ],
+     "output_ko": "루비",
+     "desc_en": "3 Flawed Rubies -> Standard Ruby"
+    },
+    {
+     "inputs_ko": [
+      "루비 ×3"
+     ],
+     "output_ko": "상급 루비",
+     "desc_en": "3 Standard Rubies -> Flawless Ruby"
+    },
+    {
+     "inputs_ko": [
+      "상급 루비 ×3"
+     ],
+     "output_ko": "최상급 루비",
+     "desc_en": "3 Flawless Rubies -> Perfect Ruby"
+    },
+    {
+     "inputs_ko": [
+      "최하급 사파이어 ×3"
+     ],
+     "output_ko": "하급 사파이어",
+     "desc_en": "3 Chipped Sapphires -> Flawed Sapphire"
+    },
+    {
+     "inputs_ko": [
+      "하급 사파이어 ×3"
+     ],
+     "output_ko": "사파이어",
+     "desc_en": "3 Flawed Sapphires -> Standard Sapphire"
+    },
+    {
+     "inputs_ko": [
+      "사파이어 ×3"
+     ],
+     "output_ko": "상급 사파이어",
+     "desc_en": "3 Standard Sapphires -> Flawless Sapphire"
+    },
+    {
+     "inputs_ko": [
+      "상급 사파이어 ×3"
+     ],
+     "output_ko": "최상급 사파이어",
+     "desc_en": "3 Flawless Sapphires -> Perfect Sapphire"
+    },
+    {
+     "inputs_ko": [
+      "최하급 토파즈 ×3"
+     ],
+     "output_ko": "하급 토파즈",
+     "desc_en": "3 Chipped Topazes -> Flawed Topaz"
+    },
+    {
+     "inputs_ko": [
+      "하급 토파즈 ×3"
+     ],
+     "output_ko": "토파즈",
+     "desc_en": "3 Flawed Topazes -> Standard Topaz"
+    },
+    {
+     "inputs_ko": [
+      "토파즈 ×3"
+     ],
+     "output_ko": "상급 토파즈",
+     "desc_en": "3 Standard Topazes -> Flawless Topaz"
+    },
+    {
+     "inputs_ko": [
+      "상급 토파즈 ×3"
+     ],
+     "output_ko": "최상급 토파즈",
+     "desc_en": "3 Flawless Topazes -> Perfect Topaz"
+    },
+    {
+     "inputs_ko": [
+      "최하급 에메랄드 ×3"
+     ],
+     "output_ko": "하급 에메랄드",
+     "desc_en": "3 Chipped Emeralds -> Flawed Emerald"
+    },
+    {
+     "inputs_ko": [
+      "하급 에메랄드 ×3"
+     ],
+     "output_ko": "에메랄드",
+     "desc_en": "3 Flawed Emeralds -> Standard Emerald"
+    },
+    {
+     "inputs_ko": [
+      "에메랄드 ×3"
+     ],
+     "output_ko": "상급 에메랄드",
+     "desc_en": "3 Standard Emeralds -> Flawless Emerald"
+    },
+    {
+     "inputs_ko": [
+      "상급 에메랄드 ×3"
+     ],
+     "output_ko": "최상급 에메랄드",
+     "desc_en": "3 Flawless Emeralds -> Perfect Emerald"
+    },
+    {
+     "inputs_ko": [
+      "최하급 다이아몬드 ×3"
+     ],
+     "output_ko": "하급 다이아몬드",
+     "desc_en": "3 Chipped Diamonds -> Flawed Diamond"
+    },
+    {
+     "inputs_ko": [
+      "하급 다이아몬드 ×3"
+     ],
+     "output_ko": "다이아몬드",
+     "desc_en": "3 Flawed Diamonds -> Standard Diamond"
+    },
+    {
+     "inputs_ko": [
+      "다이아몬드 ×3"
+     ],
+     "output_ko": "상급 다이아몬드",
+     "desc_en": "3 Standard Diamonds -> Flawless Diamond"
+    },
+    {
+     "inputs_ko": [
+      "상급 다이아몬드 ×3"
+     ],
+     "output_ko": "최상급 다이아몬드",
+     "desc_en": "3 Flawless Diamonds -> Perfect Diamond"
+    },
+    {
+     "inputs_ko": [
+      "해골 ×3"
+     ],
+     "output_ko": "상급 해골",
+     "desc_en": "3 Standard Skulls -> Flawless Skull"
+    }
+   ]
+  },
+  {
+   "label": "소켓",
+   "recipes": [
+    {
+     "inputs_ko": [
+      "소켓 있음 모든 무기",
+      "일반 보석(아무거나) ×3"
+     ],
+     "output_ko": "같은 종류의 매직 아이템 (리롤)",
+     "desc_en": "3 Standard Gems + 1 Socketed Weapon ->  Socketed Magic Weapon",
+     "output_mods_ko": [
+      "소켓 (2)"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 모든 무기",
+      "흠 없는 보석(아무거나) ×3"
+     ],
+     "output_ko": "같은 종류의 매직 아이템 (리롤)",
+     "desc_en": "3 Flawless Gems + 1 Magic Weapon -> Socketed Magic Weapon",
+     "output_mods_ko": [
+      "소켓 (2)"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "노멀 소켓 없음 갑옷",
+      "탈 룬",
+      "주울 룬",
+      "최상급 토파즈"
+     ],
+     "output_ko": "같은 아이템 (속성 변경)",
+     "desc_en": "1 Tal Rune + 1 Thul Rune + 1 Perfect Topaz + 1 Normal Torso Armor -> Socketed Torso Armor",
+     "output_mods_ko": [
+      "소켓 (6)"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "노멀 소켓 없음 모든 무기",
+      "랄 룬",
+      "앰 룬",
+      "최상급 자수정"
+     ],
+     "output_ko": "같은 아이템 (속성 변경)",
+     "desc_en": "1 Ral Rune + 1 Amn Rune + 1 Perfect Amethyst + 1 Normal Weapon -> Socketed Weapon",
+     "output_mods_ko": [
+      "소켓 (6)"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "노멀 소켓 없음 투구",
+      "랄 룬",
+      "주울 룬",
+      "최상급 사파이어"
+     ],
+     "output_ko": "같은 아이템 (속성 변경)",
+     "desc_en": "1 Ral Rune + 1 Thul Rune + 1 Perfect Sapphire + 1 Normal Helm -> Socketed Helm",
+     "output_mods_ko": [
+      "소켓 (6)"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "노멀 소켓 없음 방패",
+      "탈 룬",
+      "앰 룬",
+      "최상급 루비"
+     ],
+     "output_ko": "같은 아이템 (속성 변경)",
+     "desc_en": "1 Tal Rune + 1 Amn Rune + 1 Perfect Ruby + 1 Normal Shield -> Socketed Shield",
+     "output_mods_ko": [
+      "소켓 (6)"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 모든 무기",
+      "조각난 보석(아무거나) ×3"
+     ],
+     "output_ko": "같은 종류의 매직 아이템 (리롤)",
+     "desc_en": "3 Chipped Gems (Any) + 1 Magic Weapon -> Socketed Magic Weapon",
+     "output_mods_ko": [
+      "소켓 (2)"
+     ]
+    }
+   ]
+  },
+  {
+   "label": "등급 업그레이드",
+   "recipes": [
+    {
+     "inputs_ko": [
+      "기본 등급 유니크 모든 무기",
+      "랄 룬",
+      "솔 룬",
+      "최상급 에메랄드"
+     ],
+     "output_ko": "같은 아이템 → 익셉셔널 등급으로 업그레이드",
+     "desc_en": "1 Ral Rune + 1 Sol Rune + 1 Perfect Emerald + 1 Normal Unique Weapon -> Exceptional Unique Weapon",
+     "output_mods_ko": [
+      "착용 레벨 +5"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "기본 등급 유니크 모든 방어구",
+      "탈 룬",
+      "샤엘 룬",
+      "최상급 다이아몬드"
+     ],
+     "output_ko": "같은 아이템 → 익셉셔널 등급으로 업그레이드",
+     "desc_en": "1 Tal Rune + 1 Shael Rune + 1 Perfect Diamond + 1 Normal Unique Armor -> Exceptional Unique Armor",
+     "output_mods_ko": [
+      "착용 레벨 +5"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "익셉셔널 유니크 모든 무기",
+      "룸 룬",
+      "풀 룬",
+      "최상급 에메랄드"
+     ],
+     "output_ko": "같은 아이템 → 엘리트 등급으로 업그레이드",
+     "desc_en": "1 Lum Rune + 1 Pul Rune + 1 Perfect Emerald + 1 Exceptional Unique Weapon -> Elite Unique Weapon",
+     "output_mods_ko": [
+      "착용 레벨 +7"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "익셉셔널 유니크 모든 방어구",
+      "코 룬",
+      "렘 룬",
+      "최상급 다이아몬드"
+     ],
+     "output_ko": "같은 아이템 → 엘리트 등급으로 업그레이드",
+     "desc_en": "1 Ko Rune + 1 Lem Rune + 1 Perfect Diamond + 1 Exceptional Unique Armor -> Elite Unique Armor",
+     "output_mods_ko": [
+      "착용 레벨 +7"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "기본 등급 레어 모든 무기",
+      "오르트 룬",
+      "앰 룬",
+      "최상급 사파이어"
+     ],
+     "output_ko": "같은 아이템 → 익셉셔널 등급으로 업그레이드",
+     "desc_en": "1 Ort Rune + 1 Amn Rune + 1 Perfect Sapphire + 1 Normal Rare Weapon -> Exceptional Rare Weapon",
+     "output_mods_ko": [
+      "착용 레벨 +5"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "기본 등급 레어 모든 방어구",
+      "랄 룬",
+      "주울 룬",
+      "최상급 자수정"
+     ],
+     "output_ko": "같은 아이템 → 익셉셔널 등급으로 업그레이드",
+     "desc_en": "1 Ral Rune + 1 Thul Rune + 1 Perfect Amethyst + 1 Normal Rare Armor -> Exceptional Rare Armor",
+     "output_mods_ko": [
+      "착용 레벨 +5"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "익셉셔널 레어 모든 무기",
+      "팔 룬",
+      "우움 룬",
+      "최상급 사파이어"
+     ],
+     "output_ko": "같은 아이템 → 엘리트 등급으로 업그레이드",
+     "desc_en": "1 Fal Rune + 1 Um Rune + 1 Perfect Sapphire + 1 Exceptional Rare Weapon -> Elite Rare Weapon",
+     "output_mods_ko": [
+      "착용 레벨 +7"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "익셉셔널 레어 모든 방어구",
+      "코 룬",
+      "풀 룬",
+      "최상급 자수정"
+     ],
+     "output_ko": "같은 아이템 → 엘리트 등급으로 업그레이드",
+     "desc_en": "1 Ko Rune + 1 Pul Rune + 1 Perfect Amethyst + 1 Exceptional Rare Armor -> Elite Rare Armor",
+     "output_mods_ko": [
+      "착용 레벨 +7"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "기본 등급 세트 모든 무기",
+      "랄 룬",
+      "솔 룬",
+      "최상급 에메랄드"
+     ],
+     "output_ko": "같은 아이템 → 익셉셔널 등급으로 업그레이드",
+     "desc_en": "1 Ral Rune + 1 Sol Rune + 1 Perfect Emerald + 1 Normal Set Weapon -> Exceptional Set Weapon",
+     "output_mods_ko": [
+      "착용 레벨 +5"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "기본 등급 세트 모든 방어구",
+      "탈 룬",
+      "샤엘 룬",
+      "최상급 다이아몬드"
+     ],
+     "output_ko": "같은 아이템 → 익셉셔널 등급으로 업그레이드",
+     "desc_en": "1 Tal Rune + 1 Shael Rune + 1 Perfect Diamond + 1 Normal Set Armor -> Exceptional Set Armor",
+     "output_mods_ko": [
+      "착용 레벨 +5"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "익셉셔널 세트 모든 무기",
+      "룸 룬",
+      "풀 룬",
+      "최상급 에메랄드"
+     ],
+     "output_ko": "같은 아이템 → 엘리트 등급으로 업그레이드",
+     "desc_en": "1 Lum Rune + 1 Pul Rune + 1 Perfect Emerald + 1 Exceptional Set Weapon -> Elite Set Weapon",
+     "output_mods_ko": [
+      "착용 레벨 +7"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "익셉셔널 세트 모든 방어구",
+      "코 룬",
+      "렘 룬",
+      "최상급 다이아몬드"
+     ],
+     "output_ko": "같은 아이템 → 엘리트 등급으로 업그레이드",
+     "desc_en": "1 Ko Rune + 1 Lem Rune + 1 Perfect Diamond + 1 Exceptional Set Armor -> Elite Set Armor",
+     "output_mods_ko": [
+      "착용 레벨 +7"
+     ]
+    }
+   ]
+  },
+  {
+   "label": "크래프팅",
+   "recipes": [
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 풀 헬름",
+      "주얼",
+      "아이드 룬",
+      "최상급 사파이어"
+     ],
+     "output_ko": "타격(히트 파워) 크래프트 헬름",
+     "desc_en": "1 Magic Full Helm + 1 Jewel + 1 Ith Rune + 1 Perfect Sapphire -> Hit Power Helm",
+     "output_mods_ko": [
+      "피격 시 5% 확률로 레벨 4 서릿발 시전",
+      "원거리 공격 방어력 +25~50",
+      "공격자가 데미지 3~7를 받음"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 체인 부츠",
+      "주얼",
+      "랄 룬",
+      "최상급 사파이어"
+     ],
+     "output_ko": "타격(히트 파워) 크래프트 부츠",
+     "desc_en": "1 Magic Chain Boots + 1 Jewel + 1 Ral Rune + 1 Perfect Sapphire -> Hit Power Boots",
+     "output_mods_ko": [
+      "피격 시 5% 확률로 레벨 4 서릿발 시전",
+      "근접 공격 방어력 +25~60",
+      "공격자가 데미지 3~7를 받음"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 체인 글러브",
+      "주얼",
+      "오르트 룬",
+      "최상급 사파이어"
+     ],
+     "output_ko": "타격(히트 파워) 크래프트 글러브",
+     "desc_en": "1 Magic Chain Gloves + 1 Jewel + 1 Ort Rune + 1 Perfect Sapphire -> Hit Power Gloves",
+     "output_mods_ko": [
+      "피격 시 5% 확률로 레벨 4 서릿발 시전",
+      "넉백",
+      "공격자가 데미지 3~7를 받음"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 헤비 벨트",
+      "주얼",
+      "탈 룬",
+      "최상급 사파이어"
+     ],
+     "output_ko": "타격(히트 파워) 크래프트 벨트",
+     "desc_en": "1 Magic Heavy Belt + 1 Jewel + 1 Tal Rune + 1 Perfect Sapphire -> Hit Power Belt",
+     "output_mods_ko": [
+      "피격 시 5% 확률로 레벨 4 서릿발 시전",
+      "받은 데미지의 5~10%가 마나로 전환",
+      "공격자가 데미지 3~7를 받음"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 고딕 쉴드",
+      "주얼",
+      "에드 룬",
+      "최상급 사파이어"
+     ],
+     "output_ko": "타격(히트 파워) 크래프트 쉴드",
+     "desc_en": "1 Magic Gothic Shield + 1 Jewel + 1 Eth Rune + 1 Perfect Sapphire -> Hit Power Shield",
+     "output_mods_ko": [
+      "피격 시 5% 확률로 레벨 4 서릿발 시전",
+      "막기 확률 5~10% 증가",
+      "공격자가 데미지 3~10를 받음"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 필드 플레이트",
+      "주얼",
+      "네프 룬",
+      "최상급 사파이어"
+     ],
+     "output_ko": "타격(히트 파워) 크래프트 플레이트",
+     "desc_en": "1 Magic Field Plate + 1 Jewel + 1 Nef Rune + 1 Perfect Sapphire -> Hit Power Body",
+     "output_mods_ko": [
+      "피격 시 5% 확률로 레벨 4 서릿발 시전",
+      "타격 회복 속도 +10~20%",
+      "공격자가 데미지 3~10를 받음"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 목걸이",
+      "주얼",
+      "주울 룬",
+      "최상급 사파이어"
+     ],
+     "output_ko": "타격(히트 파워) 크래프트 목걸이",
+     "desc_en": "1 Magic Amulet + 1 Jewel + Thul Rune + 1 Perfect Sapphire -> Hit Power Amulet",
+     "output_mods_ko": [
+      "피격 시 5% 확률로 레벨 4 서릿발 시전",
+      "적중 시 몬스터 도주 5~15%",
+      "공격자가 데미지 3~10를 받음"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 반지",
+      "주얼",
+      "앰 룬",
+      "최상급 사파이어"
+     ],
+     "output_ko": "타격(히트 파워) 크래프트 반지",
+     "desc_en": "1 Magic Ring + 1 Jewel + 1 Amn Rune + 1 Perfect Sapphire -> Hit Power Ring",
+     "output_mods_ko": [
+      "피격 시 5% 확률로 레벨 4 서릿발 시전",
+      "민첩 +1~5",
+      "공격자가 데미지 3~6를 받음"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 둔기류",
+      "주얼",
+      "티르 룬",
+      "최상급 사파이어"
+     ],
+     "output_ko": "타격(히트 파워) 크래프트 둔기류",
+     "desc_en": "1 Magic Blunt Weapon + 1 Jewel + 1 Tir Rune + 1 Perfect Sapphire -> Hit Power Weapon",
+     "output_mods_ko": [
+      "피격 시 5% 확률로 레벨 4 서릿발 시전",
+      "증가된 데미지 +35~60%",
+      "공격자가 데미지 3~7를 받음"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 헬름",
+      "주얼",
+      "랄 룬",
+      "최상급 루비"
+     ],
+     "output_ko": "피(블러드) 크래프트 헬름",
+     "desc_en": "1 Magic Helm + 1 Jewel + 1 Ral Rune + 1 Perfect Ruby -> Blood Helm",
+     "output_mods_ko": [
+      "적중당 생명력 +1~3% 훔침",
+      "치명적 공격 +5~10%",
+      "생명력 +10~20"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 라이트 플레이트 부츠",
+      "주얼",
+      "에드 룬",
+      "최상급 루비"
+     ],
+     "output_ko": "피(블러드) 크래프트 부츠",
+     "desc_en": "1 Magic Light Plated Boots + 1 Jewel + 1 Eth Rune + 1 Perfect Ruby -> Blood Boots",
+     "output_mods_ko": [
+      "적중당 생명력 +1~3% 훔침",
+      "생명력 +10~20",
+      "10초당 생명력 +5~10 회복"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 헤비 글러브",
+      "주얼",
+      "네프 룬",
+      "최상급 루비"
+     ],
+     "output_ko": "피(블러드) 크래프트 글러브",
+     "desc_en": "1 Magic Heavy Gloves + 1 Jewel + 1 Nef Rune + 1 Perfect Ruby -> Blood Gloves",
+     "output_mods_ko": [
+      "적중당 생명력 +1~3% 훔침",
+      "강타 확률 +5~10%",
+      "생명력 +10~20"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 벨트",
+      "주얼",
+      "탈 룬",
+      "최상급 루비"
+     ],
+     "output_ko": "피(블러드) 크래프트 벨트",
+     "desc_en": "1 Magic Belt + 1 Jewel + 1 Tal Rune + 1 Perfect Ruby -> Blood Belt",
+     "output_mods_ko": [
+      "적중당 생명력 +1~3% 훔침",
+      "상처 악화 확률 +5~10%",
+      "생명력 +10~20"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 스파이크 쉴드",
+      "주얼",
+      "아이드 룬",
+      "최상급 루비"
+     ],
+     "output_ko": "피(블러드) 크래프트 쉴드",
+     "desc_en": "1 Magic Spiked Shield + 1 Jewel + 1 Ith Rune + 1 Perfect Ruby -> Blood Shield",
+     "output_mods_ko": [
+      "적중당 생명력 +1~3% 훔침",
+      "생명력 +10~20",
+      "공격자가 데미지 4~7를 받음"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 플레이트 메일",
+      "주얼",
+      "주울 룬",
+      "최상급 루비"
+     ],
+     "output_ko": "피(블러드) 크래프트 메일",
+     "desc_en": "1 Magic Plate Mail + 1 Jewel + 1 Thul Rune + 1 Perfect Ruby -> Blood Body",
+     "output_mods_ko": [
+      "적중당 생명력 +1~3% 훔침",
+      "생명력 +10~20",
+      "악마 처치 시 생명력 +1~3"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 목걸이",
+      "주얼",
+      "앰 룬",
+      "최상급 루비"
+     ],
+     "output_ko": "피(블러드) 크래프트 목걸이",
+     "desc_en": "1 Magic Amulet + 1 Jewel + 1 Amn Rune + 1 Perfect Ruby -> Blood Amulet",
+     "output_mods_ko": [
+      "달리기/걷기 속도 +5~10%",
+      "적중당 생명력 +1~4% 훔침",
+      "생명력 +10~20"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 반지",
+      "주얼",
+      "솔 룬",
+      "최상급 루비"
+     ],
+     "output_ko": "피(블러드) 크래프트 반지",
+     "desc_en": "1 Magic Ring + 1 Jewel + 1 Sol Rune + 1 Perfect Ruby -> Blood Ring",
+     "output_mods_ko": [
+      "적중당 생명력 +1~3% 훔침",
+      "힘 +1~5",
+      "생명력 +10~20"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 도끼",
+      "주얼",
+      "오르트 룬",
+      "최상급 루비"
+     ],
+     "output_ko": "피(블러드) 크래프트 도끼",
+     "desc_en": "1 Magic Axe + 1 Jewel + Ort Rune + 1 Perfect Ruby -> Blood Weapon",
+     "output_mods_ko": [
+      "증가된 데미지 +35~60%",
+      "적중당 생명력 +1~4% 훔침",
+      "생명력 +10~20"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 마스크",
+      "주얼",
+      "네프 룬",
+      "최상급 자수정"
+     ],
+     "output_ko": "시전(캐스터) 크래프트 마스크",
+     "desc_en": "1 Magic Mask + 1 Jewel + Nef Rune + 1 Perfect Amethyst -> Caster Helm",
+     "output_mods_ko": [
+      "적중당 마나 +1~4% 훔침",
+      "마나 +10~20",
+      "마나 재생 4~10%"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 부츠",
+      "주얼",
+      "주울 룬",
+      "최상급 자수정"
+     ],
+     "output_ko": "시전(캐스터) 크래프트 부츠",
+     "desc_en": "1 Magic Boots + 1 Jewel + Thul Rune + 1 Perfect Amethyst -> Caster Boots",
+     "output_mods_ko": [
+      "마나 +10~20",
+      "최대 마나 2~5% 증가",
+      "마나 재생 4~10%"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 레더 글러브",
+      "주얼",
+      "오르트 룬",
+      "최상급 자수정"
+     ],
+     "output_ko": "시전(캐스터) 크래프트 글러브",
+     "desc_en": "1 Magic Leather Gloves + 1 Jewel + Ort Rune + 1 Perfect Amethyst -> Caster Gloves",
+     "output_mods_ko": [
+      "마나 +10~20",
+      "마나 재생 4~10%",
+      "적 처치 시 마나 +1~3"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 라이트 벨트",
+      "주얼",
+      "아이드 룬",
+      "최상급 자수정"
+     ],
+     "output_ko": "시전(캐스터) 크래프트 벨트",
+     "desc_en": "1 Magic Light Belt + 1 Jewel + Ith Rune + 1 Perfect Amethyst -> Caster Belt",
+     "output_mods_ko": [
+      "시전 속도 +5~10%",
+      "마나 +10~20",
+      "마나 재생 4~10%"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 스몰 쉴드",
+      "주얼",
+      "에드 룬",
+      "최상급 자수정"
+     ],
+     "output_ko": "시전(캐스터) 크래프트 쉴드",
+     "desc_en": "1 Magic Small Shield + 1 Jewel + 1 Eth Rune + 1 Perfect Amethyst -> Caster Shield",
+     "output_mods_ko": [
+      "막기 확률 5~10% 증가",
+      "마나 +10~20",
+      "마나 재생 4~10%"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 라이트 플레이트",
+      "주얼",
+      "탈 룬",
+      "최상급 자수정"
+     ],
+     "output_ko": "시전(캐스터) 크래프트 플레이트",
+     "desc_en": "1 Magic Light Plate + 1 Jewel + 1 Tal Rune + 1 Perfect Amethyst -> Caster Body",
+     "output_mods_ko": [
+      "마나 +10~20",
+      "마나 재생 4~10%",
+      "적 처치 시 마나 +1~3"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 목걸이",
+      "주얼",
+      "랄 룬",
+      "최상급 자수정"
+     ],
+     "output_ko": "시전(캐스터) 크래프트 목걸이",
+     "desc_en": "1 Magic Amulet + 1 Jewel + 1 Ral Rune + 1 Perfect Amethyst -> Caster Amulet",
+     "output_mods_ko": [
+      "시전 속도 +5~10%",
+      "마나 +10~20",
+      "마나 재생 4~10%"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 반지",
+      "주얼",
+      "앰 룬",
+      "최상급 자수정"
+     ],
+     "output_ko": "시전(캐스터) 크래프트 반지",
+     "desc_en": "1 Magic Ring + 1 Jewel + 1 Amn Rune + 1 Perfect Amethyst -> Caster Ring",
+     "output_mods_ko": [
+      "마력 +1~5",
+      "마나 +10~20",
+      "마나 재생 4~10%"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 Staves And Rods",
+      "주얼",
+      "티르 룬",
+      "최상급 자수정"
+     ],
+     "output_ko": "시전(캐스터) 크래프트 Rods",
+     "desc_en": "1 Magic Rod + 1 Jewel + 1 Tir Rune + 1 Perfect Amethyst -> Caster Weapon",
+     "output_mods_ko": [
+      "마나 +10~20",
+      "최대 마나 1~5% 증가",
+      "마나 재생 4~10%"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 크라운",
+      "주얼",
+      "아이드 룬",
+      "최상급 에메랄드"
+     ],
+     "output_ko": "안전(세이프티) 크래프트 크라운",
+     "desc_en": "1 Magic Crown + 1 Jewel + 1 Ith Rune + 1 Perfect Emerald -> Safety Helm",
+     "output_mods_ko": [
+      "방어력 +10~30% 증가",
+      "번개 저항 +5~10%",
+      "피해 1~4 감소",
+      "마법 피해 1~2 감소"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 그리브",
+      "주얼",
+      "오르트 룬",
+      "최상급 에메랄드"
+     ],
+     "output_ko": "안전(세이프티) 크래프트 그리브",
+     "desc_en": "1 Magic Plated Boots + 1 Jewel + 1 Ort Rune + 1 Perfect Emerald -> Safety Boots",
+     "output_mods_ko": [
+      "방어력 +10~30% 증가",
+      "화염 저항 +5~10%",
+      "피해 1~4 감소",
+      "마법 피해 1~2 감소"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 건틀릿",
+      "주얼",
+      "랄 룬",
+      "최상급 에메랄드"
+     ],
+     "output_ko": "안전(세이프티) 크래프트 건틀릿",
+     "desc_en": "1 Magic Gauntlets + 1 Jewel + 1 Ral Rune + 1 Perfect Emerald -> Safety Gloves",
+     "output_mods_ko": [
+      "방어력 +10~30% 증가",
+      "냉기 저항 +5~10%",
+      "피해 1~4 감소",
+      "마법 피해 1~2 감소"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 새시",
+      "주얼",
+      "탈 룬",
+      "최상급 에메랄드"
+     ],
+     "output_ko": "안전(세이프티) 크래프트 새시",
+     "desc_en": "1 Magic Sash + 1 Jewel + 1 Tal Rune + 1 Perfect Emerald -> Safety Belt",
+     "output_mods_ko": [
+      "방어력 +10~30% 증가",
+      "독 저항 +5~10%",
+      "피해 1~4 감소",
+      "마법 피해 1~2 감소"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 카이트 쉴드",
+      "주얼",
+      "네프 룬",
+      "최상급 에메랄드"
+     ],
+     "output_ko": "안전(세이프티) 크래프트 쉴드",
+     "desc_en": "1 Magic Kite Shield + 1 Jewel + 1 Nef Rune + 1 Perfect Emerald -> Safety Shield",
+     "output_mods_ko": [
+      "방어력 +10~30% 증가",
+      "마법 저항 +5~10%",
+      "피해 1~4 감소",
+      "마법 피해 1~2 감소"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 상위 등급 포함 브레스트 플레이트",
+      "주얼",
+      "에드 룬",
+      "최상급 에메랄드"
+     ],
+     "output_ko": "안전(세이프티) 크래프트 플레이트",
+     "desc_en": "1 Magic Breast Plate + 1 Jewel + 1 Eth Rune + 1 Perfect Emerald -> Safety Body",
+     "output_mods_ko": [
+      "방어력 +10~30% 증가",
+      "빙결 지속시간 절반",
+      "피해 1~4 감소",
+      "마법 피해 1~2 감소"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 목걸이",
+      "주얼",
+      "주울 룬",
+      "최상급 에메랄드"
+     ],
+     "output_ko": "안전(세이프티) 크래프트 목걸이",
+     "desc_en": "1 Magic Amulet + 1 Jewel + 1 Thul Rune + 1 Perfect Emerald -> Safety Amulet",
+     "output_mods_ko": [
+      "막기 확률 1~10% 증가",
+      "피해 1~4 감소",
+      "마법 피해 1~2 감소"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 반지",
+      "주얼",
+      "앰 룬",
+      "최상급 에메랄드"
+     ],
+     "output_ko": "안전(세이프티) 크래프트 반지",
+     "desc_en": "1 Magic Ring + 1 Jewel + 1 Amn Rune + 1 Perfect Emerald -> Safety Ring",
+     "output_mods_ko": [
+      "활력 +1~5",
+      "피해 1~4 감소",
+      "마법 피해 1~2 감소"
+     ]
+    },
+    {
+     "inputs_ko": [
+      "매직 창",
+      "주얼",
+      "솔 룬",
+      "최상급 에메랄드"
+     ],
+     "output_ko": "안전(세이프티) 크래프트 창",
+     "desc_en": "1 Magic Spear + 1 Jewel + 1 Sol Rune + 1 Perfect Emerald -> Safety Weapon",
+     "output_mods_ko": [
+      "방어력 +5~10% 증가",
+      "피해 1~4 감소",
+      "마법 피해 1~2 감소"
+     ]
+    }
+   ]
+  },
+  {
+   "label": "리롤",
+   "recipes": [
+    {
+     "inputs_ko": [
+      "매직 목걸이",
+      "최상급 자수정",
+      "최상급 토파즈",
+      "최상급 사파이어",
+      "최상급 에메랄드",
+      "최상급 루비",
+      "최상급 다이아몬드"
+     ],
+     "output_ko": "매직 목걸이",
+     "desc_en": "6 Perfect Gems (1 of each type) + 1 Magic Amulet -> Prismatic Amulet"
+    },
+    {
+     "inputs_ko": [
+      "매직 반지",
+      "최상급 루비",
+      "폭발 물약"
+     ],
+     "output_ko": "매직 반지",
+     "desc_en": "1 Magic Ring + 1 Perfect Ruby + 1 Exploding Potion -> Garnet Ring"
+    },
+    {
+     "inputs_ko": [
+      "매직 반지",
+      "최상급 사파이어",
+      "해동 물약"
+     ],
+     "output_ko": "매직 반지",
+     "desc_en": "1 Magic Ring + 1 Perfect Sapphire + 1 Thawing Potion -> Cobalt Ring"
+    },
+    {
+     "inputs_ko": [
+      "매직 반지",
+      "최상급 토파즈",
+      "활력 물약"
+     ],
+     "output_ko": "매직 반지",
+     "desc_en": "1 Magic Ring + 1 Perfect Topaz + 1 Rejuvenation Potion -> Coral Ring"
+    },
+    {
+     "inputs_ko": [
+      "매직 반지",
+      "최상급 에메랄드",
+      "해독 물약"
+     ],
+     "output_ko": "매직 반지",
+     "desc_en": "1 Magic Ring + 1 Standard Emerald + 1 Antidote Potion -> Jade Ring"
+    },
+    {
+     "inputs_ko": [
+      "매직 반지 ×3"
+     ],
+     "output_ko": "매직 목걸이",
+     "desc_en": "3 Magic Rings -> Magic Amulet"
+    },
+    {
+     "inputs_ko": [
+      "매직 목걸이 ×3"
+     ],
+     "output_ko": "매직 반지",
+     "desc_en": "3 Magic Amulets -> Magic Ring"
+    },
+    {
+     "inputs_ko": [
+      "매직 방패",
+      "Skull ×2",
+      "스파이크 클럽"
+     ],
+     "output_ko": "같은 종류의 매직 아이템 (리롤)",
+     "desc_en": "1 Magic Shield + 1 Spiked Club + 2 Skulls (Any) -> Magic Shield of Spikes"
+    },
+    {
+     "inputs_ko": [
+      "매직 검",
+      "Ruby",
+      "Healing Potion ×4"
+     ],
+     "output_ko": "같은 종류의 매직 아이템 (리롤)",
+     "desc_en": "4 Healing Potions (Any) + 1 Standard Ruby + 1 Magic Sword -> Sword of the Leech"
+    },
+    {
+     "inputs_ko": [
+      "크리스",
+      "Diamond",
+      "지팡이",
+      "벨트"
+     ],
+     "output_ko": "매직 폴암",
+     "desc_en": "1 Diamond (Any) + 1 Kris + 1 Staff + 1 Belt -> Savage Polearm"
+    },
+    {
+     "inputs_ko": [
+      "매직 아무 아이템",
+      "완전한 보석(아무거나) ×3"
+     ],
+     "output_ko": "같은 종류의 매직 아이템 (리롤)",
+     "desc_en": "3 Perfect Gems (Any) + 1 Magic Item -> Re-rolled Magic Item"
+    },
+    {
+     "inputs_ko": [
+      "레어 아무 아이템",
+      "최상급 해골 ×6"
+     ],
+     "output_ko": "같은 종류의 레어 아이템 (리롤)",
+     "desc_en": "6 Perfect Skulls + 1 Rare Item -> 1 Low Quality Rare Item"
+    },
+    {
+     "inputs_ko": [
+      "레어 아무 아이템",
+      "최상급 해골",
+      "요르단의 반지"
+     ],
+     "output_ko": "같은 종류의 레어 아이템 (리롤)",
+     "desc_en": "1 Perfect Skull + 1 Rare Item + 1 Stone of Jordan -> 1 High Quality Rare Item"
+    }
+   ]
+  },
+  {
+   "label": "분쇄 부적 제작",
+   "recipes": [
+    {
+     "inputs_ko": [
+      "잠복하는 부패의 분열",
+      "코 룬",
+      "최상급 에메랄드",
+      "서부 세계석 조각"
+     ],
+     "output_ko": "새로워진 부패의 분열",
+     "desc_en": "1 Ko Rune + 1 Perfect Emerald + 1 Uber Ancient Summon Material Act1 + 1 Rotting Fissure -> Virulent Rotting Fissure"
+    },
+    {
+     "inputs_ko": [
+      "잠복하는 추위의 파열",
+      "룸 룬",
+      "최상급 사파이어",
+      "동부 세계석 조각"
+     ],
+     "output_ko": "새로워진 추위의 파열",
+     "desc_en": "1 Lum Rune + 1 Perfect Sapphire + 1 Uber Ancient Summon Material Act2 + 1 Cold Rupture -> Gelid Cold Rupture"
+    },
+    {
+     "inputs_ko": [
+      "잠복하는 천상의 틈",
+      "팔 룬",
+      "최상급 토파즈",
+      "남부 세계석 조각"
+     ],
+     "output_ko": "새로워진 천상의 틈",
+     "desc_en": "1 Fal Rune + 1 Perfect Topaz + 1 Uber Ancient Summon Material Act3 + 1 Crack of the Heavens -> Magnetic Crack of the Heavens"
+    },
+    {
+     "inputs_ko": [
+      "잠복하는 불길의 균열",
+      "이오 룬",
+      "최상급 루비",
+      "깊은 세계석 조각"
+     ],
+     "output_ko": "새로워진 불길의 균열",
+     "desc_en": "1 Io Rune + 1 Perfect Ruby + 1 Uber Ancient Summon Material Act4 + 1 Flame Rift -> Incendiary Flame Rift"
+    },
+    {
+     "inputs_ko": [
+      "잠복하는 뼈의 분쇄",
+      "풀 룬",
+      "최상급 자수정",
+      "북부 세계석 조각"
+     ],
+     "output_ko": "새로워진 뼈의 분쇄",
+     "desc_en": "1 Pul Rune + 1 Perfect Amethyst + 1 Uber Ancient Summon Material Act5 + 1 Bone Break -> Breaching Bone Break"
+    },
+    {
+     "inputs_ko": [
+      "잠복하는 칠흑의 천공",
+      "말 룬",
+      "최상급 다이아몬드",
+      "남부 세계석 조각",
+      "깊은 세계석 조각",
+      "북부 세계석 조각"
+     ],
+     "output_ko": "새로워진 칠흑의 천공",
+     "desc_en": "1 Mal Rune + 1 Perfect Diamond + 1 Uber Ancient Summon Material Act5 + 1 Black Cleft -> Mystical Black Cleft"
+    }
+   ]
+  },
+  {
+   "label": "물약",
+   "recipes": [
+    {
+     "inputs_ko": [
+      "Healing Potion ×3",
+      "Mana Potion ×3",
+      "일반 보석(아무거나)"
+     ],
+     "output_ko": "대량의 활력 물약",
+     "desc_en": "3 Healing Potions (Any) + 3 Mana Potions (Any) + 1 Standard Gem (Any) -> Full Rejuvenation Potion"
+    },
+    {
+     "inputs_ko": [
+      "Healing Potion ×3",
+      "Mana Potion ×3",
+      "조각난 보석(아무거나)"
+     ],
+     "output_ko": "활력 물약",
+     "desc_en": "3 Healing Potions (Any) + 3 Mana Potions (Any)  + 1 Chipped Gem (Any) -> Rejuvenation Potion"
+    },
+    {
+     "inputs_ko": [
+      "활력 물약 ×3"
+     ],
+     "output_ko": "대량의 활력 물약",
+     "desc_en": "3 Rejuvenation Potions -> Full Rejuvenation Potion"
+    },
+    {
+     "inputs_ko": [
+      "유독 가스 물약",
+      "Healing Potion"
+     ],
+     "output_ko": "해독 물약",
+     "desc_en": "1 Strangling Gas Potion + 1 Healing Potion (Any) -> Antidote Potion"
+    }
+   ]
+  },
+  {
+   "label": "퀘스트·특수",
+   "recipes": [
+    {
+     "inputs_ko": [
+      "호라드림 지팡이 자루",
+      "호라드림 지팡이 꼭지"
+     ],
+     "output_ko": "호라드림 지팡이",
+     "desc_en": "Staff of Kings + Amulet of the Viper -> Horadric Staff"
+    },
+    {
+     "inputs_ko": [
+      "칼림의 도리깨",
+      "칼림의 심장",
+      "칼림의 눈",
+      "칼림의 뇌"
+     ],
+     "output_ko": "칼림의 의지",
+     "desc_en": "Khalim's Flail + Khalim's Heart + Khalim's Eye + Khalim's Brain -> Khalim's Will"
+    },
+    {
+     "inputs_ko": [
+      "워트의 의족",
+      "마을 차원문의 고서"
+     ],
+     "output_ko": "비밀 소 레벨 포탈",
+     "desc_en": "Wirt's Leg + Tome of Town Portal -> Portal to The Secret Cow Level"
+    },
+    {
+     "inputs_ko": [
+      "공포의 열쇠",
+      "증오의 열쇠",
+      "파괴의 열쇠"
+     ],
+     "output_ko": "판데모니움 포탈",
+     "desc_en": "1 Key of Terror + 1 Key of Hate + 1 Key of Destruction -> Portal to Matron's Den/Forgotten Sands/Furnace of Pain (Random)"
+    },
+    {
+     "inputs_ko": [
+      "디아블로의 뿔",
+      "바알의 눈",
+      "메피스토의 뇌"
+     ],
+     "output_ko": "Pandemonium Finale Portal",
+     "desc_en": "1 Diablo's Horn + 1 Baal's Eye + 1 Mephisto's Brain -> Portal to Tristram (Pandemonium Finale)"
+    },
+    {
+     "inputs_ko": [
+      "뒤틀린 고통의 정수",
+      "차오른 증오의 정수",
+      "불타는 공포의 정수",
+      "곪은 파괴의 정수"
+     ],
+     "output_ko": "면죄의 징표",
+     "desc_en": "1 Twisted Essence of Suffering + 1 Charged Essence of Hatred + 1 Burning Essence of Terror + 1 Festering Essence of Destruction -> Token of Absolution"
+    }
+   ]
+  },
+  {
+   "label": "기타",
+   "recipes": [
+    {
+     "inputs_ko": [
+      "도끼",
+      "Knife"
+     ],
+     "output_ko": "노멀 스로잉 액스",
+     "desc_en": "1 Axe (Any) + 1 Dagger (Any) -> Throwing Axe"
+    },
+    {
+     "inputs_ko": [
+      "창",
+      "화살"
+     ],
+     "output_ko": "노멀 재벌린",
+     "desc_en": "1 Spear (Any) + 1 Arrows -> Javelins"
+    },
+    {
+     "inputs_ko": [
+      "화살 ×2"
+     ],
+     "output_ko": "쇠뇌용 화살",
+     "desc_en": "2 Arrows -> Bolts"
+    },
+    {
+     "inputs_ko": [
+      "쇠뇌용 화살 ×2"
+     ],
+     "output_ko": "화살",
+     "desc_en": "2 Bolts -> Arrows"
+    },
+    {
+     "inputs_ko": [
+      "최하급 해골 ×3"
+     ],
+     "output_ko": "하급 해골",
+     "desc_en": "3 Chipped Skulls -> Flawed Skull"
+    },
+    {
+     "inputs_ko": [
+      "하급 해골 ×3"
+     ],
+     "output_ko": "해골",
+     "desc_en": "3 Flawed Skulls -> Standard Skull"
+    },
+    {
+     "inputs_ko": [
+      "상급 해골 ×3"
+     ],
+     "output_ko": "최상급 해골",
+     "desc_en": "3 Flawless Skulls -> Perfect Skull"
+    },
+    {
+     "inputs_ko": [
+      "레어 소켓 없음 아무 아이템",
+      "최상급 해골 ×3",
+      "요르단의 반지"
+     ],
+     "output_ko": "같은 아이템에 소켓 1개 추가",
+     "desc_en": "3 Perfect Skull + 1 Rare Item + 1 Stone of Jordan -> Add 1 Socket to Rare Item"
+    },
+    {
+     "inputs_ko": [
+      "저급 모든 무기",
+      "엘드 룬",
+      "조각난 보석(아무거나)"
+     ],
+     "output_ko": "같은 종류의 아이템",
+     "desc_en": "1 Eld Rune + 1 Chipped Gem (Any) + 1 Low Quality Weapon -> Normal Weapon"
+    },
+    {
+     "inputs_ko": [
+      "저급 모든 방어구",
+      "엘 룬",
+      "조각난 보석(아무거나)"
+     ],
+     "output_ko": "같은 종류의 아이템",
+     "desc_en": "1 El Rune + 1 Chipped Gem (Any) + 1 Low Quality Armor -> Normal Armor"
+    },
+    {
+     "inputs_ko": [
+      "비에테리얼 모든 무기",
+      "오르트 룬"
+     ],
+     "output_ko": "같은 아이템 (수리·충전)",
+     "desc_en": "1 Ort Rune + 1 Weapon -> Fully Repaired Weapon"
+    },
+    {
+     "inputs_ko": [
+      "비에테리얼 모든 방어구",
+      "랄 룬"
+     ],
+     "output_ko": "같은 아이템 (수리·충전)",
+     "desc_en": "1 Ral Rune + 1 Armor -> Fully Repaired Armor"
+    },
+    {
+     "inputs_ko": [
+      "비에테리얼 모든 무기",
+      "오르트 룬",
+      "조각난 보석(아무거나)"
+     ],
+     "output_ko": "같은 아이템 (수리·충전)",
+     "desc_en": "1 Ort Rune + 1 Chipped Gem (Any) + 1 Weapon -> Fully Repaired and Recharged Weapon"
+    },
+    {
+     "inputs_ko": [
+      "비에테리얼 모든 방어구",
+      "랄 룬",
+      "금간 보석(아무거나)"
+     ],
+     "output_ko": "같은 아이템 (수리·충전)",
+     "desc_en": "1 Ral Rune + 1 Flawed Gem (Any) + 1 Armor -> Fully Repaired and Recharged Armor"
+    },
+    {
+     "inputs_ko": [
+      "소켓 있음 아무 아이템",
+      "헬 룬",
+      "마을 차원문의 두루마리"
+     ],
+     "output_ko": "같은 아이템 — 소켓 비우기 (박힌 룬·보석 파괴)",
+     "desc_en": "1 Hel Rune + Scroll of Town Portal + 1 Socketed Item -> Clear Sockets on Item"
+    },
+    {
+     "inputs_ko": [
+      "탈릭의 고뇌",
+      "콜릭의 고통",
+      "마도크의 분노",
+      "불카토스의 악몽",
+      "워루스크의 끝"
+     ],
+     "output_ko": "Red Portal lvl=137 ×1",
+     "desc_en": "1 Uber Ancient Summon Material from Act 1 + Act2 + Act3 + Act 4 + Act 5 -> Portal to Colossal Summit"
+    }
+   ]
+  }
+ ],
+ "note": "모든 재료를 호라드림 큐브에 넣고 변환 버튼을 누르면 완성됩니다."
+}

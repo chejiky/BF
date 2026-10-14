@@ -27,6 +27,7 @@ def main():
     charms = json.load(open(items_dir / "charms.json", encoding="utf-8"))
     charm_affixes = json.load(open(items_dir / "charm_affixes.json",
                                    encoding="utf-8"))
+    cube = json.load(open(items_dir / "cube_recipes.json", encoding="utf-8"))
     tpl = (ROOT / "app" / "template.html").read_text(encoding="utf-8")
     out = tpl.replace("__SKILL_DATA__", minify(data))
     out = out.replace("__ITEM_DATA__", minify(items))
@@ -34,6 +35,7 @@ def main():
     out = out.replace("__RW_DATA__", minify(rws))
     out = out.replace("__CHARM_DATA__", minify(charms))
     out = out.replace("__CHARM_AFFIX_DATA__", minify(charm_affixes))
+    out = out.replace("__CUBE_DATA__", minify(cube))
     (ROOT / "app" / "index.html").write_text(out, encoding="utf-8")
     print(f"app/index.html: {len(out):,} bytes")
 

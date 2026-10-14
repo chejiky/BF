@@ -211,6 +211,7 @@ const SETS = __SETS_DATA__;
 const RWS = __RW_DATA__;
 const CHARMS = __CHARM_DATA__;
 const CHARM_AFFIXES = __CHARM_AFFIX_DATA__;
+const CUBE = __CUBE_DATA__;
 const ITEM_BY_ID = Object.fromEntries(ITEMS.map(e => [e.id, e]));
 const SET_BY_ID = Object.fromEntries(SETS.map(s => [s.id, s]));
 const SET_ITEM_BY_ID = {};
@@ -270,11 +271,12 @@ function renderHome(){
         return `<button class="kind-card" data-go="u-${k}">
           <span class="nm">${KIND_KO[k]}</span><span class="cnt">${n}개</span></button>`;
       }).join("")}</div>
-      <div class="sec-label">Sets · Runewords · Charms</div>
-      <div class="kind-grid">
+      <div class="sec-label">Sets · Runewords · More</div>
+      <div class="kind-grid" style="grid-template-columns:1fr 1fr">
         <button class="kind-card" data-go="sets"><span class="nm">세트</span><span class="cnt">${SETS.length}세트</span></button>
         <button class="kind-card" data-go="rw"><span class="nm">룬워드</span><span class="cnt">${RWS.length}개</span></button>
         <button class="kind-card" data-go="charms"><span class="nm">부적</span><span class="cnt">종류 안내</span></button>
+        <button class="kind-card" data-go="cube"><span class="nm">큐브 레시피</span><span class="cnt">${CUBE.categories.reduce((a,c)=>a+c.recipes.length,0)}개</span></button>
       </div>
     </div>
     <p class="foot">게임 데이터·아이콘 © Blizzard Entertainment.<br>비공식 팬 제작 · 비상업적 용도</p>
@@ -653,6 +655,24 @@ function renderCharmAffixes(code){
   </div>`;
 }
 
+/* ── 큐브 레시피 ── */
+function renderCube(){
+  setHdr("호라드림 큐브 레시피", "Horadric Cube", true);
+  const recipeRow = r => `<div class="affix-row">
+    <div class="nm">${r.inputs_ko.map(esc).join(" <span style='color:var(--faint)'>+</span> ")}</div>
+    <div class="mods" style="color:var(--gold)">→ ${esc(r.output_ko)}</div>
+    ${r.output_mods_ko?`<div class="mods">${r.output_mods_ko.map(esc).join(" · ")}</div>`:""}
+    <div class="cond">${esc(r.desc_en)}</div>
+  </div>`;
+  $app.innerHTML = `<div class="view">
+    <p class="aff-note">${esc(CUBE.note)}</p>
+    ${CUBE.categories.map((c,i) => `
+      <details class="cat"${i===0?" open":""}><summary>${esc(c.label)} <span class="cnt">${c.recipes.length}개</span></summary>
+        ${c.recipes.map(recipeRow).join("")}
+      </details>`).join("")}
+  </div>`;
+}
+
 /* ── 라우터 ── */
 function route(){
   const h = location.hash.replace(/^#/,"");
@@ -677,6 +697,8 @@ function route(){
     renderCharms();
   } else if(h.startsWith("ca-")){
     renderCharmAffixes(h.slice(3));
+  } else if(h === "cube"){
+    renderCube();
   } else if(h.startsWith("s-")){
     const rest = h.slice(2);
     const cls = CLASS_ORDER.find(c => rest.startsWith(c+"-"));
