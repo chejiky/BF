@@ -158,9 +158,16 @@ class Renderer:
                 "dmg-ltng": "번개 데미지", "dmg-pois": "독 데미지",
             }
             lbl = label_map.get(base, base)
+            unit = ""
+            if lbl.endswith("(%)"):  # "확률(%) +1"처럼 읽히지 않게 %를 값에 붙임
+                lbl, unit = lbl[:-3], "%"
             fmt1 = lambda x: f"{x:g}"
             per_s = fmt1(per) if per == per_hi else f"{fmt1(per)}~{fmt1(per_hi)}"
-            add(f"캐릭터 레벨당 {lbl} +{per_s}", 5)
+            # 99레벨 기준 최대치 병기 (게임은 레벨×증가치를 내림)
+            mx99 = int(99 * per)
+            mx99_hi = int(99 * per_hi)
+            mx_s = f"{mx99}" if mx99 == mx99_hi else f"{mx99}~{mx99_hi}"
+            add(f"캐릭터 레벨당 {lbl} +{per_s}{unit} (99레벨 기준 +{mx_s}{unit})", 5)
             return out
 
         # ── 데미지/방어 계열 ──
