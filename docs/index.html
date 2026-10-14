@@ -157,6 +157,10 @@ img{max-width:100%}
 .chip .sicon{width:1.7rem; height:1.7rem; border-radius:50%}
 .chip:active{border-color:var(--gold-dim)}
 .chip.plain{padding:.28rem .75rem; color:var(--muted)}
+.chips-bar{display:flex; gap:.4rem; overflow-x:auto; padding:.5rem 0 .2rem; margin:0 -1rem; padding-left:1rem; padding-right:1rem; scrollbar-width:none; -webkit-overflow-scrolling:touch}
+.chips-bar::-webkit-scrollbar{display:none}
+.chips-bar .chip{flex:none; white-space:nowrap; font-size:.82rem}
+.chips-bar .chip.on{color:var(--text); border-color:var(--gold-dim); background:var(--raised); box-shadow:inset 0 0 0 1px #d4af5e22}
 .d-sec{margin:1.3rem 0}
 .d-sec h2{
   margin:0 0 .45rem; font-size:.82rem; color:var(--gold); font-weight:700;
@@ -464,21 +468,59 @@ function itemRowHtml(e){
   </button></li>`;
 }
 
+const listState = {}; // 종류별 검색어/분류/등급 필터 유지
 function renderItemList(kind){
   setHdr(`유니크 ${KIND_KO[kind]||""}`, "Unique Items", true);
   const list = ITEMS.filter(e => e.kind===kind);
   if(!list.length) return renderHome();
+  const st = listState[kind] || (listState[kind] = {q:"", cat:"", tier:""});
   const cats = [];
   for(const e of list){ if(!cats.includes(e.category_ko)) cats.push(e.category_ko); }
   cats.sort((a,b)=>a.localeCompare(b,"ko"));
-  let html = `<div class="view">`;
-  for(const c of cats){
-    const rows = list.filter(e => e.category_ko===c)
-      .sort((a,b)=>a.required_level-b.required_level);
-    html += `<div class="cat-head">${esc(c)} <span style="color:var(--faint);font-weight:400">(${rows.length})</span></div>
-      <ul class="rows">${rows.map(itemRowHtml).join("")}</ul>`;
-  }
-  $app.innerHTML = html + `</div>`;
+  const tiers = [["", "전체 등급"], ["normal","노멀"], ["exceptional","익셉셔널"], ["elite","엘리트"]];
+  $app.innerHTML = `<div class="view">
+    <input class="search" id="lq" type="search" placeholder="${KIND_KO[kind]} 이름 검색 (예: 바람살, 윈드포스, 활)" autocomplete="off" value="${esc(st.q)}">
+    <div class="chips-bar" id="catChips">
+      <button class="chip plain${st.cat===""?" on":""}" data-cat="">전체 (${list.length})</button>
+      ${cats.map(c => `<button class="chip plain${st.cat===c?" on":""}" data-cat="${esc(c)}">${esc(c)} (${list.filter(e=>e.category_ko===c).length})</button>`).join("")}
+    </div>
+    <div class="chips-bar" id="tierChips">
+      ${tiers.map(([v,l]) => `<button class="chip plain${st.tier===v?" on":""}" data-tier="${v}">${l}</button>`).join("")}
+    </div>
+    <div id="listOut"></div>
+  </div>`;
+  const draw = () => {
+    const ql = norm(st.q);
+    let rows = list.filter(e =>
+      (!st.cat || e.category_ko===st.cat) && (!st.tier || e.tier===st.tier) &&
+      (!ql || matchName(ql, e.name_ko, e.name_ko_classic, e.name_en, e.base.name_ko, e.base.name_ko_classic, e.category_ko)));
+    const out = document.getElementById("listOut");
+    if(!rows.length){ out.innerHTML = `<p class="empty">조건에 맞는 아이템이 없습니다</p>`; return; }
+    let html = "";
+    const groups = st.cat ? [st.cat] : cats.filter(c => rows.some(e => e.category_ko===c));
+    for(const c of groups){
+      const g = rows.filter(e => e.category_ko===c).sort((a,b)=>a.required_level-b.required_level);
+      if(!g.length) continue;
+      html += `<div class="cat-head">${esc(c)} <span style="color:var(--faint);font-weight:400">(${g.length})</span></div>
+        <ul class="rows">${g.map(itemRowHtml).join("")}</ul>`;
+    }
+    out.innerHTML = html;
+  };
+  const q = document.getElementById("lq");
+  q.addEventListener("input", () => { st.q = q.value.trim(); draw(); });
+  document.getElementById("catChips").addEventListener("click", e => {
+    const b = e.target.closest("[data-cat]"); if(!b) return;
+    st.cat = b.dataset.cat;
+    document.querySelectorAll("#catChips .chip").forEach(x => x.classList.toggle("on", x===b));
+    draw();
+  });
+  document.getElementById("tierChips").addEventListener("click", e => {
+    const b = e.target.closest("[data-tier]"); if(!b) return;
+    st.tier = b.dataset.tier;
+    document.querySelectorAll("#tierChips .chip").forEach(x => x.classList.toggle("on", x===b));
+    draw();
+  });
+  draw();
 }
 
 function renderItem(id){
@@ -518,7 +560,8 @@ function renderItem(id){
 /* ── 세트 ── */
 function renderSetList(){
   setHdr("세트 아이템", "Set Items", true);
-  $app.innerHTML = `<div class="view"><ul class="rows">` + SETS.map(s => {
+  const st = listState.sets || (listState.sets = {q:""});
+  const row = s => {
     const alias = s.name_ko_classic ? ` <span class="en" style="color:var(--faint);font-size:.74rem">${esc(s.name_ko_classic)}</span>` : "";
     const thumb = s.items.find(i=>i.image_src);
     return `<li><button class="row" data-go="set-${s.id}">
@@ -526,7 +569,20 @@ function renderSetList(){
       <span class="b"><span class="nm" style="color:#6fcf6f">${esc(s.name_ko)}</span>${alias}
       <span class="sub">${s.item_count}부위 · ${esc(s.name_en)}</span></span>
       <span class="lv">Lv ${s.min_level}</span></button></li>`;
-  }).join("") + `</ul></div>`;
+  };
+  $app.innerHTML = `<div class="view">
+    <input class="search" id="lq" type="search" placeholder="세트 이름 또는 구성 아이템 검색" autocomplete="off" value="${esc(st.q)}">
+    <div id="listOut"></div></div>`;
+  const draw = () => {
+    const ql = norm(st.q);
+    const rows = SETS.filter(s => !ql || matchName(ql, s.name_ko, s.name_ko_classic, s.name_en) ||
+      s.items.some(i => matchName(ql, i.name_ko, i.name_ko_classic, i.name_en)));
+    document.getElementById("listOut").innerHTML = rows.length
+      ? `<ul class="rows">${rows.map(row).join("")}</ul>` : `<p class="empty">검색 결과가 없습니다</p>`;
+  };
+  const q = document.getElementById("lq");
+  q.addEventListener("input", () => { st.q = q.value.trim(); draw(); });
+  draw();
 }
 
 function renderSet(id){
@@ -575,20 +631,53 @@ const runeSeq = (r, size) => r.runes.map(x =>
 
 function renderRWList(){
   setHdr("룬워드", "Runewords", true);
-  let html = `<div class="view">`;
-  for(const n of [2,3,4,5,6]){
-    const rows = RWS.filter(r => r.sockets===n);
-    if(!rows.length) continue;
-    html += `<div class="cat-head">${n}소켓 <span style="color:var(--faint);font-weight:400">(${rows.length})</span></div><ul class="rows">` +
-      rows.map(r => {
-        const alias = r.name_ko_classic ? ` <span class="en" style="color:var(--faint);font-size:.74rem">${esc(r.name_ko_classic)}</span>` : "";
-        return `<li><button class="row" data-go="r-${r.id}">
-        <span class="b"><span class="nm" style="color:var(--gold)">${esc(r.name_ko)}</span>${alias}
-        <span class="sub">${runeSeq(r,"1.1rem")} <span style="color:var(--faint)">${r.runes.map(x=>esc(x.name_ko)).join("+")} · ${r.bases_ko.map(esc).join(", ")}</span></span></span>
-        <span class="lv">Lv ${r.required_level}</span></button></li>`;
-      }).join("") + `</ul>`;
-  }
-  $app.innerHTML = html + `</div>`;
+  const st = listState.rw || (listState.rw = {q:"", sock:0, base:""});
+  const bases = [];
+  for(const r of RWS) for(const b of r.bases_ko) if(!bases.includes(b)) bases.push(b);
+  bases.sort((a,b)=>a.localeCompare(b,"ko"));
+  $app.innerHTML = `<div class="view">
+    <input class="search" id="lq" type="search" placeholder="룬워드·룬 이름 검색 (예: 수수께끼, 자, 베르)" autocomplete="off" value="${esc(st.q)}">
+    <div class="chips-bar" id="sockChips">
+      <button class="chip plain${!st.sock?" on":""}" data-sock="0">모든 소켓</button>
+      ${[2,3,4,5,6].map(n => `<button class="chip plain${st.sock===n?" on":""}" data-sock="${n}">${n}소켓</button>`).join("")}
+    </div>
+    <div class="chips-bar" id="baseChips">
+      <button class="chip plain${!st.base?" on":""}" data-base="">모든 베이스</button>
+      ${bases.map(b => `<button class="chip plain${st.base===b?" on":""}" data-base="${esc(b)}">${esc(b)}</button>`).join("")}
+    </div>
+    <div id="listOut"></div></div>`;
+  const draw = () => {
+    const ql = norm(st.q);
+    const rows = RWS.filter(r => (!st.sock || r.sockets===st.sock) && (!st.base || r.bases_ko.includes(st.base)) &&
+      (!ql || matchName(ql, r.name_ko, r.name_ko_classic, r.name_en) || matchName(ql, ...r.runes.map(x=>x.name_ko), ...r.runes.map(x=>x.name_en))));
+    let html = "";
+    for(const n of [2,3,4,5,6]){
+      const g = rows.filter(r => r.sockets===n);
+      if(!g.length) continue;
+      html += `<div class="cat-head">${n}소켓 <span style="color:var(--faint);font-weight:400">(${g.length})</span></div><ul class="rows">` +
+        g.map(r => {
+          const alias = r.name_ko_classic ? ` <span class="en" style="color:var(--faint);font-size:.74rem">${esc(r.name_ko_classic)}</span>` : "";
+          return `<li><button class="row" data-go="r-${r.id}">
+          <span class="b"><span class="nm" style="color:var(--gold)">${esc(r.name_ko)}</span>${alias}
+          <span class="sub">${runeSeq(r,"1.1rem")} <span style="color:var(--faint)">${r.runes.map(x=>esc(x.name_ko)).join("+")} · ${r.bases_ko.map(esc).join(", ")}</span></span></span>
+          <span class="lv">Lv ${r.required_level}</span></button></li>`;
+        }).join("") + `</ul>`;
+    }
+    document.getElementById("listOut").innerHTML = html || `<p class="empty">조건에 맞는 룬워드가 없습니다</p>`;
+  };
+  const q = document.getElementById("lq");
+  q.addEventListener("input", () => { st.q = q.value.trim(); draw(); });
+  document.getElementById("sockChips").addEventListener("click", e => {
+    const b = e.target.closest("[data-sock]"); if(!b) return;
+    st.sock = +b.dataset.sock;
+    document.querySelectorAll("#sockChips .chip").forEach(x => x.classList.toggle("on", x===b)); draw();
+  });
+  document.getElementById("baseChips").addEventListener("click", e => {
+    const b = e.target.closest("[data-base]"); if(!b) return;
+    st.base = b.dataset.base;
+    document.querySelectorAll("#baseChips .chip").forEach(x => x.classList.toggle("on", x===b)); draw();
+  });
+  draw();
 }
 
 function renderRW(id){
