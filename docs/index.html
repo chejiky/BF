@@ -40,7 +40,8 @@ body{
   font-size:15px; line-height:1.55; -webkit-text-size-adjust:100%;
 }
 .en{font-family:Cinzel,Georgia,serif}
-button{font:inherit;color:inherit;background:none;border:none;padding:0;cursor:pointer;text-align:inherit}
+button{font:inherit;color:inherit;background:none;border:none;padding:0;cursor:pointer;text-align:inherit;
+  touch-action:manipulation;-webkit-user-select:none;user-select:none} /* 연타 시 iOS 더블탭 줌·텍스트 선택 방지 */
 button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:4px}
 img{max-width:100%}
 
