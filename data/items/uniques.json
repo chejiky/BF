@@ -622,7 +622,7 @@
     "화염 저항 +5%",
     "시야 +4",
     "캐릭터 레벨당 생명력 +1.25",
-    "소켓 (None)"
+    "소켓 (2)"
    ],
    "base_defense": [
     158,
@@ -915,7 +915,7 @@
     "방어력 +140~200% 증가",
     "빙결 지속시간 절반",
     "시야 -2",
-    "소켓 (None)"
+    "소켓 (3)"
    ],
    "base_defense": [
     315,
@@ -1925,7 +1925,7 @@
     "힘 +10",
     "모든 저항 +30~50%",
     "마법 피해 2 감소",
-    "소켓 (None)"
+    "소켓 (1)"
    ],
    "base_defense": [
     30,
@@ -1986,7 +1986,7 @@
     "막기 확률 25% 증가",
     "방어력 +180~220% 증가",
     "모든 저항 +25%",
-    "소켓 (None)"
+    "소켓 (2)"
    ],
    "base_defense": [
     47,
@@ -2658,7 +2658,7 @@
    "required_strength": 88,
    "required_dexterity": null,
    "props_ko": [
-    "피격 시 5% 확률로 레벨 0 눈보라 시전",
+    "피격 시 5% 확률로 레벨 7~19 눈보라 시전",
     "냉기 데미지 +13~21",
     "눈보라 +2 (원소술사 전용)",
     "빙하 가시 +3 (원소술사 전용)",
@@ -4857,7 +4857,7 @@
    "required_strength": null,
    "required_dexterity": null,
    "props_ko": [
-    "피격 시 2% 확률로 레벨 0 운석 낙하 시전",
+    "피격 시 2% 확률로 레벨 13~19 운석 낙하 시전",
     "화염 스킬 레벨 +2",
     "화염 데미지 +24~48",
     "10초당 생명력 +10 회복",
@@ -5285,7 +5285,7 @@
    "base": {
     "code": "cm3",
     "name_en": "Grand Charm",
-    "name_ko": "거대 부적*",
+    "name_ko": "거대 부적",
     "name_ko_classic": "그랜드 차암"
    },
    "kind": "misc",
@@ -5310,7 +5310,7 @@
    "base": {
     "code": "cm1",
     "name_en": "Small Charm",
-    "name_ko": "작은 부적*",
+    "name_ko": "작은 부적",
     "name_ko_classic": "스몰 차암"
    },
    "kind": "misc",
@@ -5336,7 +5336,7 @@
    "base": {
     "code": "cm2",
     "name_en": "Large Charm",
-    "name_ko": "큰 부적*",
+    "name_ko": "큰 부적",
     "name_ko_classic": "라지 차암"
    },
    "kind": "misc",
@@ -5348,7 +5348,7 @@
    "required_dexterity": null,
    "props_ko": [
     "적중 시 5% 확률로 레벨 10 화염폭풍 시전",
-    "무작위 클래스 스킬 레벨 +0~7",
+    "무작위 클래스 스킬 레벨 +3",
     "모든 능력치 +10~20",
     "모든 저항 +10~20%",
     "충전됨: 레벨 30 히드라 (10회 충전)",
@@ -5364,8 +5364,7 @@
    "base": {
     "code": "jew",
     "name_en": "Jewel",
-    "name_ko": "주얼*",
-    "name_ko_classic": "주얼"
+    "name_ko": "주얼"
    },
    "kind": "misc",
    "category_ko": "주얼",
@@ -5390,8 +5389,7 @@
    "base": {
     "code": "jew",
     "name_en": "Jewel",
-    "name_ko": "주얼*",
-    "name_ko_classic": "주얼"
+    "name_ko": "주얼"
    },
    "kind": "misc",
    "category_ko": "주얼",
@@ -5416,8 +5414,7 @@
    "base": {
     "code": "jew",
     "name_en": "Jewel",
-    "name_ko": "주얼*",
-    "name_ko_classic": "주얼"
+    "name_ko": "주얼"
    },
    "kind": "misc",
    "category_ko": "주얼",
@@ -5442,8 +5439,7 @@
    "base": {
     "code": "jew",
     "name_en": "Jewel",
-    "name_ko": "주얼*",
-    "name_ko_classic": "주얼"
+    "name_ko": "주얼"
    },
    "kind": "misc",
    "category_ko": "주얼",
@@ -5468,8 +5464,7 @@
    "base": {
     "code": "jew",
     "name_en": "Jewel",
-    "name_ko": "주얼*",
-    "name_ko_classic": "주얼"
+    "name_ko": "주얼"
    },
    "kind": "misc",
    "category_ko": "주얼",
@@ -5494,8 +5489,7 @@
    "base": {
     "code": "jew",
     "name_en": "Jewel",
-    "name_ko": "주얼*",
-    "name_ko_classic": "주얼"
+    "name_ko": "주얼"
    },
    "kind": "misc",
    "category_ko": "주얼",
@@ -5520,8 +5514,7 @@
    "base": {
     "code": "jew",
     "name_en": "Jewel",
-    "name_ko": "주얼*",
-    "name_ko_classic": "주얼"
+    "name_ko": "주얼"
    },
    "kind": "misc",
    "category_ko": "주얼",
@@ -5546,8 +5539,7 @@
    "base": {
     "code": "jew",
     "name_en": "Jewel",
-    "name_ko": "주얼*",
-    "name_ko_classic": "주얼"
+    "name_ko": "주얼"
    },
    "kind": "misc",
    "category_ko": "주얼",
@@ -6150,7 +6142,7 @@
     "마나 +15",
     "캐릭터 레벨당 골드 획득량(%) +2.5",
     "캐릭터 레벨당 마법 아이템 발견 확률(%) +1",
-    "소켓 (None)"
+    "소켓 (3)"
    ],
    "base_damage": {
     "one_hand": [
@@ -6548,7 +6540,7 @@
    "required_strength": 25,
    "required_dexterity": 136,
    "props_ko": [
-    "공격 시 5% 확률로 레벨 0 연쇄 번개 시전",
+    "공격 시 5% 확률로 레벨 14~20 연쇄 번개 시전",
     "공격 속도 +20%",
     "증가된 데미지 +150~200%",
     "데미지 +10~30",
@@ -7956,7 +7948,7 @@
    "required_dexterity": null,
    "props_ko": [
     "적중 시 5% 확률로 레벨 10 연쇄 번개 시전",
-    "적중 시 10% 확률로 레벨 0 번개 줄기 시전",
+    "적중 시 10% 확률로 레벨 13~20 번개 줄기 시전",
     "피격 시 15% 확률로 레벨 5 번개 줄기 시전",
     "증가된 데미지 +100%",
     "데미지 +35~75",
@@ -7991,7 +7983,7 @@
    "required_strength": 115,
    "required_dexterity": 79,
    "props_ko": [
-    "피격 시 50% 확률로 레벨 0 신성한 빛줄기 시전",
+    "피격 시 50% 확률로 레벨 12~20 신성한 빛줄기 시전",
     "공격 속도 +20%",
     "증가된 데미지 +180~220%",
     "명중률 보너스 35%",
@@ -8198,7 +8190,7 @@
    "required_strength": 189,
    "required_dexterity": 33,
    "props_ko": [
-    "공격 시 10% 확률로 레벨 0 화염구 시전",
+    "공격 시 10% 확률로 레벨 16~20 화염구 시전",
     "증가된 데미지 +100%",
     "화염 데미지 +150~250",
     "생명력 +25",
@@ -11122,7 +11114,7 @@
     "증가된 데미지 +160~200%",
     "데미지 +20~40",
     "강타 확률 +45%",
-    "소켓 (None)",
+    "소켓 (3)",
     "내구도 자동 수리"
    ],
    "base_damage": {
@@ -12129,7 +12121,7 @@
    "required_dexterity": 140,
    "props_ko": [
     "피격 시 5% 확률로 레벨 5 연쇄 번개 시전",
-    "피격 시 2% 확률로 레벨 0 번개 줄기 시전",
+    "피격 시 2% 확률로 레벨 20 번개 줄기 시전",
     "공격 속도 +30%",
     "증가된 데미지 +150~250%",
     "번개 데미지 +1~237",
@@ -12649,7 +12641,7 @@
     "매직 애로우 발사 (레벨 20)",
     "모든 저항 +40%",
     "캐릭터 레벨당 치명타 확률(%) +1",
-    "소켓 (None)"
+    "소켓 (2)"
    ],
    "base_damage": {
     "two_hand": [

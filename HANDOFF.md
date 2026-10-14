@@ -81,6 +81,10 @@
 - 레인보우 패싯 8종 변형 이름 구분, d2archives 이미지 오매핑 보정(Windforce, Gimmershred, Hellfire Torch)
 - 툴팁 수식: 약 10% 줄 생략(암살자 차지업 m1en/macr 등 미지원 변수). 시너지/숙련 투자는 0 기준
 - 미렌더 속성 2개: magdam-rand(오팔맥), roguesbow-affix1(피어스립)
+- 속성 인코딩 함정 (2026-10-14 교정): proc(hit/att/gethit-skill)의 max=0은 레벨 비례 —
+  7개 아이템은 build_uniques.py의 PROC_LEVEL0_RANGES에 D2R DB 확인값 하드코딩(라이트세이버 14~20 등).
+  sock·레벨당(/lvl) 속성은 값이 par에 있기도 min/max에 있기도 함(인내 hp/lvl은 min8 max12 범위).
+  randclassskill은 properties.txt val1=3 고정(+3), min/max는 클래스 ID 범위.
 - 워로드의 영광 세트 5부위는 이미지 없음
 
 ## 저작권 안내 (사용자에게 설명한 입장)

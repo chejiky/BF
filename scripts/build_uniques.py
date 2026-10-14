@@ -78,6 +78,20 @@ def strip_color(s):
     return s.strip().strip("*").strip()  # 색 코드 사이 장식 문자 제거
 
 
+# 발동(proc) 레벨이 0인 아이템: 아이템/착용자 레벨에 비례하는 특수 케이스.
+# 게임 내 표시 범위는 공식/DB(diablowiki, vhpg, rankedboost 등 D2R 자료)에서 확인한 값.
+# 키: (uniqueitems index, 스킬 par 문자열)
+PROC_LEVEL0_RANGES = {
+    ("Lightsabre", "53"): "14~20",        # 연쇄 번개
+    ("Snowclash", "59"): "7~19",          # 눈보라
+    ("The Rising Sun", "56"): "13~19",    # 운석 낙하
+    ("Stormrider", "38"): "13~20",        # 번개 줄기
+    ("Boneslayer Blade", "101"): "12~20", # 신성한 빛줄기
+    ("Hellslayer", "47"): "16~20",        # 화염구
+    ("Stormspire", "38"): "20",           # 번개 줄기 (고정 20으로 표시됨)
+}
+
+
 def rng(mn, mx, pct=False, sign=True):
     unit = "%" if pct else ""
     if mn is None and mx is None:
@@ -122,7 +136,13 @@ class Renderer:
         # ── 레벨 비례 속성 ──
         if p.endswith("/lvl"):
             base = p[:-4]
+            # 레벨당 증가치(1/8 단위)는 보통 par에 있지만, 일부 행은 min/max에 있고 범위일 수도 있음
+            # (예: 인내 hp/lvl min8 max12 → 레벨당 생명력 +1~1.5, 잎새 ac/lvl min16 → +2)
             per = (par or 0) / 8
+            per_hi = per
+            if not par and (mn or mx):
+                per = (mn if mn is not None else mx) / 8
+                per_hi = (mx if mx is not None else mn) / 8
             label_map = {
                 "dmg%": "증가된 데미지(%)", "dmg": "최대 데미지",
                 "hp": "생명력", "mana": "마나",
@@ -133,9 +153,13 @@ class Renderer:
                 "dmg-dem": "악마에게 추가 데미지(%)", "att-dem": "악마 상대 공격력",
                 "res-ltng": "번개 저항(%)", "abs-cold": "냉기 흡수",
                 "abs-fire": "화염 흡수", "deadly": "치명타 확률(%)",
+                "att%": "명중률(%)", "regen-stam": "지구력 회복 속도",
+                "dmg-fire": "화염 데미지", "dmg-cold": "냉기 데미지",
+                "dmg-ltng": "번개 데미지", "dmg-pois": "독 데미지",
             }
             lbl = label_map.get(base, base)
-            per_s = f"{per:g}" if per != int(per) else f"{int(per)}"
+            fmt1 = lambda x: f"{x:g}"
+            per_s = fmt1(per) if per == per_hi else f"{fmt1(per)}~{fmt1(per_hi)}"
             add(f"캐릭터 레벨당 {lbl} +{per_s}", 5)
             return out
 
@@ -189,7 +213,8 @@ class Renderer:
         if p == "skill-rand":
             add(f"무작위 소서리스 스킬 {rng(mn,mx)}", 90); return out
         if p == "randclassskill":
-            add(f"무작위 클래스 스킬 레벨 {rng(mn,mx)}", 150); return out
+            # properties.txt: val1=3 고정(스킬 레벨 수), min/max는 무작위 클래스 ID 범위
+            add("무작위 클래스 스킬 레벨 +3", 150); return out
         if p == "charged":
             add(f"충전됨: 레벨 {mx} {self.skill_ko(par)} ({mn}회 충전)", 10); return out
         if p in ("hit-skill", "att-skill", "gethit-skill", "death-skill",
@@ -197,7 +222,11 @@ class Renderer:
             when = {"hit-skill": "적중 시", "att-skill": "공격 시",
                     "gethit-skill": "피격 시", "death-skill": "사망 시",
                     "kill-skill": "적 처치 시", "levelup-skill": "레벨 상승 시"}[p]
-            add(f"{when} {mn}% 확률로 레벨 {mx} {self.skill_ko(par)} 시전", 157)
+            lvl = str(mx)
+            if not mx:  # 레벨 0 = 아이템/착용자 레벨 비례 — 게임 DB에 기록된 표시 범위 사용
+                key = ((item or {}).get("index", ""), str(par))
+                lvl = PROC_LEVEL0_RANGES.get(key, "?")
+            add(f"{when} {mn}% 확률로 레벨 {lvl} {self.skill_ko(par)} 시전", 157)
             return out
         if p == "aura":
             add(f"장착 시 레벨 {rng(mn,mx,sign=False)} {self.skill_ko(par)} 오라", 158)
@@ -220,7 +249,7 @@ class Renderer:
 
         # ── 소켓/내구/특수 플래그 ──
         if p == "sock":
-            add(f"소켓 ({mx or mn})", 2); return out
+            add(f"소켓 ({par or mx or mn})", 2); return out
         if p == "indestruct":
             add("파괴되지 않음", 4); return out
         if p == "ethereal":
