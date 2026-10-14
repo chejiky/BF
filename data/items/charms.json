@@ -1,0 +1,173 @@
+{
+ "basics": [
+  {
+   "code": "cm1",
+   "name_en": "Small Charm",
+   "name_ko": "작은 부적",
+   "name_ko_classic": "스몰 차암",
+   "size": "1×1",
+   "note": "인벤토리 1칸. 접두·접미 마법 속성이 1~2개 붙는다. 레벨당 효율이 가장 좋아 고급 참 자리를 차지한다."
+  },
+  {
+   "code": "cm2",
+   "name_en": "Large Charm",
+   "name_ko": "큰 부적",
+   "name_ko_classic": "라지 차암",
+   "size": "1×2",
+   "note": "인벤토리 2칸. 작은 부적보다 수치 폭이 넓지만 칸 효율은 떨어진다."
+  },
+  {
+   "code": "cm3",
+   "name_en": "Grand Charm",
+   "name_ko": "거대 부적",
+   "name_ko_classic": "그랜드 차암",
+   "size": "1×3",
+   "note": "인벤토리 3칸. 스킬 탭 +1(스킬러) 접두가 붙을 수 있는 유일한 크기다."
+  }
+ ],
+ "unique_ids": [
+  "annihilus",
+  "hellfire-torch",
+  "gheeds-fortune"
+ ],
+ "sunder": [
+  {
+   "element": "cold",
+   "element_ko": "냉기",
+   "latent": {
+    "name_en": "Latent Cold Rupture",
+    "name_ko": "잠복하는 추위의 파열",
+    "required_level": 75,
+    "props_ko": [
+     "냉기 면역 관통 +300%",
+     "냉기 저항 -90~-70%"
+    ]
+   },
+   "crafted": {
+    "name_en": "Renewed Cold Rupture",
+    "name_ko": "새로워진 추위의 파열",
+    "required_level": 75,
+    "props_ko": [
+     "냉기 면역 관통 +300%",
+     "냉기 저항 -70%",
+     "무작위 추가 속성 (제작 보너스)"
+    ]
+   }
+  },
+  {
+   "element": "fire",
+   "element_ko": "화염",
+   "latent": {
+    "name_en": "Latent Flame Rift",
+    "name_ko": "잠복하는 불길의 균열",
+    "required_level": 75,
+    "props_ko": [
+     "화염 면역 관통 +300%",
+     "화염 저항 -90~-70%"
+    ]
+   },
+   "crafted": {
+    "name_en": "Renewed Flame Rift",
+    "name_ko": "새로워진 불길의 균열",
+    "required_level": 75,
+    "props_ko": [
+     "화염 면역 관통 +300%",
+     "화염 저항 -70%",
+     "무작위 추가 속성 (제작 보너스)"
+    ]
+   }
+  },
+  {
+   "element": "ltng",
+   "element_ko": "번개",
+   "latent": {
+    "name_en": "Latent Crack of the Heavens",
+    "name_ko": "잠복하는 천상의 틈",
+    "required_level": 75,
+    "props_ko": [
+     "번개 면역 관통 +300%",
+     "번개 저항 -90~-70%"
+    ]
+   },
+   "crafted": {
+    "name_en": "Renewed Crack of the Heavens",
+    "name_ko": "새로워진 천상의 틈",
+    "required_level": 75,
+    "props_ko": [
+     "번개 면역 관통 +300%",
+     "번개 저항 -70%",
+     "무작위 추가 속성 (제작 보너스)"
+    ]
+   }
+  },
+  {
+   "element": "pois",
+   "element_ko": "독",
+   "latent": {
+    "name_en": "Latent Rotting Fissure",
+    "name_ko": "잠복하는 부패의 분열",
+    "required_level": 75,
+    "props_ko": [
+     "독 면역 관통 +300%",
+     "독 저항 -90~-70%"
+    ]
+   },
+   "crafted": {
+    "name_en": "Renewed Rotting Fissure",
+    "name_ko": "새로워진 부패의 분열",
+    "required_level": 75,
+    "props_ko": [
+     "독 면역 관통 +300%",
+     "독 저항 -70%",
+     "무작위 추가 속성 (제작 보너스)"
+    ]
+   }
+  },
+  {
+   "element": "phys",
+   "element_ko": "물리",
+   "latent": {
+    "name_en": "Latent Bone Break",
+    "name_ko": "잠복하는 뼈의 분쇄",
+    "required_level": 75,
+    "props_ko": [
+     "물리 면역 관통 +300%",
+     "피해 -20~-10% 감소"
+    ]
+   },
+   "crafted": {
+    "name_en": "Renewed Bone Break",
+    "name_ko": "새로워진 뼈의 분쇄",
+    "required_level": 75,
+    "props_ko": [
+     "물리 면역 관통 +300%",
+     "피해 -10% 감소",
+     "무작위 추가 속성 (제작 보너스)"
+    ]
+   }
+  },
+  {
+   "element": "mag",
+   "element_ko": "마법",
+   "latent": {
+    "name_en": "Latent Black Cleft",
+    "name_ko": "잠복하는 칠흑의 천공",
+    "required_level": 75,
+    "props_ko": [
+     "마법 면역 관통 +300%",
+     "마법 저항 -65~-45%"
+    ]
+   },
+   "crafted": {
+    "name_en": "Renewed Black Cleft",
+    "name_ko": "새로워진 칠흑의 천공",
+    "required_level": 75,
+    "props_ko": [
+     "마법 면역 관통 +300%",
+     "마법 저항 -45%",
+     "무작위 추가 속성 (제작 보너스)"
+    ]
+   }
+  }
+ ]
+}

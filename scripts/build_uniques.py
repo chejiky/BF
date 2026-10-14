@@ -74,7 +74,8 @@ def slugify(name):
 
 def strip_color(s):
     s = re.sub(r"ÿc[0-9a-zA-Z;:/<]?", "", s or "")
-    return re.sub(r"[¹²³⁴⁵]", "", s).strip()  # 게임 내 티어 구분 첨자 제거
+    s = re.sub(r"[¹²³⁴⁵]", "", s)  # 게임 내 티어 구분 첨자 제거
+    return s.strip().strip("*").strip()  # 색 코드 사이 장식 문자 제거
 
 
 def rng(mn, mx, pct=False, sign=True):

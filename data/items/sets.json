@@ -1,0 +1,4510 @@
+{
+ "count": 35,
+ "sets": [
+  {
+   "id": "warlord-s-glory",
+   "name_en": "Warlord's Glory",
+   "name_ko": "군장의 영예",
+   "item_count": 5,
+   "min_level": 1,
+   "items": [
+    {
+     "id": "warlord-s-authority",
+     "name_en": "Warlord's Authority",
+     "name_ko": "군장의 권위",
+     "base": {
+      "code": "hbl",
+      "name_en": "Plated Belt",
+      "name_ko": "플레이트 벨트"
+     },
+     "required_level": 1,
+     "props_ko": [
+      "생명력 +25",
+      "번개 저항 +20%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 공격 등급 +2"
+      }
+     ]
+    },
+    {
+     "id": "warlord-s-conquest",
+     "name_en": "Warlord's Conquest",
+     "name_ko": "군장의 정복",
+     "base": {
+      "code": "hgl",
+      "name_en": "Gauntlets",
+      "name_ko": "건틀릿"
+     },
+     "required_level": 1,
+     "props_ko": [
+      "명중률 +45",
+      "힘 +15"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "공격 속도 +20%"
+      }
+     ]
+    },
+    {
+     "id": "warlord-s-crushers",
+     "name_en": "Warlord's Crushers",
+     "name_ko": "군장의 분쇄자",
+     "base": {
+      "code": "hbt",
+      "name_en": "Greaves",
+      "name_ko": "그리브"
+     },
+     "required_level": 1,
+     "props_ko": [
+      "달리기/걷기 속도 +20%",
+      "화염 저항 +20%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "마법 아이템 발견 확률 75% 증가"
+      }
+     ]
+    },
+    {
+     "id": "warlord-s-lust",
+     "name_en": "Warlord's Lust",
+     "name_ko": "군장의 욕정",
+     "base": {
+      "code": "ghm",
+      "name_en": "Great Helm",
+      "name_ko": "그레이트 헬름"
+     },
+     "required_level": 1,
+     "props_ko": [
+      "방어력 +15",
+      "생명력 +30"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "명중률 "
+      },
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 방어력 +2"
+      }
+     ]
+    },
+    {
+     "id": "warlord-s-mantle",
+     "name_en": "Warlord's Mantle",
+     "name_ko": "군장의 책임",
+     "base": {
+      "code": "ful",
+      "name_en": "Full Plate Mail",
+      "name_ko": "풀 플레이트 메일"
+     },
+     "required_level": 1,
+     "props_ko": [
+      "방어력 +25% 증가",
+      "냉기 저항 +30%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "마나 +20"
+      }
+     ]
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "적중당 생명력 +15% 훔침"
+    },
+    {
+     "count": 3,
+     "text": "방어력 +150"
+    }
+   ],
+   "full_bonuses": [
+    "모든 스킬 레벨 +1",
+    "장착 시 레벨 10 명상 오라",
+    "피해 9 감소",
+    "화염 저항 +15%",
+    "마나 +20"
+   ]
+  },
+  {
+   "id": "arctic-gear",
+   "name_en": "Arctic Gear",
+   "name_ko": "극지 장비",
+   "name_ko_classic": "아틱 기어",
+   "item_count": 4,
+   "min_level": 2,
+   "items": [
+    {
+     "id": "arctic-binding",
+     "name_en": "Arctic Binding",
+     "name_ko": "극지 허리띠",
+     "name_ko_classic": "아틱 바인딩",
+     "base": {
+      "code": "vbl",
+      "name_en": "Light Belt",
+      "name_ko": "라이트 벨트"
+     },
+     "required_level": 2,
+     "props_ko": [
+      "방어력 +30",
+      "냉기 저항 +40%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "마법 아이템 발견 확률 40% 증가"
+      },
+      {
+       "count": 3,
+       "text": "냉기 저항 +10%"
+      }
+     ],
+     "image_src": "arcticbinding.png"
+    },
+    {
+     "id": "arctic-furs",
+     "name_en": "Arctic Furs",
+     "name_ko": "극지 모피",
+     "name_ko_classic": "아틱 퍼스",
+     "base": {
+      "code": "qui",
+      "name_en": "Quilted Armor",
+      "name_ko": "퀼티드 아머"
+     },
+     "required_level": 2,
+     "props_ko": [
+      "방어력 +275~325% 증가",
+      "모든 저항 +10%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 방어력 +3"
+      },
+      {
+       "count": 3,
+       "text": "냉기 저항 +15%"
+      }
+     ],
+     "image_src": "arcticfurs.png"
+    },
+    {
+     "id": "arctic-horn",
+     "name_en": "Arctic Horn",
+     "name_ko": "극지 뿔",
+     "name_ko_classic": "아틱 혼",
+     "base": {
+      "code": "swb",
+      "name_en": "Short War Bow",
+      "name_ko": "숏 워 보우"
+     },
+     "required_level": 2,
+     "props_ko": [
+      "증가된 데미지 +50%",
+      "명중률 보너스 20%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 공격 등급 +2"
+      },
+      {
+       "count": 3,
+       "text": "냉기 데미지 +20~30"
+      }
+     ],
+     "image_src": "arctichorn.png"
+    },
+    {
+     "id": "arctic-mitts",
+     "name_en": "Arctic Mitts",
+     "name_ko": "극지 장갑",
+     "name_ko_classic": "아틱 미트",
+     "base": {
+      "code": "tgl",
+      "name_en": "Light Gauntlets",
+      "name_ko": "라이트 건틀릿"
+     },
+     "required_level": 2,
+     "props_ko": [
+      "공격 속도 +10%",
+      "생명력 +20"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "명중률 +50"
+      },
+      {
+       "count": 3,
+       "text": "민첩 +10"
+      }
+     ],
+     "image_src": "arcticmitts.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "힘 +5"
+    },
+    {
+     "count": 3,
+     "text": "생명력 +50"
+    }
+   ],
+   "full_bonuses": [
+    "캐릭터 레벨당 dmg-cold +2",
+    "빙결되지 않음"
+   ]
+  },
+  {
+   "id": "berserker-s-arsenal",
+   "name_en": "Berserker's Arsenal",
+   "name_ko": "광전사의 무기고",
+   "name_ko_classic": "버서커 아스널",
+   "item_count": 3,
+   "min_level": 3,
+   "items": [
+    {
+     "id": "berserker-s-hatchet",
+     "name_en": "Berserker's Hatchet",
+     "name_ko": "광전사의 해칫",
+     "name_ko_classic": "버서커의 헤칫",
+     "base": {
+      "code": "2ax",
+      "name_en": "Double Axe",
+      "name_ko": "더블 액스"
+     },
+     "required_level": 3,
+     "props_ko": [
+      "명중률 보너스 30%",
+      "적중당 마나 +5% 훔침"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "증가된 데미지 +50%"
+      }
+     ],
+     "image_src": "berserkerhatchet.png"
+    },
+    {
+     "id": "berserker-s-hauberk",
+     "name_en": "Berserker's Hauberk",
+     "name_ko": "광전사의 흉갑",
+     "name_ko_classic": "버서커의 허버크",
+     "base": {
+      "code": "spl",
+      "name_en": "Splint Mail",
+      "name_ko": "스플린트 메일"
+     },
+     "required_level": 3,
+     "props_ko": [
+      "야만용사 스킬 레벨 +1",
+      "마법 피해 2 감소"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 방어력 +3"
+      }
+     ],
+     "image_src": "berserkerhauberk.png"
+    },
+    {
+     "id": "berserker-s-headgear",
+     "name_en": "Berserker's Headgear",
+     "name_ko": "광전사의 머리 방어구",
+     "name_ko_classic": "버서커의 헤드기어",
+     "base": {
+      "code": "hlm",
+      "name_en": "Helm",
+      "name_ko": "헬름"
+     },
+     "required_level": 3,
+     "props_ko": [
+      "방어력 +15",
+      "화염 저항 +25%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 공격 등급 +2"
+      }
+     ],
+     "image_src": "berserkerheadgear.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "생명력 +50"
+    }
+   ],
+   "full_bonuses": [
+    "중독 지속시간 75% 감소",
+    "최소 독 데미지 +16",
+    "최대 독 데미지 +32",
+    "방어력 +75"
+   ]
+  },
+  {
+   "id": "hsarus-defense",
+   "name_en": "Hsarus' Defense",
+   "name_ko": "흐사루스의 방어",
+   "name_ko_classic": "사루의 디펜스",
+   "item_count": 3,
+   "min_level": 3,
+   "items": [
+    {
+     "id": "hsarus-iron-fist",
+     "name_en": "Hsarus' Iron Fist",
+     "name_ko": "흐사루스의 무쇠 주먹",
+     "name_ko_classic": "사루의 아이언 피스트",
+     "base": {
+      "code": "buc",
+      "name_en": "Buckler",
+      "name_ko": "버클러"
+     },
+     "required_level": 3,
+     "props_ko": [
+      "힘 +10",
+      "피해 2 감소"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 방어력 +2.5"
+      }
+     ],
+     "image_src": "hsarusironfist.png"
+    },
+    {
+     "id": "hsarus-iron-heel",
+     "name_en": "Hsarus' Iron Heel",
+     "name_ko": "흐사루스의 무쇠 발꿈치",
+     "name_ko_classic": "사루의 아이언 힐",
+     "base": {
+      "code": "mbt",
+      "name_en": "Chain Boots",
+      "name_ko": "체인 부츠"
+     },
+     "required_level": 3,
+     "props_ko": [
+      "달리기/걷기 속도 +20%",
+      "화염 저항 +25%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 공격 등급 +2.5"
+      }
+     ],
+     "image_src": "hsarusironheel.png"
+    },
+    {
+     "id": "hsarus-iron-stay",
+     "name_en": "Hsarus' Iron Stay",
+     "name_ko": "흐사루스의 무쇠 고정대",
+     "name_ko_classic": "사루의 아이언 스테이",
+     "base": {
+      "code": "mbl",
+      "name_en": "Belt",
+      "name_ko": "벨트"
+     },
+     "required_level": 3,
+     "props_ko": [
+      "생명력 +20",
+      "냉기 저항 +20%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 방어력 +2.5"
+      }
+     ],
+     "image_src": "hsarusironstay.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "공격자가 데미지 5를 받음"
+    }
+   ],
+   "full_bonuses": [
+    "최대 데미지 +5",
+    "빙결되지 않음",
+    "번개 저항 +25%"
+   ]
+  },
+  {
+   "id": "cleglaw-s-brace",
+   "name_en": "Cleglaw's Brace",
+   "name_ko": "클리글로의 버팀목",
+   "name_ko_classic": "클레글로우 브레이스",
+   "item_count": 3,
+   "min_level": 4,
+   "items": [
+    {
+     "id": "cleglaw-s-claw",
+     "name_en": "Cleglaw's Claw",
+     "name_ko": "클리글로의 발톱",
+     "name_ko_classic": "클레그로우의 클러",
+     "base": {
+      "code": "sml",
+      "name_en": "Small Shield",
+      "name_ko": "스몰 쉴드"
+     },
+     "required_level": 4,
+     "props_ko": [
+      "방어력 +17",
+      "중독 지속시간 75% 감소"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "모든 저항 +15%"
+      }
+     ],
+     "image_src": "cleglawsclaw.png"
+    },
+    {
+     "id": "cleglaw-s-pincers",
+     "name_en": "Cleglaw's Pincers",
+     "name_ko": "클리글로의 집게",
+     "name_ko_classic": "클레그로우의 핀서즈",
+     "base": {
+      "code": "mgl",
+      "name_en": "Chain Gloves",
+      "name_ko": "체인 글러브"
+     },
+     "required_level": 4,
+     "props_ko": [
+      "넉백",
+      "대상 둔화 25%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 공격 등급 +2.5"
+      }
+     ],
+     "image_src": "cleglawspincers.png"
+    },
+    {
+     "id": "cleglaw-s-tooth",
+     "name_en": "Cleglaw's Tooth",
+     "name_ko": "클리글로의 이빨",
+     "name_ko_classic": "클레그로우의 투쓰",
+     "base": {
+      "code": "lsd",
+      "name_en": "Long Sword",
+      "name_ko": "롱소드"
+     },
+     "required_level": 4,
+     "props_ko": [
+      "명중률 보너스 30%",
+      "치명적 공격 +50%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 최대 데미지 +1.25"
+      }
+     ],
+     "image_src": "cleglawstooth.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "방어력 +50"
+    }
+   ],
+   "full_bonuses": [
+    "방어력 +50",
+    "적중당 마나 +6% 훔침",
+    "강타 확률 +35%",
+    "공격 속도 +20%"
+   ]
+  },
+  {
+   "id": "infernal-tools",
+   "name_en": "Infernal Tools",
+   "name_ko": "지옥불 도구",
+   "name_ko_classic": "인퍼널 툴스",
+   "item_count": 3,
+   "min_level": 5,
+   "items": [
+    {
+     "id": "infernal-cranium",
+     "name_en": "Infernal Cranium",
+     "name_ko": "지옥불 두개골",
+     "name_ko_classic": "인퍼널 크래니엄",
+     "base": {
+      "code": "cap",
+      "name_en": "Cap",
+      "name_ko": "캡"
+     },
+     "required_level": 5,
+     "props_ko": [
+      "받은 데미지의 20%가 마나로 전환",
+      "모든 저항 +10%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 방어력 +2"
+      }
+     ],
+     "image_src": "infernalcranium.png"
+    },
+    {
+     "id": "infernal-sign",
+     "name_en": "Infernal Sign",
+     "name_ko": "지옥불 징조",
+     "name_ko_classic": "인퍼널 싸인",
+     "base": {
+      "code": "tbl",
+      "name_en": "Heavy Belt",
+      "name_ko": "헤비 벨트"
+     },
+     "required_level": 5,
+     "props_ko": [
+      "방어력 +25",
+      "생명력 +20"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "독 저항 +25%"
+      },
+      {
+       "count": 3,
+       "text": "빙결 지속시간 절반"
+      }
+     ],
+     "image_src": "infernalbuckle.png"
+    },
+    {
+     "id": "infernal-torch",
+     "name_en": "Infernal Torch",
+     "name_ko": "지옥불 횃불",
+     "name_ko_classic": "인퍼널 토치",
+     "base": {
+      "code": "gwn",
+      "name_en": "Grim Wand",
+      "name_ko": "그림 원드"
+     },
+     "required_level": 5,
+     "props_ko": [
+      "강령술사 스킬 레벨 +1",
+      "최소 데미지 +8"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 공격 등급 +2.5"
+      }
+     ],
+     "image_src": "grimwand.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "독 데미지 +25~25 (3초)"
+    },
+    {
+     "count": 3,
+     "text": "마나 +10"
+    }
+   ],
+   "full_bonuses": [
+    "명중률 보너스 20%",
+    "강령술사 스킬 레벨 +1",
+    "상처 악화 확률 +20%",
+    "적중당 마나 +6% 훔침",
+    "최대 마나 20% 증가",
+    "빙결되지 않음"
+   ]
+  },
+  {
+   "id": "death-s-disguise",
+   "name_en": "Death's Disguise",
+   "name_ko": "죽음의 위장",
+   "name_ko_classic": "데쓰 디스가이즈",
+   "item_count": 3,
+   "min_level": 6,
+   "items": [
+    {
+     "id": "death-s-guard",
+     "name_en": "Death's Guard",
+     "name_ko": "죽음의 경비",
+     "name_ko_classic": "데쓰 가드",
+     "base": {
+      "code": "lbl",
+      "name_en": "Sash",
+      "name_ko": "새시"
+     },
+     "required_level": 6,
+     "props_ko": [
+      "방어력 +20",
+      "빙결되지 않음"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "모든 저항 +15%"
+      }
+     ],
+     "image_src": "deathsguard.png"
+    },
+    {
+     "id": "death-s-hand",
+     "name_en": "Death's Hand",
+     "name_ko": "죽음의 손",
+     "name_ko_classic": "데쓰 핸드",
+     "base": {
+      "code": "lgl",
+      "name_en": "Leather Gloves",
+      "name_ko": "레더 글러브"
+     },
+     "required_level": 6,
+     "props_ko": [
+      "독 저항 +50%",
+      "중독 지속시간 75% 감소"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "공격 속도 +30%"
+      }
+     ],
+     "image_src": "deathshand.png"
+    },
+    {
+     "id": "death-s-touch",
+     "name_en": "Death's Touch",
+     "name_ko": "죽음의 손길",
+     "name_ko_classic": "데쓰 터치",
+     "base": {
+      "code": "wsd",
+      "name_en": "War Sword",
+      "name_ko": "워 소드"
+     },
+     "required_level": 6,
+     "props_ko": [
+      "증가된 데미지 +25%",
+      "적중당 생명력 +4% 훔침"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "냉기 데미지 +25~75"
+      }
+     ],
+     "image_src": "deathstouch.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "적중당 생명력 +8% 훔침"
+    }
+   ],
+   "full_bonuses": [
+    "명중률 보너스 40%",
+    "최소 데미지 +10",
+    "모든 저항 +25%"
+   ]
+  },
+  {
+   "id": "sigon-s-complete-steel",
+   "name_en": "Sigon's Complete Steel",
+   "name_ko": "시곤의 온전한 강철",
+   "name_ko_classic": "사이곤 컴플릿스틸",
+   "item_count": 6,
+   "min_level": 6,
+   "items": [
+    {
+     "id": "sigon-s-gage",
+     "name_en": "Sigon's Gage",
+     "name_ko": "시곤의 전투 장갑",
+     "name_ko_classic": "사이곤의 게이지",
+     "base": {
+      "code": "hgl",
+      "name_en": "Gauntlets",
+      "name_ko": "건틀릿"
+     },
+     "required_level": 6,
+     "props_ko": [
+      "명중률 +20",
+      "힘 +10"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "공격 속도 +30%"
+      }
+     ],
+     "image_src": "sigonsgauntlets.png"
+    },
+    {
+     "id": "sigon-s-guard",
+     "name_en": "Sigon's Guard",
+     "name_ko": "시곤의 보호구",
+     "name_ko_classic": "사이곤의 가드",
+     "base": {
+      "code": "tow",
+      "name_en": "Tower Shield",
+      "name_ko": "타워 쉴드"
+     },
+     "required_level": 6,
+     "props_ko": [
+      "모든 스킬 레벨 +1",
+      "막기 확률 20% 증가"
+     ],
+     "set_bonuses": [],
+     "image_src": "sigonsguard.png"
+    },
+    {
+     "id": "sigon-s-sabot",
+     "name_en": "Sigon's Sabot",
+     "name_ko": "시곤의 나막신",
+     "name_ko_classic": "사이곤의 새보우",
+     "base": {
+      "code": "hbt",
+      "name_en": "Greaves",
+      "name_ko": "그리브"
+     },
+     "required_level": 6,
+     "props_ko": [
+      "달리기/걷기 속도 +20%",
+      "냉기 저항 +40%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "명중률 +50"
+      },
+      {
+       "count": 3,
+       "text": "마법 아이템 발견 확률 50% 증가"
+      }
+     ],
+     "image_src": "sigonsgreaves.png"
+    },
+    {
+     "id": "sigon-s-shelter",
+     "name_en": "Sigon's Shelter",
+     "name_ko": "시곤의 안식처",
+     "name_ko_classic": "사이곤의 쉘터",
+     "base": {
+      "code": "gth",
+      "name_en": "Gothic Plate",
+      "name_ko": "고딕 플레이트"
+     },
+     "required_level": 6,
+     "props_ko": [
+      "방어력 +25% 증가",
+      "번개 저항 +30%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "공격자가 데미지 20를 받음"
+      }
+     ],
+     "image_src": "sigonsshelter.png"
+    },
+    {
+     "id": "sigon-s-visor",
+     "name_en": "Sigon's Visor",
+     "name_ko": "시곤의 챙",
+     "name_ko_classic": "사이곤의 바이저",
+     "base": {
+      "code": "ghm",
+      "name_en": "Great Helm",
+      "name_ko": "그레이트 헬름"
+     },
+     "required_level": 6,
+     "props_ko": [
+      "방어력 +25",
+      "마나 +30"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 공격 등급 +2"
+      }
+     ],
+     "image_src": "sigonsvisor.png"
+    },
+    {
+     "id": "sigon-s-wrap",
+     "name_en": "Sigon's Wrap",
+     "name_ko": "시곤의 싸개",
+     "name_ko_classic": "사이곤의 랩",
+     "base": {
+      "code": "hbl",
+      "name_en": "Plated Belt",
+      "name_ko": "플레이트 벨트"
+     },
+     "required_level": 6,
+     "props_ko": [
+      "생명력 +20",
+      "화염 저항 +20%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 방어력 +2"
+      }
+     ],
+     "image_src": "sigonswrap.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "적중당 생명력 +10% 훔침"
+    },
+    {
+     "count": 3,
+     "text": "방어력 +100"
+    }
+   ],
+   "full_bonuses": [
+    "화염 저항 +12%",
+    "공격자가 데미지 12를 받음",
+    "피해 7 감소",
+    "최대 화염 데미지 +24",
+    "마나 +20"
+   ]
+  },
+  {
+   "id": "bane-s-garments",
+   "name_en": "Bane's Garments",
+   "name_ko": "재앙의 복장",
+   "item_count": 3,
+   "min_level": 8,
+   "items": [
+    {
+     "id": "bane-s-authority",
+     "name_en": "Bane's Authority",
+     "name_ko": "재앙의 권위",
+     "base": {
+      "code": "vbl",
+      "name_en": "Light Belt",
+      "name_ko": "라이트 벨트"
+     },
+     "required_level": 8,
+     "props_ko": [
+      "시전 속도 +10%",
+      "생명력 +20"
+     ],
+     "set_bonuses": [
+      {
+       "count": 3,
+       "text": "마력 +15"
+      }
+     ],
+     "image_src": "lightbelt.png"
+    },
+    {
+     "id": "bane-s-oathmaker",
+     "name_en": "Bane's Oathmaker",
+     "name_ko": "재앙의 맹약자",
+     "base": {
+      "code": "kri",
+      "name_en": "Kris",
+      "name_ko": "크리스"
+     },
+     "required_level": 8,
+     "props_ko": [
+      "달리기/걷기 속도 +20%",
+      "캐릭터 레벨당 최대 데미지 +1"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "적 처치 시 마나 +3"
+      },
+      {
+       "count": 3,
+       "text": "치명적 공격 +30%"
+      }
+     ],
+     "image_src": "banes_spire_graphic3.png"
+    },
+    {
+     "id": "bane-s-wraithskin",
+     "name_en": "Bane's Wraithskin",
+     "name_ko": "재앙의 망령껍질",
+     "base": {
+      "code": "hla",
+      "name_en": "Hard Leather Armor",
+      "name_ko": "하드 레더 아머"
+     },
+     "required_level": 8,
+     "props_ko": [
+      "방어력 +50",
+      "마법 저항 +30%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "타격 회복 속도 +25%"
+      },
+      {
+       "count": 3,
+       "text": "캐릭터 레벨당 공격 등급 +2"
+      }
+     ],
+     "image_src": "hardleather_graphic.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "증가된 데미지 +80%"
+    }
+   ],
+   "full_bonuses": [
+    "모든 스킬 레벨 +1",
+    "민첩 +15",
+    "시전 속도 +25%",
+    "마법 아이템 발견 확률 40% 증가"
+   ]
+  },
+  {
+   "id": "isenhart-s-armory",
+   "name_en": "Isenhart's Armory",
+   "name_ko": "아이젠하트의 무기고",
+   "name_ko_classic": "아이젠하트 아머리",
+   "item_count": 4,
+   "min_level": 8,
+   "items": [
+    {
+     "id": "isenhart-s-case",
+     "name_en": "Isenhart's Case",
+     "name_ko": "아이젠하트의 통",
+     "name_ko_classic": "아이젠하트의 케이스",
+     "base": {
+      "code": "brs",
+      "name_en": "Breast Plate",
+      "name_ko": "브레스트 플레이트"
+     },
+     "required_level": 8,
+     "props_ko": [
+      "방어력 +40",
+      "마법 피해 2 감소"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 방어력 +2"
+      }
+     ],
+     "image_src": "isenhartscase.png"
+    },
+    {
+     "id": "isenhart-s-horns",
+     "name_en": "Isenhart's Horns",
+     "name_ko": "아이젠하트의 뿔",
+     "name_ko_classic": "아이젠하트의 혼즈",
+     "base": {
+      "code": "fhl",
+      "name_en": "Full Helm",
+      "name_ko": "풀 헬름"
+     },
+     "required_level": 8,
+     "props_ko": [
+      "민첩 +6",
+      "피해 2 감소"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "모든 저항 +8%"
+      }
+     ],
+     "image_src": "isenhartshorns.png"
+    },
+    {
+     "id": "isenhart-s-lightbrand",
+     "name_en": "Isenhart's Lightbrand",
+     "name_ko": "아이젠하트의 빛 낙인",
+     "name_ko_classic": "아이젠하트의 라이트브랜드",
+     "base": {
+      "code": "bsd",
+      "name_en": "Broad Sword",
+      "name_ko": "브로드소드"
+     },
+     "required_level": 8,
+     "props_ko": [
+      "공격 속도 +20%",
+      "최소 데미지 +10"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 공격 등급 +1.25"
+      }
+     ],
+     "image_src": "isenhartslightbrand.png"
+    },
+    {
+     "id": "isenhart-s-parry",
+     "name_en": "Isenhart's Parry",
+     "name_ko": "아이젠하트의 회피",
+     "name_ko_classic": "아이젠하트의 패리",
+     "base": {
+      "code": "gts",
+      "name_en": "Gothic Shield",
+      "name_ko": "고딕 쉴드"
+     },
+     "required_level": 8,
+     "props_ko": [
+      "방어력 +40",
+      "공격자가 번개 데미지 4를 받음"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "모든 저항 +8%"
+      }
+     ],
+     "image_src": "isenhartsparry.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "힘 +10"
+    },
+    {
+     "count": 3,
+     "text": "민첩 +10"
+    }
+   ],
+   "full_bonuses": [
+    "적중당 생명력 +5% 훔침",
+    "모든 저항 +10%",
+    "명중률 보너스 35%",
+    "막기 확률 30% 증가",
+    "달리기/걷기 속도 +20%"
+   ]
+  },
+  {
+   "id": "civerb-s-vestments",
+   "name_en": "Civerb's Vestments",
+   "name_ko": "시버브의 예복",
+   "name_ko_classic": "시버브 베스트먼트",
+   "item_count": 3,
+   "min_level": 9,
+   "items": [
+    {
+     "id": "civerb-s-cudgel",
+     "name_en": "Civerb's Cudgel",
+     "name_ko": "시버브의 곤봉",
+     "name_ko_classic": "시버브의 커질",
+     "base": {
+      "code": "gsc",
+      "name_en": "Grand Scepter",
+      "name_ko": "그랜드 셉터"
+     },
+     "required_level": 9,
+     "props_ko": [
+      "최대 데미지 +17~23",
+      "명중률 +75"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 최대 데미지 +1"
+      }
+     ],
+     "image_src": "grandscepter.png"
+    },
+    {
+     "id": "civerb-s-icon",
+     "name_en": "Civerb's Icon",
+     "name_ko": "시버브의 우상",
+     "name_ko_classic": "시버브의 아이콘",
+     "base": {
+      "code": "amu",
+      "name_en": "Amulet",
+      "name_ko": "목걸이"
+     },
+     "required_level": 9,
+     "props_ko": [
+      "10초당 생명력 +4 회복",
+      "마나 재생 40%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "냉기 저항 +25%"
+      },
+      {
+       "count": 3,
+       "text": "방어력 +25"
+      }
+     ],
+     "image_src": "amu1.png"
+    },
+    {
+     "id": "civerb-s-ward",
+     "name_en": "Civerb's Ward",
+     "name_ko": "시버브의 수호물",
+     "name_ko_classic": "시버브의 워드",
+     "base": {
+      "code": "lrg",
+      "name_en": "Large Shield",
+      "name_ko": "라지 쉴드"
+     },
+     "required_level": 9,
+     "props_ko": [
+      "막기 확률 15% 증가",
+      "방어력 +15"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "마나 +21~22"
+      },
+      {
+       "count": 3,
+       "text": "독 저항 +25~26%"
+      }
+     ],
+     "image_src": "civerbsward.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "화염 저항 +25%"
+    }
+   ],
+   "full_bonuses": [
+    "힘 +15",
+    "언데드에게 추가 데미지 +200%",
+    "번개 저항 +25%",
+    "명중률 보너스 25%",
+    "방어력 +50"
+   ]
+  },
+  {
+   "id": "cathan-s-traps",
+   "name_en": "Cathan's Traps",
+   "name_ko": "카탄의 덫",
+   "name_ko_classic": "캐산 트랩",
+   "item_count": 5,
+   "min_level": 11,
+   "items": [
+    {
+     "id": "cathan-s-mesh",
+     "name_en": "Cathan's Mesh",
+     "name_ko": "카탄의 그물망",
+     "name_ko_classic": "캐산의 메쉬",
+     "base": {
+      "code": "chn",
+      "name_en": "Chain Mail",
+      "name_ko": "체인 메일"
+     },
+     "required_level": 11,
+     "props_ko": [
+      "방어력 +15",
+      "요구 사항 -50%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "공격자가 데미지 5를 받음"
+      },
+      {
+       "count": 3,
+       "text": "화염 저항 +30%"
+      }
+     ],
+     "image_src": "cathansmesh.png"
+    },
+    {
+     "id": "cathan-s-rule",
+     "name_en": "Cathan's Rule",
+     "name_ko": "카탄의 지배",
+     "name_ko_classic": "캐산의 룰",
+     "base": {
+      "code": "bst",
+      "name_en": "Battle Staff",
+      "name_ko": "배틀 스태프"
+     },
+     "required_level": 11,
+     "props_ko": [
+      "화염 스킬 레벨 +1",
+      "최대 화염 데미지 +10"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "마나 +50"
+      },
+      {
+       "count": 3,
+       "text": "모든 저항 +10%"
+      }
+     ],
+     "image_src": "cathansrule.png"
+    },
+    {
+     "id": "cathan-s-seal",
+     "name_en": "Cathan's Seal",
+     "name_ko": "카탄의 문장",
+     "name_ko_classic": "캐산의 씨일",
+     "base": {
+      "code": "rin",
+      "name_en": "Ring",
+      "name_ko": "반지"
+     },
+     "required_level": 11,
+     "props_ko": [
+      "적중당 생명력 +6% 훔침",
+      "피해 2 감소"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "힘 +10"
+      }
+     ],
+     "image_src": "ring4.png"
+    },
+    {
+     "id": "cathan-s-sigil",
+     "name_en": "Cathan's Sigil",
+     "name_ko": "카탄의 인장",
+     "name_ko_classic": "캐산의 씨질",
+     "base": {
+      "code": "amu",
+      "name_en": "Amulet",
+      "name_ko": "목걸이"
+     },
+     "required_level": 11,
+     "props_ko": [
+      "타격 회복 속도 +10%",
+      "공격자가 번개 데미지 5를 받음"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "명중률 +50"
+      },
+      {
+       "count": 3,
+       "text": "마법 아이템 발견 확률 25% 증가"
+      }
+     ],
+     "image_src": "amu1.png"
+    },
+    {
+     "id": "cathan-s-visage",
+     "name_en": "Cathan's Visage",
+     "name_ko": "카탄의 얼굴",
+     "name_ko_classic": "캐산의 비지즈",
+     "base": {
+      "code": "msk",
+      "name_en": "Mask",
+      "name_ko": "마스크"
+     },
+     "required_level": 11,
+     "props_ko": [
+      "마나 +20",
+      "냉기 저항 +25%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 방어력 +2"
+      }
+     ],
+     "image_src": "mask.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "화염 데미지 +15~20"
+    },
+    {
+     "count": 2,
+     "text": "마나 재생 16%"
+    },
+    {
+     "count": 3,
+     "text": "번개 저항 +25%"
+    }
+   ],
+   "full_bonuses": [
+    "명중률 +60",
+    "마법 피해 3 감소",
+    "모든 저항 +25%",
+    "시전 속도 +10%",
+    "마나 +20"
+   ]
+  },
+  {
+   "id": "angelic-raiment",
+   "name_en": "Angelic Raiment",
+   "name_ko": "천사의 의복",
+   "name_ko_classic": "엔젤릭 레이먼트",
+   "item_count": 4,
+   "min_level": 12,
+   "items": [
+    {
+     "id": "angelic-halo",
+     "name_en": "Angelic Halo",
+     "name_ko": "천사의 후광",
+     "name_ko_classic": "엔젤릭 헤일로우",
+     "base": {
+      "code": "rin",
+      "name_en": "Ring",
+      "name_ko": "반지"
+     },
+     "required_level": 12,
+     "props_ko": [
+      "생명력 +20",
+      "10초당 생명력 +6 회복"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 공격 등급 +3"
+      },
+      {
+       "count": 3,
+       "text": "마법 아이템 발견 확률 50% 증가"
+      }
+     ],
+     "image_src": "ring2.png"
+    },
+    {
+     "id": "angelic-mantle",
+     "name_en": "Angelic Mantle",
+     "name_ko": "천사의 어깨걸이",
+     "name_ko_classic": "엔젤릭 맨틀",
+     "base": {
+      "code": "rng",
+      "name_en": "Ring Mail",
+      "name_ko": "링 메일"
+     },
+     "required_level": 12,
+     "props_ko": [
+      "방어력 +40% 증가",
+      "피해 3 감소"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "방어력 +150"
+      },
+      {
+       "count": 3,
+       "text": "화염 저항 +50%"
+      },
+      {
+       "count": 3,
+       "text": "언데드에게 추가 데미지 +100%"
+      }
+     ],
+     "image_src": "angelicmantle.png"
+    },
+    {
+     "id": "angelic-sickle",
+     "name_en": "Angelic Sickle",
+     "name_ko": "천사의 낫",
+     "name_ko_classic": "엔젤릭 시클",
+     "base": {
+      "code": "sbr",
+      "name_en": "Sabre",
+      "name_ko": "세이버"
+     },
+     "required_level": 12,
+     "props_ko": [
+      "언데드에게 추가 데미지 +250%",
+      "명중률 +75"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "증가된 데미지 +75%"
+      },
+      {
+       "count": 3,
+       "text": "공격 속도 +30%"
+      },
+      {
+       "count": 3,
+       "text": "데미지 +6"
+      }
+     ],
+     "image_src": "angelicsickle.png"
+    },
+    {
+     "id": "angelic-wings",
+     "name_en": "Angelic Wings",
+     "name_ko": "천사의 날개",
+     "name_ko_classic": "엔젤릭 윙",
+     "base": {
+      "code": "amu",
+      "name_en": "Amulet",
+      "name_ko": "목걸이"
+     },
+     "required_level": 12,
+     "props_ko": [
+      "받은 데미지의 20%가 마나로 전환",
+      "시야 +3"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "생명력 +75"
+      },
+      {
+       "count": 3,
+       "text": "모든 스킬 레벨 +1"
+      }
+     ],
+     "image_src": "amu2.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "민첩 +10"
+    },
+    {
+     "count": 3,
+     "text": "마나 +50"
+    }
+   ],
+   "full_bonuses": [
+    "모든 저항 +25%",
+    "빙결 지속시간 절반",
+    "마법 아이템 발견 확률 40% 증가",
+    "마나 재생 8%",
+    "모든 스킬 레벨 +1"
+   ]
+  },
+  {
+   "id": "cow-king-s-leathers",
+   "name_en": "Cow King's Leathers",
+   "name_ko": "젖소 왕의 보호구",
+   "name_ko_classic": "카우 킹의 레더",
+   "item_count": 3,
+   "min_level": 13,
+   "items": [
+    {
+     "id": "cow-king-s-hooves",
+     "name_en": "Cow King's Hooves",
+     "name_ko": "젖소 왕의 발굽",
+     "name_ko_classic": "카우 킹의 후브",
+     "base": {
+      "code": "vbt",
+      "name_en": "Heavy Boots",
+      "name_ko": "헤비 부츠"
+     },
+     "required_level": 13,
+     "props_ko": [
+      "달리기/걷기 속도 +30%",
+      "화염 데미지 +25~35",
+      "방어력 +25~35",
+      "민첩 +20",
+      "마법 아이템 발견 확률 25% 증가"
+     ],
+     "set_bonuses": [],
+     "image_src": "heavyboots.png"
+    },
+    {
+     "id": "cow-king-s-hide",
+     "name_en": "Cow King's Hide",
+     "name_ko": "젖소 왕의 날가죽",
+     "name_ko_classic": "카우 킹의 하이드",
+     "base": {
+      "code": "stu",
+      "name_en": "Studded Leather",
+      "name_ko": "스터디드 레더"
+     },
+     "required_level": 18,
+     "props_ko": [
+      "피격 시 18% 확률로 레벨 5 연쇄 번개 시전",
+      "방어력 +60% 증가",
+      "생명력 +30",
+      "모든 저항 +18%"
+     ],
+     "set_bonuses": [],
+     "image_src": "studdedleather.png"
+    },
+    {
+     "id": "cow-king-s-horns",
+     "name_en": "Cow King's Horns",
+     "name_ko": "젖소 왕의 뿔",
+     "name_ko_classic": "카우 킹의 혼스",
+     "base": {
+      "code": "xap",
+      "name_en": "War Hat",
+      "name_ko": "워 햇"
+     },
+     "required_level": 25,
+     "props_ko": [
+      "방어력 +75",
+      "받은 데미지의 35%가 마나로 전환",
+      "빙결 지속시간 절반",
+      "공격자가 데미지 10를 받음"
+     ],
+     "set_bonuses": [],
+     "image_src": "cap.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "독 저항 +25%"
+    },
+    {
+     "count": 2,
+     "text": "방어력 +100"
+    }
+   ],
+   "full_bonuses": [
+    "최대 지구력 +100",
+    "힘 +20",
+    "괴물에게서 얻는 금화 100% 증가",
+    "마법 아이템 발견 확률 100% 증가",
+    "피격 시 25% 확률로 레벨 5 전자기장 시전",
+    "공격 속도 +30%",
+    "생명력 +100",
+    "모든 스킬 레벨 +1"
+   ]
+  },
+  {
+   "id": "vidala-s-rig",
+   "name_en": "Vidala's Rig",
+   "name_ko": "비달라의 장치",
+   "name_ko_classic": "비달라 리그",
+   "item_count": 4,
+   "min_level": 14,
+   "items": [
+    {
+     "id": "vidala-s-ambush",
+     "name_en": "Vidala's Ambush",
+     "name_ko": "비달라의 매복",
+     "name_ko_classic": "비달라의 앰부쉬",
+     "base": {
+      "code": "lea",
+      "name_en": "Leather Armor",
+      "name_ko": "레더 아머"
+     },
+     "required_level": 14,
+     "props_ko": [
+      "방어력 +50",
+      "민첩 +11"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "화염 저항 +24%"
+      },
+      {
+       "count": 3,
+       "text": "캐릭터 레벨당 방어력 +2.5"
+      }
+     ],
+     "image_src": "vidalasambush.png"
+    },
+    {
+     "id": "vidala-s-barb",
+     "name_en": "Vidala's Barb",
+     "name_ko": "비달라의 미늘",
+     "name_ko_classic": "비달라의 바아브",
+     "base": {
+      "code": "lbb",
+      "name_en": "Long Battle Bow",
+      "name_ko": "롱 배틀 보우"
+     },
+     "required_level": 14,
+     "props_ko": [
+      "최소 번개 데미지 +1",
+      "최대 번개 데미지 +20"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 공격 등급 +2"
+      }
+     ],
+     "image_src": "vidalasbarb.png"
+    },
+    {
+     "id": "vidala-s-fetlock",
+     "name_en": "Vidala's Fetlock",
+     "name_ko": "비달라의 구절",
+     "name_ko_classic": "비달라의 페트락",
+     "base": {
+      "code": "tbt",
+      "name_en": "Light Plated Boots",
+      "name_ko": "라이트 플레이트 부츠"
+     },
+     "required_level": 14,
+     "props_ko": [
+      "달리기/걷기 속도 +30%",
+      "최대 지구력 +150"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "모든 저항 +8%"
+      }
+     ],
+     "image_src": "vidalasfetlock.png"
+    },
+    {
+     "id": "vidala-s-snare",
+     "name_en": "Vidala's Snare",
+     "name_ko": "비달라의 덫",
+     "name_ko_classic": "비달라의 스네어",
+     "base": {
+      "code": "amu",
+      "name_en": "Amulet",
+      "name_ko": "목걸이"
+     },
+     "required_level": 14,
+     "props_ko": [
+      "생명력 +15",
+      "냉기 저항 +20%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "마법 아이템 발견 확률 50% 증가"
+      }
+     ],
+     "image_src": "amu2.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "명중률 +75"
+    },
+    {
+     "count": 2,
+     "text": "적중당 마나 +7% 훔침"
+    },
+    {
+     "count": 3,
+     "text": "민첩 +15"
+    }
+   ],
+   "full_bonuses": [
+    "캐릭터 레벨당 dmg-cold +1.5",
+    "적중 시 대상 빙결 +1",
+    "관통 공격 +50%",
+    "힘 +10"
+   ]
+  },
+  {
+   "id": "arcanna-s-tricks",
+   "name_en": "Arcanna's Tricks",
+   "name_ko": "아르카나의 속임수",
+   "name_ko_classic": "아칸나 트릭스",
+   "item_count": 4,
+   "min_level": 15,
+   "items": [
+    {
+     "id": "arcanna-s-deathwand",
+     "name_en": "Arcanna's Deathwand",
+     "name_ko": "아르카나의 죽음마법봉",
+     "name_ko_classic": "아칸나의 데쓰원드",
+     "base": {
+      "code": "wst",
+      "name_en": "War Staff",
+      "name_ko": "워 스태프"
+     },
+     "required_level": 15,
+     "props_ko": [
+      "원소술사 스킬 레벨 +1",
+      "치명적 공격 +25%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "마나 +50"
+      },
+      {
+       "count": 3,
+       "text": "마나 재생 5%"
+      }
+     ],
+     "image_src": "arcannasdeathwand.png"
+    },
+    {
+     "id": "arcanna-s-flesh",
+     "name_en": "Arcanna's Flesh",
+     "name_ko": "아르카나의 살점",
+     "name_ko_classic": "아칸나의 플레쉬",
+     "base": {
+      "code": "ltp",
+      "name_en": "Light Plate",
+      "name_ko": "라이트 플레이트"
+     },
+     "required_level": 15,
+     "props_ko": [
+      "피해 3 감소",
+      "시야 +2"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "방어력 +100"
+      },
+      {
+       "count": 3,
+       "text": "마력 +10"
+      }
+     ],
+     "image_src": "arcannasflesh.png"
+    },
+    {
+     "id": "arcanna-s-head",
+     "name_en": "Arcanna's Head",
+     "name_ko": "아르카나의 머리",
+     "name_ko_classic": "아칸나의 헤드",
+     "base": {
+      "code": "skp",
+      "name_en": "Skull Cap",
+      "name_ko": "스컬 캡"
+     },
+     "required_level": 15,
+     "props_ko": [
+      "10초당 생명력 +4 회복",
+      "공격자가 데미지 2를 받음"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 방어력 +3"
+      },
+      {
+       "count": 3,
+       "text": "번개 저항 +15%"
+      }
+     ],
+     "image_src": "arcannashead.png"
+    },
+    {
+     "id": "arcanna-s-sign",
+     "name_en": "Arcanna's Sign",
+     "name_ko": "아르카나의 징조",
+     "name_ko_classic": "아칸나의 싸인",
+     "base": {
+      "code": "amu",
+      "name_en": "Amulet",
+      "name_ko": "목걸이"
+     },
+     "required_level": 15,
+     "props_ko": [
+      "마나 +15",
+      "마나 재생 20%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "마법 아이템 발견 확률 50% 증가"
+      },
+      {
+       "count": 3,
+       "text": "화염 저항 +20%"
+      }
+     ],
+     "image_src": "amu3.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "마나 +50"
+    },
+    {
+     "count": 3,
+     "text": "생명력 +50"
+    },
+    {
+     "count": 3,
+     "text": "마나 재생 12%"
+    }
+   ],
+   "full_bonuses": [
+    "시전 속도 +20%",
+    "적중당 마나 +5% 훔침",
+    "마나 +25",
+    "모든 스킬 레벨 +1"
+   ]
+  },
+  {
+   "id": "iratha-s-finery",
+   "name_en": "Iratha's Finery",
+   "name_ko": "이라타의 장식",
+   "name_ko_classic": "이라사 파이너리",
+   "item_count": 4,
+   "min_level": 15,
+   "items": [
+    {
+     "id": "iratha-s-coil",
+     "name_en": "Iratha's Coil",
+     "name_ko": "이라타의 고리",
+     "name_ko_classic": "이라사의 코일",
+     "base": {
+      "code": "crn",
+      "name_en": "Crown",
+      "name_ko": "크라운"
+     },
+     "required_level": 15,
+     "props_ko": [
+      "번개 저항 +30%",
+      "화염 저항 +30%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 방어력 +2"
+      }
+     ],
+     "image_src": "irathascoil.png"
+    },
+    {
+     "id": "iratha-s-collar",
+     "name_en": "Iratha's Collar",
+     "name_ko": "이라타의 목깃",
+     "name_ko_classic": "이라사의 칼러",
+     "base": {
+      "code": "amu",
+      "name_en": "Amulet",
+      "name_ko": "목걸이"
+     },
+     "required_level": 15,
+     "props_ko": [
+      "독 저항 +30%",
+      "중독 지속시간 75% 감소"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "모든 저항 +15%"
+      }
+     ],
+     "image_src": "amu1.png"
+    },
+    {
+     "id": "iratha-s-cord",
+     "name_en": "Iratha's Cord",
+     "name_ko": "이라타의 노끈",
+     "name_ko_classic": "이라사의 코드",
+     "base": {
+      "code": "tbl",
+      "name_en": "Heavy Belt",
+      "name_ko": "헤비 벨트"
+     },
+     "required_level": 15,
+     "props_ko": [
+      "최소 데미지 +5",
+      "방어력 +25"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "민첩 +10"
+      }
+     ],
+     "image_src": "irathascord.png"
+    },
+    {
+     "id": "iratha-s-cuff",
+     "name_en": "Iratha's Cuff",
+     "name_ko": "이라타의 소매 장식",
+     "name_ko_classic": "이라사의 커프",
+     "base": {
+      "code": "tgl",
+      "name_en": "Light Gauntlets",
+      "name_ko": "라이트 건틀릿"
+     },
+     "required_level": 15,
+     "props_ko": [
+      "냉기 저항 +30%",
+      "빙결 지속시간 절반"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "공격 속도 +20%"
+      }
+     ],
+     "image_src": "irathascuff.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "방어력 +50"
+    },
+    {
+     "count": 3,
+     "text": "달리기/걷기 속도 +20%"
+    },
+    {
+     "count": 3,
+     "text": "관통 공격 +24%"
+    }
+   ],
+   "full_bonuses": [
+    "모든 저항 +20%",
+    "최대 화염 저항 +10%",
+    "최대 냉기 저항 +10%",
+    "최대 번개 저항 +10%",
+    "최대 독 저항 +10%",
+    "민첩 +15"
+   ]
+  },
+  {
+   "id": "milabrega-s-regalia",
+   "name_en": "Milabrega's Regalia",
+   "name_ko": "밀라브레가의 상징",
+   "name_ko_classic": "밀라브레가 리게일리어",
+   "item_count": 4,
+   "min_level": 17,
+   "items": [
+    {
+     "id": "milabrega-s-diadem",
+     "name_en": "Milabrega's Diadem",
+     "name_ko": "밀라브레가의 머리관",
+     "name_ko_classic": "밀라브레가의 다이어뎀",
+     "base": {
+      "code": "crn",
+      "name_en": "Crown",
+      "name_ko": "크라운"
+     },
+     "required_level": 17,
+     "props_ko": [
+      "생명력 +15",
+      "마나 +15"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "냉기 저항 +40%"
+      }
+     ],
+     "image_src": "milabregasdiadem.png"
+    },
+    {
+     "id": "milabrega-s-orb",
+     "name_en": "Milabrega's Orb",
+     "name_ko": "밀라브레가의 보주",
+     "name_ko_classic": "밀라브레가의 오브",
+     "base": {
+      "code": "kit",
+      "name_en": "Kite Shield",
+      "name_ko": "카이트 쉴드"
+     },
+     "required_level": 17,
+     "props_ko": [
+      "방어력 +25",
+      "마법 아이템 발견 확률 20% 증가"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "생명력 +50"
+      },
+      {
+       "count": 3,
+       "text": "방어력 +50% 증가"
+      }
+     ],
+     "image_src": "milabregasorb.png"
+    },
+    {
+     "id": "milabrega-s-robe",
+     "name_en": "Milabrega's Robe",
+     "name_ko": "밀라브레가의 장포",
+     "name_ko_classic": "밀라브레가의 로브",
+     "base": {
+      "code": "aar",
+      "name_en": "Ancient Armor",
+      "name_ko": "에인션트 아머"
+     },
+     "required_level": 17,
+     "props_ko": [
+      "공격자가 데미지 3를 받음",
+      "피해 2 감소"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "방어력 +100% 증가"
+      }
+     ],
+     "image_src": "milabregasrobe.png"
+    },
+    {
+     "id": "milabrega-s-rod",
+     "name_en": "Milabrega's Rod",
+     "name_ko": "밀라브레가의 막대",
+     "name_ko_classic": "밀라브레가의 로드",
+     "base": {
+      "code": "wsp",
+      "name_en": "War Scepter",
+      "name_ko": "워 셉터"
+     },
+     "required_level": 17,
+     "props_ko": [
+      "성기사 스킬 레벨 +1",
+      "증가된 데미지 +50%",
+      "시야 +2"
+     ],
+     "set_bonuses": [],
+     "image_src": "warscepter.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "명중률 +75"
+    },
+    {
+     "count": 2,
+     "text": "캐릭터 레벨당 dmg-ltng +2"
+    },
+    {
+     "count": 3,
+     "text": "명중률 +125"
+    },
+    {
+     "count": 3,
+     "text": "빙결되지 않음"
+    }
+   ],
+   "full_bonuses": [
+    "적중당 생명력 +8% 훔침",
+    "성기사 스킬 레벨 +2",
+    "적중당 마나 +10% 훔침",
+    "독 저항 +15%"
+   ]
+  },
+  {
+   "id": "sander-s-folly",
+   "name_en": "Sander's Folly",
+   "name_ko": "매컬리의 어리석음",
+   "name_ko_classic": "샌더의 폴리",
+   "item_count": 4,
+   "min_level": 20,
+   "items": [
+    {
+     "id": "sander-s-riprap",
+     "name_en": "Sander's Riprap",
+     "name_ko": "샌더의 사석",
+     "name_ko_classic": "샌더의 립랩",
+     "base": {
+      "code": "vbt",
+      "name_en": "Heavy Boots",
+      "name_ko": "헤비 부츠"
+     },
+     "required_level": 20,
+     "props_ko": [
+      "달리기/걷기 속도 +40%",
+      "명중률 +100",
+      "힘 +5",
+      "민첩 +10"
+     ],
+     "set_bonuses": [],
+     "image_src": "sandersriprap.png"
+    },
+    {
+     "id": "sander-s-paragon",
+     "name_en": "Sander's Paragon",
+     "name_ko": "샌더의 귀감",
+     "name_ko_classic": "샌더의 파라곤",
+     "base": {
+      "code": "cap",
+      "name_en": "Cap",
+      "name_ko": "캡"
+     },
+     "required_level": 25,
+     "props_ko": [
+      "공격자가 데미지 8를 받음",
+      "마법 아이템 발견 확률 35% 증가",
+      "캐릭터 레벨당 방어력 +1"
+     ],
+     "set_bonuses": [],
+     "image_src": "sandersparagon.png"
+    },
+    {
+     "id": "sander-s-superstition",
+     "name_en": "Sander's Superstition",
+     "name_ko": "매컬리의 미신",
+     "name_ko_classic": "샌더의 수퍼스티션",
+     "base": {
+      "code": "bwn",
+      "name_en": "Bone Wand",
+      "name_ko": "본 원드"
+     },
+     "required_level": 25,
+     "props_ko": [
+      "시전 속도 +20%",
+      "증가된 데미지 +75%",
+      "냉기 데미지 +25~75",
+      "적중당 마나 +8% 훔침",
+      "마나 +25"
+     ],
+     "set_bonuses": [],
+     "image_src": "sanderssuperstition.png"
+    },
+    {
+     "id": "sander-s-taboo",
+     "name_en": "Sander's Taboo",
+     "name_ko": "매컬리의 금기",
+     "name_ko_classic": "샌더의 타부",
+     "base": {
+      "code": "vgl",
+      "name_en": "Heavy Gloves",
+      "name_ko": "헤비 글러브"
+     },
+     "required_level": 28,
+     "props_ko": [
+      "공격 속도 +20%",
+      "독 데미지 +30~36 (3초)",
+      "방어력 +20~25",
+      "생명력 +40"
+     ],
+     "set_bonuses": [],
+     "image_src": "sanderstaboo.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "방어력 +50"
+    },
+    {
+     "count": 3,
+     "text": "명중률 +75"
+    }
+   ],
+   "full_bonuses": [
+    "모든 스킬 레벨 +1",
+    "마법 아이템 발견 확률 50% 증가",
+    "마나 +50",
+    "적중당 생명력 +4% 훔침"
+   ]
+  },
+  {
+   "id": "tancred-s-battlegear",
+   "name_en": "Tancred's Battlegear",
+   "name_ko": "탄크레드의 전투 장비",
+   "name_ko_classic": "탄크레드 배틀기어",
+   "item_count": 5,
+   "min_level": 20,
+   "items": [
+    {
+     "id": "tancred-s-crowbill",
+     "name_en": "Tancred's Crowbill",
+     "name_ko": "탄크레드의 크로우빌",
+     "base": {
+      "code": "mpi",
+      "name_en": "Military Pick",
+      "name_ko": "밀리터리 픽"
+     },
+     "required_level": 20,
+     "props_ko": [
+      "증가된 데미지 +80%",
+      "명중률 +75"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "마나 +20"
+      },
+      {
+       "count": 3,
+       "text": "공격 속도 +20%"
+      }
+     ],
+     "image_src": "tancredscrowbill.png"
+    },
+    {
+     "id": "tancred-s-hobnails",
+     "name_en": "Tancred's Hobnails",
+     "name_ko": "탄크레드의 구두징",
+     "name_ko_classic": "탄크레드의 헙네일즈",
+     "base": {
+      "code": "lbt",
+      "name_en": "Boots",
+      "name_ko": "부츠"
+     },
+     "required_level": 20,
+     "props_ko": [
+      "민첩 +10",
+      "지구력 회복 속도 25% 증가"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "달리기/걷기 속도 +30%"
+      },
+      {
+       "count": 3,
+       "text": "힘 +10"
+      }
+     ],
+     "image_src": "tancredshobnails.png"
+    },
+    {
+     "id": "tancred-s-skull",
+     "name_en": "Tancred's Skull",
+     "name_ko": "탄크레드의 두개골",
+     "name_ko_classic": "탄크레드의 스컬",
+     "base": {
+      "code": "bhm",
+      "name_en": "Bone Helm",
+      "name_ko": "본 헬름"
+     },
+     "required_level": 20,
+     "props_ko": [
+      "증가된 데미지 +10%",
+      "명중률 +40"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "모든 저항 +10%"
+      }
+     ],
+     "image_src": "tancredsskull.png"
+    },
+    {
+     "id": "tancred-s-spine",
+     "name_en": "Tancred's Spine",
+     "name_ko": "탄크레드의 가시",
+     "name_ko_classic": "탄크레드의 스파인",
+     "base": {
+      "code": "ful",
+      "name_en": "Full Plate Mail",
+      "name_ko": "풀 플레이트 메일"
+     },
+     "required_level": 20,
+     "props_ko": [
+      "힘 +15",
+      "생명력 +40"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "캐릭터 레벨당 방어력 +2"
+      }
+     ],
+     "image_src": "tancredsspine.png"
+    },
+    {
+     "id": "tancred-s-weird",
+     "name_en": "Tancred's Weird",
+     "name_ko": "탄크레드의 기묘",
+     "name_ko_classic": "탄크레드의 와이어드",
+     "base": {
+      "code": "amu",
+      "name_en": "Amulet",
+      "name_ko": "목걸이"
+     },
+     "required_level": 20,
+     "props_ko": [
+      "피해 2 감소",
+      "마법 피해 1 감소"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "마법 아이템 발견 확률 78% 증가"
+      },
+      {
+       "count": 3,
+       "text": "명중률 +60"
+      }
+     ],
+     "image_src": "amu3.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "번개 데미지 +15"
+    },
+    {
+     "count": 3,
+     "text": "적중당 생명력 +5% 훔침"
+    }
+   ],
+   "full_bonuses": [
+    "괴물에게서 얻는 금화 75% 증가",
+    "모든 저항 +10%",
+    "대상 둔화 35%",
+    "적중당 마나 +5% 훔침"
+   ]
+  },
+  {
+   "id": "natalya-s-odium",
+   "name_en": "Natalya's Odium",
+   "name_ko": "나탈랴의 혐오",
+   "name_ko_classic": "나탈리아의 오디엄",
+   "item_count": 4,
+   "min_level": 25,
+   "items": [
+    {
+     "id": "natalya-s-soul",
+     "name_en": "Natalya's Soul",
+     "name_ko": "나탈랴의 영혼",
+     "name_ko_classic": "나탈리아의 소울",
+     "base": {
+      "code": "xmb",
+      "name_en": "Mesh Boots",
+      "name_ko": "메쉬 부츠"
+     },
+     "required_level": 25,
+     "props_ko": [
+      "달리기/걷기 속도 +40%",
+      "방어력 +75~125",
+      "냉기 저항 +15~25%",
+      "번개 저항 +15~25%",
+      "캐릭터 레벨당 regen-stam +0.25",
+      "maxdurability +50"
+     ],
+     "set_bonuses": [],
+     "image_src": "natalyassoul.png"
+    },
+    {
+     "id": "natalya-s-totem",
+     "name_en": "Natalya's Totem",
+     "name_ko": "나탈랴의 토템",
+     "name_ko_classic": "나탈리아의 토템",
+     "base": {
+      "code": "xh9",
+      "name_en": "Grim Helm",
+      "name_ko": "그림 헬름"
+     },
+     "required_level": 59,
+     "props_ko": [
+      "방어력 +135~175",
+      "힘 +10~20",
+      "민첩 +20~30",
+      "모든 저항 +10~20%",
+      "마법 피해 3 감소"
+     ],
+     "set_bonuses": [],
+     "image_src": "natalyastotem.png"
+    },
+    {
+     "id": "natalya-s-shadow",
+     "name_en": "Natalya's Shadow",
+     "name_ko": "나탈랴의 그림자",
+     "name_ko_classic": "나탈리아의 쉐도우",
+     "base": {
+      "code": "ucl",
+      "name_en": "Loricated Mail",
+      "name_ko": "로러케이티드 메일"
+     },
+     "required_level": 73,
+     "props_ko": [
+      "그림자 단련 스킬 레벨 +2 (암살자 전용)",
+      "방어력 +150~225",
+      "독 저항 +25%",
+      "중독 지속시간 75% 감소",
+      "캐릭터 레벨당 생명력 +1",
+      "소켓 (3)"
+     ],
+     "set_bonuses": [],
+     "image_src": "natalyasshadow.png"
+    },
+    {
+     "id": "natalya-s-mark",
+     "name_en": "Natalya's Mark",
+     "name_ko": "나탈랴의 표식",
+     "name_ko_classic": "나탈리아의 마크",
+     "base": {
+      "code": "7qr",
+      "name_en": "Scissors Suwayyah",
+      "name_ko": "시저스 수웨이야"
+     },
+     "required_level": 79,
+     "props_ko": [
+      "공격 속도 +40%",
+      "증가된 데미지 +200%",
+      "언데드에게 추가 데미지 +200%",
+      "악마에게 추가 데미지 +200%",
+      "냉기 데미지 +50",
+      "화염 데미지 +12~17",
+      "대상 방어력 무시"
+     ],
+     "set_bonuses": [],
+     "image_src": "natalyasmark.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "마법 피해 15 감소"
+    },
+    {
+     "count": 3,
+     "text": "방어력 +200"
+    },
+    {
+     "count": 4,
+     "text": "독 저항 +20%"
+    }
+   ],
+   "full_bonuses": [
+    "모든 저항 +50%",
+    "암살자 스킬 레벨 +3",
+    "방어력 +150",
+    "적중당 생명력 +14% 훔침",
+    "적중당 마나 +14% 훔침",
+    "피해 30% 감소",
+    "fade +1"
+   ]
+  },
+  {
+   "id": "hwanin-s-majesty",
+   "name_en": "Hwanin's Majesty",
+   "name_ko": "환인의 위엄",
+   "name_ko_classic": "한인의 위엄",
+   "item_count": 4,
+   "min_level": 28,
+   "items": [
+    {
+     "id": "hwanin-s-justice",
+     "name_en": "Hwanin's Justice",
+     "name_ko": "환인의 정의",
+     "name_ko_classic": "한인의 정의",
+     "base": {
+      "code": "9vo",
+      "name_en": "Bill",
+      "name_ko": "빌"
+     },
+     "required_level": 28,
+     "props_ko": [
+      "적중 시 10% 확률로 레벨 3 얼음 작렬 시전",
+      "공격 속도 +40%",
+      "증가된 데미지 +200%",
+      "번개 데미지 +5~25",
+      "명중률 +330",
+      "파괴되지 않음"
+     ],
+     "set_bonuses": [],
+     "image_src": "voulge.png"
+    },
+    {
+     "id": "hwanin-s-refuge",
+     "name_en": "Hwanin's Refuge",
+     "name_ko": "환인의 피난처",
+     "name_ko_classic": "한인의 보호",
+     "base": {
+      "code": "xcl",
+      "name_en": "Tigulated Mail",
+      "name_ko": "티귤레이티드 메일"
+     },
+     "required_level": 30,
+     "props_ko": [
+      "피격 시 10% 확률로 레벨 3 전자기장 시전",
+      "방어력 +200",
+      "생명력 +100",
+      "독 저항 +27%"
+     ],
+     "set_bonuses": [],
+     "image_src": "scalemail.png"
+    },
+    {
+     "id": "hwanin-s-blessing",
+     "name_en": "Hwanin's Blessing",
+     "name_ko": "환인의 축복",
+     "name_ko_classic": "한인의 축복",
+     "base": {
+      "code": "mbl",
+      "name_en": "Belt",
+      "name_ko": "벨트"
+     },
+     "required_level": 35,
+     "props_ko": [
+      "번개 데미지 +3~33",
+      "받은 데미지의 12%가 마나로 전환",
+      "몬스터 회복 방지",
+      "캐릭터 레벨당 방어력 +1.5"
+     ],
+     "set_bonuses": [],
+     "image_src": "hwaninsblessing.png"
+    },
+    {
+     "id": "hwanin-s-splendor",
+     "name_en": "Hwanin's Splendor",
+     "name_ko": "환인의 광채",
+     "name_ko_classic": "한인의 광채",
+     "base": {
+      "code": "xrn",
+      "name_en": "Grand Crown",
+      "name_ko": "그랜드 크라운"
+     },
+     "required_level": 45,
+     "props_ko": [
+      "방어력 +100% 증가",
+      "10초당 생명력 +20 회복",
+      "냉기 저항 +37%",
+      "마법 피해 10 감소"
+     ],
+     "set_bonuses": [],
+     "image_src": "hwaninssplendor.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "방어력 +100"
+    },
+    {
+     "count": 3,
+     "text": "방어력 +200"
+    }
+   ],
+   "full_bonuses": [
+    "모든 스킬 레벨 +2",
+    "적중당 생명력 +20% 훔침",
+    "달리기/걷기 속도 +30%",
+    "모든 저항 +30%"
+   ]
+  },
+  {
+   "id": "naj-s-ancient-vestige",
+   "name_en": "Naj's Ancient Vestige",
+   "name_ko": "나즈의 고대 흔적",
+   "name_ko_classic": "나즈 앤션트 베스티지",
+   "item_count": 3,
+   "min_level": 28,
+   "items": [
+    {
+     "id": "naj-s-circlet",
+     "name_en": "Naj's Circlet",
+     "name_ko": "나즈의 띠관",
+     "name_ko_classic": "나즈 서클리트",
+     "base": {
+      "code": "ci0",
+      "name_en": "Circlet",
+      "name_ko": "써클릿"
+     },
+     "required_level": 28,
+     "props_ko": [
+      "피격 시 12% 확률로 레벨 5 연쇄 번개 시전",
+      "화염 데미지 +25~35",
+      "방어력 +75",
+      "힘 +15",
+      "시야 +5"
+     ],
+     "set_bonuses": [],
+     "image_src": "najscirclet.png"
+    },
+    {
+     "id": "naj-s-light-plate",
+     "name_en": "Naj's Light Plate",
+     "name_ko": "나즈의 경판갑",
+     "name_ko_classic": "나즈 라이트 플레이트",
+     "base": {
+      "code": "ult",
+      "name_en": "Hellforge Plate",
+      "name_ko": "헬포지 플레이트"
+     },
+     "required_level": 71,
+     "props_ko": [
+      "모든 스킬 레벨 +1",
+      "방어력 +300",
+      "생명력 +65",
+      "받은 데미지의 45%가 마나로 전환",
+      "모든 저항 +25%",
+      "요구 사항 -60%"
+     ],
+     "set_bonuses": [],
+     "image_src": "platemail.png"
+    },
+    {
+     "id": "naj-s-puzzler",
+     "name_en": "Naj's Puzzler",
+     "name_ko": "나즈의 수수께끼",
+     "name_ko_classic": "나즈 퍼즐",
+     "base": {
+      "code": "6cs",
+      "name_en": "Elder Staff",
+      "name_ko": "엘더 스태프"
+     },
+     "required_level": 78,
+     "props_ko": [
+      "모든 스킬 레벨 +1",
+      "시전 속도 +30%",
+      "증가된 데미지 +150%",
+      "번개 데미지 +6~45",
+      "마력 +35",
+      "마나 +70",
+      "충전됨: 레벨 11 순간이동 (69회 충전)"
+     ],
+     "set_bonuses": [],
+     "image_src": "lazarusspire.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "방어력 +175"
+    },
+    {
+     "count": 2,
+     "text": "캐릭터 레벨당 마법 아이템 발견 확률(%) +1.5"
+    }
+   ],
+   "full_bonuses": [
+    "모든 스킬 레벨 +1",
+    "10초당 생명력 +20 회복",
+    "민첩 +15",
+    "모든 저항 +50%",
+    "힘 +20",
+    "마나 +100",
+    "화염 스킬 레벨 +2",
+    "최대 생명력 12% 증가"
+   ]
+  },
+  {
+   "id": "immortal-king",
+   "name_en": "Immortal King",
+   "name_ko": "불멸왕",
+   "name_ko_classic": "임모틀 킹",
+   "item_count": 6,
+   "min_level": 29,
+   "items": [
+    {
+     "id": "immortal-king-s-detail",
+     "name_en": "Immortal King's Detail",
+     "name_ko": "불멸왕의 장식띠",
+     "name_ko_classic": "임모틀 킹의 디테일",
+     "base": {
+      "code": "zhb",
+      "name_en": "War Belt",
+      "name_ko": "워 벨트"
+     },
+     "required_level": 29,
+     "props_ko": [
+      "방어력 +36",
+      "힘 +25",
+      "번개 저항 +31%",
+      "화염 저항 +28%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "방어력 +105"
+      },
+      {
+       "count": 3,
+       "text": "타격 회복 속도 +25%"
+      },
+      {
+       "count": 4,
+       "text": "방어력 +100% 증가"
+      },
+      {
+       "count": 5,
+       "text": "피해 20% 감소"
+      },
+      {
+       "count": 6,
+       "text": "숙련 및 투척 기술 스킬 레벨 +2 (야만용사 전용)"
+      }
+     ],
+     "image_src": "girdle.png"
+    },
+    {
+     "id": "immortal-king-s-forge",
+     "name_en": "Immortal King's Forge",
+     "name_ko": "불멸왕의 용광로",
+     "name_ko_classic": "임모틀 킹의 포지",
+     "base": {
+      "code": "xhg",
+      "name_en": "War Gauntlets",
+      "name_ko": "워 건틀릿"
+     },
+     "required_level": 30,
+     "props_ko": [
+      "피격 시 12% 확률로 레벨 4 번개 줄기 시전",
+      "방어력 +65",
+      "힘 +20",
+      "민첩 +20"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "공격 속도 +25%"
+      },
+      {
+       "count": 3,
+       "text": "방어력 +120"
+      },
+      {
+       "count": 4,
+       "text": "적중당 생명력 +10% 훔침"
+      },
+      {
+       "count": 5,
+       "text": "적중당 마나 +10% 훔침"
+      },
+      {
+       "count": 6,
+       "text": "적중 시 대상 빙결 +2"
+      }
+     ],
+     "image_src": "gauntlets.png"
+    },
+    {
+     "id": "immortal-king-s-pillar",
+     "name_en": "Immortal King's Pillar",
+     "name_ko": "불멸왕의 기둥",
+     "name_ko_classic": "임모틀 킹의 필라",
+     "base": {
+      "code": "xhb",
+      "name_en": "War Boots",
+      "name_ko": "워 부츠"
+     },
+     "required_level": 31,
+     "props_ko": [
+      "달리기/걷기 속도 +40%",
+      "명중률 +110",
+      "방어력 +75",
+      "생명력 +44"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "마법 아이템 발견 확률 25% 증가"
+      },
+      {
+       "count": 3,
+       "text": "전투 기술 스킬 레벨 +2 (야만용사 전용)"
+      },
+      {
+       "count": 4,
+       "text": "방어력 +160"
+      },
+      {
+       "count": 5,
+       "text": "빙결 지속시간 절반"
+      }
+     ],
+     "image_src": "plateboots.png"
+    },
+    {
+     "id": "immortal-king-s-will",
+     "name_en": "Immortal King's Will",
+     "name_ko": "불멸왕의 의지",
+     "name_ko_classic": "임모틀 킹의 윌",
+     "base": {
+      "code": "ba5",
+      "name_en": "Avenger Guard",
+      "name_ko": "어벤저 가드"
+     },
+     "required_level": 47,
+     "props_ko": [
+      "함성 스킬 레벨 +2 (야만용사 전용)",
+      "방어력 +125",
+      "괴물에게서 얻는 금화 37% 증가",
+      "마법 아이템 발견 확률 25~40% 증가",
+      "시야 +4",
+      "소켓 (2)"
+     ],
+     "set_bonuses": [],
+     "image_src": "immortalwill.png"
+    },
+    {
+     "id": "immortal-king-s-soul-cage",
+     "name_en": "Immortal King's Soul Cage",
+     "name_ko": "불멸왕의 영혼집",
+     "name_ko_classic": "임모틀 킹의 소울 케이지",
+     "base": {
+      "code": "uar",
+      "name_en": "Sacred Armor",
+      "name_ko": "세이크리드 아머"
+     },
+     "required_level": 76,
+     "props_ko": [
+      "피격 시 5% 확률로 레벨 5 마법부여 시전",
+      "전투 기술 스킬 레벨 +2 (야만용사 전용)",
+      "방어력 +400",
+      "독 저항 +50%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "타격 회복 속도 +25%"
+      },
+      {
+       "count": 3,
+       "text": "냉기 저항 +40%"
+      },
+      {
+       "count": 4,
+       "text": "화염 저항 +40%"
+      },
+      {
+       "count": 5,
+       "text": "번개 저항 +40%"
+      },
+      {
+       "count": 6,
+       "text": "방어력 +50% 증가"
+      }
+     ],
+     "image_src": "immortalsoulcage.png"
+    },
+    {
+     "id": "immortal-king-s-stone-crusher",
+     "name_en": "Immortal King's Stone Crusher",
+     "name_ko": "불멸왕의 파석추",
+     "name_ko_classic": "임모틀 킹의 스톤 크러셔",
+     "base": {
+      "code": "7m7",
+      "name_en": "Ogre Maul",
+      "name_ko": "오우거 마울"
+     },
+     "required_level": 76,
+     "props_ko": [
+      "공격 속도 +40%",
+      "증가된 데미지 +200%",
+      "악마에게 추가 데미지 +200%",
+      "언데드에게 추가 데미지 +200%",
+      "강타 확률 +35~40%",
+      "파괴되지 않음",
+      "소켓 (2)"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "화염 데미지 +211~397"
+      },
+      {
+       "count": 3,
+       "text": "번개 데미지 +7~477"
+      },
+      {
+       "count": 4,
+       "text": "냉기 데미지 +127~364"
+      },
+      {
+       "count": 5,
+       "text": "독 데미지 +349~349 (6초)"
+      },
+      {
+       "count": 6,
+       "text": "마법 데미지 +250~361"
+      }
+     ],
+     "image_src": "maul.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "명중률 +50"
+    },
+    {
+     "count": 3,
+     "text": "명중률 +75"
+    },
+    {
+     "count": 4,
+     "text": "명중률 +125"
+    },
+    {
+     "count": 5,
+     "text": "명중률 +200"
+    }
+   ],
+   "full_bonuses": [
+    "모든 저항 +50%",
+    "야만용사 스킬 레벨 +3",
+    "생명력 +150",
+    "마법 피해 10 감소",
+    "state +1"
+   ]
+  },
+  {
+   "id": "orphan-s-call",
+   "name_en": "Orphan's Call",
+   "name_ko": "고아의 부름",
+   "name_ko_classic": "오펀의 콜",
+   "item_count": 4,
+   "min_level": 29,
+   "items": [
+    {
+     "id": "whitstan-s-guard",
+     "name_en": "Whitstan's Guard",
+     "name_ko": "위트스탄의 보호구",
+     "name_ko_classic": "위트스탄의 가드",
+     "base": {
+      "code": "xml",
+      "name_en": "Round Shield",
+      "name_ko": "라운드 쉴드"
+     },
+     "required_level": 29,
+     "props_ko": [
+      "막기 속도 +40%",
+      "막기 확률 55% 증가",
+      "방어력 +175% 증가",
+      "빙결 지속시간 절반",
+      "시야 +5"
+     ],
+     "set_bonuses": [],
+     "image_src": "whitstansguard.png"
+    },
+    {
+     "id": "guillaume-s-face",
+     "name_en": "Guillaume's Face",
+     "name_ko": "기욤의 얼굴",
+     "name_ko_classic": "길리엄의 페이스",
+     "base": {
+      "code": "xhm",
+      "name_en": "Winged Helm",
+      "name_ko": "윙드 헬름"
+     },
+     "required_level": 34,
+     "props_ko": [
+      "타격 회복 속도 +30%",
+      "강타 확률 +35%",
+      "치명적 공격 +15%",
+      "방어력 +120% 증가",
+      "힘 +15"
+     ],
+     "set_bonuses": [],
+     "image_src": "guillaumesface.png"
+    },
+    {
+     "id": "magnus-skin",
+     "name_en": "Magnus' Skin",
+     "name_ko": "마그누스의 가죽",
+     "name_ko_classic": "메이그너스의 스킨",
+     "base": {
+      "code": "xvg",
+      "name_en": "Sharkskin Gloves",
+      "name_ko": "샤크스킨 글러브"
+     },
+     "required_level": 37,
+     "props_ko": [
+      "공격 속도 +20%",
+      "명중률 +100",
+      "방어력 +50% 증가",
+      "화염 저항 +15%",
+      "시야 +3"
+     ],
+     "set_bonuses": [],
+     "image_src": "magnusskin.png"
+    },
+    {
+     "id": "wilhelm-s-pride",
+     "name_en": "Wilhelm's Pride",
+     "name_ko": "빌헬름의 자부심",
+     "name_ko_classic": "빌헬름의 프라이드",
+     "base": {
+      "code": "ztb",
+      "name_en": "Battle Belt",
+      "name_ko": "배틀 벨트"
+     },
+     "required_level": 42,
+     "props_ko": [
+      "적중당 마나 +5% 훔침",
+      "적중당 생명력 +5% 훔침",
+      "방어력 +75% 증가",
+      "냉기 저항 +10%"
+     ],
+     "set_bonuses": [],
+     "image_src": "wilhelmspride.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "생명력 +35"
+    },
+    {
+     "count": 3,
+     "text": "공격자가 데미지 5를 받음"
+    },
+    {
+     "count": 4,
+     "text": "방어력 +100"
+    }
+   ],
+   "full_bonuses": [
+    "생명력 +50",
+    "민첩 +10",
+    "힘 +20",
+    "방어력 +100",
+    "모든 저항 +15%",
+    "마법 아이템 발견 확률 80% 증가"
+   ]
+  },
+  {
+   "id": "the-disciple",
+   "name_en": "The Disciple",
+   "name_ko": "사도",
+   "name_ko_classic": "디싸이플",
+   "item_count": 5,
+   "min_level": 29,
+   "items": [
+    {
+     "id": "rite-of-passage",
+     "name_en": "Rite of Passage",
+     "name_ko": "통과의례",
+     "name_ko_classic": "고대인의 통과의례",
+     "base": {
+      "code": "xlb",
+      "name_en": "Demonhide Boots",
+      "name_ko": "데몬하이드 부츠"
+     },
+     "required_level": 29,
+     "props_ko": [
+      "달리기/걷기 속도 +30%",
+      "방어력 +25",
+      "최대 지구력 +15~25",
+      "빙결 지속시간 절반"
+     ],
+     "set_bonuses": [],
+     "image_src": "riteofpassage.png"
+    },
+    {
+     "id": "telling-of-beads",
+     "name_en": "Telling of Beads",
+     "name_ko": "구슬 묵주",
+     "name_ko_classic": "텔링 오브 비드",
+     "base": {
+      "code": "amu",
+      "name_en": "Amulet",
+      "name_ko": "목걸이"
+     },
+     "required_level": 30,
+     "props_ko": [
+      "모든 스킬 레벨 +1",
+      "냉기 저항 +18%",
+      "독 저항 +35~50%",
+      "공격자가 데미지 8~10를 받음"
+     ],
+     "set_bonuses": [],
+     "image_src": "amu2.png"
+    },
+    {
+     "id": "dark-adherent",
+     "name_en": "Dark Adherent",
+     "name_ko": "어둠의 추종자",
+     "name_ko_classic": "다크 애드히어런트",
+     "base": {
+      "code": "uui",
+      "name_en": "Dusk Shroud",
+      "name_ko": "더스크 슈라우드"
+     },
+     "required_level": 43,
+     "props_ko": [
+      "피격 시 25% 확률로 레벨 3 번개 파장 시전",
+      "독 데미지 +125~175 (2초)",
+      "방어력 +305~415",
+      "화염 저항 +24%"
+     ],
+     "set_bonuses": [],
+     "image_src": "darkadherent.png"
+    },
+    {
+     "id": "laying-of-hands",
+     "name_en": "Laying of Hands",
+     "name_ko": "안수",
+     "name_ko_classic": "레잉 오브 핸즈",
+     "base": {
+      "code": "ulg",
+      "name_en": "Bramble Mitts",
+      "name_ko": "브램블 미트"
+     },
+     "required_level": 63,
+     "props_ko": [
+      "적중 시 10% 확률로 레벨 3 신성한 빛줄기 시전",
+      "공격 속도 +20%",
+      "악마에게 추가 데미지 +350%",
+      "방어력 +25",
+      "화염 저항 +50%"
+     ],
+     "set_bonuses": [],
+     "image_src": "layingofhands.png"
+    },
+    {
+     "id": "credendum",
+     "name_en": "Credendum",
+     "name_ko": "신조",
+     "name_ko_classic": "크리덴덤",
+     "base": {
+      "code": "umc",
+      "name_en": "Mithril Coil",
+      "name_ko": "미스릴 코일"
+     },
+     "required_level": 65,
+     "props_ko": [
+      "방어력 +50",
+      "힘 +10",
+      "민첩 +10",
+      "모든 저항 +15%"
+     ],
+     "set_bonuses": [],
+     "image_src": "credendum.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "방어력 +150"
+    },
+    {
+     "count": 3,
+     "text": "독 데미지 +75~75 (3초)"
+    },
+    {
+     "count": 4,
+     "text": "힘 +10"
+    },
+    {
+     "count": 5,
+     "text": "민첩 +10"
+    }
+   ],
+   "full_bonuses": [
+    "모든 저항 +50%",
+    "모든 스킬 레벨 +2",
+    "마나 +100"
+   ]
+  },
+  {
+   "id": "m-avina-s-battle-hymn",
+   "name_en": "M'avina's Battle Hymn",
+   "name_ko": "마비나의 전투 찬가",
+   "name_ko_classic": "마비나의 배틀 힘",
+   "item_count": 5,
+   "min_level": 32,
+   "items": [
+    {
+     "id": "m-avina-s-icy-clutch",
+     "name_en": "M'avina's Icy Clutch",
+     "name_ko": "마비나의 얼음 같은 손길",
+     "name_ko_classic": "마비나의 아이시 클러쳐",
+     "base": {
+      "code": "xtg",
+      "name_en": "Battle Gauntlets",
+      "name_ko": "배틀 건틀릿"
+     },
+     "required_level": 32,
+     "props_ko": [
+      "냉기 데미지 +6~18",
+      "방어력 +45~50",
+      "힘 +10",
+      "민첩 +15",
+      "빙결 지속시간 절반",
+      "괴물에게서 얻는 금화 56% 증가"
+     ],
+     "set_bonuses": [
+      {
+       "count": 4,
+       "text": "냉기 데미지 +131~252"
+      },
+      {
+       "count": 5,
+       "text": "냉기 스킬 데미지 +20%"
+      }
+     ],
+     "image_src": "mavinasicyclutch.png"
+    },
+    {
+     "id": "m-avina-s-tenet",
+     "name_en": "M'avina's Tenet",
+     "name_ko": "마비나의 신조",
+     "name_ko_classic": "마비나의 테너트",
+     "base": {
+      "code": "zvb",
+      "name_en": "Sharkskin Belt",
+      "name_ko": "샤크스킨 벨트"
+     },
+     "required_level": 45,
+     "props_ko": [
+      "달리기/걷기 속도 +20%",
+      "적중당 마나 +5% 훔침",
+      "방어력 +50",
+      "시야 +5"
+     ],
+     "set_bonuses": [
+      {
+       "count": 4,
+       "text": "모든 저항 +25%"
+      }
+     ],
+     "image_src": "mavinastenet.png"
+    },
+    {
+     "id": "m-avina-s-true-sight",
+     "name_en": "M'avina's True Sight",
+     "name_ko": "마비나의 진실의 눈",
+     "name_ko_classic": "마비나의 트루 사이트",
+     "base": {
+      "code": "ci3",
+      "name_en": "Diadem",
+      "name_ko": "다이어뎀"
+     },
+     "required_level": 59,
+     "props_ko": [
+      "공격 속도 +30%",
+      "방어력 +150",
+      "10초당 생명력 +10 회복",
+      "마나 +25"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "모든 스킬 레벨 +1"
+      },
+      {
+       "count": 3,
+       "text": "명중률 보너스 50%"
+      },
+      {
+       "count": 4,
+       "text": "모든 저항 +25%"
+      }
+     ],
+     "image_src": "mavinastruesight.png"
+    },
+    {
+     "id": "m-avina-s-caster",
+     "name_en": "M'avina's Caster",
+     "name_ko": "마비나의 활",
+     "name_ko_classic": "마비나의 캐스터",
+     "base": {
+      "code": "amc",
+      "name_en": "Grand Matron Bow",
+      "name_ko": "그랜드 메이트런 보우"
+     },
+     "required_level": 70,
+     "props_ko": [
+      "공격 속도 +40%",
+      "증가된 데미지 +188%",
+      "명중률 +50",
+      "매직 애로우 발사 (레벨 1)"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "마법 데미지 +114~377"
+      },
+      {
+       "count": 3,
+       "text": "적중 시 10% 확률로 레벨 15 번개 파장 시전"
+      },
+      {
+       "count": 4,
+       "text": "활과 쇠뇌 스킬 레벨 +2 (아마존 전용)"
+      }
+     ],
+     "image_src": "mavinascaster.png"
+    },
+    {
+     "id": "m-avina-s-embrace",
+     "name_en": "M'avina's Embrace",
+     "name_ko": "마비나의 포옹",
+     "name_ko_classic": "마비나의 엠브레스",
+     "base": {
+      "code": "uld",
+      "name_en": "Kraken Shell",
+      "name_ko": "크라켄 쉘"
+     },
+     "required_level": 70,
+     "props_ko": [
+      "피격 시 10% 확률로 레벨 3 빙하 가시 시전",
+      "지속 효과와 마법 스킬 레벨 +2 (아마존 전용)",
+      "방어력 +350",
+      "마법 피해 5~12 감소",
+      "캐릭터 레벨당 방어력 +4",
+      "요구 사항 -30%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 3,
+       "text": "타격 회복 속도 +30%"
+      }
+     ],
+     "image_src": "mavinasembrace.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "힘 +20"
+    },
+    {
+     "count": 3,
+     "text": "민첩 +30"
+    }
+   ],
+   "full_bonuses": [
+    "모든 저항 +50%",
+    "아마존 스킬 레벨 +3",
+    "방어력 +100",
+    "명중률 +100",
+    "마법 아이템 발견 확률 100% 증가",
+    "state +1"
+   ]
+  },
+  {
+   "id": "aldur-s-watchtower",
+   "name_en": "Aldur's Watchtower",
+   "name_ko": "알두르의 감시탑",
+   "name_ko_classic": "알더의 와치타워",
+   "item_count": 4,
+   "min_level": 36,
+   "items": [
+    {
+     "id": "aldur-s-stony-gaze",
+     "name_en": "Aldur's Stony Gaze",
+     "name_ko": "알두르의 냉랭한 눈길",
+     "name_ko_classic": "알더의 스토니 게이즈",
+     "base": {
+      "code": "dr8",
+      "name_en": "Hunter's Guise",
+      "name_ko": "헌터스 가이즈"
+     },
+     "required_level": 36,
+     "props_ko": [
+      "타격 회복 속도 +25%",
+      "방어력 +90",
+      "마나 재생 17%",
+      "냉기 저항 +40~50%",
+      "시야 +5",
+      "소켓 (2)"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "마력 +15"
+      },
+      {
+       "count": 3,
+       "text": "마력 +15"
+      },
+      {
+       "count": 4,
+       "text": "마력 +15"
+      }
+     ],
+     "image_src": "aldursstoneygaze.png"
+    },
+    {
+     "id": "aldur-s-rhythm",
+     "name_en": "Aldur's Rhythm",
+     "name_ko": "알두르의 건틀릿",
+     "name_ko_classic": "알더의 리듬",
+     "base": {
+      "code": "9mt",
+      "name_en": "Jagged Star",
+      "name_ko": "재기드 스타"
+     },
+     "required_level": 42,
+     "props_ko": [
+      "공격 속도 +30%",
+      "데미지 +40~62",
+      "악마에게 추가 데미지 +200%",
+      "번개 데미지 +50~75",
+      "적중당 마나 +5% 훔침",
+      "적중당 생명력 +10% 훔침",
+      "소켓 (5)"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "힘 +15"
+      },
+      {
+       "count": 3,
+       "text": "힘 +15"
+      },
+      {
+       "count": 4,
+       "text": "힘 +15"
+      }
+     ],
+     "image_src": "aldursrhythm.png"
+    },
+    {
+     "id": "aldur-s-advance",
+     "name_en": "Aldur's Advance",
+     "name_ko": "알두르의 진보",
+     "name_ko_classic": "알더의 어드벤스",
+     "base": {
+      "code": "xtb",
+      "name_en": "Battle Boots",
+      "name_ko": "배틀 부츠"
+     },
+     "required_level": 45,
+     "props_ko": [
+      "달리기/걷기 속도 +40%",
+      "생명력 +50",
+      "최대 지구력 +180",
+      "지구력 회복 속도 32% 증가",
+      "받은 데미지의 10%가 마나로 전환",
+      "화염 저항 +40~50%",
+      "파괴되지 않음"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "민첩 +15"
+      },
+      {
+       "count": 3,
+       "text": "민첩 +15"
+      },
+      {
+       "count": 4,
+       "text": "민첩 +15"
+      }
+     ],
+     "image_src": "aldursadvance.png"
+    },
+    {
+     "id": "aldur-s-deception",
+     "name_en": "Aldur's Deception",
+     "name_ko": "알두르의 기만",
+     "name_ko_classic": "알더의 디셉션",
+     "base": {
+      "code": "uul",
+      "name_en": "Shadow Plate",
+      "name_ko": "쉐도우 플레이트"
+     },
+     "required_level": 76,
+     "props_ko": [
+      "변신 스킬 레벨 +1 (드루이드 전용)",
+      "원소 스킬 레벨 +1 (드루이드 전용)",
+      "방어력 +300",
+      "힘 +20",
+      "민첩 +15",
+      "번개 저항 +40~50%",
+      "요구 사항 -50%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "활력 +15"
+      },
+      {
+       "count": 3,
+       "text": "활력 +15"
+      },
+      {
+       "count": 4,
+       "text": "활력 +15"
+      }
+     ],
+     "image_src": "aldursdeception.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "명중률 보너스 150%"
+    },
+    {
+     "count": 3,
+     "text": "마법 아이템 발견 확률 50% 증가"
+    },
+    {
+     "count": 4,
+     "text": "적중당 생명력 +10% 훔침"
+    }
+   ],
+   "full_bonuses": [
+    "모든 저항 +50%",
+    "드루이드 스킬 레벨 +3",
+    "방어력 +150",
+    "적중당 마나 +10% 훔침",
+    "마나 +150",
+    "증가된 데미지 +350%",
+    "state +1"
+   ]
+  },
+  {
+   "id": "sazabi-s-grand-tribute",
+   "name_en": "Sazabi's Grand Tribute",
+   "name_ko": "사자비의 대공물",
+   "name_ko_classic": "사자바이의 그랜드 트라이뷰트",
+   "item_count": 3,
+   "min_level": 43,
+   "items": [
+    {
+     "id": "sazabi-s-mental-sheath",
+     "name_en": "Sazabi's Mental Sheath",
+     "name_ko": "사자비의 정신 보호구",
+     "name_ko_classic": "사자바이의 멘틀 쉬쓰",
+     "base": {
+      "code": "xhl",
+      "name_en": "Basinet",
+      "name_ko": "배서넷"
+     },
+     "required_level": 43,
+     "props_ko": [
+      "모든 스킬 레벨 +1",
+      "방어력 +100",
+      "번개 저항 +15~20%",
+      "화염 저항 +15~20%"
+     ],
+     "set_bonuses": [],
+     "image_src": "sazabismentalsheath.png"
+    },
+    {
+     "id": "sazabi-s-ghost-liberator",
+     "name_en": "Sazabi's Ghost Liberator",
+     "name_ko": "사자비의 유령 해방자",
+     "name_ko_classic": "사자바이의 고스트 리버레이터",
+     "base": {
+      "code": "upl",
+      "name_en": "Balrog Skin",
+      "name_ko": "발록 스킨"
+     },
+     "required_level": 67,
+     "props_ko": [
+      "타격 회복 속도 +30%",
+      "악마 상대 공격력 +300",
+      "방어력 +400",
+      "힘 +25",
+      "생명력 +50~75"
+     ],
+     "set_bonuses": [],
+     "image_src": "sazabisghostliberator.png"
+    },
+    {
+     "id": "sazabi-s-cobalt-redeemer",
+     "name_en": "Sazabi's Cobalt Redeemer",
+     "name_ko": "사자비의 코발트 구원자",
+     "name_ko_classic": "사자바이의 코발트 리디머르",
+     "base": {
+      "code": "7ls",
+      "name_en": "Cryptic Sword",
+      "name_ko": "크립틱 소드"
+     },
+     "required_level": 73,
+     "props_ko": [
+      "공격 속도 +40%",
+      "증가된 데미지 +150%",
+      "악마에게 추가 데미지 +318%",
+      "냉기 데미지 +25~35",
+      "힘 +5",
+      "민첩 +15",
+      "파괴되지 않음"
+     ],
+     "set_bonuses": [],
+     "image_src": "sazabiscobaltredeemer.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "달리기/걷기 속도 +40%"
+    },
+    {
+     "count": 2,
+     "text": "중독 지속시간 75% 감소"
+    }
+   ],
+   "full_bonuses": [
+    "모든 저항 +30%",
+    "적중당 생명력 +15% 훔침",
+    "최대 생명력 27% 증가",
+    "모든 스킬 레벨 +1",
+    "피해 16% 감소"
+   ]
+  },
+  {
+   "id": "heaven-s-brethren",
+   "name_en": "Heaven's Brethren",
+   "name_ko": "천상의 동포",
+   "name_ko_classic": "천인의 형제",
+   "item_count": 4,
+   "min_level": 44,
+   "items": [
+    {
+     "id": "haemosu-s-adamant",
+     "name_en": "Haemosu's Adamant",
+     "name_ko": "해모수의 견고",
+     "name_ko_classic": "해모수의 강직",
+     "base": {
+      "code": "xrs",
+      "name_en": "Cuirass",
+      "name_ko": "퀴래스"
+     },
+     "required_level": 44,
+     "props_ko": [
+      "방어력 +500",
+      "근접 공격 방어력 +40",
+      "원거리 공격 방어력 +35",
+      "생명력 +75",
+      "요구 사항 -20%"
+     ],
+     "set_bonuses": [],
+     "image_src": "haemosusadament.png"
+    },
+    {
+     "id": "dangoon-s-teaching",
+     "name_en": "Dangoon's Teaching",
+     "name_ko": "단군의 가르침",
+     "base": {
+      "code": "7ma",
+      "name_en": "Reinforced Mace",
+      "name_ko": "리인포스드 메이스"
+     },
+     "required_level": 68,
+     "props_ko": [
+      "적중 시 10% 확률로 레벨 3 서릿발 시전",
+      "공격 속도 +40%",
+      "화염 데미지 +20~30",
+      "캐릭터 레벨당 최대 데미지 +1.5"
+     ],
+     "set_bonuses": [],
+     "image_src": "dangoonsteaching.png"
+    },
+    {
+     "id": "ondal-s-almighty",
+     "name_en": "Ondal's Almighty",
+     "name_ko": "온달의 사랑",
+     "base": {
+      "code": "uhm",
+      "name_en": "Spired Helm",
+      "name_ko": "스파이어드 헬름"
+     },
+     "required_level": 69,
+     "props_ko": [
+      "적중 시 10% 확률로 레벨 3 약화 시전",
+      "타격 회복 속도 +24%",
+      "방어력 +50",
+      "힘 +10",
+      "민첩 +15",
+      "요구 사항 -40%"
+     ],
+     "set_bonuses": [],
+     "image_src": "ondalsalmighty.png"
+    },
+    {
+     "id": "taebaek-s-glory",
+     "name_en": "Taebaek's Glory",
+     "name_ko": "태백의 영예",
+     "name_ko_classic": "태백의 영광",
+     "base": {
+      "code": "uts",
+      "name_en": "Ward",
+      "name_ko": "워드"
+     },
+     "required_level": 81,
+     "props_ko": [
+      "막기 속도 +30%",
+      "막기 확률 25% 증가",
+      "방어력 +50",
+      "마나 +100",
+      "번개 저항 +30%",
+      "공격자가 데미지 30를 받음",
+      "파괴되지 않음"
+     ],
+     "set_bonuses": [],
+     "image_src": "taebaeksglory.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "적중당 생명력 +10% 훔침"
+    },
+    {
+     "count": 3,
+     "text": "10초당 생명력 +30 회복"
+    },
+    {
+     "count": 3,
+     "text": "캐릭터 레벨당 dmg-fire +3"
+    }
+   ],
+   "full_bonuses": [
+    "모든 저항 +50%",
+    "모든 스킬 레벨 +2",
+    "빙결되지 않음",
+    "시야 +5",
+    "피해 24% 감소"
+   ]
+  },
+  {
+   "id": "griswold-s-legacy",
+   "name_en": "Griswold's Legacy",
+   "name_ko": "그리스월드의 유산",
+   "name_ko_classic": "그리스월드의 리가시",
+   "item_count": 4,
+   "min_level": 45,
+   "items": [
+    {
+     "id": "griswold-s-heart",
+     "name_en": "Griswold's Heart",
+     "name_ko": "그리스월드의 심장",
+     "name_ko_classic": "그리스월드의 하트",
+     "base": {
+      "code": "xar",
+      "name_en": "Ornate Plate",
+      "name_ko": "오네이트 플레이트"
+     },
+     "required_level": 45,
+     "props_ko": [
+      "방어 오라 스킬 레벨 +2 (성기사 전용)",
+      "방어력 +500",
+      "힘 +20",
+      "소켓 (3)",
+      "요구 사항 -40%"
+     ],
+     "set_bonuses": [],
+     "image_src": "griswoldsheart.png"
+    },
+    {
+     "id": "griswold-s-redemption",
+     "name_en": "Griswold's Redemption",
+     "name_ko": "그리스월드의 구원",
+     "name_ko_classic": "그리스월드의 리뎀프션",
+     "base": {
+      "code": "7ws",
+      "name_en": "Caduceus",
+      "name_ko": "카두세우스"
+     },
+     "required_level": 53,
+     "props_ko": [
+      "공격 속도 +40%",
+      "증가된 데미지 +200~240%",
+      "언데드에게 추가 데미지 +200%",
+      "소켓 (4)",
+      "요구 사항 -20%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "전투 기술 스킬 레벨 +2 (성기사 전용)"
+      },
+      {
+       "count": 3,
+       "text": "데미지 +10~20"
+      },
+      {
+       "count": 4,
+       "text": "데미지 +10~20"
+      }
+     ],
+     "image_src": "griswoldsredemption.png"
+    },
+    {
+     "id": "griswold-s-honor",
+     "name_en": "Griswold's Honor",
+     "name_ko": "그리스월드의 명예",
+     "name_ko_classic": "그리스월드의 아너",
+     "base": {
+      "code": "paf",
+      "name_en": "Vortex Shield",
+      "name_ko": "볼텍스 쉴드"
+     },
+     "required_level": 68,
+     "props_ko": [
+      "막기 속도 +65%",
+      "막기 확률 20% 증가",
+      "방어력 +108",
+      "모든 저항 +45%",
+      "소켓 (None)"
+     ],
+     "set_bonuses": [],
+     "image_src": "griswoldshonor.png"
+    },
+    {
+     "id": "griswold-s-valor",
+     "name_en": "Griswold's Valor",
+     "name_ko": "그리스월드의 용맹",
+     "name_ko_classic": "그리스월드의 밸러",
+     "base": {
+      "code": "urn",
+      "name_en": "Corona",
+      "name_ko": "코로나"
+     },
+     "required_level": 69,
+     "props_ko": [
+      "방어력 +50~75% 증가",
+      "모든 저항 +5%",
+      "마법 아이템 발견 확률 20~30% 증가",
+      "캐릭터 레벨당 냉기 흡수 +0",
+      "소켓 (2)",
+      "요구 사항 -40%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "공격 오라 스킬 레벨 +2 (성기사 전용)"
+      }
+     ],
+     "image_src": "griswoldsvalor.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "힘 +20"
+    },
+    {
+     "count": 3,
+     "text": "민첩 +30"
+    }
+   ],
+   "full_bonuses": [
+    "모든 저항 +50%",
+    "성기사 스킬 레벨 +3",
+    "명중률 +200",
+    "생명력 +150",
+    "state +1",
+    "타격 회복 속도 +30%"
+   ]
+  },
+  {
+   "id": "trang-oul-s-avatar",
+   "name_en": "Trang-Oul's Avatar",
+   "name_ko": "트래그울의 화신",
+   "name_ko_classic": "트랑-울의 아바타",
+   "item_count": 5,
+   "min_level": 45,
+   "items": [
+    {
+     "id": "trang-oul-s-claws",
+     "name_en": "Trang-Oul's Claws",
+     "name_ko": "트래그울의 발톱",
+     "name_ko_classic": "트랑-울의 클러스",
+     "base": {
+      "code": "xmg",
+      "name_en": "Heavy Bracers",
+      "name_ko": "헤비 브레이서"
+     },
+     "required_level": 45,
+     "props_ko": [
+      "저주 스킬 레벨 +2 (강령술사 전용)",
+      "시전 속도 +20%",
+      "방어력 +30",
+      "냉기 저항 +30%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 4,
+       "text": "독 스킬 데미지 +25%"
+      }
+     ],
+     "image_src": "trang-oulsclaws.png"
+    },
+    {
+     "id": "trang-oul-s-girth",
+     "name_en": "Trang-Oul's Girth",
+     "name_ko": "트래그울의 끈",
+     "name_ko_classic": "트랑-울의 거즈",
+     "base": {
+      "code": "utc",
+      "name_en": "Troll Belt",
+      "name_ko": "트롤 벨트"
+     },
+     "required_level": 47,
+     "props_ko": [
+      "방어력 +75~100",
+      "생명력 +66",
+      "10초당 생명력 +5 회복",
+      "마나 +25~50",
+      "최대 지구력 +30",
+      "빙결되지 않음",
+      "요구 사항 -40%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 3,
+       "text": "냉기 저항 +40%"
+      }
+     ],
+     "image_src": "trang-oulsgirth.png"
+    },
+    {
+     "id": "trang-oul-s-scales",
+     "name_en": "Trang-Oul's Scales",
+     "name_ko": "트래그울의 비늘",
+     "name_ko_classic": "트랑-울의 스케일스",
+     "base": {
+      "code": "xul",
+      "name_en": "Chaos Armor",
+      "name_ko": "카오스 아머"
+     },
+     "required_level": 49,
+     "props_ko": [
+      "소환 스킬 레벨 +2 (강령술사 전용)",
+      "달리기/걷기 속도 +40%",
+      "방어력 +150% 증가",
+      "원거리 공격 방어력 +100",
+      "독 저항 +40%",
+      "요구 사항 -40%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 3,
+       "text": "번개 저항 +50%"
+      },
+      {
+       "count": 5,
+       "text": "피해 25% 감소"
+      }
+     ],
+     "image_src": "trang-oulsscales.png"
+    },
+    {
+     "id": "trang-oul-s-wing",
+     "name_en": "Trang-Oul's Wing",
+     "name_ko": "트래그울의 날개",
+     "name_ko_classic": "트랑-울의 윙",
+     "base": {
+      "code": "ne9",
+      "name_en": "Cantor Trophy",
+      "name_ko": "캔터 트로피"
+     },
+     "required_level": 54,
+     "props_ko": [
+      "독과 뼈 스킬 레벨 +2 (강령술사 전용)",
+      "막기 확률 30% 증가",
+      "방어력 +125",
+      "힘 +25",
+      "민첩 +15",
+      "화염 저항 +38~45%",
+      "독 저항 +40%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 3,
+       "text": "적 독 저항 -25%"
+      },
+      {
+       "count": 4,
+       "text": "10초당 생명력 +15 회복"
+      }
+     ],
+     "image_src": "trang-oulswing.png"
+    },
+    {
+     "id": "trang-oul-s-guise",
+     "name_en": "Trang-Oul's Guise",
+     "name_ko": "트래그울의 허울",
+     "name_ko_classic": "트랑-울의 가이즈",
+     "base": {
+      "code": "uh9",
+      "name_en": "Bone Visage",
+      "name_ko": "본 비지즈"
+     },
+     "required_level": 65,
+     "props_ko": [
+      "타격 회복 속도 +25%",
+      "방어력 +80~100",
+      "10초당 생명력 +5 회복",
+      "마나 +150",
+      "공격자가 데미지 20를 받음"
+     ],
+     "set_bonuses": [],
+     "image_src": "trang-oulsguise.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "마나 재생 15%"
+    },
+    {
+     "count": 2,
+     "text": "화염구 +18"
+    },
+    {
+     "count": 3,
+     "text": "마나 재생 15%"
+    },
+    {
+     "count": 3,
+     "text": "화염벽 +13"
+    },
+    {
+     "count": 4,
+     "text": "마나 재생 15%"
+    },
+    {
+     "count": 4,
+     "text": "운석 낙하 +10"
+    }
+   ],
+   "full_bonuses": [
+    "모든 저항 +50%",
+    "강령술사 스킬 레벨 +3",
+    "마나 +100",
+    "방어력 +200",
+    "state +1",
+    "마나 재생 15%",
+    "화염 숙련 +3",
+    "적중당 생명력 +20% 훔침"
+   ]
+  },
+  {
+   "id": "horazon-s-splendor",
+   "name_en": "Horazon's Splendor",
+   "name_ko": "호라존의 광채",
+   "item_count": 5,
+   "min_level": 48,
+   "items": [
+    {
+     "id": "horazon-s-hold",
+     "name_en": "Horazon's Hold",
+     "name_ko": "호라존의 장악",
+     "base": {
+      "code": "xlg",
+      "name_en": "Demonhide Gloves",
+      "name_ko": "데몬하이드 글러브"
+     },
+     "required_level": 48,
+     "props_ko": [
+      "화염 데미지 +140~270",
+      "명중률 +95~150",
+      "강타 확률 +10%",
+      "민첩 +10~15",
+      "생명력 +30~40"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "공격 속도 +30%"
+      },
+      {
+       "count": 3,
+       "text": "적중당 마나 +7% 훔침"
+      },
+      {
+       "count": 4,
+       "text": "적중당 생명력 +7% 훔침"
+      }
+     ],
+     "image_src": "leathergloves.png"
+    },
+    {
+     "id": "horazon-s-dominion",
+     "name_en": "Horazon's Dominion",
+     "name_ko": "호라존의 지배",
+     "base": {
+      "code": "xpl",
+      "name_en": "Russet Armor",
+      "name_ko": "러셋 아머"
+     },
+     "required_level": 55,
+     "props_ko": [
+      "악마 스킬 레벨 +2 (악마술사 전용)",
+      "방어력 +75~100% 증가",
+      "마나 +75~100",
+      "냉기 저항 +15~25%",
+      "번개 저항 +15~25%",
+      "화염 저항 +15~25%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "독 저항 +25%"
+      },
+      {
+       "count": 4,
+       "text": "활력 +15"
+      },
+      {
+       "count": 6,
+       "text": "피해 15% 감소"
+      }
+     ],
+     "image_src": "splintmail.png"
+    },
+    {
+     "id": "horazon-s-secrets",
+     "name_en": "Horazon's Secrets",
+     "name_ko": "호라존의 비밀",
+     "base": {
+      "code": "wad",
+      "name_en": "Occult Codex [E]",
+      "name_ko": "비술 고문서"
+     },
+     "required_level": 57,
+     "props_ko": [
+      "기괴 스킬 레벨 +2 (악마술사 전용)",
+      "타격 회복 속도 +30%",
+      "막기 확률 20% 증가",
+      "활력 +20~30",
+      "생명력 +30~50"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "중독 지속시간 75% 감소"
+      },
+      {
+       "count": 3,
+       "text": "적 화염 저항 -25%"
+      },
+      {
+       "count": 4,
+       "text": "마력 +15"
+      }
+     ],
+     "image_src": "codex_graphic2.png"
+    },
+    {
+     "id": "horazon-s-countenance",
+     "name_en": "Horazon's Countenance",
+     "name_ko": "호라존의 표정",
+     "base": {
+      "code": "usk",
+      "name_en": "Demonhead",
+      "name_ko": "데몬헤드"
+     },
+     "required_level": 62,
+     "props_ko": [
+      "악마술사 스킬 레벨 +1",
+      "힘 +10~20",
+      "마법 피해 7~10 감소",
+      "캐릭터 레벨당 att% +0.25"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "최대 생명력 5% 증가"
+      },
+      {
+       "count": 4,
+       "text": "힘 +15"
+      }
+     ],
+     "image_src": "horazons_countenance_graphic.png"
+    },
+    {
+     "id": "horazon-s-legacy",
+     "name_en": "Horazon's Legacy",
+     "name_ko": "호라존의 유산",
+     "base": {
+      "code": "utb",
+      "name_en": "Mirrored Boots",
+      "name_ko": "미러드 부츠"
+     },
+     "required_level": 67,
+     "props_ko": [
+      "달리기/걷기 속도 +30%",
+      "힘 +10~15",
+      "민첩 +10~15",
+      "마법 저항 +20~30%",
+      "빙결되지 않음",
+      "요구 사항 -30%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "달리기/걷기 속도 +10%"
+      }
+     ],
+     "image_src": "lightplateboots.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "민첩 +20"
+    },
+    {
+     "count": 3,
+     "text": "마력 +30"
+    },
+    {
+     "count": 4,
+     "text": "방어력 +300"
+    }
+   ],
+   "full_bonuses": [
+    "모든 저항 +50%",
+    "악마술사 스킬 레벨 +3",
+    "증가된 데미지 +350%",
+    "마법 아이템 발견 확률 100% 증가",
+    "마법부여 +30",
+    "state +1"
+   ]
+  },
+  {
+   "id": "tal-rasha-s-wrappings",
+   "name_en": "Tal Rasha's Wrappings",
+   "name_ko": "탈 라샤의 수의",
+   "name_ko_classic": "탈 라샤의 래핑스",
+   "item_count": 5,
+   "min_level": 53,
+   "items": [
+    {
+     "id": "tal-rasha-s-fine-spun-cloth",
+     "name_en": "Tal Rasha's Fine-Spun Cloth",
+     "name_ko": "탈 라샤의 고운 띠",
+     "name_ko_classic": "탈 라샤의 파인-스펀 클로쓰",
+     "base": {
+      "code": "zmb",
+      "name_en": "Mesh Belt",
+      "name_ko": "메쉬 벨트"
+     },
+     "required_level": 53,
+     "props_ko": [
+      "민첩 +20",
+      "마나 +30",
+      "받은 데미지의 37%가 마나로 전환",
+      "마법 아이템 발견 확률 10~15% 증가",
+      "요구 사항 -20%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "방어력 +60"
+      },
+      {
+       "count": 3,
+       "text": "시전 속도 +10%"
+      }
+     ],
+     "image_src": "talrashasfine-spuncloth.png"
+    },
+    {
+     "id": "tal-rasha-s-lidless-eye",
+     "name_en": "Tal Rasha's Lidless Eye",
+     "name_ko": "탈 라샤의 잠들지 않는 눈",
+     "name_ko_classic": "탈 라샤의 리드리스 아이",
+     "base": {
+      "code": "oba",
+      "name_en": "Swirling Crystal",
+      "name_ko": "스월링 크리스탈"
+     },
+     "required_level": 65,
+     "props_ko": [
+      "시전 속도 +20%",
+      "화염 숙련 +1~2 (원소술사 전용)",
+      "번개 숙련 +1~2 (원소술사 전용)",
+      "냉기 숙련 +1~2 (원소술사 전용)",
+      "마력 +10",
+      "생명력 +57",
+      "마나 +77"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "원소술사 스킬 레벨 +1"
+      },
+      {
+       "count": 3,
+       "text": "적 화염 저항 -15%"
+      },
+      {
+       "count": 4,
+       "text": "적 번개 저항 -15%"
+      },
+      {
+       "count": 5,
+       "text": "냉기 스킬 데미지 +15%"
+      }
+     ],
+     "image_src": "talrashaslidlesseye.png"
+    },
+    {
+     "id": "tal-rasha-s-horadric-crest",
+     "name_en": "Tal Rasha's Horadric Crest",
+     "name_ko": "탈 라샤의 호라드림 관모",
+     "name_ko_classic": "탈 라샤의 호라드릭 크레스트",
+     "base": {
+      "code": "xsk",
+      "name_en": "Death Mask",
+      "name_ko": "데스 마스크"
+     },
+     "required_level": 66,
+     "props_ko": [
+      "적중당 마나 +10% 훔침",
+      "적중당 생명력 +10% 훔침",
+      "방어력 +45",
+      "생명력 +60",
+      "마나 +30",
+      "모든 저항 +15%"
+     ],
+     "set_bonuses": [],
+     "image_src": "mask.png"
+    },
+    {
+     "id": "tal-rasha-s-adjudication",
+     "name_en": "Tal Rasha's Adjudication",
+     "name_ko": "탈 라샤의 선고",
+     "name_ko_classic": "탈 라샤의 어쥬디케이션",
+     "base": {
+      "code": "amu",
+      "name_en": "Amulet",
+      "name_ko": "목걸이"
+     },
+     "required_level": 67,
+     "props_ko": [
+      "원소술사 스킬 레벨 +2",
+      "번개 데미지 +3~32",
+      "생명력 +50",
+      "마나 +42",
+      "번개 저항 +33%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 4,
+       "text": "시전 속도 +10%"
+      }
+     ],
+     "image_src": "amu2.png"
+    },
+    {
+     "id": "tal-rasha-s-guardianship",
+     "name_en": "Tal Rasha's Guardianship",
+     "name_ko": "탈 라샤의 보호",
+     "name_ko_classic": "탈 라샤의 가이언쉽",
+     "base": {
+      "code": "uth",
+      "name_en": "Lacquered Plate",
+      "name_ko": "래커드 플레이트"
+     },
+     "required_level": 71,
+     "props_ko": [
+      "방어력 +400",
+      "냉기 저항 +40%",
+      "번개 저항 +40%",
+      "화염 저항 +40%",
+      "마법 피해 15 감소",
+      "마법 아이템 발견 확률 88% 증가",
+      "요구 사항 -60%"
+     ],
+     "set_bonuses": [
+      {
+       "count": 2,
+       "text": "시전 속도 +10%"
+      }
+     ],
+     "image_src": "talrashasguardianship.png"
+    }
+   ],
+   "partial_bonuses": [
+    {
+     "count": 2,
+     "text": "10초당 생명력 +10 회복"
+    },
+    {
+     "count": 3,
+     "text": "마법 아이템 발견 확률 65% 증가"
+    },
+    {
+     "count": 4,
+     "text": "타격 회복 속도 +25%"
+    }
+   ],
+   "full_bonuses": [
+    "모든 저항 +50%",
+    "원소술사 스킬 레벨 +3",
+    "방어력 +150",
+    "생명력 +150",
+    "원거리 공격 방어력 +50",
+    "state +1"
+   ]
+  },
+  {
+   "id": "bul-kathos-children",
+   "name_en": "Bul-Kathos' Children",
+   "name_ko": "불카토스의 자손",
+   "name_ko_classic": "발카서스의 칠드런",
+   "item_count": 2,
+   "min_level": 54,
+   "items": [
+    {
+     "id": "bul-kathos-tribal-guardian",
+     "name_en": "Bul-Kathos' Tribal Guardian",
+     "name_ko": "불카토스의 부족 수호자",
+     "name_ko_classic": "발카서스의 트라이벌 가디안",
+     "base": {
+      "code": "7wd",
+      "name_en": "Mythical Sword",
+      "name_ko": "미시컬 소드"
+     },
+     "required_level": 54,
+     "props_ko": [
+      "공격 속도 +20%",
+      "증가된 데미지 +200%",
+      "독 데미지 +255~255 (2초)",
+      "힘 +20",
+      "화염 저항 +50%"
+     ],
+     "set_bonuses": [],
+     "image_src": "bulkathostribalguardian.png"
+    },
+    {
+     "id": "bul-kathos-sacred-charge",
+     "name_en": "Bul-Kathos' Sacred Charge",
+     "name_ko": "불카토스의 신성한 임무",
+     "name_ko_classic": "발카서스의 세이크리드 차지",
+     "base": {
+      "code": "7gd",
+      "name_en": "Colossus Blade",
+      "name_ko": "콜로서스 블레이드"
+     },
+     "required_level": 61,
+     "props_ko": [
+      "공격 속도 +20%",
+      "증가된 데미지 +200%",
+      "강타 확률 +35%",
+      "모든 저항 +20%"
+     ],
+     "set_bonuses": [],
+     "image_src": "bulkathossacredcharge.png"
+    }
+   ],
+   "partial_bonuses": [],
+   "full_bonuses": [
+    "화염 데미지 +200",
+    "모든 스킬 레벨 +2",
+    "명중률 +200",
+    "방어력 +200",
+    "언데드에게 추가 데미지 +200%",
+    "악마에게 추가 데미지 +200%",
+    "적중당 생명력 +10% 훔침",
+    "치명적 공격 +20%"
+   ]
+  }
+ ]
+}

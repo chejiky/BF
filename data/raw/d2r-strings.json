@@ -37742,5 +37742,2805 @@
 "strModInformation": {
 "en": "Mod Information",
 "ko": "모드 정보"
+},
+"r16": {
+"en": "Io Rune ÿc9(ÿc0#16ÿc9)",
+"ko": "이오 룬 ÿc9(ÿc0#16ÿc9)"
+},
+"r16L": {
+"en": "Io",
+"ko": "이오"
+},
+"r13": {
+"en": "Shael Rune ÿc9(ÿc0#13ÿc9)",
+"ko": "샤엘 룬 ÿc9(ÿc0#13ÿc9)"
+},
+"r13L": {
+"en": "Shael",
+"ko": "샤엘"
+},
+"r31": {
+"en": "ÿc1Jah Rune ÿc9(ÿc0#31ÿc9)\nÿc;~Pick Up~ÿc0",
+"ko": "자 룬 ÿc9(ÿc0#31ÿc9)\nÿc;~줍기~ÿc0"
+},
+"r31L": {
+"en": "Jah",
+"ko": "자"
+},
+"Delirium": {
+"en": "Delirium",
+"ko": "착란"
+},
+"r33": {
+"en": "ÿc1Zod Rune ÿc9(ÿc0#33ÿc9)\nÿc;~Pick Up~ÿc0",
+"ko": "조드 룬 ÿc9(ÿc0#33ÿc9)\nÿc;~줍기~ÿc0"
+},
+"r32": {
+"en": "ÿc1Cham Rune ÿc9(ÿc0#32ÿc9)\nÿc;~Pick Up~ÿc0",
+"ko": "참 룬 ÿc9(ÿc0#32ÿc9)\nÿc;~줍기~ÿc0"
+},
+"r30": {
+"en": "ÿc1Ber Rune ÿc9(ÿc0#30ÿc9)\nÿc;~Pick Up~ÿc0",
+"ko": "베르 룬 ÿc9(ÿc0#30ÿc9)\nÿc;~줍기~ÿc0"
+},
+"r29": {
+"en": "ÿc1Sur Rune ÿc9(ÿc0#29ÿc9)\nÿc;~Pick Up~ÿc0",
+"ko": "수르 룬 ÿc9(ÿc0#29ÿc9)\nÿc;~줍기~ÿc0"
+},
+"r28": {
+"en": "ÿc1Lo Rune ÿc9(ÿc0#28ÿc9)\nÿc;~Pick Up~ÿc0",
+"ko": "로 룬 ÿc9(ÿc0#28ÿc9)\nÿc;~줍기~ÿc0"
+},
+"r27": {
+"en": "ÿc1Ohm Rune ÿc9(ÿc0#27ÿc9)\nÿc;~Pick Up~ÿc0",
+"ko": "오움 룬 ÿc9(ÿc0#27ÿc9)\nÿc;~줍기~ÿc0"
+},
+"r26": {
+"en": "ÿc1Vex Rune ÿc9(ÿc0#26ÿc9)\nÿc;~Pick Up~ÿc0",
+"ko": "벡스 룬 ÿc9(ÿc0#26ÿc9)\nÿc;~줍기~ÿc0"
+},
+"r25": {
+"en": "ÿc1Gul Rune ÿc9(ÿc0#25ÿc9)\nÿc;~Pick Up~ÿc0",
+"ko": "굴 룬 ÿc9(ÿc0#25ÿc9)\nÿc;~줍기~ÿc0"
+},
+"r24": {
+"en": "ÿc1Ist Rune ÿc9(ÿc0#24ÿc9)\nÿc;~Pick Up~ÿc0",
+"ko": "이스트 룬 ÿc9(ÿc0#24ÿc9)\nÿc;~줍기~ÿc0"
+},
+"r23": {
+"en": "ÿc1Mal Rune ÿc9(ÿc0#23ÿc9)\nÿc;~Pick Up~ÿc0",
+"ko": "말 룬 ÿc9(ÿc0#23ÿc9)\nÿc;~줍기~ÿc0"
+},
+"r22": {
+"en": "ÿc1Um Rune ÿc9(ÿc0#22ÿc9)\nÿc;~Pick Up~ÿc0",
+"ko": "우움 룬 ÿc9(ÿc0#22ÿc9)\nÿc;~줍기~ÿc0"
+},
+"r21": {
+"en": "ÿc1Pul Rune ÿc9(ÿc0#21ÿc9)\nÿc;~Pick Up~ÿc0",
+"ko": "풀 룬 ÿc9(ÿc0#21ÿc9)\nÿc;~줍기~ÿc0"
+},
+"r20": {
+"en": "ÿc1Lem Rune ÿc9(ÿc0#20ÿc9)\nÿc;~Pick Up~ÿc0",
+"ko": "렘 룬 ÿc9(ÿc0#20ÿc9)\nÿc;~줍기~ÿc0"
+},
+"r19": {
+"en": "Fal Rune ÿc9(ÿc0#19ÿc9)",
+"ko": "팔 룬 ÿc9(ÿc0#19ÿc9)"
+},
+"r18": {
+"en": "Ko Rune ÿc9(ÿc0#18ÿc9)",
+"ko": "코 룬 ÿc9(ÿc0#18ÿc9)"
+},
+"r17": {
+"en": "Lum Rune ÿc9(ÿc0#17ÿc9)",
+"ko": "룸 룬 ÿc9(ÿc0#17ÿc9)"
+},
+"r15": {
+"en": "Hel Rune ÿc9(ÿc0#15ÿc9)",
+"ko": "헬 룬 ÿc9(ÿc0#15ÿc9)"
+},
+"r14": {
+"en": "Dol Rune ÿc9(ÿc0#14ÿc9)",
+"ko": "돌 룬 ÿc9(ÿc0#14ÿc9)"
+},
+"r12": {
+"en": "Sol Rune ÿc9(ÿc0#12ÿc9)",
+"ko": "솔 룬 ÿc9(ÿc0#12ÿc9)"
+},
+"r11": {
+"en": "Amn Rune ÿc9(ÿc0#11ÿc9)",
+"ko": "앰 룬 ÿc9(ÿc0#11ÿc9)"
+},
+"r10": {
+"en": "Thul Rune ÿc9(ÿc0#10ÿc9)",
+"ko": "주울 룬 ÿc9(ÿc0#10ÿc9)"
+},
+"r09": {
+"en": "Ort Rune ÿc9(ÿc0#9ÿc9)",
+"ko": "오르트 룬 ÿc9(ÿc0#9ÿc9)"
+},
+"r08": {
+"en": "Ral Rune ÿc9(ÿc0#8ÿc9)",
+"ko": "랄 룬 ÿc9(ÿc0#8ÿc9)"
+},
+"r07": {
+"en": "Tal Rune ÿc9(ÿc0#7ÿc9)",
+"ko": "탈 룬 ÿc9(ÿc0#7ÿc9)"
+},
+"r06": {
+"en": "Ith Rune ÿc9(ÿc0#6ÿc9)",
+"ko": "아이드 룬 ÿc9(ÿc0#6ÿc9)"
+},
+"r05": {
+"en": "Eth Rune ÿc9(ÿc0#5ÿc9)",
+"ko": "에드 룬 ÿc9(ÿc0#5ÿc9)"
+},
+"r04": {
+"en": "Nef Rune ÿc9(ÿc0#4ÿc9)",
+"ko": "네프 룬 ÿc9(ÿc0#4ÿc9)"
+},
+"r03": {
+"en": "Tir Rune ÿc9(ÿc0#3ÿc9)",
+"ko": "티르 룬 ÿc9(ÿc0#3ÿc9)"
+},
+"r02": {
+"en": "Eld Rune ÿc9(ÿc0#2ÿc9)",
+"ko": "엘드 룬 ÿc9(ÿc0#2ÿc9)"
+},
+"r01": {
+"en": "El Rune ÿc9(ÿc0#1ÿc9)",
+"ko": "엘 룬 ÿc9(ÿc0#1ÿc9)"
+},
+"r33L": {
+"en": "Zod",
+"ko": "조드"
+},
+"r32L": {
+"en": "Cham",
+"ko": "참"
+},
+"r30L": {
+"en": "Ber",
+"ko": "베르"
+},
+"r29L": {
+"en": "Sur",
+"ko": "수르"
+},
+"r28L": {
+"en": "Lo",
+"ko": "로"
+},
+"r27L": {
+"en": "Ohm",
+"ko": "오움"
+},
+"r26L": {
+"en": "Vex",
+"ko": "벡스"
+},
+"r25L": {
+"en": "Gul",
+"ko": "굴"
+},
+"r24L": {
+"en": "Ist",
+"ko": "이스트"
+},
+"r23L": {
+"en": "Mal",
+"ko": "말"
+},
+"r22L": {
+"en": "Um",
+"ko": "우움"
+},
+"r21L": {
+"en": "Pul",
+"ko": "풀"
+},
+"r20L": {
+"en": "Lem",
+"ko": "렘"
+},
+"r19L": {
+"en": "Fal",
+"ko": "팔"
+},
+"r18L": {
+"en": "Ko",
+"ko": "코"
+},
+"r17L": {
+"en": "Lum",
+"ko": "룸"
+},
+"r15L": {
+"en": "Hel",
+"ko": "헬"
+},
+"r14L": {
+"en": "Dol",
+"ko": "돌"
+},
+"r12L": {
+"en": "Sol",
+"ko": "솔"
+},
+"r11L": {
+"en": "Amn",
+"ko": "앰"
+},
+"r10L": {
+"en": "Thul",
+"ko": "주울"
+},
+"r09L": {
+"en": "Ort",
+"ko": "오르트"
+},
+"r08L": {
+"en": "Ral",
+"ko": "랄"
+},
+"r07L": {
+"en": "Tal",
+"ko": "탈"
+},
+"r06L": {
+"en": "Ith",
+"ko": "아이드"
+},
+"r05L": {
+"en": "Eth",
+"ko": "에드"
+},
+"r04L": {
+"en": "Nef",
+"ko": "네프"
+},
+"r03L": {
+"en": "Tir",
+"ko": "티르"
+},
+"r02L": {
+"en": "Eld",
+"ko": "엘드"
+},
+"r01L": {
+"en": "El",
+"ko": "엘"
+},
+"RuneQuote": {
+"en": "'",
+"ko": "'"
+},
+"Ancient's Pledge": {
+"en": "Ancient's Pledge",
+"ko": "고대인의 서약"
+},
+"Armageddon": {
+"en": "Armageddon",
+"ko": "대전쟁"
+},
+"Authority": {
+"en": "Authority",
+"ko": "권위"
+},
+"Beast1": {
+"en": "Beast",
+"ko": "야수"
+},
+"Beauty": {
+"en": "Beauty",
+"ko": "아름다움"
+},
+"Black1": {
+"en": "Black",
+"ko": "어둠"
+},
+"Blood1": {
+"en": "Blood",
+"ko": "피"
+},
+"Bone1": {
+"en": "Bone",
+"ko": "뼈"
+},
+"Bramble1": {
+"en": "Bramble",
+"ko": "찔레"
+},
+"Brand": {
+"en": "Brand",
+"ko": "낙인"
+},
+"Breath of the Dying": {
+"en": "Breath of the Dying",
+"ko": "죽어가는 자의 숨결"
+},
+"Broken Promise": {
+"en": "Broken Promise",
+"ko": "깨어진 약속"
+},
+"Call to Arms": {
+"en": "Call to Arms",
+"ko": "소집"
+},
+"Chains of Honor": {
+"en": "Chains of Honor",
+"ko": "명예의 굴레"
+},
+"Chance": {
+"en": "Chance",
+"ko": "기회"
+},
+"Chaos1": {
+"en": "Chaos",
+"ko": "혼돈"
+},
+"Crescent Moon": {
+"en": "Crescent Moon",
+"ko": "초승달"
+},
+"Darkness": {
+"en": "Darkness",
+"ko": "암흑"
+},
+"Daylight": {
+"en": "Daylight",
+"ko": "햇빛"
+},
+"Death1": {
+"en": "Death",
+"ko": "죽음"
+},
+"Deception": {
+"en": "Deception",
+"ko": "기만"
+},
+"Desire": {
+"en": "Desire",
+"ko": "욕망"
+},
+"Despair": {
+"en": "Despair",
+"ko": "절망"
+},
+"Destruction": {
+"en": "Destruction",
+"ko": "파괴"
+},
+"Doom1": {
+"en": "Doom",
+"ko": "파멸"
+},
+"Dragon1": {
+"en": "Dragon",
+"ko": "용"
+},
+"Dread1": {
+"en": "Dread",
+"ko": "두려움"
+},
+"Dream": {
+"en": "Dream",
+"ko": "꿈"
+},
+"Duress": {
+"en": "Duress",
+"ko": "협박"
+},
+"Edge": {
+"en": "Edge",
+"ko": "모서리"
+},
+"Elation": {
+"en": "Elation",
+"ko": "득의"
+},
+"Enigma": {
+"en": "Enigma",
+"ko": "수수께끼"
+},
+"Enlightenment": {
+"en": "Enlightenment",
+"ko": "깨우침"
+},
+"Envy": {
+"en": "Envy",
+"ko": "시기"
+},
+"Eternity": {
+"en": "Eternity",
+"ko": "영원"
+},
+"Exile": {
+"en": "Exile",
+"ko": "추방"
+},
+"Faith": {
+"en": "Faith",
+"ko": "신념"
+},
+"Famine": {
+"en": "Famine",
+"ko": "기근"
+},
+"Flickering Flame": {
+"en": "Flickering Flame",
+"ko": "꺼져가는 불길"
+},
+"Fortitude": {
+"en": "Fortitude",
+"ko": "인내"
+},
+"Fortune's Favor": {
+"en": "Fortune's Favor",
+"ko": "행운"
+},
+"Friendship": {
+"en": "Friendship",
+"ko": "우정"
+},
+"Fury": {
+"en": "Fury",
+"ko": "분노"
+},
+"Gloom": {
+"en": "Gloom",
+"ko": "어스름"
+},
+"Glory": {
+"en": "Glory",
+"ko": "영예"
+},
+"Grief": {
+"en": "Grief",
+"ko": "슬픔"
+},
+"Hand of Justice": {
+"en": "Hand of Justice",
+"ko": "정의의 손길"
+},
+"Harmony": {
+"en": "Harmony",
+"ko": "조화"
+},
+"Hatred": {
+"en": "Hatred",
+"ko": "증오"
+},
+"Heart of the Oak": {
+"en": "Heart of the Oak",
+"ko": "참나무의 심장"
+},
+"Heaven's Will": {
+"en": "Heaven's Will",
+"ko": "천상의 의지"
+},
+"Holy Tears": {
+"en": "Holy Tears",
+"ko": "신성한 눈물"
+},
+"Holy Thunder": {
+"en": "Holy Thunder",
+"ko": "신성한 천둥"
+},
+"Honor": {
+"en": "Honor",
+"ko": "명예"
+},
+"Revenge": {
+"en": "Revenge",
+"ko": "보복"
+},
+"Humility": {
+"en": "Humility",
+"ko": "겸손"
+},
+"Hunger": {
+"en": "Hunger",
+"ko": "굶주림"
+},
+"Ice": {
+"en": "Ice",
+"ko": "얼음"
+},
+"Infinity": {
+"en": "Infinity",
+"ko": "무한"
+},
+"Innocence": {
+"en": "Innocence",
+"ko": "결백"
+},
+"Insight": {
+"en": "Insight",
+"ko": "통찰"
+},
+"Jealousy": {
+"en": "Jealousy",
+"ko": "질투"
+},
+"Judgement": {
+"en": "Judgement",
+"ko": "심판"
+},
+"King's Grace": {
+"en": "King's Grace",
+"ko": "왕의 은총"
+},
+"Kingslayer": {
+"en": "Kingslayer",
+"ko": "왕 시해자"
+},
+"Knight's Vigil": {
+"en": "Knight's Vigil",
+"ko": "기사의 경계"
+},
+"Knowledge": {
+"en": "Knowledge",
+"ko": "지식"
+},
+"Last Wish": {
+"en": "Last Wish",
+"ko": "마지막 소원"
+},
+"Law": {
+"en": "Law",
+"ko": "법률"
+},
+"Lawbringer": {
+"en": "Lawbringer",
+"ko": "집행자"
+},
+"Leaf": {
+"en": "Leaf",
+"ko": "잎새"
+},
+"Lightning": {
+"en": "Lightning",
+"ko": "번개"
+},
+"Lionheart": {
+"en": "Lionheart",
+"ko": "용맹"
+},
+"Lore": {
+"en": "Lore",
+"ko": "전승"
+},
+"Love": {
+"en": "Love",
+"ko": "사랑"
+},
+"Loyalty": {
+"en": "Loyalty",
+"ko": "충심"
+},
+"Lust": {
+"en": "Lust",
+"ko": "욕정"
+},
+"Madness": {
+"en": "Madness",
+"ko": "광기"
+},
+"Malice": {
+"en": "Malice",
+"ko": "악의"
+},
+"Melody": {
+"en": "Melody",
+"ko": "선율"
+},
+"Memory": {
+"en": "Memory",
+"ko": "기억"
+},
+"Mist": {
+"en": "Mist",
+"ko": "안개"
+},
+"Morning Dew": {
+"en": "Morning Dew",
+"ko": "아침"
+},
+"Mystery": {
+"en": "Mystery",
+"ko": "신비"
+},
+"Myth": {
+"en": "Myth",
+"ko": "신화"
+},
+"Nadir": {
+"en": "Nadir",
+"ko": "구렁텅이"
+},
+"Nature's Kingdom": {
+"en": "Nature's Kingdom",
+"ko": "자연의 왕국"
+},
+"Night1": {
+"en": "Night",
+"ko": "밤"
+},
+"Oath": {
+"en": "Oath",
+"ko": "서약"
+},
+"Obedience": {
+"en": "Obedience",
+"ko": "순종"
+},
+"Oblivion": {
+"en": "Oblivion",
+"ko": "망각"
+},
+"Obsession": {
+"en": "Obsession",
+"ko": "집착"
+},
+"Passion": {
+"en": "Passion",
+"ko": "열정"
+},
+"Patience": {
+"en": "Patience",
+"ko": "끈기"
+},
+"Pattern": {
+"en": "Pattern",
+"ko": "귀감"
+},
+"Peace": {
+"en": "Peace",
+"ko": "평화"
+},
+"Voice of Reason": {
+"en": "Voice of Reason",
+"ko": "이성의 목소리"
+},
+"Penitence": {
+"en": "Penitence",
+"ko": "참회"
+},
+"Peril": {
+"en": "Peril",
+"ko": "위기"
+},
+"Pestilence": {
+"en": "Pestilence",
+"ko": "질병"
+},
+"Phoenix": {
+"en": "Phoenix",
+"ko": "불사조"
+},
+"Piety": {
+"en": "Piety",
+"ko": "경건"
+},
+"Pillar of Faith": {
+"en": "Pillar of Faith",
+"ko": "신념의 기둥"
+},
+"Plague1": {
+"en": "Plague",
+"ko": "역병"
+},
+"Praise": {
+"en": "Praise",
+"ko": "칭송"
+},
+"Prayer": {
+"en": "Prayer",
+"ko": "기도"
+},
+"Pride": {
+"en": "Pride",
+"ko": "긍지"
+},
+"Principle": {
+"en": "Principle",
+"ko": "원칙"
+},
+"Prowess in Battle": {
+"en": "Prowess in Battle",
+"ko": "전장의 기량"
+},
+"Prudence": {
+"en": "Prudence",
+"ko": "신중"
+},
+"Punishment": {
+"en": "Punishment",
+"ko": "징벌"
+},
+"Purity": {
+"en": "Purity",
+"ko": "순수"
+},
+"Question": {
+"en": "Question",
+"ko": "의문"
+},
+"Radiance": {
+"en": "Radiance",
+"ko": "광휘"
+},
+"Rain": {
+"en": "Rain",
+"ko": "비"
+},
+"Reason": {
+"en": "Reason",
+"ko": "이성"
+},
+"Red1": {
+"en": "Red",
+"ko": "핏빛"
+},
+"Rhyme": {
+"en": "Rhyme",
+"ko": "각운"
+},
+"Rift1": {
+"en": "Rift",
+"ko": "균열"
+},
+"Sanctuary": {
+"en": "Sanctuary",
+"ko": "성역"
+},
+"Serendipity": {
+"en": "Serendipity",
+"ko": "우연한 행운"
+},
+"Shadow1": {
+"en": "Shadow",
+"ko": "그림자"
+},
+"Shadow of Doubt": {
+"en": "Shadow of Doubt",
+"ko": "의심의 그림자"
+},
+"Silence": {
+"en": "Silence",
+"ko": "침묵"
+},
+"Siren's Song": {
+"en": "Siren's Song",
+"ko": "세이렌의 노래"
+},
+"Smoke": {
+"en": "Smoke",
+"ko": "연기"
+},
+"Sorrow": {
+"en": "Sorrow",
+"ko": "비탄"
+},
+"Spirit1": {
+"en": "Spirit",
+"ko": "영혼"
+},
+"Splendor": {
+"en": "Splendor",
+"ko": "광채"
+},
+"Starlight": {
+"en": "Starlight",
+"ko": "별빛"
+},
+"Stealth": {
+"en": "Stealth",
+"ko": "잠행"
+},
+"Steel1": {
+"en": "Steel",
+"ko": "강철"
+},
+"Still Water": {
+"en": "Still Water",
+"ko": "고요한 물"
+},
+"Sting": {
+"en": "Sting",
+"ko": "쐐기"
+},
+"Stone1": {
+"en": "Stone",
+"ko": "돌"
+},
+"Storm1": {
+"en": "Storm",
+"ko": "폭풍"
+},
+"Strength": {
+"en": "Strength",
+"ko": "강함"
+},
+"Tempest": {
+"en": "Tempest",
+"ko": "비바람"
+},
+"Temptation": {
+"en": "Temptation",
+"ko": "유혹"
+},
+"Terror": {
+"en": "Terror",
+"ko": "공포"
+},
+"Thirst": {
+"en": "Thirst",
+"ko": "갈증"
+},
+"Thought": {
+"en": "Thought",
+"ko": "사고"
+},
+"Thunder": {
+"en": "Thunder",
+"ko": "천둥"
+},
+"Time": {
+"en": "Time",
+"ko": "시간"
+},
+"Tradition": {
+"en": "Tradition",
+"ko": "전통"
+},
+"Treachery": {
+"en": "Treachery",
+"ko": "배신"
+},
+"Trust": {
+"en": "Trust",
+"ko": "신임"
+},
+"Truth": {
+"en": "Truth",
+"ko": "진실"
+},
+"Unbending Will": {
+"en": "Unbending Will",
+"ko": "불굴의 의지"
+},
+"Valor": {
+"en": "Valor",
+"ko": "용기"
+},
+"Vengeance": {
+"en": "Vengeance",
+"ko": "복수"
+},
+"Venom": {
+"en": "Venom",
+"ko": "맹독"
+},
+"Victory": {
+"en": "Victory",
+"ko": "승리"
+},
+"Voice": {
+"en": "Voice",
+"ko": "목소리"
+},
+"Void": {
+"en": "Void",
+"ko": "공허"
+},
+"War": {
+"en": "War",
+"ko": "전쟁"
+},
+"Water": {
+"en": "Water",
+"ko": "물"
+},
+"Wealth": {
+"en": "Wealth",
+"ko": "부"
+},
+"Whisper": {
+"en": "Whisper",
+"ko": "속삭임"
+},
+"White": {
+"en": "White",
+"ko": "순백"
+},
+"Wind1": {
+"en": "Wind",
+"ko": "바람"
+},
+"Wings of Hope": {
+"en": "Wings of Hope",
+"ko": "희망의 날개"
+},
+"Wisdom": {
+"en": "Wisdom",
+"ko": "지혜"
+},
+"Woe": {
+"en": "Woe",
+"ko": "재난"
+},
+"Wonder": {
+"en": "Wonder",
+"ko": "경이"
+},
+"Wrath1": {
+"en": "Wrath",
+"ko": "진노"
+},
+"Youth": {
+"en": "Youth",
+"ko": "젊음"
+},
+"Zephyr": {
+"en": "Zephyr",
+"ko": "서풍"
+},
+"Hysteria": {
+"en": "Hysteria",
+"ko": "발작"
+},
+"Mania": {
+"en": "Mania",
+"ko": "광기"
+},
+"Mosaic": {
+"en": "Mosaic",
+"ko": "모자이크"
+},
+"Metamorphosis": {
+"en": "Metamorphosis",
+"ko": "탈태"
+},
+"Ground": {
+"en": "Ground",
+"ko": "접지"
+},
+"Temper": {
+"en": "Temper",
+"ko": "담금질"
+},
+"Hearth": {
+"en": "Hearth",
+"ko": "화로"
+},
+"Cure": {
+"en": "Cure",
+"ko": "치료"
+},
+"Runeword180": {
+"en": "Coven",
+"ko": "마녀단"
+},
+"Runeword181": {
+"en": "Vigilance",
+"ko": "경계"
+},
+"Runeword182": {
+"en": "Ritual",
+"ko": "의식"
+},
+"Bulwark": {
+"en": "Bulwark",
+"ko": "방벽"
+},
+"Distortion": {
+"en": "Distortion",
+"ko": "왜곡"
+},
+"Flame": {
+"en": "Flame",
+"ko": "불꽃"
+},
+"Bark of the Great Oak": {
+"en": "Bark of the Great Oak",
+"ko": "거대한 참나무의 나무껍질"
+},
+"Eclipse": {
+"en": "Eclipse",
+"ko": "일식"
+},
+"Arcane2": {
+"en": "Arcane",
+"ko": "비전"
+},
+"Scout": {
+"en": "Scout",
+"ko": "정찰병"
+},
+"Snowdrop": {
+"en": "Snowdrop",
+"ko": "설강화"
+},
+"Searing Moon": {
+"en": "Searing Moon",
+"ko": "작열하는 달"
+},
+"Winter Moon": {
+"en": "Winter Moon",
+"ko": "겨울 달"
+},
+"Harvest Moon": {
+"en": "Harvest Moon",
+"ko": "추수 달"
+},
+"Full Moon": {
+"en": "Full Moon",
+"ko": "보름달"
+},
+"Old Ben's Walking Stick": {
+"en": "Old Ben's Walking Stick",
+"ko": "올드 벤의 지팡이"
+},
+"Natalya's Shroud": {
+"en": "Natalya's Shroud",
+"ko": "나탈랴의 수의"
+},
+"Duriel's Fang": {
+"en": "Duriel's Fang",
+"ko": "듀리엘의 송곳니"
+},
+"Rathma's Husk": {
+"en": "Rathma's Husk",
+"ko": "라스마의 허물"
+},
+"Mantle of Lazarus": {
+"en": "Mantle of Lazarus",
+"ko": "라자루스의 망토"
+},
+"Qual-Kehk's Oath": {
+"en": "Qual-Kehk's Oath",
+"ko": "쿠알케크의 맹세"
+},
+"Fortitude (Dummy)": {
+"en": "Fortitude (Removed)",
+"ko": "인내(삭제됨)"
+},
+"Rain Reimagined": {
+"en": "Rain Reimagined (Removed)",
+"ko": "비의 재구성 (제거됨)"
+},
+"Mail of the Askari": {
+"en": "Mail of the Askari",
+"ko": "아스카리 사슬 갑옷"
+},
+"Akarat's Devotion": {
+"en": "Akarat's Devotion",
+"ko": "아카라트의 헌신"
+},
+"Rimewind": {
+"en": "Rimewind",
+"ko": "서릿바람"
+},
+"Wildfire": {
+"en": "Wildfire",
+"ko": "야생의 불길"
+},
+"Glammer": {
+"en": "Glammer",
+"ko": "고혹"
+},
+"Empower": {
+"en": "Empower",
+"ko": "강화"
+},
+"Umbral": {
+"en": "Umbral",
+"ko": "움브랄"
+},
+"Demonspine": {
+"en": "Demonspine",
+"ko": "악마 가시"
+},
+"Infernum": {
+"en": "Infernum",
+"ko": "연옥"
+},
+"Ruin": {
+"en": "Ruin",
+"ko": "파멸"
+},
+"Spark": {
+"en": "Spark",
+"ko": "불꽃"
+},
+"Moo Moo Farm": {
+"en": "The Secret Cow Level",
+"ko": "비밀의 젖소방"
+},
+"Chaos Sanctum": {
+"en": "The Chaos Sanctuary",
+"ko": "혼돈의 성역"
+},
+"The Pandemonium Fortress": {
+"en": "The Pandemonium Fortress",
+"ko": "혼돈의 요새"
+},
+"River of Flame": {
+"en": "River of Flame",
+"ko": "불길의 강"
+},
+"Outer Steppes": {
+"en": "Outer Steppes",
+"ko": "평원 외곽"
+},
+"Plains of Despair": {
+"en": "Plains of Despair",
+"ko": "절망의 평원"
+},
+"City of the Damned": {
+"en": "City of the Damned",
+"ko": "저주받은 자들의 도시"
+},
+"Durance of Hate Level 3": {
+"en": "Durance of Hate Level 3",
+"ko": "증오의 억류지 3층"
+},
+"Durance of Hate Level 2": {
+"en": "Durance of Hate Level 2",
+"ko": "증오의 억류지 2층"
+},
+"Durance of Hate Level 1": {
+"en": "Durance of Hate Level 1",
+"ko": "증오의 억류지 1층"
+},
+"Disused Reliquary": {
+"en": "Disused Reliquary",
+"ko": "버려진 성물실"
+},
+"Ruined Fane": {
+"en": "Ruined Fane",
+"ko": "허물어진 교회당"
+},
+"Forgotten Temple": {
+"en": "Forgotten Temple",
+"ko": "잊힌 사원"
+},
+"Forgotten Reliquary": {
+"en": "Forgotten Reliquary",
+"ko": "잊힌 성물실"
+},
+"Disused Fane": {
+"en": "Disused Fane",
+"ko": "버려진 교회당"
+},
+"Ruined Temple": {
+"en": "Ruined Temple",
+"ko": "허물어진 사원"
+},
+"Flayer Dungeon Level 3": {
+"en": "Flayer Dungeon Level 3",
+"ko": "약탈자 소굴 3층"
+},
+"Flayer Dungeon Level 2": {
+"en": "Flayer Dungeon Level 2",
+"ko": "약탈자 소굴 2층"
+},
+"Flayer Dungeon Level 1": {
+"en": "Flayer Dungeon Level 1",
+"ko": "약탈자 소굴 1층"
+},
+"Swampy Pit Level 3": {
+"en": "Swampy Pit Level 3",
+"ko": "습한 구덩이 3층"
+},
+"Swampy Pit Level 2": {
+"en": "Swampy Pit Level 2",
+"ko": "습한 구덩이 2층"
+},
+"Swampy Pit Level 1": {
+"en": "Swampy Pit Level 1",
+"ko": "습한 구덩이 1층"
+},
+"Spider Cave": {
+"en": "Arachnid Lair",
+"ko": "독거미 둥지"
+},
+"Spider Cavern": {
+"en": "Spider Cavern",
+"ko": "거미 동굴"
+},
+"Travincal": {
+"en": "Travincal",
+"ko": "트라빈칼"
+},
+"Kurast Causeway": {
+"en": "Kurast Causeway",
+"ko": "쿠라스트 둑길"
+},
+"Upper Kurast": {
+"en": "Upper Kurast",
+"ko": "상부 쿠라스트"
+},
+"Kurast Bazaar": {
+"en": "Kurast Bazaar",
+"ko": "쿠라스트 시장"
+},
+"Lower Kurast": {
+"en": "Lower Kurast",
+"ko": "하부 쿠라스트"
+},
+"Flayer Jungle": {
+"en": "Flayer Jungle",
+"ko": "약탈자 밀림"
+},
+"Great Marsh": {
+"en": "Great Marsh",
+"ko": "거대 습지"
+},
+"Spider Forest": {
+"en": "Spider Forest",
+"ko": "거미 숲"
+},
+"Kurast Docktown": {
+"en": "Kurast Docks",
+"ko": "쿠라스트 부두"
+},
+"Durance of Hate": {
+"en": "Durance of Hate",
+"ko": "증오의 억류지"
+},
+"Flayer Dungeon": {
+"en": "Flayer Dungeon",
+"ko": "약탈자 소굴"
+},
+"Swampy Pit": {
+"en": "Swampy Pit",
+"ko": "습한 구덩이"
+},
+"Arcane Sanctuary": {
+"en": "Arcane Sanctuary",
+"ko": "비전의 성역"
+},
+"Duriel's Lair": {
+"en": "Tal Rasha's Chamber",
+"ko": "탈 라샤의 방"
+},
+"Tal Rasha's Tomb": {
+"en": "Tal Rasha's Tomb",
+"ko": "탈 라샤의 무덤"
+},
+"Ancient Tunnels": {
+"en": "Ancient Tunnels",
+"ko": "고대 토굴"
+},
+"Maggot Lair Level 3": {
+"en": "Maggot Lair Level 3",
+"ko": "구더기 굴 3층"
+},
+"Maggot Lair Level 2": {
+"en": "Maggot Lair Level 2",
+"ko": "구더기 굴 2층"
+},
+"Maggot Lair Level 1": {
+"en": "Maggot Lair Level 1",
+"ko": "구더기 굴 1층"
+},
+"Claw Viper Temple Level 2": {
+"en": "Claw Viper Temple Level 2",
+"ko": "발톱 독사 사원 2층"
+},
+"Halls of the Dead Level 3": {
+"en": "Halls of the Dead Level 3",
+"ko": "망자의 전당 3층"
+},
+"Stony Tomb Level 2": {
+"en": "Stony Tomb Level 2",
+"ko": "바위 무덤 2층"
+},
+"Claw Viper Temple Level 1": {
+"en": "Claw Viper Temple Level 1",
+"ko": "발톱 독사 사원 1층"
+},
+"Halls of the Dead Level 2": {
+"en": "Halls of the Dead Level 2",
+"ko": "망자의 전당 2층"
+},
+"Halls of the Dead Level 1": {
+"en": "Halls of the Dead Level 1",
+"ko": "망자의 전당 1층"
+},
+"Stony Tomb Level 1": {
+"en": "Stony Tomb Level 1",
+"ko": "바위 무덤 1층"
+},
+"Palace Cellar Level 3": {
+"en": "Palace Cellar Level 3",
+"ko": "궁전 지하 3층"
+},
+"Palace Cellar Level 2": {
+"en": "Palace Cellar Level 2",
+"ko": "궁전 지하 2층"
+},
+"Palace Cellar Level 1": {
+"en": "Palace Cellar Level 1",
+"ko": "궁전 지하 1층"
+},
+"Harem Level 2": {
+"en": "Harem Level 2",
+"ko": "하렘 2층"
+},
+"Harem Level 1": {
+"en": "Harem Level 1",
+"ko": "하렘 1층"
+},
+"Sewers Level 3": {
+"en": "Sewers Level 3",
+"ko": "하수도 3층"
+},
+"Sewers Level 2": {
+"en": "Sewers Level 2",
+"ko": "하수도 2층"
+},
+"Sewers Level 1": {
+"en": "Sewers Level 1",
+"ko": "하수도 1층"
+},
+"Canyon of the Magi": {
+"en": "Canyon of the Magi",
+"ko": "신비술사의 협곡"
+},
+"Valley of Snakes": {
+"en": "Valley of Snakes",
+"ko": "뱀의 골짜기"
+},
+"Lost City": {
+"en": "Lost City",
+"ko": "잊힌 도시"
+},
+"Far Oasis": {
+"en": "Far Oasis",
+"ko": "머나먼 오아시스"
+},
+"Dry Hills": {
+"en": "Dry Hills",
+"ko": "메마른 언덕"
+},
+"Rocky Waste": {
+"en": "Rocky Waste",
+"ko": "바위투성이 황무지"
+},
+"Lut Gholein": {
+"en": "Lut Gholein",
+"ko": "루트 골레인"
+},
+"Maggot Lair": {
+"en": "Maggot Lair",
+"ko": "구더기 굴"
+},
+"Claw Viper Temple": {
+"en": "Claw Viper Temple",
+"ko": "발톱 독사 사원"
+},
+"Halls of the Dead": {
+"en": "Halls of the Dead",
+"ko": "망자의 전당"
+},
+"Stony Tomb": {
+"en": "Stony Tomb",
+"ko": "바위 무덤"
+},
+"Palace Cellar": {
+"en": "Palace Cellar",
+"ko": "궁전 지하"
+},
+"Harem": {
+"en": "Harem",
+"ko": "하렘"
+},
+"Sewers": {
+"en": "Sewers",
+"ko": "하수도"
+},
+"To The Moo Moo Farm": {
+"en": "To The Secret Cow Level",
+"ko": "비밀의 젖소방으로 이동"
+},
+"To Chaos Sanctum": {
+"en": "To The Chaos Sanctuary",
+"ko": "혼돈의 성역으로 이동"
+},
+"To The River of Flame": {
+"en": "To The River of Flame",
+"ko": "불길의 강으로 이동"
+},
+"To The Outer Steppes": {
+"en": "To The Outer Steppes",
+"ko": "평원 외곽으로 이동"
+},
+"To The Plains of Despair": {
+"en": "To The Plains of Despair",
+"ko": "절망의 평원으로 이동"
+},
+"To The City of the Damned": {
+"en": "To The City of the Damned",
+"ko": "저주받은 자들의 도시로 이동"
+},
+"To The Pandemonium Fortress": {
+"en": "To The Pandemonium Fortress",
+"ko": "혼돈의 요새로 이동"
+},
+"To The Durance of Hate Level 3": {
+"en": "To The Durance of Hate Level 3",
+"ko": "증오의 억류지 3층으로 이동"
+},
+"To The Durance of Hate Level 2": {
+"en": "To The Durance of Hate Level 2",
+"ko": "증오의 억류지 2층으로 이동"
+},
+"To The Durance of Hate Level 1": {
+"en": "To The Durance of Hate Level 1",
+"ko": "증오의 억류지 1층으로 이동"
+},
+"To The Disused Reliquary": {
+"en": "To The Disused Reliquary",
+"ko": "버려진 성물실로 이동"
+},
+"To The Ruined Fane": {
+"en": "To The Ruined Fane",
+"ko": "허물어진 교회당으로 이동"
+},
+"To The Forgotten Temple": {
+"en": "To The Forgotten Temple",
+"ko": "잊힌 사원으로 이동"
+},
+"To The Forgotten Reliquary": {
+"en": "To The Forgotten Reliquary",
+"ko": "잊힌 성물실로 이동"
+},
+"To The Disused Fane": {
+"en": "To The Disused Fane",
+"ko": "버려진 교회당으로 이동"
+},
+"To The Ruined Temple": {
+"en": "To The Ruined Temple",
+"ko": "허물어진 사원으로 이동"
+},
+"To The Flayer Dungeon Level 1": {
+"en": "To The Flayer Dungeon Level 1",
+"ko": "약탈자 소굴 1층으로 이동"
+},
+"To The Flayer Dungeon Level 2": {
+"en": "To The Flayer Dungeon Level 2",
+"ko": "약탈자 소굴 2층으로 이동"
+},
+"To The Flayer Dungeon Level 3": {
+"en": "To The Flayer Dungeon Level 3",
+"ko": "약탈자 소굴 3층으로 이동"
+},
+"To The Swampy Pit Level 3": {
+"en": "To The Swampy Pit Level 3",
+"ko": "습한 구덩이 3층으로 이동"
+},
+"To The Swampy Pit Level 2": {
+"en": "To The Swampy Pit Level 2",
+"ko": "습한 구덩이 2층으로 이동"
+},
+"To The Swampy Pit Level 1": {
+"en": "To The Swampy Pit Level 1",
+"ko": "습한 구덩이 1층으로 이동"
+},
+"To The Spider Cave": {
+"en": "To The Arachnid Lair",
+"ko": "독거미 둥지로 이동"
+},
+"To The Spider Cavern": {
+"en": "To The Spider Cavern",
+"ko": "거미 동굴로 이동"
+},
+"To Travincal": {
+"en": "To Travincal",
+"ko": "트라빈칼로 이동"
+},
+"To The Kurast Causeway": {
+"en": "To The Kurast Causeway",
+"ko": "쿠라스트 둑길로 이동"
+},
+"To Upper Kurast": {
+"en": "To Upper Kurast",
+"ko": "상부 쿠라스트로 이동"
+},
+"To The Kurast Bazaar": {
+"en": "To The Kurast Bazaar",
+"ko": "쿠라스트 시장으로 이동"
+},
+"To Lower Kurast": {
+"en": "To Lower Kurast",
+"ko": "하부 쿠라스트로 이동"
+},
+"To The Flayer Jungle": {
+"en": "To The Flayer Jungle",
+"ko": "약탈자 밀림으로 이동"
+},
+"To The Great Marsh": {
+"en": "To The Great Marsh",
+"ko": "거대 습지로 이동"
+},
+"To The Spider Forest": {
+"en": "To The Spider Forest",
+"ko": "거미 숲으로 이동"
+},
+"To The Kurast Docktown": {
+"en": "To The Kurast Docks",
+"ko": "쿠라스트 부두로 이동"
+},
+"To The Arcane Sanctuary": {
+"en": "To The Arcane Sanctuary",
+"ko": "비전의 성역으로 이동"
+},
+"To Duriel's Lair": {
+"en": "To Tal Rasha's Chamber",
+"ko": "탈 라샤의 방으로 이동"
+},
+"To Tal Rasha's Tomb": {
+"en": "To Tal Rasha's Tomb",
+"ko": "탈 라샤의 무덤으로 이동"
+},
+"To The Ancient Tunnels": {
+"en": "To The Ancient Tunnels",
+"ko": "고대 토굴로 이동"
+},
+"To The Maggot Lair Level 3": {
+"en": "To The Maggot Lair Level 3",
+"ko": "구더기 굴 3층으로 이동"
+},
+"To The Maggot Lair Level 2": {
+"en": "To The Maggot Lair Level 2",
+"ko": "구더기 굴 2층으로 이동"
+},
+"To The Maggot Lair Level 1": {
+"en": "To The Maggot Lair Level 1",
+"ko": "구더기 굴 1층으로 이동"
+},
+"To The Claw Viper Temple Level 2": {
+"en": "To The Claw Viper Temple Level 2",
+"ko": "발톱 독사 사원 2층으로 이동"
+},
+"To The Halls of the Dead Level 3": {
+"en": "To The Halls of the Dead Level 3",
+"ko": "망자의 전당 3층으로 이동"
+},
+"To The Stony Tomb Level 2": {
+"en": "To The Stony Tomb Level 2",
+"ko": "바위 무덤 2층으로 이동"
+},
+"To The Claw Viper Temple Level 1": {
+"en": "To The Claw Viper Temple Level 1",
+"ko": "발톱 독사 사원 1층으로 이동"
+},
+"To The Halls of the Dead Level 2": {
+"en": "To The Halls of the Dead Level 2",
+"ko": "망자의 전당 2층으로 이동"
+},
+"To The Halls of the Dead Level 1": {
+"en": "To The Halls of the Dead Level 1",
+"ko": "망자의 전당 1층으로 이동"
+},
+"To The Stony Tomb Level 1": {
+"en": "To The Stony Tomb Level 1",
+"ko": "바위 무덤 1층으로 이동"
+},
+"To The Palace Cellar Level 3": {
+"en": "To The Palace Cellar Level 3",
+"ko": "궁전 지하 3층으로 이동"
+},
+"To The Palace Cellar Level 2": {
+"en": "To The Palace Cellar Level 2",
+"ko": "궁전 지하 2층으로 이동"
+},
+"To The Palace Cellar Level 1": {
+"en": "To The Palace Cellar Level 1",
+"ko": "궁전 지하 1층으로 이동"
+},
+"To The Harem Level 2": {
+"en": "To The Harem Level 2",
+"ko": "하렘 2층으로 이동"
+},
+"To The Harem Level 1": {
+"en": "To The Harem Level 1",
+"ko": "하렘 1층으로 이동"
+},
+"To The Sewers Level 3": {
+"en": "To The Sewers Level 3",
+"ko": "하수도 3층으로 이동"
+},
+"To The Sewers Level 2": {
+"en": "To The Sewers Level 2",
+"ko": "하수도 2층으로 이동"
+},
+"To The Sewers Level 1": {
+"en": "To The Sewers Level 1",
+"ko": "하수도 1층으로 이동"
+},
+"To The Canyon of the Magi": {
+"en": "To The Canyon of the Magi",
+"ko": "신비술사의 협곡으로 이동"
+},
+"To The Valley of Snakes": {
+"en": "To The Valley of Snakes",
+"ko": "뱀의 골짜기로 이동"
+},
+"To The Lost City": {
+"en": "To The Lost City",
+"ko": "잊힌 도시로 이동"
+},
+"To The Far Oasis": {
+"en": "To The Far Oasis",
+"ko": "머나먼 오아시스로 이동"
+},
+"To The Dry Hills": {
+"en": "To The Dry Hills",
+"ko": "메마른 언덕으로 이동"
+},
+"To The Rocky Waste": {
+"en": "To The Rocky Waste",
+"ko": "바위투성이 황무지로 이동"
+},
+"To Lut Gholein": {
+"en": "To Lut Gholein",
+"ko": "루트 골레인으로 이동"
+},
+"To Guild 5": {
+"en": "",
+"ko": "To Guild 5"
+},
+"To Guild 4": {
+"en": "",
+"ko": "To Guild 4"
+},
+"To Guild 3": {
+"en": "",
+"ko": "To Guild 3"
+},
+"To Guild 2": {
+"en": "",
+"ko": "To Guild 2"
+},
+"To Guild 1": {
+"en": "",
+"ko": "To Guild 1"
+},
+"act1": {
+"en": "Act 1",
+"ko": "1막"
+},
+"act2": {
+"en": "Act 2",
+"ko": "2막"
+},
+"act3": {
+"en": "Act 3",
+"ko": "3막"
+},
+"act4": {
+"en": "Act 4",
+"ko": "4막"
+},
+"Leave": {
+"en": "LEAVE",
+"ko": "나가기"
+},
+"Tristram": {
+"en": "Tristram",
+"ko": "트리스트럼"
+},
+"Catacombs Level 4": {
+"en": "Catacombs Level 4",
+"ko": "지하 묘지 4층"
+},
+"Catacombs Level 3": {
+"en": "Catacombs Level 3",
+"ko": "지하 묘지 3층"
+},
+"Catacombs Level 2": {
+"en": "Catacombs Level 2",
+"ko": "지하 묘지 2층"
+},
+"Catacombs Level 1": {
+"en": "Catacombs Level 1",
+"ko": "지하 묘지 1층"
+},
+"Cathedral": {
+"en": "Cathedral",
+"ko": "대성당"
+},
+"Inner Cloister": {
+"en": "Inner Cloister",
+"ko": "내부 회랑"
+},
+"Jail Level 3": {
+"en": "Jail Level 3",
+"ko": "감옥 3층"
+},
+"Jail Level 2": {
+"en": "Jail Level 2",
+"ko": "감옥 2층"
+},
+"Jail Level 1": {
+"en": "Jail Level 1",
+"ko": "감옥 1층"
+},
+"Barracks": {
+"en": "Barracks",
+"ko": "병영"
+},
+"Outer Cloister": {
+"en": "Outer Cloister",
+"ko": "외부 회랑"
+},
+"Monastery Gate": {
+"en": "Monastery Gate",
+"ko": "수도원 정문"
+},
+"Tower Cellar Level 5": {
+"en": "Tower Cellar Level 5",
+"ko": "탑 지하 5층"
+},
+"Tower Cellar Level 4": {
+"en": "Tower Cellar Level 4",
+"ko": "탑 지하 4층"
+},
+"Tower Cellar Level 3": {
+"en": "Tower Cellar Level 3",
+"ko": "탑 지하 3층"
+},
+"Tower Cellar Level 2": {
+"en": "Tower Cellar Level 2",
+"ko": "탑 지하 2층"
+},
+"Tower Cellar Level 1": {
+"en": "Tower Cellar Level 1",
+"ko": "탑 지하 1층"
+},
+"Forgotten Tower": {
+"en": "Forgotten Tower",
+"ko": "잊힌 탑"
+},
+"Mausoleum": {
+"en": "Mausoleum",
+"ko": "영묘"
+},
+"Crypt": {
+"en": "Crypt",
+"ko": "묘실"
+},
+"Burial Grounds": {
+"en": "Burial Grounds",
+"ko": "매장지"
+},
+"Pit Level 2": {
+"en": "Pit Level 2",
+"ko": "구덩이 2층"
+},
+"Hole Level 2": {
+"en": "Hole Level 2",
+"ko": "구렁 2층"
+},
+"Underground Passage Level 2": {
+"en": "Underground Passage Level 2",
+"ko": "지하 통로 2층"
+},
+"Cave Level 2": {
+"en": "Cave Level 2",
+"ko": "동굴 2층"
+},
+"Pit Level 1": {
+"en": "Pit Level 1",
+"ko": "구덩이 1층"
+},
+"Hole Level 1": {
+"en": "Hole Level 1",
+"ko": "구렁 1층"
+},
+"Underground Passage Level 1": {
+"en": "Underground Passage Level 1",
+"ko": "지하 통로 1층"
+},
+"Cave Level 1": {
+"en": "Cave Level 1",
+"ko": "동굴 1층"
+},
+"Den of Evil": {
+"en": "Den of Evil",
+"ko": "악의 소굴"
+},
+"Tamoe Highland": {
+"en": "Tamoe Highland",
+"ko": "타모 고원"
+},
+"Black Marsh": {
+"en": "Black Marsh",
+"ko": "검은 습지"
+},
+"Dark Wood": {
+"en": "Dark Wood",
+"ko": "어둠숲"
+},
+"Stony Field": {
+"en": "Stony Field",
+"ko": "바위 벌판"
+},
+"Cold Plains": {
+"en": "Cold Plains",
+"ko": "차가운 평야"
+},
+"Blood Moor": {
+"en": "Blood Moor",
+"ko": "핏빛 황무지"
+},
+"Rogue Encampment": {
+"en": "Rogue Encampment",
+"ko": "자매단 야영지"
+},
+"To Tristram": {
+"en": "To Tristram",
+"ko": "트리스트럼으로 이동"
+},
+"To The Catacombs Level 4": {
+"en": "To The Catacombs Level 4",
+"ko": "지하 묘지 4층으로 이동"
+},
+"To The Catacombs Level 3": {
+"en": "To The Catacombs Level 3",
+"ko": "지하 묘지 3층으로 이동"
+},
+"To The Catacombs Level 2": {
+"en": "To The Catacombs Level 2",
+"ko": "지하 묘지 2층으로 이동"
+},
+"To The Catacombs Level 1": {
+"en": "To The Catacombs Level 1",
+"ko": "지하 묘지 1층으로 이동"
+},
+"To The Cathedral": {
+"en": "To The Cathedral",
+"ko": "대성당으로 이동"
+},
+"To The Inner Cloister": {
+"en": "To The Inner Cloister",
+"ko": "내부 회랑으로 이동"
+},
+"To The Jail Level 3": {
+"en": "To The Jail Level 3",
+"ko": "감옥 3층으로 이동"
+},
+"To The Jail Level 2": {
+"en": "To The Jail Level 2",
+"ko": "감옥 2층으로 이동"
+},
+"To The Jail Level 1": {
+"en": "To The Jail Level 1",
+"ko": "감옥 1층으로 이동"
+},
+"To The Barracks": {
+"en": "To The Barracks",
+"ko": "병영으로 이동"
+},
+"To The Outer Cloister": {
+"en": "To The Outer Cloister",
+"ko": "외부 회랑으로 이동"
+},
+"To The Monastery Gate": {
+"en": "To The Monastery Gate",
+"ko": "수도원 정문으로 이동"
+},
+"To The Tower Cellar Level 5": {
+"en": "To The Tower Cellar Level 5",
+"ko": "탑 지하 5층으로 이동"
+},
+"To The Tower Cellar Level 4": {
+"en": "To The Tower Cellar Level 4",
+"ko": "탑 지하 4층으로 이동"
+},
+"To The Tower Cellar Level 3": {
+"en": "To The Tower Cellar Level 3",
+"ko": "탑 지하 3층으로 이동"
+},
+"To The Tower Cellar Level 2": {
+"en": "To The Tower Cellar Level 2",
+"ko": "탑 지하 2층으로 이동"
+},
+"To The Tower Cellar Level 1": {
+"en": "To The Tower Cellar Level 1",
+"ko": "탑 지하 1층으로 이동"
+},
+"To The Forgotten Tower": {
+"en": "To The Forgotten Tower",
+"ko": "잊힌 탑으로 이동"
+},
+"To The Mausoleum": {
+"en": "To The Mausoleum",
+"ko": "영묘로 이동"
+},
+"To The Crypt": {
+"en": "To The Crypt",
+"ko": "묘실로 이동"
+},
+"To The Burial Grounds": {
+"en": "To The Burial Grounds",
+"ko": "매장지로 이동"
+},
+"To The Pit Level 2": {
+"en": "To The Pit Level 2",
+"ko": "구덩이 2층으로 이동"
+},
+"To The Hole Level 2": {
+"en": "To The Hole Level 2",
+"ko": "구렁 2층으로 이동"
+},
+"To Underground Passage Level 2": {
+"en": "To Underground Passage Level 2",
+"ko": "지하 통로 2층으로 이동"
+},
+"To The Cave Level 2": {
+"en": "To The Cave Level 2",
+"ko": "동굴 2층으로 이동"
+},
+"To The Pit Level 1": {
+"en": "To The Pit Level 1",
+"ko": "구덩이 1층으로 이동"
+},
+"To The Hole Level 1": {
+"en": "To The Hole Level 1",
+"ko": "구렁 1층으로 이동"
+},
+"To Underground Passage Level 1": {
+"en": "To Underground Passage Level 1",
+"ko": "지하 통로 1층으로 이동"
+},
+"To The Cave Level 1": {
+"en": "To The Cave Level 1",
+"ko": "동굴 1층으로 이동"
+},
+"To The Den of Evil": {
+"en": "To The Den of Evil",
+"ko": "악의 소굴로 이동"
+},
+"To The Tamoe Highland": {
+"en": "To The Tamoe Highland",
+"ko": "타모 고원으로 이동"
+},
+"To The Black Marsh": {
+"en": "To The Black Marsh",
+"ko": "검은 습지로 이동"
+},
+"To The Dark Wood": {
+"en": "To The Dark Wood",
+"ko": "어둠숲으로 이동"
+},
+"To The Stony Field": {
+"en": "To The Stony Field",
+"ko": "바위 벌판으로 이동"
+},
+"To The Cold Plains": {
+"en": "To The Cold Plains",
+"ko": "차가운 평야로 이동"
+},
+"To The Blood Moor": {
+"en": "To The Blood Moor",
+"ko": "핏빛 황무지로 이동"
+},
+"To The Rogue Encampment": {
+"en": "To The Rogue Encampment",
+"ko": "자매단 야영지로 이동"
+},
+"Pandemonium Run 1": {
+"en": "Matron's Den",
+"ko": "여제의 소굴"
+},
+"Pandemonium Run 2": {
+"en": "Forgotten Sands",
+"ko": "잊힌 사막"
+},
+"Pandemonium Run 3": {
+"en": "Furnace of Pain",
+"ko": "고통의 용광로"
+},
+"act1X": {
+"en": "THE SISTER'S LAMENT",
+"ko": "자매의 탄식"
+},
+"act2X": {
+"en": "DESERT JOURNEY",
+"ko": "사막 여행"
+},
+"act3X": {
+"en": "MEPHISTO'S JUNGLE",
+"ko": "메피스토의 밀림"
+},
+"act4X": {
+"en": "ENTER HELL",
+"ko": "지옥 진입"
+},
+"act5X": {
+"en": "SEARCH FOR BAAL",
+"ko": "바알을 찾아서"
+},
+"Hell1": {
+"en": "Abaddon",
+"ko": "나락"
+},
+"Hell2": {
+"en": "Pit of Acheron",
+"ko": "아케론의 구덩이"
+},
+"Hell3": {
+"en": "Infernal Pit",
+"ko": "지옥불 구덩이"
+},
+"To Hell1": {
+"en": "To Abaddon",
+"ko": "나락으로 이동"
+},
+"To Hell2": {
+"en": "To The Pit of Acheron",
+"ko": "아케론의 구덩이로 이동"
+},
+"To Hell3": {
+"en": "To The Infernal Pit",
+"ko": "지옥불 구덩이로 이동"
+},
+"Harrogath": {
+"en": "Harrogath",
+"ko": "하로가스"
+},
+"Bloody Foothills": {
+"en": "Bloody Foothills",
+"ko": "핏빛 언덕"
+},
+"Rigid Highlands": {
+"en": "Frigid Highlands",
+"ko": "혹한의 고산지"
+},
+"Arreat Plateau": {
+"en": "Arreat Plateau",
+"ko": "아리앗 고원"
+},
+"Crystalized Cavern Level 1": {
+"en": "Crystalline Passage",
+"ko": "수정 동굴"
+},
+"Cellar of Pity": {
+"en": "Frozen River",
+"ko": "얼어붙은 강"
+},
+"Crystalized Cavern Level 2": {
+"en": "Glacial Trail",
+"ko": "빙하의 길"
+},
+"Echo Chamber": {
+"en": "Drifter Cavern",
+"ko": "부랑자의 동굴"
+},
+"Tundra Wastelands": {
+"en": "Frozen Tundra",
+"ko": "얼어붙은 동토"
+},
+"Glacial Caves Level 1": {
+"en": "The Ancients' Way",
+"ko": "고대인의 길"
+},
+"Glacial Caves Level 2": {
+"en": "Icy Cellar",
+"ko": "얼음 지하실"
+},
+"Rocky Summit": {
+"en": "Arreat Summit",
+"ko": "아리앗 정상"
+},
+"Nihlathaks Temple": {
+"en": "Nihlathak's Temple",
+"ko": "니흘라탁의 사원"
+},
+"Halls of Anguish": {
+"en": "Halls of Anguish",
+"ko": "고뇌의 전당"
+},
+"Halls of Death's Calling": {
+"en": "Halls of Pain",
+"ko": "고통의 전당"
+},
+"Halls of Tormented Insanity": {
+"en": "Halls of Torment",
+"ko": "고문의 전당"
+},
+"Halls of Vaught": {
+"en": "Halls of Vaught",
+"ko": "보트의 전당"
+},
+"The Worldstone Keep Level 1": {
+"en": "Worldstone Keep Level 1",
+"ko": "세계석 성채 1층"
+},
+"The Worldstone Keep Level 2": {
+"en": "Worldstone Keep Level 2",
+"ko": "세계석 성채 2층"
+},
+"The Worldstone Keep Level 3": {
+"en": "Worldstone Keep Level 3",
+"ko": "세계석 성채 3층"
+},
+"The Worldstone Chamber": {
+"en": "The Worldstone Chamber",
+"ko": "세계석 보관실"
+},
+"Throne of Destruction": {
+"en": "Throne of Destruction",
+"ko": "파괴의 왕좌"
+},
+"To Harrogath": {
+"en": "To Harrogath",
+"ko": "하로가스로 이동"
+},
+"To The Bloody Foothills": {
+"en": "To The Bloody Foothills",
+"ko": "핏빛 언덕으로 이동"
+},
+"To The Rigid Highlands": {
+"en": "To The Frigid Highlands",
+"ko": "혹한의 고산지로 이동"
+},
+"To The Arreat Plateau": {
+"en": "To The Arreat Plateau",
+"ko": "아리앗 고원으로 이동"
+},
+"To The Crystalized Cavern Level 1": {
+"en": "To The Crystalline Passage",
+"ko": "수정 동굴로 이동"
+},
+"To The Cellar of Pity": {
+"en": "To The Frozen River",
+"ko": "얼어붙은 강으로 이동"
+},
+"To The Crystalized Cavern Level 2": {
+"en": "To The Glacial Trail",
+"ko": "빙하의 길로 이동"
+},
+"To The Echo Chamber": {
+"en": "To The Drifter Cavern",
+"ko": "부랑자의 동굴로 이동"
+},
+"To The Tundra Wastelands": {
+"en": "To The Frozen Tundra",
+"ko": "얼어붙은 동토로 이동"
+},
+"To The Glacier Caves Level 1": {
+"en": "To The Ancients' Way",
+"ko": "고대인의 길로 이동"
+},
+"To The Glacier Caves Level 2": {
+"en": "To The Icy Cellar",
+"ko": "얼음 지하실로 이동"
+},
+"To The Rocky Summit": {
+"en": "To The Arreat Summit",
+"ko": "아리앗 정상으로 이동"
+},
+"To Nihlathaks Temple": {
+"en": "To Nihlathak's Temple",
+"ko": "니흘라탁의 사원으로 이동"
+},
+"To The Halls of Anguish": {
+"en": "To The Halls of Anguish",
+"ko": "고뇌의 전당으로 이동"
+},
+"To The Halls of Death's Calling": {
+"en": "To The Halls of Pain",
+"ko": "고통의 전당으로 이동"
+},
+"To The Halls of Tormented Insanity": {
+"en": "To The Halls of Torment",
+"ko": "고문의 전당으로 이동"
+},
+"To The Halls of Vaught": {
+"en": "To The Halls of Vaught",
+"ko": "보트의 전당으로 이동"
+},
+"To The Worldstone Keep Level 1": {
+"en": "To The Worldstone Keep Level 1",
+"ko": "세계석 성채 1층으로 이동"
+},
+"To The Worldstone Keep Level 2": {
+"en": "To The Worldstone Keep Level 2",
+"ko": "세계석 성채 2층으로 이동"
+},
+"To The Worldstone Keep Level 3": {
+"en": "To The Worldstone Keep Level 3",
+"ko": "세계석 성채 3층으로 이동"
+},
+"To The Worldstone Chamber": {
+"en": "To The Worldstone Chamber",
+"ko": "세계석 보관실로 이동"
+},
+"To The Throne of Destruction": {
+"en": "To The Throne of Destruction",
+"ko": "파괴의 왕좌로 이동"
+},
+"EnteringTheRogueEncampment": {
+"en": "Entering The Rogue Encampment",
+"ko": "자매단 야영지에 진입"
+},
+"EnteringTheBloodMoor": {
+"en": "Entering The Blood Moor",
+"ko": "핏빛 황무지에 진입"
+},
+"EnteringTheColdPlains": {
+"en": "Entering The Cold Plains",
+"ko": "차가운 평야에 진입"
+},
+"EnteringTheStonyField": {
+"en": "Entering The Stony Field",
+"ko": "바위 벌판에 진입"
+},
+"EnteringTheDarkWood": {
+"en": "Entering The Dark Wood",
+"ko": "어둠숲에 진입"
+},
+"EnteringTheBlackMarsh": {
+"en": "Entering The Black Marsh",
+"ko": "검은 습지에 진입"
+},
+"EnteringTheTamoeHighland": {
+"en": "Entering The Tamoe Highland",
+"ko": "타모 고원에 진입"
+},
+"EnteringTheDenOfEvilInQuest": {
+"en": "Entering The Den of Evil",
+"ko": "악의 소굴에 진입"
+},
+"EnteringTheDenOfEvilPostQuest": {
+"en": "Entering The Cave Level 1",
+"ko": "동굴 1층에 진입"
+},
+"EnteringTheCaveLevel1": {
+"en": "Entering The Cave Level 1",
+"ko": "동굴 1층에 진입"
+},
+"EnteringUndergroundPassageLevel1": {
+"en": "Entering The Underground Passage Level 1",
+"ko": "지하 통로 1층에 진입"
+},
+"EnteringTheHoleLevel1": {
+"en": "Entering The Hole Level 1",
+"ko": "구렁 1층에 진입"
+},
+"EnteringThePitLevel1": {
+"en": "Entering The Pit Level 1",
+"ko": "구덩이 1층에 진입"
+},
+"EnteringTheCaveLevel2": {
+"en": "Entering The Cave Level 2",
+"ko": "동굴 2층에 진입"
+},
+"EnteringUndergroundPassageLevel2": {
+"en": "Entering The Underground Passage Level 2",
+"ko": "지하 통로 2층에 진입"
+},
+"EnteringTheHoleLevel2": {
+"en": "Entering The Hole Level 2",
+"ko": "구렁 2층에 진입"
+},
+"EnteringThePitLevel2": {
+"en": "Entering The Pit Level 2",
+"ko": "구덩이 2층에 진입"
+},
+"EnteringTheBurialGrounds": {
+"en": "Entering The Burial Grounds",
+"ko": "매장지에 진입"
+},
+"EnteringTheCrypt": {
+"en": "Entering The Crypt",
+"ko": "묘실에 진입"
+},
+"EnteringTheMausoleum": {
+"en": "Entering The Mausoleum",
+"ko": "영묘에 진입"
+},
+"EnteringTheForgottenTower": {
+"en": "Entering The Forgotten Tower",
+"ko": "잊힌 탑에 진입"
+},
+"EnteringTheTowerCellarLevel1": {
+"en": "Entering The Tower Cellar Level 1",
+"ko": "탑 지하 1층에 진입"
+},
+"EnteringTheTowerCellarLevel2": {
+"en": "Entering The Tower Cellar Level 2",
+"ko": "탑 지하 2층에 진입"
+},
+"EnteringTheTowerCellarLevel3": {
+"en": "Entering The Tower Cellar Level 3",
+"ko": "탑 지하 3층에 진입"
+},
+"EnteringTheTowerCellarLevel4": {
+"en": "Entering The Tower Cellar Level 4",
+"ko": "탑 지하 4층에 진입"
+},
+"EnteringTheTowerCellarLevel5": {
+"en": "Entering The Tower Cellar Level 5",
+"ko": "탑 지하 5층에 진입"
+},
+"EnteringTheMonasteryGate": {
+"en": "Entering The Monastery Gate",
+"ko": "수도원 정문에 진입"
+},
+"EnteringTheOuterCloister": {
+"en": "Entering The Outer Cloister",
+"ko": "외부 회랑에 진입"
+},
+"EnteringTheBarracks": {
+"en": "Entering The Barracks",
+"ko": "병영에 진입"
+},
+"EnteringTheJailLevel1": {
+"en": "Entering The Jail Level 1",
+"ko": "감옥 1층에 진입"
+},
+"EnteringTheJailLevel2": {
+"en": "Entering The Jail Level 2",
+"ko": "감옥 2층에 진입"
+},
+"EnteringTheJailLevel3": {
+"en": "Entering The Jail Level 3",
+"ko": "감옥 3층에 진입"
+},
+"EnteringTheInnerCloister": {
+"en": "Entering The Inner Cloister",
+"ko": "내부 회랑에 진입"
+},
+"EnteringTheCathedral": {
+"en": "Entering The Cathedral",
+"ko": "대성당에 진입"
+},
+"EnteringTheCatacombsLevel1": {
+"en": "Entering The Catacombs Level 1",
+"ko": "지하 묘지 1층에 진입"
+},
+"EnteringTheCatacombsLevel2": {
+"en": "Entering The Catacombs Level 2",
+"ko": "지하 묘지 2층에 진입"
+},
+"EnteringTheCatacombsLevel3": {
+"en": "Entering The Catacombs Level 3",
+"ko": "지하 묘지 3층에 진입"
+},
+"EnteringTheCatacombsLevel4": {
+"en": "Entering The Catacombs Level 4",
+"ko": "지하 묘지 4층에 진입"
+},
+"EnteringTristram": {
+"en": "Entering Tristram",
+"ko": "트리스트럼에 진입"
+},
+"EnteringTheMooMooFarm": {
+"en": "Entering The Moo Moo Farm",
+"ko": "음메음메 농장에 진입"
+},
+"EnteringLutGholein": {
+"en": "Entering Lut Gholein",
+"ko": "루트 골레인에 진입"
+},
+"EnteringTheRockyWaste": {
+"en": "Entering The Rocky Waste",
+"ko": "바위투성이 황무지에 진입"
+},
+"EnteringTheDryHills": {
+"en": "Entering The Dry Hills",
+"ko": "메마른 언덕에 진입"
+},
+"EnteringTheFarOasis": {
+"en": "Entering The Far Oasis",
+"ko": "머나먼 오아시스에 진입"
+},
+"EnteringTheLostCity": {
+"en": "Entering The Lost City",
+"ko": "잊힌 도시에 진입"
+},
+"EnteringTheValleyOfSnakes": {
+"en": "Entering The Valley of Snakes",
+"ko": "뱀의 골짜기에 진입"
+},
+"EnteringTheCanyonOfTheMagi": {
+"en": "Entering The Canyon of the Magi",
+"ko": "신비술사의 협곡에 진입"
+},
+"EnteringTheSewersLevel1": {
+"en": "Entering The Sewers Level 1",
+"ko": "하수도 1층에 진입"
+},
+"EnteringTheSewersLevel2": {
+"en": "Entering The Sewers Level 2",
+"ko": "하수도 2층에 진입"
+},
+"EnteringTheSewersLevel3": {
+"en": "Entering The Sewers Level 3",
+"ko": "하수도 3층에 진입"
+},
+"EnteringTheHaremLevel1": {
+"en": "Entering The Harem Level 1",
+"ko": "하렘 1층에 진입"
+},
+"EnteringTheHaremLevel2": {
+"en": "Entering The Harem Level 2",
+"ko": "하렘 2층에 진입"
+},
+"EnteringThePalaceCellarLevel1": {
+"en": "Entering The Palace Cellar Level 1",
+"ko": "궁전 지하 1층에 진입"
+},
+"EnteringThePalaceCellarLevel2": {
+"en": "Entering The Palace Cellar Level 2",
+"ko": "궁전 지하 2층에 진입"
+},
+"EnteringThePalaceCellarLevel3": {
+"en": "Entering The Palace Cellar Level 3",
+"ko": "궁전 지하 3층에 진입"
+},
+"EnteringTheStonyTombLevel1": {
+"en": "Entering The Stony Tomb Level 1",
+"ko": "바위 무덤 1층에 진입"
+},
+"EnteringTheHallsOfTheDeadLevel1": {
+"en": "Entering The Halls of the Dead Level 1",
+"ko": "망자의 전당 1층에 진입"
+},
+"EnteringTheHallsOfTheDeadLevel2": {
+"en": "Entering The Halls of the Dead Level 2",
+"ko": "망자의 전당 2층에 진입"
+},
+"EnteringTheClawViperTempleLevel1": {
+"en": "Entering The Claw Viper Temple Level 1",
+"ko": "발톱 독사 사원 1층에 진입"
+},
+"EnteringTheStonyTombLevel2": {
+"en": "Entering The Stony Tomb Level 2",
+"ko": "바위 무덤 2층에 진입"
+},
+"EnteringTheHallsOfTheDeadLevel3": {
+"en": "Entering The Halls of the Dead Level 3",
+"ko": "망자의 전당 3층에 진입"
+},
+"EnteringTheClawViperTempleLevel2": {
+"en": "Entering The Claw Viper Temple Level 2",
+"ko": "발톱 독사 사원 2층에 진입"
+},
+"EnteringTheMaggotLairLevel1": {
+"en": "Entering The Maggot Lair Level 1",
+"ko": "구더기 굴 1층에 진입"
+},
+"EnteringTheMaggotLairLevel2": {
+"en": "Entering The Maggot Lair Level 2",
+"ko": "구더기 굴 2층에 진입"
+},
+"EnteringTheMaggotLairLevel3": {
+"en": "Entering The Maggot Lair Level 3",
+"ko": "구더기 굴 3층에 진입"
+},
+"EnteringTheAncientTunnels": {
+"en": "Entering The Ancient Tunnels",
+"ko": "고대 토굴에 진입"
+},
+"EnteringTalRasha'sTomb": {
+"en": "Entering Tal Rasha's Tomb",
+"ko": "탈 라샤의 무덤에 진입"
+},
+"EnteringDuriel'sLair": {
+"en": "Entering Tal Rasha's Chamber",
+"ko": "탈 라샤의 방에 진입"
+},
+"EnteringTheArcaneSanctuary": {
+"en": "Entering The Arcane Sanctuary",
+"ko": "비전의 성역에 진입"
+},
+"EnteringTheKurastDocktown": {
+"en": "Entering The Kurast Docks",
+"ko": "쿠라스트 부두에 진입"
+},
+"EnteringTheSpiderForest": {
+"en": "Entering The Spider Forest",
+"ko": "거미 숲에 진입"
+},
+"EnteringTheGreatMarsh": {
+"en": "Entering The Great Marsh",
+"ko": "거대 습지에 진입"
+},
+"EnteringTheFlayerJungle": {
+"en": "Entering The Flayer Jungle",
+"ko": "약탈자 밀림에 진입"
+},
+"EnteringLowerKurast": {
+"en": "Entering Lower Kurast",
+"ko": "하부 쿠라스트에 진입"
+},
+"EnteringTheKurastBazaar": {
+"en": "Entering The Kurast Bazaar",
+"ko": "쿠라스트 시장에 진입"
+},
+"EnteringUpperKurast": {
+"en": "Entering Upper Kurast",
+"ko": "상부 쿠라스트에 진입"
+},
+"EnteringTheKurastCauseway": {
+"en": "Entering The Kurast Causeway",
+"ko": "쿠라스트 둑길에 진입"
+},
+"EnteringTravincal": {
+"en": "Entering Travincal",
+"ko": "트라빈칼에 진입"
+},
+"EnteringTheSpiderCave": {
+"en": "Entering The Arachnid Lair",
+"ko": "독거미 둥지에 진입"
+},
+"EnteringTheSpiderCavern": {
+"en": "Entering The Spider Cavern",
+"ko": "거미 동굴에 진입"
+},
+"EnteringTheSwampyPitLevel1": {
+"en": "Entering The Swampy Pit Level 1",
+"ko": "습한 구덩이 1층에 진입"
+},
+"EnteringTheSwampyPitLevel2": {
+"en": "Entering The Swampy Pit Level 2",
+"ko": "습한 구덩이 2층에 진입"
+},
+"EnteringTheFlayerDungeonLevel1": {
+"en": "Entering The Flayer Dungeon Level 1",
+"ko": "약탈자 소굴 1층에 진입"
+},
+"EnteringTheFlayerDungeonLevel2": {
+"en": "Entering The Flayer Dungeon Level 2",
+"ko": "약탈자 소굴 2층에 진입"
+},
+"EnteringTheSwampyPitLevel3": {
+"en": "Entering The Swampy Pit Level 3",
+"ko": "습한 구덩이 3층에 진입"
+},
+"EnteringTheFlayerDungeonLevel3": {
+"en": "Entering The Flayer Dungeon Level 3",
+"ko": "약탈자 소굴 3층에 진입"
+},
+"EnteringTheRuinedTemple": {
+"en": "Entering The Ruined Temple",
+"ko": "허물어진 사원에 진입"
+},
+"EnteringTheDisusedFane": {
+"en": "Entering The Disused Fane",
+"ko": "버려진 교회당에 진입"
+},
+"EnteringTheForgottenReliquary": {
+"en": "Entering The Forgotten Reliquary",
+"ko": "잊힌 성물실에 진입"
+},
+"EnteringTheForgottenTemple": {
+"en": "Entering The Forgotten Temple",
+"ko": "잊힌 사원에 진입"
+},
+"EnteringTheRuinedFane": {
+"en": "Entering The Ruined Fane",
+"ko": "허물어진 교회당에 진입"
+},
+"EnteringTheDisusedReliquary": {
+"en": "Entering The Disused Reliquary",
+"ko": "버려진 성물실에 진입"
+},
+"EnteringTheDuranceOfHateLevel1": {
+"en": "Entering The Durance of Hate Level 1",
+"ko": "증오의 억류지 1층에 진입"
+},
+"EnteringTheDuranceOfHateLevel2": {
+"en": "Entering The Durance of Hate Level 2",
+"ko": "증오의 억류지 2층에 진입"
+},
+"EnteringTheDuranceOfHateLevel3": {
+"en": "Entering The Durance of Hate Level 3",
+"ko": "증오의 억류지 3층에 진입"
+},
+"EnteringThePandemoniumFortress": {
+"en": "Entering The Pandemonium Fortress",
+"ko": "혼돈의 요새에 진입"
+},
+"EnteringTheOuterSteppes": {
+"en": "Entering The Outer Steppes",
+"ko": "평원 외곽에 진입"
+},
+"EnteringThePlainsOfDespair": {
+"en": "Entering The Plains of Despair",
+"ko": "절망의 평원에 진입"
+},
+"EnteringTheCityOfTheDamned": {
+"en": "Entering The City of the Damned",
+"ko": "저주받은 자들의 도시에 진입"
+},
+"EnteringTheRiverOfFlame": {
+"en": "Entering The River of Flame",
+"ko": "불길의 강에 진입"
+},
+"EnteringChaosSanctum": {
+"en": "Entering Chaos Sanctuary",
+"ko": "혼돈의 성역에 진입"
+},
+"EnteringHarrogath": {
+"en": "Entering Harrogath",
+"ko": "하로가스에 진입"
+},
+"EnteringTheBloodyFoothills": {
+"en": "Entering The Bloody Foothills",
+"ko": "핏빛 언덕에 진입"
+},
+"EnteringTheRigidHighlands": {
+"en": "Entering The Frigid Highlands",
+"ko": "혹한의 고산지에 진입"
+},
+"EnteringTheArreatPlateau": {
+"en": "Entering The Arreat Plateau",
+"ko": "아리앗 고원에 진입"
+},
+"EnteringTheCrystalizedCavernLevel1": {
+"en": "Entering The Crystalline Passage",
+"ko": "수정 동굴에 진입"
+},
+"EnteringTheCellarOfPity": {
+"en": "Entering The Frozen River",
+"ko": "얼어붙은 강에 진입"
+},
+"EnteringTheCrystalizedCavernLevel2": {
+"en": "Entering The Glacial Trail",
+"ko": "빙하의 길에 진입"
+},
+"EnteringTheEchoChamber": {
+"en": "Entering The Drifter Cavern",
+"ko": "부랑자의 동굴에 진입"
+},
+"EnteringTheTundraWastelands": {
+"en": "Entering The Frozen Tundra",
+"ko": "얼어붙은 동토에 진입"
+},
+"EnteringTheGlacierCavesLevel1": {
+"en": "Entering The Ancients' Way",
+"ko": "고대인의 길에 진입"
+},
+"EnteringTheGlacierCavesLevel2": {
+"en": "Entering The Icy Cellar",
+"ko": "얼음 지하실에 진입"
+},
+"EnteringTheRockySummit": {
+"en": "Entering The Arreat Summit",
+"ko": "아리앗 정상에 진입"
+},
+"EnteringNihlathaksTemple": {
+"en": "Entering Nihlathak's Temple",
+"ko": "니흘라탁의 사원에 진입"
+},
+"EnteringTheHallsOfAnguish": {
+"en": "Entering The Halls of Anguish",
+"ko": "고뇌의 전당에 진입"
+},
+"EnteringTheHallsOfDeath'sCalling": {
+"en": "Entering The Halls of Pain",
+"ko": "고통의 전당에 진입"
+},
+"EnteringTheHallsOfVaught": {
+"en": "Entering The Halls of Vaught",
+"ko": "보트의 전당에 진입"
+},
+"EnteringHell1": {
+"en": "Entering Abaddon",
+"ko": "나락에 진입"
+},
+"EnteringHell2": {
+"en": "Entering The Pit of Acheron",
+"ko": "아케론의 구덩이에 진입"
+},
+"EnteringHell3": {
+"en": "Entering The Infernal Pit",
+"ko": "지옥불 구덩이에 진입"
+},
+"EnteringTheWorldstoneKeepLevel1": {
+"en": "Entering The Worldstone Keep Level 1",
+"ko": "세계석 성채 1층에 진입"
+},
+"EnteringTheWorldstoneKeepLevel2": {
+"en": "Entering The Worldstone Keep Level 2",
+"ko": "세계석 성채 2층에 진입"
+},
+"EnteringTheWorldstoneKeepLevel3": {
+"en": "Entering The Worldstone Keep Level 3",
+"ko": "세계석 성채 3층에 진입"
+},
+"EnteringTheThroneOfDestruction": {
+"en": "Entering The Throne of Destruction",
+"ko": "파괴의 왕좌에 진입"
+},
+"EnteringTheWorldstoneChamber": {
+"en": "Entering The Worldstone Chamber",
+"ko": "세계석 보관실에 진입"
+},
+"EnteringThePandemoniumRun1": {
+"en": "Entering The Matron's Den",
+"ko": "여제의 소굴에 진입"
+},
+"EnteringThePandemoniumRun2": {
+"en": "Entering The Forgotten Sands",
+"ko": "잊힌 사막에 진입"
+},
+"EnteringThePandemoniumRun3": {
+"en": "Entering The Furnace of Pain",
+"ko": "고통의 용광로에 진입"
+},
+"EnteringThePandemoniumFinale": {
+"en": "Entering Tristram",
+"ko": "트리스트럼에 진입"
+},
+"act5": {
+"en": "Act 5",
+"ko": "5막"
+},
+"Cave": {
+"en": "Cave",
+"ko": "동굴"
+},
+"Underground Passage": {
+"en": "Underground Passage",
+"ko": "지하 통로"
+},
+"Hole": {
+"en": "Hole",
+"ko": "구렁"
+},
+"Act 1 Pit": {
+"en": "Pit",
+"ko": "구덩이"
+},
+"Jail": {
+"en": "Jail",
+"ko": "감옥"
+},
+"Catacombs": {
+"en": "Catacombs",
+"ko": "지하 묘지"
+},
+"Lut Gholein Sewers": {
+"en": "Lut Gholein Sewers",
+"ko": "루트 골레인 하수도"
+},
+"Kurast Sewers": {
+"en": "Kurast Sewers",
+"ko": "쿠라스트 하수도"
+},
+"Temple Halls": {
+"en": "Temple Halls",
+"ko": "사원 전당"
+},
+"The Worldstone Keep": {
+"en": "Worldstone Keep",
+"ko": "세계석 성채"
+},
+"MooMooFarmGroup": {
+"en": "ÿc8a non-existent levelÿc0",
+"ko": "ÿc8존재하지 않는 곳ÿc0"
+},
+"ColossalSummit": {
+"en": "Colossal Summit",
+"ko": "위압적인 정상"
+},
+"ToTheColossalSummit": {
+"en": "To The Colossal Summit",
+"ko": "위압적인 정상으로 이동"
+},
+"EnteringTheColossalSummit": {
+"en": "Entering The Colossal Summit",
+"ko": "위압적인 정상에 진입"
 }
 }

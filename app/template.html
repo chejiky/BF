@@ -52,7 +52,9 @@ img{max-width:100%}
   padding:.7rem .8rem; min-height:3.2rem;
 }
 .class-card:active{background:var(--raised)}
-.class-card img{flex:none; width:2.6rem; height:2.6rem; border-radius:8px; border:1px solid var(--border-soft)}
+.sicon{display:inline-block; flex:none; background-size:600% 500%; background-repeat:no-repeat;
+  border-radius:8px; border:1px solid var(--border-soft); background-color:#0a0705}
+.class-card .sicon{width:2.6rem; height:2.6rem}
 .class-card .nm{font-weight:700}
 .class-card .en{display:block; color:var(--muted); font-size:.7rem; letter-spacing:.06em}
 .sec-label{
@@ -70,6 +72,7 @@ img{max-width:100%}
 }
 .row:active{border-color:var(--gold-dim)}
 .row img{flex:none; width:2.4rem; height:2.4rem; border-radius:6px}
+.row .sicon{width:2.4rem; height:2.4rem; border-radius:6px}
 .row .b{min-width:0; flex:1}
 .row .nm{font-weight:500}
 .row .sub{color:var(--muted); font-size:.78rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
@@ -100,14 +103,14 @@ img{max-width:100%}
   padding:.45rem .15rem; min-width:0; border-radius:10px;
 }
 .node:active{background:#d4af5e14}
-.node img{width:3.1rem; height:3.1rem; border-radius:8px; border:1px solid var(--border); box-shadow:0 2px 6px #0009}
+.node .sicon{width:3.1rem; height:3.1rem; border:1px solid var(--border); box-shadow:0 2px 6px #0009}
 .node .nm{font-size:.72rem; line-height:1.25; text-align:center; color:var(--text); text-wrap:balance}
 .node .rq{font-size:.66rem; color:var(--faint)}
-@media (max-width:420px){ .node img{width:2.7rem;height:2.7rem} .node .nm{font-size:.68rem} }
+@media (max-width:420px){ .node .sicon{width:2.7rem;height:2.7rem} .node .nm{font-size:.68rem} }
 
 /* ─ 상세 ─ */
 .d-head{display:flex; align-items:center; gap:.9rem; margin:.3rem 0 1rem}
-.d-head img{width:4.4rem; height:4.4rem; border-radius:12px; border:1px solid var(--border); box-shadow:0 3px 10px #000b}
+.d-head .sicon{width:4.4rem; height:4.4rem; border-radius:12px; border:1px solid var(--border); box-shadow:0 3px 10px #000b}
 .d-head h1{margin:0; font-size:1.35rem; line-height:1.3}
 .d-head .en{color:var(--muted); font-size:.85rem}
 .badges{display:flex; flex-wrap:wrap; gap:.4rem; margin:.8rem 0}
@@ -128,7 +131,7 @@ img{max-width:100%}
   background:var(--surface); border:1px solid var(--border-soft); border-radius:999px;
   padding:.28rem .75rem .28rem .3rem; font-size:.85rem;
 }
-.chip img{width:1.7rem; height:1.7rem; border-radius:50%}
+.chip .sicon{width:1.7rem; height:1.7rem; border-radius:50%}
 .chip:active{border-color:var(--gold-dim)}
 .chip.plain{padding:.28rem .75rem; color:var(--muted)}
 .d-sec{margin:1.3rem 0}
@@ -191,7 +194,14 @@ img{max-width:100%}
 <script>
 const DATA = __SKILL_DATA__;
 const ITEMS = __ITEM_DATA__;
+const SETS = __SETS_DATA__;
+const RWS = __RW_DATA__;
+const CHARMS = __CHARM_DATA__;
 const ITEM_BY_ID = Object.fromEntries(ITEMS.map(e => [e.id, e]));
+const SET_BY_ID = Object.fromEntries(SETS.map(s => [s.id, s]));
+const SET_ITEM_BY_ID = {};
+for(const s of SETS) for(const it of s.items) SET_ITEM_BY_ID[it.id] = [s, it];
+const RW_BY_ID = Object.fromEntries(RWS.map(r => [r.id, r]));
 const KIND_KO = {weapon:"무기", armor:"방어구", misc:"장신구·기타"};
 const TIER_KO = {normal:"노멀", exceptional:"익셉셔널", elite:"엘리트"};
 const CLASS_ORDER = ["amazon","assassin","barbarian","druid","necromancer","paladin","sorceress","warlock"];
@@ -208,10 +218,15 @@ const $back = document.getElementById("btnBack");
 $back.addEventListener("click", () => history.back());
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+// 스킬 아이콘: 클래스별 6×5 스프라이트 시트에서 배열 인덱스로 위치 계산
+function iconHtml(cls, id){
+  const i = DATA[cls] ? DATA[cls].skills.findIndex(s => s.id===id) : -1;
+  if(i < 0) return `<span class="sicon"></span>`;
+  return `<span class="sicon" style="background-image:url('assets/skills/sheets/${cls}.png');background-position:${(i%6)*20}% ${Math.floor(i/6)*25}%"></span>`;
+}
 const norm = s => String(s||"").replace(/\s+/g,"").toLowerCase();
 // D2R 정식 명칭 + 구작 명칭 중 질의와 일치하는 것이 있는지 (공백 무시)
 const matchName = (q, ...names) => names.some(n => n && norm(n).includes(q));
-const icon = (cls,id) => `assets/skills/${cls}/${id}.png`;
 const skillOf = (cls,id) => DATA[cls].skills.find(s => s.id===id);
 const tabState = {}; // 클래스별 마지막 탭
 
@@ -224,7 +239,7 @@ function renderHome(){
     const d = DATA[c];
     const alias = d.class_name_ko_classic ? `${esc(d.class_name_ko_classic)} · ` : "";
     return `<button class="class-card" data-go="c-${c}">
-      <img src="${icon(c,CLASS_FACE[c])}" alt="" loading="lazy">
+      ${iconHtml(c,CLASS_FACE[c])}
       <span><span class="nm">${esc(d.class_name_ko)}</span><span class="en">${alias}${esc(d.class_name_en)}</span></span>
     </button>`;
   }).join("");
@@ -241,6 +256,12 @@ function renderHome(){
         return `<button class="kind-card" data-go="u-${k}">
           <span class="nm">${KIND_KO[k]}</span><span class="cnt">${n}개</span></button>`;
       }).join("")}</div>
+      <div class="sec-label">Sets · Runewords · Charms</div>
+      <div class="kind-grid">
+        <button class="kind-card" data-go="sets"><span class="nm">세트</span><span class="cnt">${SETS.length}세트</span></button>
+        <button class="kind-card" data-go="rw"><span class="nm">룬워드</span><span class="cnt">${RWS.length}개</span></button>
+        <button class="kind-card" data-go="charms"><span class="nm">부적</span><span class="cnt">종류 안내</span></button>
+      </div>
     </div>
     <p class="foot">게임 데이터·아이콘 © Blizzard Entertainment.<br>비공식 팬 제작 · 비상업적 용도</p>
   </div>`;
@@ -265,11 +286,27 @@ function doSearch(query){
   const ihits = ITEMS.filter(e =>
     matchName(ql, e.name_ko, e.name_ko_classic, e.name_en,
               e.base.name_ko, e.base.name_ko_classic)).slice(0, 30);
+  const shits = [];
+  for(const s of SETS){
+    if(matchName(ql, s.name_ko, s.name_ko_classic, s.name_en)) shits.push(["set", s]);
+    for(const it of s.items)
+      if(matchName(ql, it.name_ko, it.name_ko_classic, it.name_en)) shits.push(["item", it, s]);
+  }
+  const rhits = RWS.filter(r =>
+    matchName(ql, r.name_ko, r.name_ko_classic, r.name_en) ||
+    matchName(ql, ...r.runes.map(x=>x.name_ko))).slice(0, 20);
   let html = "";
   if(hits.length) html += `<div class="sec-label">스킬</div><ul class="rows">` +
     hits.map(([c,s]) => rowHtml(c,s,true)).join("") + `</ul>`;
   if(ihits.length) html += `<div class="sec-label">유니크 아이템</div><ul class="rows">` +
     ihits.map(itemRowHtml).join("") + `</ul>`;
+  if(shits.length) html += `<div class="sec-label">세트</div><ul class="rows">` +
+    shits.slice(0,20).map(([t,x,s]) => t==="set"
+      ? `<li><button class="row" data-go="set-${x.id}"><span class="b"><span class="nm" style="color:#6fcf6f">${esc(x.name_ko)}</span><span class="sub">세트 (${x.item_count}부위)</span></span></button></li>`
+      : `<li><button class="row" data-go="ti-${x.id}"><span class="thumb-i">${x.image_src?`<img src="assets/items/${x.image_src}" loading="lazy" alt="">`:""}</span><span class="b"><span class="nm" style="color:#6fcf6f">${esc(x.name_ko)}</span><span class="sub">${esc(s.name_ko)} 세트</span></span><span class="lv">Lv ${x.required_level}</span></button></li>`
+    ).join("") + `</ul>`;
+  if(rhits.length) html += `<div class="sec-label">룬워드</div><ul class="rows">` +
+    rhits.map(r => `<li><button class="row" data-go="r-${r.id}"><span class="b"><span class="nm" style="color:var(--gold)">${esc(r.name_ko)}</span><span class="sub">${r.runes.map(x=>esc(x.name_ko)).join("+")} · ${r.bases_ko.map(esc).join(", ")}</span></span><span class="lv">Lv ${r.required_level}</span></button></li>`).join("") + `</ul>`;
   out.innerHTML = html || `<p class="empty">"${esc(query)}" 검색 결과가 없습니다</p>`;
 }
 
@@ -277,7 +314,7 @@ function rowHtml(c,s,withClass){
   const sub = (withClass ? `${esc(DATA[c].class_name_ko)} · ` : "") + esc(s.tree.name_ko);
   const alias = s.name_ko_classic ? `${esc(s.name_ko_classic)} · ` : "";
   return `<li><button class="row" data-go="s-${c}-${s.id}">
-    <img src="${icon(c,s.id)}" alt="" loading="lazy">
+    ${iconHtml(c,s.id)}
     <span class="b"><span class="nm">${esc(s.name_ko)} <span class="en" style="color:var(--faint);font-size:.74rem">${alias}${esc(s.name_en)}</span></span>
     <span class="sub">${sub}</span></span>
     <span class="lv">Lv ${s.required_level}</span>
@@ -325,7 +362,7 @@ function drawTree(cls, page){
   }
   const nodes = skills.map(s => `
     <button class="node" style="--c:${s.position.col};--r:${s.position.row}" data-go="s-${cls}-${s.id}">
-      <img src="${icon(cls,s.id)}" alt="" loading="lazy">
+      ${iconHtml(cls,s.id)}
       <span class="nm">${esc(s.name_ko)}</span>
       <span class="rq">Lv ${s.required_level}</span>
     </button>`).join("");
@@ -350,14 +387,14 @@ function renderSkill(cls,id){
     s.mana_cost != null ? `<span class="badge">마나 <b>${s.mana_cost}</b>${s.mana_per_level?` <span style="color:var(--faint)">+${s.mana_per_level}/Lv</span>`:""}</span>` : "",
   ].join("");
   const chip = r => `<li><button class="chip" data-go="s-${cls}-${r.id}">
-      <img src="${icon(cls,r.id)}" alt="">${esc(r.name_ko)}</button></li>`;
+      ${iconHtml(cls,r.id)}${esc(r.name_ko)}</button></li>`;
   const dependents = d.skills.filter(x => x.prerequisites.some(p => p.id===s.id));
   const sec = (title, items, hint) => items.length
     ? `<div class="d-sec"><h2>${title}</h2><ul class="chips">${items.map(chip).join("")}</ul>${hint?`<p class="hint">${hint}</p>`:""}</div>`
     : "";
   $app.innerHTML = `<div class="view">
     <div class="d-head">
-      <img src="${icon(cls,s.id)}" alt="">
+      ${iconHtml(cls,s.id)}
       <div><h1>${esc(s.name_ko)}</h1>
         <span class="en">${s.name_ko_classic?`${esc(s.name_ko_classic)} · `:""}${esc(s.name_en)}</span></div>
     </div>
@@ -436,6 +473,135 @@ function renderItem(id){
   </div>`;
 }
 
+/* ── 세트 ── */
+function renderSetList(){
+  setHdr("세트 아이템", "Set Items", true);
+  $app.innerHTML = `<div class="view"><ul class="rows">` + SETS.map(s => {
+    const alias = s.name_ko_classic ? ` <span class="en" style="color:var(--faint);font-size:.74rem">${esc(s.name_ko_classic)}</span>` : "";
+    const thumb = s.items.find(i=>i.image_src);
+    return `<li><button class="row" data-go="set-${s.id}">
+      <span class="thumb-i">${thumb?`<img src="assets/items/${thumb.image_src}" alt="" loading="lazy">`:""}</span>
+      <span class="b"><span class="nm" style="color:#6fcf6f">${esc(s.name_ko)}</span>${alias}
+      <span class="sub">${s.item_count}부위 · ${esc(s.name_en)}</span></span>
+      <span class="lv">Lv ${s.min_level}</span></button></li>`;
+  }).join("") + `</ul></div>`;
+}
+
+function renderSet(id){
+  const s = SET_BY_ID[id]; if(!s) return renderHome();
+  setHdr(s.name_ko, s.name_ko_classic || s.name_en, true);
+  const bonusRows = (list) => list.map(b => `<li>${b.count?`<b style="color:var(--gold)">${b.count}개:</b> `:""}${esc(b.text||b)}</li>`).join("");
+  $app.innerHTML = `<div class="view">
+    <div class="sec-label">구성 아이템 (${s.item_count})</div>
+    <ul class="rows">${s.items.map(it => {
+      const alias = it.name_ko_classic ? ` <span class="en" style="color:var(--faint);font-size:.74rem">${esc(it.name_ko_classic)}</span>` : "";
+      return `<li><button class="row" data-go="ti-${it.id}">
+        <span class="thumb-i">${it.image_src?`<img src="assets/items/${it.image_src}" alt="" loading="lazy">`:""}</span>
+        <span class="b"><span class="nm" style="color:#6fcf6f">${esc(it.name_ko)}</span>${alias}
+        <span class="sub">${esc(it.base.name_ko)}</span></span>
+        <span class="lv">Lv ${it.required_level}</span></button></li>`;
+    }).join("")}</ul>
+    ${s.partial_bonuses.length?`<div class="d-sec"><h2>부분 세트 보너스</h2><ul class="props" style="color:#6fcf6f">${bonusRows(s.partial_bonuses)}</ul></div>`:""}
+    ${s.full_bonuses.length?`<div class="d-sec"><h2>풀 세트 보너스</h2><ul class="props">${s.full_bonuses.map(t=>`<li style="color:#6fcf6f">${esc(t)}</li>`).join("")}</ul></div>`:""}
+  </div>`;
+}
+
+function renderSetItem(id){
+  const hit = SET_ITEM_BY_ID[id]; if(!hit) return renderHome();
+  const [s, it] = hit;
+  setHdr(s.name_ko, "Set Item", true);
+  const img = it.image_src ? `<img src="assets/items/${it.image_src}" alt="">` : "";
+  $app.innerHTML = `<div class="view">
+    <div class="i-head">
+      <span class="pic">${img}</span>
+      <div><h1 style="color:#6fcf6f">${esc(it.name_ko)}</h1>
+        <span class="base">${esc(it.base.name_ko)}</span>
+        <span class="en">${it.name_ko_classic?`${esc(it.name_ko_classic)} · `:""}${esc(it.name_en)}</span></div>
+    </div>
+    <div class="badges"><span class="badge">착용 레벨 <b>${it.required_level}</b></span>
+      <span class="badge">세트 <b>${esc(s.name_ko)}</b></span></div>
+    <ul class="props">${it.props_ko.map(p=>`<li>${esc(p)}</li>`).join("")}
+      ${it.set_bonuses.map(b=>`<li style="color:#6fcf6f">${esc(b.text)} <span style="color:var(--faint)">(세트 ${b.count}개 착용 시)</span></li>`).join("")}</ul>
+    <div class="d-sec"><h2>Set</h2><ul class="chips">
+      <li><button class="chip plain" data-go="set-${s.id}">${esc(s.name_ko)} 세트 전체 보기</button></li></ul></div>
+  </div>`;
+}
+
+/* ── 룬워드 ── */
+const runeSeq = (r, size) => r.runes.map(x =>
+  `<img src="assets/runes/${x.code}.png" alt="${esc(x.name_en)}" style="width:${size};height:${size};vertical-align:middle">`).join("");
+
+function renderRWList(){
+  setHdr("룬워드", "Runewords", true);
+  let html = `<div class="view">`;
+  for(const n of [2,3,4,5,6]){
+    const rows = RWS.filter(r => r.sockets===n);
+    if(!rows.length) continue;
+    html += `<div class="cat-head">${n}소켓 <span style="color:var(--faint);font-weight:400">(${rows.length})</span></div><ul class="rows">` +
+      rows.map(r => {
+        const alias = r.name_ko_classic ? ` <span class="en" style="color:var(--faint);font-size:.74rem">${esc(r.name_ko_classic)}</span>` : "";
+        return `<li><button class="row" data-go="r-${r.id}">
+        <span class="b"><span class="nm" style="color:var(--gold)">${esc(r.name_ko)}</span>${alias}
+        <span class="sub">${runeSeq(r,"1.1rem")} <span style="color:var(--faint)">${r.runes.map(x=>esc(x.name_ko)).join("+")} · ${r.bases_ko.map(esc).join(", ")}</span></span></span>
+        <span class="lv">Lv ${r.required_level}</span></button></li>`;
+      }).join("") + `</ul>`;
+  }
+  $app.innerHTML = html + `</div>`;
+}
+
+function renderRW(id){
+  const r = RW_BY_ID[id]; if(!r) return renderHome();
+  setHdr("룬워드", "Runewords", true);
+  $app.innerHTML = `<div class="view">
+    <div class="i-head">
+      <span class="pic" style="width:auto;min-width:5.2rem;padding:0 .6rem">${runeSeq(r,"2rem")}</span>
+      <div><h1>${esc(r.name_ko)}</h1>
+        <span class="base">${r.runes.map(x=>esc(x.name_ko)).join(" + ")}</span>
+        <span class="en">${r.name_ko_classic?`${esc(r.name_ko_classic)} · `:""}${esc(r.name_en)} · ${r.runes.map(x=>esc(x.name_en)).join(" ")}</span></div>
+    </div>
+    <div class="badges">
+      <span class="badge">소켓 <b>${r.sockets}</b></span>
+      <span class="badge">베이스 <b>${r.bases_ko.map(esc).join(", ")}</b></span>
+      <span class="badge">요구 레벨 <b>${r.required_level}</b></span>
+    </div>
+    <ul class="props">${r.props_ko.map(p=>`<li>${esc(p)}</li>`).join("")}</ul>
+    <p class="hint" style="color:var(--faint);font-size:.78rem">소켓 개수가 정확히 일치하는 일반(화이트) 아이템에 룬을 순서대로 넣으면 완성됩니다.</p>
+  </div>`;
+}
+
+/* ── 부적 ── */
+function renderCharms(){
+  setHdr("부적 (차암)", "Charms", true);
+  const basics = CHARMS.basics.map(b => `
+    <div class="recipe" style="margin-bottom:.5rem">
+      <div style="display:flex;justify-content:space-between;align-items:baseline">
+        <b>${esc(b.name_ko)}</b>
+        <span style="color:var(--faint);font-size:.8rem">${b.name_ko_classic?esc(b.name_ko_classic)+" · ":""}${esc(b.name_en)} · ${b.size}칸</span>
+      </div>
+      <p style="margin:.3rem 0 0;color:var(--muted);font-size:.88rem">${esc(b.note)}</p>
+    </div>`).join("");
+  const uniq = CHARMS.unique_ids.map(id => ITEM_BY_ID[id]).filter(Boolean);
+  const sunder = CHARMS.sunder.map(g => `
+    <div class="recipe" style="margin-bottom:.5rem">
+      <b class="elem-${g.element}" style="color:var(--${g.element==='phys'?'phys':g.element})">${esc(g.element_ko)} 분쇄</b>
+      ${["latent","crafted"].map(v => g[v] ? `
+        <div style="margin-top:.4rem">
+          <span style="color:var(--gold);font-size:.85rem">${v==="latent"?"잠복형 (드롭)":"제작형 (호라드림 큐브 제작)"}</span>
+          — <span style="font-size:.9rem">${esc(g[v].name_ko)}</span>
+          <div style="color:#7f9ddb;font-size:.85rem;margin-top:.15rem">${g[v].props_ko.map(esc).join(" · ")}</div>
+        </div>`:"").join("")}
+    </div>`).join("");
+  $app.innerHTML = `<div class="view">
+    <p class="subtitle" style="color:var(--muted)">부적은 인벤토리에 지니고만 있어도 효과가 적용되는 아이템입니다. 구작에서는 "차암"으로 불렸습니다.</p>
+    <div class="sec-label">기본 부적 3종 (매직)</div>${basics}
+    <div class="sec-label">유니크 부적</div>
+    <ul class="rows">${uniq.map(itemRowHtml).join("")}</ul>
+    <div class="sec-label">분쇄 부적 (면역 관통)</div>
+    <p class="subtitle" style="color:var(--muted);font-size:.85rem">몬스터의 원소 면역을 깨는 거대 부적. 지옥 난이도에서 잠복형이 드롭되며, 호라드림 큐브로 제작형으로 바꿀 수 있습니다. 대신 해당 원소 저항이 감소합니다.</p>
+    ${sunder}
+  </div>`;
+}
+
 /* ── 라우터 ── */
 function route(){
   const h = location.hash.replace(/^#/,"");
@@ -446,6 +612,18 @@ function route(){
     renderItemList(h.slice(2));
   } else if(h.startsWith("i-")){
     renderItem(h.slice(2));
+  } else if(h === "sets"){
+    renderSetList();
+  } else if(h.startsWith("set-")){
+    renderSet(h.slice(4));
+  } else if(h.startsWith("ti-")){
+    renderSetItem(h.slice(3));
+  } else if(h === "rw"){
+    renderRWList();
+  } else if(h.startsWith("r-")){
+    renderRW(h.slice(2));
+  } else if(h === "charms"){
+    renderCharms();
   } else if(h.startsWith("s-")){
     const rest = h.slice(2);
     const cls = CLASS_ORDER.find(c => rest.startsWith(c+"-"));

@@ -1,0 +1,3821 @@
+{
+ "count": 99,
+ "runewords": [
+  {
+   "id": "nadir",
+   "name_en": "Nadir",
+   "name_ko": "구렁텅이",
+   "name_ko_classic": "천저",
+   "runes": [
+    {
+     "code": "r04",
+     "name_ko": "네프",
+     "name_en": "Nef"
+    },
+    {
+     "code": "r03",
+     "name_ko": "티르",
+     "name_en": "Tir"
+    }
+   ],
+   "sockets": 2,
+   "bases_ko": [
+    "투구"
+   ],
+   "required_level": 13,
+   "props_ko": [
+    "방어력 +50% 증가",
+    "방어력 +10",
+    "힘 +5",
+    "충전됨: 레벨 13 눈꽃 채찍 파수기 (9회 충전)",
+    "괴물에게서 얻는 금화 -33% 증가",
+    "시야 -3"
+   ]
+  },
+  {
+   "id": "steel",
+   "name_en": "Steel",
+   "name_ko": "강철의",
+   "name_ko_classic": "스틸",
+   "runes": [
+    {
+     "code": "r03",
+     "name_ko": "티르",
+     "name_en": "Tir"
+    },
+    {
+     "code": "r01",
+     "name_ko": "엘",
+     "name_en": "El"
+    }
+   ],
+   "sockets": 2,
+   "bases_ko": [
+    "검",
+    "도끼",
+    "메이스"
+   ],
+   "required_level": 13,
+   "props_ko": [
+    "공격 속도 +25%",
+    "증가된 데미지 +20%",
+    "최소 데미지 +3",
+    "최대 데미지 +3",
+    "상처 악화 확률 +50%"
+   ]
+  },
+  {
+   "id": "stealth",
+   "name_en": "Stealth",
+   "name_ko": "잠행",
+   "name_ko_classic": "스텔스",
+   "runes": [
+    {
+     "code": "r07",
+     "name_ko": "탈",
+     "name_en": "Tal"
+    },
+    {
+     "code": "r05",
+     "name_ko": "에드",
+     "name_en": "Eth"
+    }
+   ],
+   "sockets": 2,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 17,
+   "props_ko": [
+    "달리기/걷기 속도 +25%",
+    "시전 속도 +25%",
+    "타격 회복 속도 +25%",
+    "민첩 +6",
+    "최대 지구력 +15",
+    "마법 피해 3 감소"
+   ]
+  },
+  {
+   "id": "leaf",
+   "name_en": "Leaf",
+   "name_ko": "잎새",
+   "name_ko_classic": "꽃잎",
+   "runes": [
+    {
+     "code": "r03",
+     "name_ko": "티르",
+     "name_en": "Tir"
+    },
+    {
+     "code": "r08",
+     "name_ko": "랄",
+     "name_en": "Ral"
+    }
+   ],
+   "sockets": 2,
+   "bases_ko": [
+    "지팡이"
+   ],
+   "required_level": 19,
+   "props_ko": [
+    "화염 스킬 레벨 +3",
+    "지옥불 +3 (원소술사 전용)",
+    "화염탄 +3 (원소술사 전용)",
+    "온기 +3 (원소술사 전용)",
+    "냉기 저항 +33%",
+    "캐릭터 레벨당 방어력 +0"
+   ]
+  },
+  {
+   "id": "zephyr",
+   "name_en": "Zephyr",
+   "name_ko": "서풍",
+   "name_ko_classic": "제퍼",
+   "runes": [
+    {
+     "code": "r09",
+     "name_ko": "오르트",
+     "name_en": "Ort"
+    },
+    {
+     "code": "r05",
+     "name_ko": "에드",
+     "name_en": "Eth"
+    }
+   ],
+   "sockets": 2,
+   "bases_ko": [
+    "원거리 무기(활·석궁)"
+   ],
+   "required_level": 21,
+   "props_ko": [
+    "피격 시 7% 확률로 레벨 1 돌개바람 시전",
+    "달리기/걷기 속도 +25%",
+    "공격 속도 +25%",
+    "증가된 데미지 +33%",
+    "명중률 +66",
+    "방어력 +25"
+   ]
+  },
+  {
+   "id": "strength",
+   "name_en": "Strength",
+   "name_ko": "강함",
+   "name_ko_classic": "스트랭쓰",
+   "runes": [
+    {
+     "code": "r11",
+     "name_ko": "앰",
+     "name_en": "Amn"
+    },
+    {
+     "code": "r03",
+     "name_ko": "티르",
+     "name_en": "Tir"
+    }
+   ],
+   "sockets": 2,
+   "bases_ko": [
+    "근접 무기"
+   ],
+   "required_level": 25,
+   "props_ko": [
+    "증가된 데미지 +35%",
+    "강타 확률 +25%",
+    "힘 +20",
+    "활력 +10"
+   ]
+  },
+  {
+   "id": "lore",
+   "name_en": "Lore",
+   "name_ko": "전승",
+   "name_ko_classic": "학식",
+   "runes": [
+    {
+     "code": "r09",
+     "name_ko": "오르트",
+     "name_en": "Ort"
+    },
+    {
+     "code": "r12",
+     "name_ko": "솔",
+     "name_en": "Sol"
+    }
+   ],
+   "sockets": 2,
+   "bases_ko": [
+    "투구"
+   ],
+   "required_level": 27,
+   "props_ko": [
+    "모든 스킬 레벨 +1",
+    "마력 +10",
+    "적 처치 시 마나 +2",
+    "시야 +2"
+   ]
+  },
+  {
+   "id": "rhyme",
+   "name_en": "Rhyme",
+   "name_ko": "각운",
+   "name_ko_classic": "제왕 운시",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r05",
+     "name_ko": "에드",
+     "name_en": "Eth"
+    }
+   ],
+   "sockets": 2,
+   "bases_ko": [
+    "방패"
+   ],
+   "required_level": 29,
+   "props_ko": [
+    "막기 속도 +20%",
+    "막기 확률 20% 증가",
+    "모든 저항 +25%",
+    "빙결되지 않음",
+    "괴물에게서 얻는 금화 50% 증가",
+    "마법 아이템 발견 확률 25% 증가"
+   ]
+  },
+  {
+   "id": "white",
+   "name_en": "White",
+   "name_ko": "순백",
+   "name_ko_classic": "화이트",
+   "runes": [
+    {
+     "code": "r14",
+     "name_ko": "돌",
+     "name_en": "Dol"
+    },
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    }
+   ],
+   "sockets": 2,
+   "bases_ko": [
+    "완드"
+   ],
+   "required_level": 35,
+   "props_ko": [
+    "독과 뼈 스킬 레벨 +3 (강령술사 전용)",
+    "시전 속도 +20%",
+    "뼈 갑옷 +3 (강령술사 전용)",
+    "뼈 창 +2 (강령술사 전용)",
+    "해골 숙련 +4 (강령술사 전용)",
+    "마나 +13",
+    "마법 피해 4 감소"
+   ]
+  },
+  {
+   "id": "smoke",
+   "name_en": "Smoke",
+   "name_ko": "연기",
+   "runes": [
+    {
+     "code": "r04",
+     "name_ko": "네프",
+     "name_en": "Nef"
+    },
+    {
+     "code": "r17",
+     "name_ko": "룸",
+     "name_en": "Lum"
+    }
+   ],
+   "sockets": 2,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 37,
+   "props_ko": [
+    "타격 회복 속도 +20%",
+    "방어력 +75% 증가",
+    "원거리 공격 방어력 +250",
+    "모든 저항 +50%",
+    "충전됨: 레벨 6 약화 (18회 충전)",
+    "시야 -1"
+   ]
+  },
+  {
+   "id": "splendor",
+   "name_en": "Splendor",
+   "name_ko": "광채",
+   "name_ko_classic": "스플렌더",
+   "runes": [
+    {
+     "code": "r05",
+     "name_ko": "에드",
+     "name_en": "Eth"
+    },
+    {
+     "code": "r17",
+     "name_ko": "룸",
+     "name_en": "Lum"
+    }
+   ],
+   "sockets": 2,
+   "bases_ko": [
+    "방패"
+   ],
+   "required_level": 37,
+   "props_ko": [
+    "모든 스킬 레벨 +1",
+    "시전 속도 +10%",
+    "막기 속도 +20%",
+    "방어력 +60~100% 증가",
+    "괴물에게서 얻는 금화 50% 증가",
+    "마법 아이템 발견 확률 20% 증가",
+    "시야 +3"
+   ]
+  },
+  {
+   "id": "prudence",
+   "name_en": "Prudence",
+   "name_ko": "신중",
+   "name_ko_classic": "현명",
+   "runes": [
+    {
+     "code": "r23",
+     "name_ko": "말",
+     "name_en": "Mal"
+    },
+    {
+     "code": "r03",
+     "name_ko": "티르",
+     "name_en": "Tir"
+    }
+   ],
+   "sockets": 2,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 49,
+   "props_ko": [
+    "타격 회복 속도 +25%",
+    "방어력 +140~170% 증가",
+    "모든 저항 +25~35%",
+    "피해 3 감소",
+    "마법 피해 10 감소",
+    "시야 +1",
+    "내구도 자동 수리"
+   ]
+  },
+  {
+   "id": "vigilance",
+   "name_en": "Vigilance",
+   "name_ko": "경계",
+   "runes": [
+    {
+     "code": "r14",
+     "name_ko": "돌",
+     "name_en": "Dol"
+    },
+    {
+     "code": "r25",
+     "name_ko": "굴",
+     "name_en": "Gul"
+    }
+   ],
+   "sockets": 2,
+   "bases_ko": [
+    "마도서(그리무아르)",
+    "방패",
+    "네크로맨서 두개골",
+    "팔라딘 방패"
+   ],
+   "required_level": 53,
+   "props_ko": [
+    "피격 시 5% 확률로 레벨 10 화염 고리 시전",
+    "달리기/걷기 속도 +10%",
+    "막기 속도 +30%",
+    "방어력 +75~100% 증가",
+    "생명력 +20~40",
+    "마나 +20~40",
+    "모든 저항 +25~35%"
+   ]
+  },
+  {
+   "id": "wind",
+   "name_en": "Wind",
+   "name_ko": "바람의",
+   "name_ko_classic": "윈드",
+   "runes": [
+    {
+     "code": "r29",
+     "name_ko": "수르",
+     "name_en": "Sur"
+    },
+    {
+     "code": "r01",
+     "name_ko": "엘",
+     "name_en": "El"
+    }
+   ],
+   "sockets": 2,
+   "bases_ko": [
+    "근접 무기"
+   ],
+   "required_level": 61,
+   "props_ko": [
+    "적중 시 10% 확률로 레벨 9 회오리바람 시전",
+    "달리기/걷기 속도 +20%",
+    "공격 속도 +40%",
+    "증가된 데미지 +120~160%",
+    "타격 회복 속도 +15%",
+    "대상 방어력 50% 감소",
+    "충전됨: 레벨 13 돌개바람 (127회 충전)"
+   ]
+  },
+  {
+   "id": "malice",
+   "name_en": "Malice",
+   "name_ko": "악의",
+   "name_ko_classic": "원환",
+   "runes": [
+    {
+     "code": "r06",
+     "name_ko": "아이드",
+     "name_en": "Ith"
+    },
+    {
+     "code": "r01",
+     "name_ko": "엘",
+     "name_en": "El"
+    },
+    {
+     "code": "r05",
+     "name_ko": "에드",
+     "name_en": "Eth"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "근접 무기"
+   ],
+   "required_level": 15,
+   "props_ko": [
+    "증가된 데미지 +33%",
+    "상처 악화 확률 +100%",
+    "10초당 생명력 -5 회복",
+    "몬스터 회복 방지",
+    "명중 시 대상 방어력 --100",
+    "시야 -1"
+   ]
+  },
+  {
+   "id": "ancients-pledge",
+   "name_en": "Ancients' Pledge",
+   "name_ko": "고대인의 서약",
+   "runes": [
+    {
+     "code": "r08",
+     "name_ko": "랄",
+     "name_en": "Ral"
+    },
+    {
+     "code": "r09",
+     "name_ko": "오르트",
+     "name_en": "Ort"
+    },
+    {
+     "code": "r07",
+     "name_ko": "탈",
+     "name_en": "Tal"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "방패"
+   ],
+   "required_level": 21,
+   "props_ko": [
+    "방어력 +50% 증가",
+    "받은 데미지의 10%가 마나로 전환",
+    "냉기 저항 +30%",
+    "모든 저항 +13%"
+   ]
+  },
+  {
+   "id": "pattern",
+   "name_en": "Pattern",
+   "name_ko": "귀감",
+   "name_ko_classic": "은어",
+   "runes": [
+    {
+     "code": "r07",
+     "name_ko": "탈",
+     "name_en": "Tal"
+    },
+    {
+     "code": "r09",
+     "name_ko": "오르트",
+     "name_en": "Ort"
+    },
+    {
+     "code": "r10",
+     "name_ko": "주울",
+     "name_en": "Thul"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "클로"
+   ],
+   "required_level": 23,
+   "props_ko": [
+    "증가된 데미지 +40~80%",
+    "막기 속도 +30%",
+    "화염 데미지 +12~32",
+    "명중률 보너스 10%",
+    "힘 +6",
+    "민첩 +6",
+    "모든 저항 +15%"
+   ]
+  },
+  {
+   "id": "edge",
+   "name_en": "Edge",
+   "name_ko": "모서리",
+   "runes": [
+    {
+     "code": "r03",
+     "name_ko": "티르",
+     "name_en": "Tir"
+    },
+    {
+     "code": "r07",
+     "name_ko": "탈",
+     "name_en": "Tal"
+    },
+    {
+     "code": "r11",
+     "name_ko": "앰",
+     "name_en": "Amn"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "원거리 무기(활·석궁)"
+   ],
+   "required_level": 25,
+   "props_ko": [
+    "장착 시 레벨 15 가시 오라",
+    "공격 속도 +35%",
+    "악마에게 추가 데미지 +320~380%",
+    "언데드에게 추가 데미지 +280%",
+    "모든 능력치 +5~10",
+    "몬스터 회복 방지",
+    "판매 가격 감소 15%"
+   ]
+  },
+  {
+   "id": "king-s-grace",
+   "name_en": "King's Grace",
+   "name_ko": "왕의 은총",
+   "name_ko_classic": "왕의 자비",
+   "runes": [
+    {
+     "code": "r11",
+     "name_ko": "앰",
+     "name_en": "Amn"
+    },
+    {
+     "code": "r08",
+     "name_ko": "랄",
+     "name_en": "Ral"
+    },
+    {
+     "code": "r10",
+     "name_ko": "주울",
+     "name_en": "Thul"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "검",
+    "셉터"
+   ],
+   "required_level": 25,
+   "props_ko": [
+    "증가된 데미지 +100%",
+    "악마에게 추가 데미지 +100%",
+    "언데드에게 추가 데미지 +50%",
+    "명중률 +150",
+    "악마 상대 공격력 +100",
+    "언데드 상대 공격력 +100"
+   ]
+  },
+  {
+   "id": "myth",
+   "name_en": "Myth",
+   "name_ko": "신화",
+   "runes": [
+    {
+     "code": "r15",
+     "name_ko": "헬",
+     "name_en": "Hel"
+    },
+    {
+     "code": "r11",
+     "name_ko": "앰",
+     "name_en": "Amn"
+    },
+    {
+     "code": "r04",
+     "name_ko": "네프",
+     "name_en": "Nef"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 25,
+   "props_ko": [
+    "적중 시 10% 확률로 레벨 1 도발 시전",
+    "피격 시 3% 확률로 레벨 1 포효 시전",
+    "야만용사 스킬 레벨 +2",
+    "10초당 생명력 +10 회복"
+   ]
+  },
+  {
+   "id": "radiance",
+   "name_en": "Radiance",
+   "name_ko": "광휘",
+   "name_ko_classic": "찬란한 빛",
+   "runes": [
+    {
+     "code": "r04",
+     "name_ko": "네프",
+     "name_en": "Nef"
+    },
+    {
+     "code": "r12",
+     "name_ko": "솔",
+     "name_en": "Sol"
+    },
+    {
+     "code": "r06",
+     "name_ko": "아이드",
+     "name_en": "Ith"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "투구"
+   ],
+   "required_level": 27,
+   "props_ko": [
+    "방어력 +75% 증가",
+    "활력 +10",
+    "마력 +10",
+    "마나 +33",
+    "마법 피해 3 감소",
+    "시야 +5"
+   ]
+  },
+  {
+   "id": "authority",
+   "name_en": "Authority",
+   "name_ko": "권위",
+   "runes": [
+    {
+     "code": "r15",
+     "name_ko": "헬",
+     "name_en": "Hel"
+    },
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r08",
+     "name_ko": "랄",
+     "name_en": "Ral"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 29,
+   "props_ko": [
+    "피격 시 2% 확률로 레벨 10 정신 결계 시전",
+    "적중 시 10% 확률로 레벨 15 독기 사슬 시전",
+    "악마술사 스킬 레벨 +2",
+    "증가된 데미지 +40~60%"
+   ]
+  },
+  {
+   "id": "peace",
+   "name_en": "Peace",
+   "name_ko": "평화",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r10",
+     "name_ko": "주울",
+     "name_en": "Thul"
+    },
+    {
+     "code": "r11",
+     "name_ko": "앰",
+     "name_en": "Amn"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 29,
+   "props_ko": [
+    "적중 시 2% 확률로 레벨 15 발키리 시전",
+    "피격 시 4% 확률로 레벨 5 투사체 감속 시전",
+    "아마존 스킬 레벨 +2",
+    "치명타 +2"
+   ]
+  },
+  {
+   "id": "black",
+   "name_en": "Black",
+   "name_ko": "검은색",
+   "name_ko_classic": "블랙",
+   "runes": [
+    {
+     "code": "r10",
+     "name_ko": "주울",
+     "name_en": "Thul"
+    },
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    },
+    {
+     "code": "r04",
+     "name_ko": "네프",
+     "name_en": "Nef"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "곤봉",
+    "망치",
+    "메이스"
+   ],
+   "required_level": 35,
+   "props_ko": [
+    "공격 속도 +15%",
+    "증가된 데미지 +120%",
+    "명중률 +200",
+    "강타 확률 +40%",
+    "마법 피해 2 감소",
+    "충전됨: 레벨 4 시체 폭발 (12회 충전)"
+   ]
+  },
+  {
+   "id": "bulwark",
+   "name_en": "Bulwark",
+   "name_ko": "방벽",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    },
+    {
+     "code": "r12",
+     "name_ko": "솔",
+     "name_en": "Sol"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "투구"
+   ],
+   "required_level": 35,
+   "props_ko": [
+    "적중당 생명력 +4~6% 훔침",
+    "방어력 +75~100% 증가",
+    "최대 생명력 5% 증가",
+    "10초당 생명력 +30 회복",
+    "피해 10~15% 감소"
+   ]
+  },
+  {
+   "id": "cure",
+   "name_en": "Cure",
+   "name_ko": "치료",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    },
+    {
+     "code": "r07",
+     "name_ko": "탈",
+     "name_en": "Tal"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "투구"
+   ],
+   "required_level": 35,
+   "props_ko": [
+    "장착 시 레벨 1 정화 오라",
+    "방어력 +75~100% 증가",
+    "최대 생명력 5% 증가",
+    "독 저항 +10~30%",
+    "중독 지속시간 50% 감소"
+   ]
+  },
+  {
+   "id": "ground",
+   "name_en": "Ground",
+   "name_ko": "접지",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    },
+    {
+     "code": "r09",
+     "name_ko": "오르트",
+     "name_en": "Ort"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "투구"
+   ],
+   "required_level": 35,
+   "props_ko": [
+    "방어력 +75~100% 증가",
+    "최대 생명력 5% 증가",
+    "번개 저항 +10~30%",
+    "번개 흡수 +10~15%"
+   ]
+  },
+  {
+   "id": "hearth",
+   "name_en": "Hearth",
+   "name_ko": "화로",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    },
+    {
+     "code": "r10",
+     "name_ko": "주울",
+     "name_en": "Thul"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "투구"
+   ],
+   "required_level": 35,
+   "props_ko": [
+    "방어력 +75~100% 증가",
+    "최대 생명력 5% 증가",
+    "냉기 저항 +10~30%",
+    "냉기 흡수 +10~15%",
+    "빙결되지 않음"
+   ]
+  },
+  {
+   "id": "temper",
+   "name_en": "Temper",
+   "name_ko": "담금질",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    },
+    {
+     "code": "r08",
+     "name_ko": "랄",
+     "name_en": "Ral"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "투구"
+   ],
+   "required_level": 35,
+   "props_ko": [
+    "방어력 +75~100% 증가",
+    "최대 생명력 5% 증가",
+    "화염 저항 +10~30%",
+    "화염 흡수 +10~15%"
+   ]
+  },
+  {
+   "id": "hustle-armor",
+   "name_en": "Hustle (armor)",
+   "name_ko": "Hustle (armor)",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r18",
+     "name_ko": "코",
+     "name_en": "Ko"
+    },
+    {
+     "code": "r02",
+     "name_ko": "엘드",
+     "name_en": "Eld"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 39,
+   "props_ko": [
+    "달리기/걷기 속도 +65%",
+    "공격 속도 +40%",
+    "피하기 +6",
+    "지구력 고갈 속도 35% 감소",
+    "모든 저항 +10%"
+   ]
+  },
+  {
+   "id": "hustle-weapon",
+   "name_en": "Hustle (weapon)",
+   "name_ko": "Hustle (weapon)",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r18",
+     "name_ko": "코",
+     "name_en": "Ko"
+    },
+    {
+     "code": "r02",
+     "name_ko": "엘드",
+     "name_en": "Eld"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "모든 무기"
+   ],
+   "required_level": 39,
+   "props_ko": [
+    "장착 시 레벨 1 광신 오라",
+    "적중 시 5% 확률로 레벨 1 폭발적인 속도 시전",
+    "공격 속도 +10%",
+    "증가된 데미지 +180~200%"
+   ]
+  },
+  {
+   "id": "melody",
+   "name_en": "Melody",
+   "name_ko": "선율",
+   "name_ko_classic": "멜로디",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r18",
+     "name_ko": "코",
+     "name_en": "Ko"
+    },
+    {
+     "code": "r04",
+     "name_ko": "네프",
+     "name_en": "Nef"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "원거리 무기(활·석궁)"
+   ],
+   "required_level": 39,
+   "props_ko": [
+    "활과 쇠뇌 스킬 레벨 +3 (아마존 전용)",
+    "증가된 데미지 +50%",
+    "언데드에게 추가 데미지 +300%",
+    "치명타 +3 (아마존 전용)",
+    "흘리기 & 회피 +3 (아마존 전용)",
+    "투사체 감속 +3 (아마존 전용)"
+   ]
+  },
+  {
+   "id": "lionheart",
+   "name_en": "Lionheart",
+   "name_ko": "용맹",
+   "name_ko_classic": "용맹한자",
+   "runes": [
+    {
+     "code": "r15",
+     "name_ko": "헬",
+     "name_en": "Hel"
+    },
+    {
+     "code": "r17",
+     "name_ko": "룸",
+     "name_en": "Lum"
+    },
+    {
+     "code": "r19",
+     "name_ko": "팔",
+     "name_en": "Fal"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 41,
+   "props_ko": [
+    "증가된 데미지 +20%",
+    "힘 +15",
+    "민첩 +15",
+    "활력 +20",
+    "생명력 +50",
+    "모든 저항 +30%"
+   ]
+  },
+  {
+   "id": "lawbringer",
+   "name_en": "Lawbringer",
+   "name_ko": "집행자",
+   "name_ko_classic": "법률위반",
+   "runes": [
+    {
+     "code": "r11",
+     "name_ko": "앰",
+     "name_en": "Amn"
+    },
+    {
+     "code": "r20",
+     "name_ko": "렘",
+     "name_en": "Lem"
+    },
+    {
+     "code": "r18",
+     "name_ko": "코",
+     "name_en": "Ko"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "검",
+    "망치",
+    "셉터"
+   ],
+   "required_level": 43,
+   "props_ko": [
+    "장착 시 레벨 16~18 성역 오라",
+    "적중 시 20% 확률로 레벨 15 노화 시전",
+    "냉기 데미지 +130~180",
+    "화염 데미지 +150~210",
+    "대상 방어력 50% 감소",
+    "원거리 공격 방어력 +200~250",
+    "시체를 남기지 않고 소멸"
+   ]
+  },
+  {
+   "id": "treachery",
+   "name_en": "Treachery",
+   "name_ko": "배신",
+   "name_ko_classic": "트랫셔리",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r10",
+     "name_ko": "주울",
+     "name_en": "Thul"
+    },
+    {
+     "code": "r20",
+     "name_ko": "렘",
+     "name_en": "Lem"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 43,
+   "props_ko": [
+    "적중 시 25% 확률로 레벨 15 맹독 시전",
+    "피격 시 5% 확률로 레벨 15 흐리기 시전",
+    "암살자 스킬 레벨 +2",
+    "공격 속도 +45%"
+   ]
+  },
+  {
+   "id": "wealth",
+   "name_en": "Wealth",
+   "name_ko": "부",
+   "name_ko_classic": "웰쓰",
+   "runes": [
+    {
+     "code": "r20",
+     "name_ko": "렘",
+     "name_en": "Lem"
+    },
+    {
+     "code": "r18",
+     "name_ko": "코",
+     "name_en": "Ko"
+    },
+    {
+     "code": "r03",
+     "name_ko": "티르",
+     "name_en": "Tir"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 43,
+   "props_ko": [
+    "괴물에게서 얻는 금화 250% 증가",
+    "마법 아이템 발견 확률 100% 증가"
+   ]
+  },
+  {
+   "id": "enlightenment",
+   "name_en": "Enlightenment",
+   "name_ko": "깨우침",
+   "name_ko_classic": "계몽",
+   "runes": [
+    {
+     "code": "r21",
+     "name_ko": "풀",
+     "name_en": "Pul"
+    },
+    {
+     "code": "r08",
+     "name_ko": "랄",
+     "name_en": "Ral"
+    },
+    {
+     "code": "r12",
+     "name_ko": "솔",
+     "name_en": "Sol"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 45,
+   "props_ko": [
+    "적중 시 5% 확률로 레벨 15 화염구 시전",
+    "피격 시 5% 확률로 레벨 15 불길 시전",
+    "원소술사 스킬 레벨 +2",
+    "온기 +1"
+   ]
+  },
+  {
+   "id": "wisdom",
+   "name_en": "Wisdom",
+   "name_ko": "지혜",
+   "name_ko_classic": "위즈덤",
+   "runes": [
+    {
+     "code": "r21",
+     "name_ko": "풀",
+     "name_en": "Pul"
+    },
+    {
+     "code": "r06",
+     "name_ko": "아이드",
+     "name_en": "Ith"
+    },
+    {
+     "code": "r02",
+     "name_ko": "엘드",
+     "name_en": "Eld"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "투구"
+   ],
+   "required_level": 45,
+   "props_ko": [
+    "명중률 보너스 15~25%",
+    "적중당 마나 +4~8% 훔침",
+    "마력 +10",
+    "적 처치 시 마나 +5",
+    "관통 공격 +33%",
+    "빙결되지 않음"
+   ]
+  },
+  {
+   "id": "bone",
+   "name_en": "Bone",
+   "name_ko": "뼈의",
+   "name_ko_classic": "본",
+   "runes": [
+    {
+     "code": "r12",
+     "name_ko": "솔",
+     "name_en": "Sol"
+    },
+    {
+     "code": "r22",
+     "name_ko": "우움",
+     "name_en": "Um"
+    },
+    {
+     "code": "r22",
+     "name_ko": "우움",
+     "name_en": "Um"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 47,
+   "props_ko": [
+    "적중 시 15% 확률로 레벨 10 뼈 창 시전",
+    "피격 시 15% 확률로 레벨 10 뼈 갑옷 시전",
+    "강령술사 스킬 레벨 +2",
+    "마나 +100~150"
+   ]
+  },
+  {
+   "id": "crescent-moon",
+   "name_en": "Crescent Moon",
+   "name_ko": "초승달",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r22",
+     "name_ko": "우움",
+     "name_en": "Um"
+    },
+    {
+     "code": "r03",
+     "name_ko": "티르",
+     "name_en": "Tir"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "도끼",
+    "검",
+    "폴암"
+   ],
+   "required_level": 47,
+   "props_ko": [
+    "적중 시 7% 확률로 레벨 13 전자기장 시전",
+    "적중 시 10% 확률로 레벨 17 연쇄 번개 시전",
+    "적 번개 저항 -35%",
+    "증가된 데미지 +180~220%",
+    "대상 방어력 무시",
+    "마법 흡수 +9~11",
+    "충전됨: 레벨 18 영혼 늑대 소환 (30회 충전)"
+   ]
+  },
+  {
+   "id": "duress",
+   "name_en": "Duress",
+   "name_ko": "협박",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r22",
+     "name_ko": "우움",
+     "name_en": "Um"
+    },
+    {
+     "code": "r10",
+     "name_ko": "주울",
+     "name_en": "Thul"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 47,
+   "props_ko": [
+    "증가된 데미지 +10~20%",
+    "타격 회복 속도 +20%",
+    "냉기 데미지 +37~133",
+    "강타 확률 +15%",
+    "상처 악화 확률 +33%",
+    "방어력 +150~200% 증가",
+    "지구력 고갈 속도 -20% 감소"
+   ]
+  },
+  {
+   "id": "gloom",
+   "name_en": "Gloom",
+   "name_ko": "어스름",
+   "name_ko_classic": "우울",
+   "runes": [
+    {
+     "code": "r19",
+     "name_ko": "팔",
+     "name_en": "Fal"
+    },
+    {
+     "code": "r22",
+     "name_ko": "우움",
+     "name_en": "Um"
+    },
+    {
+     "code": "r21",
+     "name_ko": "풀",
+     "name_en": "Pul"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 47,
+   "props_ko": [
+    "피격 시 15% 확률로 레벨 3 시야 흐리기 시전",
+    "타격 회복 속도 +10%",
+    "방어력 +170~230% 증가",
+    "받은 데미지의 5%가 마나로 전환",
+    "모든 저항 +30%",
+    "빙결 지속시간 절반",
+    "시야 -3"
+   ]
+  },
+  {
+   "id": "rain",
+   "name_en": "Rain",
+   "name_ko": "비",
+   "runes": [
+    {
+     "code": "r09",
+     "name_ko": "오르트",
+     "name_en": "Ort"
+    },
+    {
+     "code": "r23",
+     "name_ko": "말",
+     "name_en": "Mal"
+    },
+    {
+     "code": "r06",
+     "name_ko": "아이드",
+     "name_en": "Ith"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 49,
+   "props_ko": [
+    "적중 시 5% 확률로 레벨 15 돌개바람 시전",
+    "피격 시 5% 확률로 레벨 15 회오리 갑옷 시전",
+    "드루이드 스킬 레벨 +2",
+    "마나 +100~150"
+   ]
+  },
+  {
+   "id": "sanctuary",
+   "name_en": "Sanctuary",
+   "name_ko": "성역",
+   "runes": [
+    {
+     "code": "r18",
+     "name_ko": "코",
+     "name_en": "Ko"
+    },
+    {
+     "code": "r18",
+     "name_ko": "코",
+     "name_en": "Ko"
+    },
+    {
+     "code": "r23",
+     "name_ko": "말",
+     "name_en": "Mal"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "방패"
+   ],
+   "required_level": 49,
+   "props_ko": [
+    "타격 회복 속도 +20%",
+    "막기 속도 +20%",
+    "막기 확률 20% 증가",
+    "방어력 +130~160% 증가",
+    "원거리 공격 방어력 +250",
+    "모든 저항 +50~70%",
+    "충전됨: 레벨 12 투사체 감속 (60회 충전)"
+   ]
+  },
+  {
+   "id": "venom",
+   "name_en": "Venom",
+   "name_ko": "맹독",
+   "name_ko_classic": "베넘",
+   "runes": [
+    {
+     "code": "r07",
+     "name_ko": "탈",
+     "name_en": "Tal"
+    },
+    {
+     "code": "r14",
+     "name_ko": "돌",
+     "name_en": "Dol"
+    },
+    {
+     "code": "r23",
+     "name_ko": "말",
+     "name_en": "Mal"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "모든 무기"
+   ],
+   "required_level": 49,
+   "props_ko": [
+    "독 데미지 +312~312 (7초)",
+    "대상 방어력 무시",
+    "적중당 마나 +7% 훔침",
+    "충전됨: 레벨 15 맹독 일제사격 (27회 충전)",
+    "충전됨: 레벨 13 맹독 확산 (11회 충전)"
+   ]
+  },
+  {
+   "id": "coven",
+   "name_en": "Coven",
+   "name_ko": "마녀단",
+   "runes": [
+    {
+     "code": "r24",
+     "name_ko": "이스트",
+     "name_en": "Ist"
+    },
+    {
+     "code": "r08",
+     "name_ko": "랄",
+     "name_en": "Ral"
+    },
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "투구"
+   ],
+   "required_level": 51,
+   "props_ko": [
+    "피격 시 5% 확률로 레벨 10 인장: 무기력 시전",
+    "모든 스킬 레벨 +1",
+    "시전 속도 +20%",
+    "방어력 +30~50% 증가",
+    "적 처치 시 생명력 +1~5",
+    "마법 아이템 발견 확률 1~15% 증가"
+   ]
+  },
+  {
+   "id": "delirium",
+   "name_en": "Delirium",
+   "name_ko": "착란",
+   "name_ko_classic": "대표위원",
+   "runes": [
+    {
+     "code": "r20",
+     "name_ko": "렘",
+     "name_en": "Lem"
+    },
+    {
+     "code": "r24",
+     "name_ko": "이스트",
+     "name_en": "Ist"
+    },
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "투구"
+   ],
+   "required_level": 51,
+   "props_ko": [
+    "적중 시 11% 확률로 레벨 18 시체의 땅 시전",
+    "피격 시 14% 확률로 레벨 13 공포 시전",
+    "피격 시 6% 확률로 레벨 14 빙하 폭발 파수기 시전",
+    "피격 시 1% 확률로 레벨 50 대표위원 시전",
+    "모든 스킬 레벨 +2",
+    "방어력 +261",
+    "충전됨: 레벨 17 유혹 (60회 충전)"
+   ]
+  },
+  {
+   "id": "mosaic",
+   "name_en": "Mosaic",
+   "name_ko": "모자이크",
+   "runes": [
+    {
+     "code": "r23",
+     "name_ko": "말",
+     "name_en": "Mal"
+    },
+    {
+     "code": "r25",
+     "name_ko": "굴",
+     "name_en": "Gul"
+    },
+    {
+     "code": "r11",
+     "name_ko": "앰",
+     "name_en": "Amn"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "클로"
+   ],
+   "required_level": 53,
+   "props_ko": [
+    "필살기가 충전을 소모하지 않을 확률 +50%",
+    "무술 스킬 레벨 +2 (암살자 전용)",
+    "공격 속도 +20%",
+    "화염 스킬 데미지 +8~15%",
+    "냉기 스킬 데미지 +8~15%",
+    "번개 스킬 데미지 +8~15%",
+    "증가된 데미지 +200~250%"
+   ]
+  },
+  {
+   "id": "principle",
+   "name_en": "Principle",
+   "name_ko": "원칙",
+   "name_ko_classic": "원리원칙",
+   "runes": [
+    {
+     "code": "r08",
+     "name_ko": "랄",
+     "name_en": "Ral"
+    },
+    {
+     "code": "r25",
+     "name_ko": "굴",
+     "name_en": "Gul"
+    },
+    {
+     "code": "r02",
+     "name_ko": "엘드",
+     "name_en": "Eld"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 53,
+   "props_ko": [
+    "적중 시 100% 확률로 레벨 5 신성한 빛줄기 시전",
+    "성기사 스킬 레벨 +2",
+    "언데드에게 추가 데미지 +50%",
+    "생명력 +100~150"
+   ]
+  },
+  {
+   "id": "flickering-flame",
+   "name_en": "Flickering Flame",
+   "name_ko": "꺼져가는 불길",
+   "name_ko_classic": "불꽃",
+   "runes": [
+    {
+     "code": "r04",
+     "name_ko": "네프",
+     "name_en": "Nef"
+    },
+    {
+     "code": "r21",
+     "name_ko": "풀",
+     "name_en": "Pul"
+    },
+    {
+     "code": "r26",
+     "name_ko": "벡스",
+     "name_en": "Vex"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "투구"
+   ],
+   "required_level": 55,
+   "props_ko": [
+    "장착 시 레벨 4~8 화염 저항 오라",
+    "화염 스킬 레벨 +3",
+    "적 화염 저항 -15%",
+    "마나 +50~75",
+    "중독 지속시간 50% 감소",
+    "빙결 지속시간 절반"
+   ]
+  },
+  {
+   "id": "chaos",
+   "name_en": "Chaos",
+   "name_ko": "혼돈의",
+   "name_ko_classic": "혼돈",
+   "runes": [
+    {
+     "code": "r19",
+     "name_ko": "팔",
+     "name_en": "Fal"
+    },
+    {
+     "code": "r27",
+     "name_ko": "오움",
+     "name_en": "Ohm"
+    },
+    {
+     "code": "r22",
+     "name_ko": "우움",
+     "name_en": "Um"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "클로"
+   ],
+   "required_level": 57,
+   "props_ko": [
+    "적중 시 9% 확률로 레벨 11 얼음 보주 시전",
+    "적중 시 11% 확률로 레벨 9 번개 줄기 시전",
+    "공격 속도 +35%",
+    "증가된 데미지 +240~290%",
+    "마법 데미지 +216~471",
+    "소용돌이 +1",
+    "악마 처치 시 생명력 +15"
+   ]
+  },
+  {
+   "id": "ritual",
+   "name_en": "Ritual",
+   "name_ko": "의식",
+   "runes": [
+    {
+     "code": "r11",
+     "name_ko": "앰",
+     "name_en": "Amn"
+    },
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r27",
+     "name_ko": "오움",
+     "name_en": "Ohm"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "단검"
+   ],
+   "required_level": 57,
+   "props_ko": [
+    "피격 시 13% 확률로 레벨 1 인장: 죽음 시전",
+    "공격 속도 +20%",
+    "증가된 데미지 +200~270%",
+    "악마에게 추가 데미지 +150~250%",
+    "명중률 보너스 200~260%",
+    "적 처치 시 생명력 +3~5",
+    "시체를 남기지 않고 소멸"
+   ]
+  },
+  {
+   "id": "dragon",
+   "name_en": "Dragon",
+   "name_ko": "용의",
+   "name_ko_classic": "드레곤",
+   "runes": [
+    {
+     "code": "r29",
+     "name_ko": "수르",
+     "name_en": "Sur"
+    },
+    {
+     "code": "r28",
+     "name_ko": "로",
+     "name_en": "Lo"
+    },
+    {
+     "code": "r12",
+     "name_ko": "솔",
+     "name_en": "Sol"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷",
+    "방패"
+   ],
+   "required_level": 61,
+   "props_ko": [
+    "장착 시 레벨 14 신성한 불꽃 오라",
+    "적중 시 12% 확률로 레벨 15 히드라 시전",
+    "피격 시 20% 확률로 레벨 18 맹독 시전",
+    "방어력 +360",
+    "모든 능력치 +3~5",
+    "원거리 공격 방어력 +230",
+    "캐릭터 레벨당 힘 +0.375"
+   ]
+  },
+  {
+   "id": "dream",
+   "name_en": "Dream",
+   "name_ko": "꿈",
+   "runes": [
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    },
+    {
+     "code": "r31",
+     "name_ko": "자",
+     "name_en": "Jah"
+    },
+    {
+     "code": "r21",
+     "name_ko": "풀",
+     "name_en": "Pul"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "투구",
+    "방패"
+   ],
+   "required_level": 65,
+   "props_ko": [
+    "장착 시 레벨 15 신성한 충격 오라",
+    "피격 시 10% 확률로 레벨 15 시체의 땅 시전",
+    "타격 회복 속도 +20~30%",
+    "방어력 +150~220",
+    "모든 저항 +5~20%",
+    "마법 아이템 발견 확률 12~25% 증가",
+    "캐릭터 레벨당 마나 +0.625"
+   ]
+  },
+  {
+   "id": "enigma",
+   "name_en": "Enigma",
+   "name_ko": "수수께끼",
+   "runes": [
+    {
+     "code": "r31",
+     "name_ko": "자",
+     "name_en": "Jah"
+    },
+    {
+     "code": "r06",
+     "name_ko": "아이드",
+     "name_en": "Ith"
+    },
+    {
+     "code": "r30",
+     "name_ko": "베르",
+     "name_en": "Ber"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 65,
+   "props_ko": [
+    "모든 스킬 레벨 +2",
+    "달리기/걷기 속도 +45%",
+    "순간이동 +1",
+    "방어력 +750~775",
+    "적 처치 시 생명력 +14",
+    "캐릭터 레벨당 힘 +0.75",
+    "캐릭터 레벨당 마법 아이템 발견 확률(%) +1"
+   ]
+  },
+  {
+   "id": "fury",
+   "name_en": "Fury",
+   "name_ko": "분노",
+   "name_ko_classic": "원한",
+   "runes": [
+    {
+     "code": "r31",
+     "name_ko": "자",
+     "name_en": "Jah"
+    },
+    {
+     "code": "r25",
+     "name_ko": "굴",
+     "name_en": "Gul"
+    },
+    {
+     "code": "r05",
+     "name_ko": "에드",
+     "name_en": "Eth"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "근접 무기"
+   ],
+   "required_level": 65,
+   "props_ko": [
+    "공격 속도 +40%",
+    "증가된 데미지 +209%",
+    "광분 +5 (야만용사 전용)",
+    "적중당 생명력 +6% 훔침",
+    "치명적 공격 +33%",
+    "상처 악화 확률 +66%",
+    "몬스터 회복 방지"
+   ]
+  },
+  {
+   "id": "metamorphosis",
+   "name_en": "Metamorphosis",
+   "name_ko": "탈태",
+   "runes": [
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    },
+    {
+     "code": "r32",
+     "name_ko": "참",
+     "name_en": "Cham"
+    },
+    {
+     "code": "r19",
+     "name_ko": "팔",
+     "name_en": "Fal"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "투구"
+   ],
+   "required_level": 67,
+   "props_ko": [
+    "적중 시 100% 확률로 레벨 1 곰의 징표 시전",
+    "적중 시 100% 확률로 레벨 1 늑대의 징표 시전",
+    "변신 스킬 레벨 +5 (드루이드 전용)",
+    "강타 확률 +25%",
+    "방어력 +50~80% 증가",
+    "모든 저항 +10%"
+   ]
+  },
+  {
+   "id": "plague",
+   "name_en": "Plague",
+   "name_ko": "역병의",
+   "name_ko_classic": "페스트",
+   "runes": [
+    {
+     "code": "r32",
+     "name_ko": "참",
+     "name_en": "Cham"
+    },
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r22",
+     "name_ko": "우움",
+     "name_en": "Um"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "검",
+    "단검",
+    "클로"
+   ],
+   "required_level": 67,
+   "props_ko": [
+    "장착 시 레벨 13~17 정화 오라",
+    "피격 시 20% 확률로 레벨 12 저항 감소 시전",
+    "적중 시 25% 확률로 레벨 15 맹독 확산 시전",
+    "모든 스킬 레벨 +1~2",
+    "적 독 저항 -23%",
+    "증가된 데미지 +220~320%",
+    "캐릭터 레벨당 치명타 확률(%) +0.375"
+   ]
+  },
+  {
+   "id": "void",
+   "name_en": "Void",
+   "name_ko": "공허",
+   "name_ko_classic": "보이드",
+   "runes": [
+    {
+     "code": "r10",
+     "name_ko": "주울",
+     "name_en": "Thul"
+    },
+    {
+     "code": "r33",
+     "name_ko": "조드",
+     "name_en": "Zod"
+    },
+    {
+     "code": "r24",
+     "name_ko": "이스트",
+     "name_en": "Ist"
+    }
+   ],
+   "sockets": 3,
+   "bases_ko": [
+    "단검"
+   ],
+   "required_level": 69,
+   "props_ko": [
+    "모든 스킬 레벨 +2",
+    "마법 스킬 데미지 +10~15%",
+    "시전 속도 +40%",
+    "심연 +1~3",
+    "모든 능력치 +8~12",
+    "충전됨: 레벨 4 노화 (35회 충전)"
+   ]
+  },
+  {
+   "id": "holy-thunder",
+   "name_en": "Holy Thunder",
+   "name_ko": "신성한 천둥",
+   "name_ko_classic": "신성한 번개",
+   "runes": [
+    {
+     "code": "r05",
+     "name_ko": "에드",
+     "name_en": "Eth"
+    },
+    {
+     "code": "r08",
+     "name_ko": "랄",
+     "name_en": "Ral"
+    },
+    {
+     "code": "r09",
+     "name_ko": "오르트",
+     "name_en": "Ort"
+    },
+    {
+     "code": "r07",
+     "name_ko": "탈",
+     "name_en": "Tal"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "셉터"
+   ],
+   "required_level": 21,
+   "props_ko": [
+    "증가된 데미지 +60%",
+    "최대 데미지 +10",
+    "번개 데미지 +20~60",
+    "신성한 충격 +3 (성기사 전용)",
+    "번개 저항 +60%",
+    "최대 번개 저항 +5%",
+    "충전됨: 레벨 7 연쇄 번개 (60회 충전)"
+   ]
+  },
+  {
+   "id": "spirit",
+   "name_en": "Spirit",
+   "name_ko": "기백의",
+   "name_ko_classic": "스피리트",
+   "runes": [
+    {
+     "code": "r07",
+     "name_ko": "탈",
+     "name_en": "Tal"
+    },
+    {
+     "code": "r10",
+     "name_ko": "주울",
+     "name_en": "Thul"
+    },
+    {
+     "code": "r09",
+     "name_ko": "오르트",
+     "name_en": "Ort"
+    },
+    {
+     "code": "r11",
+     "name_ko": "앰",
+     "name_en": "Amn"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "검",
+    "방패"
+   ],
+   "required_level": 25,
+   "props_ko": [
+    "모든 스킬 레벨 +2",
+    "시전 속도 +25~35%",
+    "타격 회복 속도 +55%",
+    "원거리 공격 방어력 +250",
+    "활력 +22",
+    "마나 +89~112",
+    "마법 흡수 +3~8"
+   ]
+  },
+  {
+   "id": "insight",
+   "name_en": "Insight",
+   "name_ko": "통찰",
+   "name_ko_classic": "통찰력",
+   "runes": [
+    {
+     "code": "r08",
+     "name_ko": "랄",
+     "name_en": "Ral"
+    },
+    {
+     "code": "r03",
+     "name_ko": "티르",
+     "name_en": "Tir"
+    },
+    {
+     "code": "r07",
+     "name_ko": "탈",
+     "name_en": "Tal"
+    },
+    {
+     "code": "r12",
+     "name_ko": "솔",
+     "name_en": "Sol"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "폴암",
+    "지팡이",
+    "원거리 무기(활·석궁)"
+   ],
+   "required_level": 27,
+   "props_ko": [
+    "장착 시 레벨 12~17 명상 오라",
+    "시전 속도 +35%",
+    "증가된 데미지 +200~260%",
+    "명중률 보너스 180~250%",
+    "치명타 +1~6",
+    "모든 능력치 +5",
+    "마법 아이템 발견 확률 23% 증가"
+   ]
+  },
+  {
+   "id": "memory",
+   "name_en": "Memory",
+   "name_ko": "기억",
+   "runes": [
+    {
+     "code": "r17",
+     "name_ko": "룸",
+     "name_en": "Lum"
+    },
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    },
+    {
+     "code": "r12",
+     "name_ko": "솔",
+     "name_en": "Sol"
+    },
+    {
+     "code": "r05",
+     "name_ko": "에드",
+     "name_en": "Eth"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "지팡이"
+   ],
+   "required_level": 37,
+   "props_ko": [
+    "원소술사 스킬 레벨 +3",
+    "시전 속도 +33%",
+    "마력 보호막 +3 (원소술사 전용)",
+    "전자기장 +2 (원소술사 전용)",
+    "방어력 +50% 증가",
+    "최대 마나 20% 증가",
+    "마법 피해 7 감소"
+   ]
+  },
+  {
+   "id": "harmony",
+   "name_en": "Harmony",
+   "name_ko": "조화",
+   "runes": [
+    {
+     "code": "r03",
+     "name_ko": "티르",
+     "name_en": "Tir"
+    },
+    {
+     "code": "r06",
+     "name_ko": "아이드",
+     "name_en": "Ith"
+    },
+    {
+     "code": "r12",
+     "name_ko": "솔",
+     "name_en": "Sol"
+    },
+    {
+     "code": "r18",
+     "name_ko": "코",
+     "name_en": "Ko"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "원거리 무기(활·석궁)"
+   ],
+   "required_level": 39,
+   "props_ko": [
+    "장착 시 레벨 10 원기 오라",
+    "증가된 데미지 +200~275%",
+    "원소 데미지 +55~160",
+    "발키리 +2~6",
+    "마나 재생 20%",
+    "충전됨: 레벨 20 부활 (25회 충전)",
+    "시야 +2"
+   ]
+  },
+  {
+   "id": "passion",
+   "name_en": "Passion",
+   "name_ko": "열정",
+   "runes": [
+    {
+     "code": "r14",
+     "name_ko": "돌",
+     "name_en": "Dol"
+    },
+    {
+     "code": "r09",
+     "name_ko": "오르트",
+     "name_en": "Ort"
+    },
+    {
+     "code": "r02",
+     "name_ko": "엘드",
+     "name_en": "Eld"
+    },
+    {
+     "code": "r20",
+     "name_ko": "렘",
+     "name_en": "Lem"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "모든 무기"
+   ],
+   "required_level": 43,
+   "props_ko": [
+    "공격 속도 +25%",
+    "증가된 데미지 +160~210%",
+    "명중률 보너스 50~80%",
+    "열의 +1",
+    "광폭화 +1",
+    "적중 시 대상 실명 +10",
+    "충전됨: 레벨 3 울버린의 심장 (12회 충전)"
+   ]
+  },
+  {
+   "id": "voice-of-reason",
+   "name_en": "Voice of Reason",
+   "name_ko": "이성의 목소리",
+   "name_ko_classic": "이유있는 항변",
+   "runes": [
+    {
+     "code": "r20",
+     "name_ko": "렘",
+     "name_en": "Lem"
+    },
+    {
+     "code": "r18",
+     "name_ko": "코",
+     "name_en": "Ko"
+    },
+    {
+     "code": "r01",
+     "name_ko": "엘",
+     "name_en": "El"
+    },
+    {
+     "code": "r02",
+     "name_ko": "엘드",
+     "name_en": "Eld"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "검",
+    "메이스"
+   ],
+   "required_level": 43,
+   "props_ko": [
+    "적중 시 18% 확률로 레벨 20 얼음 작렬 시전",
+    "적중 시 15% 확률로 레벨 13 얼음 보주 시전",
+    "적 냉기 저항 -24%",
+    "악마에게 추가 데미지 +220~350%",
+    "언데드에게 추가 데미지 +280~300%",
+    "냉기 데미지 +100~220",
+    "빙결되지 않음"
+   ]
+  },
+  {
+   "id": "stone",
+   "name_en": "Stone",
+   "name_ko": "돌의",
+   "name_ko_classic": "스톤",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r22",
+     "name_ko": "우움",
+     "name_en": "Um"
+    },
+    {
+     "code": "r21",
+     "name_ko": "풀",
+     "name_en": "Pul"
+    },
+    {
+     "code": "r17",
+     "name_ko": "룸",
+     "name_en": "Lum"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 47,
+   "props_ko": [
+    "타격 회복 속도 +40%",
+    "방어력 +220~260% 증가",
+    "원거리 공격 방어력 +300",
+    "힘 +16",
+    "활력 +16",
+    "충전됨: 레벨 16 점토 골렘 (16회 충전)",
+    "충전됨: 레벨 16 타오르는 바위 (80회 충전)"
+   ]
+  },
+  {
+   "id": "oath",
+   "name_en": "Oath",
+   "name_ko": "서약",
+   "runes": [
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r21",
+     "name_ko": "풀",
+     "name_en": "Pul"
+    },
+    {
+     "code": "r23",
+     "name_ko": "말",
+     "name_en": "Mal"
+    },
+    {
+     "code": "r17",
+     "name_ko": "룸",
+     "name_en": "Lum"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "검",
+    "도끼",
+    "메이스"
+   ],
+   "required_level": 49,
+   "props_ko": [
+    "적중 시 30% 확률로 레벨 20 뼈 영혼 시전",
+    "공격 속도 +30%",
+    "증가된 데미지 +210~340%",
+    "마법 흡수 +10~15",
+    "충전됨: 레벨 17 강철 골렘 (14회 충전)",
+    "충전됨: 레벨 16 울버린의 심장 (20회 충전)",
+    "파괴되지 않음"
+   ]
+  },
+  {
+   "id": "kingslayer",
+   "name_en": "Kingslayer",
+   "name_ko": "왕 시해자",
+   "name_ko_classic": "킹슬레이어",
+   "runes": [
+    {
+     "code": "r23",
+     "name_ko": "말",
+     "name_en": "Mal"
+    },
+    {
+     "code": "r22",
+     "name_ko": "우움",
+     "name_en": "Um"
+    },
+    {
+     "code": "r25",
+     "name_ko": "굴",
+     "name_en": "Gul"
+    },
+    {
+     "code": "r19",
+     "name_ko": "팔",
+     "name_en": "Fal"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "검",
+    "도끼"
+   ],
+   "required_level": 53,
+   "props_ko": [
+    "공격 속도 +30%",
+    "증가된 데미지 +230~270%",
+    "대상 방어력 25% 감소",
+    "복수 +1",
+    "강타 확률 +33%",
+    "상처 악화 확률 +25%",
+    "괴물에게서 얻는 금화 40% 증가"
+   ]
+  },
+  {
+   "id": "rift",
+   "name_en": "Rift",
+   "name_ko": "균열의",
+   "name_ko_classic": "균열",
+   "runes": [
+    {
+     "code": "r15",
+     "name_ko": "헬",
+     "name_en": "Hel"
+    },
+    {
+     "code": "r18",
+     "name_ko": "코",
+     "name_en": "Ko"
+    },
+    {
+     "code": "r20",
+     "name_ko": "렘",
+     "name_en": "Lem"
+    },
+    {
+     "code": "r25",
+     "name_ko": "굴",
+     "name_en": "Gul"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "폴암",
+    "셉터"
+   ],
+   "required_level": 53,
+   "props_ko": [
+    "적중 시 20% 확률로 레벨 16 회오리바람 시전",
+    "공격 시 16% 확률로 레벨 21 얼음 보주 시전",
+    "마법 데미지 +160~250",
+    "화염 데미지 +60~180",
+    "모든 능력치 +5~10",
+    "받은 데미지의 38%가 마나로 전환",
+    "충전됨: 레벨 15 가시 박힌 철관 (40회 충전)"
+   ]
+  },
+  {
+   "id": "heart-of-the-oak",
+   "name_en": "Heart of the Oak",
+   "name_ko": "참나무의 심장",
+   "name_ko_classic": "오크의 심장",
+   "runes": [
+    {
+     "code": "r18",
+     "name_ko": "코",
+     "name_en": "Ko"
+    },
+    {
+     "code": "r26",
+     "name_ko": "벡스",
+     "name_en": "Vex"
+    },
+    {
+     "code": "r21",
+     "name_ko": "풀",
+     "name_en": "Pul"
+    },
+    {
+     "code": "r10",
+     "name_ko": "주울",
+     "name_en": "Thul"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "지팡이",
+    "메이스"
+   ],
+   "required_level": 55,
+   "props_ko": [
+    "모든 스킬 레벨 +3",
+    "시전 속도 +40%",
+    "10초당 생명력 +20 회복",
+    "최대 마나 15% 증가",
+    "모든 저항 +30~40%",
+    "충전됨: 레벨 4 참나무 현자 (25회 충전)",
+    "충전됨: 레벨 14 큰까마귀 (60회 충전)"
+   ]
+  },
+  {
+   "id": "exile",
+   "name_en": "Exile",
+   "name_ko": "추방",
+   "name_ko_classic": "망명",
+   "runes": [
+    {
+     "code": "r26",
+     "name_ko": "벡스",
+     "name_en": "Vex"
+    },
+    {
+     "code": "r27",
+     "name_ko": "오움",
+     "name_en": "Ohm"
+    },
+    {
+     "code": "r24",
+     "name_ko": "이스트",
+     "name_en": "Ist"
+    },
+    {
+     "code": "r14",
+     "name_ko": "돌",
+     "name_en": "Dol"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "Paladin Item"
+   ],
+   "required_level": 57,
+   "props_ko": [
+    "장착 시 레벨 13~16 인내 오라",
+    "적중 시 15% 확률로 레벨 5 생명력 추출 시전",
+    "공격 오라 스킬 레벨 +2 (성기사 전용)",
+    "막기 속도 +30%",
+    "방어력 +220~260% 증가",
+    "적중 시 대상 빙결 +1",
+    "내구도 자동 수리"
+   ]
+  },
+  {
+   "id": "fortitude",
+   "name_en": "Fortitude",
+   "name_ko": "인내",
+   "runes": [
+    {
+     "code": "r01",
+     "name_ko": "엘",
+     "name_en": "El"
+    },
+    {
+     "code": "r12",
+     "name_ko": "솔",
+     "name_en": "Sol"
+    },
+    {
+     "code": "r14",
+     "name_ko": "돌",
+     "name_en": "Dol"
+    },
+    {
+     "code": "r28",
+     "name_ko": "로",
+     "name_en": "Lo"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "모든 무기",
+    "갑옷"
+   ],
+   "required_level": 59,
+   "props_ko": [
+    "피격 시 20% 확률로 레벨 15 냉기 갑옷 시전",
+    "시전 속도 +25%",
+    "증가된 데미지 +300%",
+    "방어력 +200% 증가",
+    "받은 데미지의 12%가 마나로 전환",
+    "모든 저항 +25~30%",
+    "캐릭터 레벨당 생명력 +0"
+   ]
+  },
+  {
+   "id": "bramble",
+   "name_en": "Bramble",
+   "name_ko": "찔레의",
+   "name_ko_classic": "검은딸기",
+   "runes": [
+    {
+     "code": "r08",
+     "name_ko": "랄",
+     "name_en": "Ral"
+    },
+    {
+     "code": "r27",
+     "name_ko": "오움",
+     "name_en": "Ohm"
+    },
+    {
+     "code": "r29",
+     "name_ko": "수르",
+     "name_en": "Sur"
+    },
+    {
+     "code": "r05",
+     "name_ko": "에드",
+     "name_en": "Eth"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 61,
+   "props_ko": [
+    "장착 시 레벨 15~21 가시 오라",
+    "독 스킬 데미지 +25~50%",
+    "타격 회복 속도 +50%",
+    "방어력 +300",
+    "적 처치 시 생명력 +13",
+    "독 저항 +100%",
+    "충전됨: 레벨 13 가시의 영혼 (33회 충전)"
+   ]
+  },
+  {
+   "id": "chains-of-honor",
+   "name_en": "Chains of Honor",
+   "name_ko": "명예의 굴레",
+   "runes": [
+    {
+     "code": "r14",
+     "name_ko": "돌",
+     "name_en": "Dol"
+    },
+    {
+     "code": "r22",
+     "name_ko": "우움",
+     "name_en": "Um"
+    },
+    {
+     "code": "r30",
+     "name_ko": "베르",
+     "name_en": "Ber"
+    },
+    {
+     "code": "r24",
+     "name_ko": "이스트",
+     "name_en": "Ist"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "갑옷"
+   ],
+   "required_level": 63,
+   "props_ko": [
+    "모든 스킬 레벨 +2",
+    "악마에게 추가 데미지 +200%",
+    "언데드에게 추가 데미지 +100%",
+    "적중당 생명력 +8% 훔침",
+    "방어력 +70% 증가",
+    "힘 +20",
+    "모든 저항 +50%"
+   ]
+  },
+  {
+   "id": "infinity",
+   "name_en": "Infinity",
+   "name_ko": "무한",
+   "name_ko_classic": "무한의 공간",
+   "runes": [
+    {
+     "code": "r30",
+     "name_ko": "베르",
+     "name_en": "Ber"
+    },
+    {
+     "code": "r23",
+     "name_ko": "말",
+     "name_en": "Mal"
+    },
+    {
+     "code": "r30",
+     "name_ko": "베르",
+     "name_en": "Ber"
+    },
+    {
+     "code": "r24",
+     "name_ko": "이스트",
+     "name_en": "Ist"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "폴암",
+    "창"
+   ],
+   "required_level": 63,
+   "props_ko": [
+    "장착 시 레벨 12 선고 오라",
+    "적 처치 시 50% 확률로 레벨 20 연쇄 번개 시전",
+    "달리기/걷기 속도 +35%",
+    "적 번개 저항 -55%",
+    "증가된 데미지 +255~325%",
+    "충전됨: 레벨 21 회오리 갑옷 (30회 충전)",
+    "캐릭터 레벨당 활력 +0.5"
+   ]
+  },
+  {
+   "id": "wrath",
+   "name_en": "Wrath",
+   "name_ko": "진노의",
+   "name_ko_classic": "래쓰",
+   "runes": [
+    {
+     "code": "r21",
+     "name_ko": "풀",
+     "name_en": "Pul"
+    },
+    {
+     "code": "r17",
+     "name_ko": "룸",
+     "name_en": "Lum"
+    },
+    {
+     "code": "r30",
+     "name_ko": "베르",
+     "name_en": "Ber"
+    },
+    {
+     "code": "r23",
+     "name_ko": "말",
+     "name_en": "Mal"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "원거리 무기(활·석궁)"
+   ],
+   "required_level": 63,
+   "props_ko": [
+    "적중 시 5% 확률로 레벨 10 생명력 추출 시전",
+    "적중 시 30% 확률로 레벨 1 노화 시전",
+    "악마에게 추가 데미지 +300%",
+    "언데드에게 추가 데미지 +250~300%",
+    "번개 데미지 +41~240",
+    "마법 데미지 +85~120",
+    "빙결되지 않음"
+   ]
+  },
+  {
+   "id": "brand",
+   "name_en": "Brand",
+   "name_ko": "낙인",
+   "name_ko_classic": "인두",
+   "runes": [
+    {
+     "code": "r31",
+     "name_ko": "자",
+     "name_en": "Jah"
+    },
+    {
+     "code": "r28",
+     "name_ko": "로",
+     "name_en": "Lo"
+    },
+    {
+     "code": "r23",
+     "name_ko": "말",
+     "name_en": "Mal"
+    },
+    {
+     "code": "r25",
+     "name_ko": "굴",
+     "name_en": "Gul"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "원거리 무기(활·석궁)"
+   ],
+   "required_level": 65,
+   "props_ko": [
+    "적중 시 100% 확률로 레벨 18 뼈 창 시전",
+    "피격 시 35% 확률로 레벨 14 피해 증폭 시전",
+    "증가된 데미지 +260~340%",
+    "악마에게 추가 데미지 +280~330%",
+    "몬스터 회복 방지",
+    "넉백",
+    "폭발 화살/볼트 발사 (레벨 15)"
+   ]
+  },
+  {
+   "id": "faith",
+   "name_en": "Faith",
+   "name_ko": "신념",
+   "name_ko_classic": "신뢰",
+   "runes": [
+    {
+     "code": "r27",
+     "name_ko": "오움",
+     "name_en": "Ohm"
+    },
+    {
+     "code": "r31",
+     "name_ko": "자",
+     "name_en": "Jah"
+    },
+    {
+     "code": "r20",
+     "name_ko": "렘",
+     "name_en": "Lem"
+    },
+    {
+     "code": "r02",
+     "name_ko": "엘드",
+     "name_en": "Eld"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "원거리 무기(활·석궁)"
+   ],
+   "required_level": 65,
+   "props_ko": [
+    "장착 시 레벨 12~15 광신 오라",
+    "모든 스킬 레벨 +1~2",
+    "증가된 데미지 +280%",
+    "화염 데미지 +120",
+    "명중률 보너스 300%",
+    "10% 확률로 처치한 적 되살림: 1",
+    "모든 저항 +15%"
+   ]
+  },
+  {
+   "id": "famine",
+   "name_en": "Famine",
+   "name_ko": "기근",
+   "runes": [
+    {
+     "code": "r19",
+     "name_ko": "팔",
+     "name_en": "Fal"
+    },
+    {
+     "code": "r27",
+     "name_ko": "오움",
+     "name_en": "Ohm"
+    },
+    {
+     "code": "r09",
+     "name_ko": "오르트",
+     "name_en": "Ort"
+    },
+    {
+     "code": "r31",
+     "name_ko": "자",
+     "name_en": "Jah"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "도끼",
+    "망치"
+   ],
+   "required_level": 65,
+   "props_ko": [
+    "공격 속도 +30%",
+    "증가된 데미지 +270~320%",
+    "마법 데미지 +180~200",
+    "원소 데미지 +50~200",
+    "적중당 생명력 +12% 훔침",
+    "몬스터 회복 방지",
+    "에테리얼 (복구 불가)"
+   ]
+  },
+  {
+   "id": "ice",
+   "name_en": "Ice",
+   "name_ko": "얼음",
+   "runes": [
+    {
+     "code": "r11",
+     "name_ko": "앰",
+     "name_en": "Amn"
+    },
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r31",
+     "name_ko": "자",
+     "name_en": "Jah"
+    },
+    {
+     "code": "r28",
+     "name_ko": "로",
+     "name_en": "Lo"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "원거리 무기(활·석궁)"
+   ],
+   "required_level": 65,
+   "props_ko": [
+    "장착 시 레벨 18 신성한 빙결 오라",
+    "적중 시 25% 확률로 레벨 22 서릿발 시전",
+    "레벨 상승 시 100% 확률로 레벨 40 눈보라 시전",
+    "냉기 스킬 데미지 +25~30%",
+    "적 냉기 저항 -20%",
+    "증가된 데미지 +140~210%",
+    "캐릭터 레벨당 골드 획득량(%) +3.125"
+   ]
+  },
+  {
+   "id": "phoenix",
+   "name_en": "Phoenix",
+   "name_ko": "불사조",
+   "runes": [
+    {
+     "code": "r26",
+     "name_ko": "벡스",
+     "name_en": "Vex"
+    },
+    {
+     "code": "r26",
+     "name_ko": "벡스",
+     "name_en": "Vex"
+    },
+    {
+     "code": "r28",
+     "name_ko": "로",
+     "name_en": "Lo"
+    },
+    {
+     "code": "r31",
+     "name_ko": "자",
+     "name_en": "Jah"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "모든 무기",
+    "방패"
+   ],
+   "required_level": 65,
+   "props_ko": [
+    "장착 시 레벨 10~15 속죄 오라",
+    "적중 시 40% 확률로 레벨 22 화염폭풍 시전",
+    "레벨 상승 시 100% 확률로 레벨 40 불길 시전",
+    "적 화염 저항 -28%",
+    "증가된 데미지 +350~400%",
+    "원거리 공격 방어력 +350~400",
+    "화염 흡수 +15~21"
+   ]
+  },
+  {
+   "id": "hand-of-justice",
+   "name_en": "Hand of Justice",
+   "name_ko": "정의의 손길",
+   "runes": [
+    {
+     "code": "r29",
+     "name_ko": "수르",
+     "name_en": "Sur"
+    },
+    {
+     "code": "r32",
+     "name_ko": "참",
+     "name_en": "Cham"
+    },
+    {
+     "code": "r11",
+     "name_ko": "앰",
+     "name_en": "Amn"
+    },
+    {
+     "code": "r28",
+     "name_ko": "로",
+     "name_en": "Lo"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "모든 무기"
+   ],
+   "required_level": 67,
+   "props_ko": [
+    "장착 시 레벨 16 신성한 불꽃 오라",
+    "레벨 상승 시 100% 확률로 레벨 36 불길 시전",
+    "사망 시 100% 확률로 레벨 48 운석 낙하 시전",
+    "공격 속도 +33%",
+    "적 화염 저항 -20%",
+    "증가된 데미지 +280~330%",
+    "대상 방어력 무시"
+   ]
+  },
+  {
+   "id": "pride",
+   "name_en": "Pride",
+   "name_ko": "긍지",
+   "name_ko_classic": "자존심",
+   "runes": [
+    {
+     "code": "r32",
+     "name_ko": "참",
+     "name_en": "Cham"
+    },
+    {
+     "code": "r29",
+     "name_ko": "수르",
+     "name_en": "Sur"
+    },
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    },
+    {
+     "code": "r28",
+     "name_ko": "로",
+     "name_en": "Lo"
+    }
+   ],
+   "sockets": 4,
+   "bases_ko": [
+    "폴암",
+    "창"
+   ],
+   "required_level": 67,
+   "props_ko": [
+    "장착 시 레벨 16~20 집중 오라",
+    "피격 시 25% 확률로 레벨 17 화염벽 시전",
+    "번개 데미지 +50~280",
+    "명중률 보너스 260~300%",
+    "10초당 생명력 +8 회복",
+    "캐릭터 레벨당 악마에게 추가 데미지(%) +1",
+    "캐릭터 레벨당 골드 획득량(%) +1.875"
+   ]
+  },
+  {
+   "id": "honor",
+   "name_en": "Honor",
+   "name_ko": "명예",
+   "runes": [
+    {
+     "code": "r11",
+     "name_ko": "앰",
+     "name_en": "Amn"
+    },
+    {
+     "code": "r01",
+     "name_ko": "엘",
+     "name_en": "El"
+    },
+    {
+     "code": "r06",
+     "name_ko": "아이드",
+     "name_en": "Ith"
+    },
+    {
+     "code": "r03",
+     "name_ko": "티르",
+     "name_en": "Tir"
+    },
+    {
+     "code": "r12",
+     "name_ko": "솔",
+     "name_en": "Sol"
+    }
+   ],
+   "sockets": 5,
+   "bases_ko": [
+    "근접 무기"
+   ],
+   "required_level": 27,
+   "props_ko": [
+    "모든 스킬 레벨 +1",
+    "증가된 데미지 +160%",
+    "명중률 +200",
+    "치명적 공격 +25%",
+    "힘 +10",
+    "10초당 생명력 +10 회복"
+   ]
+  },
+  {
+   "id": "obedience",
+   "name_en": "Obedience",
+   "name_ko": "순종",
+   "runes": [
+    {
+     "code": "r15",
+     "name_ko": "헬",
+     "name_en": "Hel"
+    },
+    {
+     "code": "r18",
+     "name_ko": "코",
+     "name_en": "Ko"
+    },
+    {
+     "code": "r10",
+     "name_ko": "주울",
+     "name_en": "Thul"
+    },
+    {
+     "code": "r05",
+     "name_ko": "에드",
+     "name_en": "Eth"
+    },
+    {
+     "code": "r19",
+     "name_ko": "팔",
+     "name_en": "Fal"
+    }
+   ],
+   "sockets": 5,
+   "bases_ko": [
+    "폴암",
+    "창"
+   ],
+   "required_level": 41,
+   "props_ko": [
+    "적 처치 시 30% 확률로 레벨 21 enchant 시전",
+    "적 화염 저항 -25%",
+    "증가된 데미지 +370%",
+    "타격 회복 속도 +40%",
+    "강타 확률 +40%",
+    "방어력 +200~300",
+    "모든 저항 +20~30%"
+   ]
+  },
+  {
+   "id": "death",
+   "name_en": "Death",
+   "name_ko": "죽음의",
+   "name_ko_classic": "죽음",
+   "runes": [
+    {
+     "code": "r15",
+     "name_ko": "헬",
+     "name_en": "Hel"
+    },
+    {
+     "code": "r01",
+     "name_ko": "엘",
+     "name_en": "El"
+    },
+    {
+     "code": "r26",
+     "name_ko": "벡스",
+     "name_en": "Vex"
+    },
+    {
+     "code": "r09",
+     "name_ko": "오르트",
+     "name_en": "Ort"
+    },
+    {
+     "code": "r25",
+     "name_ko": "굴",
+     "name_en": "Gul"
+    }
+   ],
+   "sockets": 5,
+   "bases_ko": [
+    "검",
+    "도끼"
+   ],
+   "required_level": 55,
+   "props_ko": [
+    "공격 시 25% 확률로 레벨 18 빙하 가시 시전",
+    "사망 시 100% 확률로 레벨 44 연쇄 번개 시전",
+    "증가된 데미지 +300~385%",
+    "강타 확률 +50%",
+    "충전됨: 레벨 22 피 골렘 (15회 충전)",
+    "캐릭터 레벨당 치명타 확률(%) +0.5",
+    "파괴되지 않음"
+   ]
+  },
+  {
+   "id": "call-to-arms",
+   "name_en": "Call to Arms",
+   "name_ko": "소집",
+   "name_ko_classic": "콜 투 암스",
+   "runes": [
+    {
+     "code": "r11",
+     "name_ko": "앰",
+     "name_en": "Amn"
+    },
+    {
+     "code": "r08",
+     "name_ko": "랄",
+     "name_en": "Ral"
+    },
+    {
+     "code": "r23",
+     "name_ko": "말",
+     "name_en": "Mal"
+    },
+    {
+     "code": "r24",
+     "name_ko": "이스트",
+     "name_en": "Ist"
+    },
+    {
+     "code": "r27",
+     "name_ko": "오움",
+     "name_en": "Ohm"
+    }
+   ],
+   "sockets": 5,
+   "bases_ko": [
+    "모든 무기"
+   ],
+   "required_level": 57,
+   "props_ko": [
+    "모든 스킬 레벨 +1",
+    "공격 속도 +40%",
+    "증가된 데미지 +200~240%",
+    "전투 명령 +2~6",
+    "전투 지시 +1~6",
+    "전투의 함성 +1~4",
+    "10초당 생명력 +12 회복"
+   ]
+  },
+  {
+   "id": "grief",
+   "name_en": "Grief",
+   "name_ko": "슬픔",
+   "name_ko_classic": "깊은 고뇌",
+   "runes": [
+    {
+     "code": "r05",
+     "name_ko": "에드",
+     "name_en": "Eth"
+    },
+    {
+     "code": "r03",
+     "name_ko": "티르",
+     "name_en": "Tir"
+    },
+    {
+     "code": "r28",
+     "name_ko": "로",
+     "name_en": "Lo"
+    },
+    {
+     "code": "r23",
+     "name_ko": "말",
+     "name_en": "Mal"
+    },
+    {
+     "code": "r08",
+     "name_ko": "랄",
+     "name_en": "Ral"
+    }
+   ],
+   "sockets": 5,
+   "bases_ko": [
+    "검",
+    "도끼"
+   ],
+   "required_level": 59,
+   "props_ko": [
+    "적중 시 35% 확률로 레벨 15 맹독 시전",
+    "공격 속도 +30~40%",
+    "적 독 저항 -25%",
+    "데미지 +340~400",
+    "대상 방어력 무시",
+    "적 처치 시 생명력 +10~15",
+    "캐릭터 레벨당 악마에게 추가 데미지(%) +1.875"
+   ]
+  },
+  {
+   "id": "beast",
+   "name_en": "Beast",
+   "name_ko": "야수의",
+   "name_ko_classic": "야수",
+   "runes": [
+    {
+     "code": "r30",
+     "name_ko": "베르",
+     "name_en": "Ber"
+    },
+    {
+     "code": "r03",
+     "name_ko": "티르",
+     "name_en": "Tir"
+    },
+    {
+     "code": "r22",
+     "name_ko": "우움",
+     "name_en": "Um"
+    },
+    {
+     "code": "r23",
+     "name_ko": "말",
+     "name_en": "Mal"
+    },
+    {
+     "code": "r17",
+     "name_ko": "룸",
+     "name_en": "Lum"
+    }
+   ],
+   "sockets": 5,
+   "bases_ko": [
+    "도끼",
+    "셉터",
+    "망치"
+   ],
+   "required_level": 63,
+   "props_ko": [
+    "장착 시 레벨 9 광신 오라",
+    "공격 속도 +40%",
+    "증가된 데미지 +240~270%",
+    "곰인간 +3",
+    "변신술 +3",
+    "힘 +25~40",
+    "충전됨: 레벨 13 회색곰 소환 (5회 충전)"
+   ]
+  },
+  {
+   "id": "eternity",
+   "name_en": "Eternity",
+   "name_ko": "영원",
+   "name_ko_classic": "불멸",
+   "runes": [
+    {
+     "code": "r11",
+     "name_ko": "앰",
+     "name_en": "Amn"
+    },
+    {
+     "code": "r30",
+     "name_ko": "베르",
+     "name_en": "Ber"
+    },
+    {
+     "code": "r24",
+     "name_ko": "이스트",
+     "name_en": "Ist"
+    },
+    {
+     "code": "r12",
+     "name_ko": "솔",
+     "name_en": "Sol"
+    },
+    {
+     "code": "r29",
+     "name_ko": "수르",
+     "name_en": "Sur"
+    }
+   ],
+   "sockets": 5,
+   "bases_ko": [
+    "근접 무기"
+   ],
+   "required_level": 63,
+   "props_ko": [
+    "증가된 데미지 +260~310%",
+    "10초당 생명력 +16 회복",
+    "마나 재생 16%",
+    "대상 둔화 33%",
+    "빙결되지 않음",
+    "충전됨: 레벨 8 부활 (88회 충전)",
+    "파괴되지 않음"
+   ]
+  },
+  {
+   "id": "destruction",
+   "name_en": "Destruction",
+   "name_ko": "파괴",
+   "runes": [
+    {
+     "code": "r26",
+     "name_ko": "벡스",
+     "name_en": "Vex"
+    },
+    {
+     "code": "r28",
+     "name_ko": "로",
+     "name_en": "Lo"
+    },
+    {
+     "code": "r30",
+     "name_ko": "베르",
+     "name_en": "Ber"
+    },
+    {
+     "code": "r31",
+     "name_ko": "자",
+     "name_en": "Jah"
+    },
+    {
+     "code": "r18",
+     "name_ko": "코",
+     "name_en": "Ko"
+    }
+   ],
+   "sockets": 5,
+   "bases_ko": [
+    "폴암",
+    "검"
+   ],
+   "required_level": 65,
+   "props_ko": [
+    "적중 시 5% 확률로 레벨 23 타오르는 바위 시전",
+    "사망 시 100% 확률로 레벨 45 운석 낙하 시전",
+    "공격 시 15% 확률로 레벨 22 번개 파장 시전",
+    "적중 시 23% 확률로 레벨 12 화산 시전",
+    "증가된 데미지 +350%",
+    "마법 데미지 +100~180",
+    "몬스터 회복 방지"
+   ]
+  },
+  {
+   "id": "doom",
+   "name_en": "Doom",
+   "name_ko": "파멸의",
+   "name_ko_classic": "파멸",
+   "runes": [
+    {
+     "code": "r15",
+     "name_ko": "헬",
+     "name_en": "Hel"
+    },
+    {
+     "code": "r27",
+     "name_ko": "오움",
+     "name_en": "Ohm"
+    },
+    {
+     "code": "r22",
+     "name_ko": "우움",
+     "name_en": "Um"
+    },
+    {
+     "code": "r28",
+     "name_ko": "로",
+     "name_en": "Lo"
+    },
+    {
+     "code": "r32",
+     "name_ko": "참",
+     "name_en": "Cham"
+    }
+   ],
+   "sockets": 5,
+   "bases_ko": [
+    "도끼",
+    "폴암",
+    "망치"
+   ],
+   "required_level": 67,
+   "props_ko": [
+    "장착 시 레벨 12 신성한 빙결 오라",
+    "적중 시 5% 확률로 레벨 18 화산 시전",
+    "모든 스킬 레벨 +2",
+    "공격 속도 +45%",
+    "적 냉기 저항 -60%",
+    "증가된 데미지 +280~320%",
+    "몬스터 회복 방지"
+   ]
+  },
+  {
+   "id": "mist",
+   "name_en": "Mist",
+   "name_ko": "안개",
+   "name_ko_classic": "엷은 안개",
+   "runes": [
+    {
+     "code": "r32",
+     "name_ko": "참",
+     "name_en": "Cham"
+    },
+    {
+     "code": "r13",
+     "name_ko": "샤엘",
+     "name_en": "Shael"
+    },
+    {
+     "code": "r25",
+     "name_ko": "굴",
+     "name_en": "Gul"
+    },
+    {
+     "code": "r10",
+     "name_ko": "주울",
+     "name_en": "Thul"
+    },
+    {
+     "code": "r06",
+     "name_ko": "아이드",
+     "name_en": "Ith"
+    }
+   ],
+   "sockets": 5,
+   "bases_ko": [
+    "원거리 무기(활·석궁)"
+   ],
+   "required_level": 67,
+   "props_ko": [
+    "장착 시 레벨 8~12 집중 오라",
+    "모든 스킬 레벨 +3",
+    "증가된 데미지 +325~375%",
+    "활력 +24",
+    "관통 공격 +100%",
+    "모든 저항 +40%"
+   ]
+  },
+  {
+   "id": "unbending-will",
+   "name_en": "Unbending Will",
+   "name_ko": "불굴의 의지",
+   "name_ko_classic": "언벤딩 윌",
+   "runes": [
+    {
+     "code": "r19",
+     "name_ko": "팔",
+     "name_en": "Fal"
+    },
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    },
+    {
+     "code": "r06",
+     "name_ko": "아이드",
+     "name_en": "Ith"
+    },
+    {
+     "code": "r02",
+     "name_ko": "엘드",
+     "name_en": "Eld"
+    },
+    {
+     "code": "r01",
+     "name_ko": "엘",
+     "name_en": "El"
+    },
+    {
+     "code": "r15",
+     "name_ko": "헬",
+     "name_en": "Hel"
+    }
+   ],
+   "sockets": 6,
+   "bases_ko": [
+    "검"
+   ],
+   "required_level": 41,
+   "props_ko": [
+    "적중 시 18% 확률로 레벨 18 도발 시전",
+    "전투 기술 스킬 레벨 +3 (야만용사 전용)",
+    "공격 속도 +20~30%",
+    "증가된 데미지 +300~350%",
+    "적중당 생명력 +8~10% 훔침",
+    "몬스터 회복 방지",
+    "피해 8 감소"
+   ]
+  },
+  {
+   "id": "silence",
+   "name_en": "Silence",
+   "name_ko": "침묵",
+   "runes": [
+    {
+     "code": "r14",
+     "name_ko": "돌",
+     "name_en": "Dol"
+    },
+    {
+     "code": "r02",
+     "name_ko": "엘드",
+     "name_en": "Eld"
+    },
+    {
+     "code": "r15",
+     "name_ko": "헬",
+     "name_en": "Hel"
+    },
+    {
+     "code": "r24",
+     "name_ko": "이스트",
+     "name_en": "Ist"
+    },
+    {
+     "code": "r03",
+     "name_ko": "티르",
+     "name_en": "Tir"
+    },
+    {
+     "code": "r26",
+     "name_ko": "벡스",
+     "name_en": "Vex"
+    }
+   ],
+   "sockets": 6,
+   "bases_ko": [
+    "모든 무기"
+   ],
+   "required_level": 55,
+   "props_ko": [
+    "모든 스킬 레벨 +2",
+    "공격 속도 +20%",
+    "증가된 데미지 +200%",
+    "타격 회복 속도 +20%",
+    "적중당 마나 +4% 훔침",
+    "적중 시 대상 실명 +33",
+    "모든 저항 +75%"
+   ]
+  },
+  {
+   "id": "last-wish",
+   "name_en": "Last Wish",
+   "name_ko": "마지막 소원",
+   "runes": [
+    {
+     "code": "r31",
+     "name_ko": "자",
+     "name_en": "Jah"
+    },
+    {
+     "code": "r23",
+     "name_ko": "말",
+     "name_en": "Mal"
+    },
+    {
+     "code": "r31",
+     "name_ko": "자",
+     "name_en": "Jah"
+    },
+    {
+     "code": "r29",
+     "name_ko": "수르",
+     "name_en": "Sur"
+    },
+    {
+     "code": "r31",
+     "name_ko": "자",
+     "name_en": "Jah"
+    },
+    {
+     "code": "r30",
+     "name_ko": "베르",
+     "name_en": "Ber"
+    }
+   ],
+   "sockets": 6,
+   "bases_ko": [
+    "검",
+    "망치",
+    "도끼"
+   ],
+   "required_level": 65,
+   "props_ko": [
+    "장착 시 레벨 17 위세 오라",
+    "공격 시 20% 확률로 레벨 20 번개 줄기 시전",
+    "적중 시 10% 확률로 레벨 18 생명력 추출 시전",
+    "피격 시 6% 확률로 레벨 11 흐리기 시전",
+    "증가된 데미지 +330~375%",
+    "강타 확률 +40~50%",
+    "캐릭터 레벨당 마법 아이템 발견 확률(%) +0.5"
+   ]
+  },
+  {
+   "id": "breath-of-the-dying",
+   "name_en": "Breath of the Dying",
+   "name_ko": "죽어가는 자의 숨결",
+   "name_ko_classic": "죽음의 숨결",
+   "runes": [
+    {
+     "code": "r26",
+     "name_ko": "벡스",
+     "name_en": "Vex"
+    },
+    {
+     "code": "r15",
+     "name_ko": "헬",
+     "name_en": "Hel"
+    },
+    {
+     "code": "r01",
+     "name_ko": "엘",
+     "name_en": "El"
+    },
+    {
+     "code": "r02",
+     "name_ko": "엘드",
+     "name_en": "Eld"
+    },
+    {
+     "code": "r33",
+     "name_ko": "조드",
+     "name_en": "Zod"
+    },
+    {
+     "code": "r05",
+     "name_ko": "에드",
+     "name_en": "Eth"
+    }
+   ],
+   "sockets": 6,
+   "bases_ko": [
+    "모든 무기"
+   ],
+   "required_level": 69,
+   "props_ko": [
+    "적 처치 시 50% 확률로 레벨 20 맹독 확산 시전",
+    "공격 속도 +60%",
+    "증가된 데미지 +350~400%",
+    "언데드에게 추가 데미지 +125%",
+    "적중당 생명력 +12~15% 훔침",
+    "모든 능력치 +30",
+    "몬스터 회복 방지"
+   ]
+  },
+  {
+   "id": "obsession",
+   "name_en": "Obsession",
+   "name_ko": "집착",
+   "name_ko_classic": "집념",
+   "runes": [
+    {
+     "code": "r33",
+     "name_ko": "조드",
+     "name_en": "Zod"
+    },
+    {
+     "code": "r24",
+     "name_ko": "이스트",
+     "name_en": "Ist"
+    },
+    {
+     "code": "r20",
+     "name_ko": "렘",
+     "name_en": "Lem"
+    },
+    {
+     "code": "r17",
+     "name_ko": "룸",
+     "name_en": "Lum"
+    },
+    {
+     "code": "r16",
+     "name_ko": "이오",
+     "name_en": "Io"
+    },
+    {
+     "code": "r04",
+     "name_ko": "네프",
+     "name_en": "Nef"
+    }
+   ],
+   "sockets": 6,
+   "bases_ko": [
+    "지팡이"
+   ],
+   "required_level": 69,
+   "props_ko": [
+    "피격 시 24% 확률로 레벨 10 약화 시전",
+    "모든 스킬 레벨 +4",
+    "시전 속도 +65%",
+    "타격 회복 속도 +60%",
+    "최대 생명력 15~25% 증가",
+    "마나 재생 15~30%",
+    "모든 저항 +60~70%"
+   ]
+  }
+ ]
+}

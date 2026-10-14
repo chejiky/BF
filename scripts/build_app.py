@@ -20,11 +20,17 @@ def main():
         return json.dumps(obj, ensure_ascii=False,
                           separators=(",", ":")).replace("</", "<\\/")
 
-    items = json.load(open(ROOT / "data" / "items" / "uniques.json",
-                           encoding="utf-8"))["items"]
+    items_dir = ROOT / "data" / "items"
+    items = json.load(open(items_dir / "uniques.json", encoding="utf-8"))["items"]
+    sets = json.load(open(items_dir / "sets.json", encoding="utf-8"))["sets"]
+    rws = json.load(open(items_dir / "runewords.json", encoding="utf-8"))["runewords"]
+    charms = json.load(open(items_dir / "charms.json", encoding="utf-8"))
     tpl = (ROOT / "app" / "template.html").read_text(encoding="utf-8")
     out = tpl.replace("__SKILL_DATA__", minify(data))
     out = out.replace("__ITEM_DATA__", minify(items))
+    out = out.replace("__SETS_DATA__", minify(sets))
+    out = out.replace("__RW_DATA__", minify(rws))
+    out = out.replace("__CHARM_DATA__", minify(charms))
     (ROOT / "app" / "index.html").write_text(out, encoding="utf-8")
     print(f"app/index.html: {len(out):,} bytes")
 
