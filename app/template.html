@@ -1,0 +1,340 @@
+<title>D2R 스킬 사전</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+/* 레이아웃: 홈(클래스 선택+검색) → 클래스(트리 탭+그리드) → 스킬 상세. 다크 단일 테마(디아블로 월드). */
+:root{
+  --bg:#0c0907; --surface:#191210; --surface-2:#23191362; --raised:#241a13;
+  --border:#3b2d1e; --border-soft:#2a2016;
+  --text:#e9dec6; --muted:#a08c6c; --faint:#6d5c44;
+  --gold:#d4af5e; --gold-dim:#8a7239; --ember:#a33b2e;
+  --fire:#e07840; --cold:#6fb3e0; --ltng:#e8d36b; --pois:#8fc46a; --mag:#c58ae0; --phys:#c9b08a;
+  color-scheme:dark;
+}
+html,body{background:var(--bg)}
+body{
+  color:var(--text); margin:0;
+  font-family:"Noto Sans KR",-apple-system,"Apple SD Gothic Neo",sans-serif;
+  font-size:15px; line-height:1.55; -webkit-text-size-adjust:100%;
+}
+.en{font-family:Cinzel,Georgia,serif}
+button{font:inherit;color:inherit;background:none;border:none;padding:0;cursor:pointer;text-align:inherit}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:4px}
+img{max-width:100%}
+
+.hdr{
+  position:sticky; top:env(safe-area-inset-top,0px); z-index:20;
+  display:flex; align-items:center; gap:.5rem;
+  background:linear-gradient(#1b130e,#151009); border-bottom:1px solid var(--border);
+  padding:.55rem .75rem;
+}
+.hdr .back{
+  flex:none; width:2.4rem; height:2.4rem; display:grid; place-items:center;
+  color:var(--gold); font-size:1.5rem; line-height:1; border-radius:8px;
+}
+.hdr .back[hidden]{display:none!important}
+.hdr-title{min-width:0; flex:1}
+.hdr-title .t1{font-weight:700; font-size:1.02rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.hdr-title .t2{color:var(--muted); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase}
+.wrap{max-width:720px; margin:0 auto; padding:1rem 1rem calc(env(safe-area-inset-bottom,0px) + 2.5rem)}
+
+/* ─ 홈 ─ */
+.search{
+  width:100%; box-sizing:border-box; font-size:1rem; color:var(--text);
+  background:var(--surface); border:1px solid var(--border); border-radius:10px;
+  padding:.7rem .9rem;
+}
+.search::placeholder{color:var(--faint)}
+.home-note{color:var(--faint); font-size:.8rem; margin:.5rem 0 1rem}
+.class-grid{display:grid; grid-template-columns:1fr 1fr; gap:.6rem; margin-top:.4rem}
+.class-card{
+  display:flex; align-items:center; gap:.7rem;
+  background:var(--surface); border:1px solid var(--border); border-radius:12px;
+  padding:.7rem .8rem; min-height:3.2rem;
+}
+.class-card:active{background:var(--raised)}
+.class-card img{flex:none; width:2.6rem; height:2.6rem; border-radius:8px; border:1px solid var(--border-soft)}
+.class-card .nm{font-weight:700}
+.class-card .en{display:block; color:var(--muted); font-size:.7rem; letter-spacing:.06em}
+.sec-label{
+  color:var(--gold); font-size:.78rem; letter-spacing:.14em; text-transform:uppercase;
+  margin:1.4rem 0 .5rem; font-family:Cinzel,Georgia,serif; font-weight:700;
+}
+.sec-label:first-child{margin-top:.2rem}
+
+/* ─ 검색 결과/스킬 행 ─ */
+.rows{display:grid; gap:.45rem; margin:0; padding:0; list-style:none}
+.row{
+  display:flex; align-items:center; gap:.65rem; width:100%; box-sizing:border-box;
+  background:var(--surface); border:1px solid var(--border-soft); border-radius:10px;
+  padding:.5rem .65rem;
+}
+.row:active{border-color:var(--gold-dim)}
+.row img{flex:none; width:2.4rem; height:2.4rem; border-radius:6px}
+.row .b{min-width:0; flex:1}
+.row .nm{font-weight:500}
+.row .sub{color:var(--muted); font-size:.78rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.row .lv{flex:none; color:var(--faint); font-size:.75rem}
+.empty{color:var(--muted); text-align:center; padding:2.2rem 0}
+
+/* ─ 클래스: 트리 탭 ─ */
+.tabs{display:flex; gap:.35rem; margin:.2rem 0 .9rem}
+.tab{
+  flex:1; text-align:center; padding:.5rem .3rem; font-size:.85rem; font-weight:500;
+  color:var(--muted); background:var(--surface); border:1px solid var(--border-soft); border-radius:9px;
+}
+.tab.on{color:var(--text); border-color:var(--gold-dim); background:var(--raised); box-shadow:inset 0 0 0 1px #d4af5e22}
+.tree-note{color:var(--faint); font-size:.75rem; text-align:center; margin:.6rem 0 0}
+
+/* ─ 스킬 트리 그리드 (3열 × 6행, 인게임 배치) ─ */
+.tree{
+  position:relative; border:1px solid var(--border); border-radius:14px;
+  background:radial-gradient(120% 90% at 50% 0%, #1d140d 0%, #120d08 70%);
+  padding:.9rem .5rem 1.1rem;
+}
+.tree svg.links{position:absolute; inset:.9rem .5rem 1.1rem; width:calc(100% - 1rem); height:calc(100% - 2rem); pointer-events:none}
+.tree svg.links line{stroke:#d4af5e55; stroke-width:2}
+.tree-grid{position:relative; display:grid; grid-template-columns:repeat(3,1fr); grid-template-rows:repeat(6,1fr); gap:0}
+.node{
+  grid-column:var(--c); grid-row:var(--r);
+  display:flex; flex-direction:column; align-items:center; gap:.3rem;
+  padding:.45rem .15rem; min-width:0; border-radius:10px;
+}
+.node:active{background:#d4af5e14}
+.node img{width:3.1rem; height:3.1rem; border-radius:8px; border:1px solid var(--border); box-shadow:0 2px 6px #0009}
+.node .nm{font-size:.72rem; line-height:1.25; text-align:center; color:var(--text); text-wrap:balance}
+.node .rq{font-size:.66rem; color:var(--faint)}
+@media (max-width:420px){ .node img{width:2.7rem;height:2.7rem} .node .nm{font-size:.68rem} }
+
+/* ─ 상세 ─ */
+.d-head{display:flex; align-items:center; gap:.9rem; margin:.3rem 0 1rem}
+.d-head img{width:4.4rem; height:4.4rem; border-radius:12px; border:1px solid var(--border); box-shadow:0 3px 10px #000b}
+.d-head h1{margin:0; font-size:1.35rem; line-height:1.3}
+.d-head .en{color:var(--muted); font-size:.85rem}
+.badges{display:flex; flex-wrap:wrap; gap:.4rem; margin:.8rem 0}
+.badge{
+  font-size:.76rem; padding:.18rem .55rem; border-radius:999px;
+  background:var(--surface-2); border:1px solid var(--border-soft); color:var(--muted);
+}
+.badge b{color:var(--text); font-weight:500}
+.badge.elem-fire b{color:var(--fire)} .badge.elem-cold b{color:var(--cold)}
+.badge.elem-ltng b{color:var(--ltng)} .badge.elem-pois b{color:var(--pois)}
+.badge.elem-mag b{color:var(--mag)} .badge.elem-phys b{color:var(--phys)}
+.desc{margin:.9rem 0; padding:.8rem .9rem; background:var(--surface); border:1px solid var(--border-soft); border-radius:10px}
+.desc .ko{margin:0}
+.desc .en{display:block; color:var(--faint); font-size:.8rem; margin-top:.5rem; font-family:inherit; font-style:italic}
+.chips{display:flex; flex-wrap:wrap; gap:.45rem; margin:.4rem 0 0; padding:0; list-style:none}
+.chip{
+  display:flex; align-items:center; gap:.45rem;
+  background:var(--surface); border:1px solid var(--border-soft); border-radius:999px;
+  padding:.28rem .75rem .28rem .3rem; font-size:.85rem;
+}
+.chip img{width:1.7rem; height:1.7rem; border-radius:50%}
+.chip:active{border-color:var(--gold-dim)}
+.chip.plain{padding:.28rem .75rem; color:var(--muted)}
+.d-sec{margin:1.3rem 0}
+.d-sec h2{
+  margin:0 0 .45rem; font-size:.82rem; color:var(--gold); font-weight:700;
+  letter-spacing:.12em; text-transform:uppercase; font-family:Cinzel,Georgia,serif;
+}
+.d-sec .hint{color:var(--faint); font-size:.78rem; margin:.35rem 0 0}
+.foot{color:var(--faint); font-size:.72rem; text-align:center; margin-top:2.5rem; line-height:1.7}
+.foot a{color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){
+  .view{animation:fade .18s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+}
+</style>
+
+<header class="hdr">
+  <button class="back" id="btnBack" hidden aria-label="뒤로">‹</button>
+  <div class="hdr-title">
+    <div class="t1" id="hdrT1">D2R 스킬 사전</div>
+    <div class="t2 en" id="hdrT2">Diablo II: Resurrected</div>
+  </div>
+</header>
+<main class="wrap" id="app"></main>
+
+<script>
+const DATA = __SKILL_DATA__;
+const CLASS_ORDER = ["amazon","assassin","barbarian","druid","necromancer","paladin","sorceress"];
+const CLASS_FACE = { // 홈 카드 대표 아이콘
+  amazon:"multiple-shot", assassin:"dragon-talon", barbarian:"whirlwind",
+  druid:"werewolf", necromancer:"raise-skeleton", paladin:"blessed-hammer", sorceress:"frozen-orb"
+};
+const ELEM_KO = {fire:"화염", cold:"냉기", ltng:"번개", pois:"독", mag:"마법", phys:"물리", stun:"기절"};
+
+const $app = document.getElementById("app");
+const $t1 = document.getElementById("hdrT1"), $t2 = document.getElementById("hdrT2");
+const $back = document.getElementById("btnBack");
+$back.addEventListener("click", () => history.back());
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const icon = (cls,id) => `assets/skills/${cls}/${id}.png`;
+const skillOf = (cls,id) => DATA[cls].skills.find(s => s.id===id);
+const tabState = {}; // 클래스별 마지막 탭
+
+function setHdr(t1,t2,showBack){ $t1.textContent=t1; $t2.textContent=t2; $back.hidden=!showBack; }
+
+/* ── 홈 ── */
+function renderHome(){
+  setHdr("D2R 스킬 사전","Diablo II: Resurrected",false);
+  const cards = CLASS_ORDER.map(c => {
+    const d = DATA[c];
+    return `<button class="class-card" data-go="c-${c}">
+      <img src="${icon(c,CLASS_FACE[c])}" alt="" loading="lazy">
+      <span><span class="nm">${esc(d.class_name_ko)}</span><span class="en">${esc(d.class_name_en)}</span></span>
+    </button>`;
+  }).join("");
+  $app.innerHTML = `<div class="view">
+    <input class="search" id="q" type="search" placeholder="스킬 검색 (한글/영문)" autocomplete="off">
+    <p class="home-note">전 클래스 210개 스킬 · 공식 한국어 명칭 기준</p>
+    <div id="searchOut"></div>
+    <div id="homeMain">
+      <div class="sec-label">Classes</div>
+      <div class="class-grid">${cards}</div>
+    </div>
+    <p class="foot">게임 데이터·아이콘 © Blizzard Entertainment.<br>비공식 팬 제작 · 비상업적 용도</p>
+  </div>`;
+  const q = document.getElementById("q");
+  q.addEventListener("input", () => doSearch(q.value.trim()));
+  q.value = "";
+}
+
+function doSearch(query){
+  const out = document.getElementById("searchOut");
+  const main = document.getElementById("homeMain");
+  if(!query){ out.innerHTML=""; main.hidden=false; return; }
+  main.hidden = true;
+  const ql = query.toLowerCase();
+  const hits = [];
+  for(const c of CLASS_ORDER){
+    for(const s of DATA[c].skills){
+      if(s.name_ko.includes(query) || s.name_en.toLowerCase().includes(ql)) hits.push([c,s]);
+      if(hits.length >= 40) break;
+    }
+  }
+  out.innerHTML = hits.length
+    ? `<ul class="rows">` + hits.map(([c,s]) => rowHtml(c,s,true)).join("") + `</ul>`
+    : `<p class="empty">"${esc(query)}" 검색 결과가 없습니다</p>`;
+}
+
+function rowHtml(c,s,withClass){
+  const sub = (withClass ? `${esc(DATA[c].class_name_ko)} · ` : "") + esc(s.tree.name_ko);
+  return `<li><button class="row" data-go="s-${c}-${s.id}">
+    <img src="${icon(c,s.id)}" alt="" loading="lazy">
+    <span class="b"><span class="nm">${esc(s.name_ko)} <span class="en" style="color:var(--faint);font-size:.74rem">${esc(s.name_en)}</span></span>
+    <span class="sub">${sub}</span></span>
+    <span class="lv">Lv ${s.required_level}</span>
+  </button></li>`;
+}
+
+/* ── 클래스: 트리 ── */
+function renderClass(cls){
+  const d = DATA[cls]; if(!d) return renderHome();
+  setHdr(d.class_name_ko, d.class_name_en, true);
+  const pages = [1,2,3].map(p => {
+    const first = d.skills.find(s => s.tree.page===p);
+    return {page:p, name:first.tree.name_ko};
+  });
+  const cur = tabState[cls] || 1;
+  $app.innerHTML = `<div class="view">
+    <div class="tabs" role="tablist">${pages.map(t =>
+      `<button class="tab${t.page===cur?" on":""}" role="tab" aria-selected="${t.page===cur}" data-tab="${t.page}">${esc(t.name)}</button>`).join("")}
+    </div>
+    <div id="treeBox"></div>
+    <p class="tree-note">아이콘을 누르면 상세 정보 · 금색 선은 선행 스킬 연결</p>
+  </div>`;
+  $app.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => {
+    tabState[cls] = +b.dataset.tab;
+    $app.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x===b));
+    drawTree(cls, +b.dataset.tab);
+  }));
+  drawTree(cls, cur);
+}
+
+function drawTree(cls, page){
+  const d = DATA[cls];
+  const skills = d.skills.filter(s => s.tree.page===page);
+  const byId = Object.fromEntries(skills.map(s => [s.id, s]));
+  // 선행스킬 연결선 (같은 트리 내)
+  const CW = 100, CH = 100; // 셀 크기 (viewBox 단위)
+  let lines = "";
+  for(const s of skills){
+    for(const p of s.prerequisites){
+      const from = byId[p.id]; if(!from) continue;
+      const x1=(from.position.col-0.5)*CW, y1=(from.position.row-0.5)*CH;
+      const x2=(s.position.col-0.5)*CW, y2=(s.position.row-0.5)*CH;
+      lines += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"/>`;
+    }
+  }
+  const nodes = skills.map(s => `
+    <button class="node" style="--c:${s.position.col};--r:${s.position.row}" data-go="s-${cls}-${s.id}">
+      <img src="${icon(cls,s.id)}" alt="" loading="lazy">
+      <span class="nm">${esc(s.name_ko)}</span>
+      <span class="rq">Lv ${s.required_level}</span>
+    </button>`).join("");
+  document.getElementById("treeBox").innerHTML = `<div class="tree">
+    <svg class="links" viewBox="0 0 300 600" preserveAspectRatio="none">${lines}</svg>
+    <div class="tree-grid">${nodes}</div>
+  </div>`;
+}
+
+/* ── 상세 ── */
+function renderSkill(cls,id){
+  const d = DATA[cls]; const s = d && skillOf(cls,id);
+  if(!s) return renderHome();
+  tabState[cls] = s.tree.page; // 트리로 돌아가면 이 스킬의 탭이 열리게
+  setHdr(d.class_name_ko, d.class_name_en, true);
+  const elemCls = s.element ? ` elem-${s.element}` : "";
+  const badges = [
+    `<span class="badge"><b>${esc(s.tree.name_ko)}</b></span>`,
+    `<span class="badge">요구 레벨 <b>${s.required_level}</b></span>`,
+    `<span class="badge">최대 레벨 <b>${s.max_level}</b></span>`,
+    s.element ? `<span class="badge${elemCls}">속성 <b>${ELEM_KO[s.element]||esc(s.element)}</b></span>` : "",
+    s.mana_cost != null ? `<span class="badge">마나 <b>${s.mana_cost}</b>${s.mana_per_level?` <span style="color:var(--faint)">+${s.mana_per_level}/Lv</span>`:""}</span>` : "",
+  ].join("");
+  const chip = r => `<li><button class="chip" data-go="s-${cls}-${r.id}">
+      <img src="${icon(cls,r.id)}" alt="">${esc(r.name_ko)}</button></li>`;
+  const dependents = d.skills.filter(x => x.prerequisites.some(p => p.id===s.id));
+  const sec = (title, items, hint) => items.length
+    ? `<div class="d-sec"><h2>${title}</h2><ul class="chips">${items.map(chip).join("")}</ul>${hint?`<p class="hint">${hint}</p>`:""}</div>`
+    : "";
+  $app.innerHTML = `<div class="view">
+    <div class="d-head">
+      <img src="${icon(cls,s.id)}" alt="">
+      <div><h1>${esc(s.name_ko)}</h1><span class="en">${esc(s.name_en)}</span></div>
+    </div>
+    <div class="badges">${badges}</div>
+    <div class="desc"><p class="ko">${esc(s.description_ko)}</p>${s.description_en?`<span class="en">${esc(s.description_en)}</span>`:""}</div>
+    ${s.description_long_ko && s.description_long_ko!==s.description_ko ? `<div class="desc"><p class="ko">${esc(s.description_long_ko)}</p></div>`:""}
+    ${sec("선행 스킬", s.prerequisites)}
+    ${sec("시너지", s.synergies, "이 스킬들에 투자하면 효과가 강해집니다 (게임 수식 기준)")}
+    ${sec("이 스킬이 필요한 스킬", dependents.map(x=>({id:x.id,name_ko:x.name_ko})))}
+    <div class="d-sec"><h2>Tree</h2>
+      <ul class="chips"><li><button class="chip plain" data-go="c-${cls}">${esc(d.class_name_ko)} · ${esc(s.tree.name_ko)} 트리 보기</button></li></ul>
+    </div>
+  </div>`;
+}
+
+/* ── 라우터 ── */
+function route(){
+  const h = location.hash.replace(/^#/,"");
+  window.scrollTo(0,0);
+  if(h.startsWith("c-")){
+    renderClass(h.slice(2));
+  } else if(h.startsWith("s-")){
+    const rest = h.slice(2);
+    const cls = CLASS_ORDER.find(c => rest.startsWith(c+"-"));
+    if(cls) return renderSkill(cls, rest.slice(cls.length+1));
+    renderHome();
+  } else {
+    renderHome();
+  }
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-go]");
+  if(b){ location.hash = b.dataset.go; }
+});
+window.addEventListener("hashchange", route);
+route();
+</script>

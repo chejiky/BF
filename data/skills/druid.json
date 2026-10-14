@@ -45,9 +45,9 @@
       "description_en": "summon ravens to peck out the eyes of your enemies"
     },
     {
-      "id": "werewolf",
-      "name_en": "Werewolf",
-      "name_ko": "워울프",
+      "id": "poison-creeper",
+      "name_en": "Poison Creeper",
+      "name_ko": "포이즌 크리퍼",
       "tree": {
         "page": 1,
         "name_en": "Summoning",
@@ -71,8 +71,8 @@
           "name_ko": "레이비즈"
         }
       ],
-      "description_ko": "워울프로 변신",
-      "description_en": "transform into a werewolf"
+      "description_ko": "적을 공격하는 독성 덩굴을 소환함",
+      "description_en": "summons a poisonous vine to attack your enemies"
     },
     {
       "id": "oak-sage",
@@ -149,9 +149,9 @@
       "element": null,
       "prerequisites": [
         {
-          "id": "werewolf",
-          "name_en": "Werewolf",
-          "name_ko": "워울프"
+          "id": "poison-creeper",
+          "name_en": "Poison Creeper",
+          "name_ko": "포이즌 크리퍼"
         }
       ],
       "synergies": [],
@@ -479,9 +479,9 @@
       ],
       "synergies": [
         {
-          "id": "werewolf",
-          "name_en": "Werewolf",
-          "name_ko": "워울프"
+          "id": "poison-creeper",
+          "name_en": "Poison Creeper",
+          "name_ko": "포이즌 크리퍼"
         }
       ],
       "description_ko": "워울프상태일때, 적을 물어뜯어 다른적에게도 전염시키는 일격을 가함",

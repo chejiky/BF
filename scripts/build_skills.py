@@ -32,6 +32,17 @@ CLASS_TAB_KEY = {
 
 SYNERGY_RE = re.compile(r"skill\('([^']+)'\.blvl\)")
 
+# 원본 게임 데이터 퀴크: Poison Creeper(내부명 Plague Poppy)의 skilldesc가
+# 워울프 문자열(Skillname223 등)을 가리킨다. 실제 이름은 UI 문자열 strUI8에 있고
+# 전용 설명 문자열은 존재하지 않아 설명만 수동으로 보충한다.
+OVERRIDES = {
+    "Plague Poppy": {
+        "name_key": "strUI8",
+        "description_ko": "적을 공격하는 독성 덩굴을 소환함",
+        "description_en": "summons a poisonous vine to attack your enemies",
+    },
+}
+
 
 def slugify(name: str) -> str:
     s = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
@@ -106,7 +117,8 @@ def main():
         if s:
             d = desc_by_name.get(s.get("skilldesc", ""))
             if d:
-                nk = d.get("str name", "")
+                ov = OVERRIDES.get(skill_key, {})
+                nk = ov.get("name_key") or d.get("str name", "")
                 en_name = eng.get(nk, skill_key).strip()
                 ko_name = kor.get(nk, en_name).strip()
                 res = {"id": slugify(en_name), "name_en": en_name, "name_ko": ko_name}
@@ -126,7 +138,8 @@ def main():
             if not d or not d.get("SkillPage"):
                 continue
 
-            nk, sk = d.get("str name", ""), d.get("str short", "")
+            ov = OVERRIDES.get(skill_key, {})
+            nk, sk = ov.get("name_key") or d.get("str name", ""), d.get("str short", "")
             lk = d.get("str long", sk)
             page = d["SkillPage"]
             # SkillPage(1~3)와 SkillCategory 번호는 서로 역순이다
@@ -160,11 +173,11 @@ def main():
                 "element": s.get("EType"),
                 "prerequisites": [display_names(p) for p in prereqs],
                 "synergies": [display_names(x) for x in syn],
-                "description_ko": fix_lines(ko_str(sk)),
-                "description_en": fix_lines(eng.get(sk, "")),
+                "description_ko": ov.get("description_ko") or fix_lines(ko_str(sk)),
+                "description_en": ov.get("description_en") or fix_lines(eng.get(sk, "")),
             }
             lk_ko = fix_lines(ko_str(lk))
-            if lk != sk and lk_ko and lk_ko != entry["description_ko"]:
+            if not ov and lk != sk and lk_ko and lk_ko != entry["description_ko"]:
                 entry["description_long_ko"] = lk_ko
             cls_skills.append(entry)
 
