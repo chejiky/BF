@@ -226,6 +226,24 @@ details.cat summary .cnt{color:var(--faint); font-size:.78rem; font-weight:400}
 .lv-bar input[type=range]{flex:1 1 10rem; accent-color:var(--gold); min-width:8rem}
 .lv-quick{display:flex; gap:.3rem} .lv-quick .chip{padding:.2rem .55rem; font-size:.8rem}
 .lv-quick .chip.on{color:var(--text); border-color:var(--gold-dim); background:var(--raised)}
+/* ─ 시너지 계산기 ─ */
+.syn-calc{margin:.7rem 0 .2rem; padding:.55rem .75rem; background:var(--surface-2); border:1px solid var(--border-soft); border-radius:10px}
+.syn-head{display:flex; align-items:center; gap:.4rem; margin-bottom:.3rem}
+.syn-head h3{flex:1; margin:0; font-size:.88rem; font-weight:600; color:var(--muted)}
+.syn-head .chip{padding:.22rem .55rem; font-size:.78rem}
+.syn-row{display:flex; align-items:center; gap:.55rem; padding:.3rem 0}
+.syn-row+.syn-row{border-top:1px solid var(--border-soft)}
+.syn-row .sicon{width:2rem; height:2rem; border-radius:6px}
+.syn-row .nm{flex:1; font-size:.92rem}
+.stp{display:flex; align-items:center; gap:.2rem}
+.stp button{width:2.1rem; height:2.1rem; border-radius:8px; border:1px solid var(--border);
+  background:var(--raised); color:var(--text); font-size:1.1rem; line-height:1; cursor:pointer}
+.stp button:active{background:var(--gold-dim)}
+.stp b{min-width:1.7rem; text-align:center; color:var(--gold); font-size:1rem}
+.syn-up{color:var(--gold); font-weight:600}
+.syn-sum{margin:.4rem 0 0; font-size:.85rem; color:var(--gold)}
+.syn-sum:empty{display:none}
+.syn-calc .hint{margin:.35rem 0 0}
 .aff-note{color:var(--muted); font-size:.85rem; background:var(--surface-2); border-radius:10px; padding:.6rem .8rem; margin:.4rem 0 1rem}
 .foot{color:var(--faint); font-size:.72rem; text-align:center; margin-top:2.5rem; line-height:1.7}
 .foot a{color:var(--muted)}
@@ -472,12 +490,12 @@ function renderSkill(cls,id){
     <div class="badges">${badges}</div>
     <div class="desc"><p class="ko">${esc(s.description_ko)}</p>${s.description_en?`<span class="en">${esc(s.description_en)}</span>`:""}</div>
     ${s.description_long_ko && s.description_long_ko!==s.description_ko ? `<div class="desc"><p class="ko">${esc(s.description_long_ko)}</p></div>`:""}
-    ${tooltipHtml(s)}
+    ${tooltipHtml(cls, s)}
     ${sec("선행 스킬", s.prerequisites)}
     ${s.tooltip && s.tooltip.synergies.length ? `<div class="d-sec"><h2>시너지</h2>
       <ul class="props">${s.tooltip.synergies.map((t,i)=>`<li${i===0?' class="base-stat" style="color:var(--gold)"':""}>${esc(t)}</li>`).join("")}</ul>
       ${s.synergies.length?`<ul class="chips" style="margin-top:.5rem">${s.synergies.map(chip).join("")}</ul>`:""}
-      <p class="hint">시너지 스킬에 투자한 레벨 × 위 퍼센트만큼 추가됩니다 (하드 포인트 기준)</p></div>`
+      <p class="hint">시너지 스킬에 투자한 레벨 × 위 퍼센트만큼 추가됩니다 (하드 포인트 기준). 위의 "시너지 투자"에 레벨을 입력하면 수치에 바로 반영됩니다.</p></div>`
       : sec("시너지", s.synergies, "이 스킬들에 투자하면 효과가 강해집니다 (게임 수식 기준)")}
     ${sec("이 스킬이 필요한 스킬", dependents.map(x=>({id:x.id,name_ko:x.name_ko})))}
     <div class="d-sec"><h2>Tree</h2>
@@ -487,13 +505,116 @@ function renderSkill(cls,id){
   bindTooltip(s);
 }
 
-// 레벨별 수치 블록 (슬라이더 + 인게임 툴팁 문구)
-function tooltipHtml(s){
+/* ── 시너지 계산기 ──
+   시너지 문구 "스킬명: 레벨당 <스탯> +N%"를 해석해, 투자 레벨만큼 레벨별 수치 줄에 반영 */
+const SYN_LINE = /^(.+?): 레벨당 (.+?) \+([\d.]+)%$/;
+// 시너지 스탯이 어떤 수치 줄(fmt)에 어떻게 적용되는지. mult=기본값×(1+%), add=퍼센트 숫자에 합산. null=해당 없음
+function synMode(stat, fmt, fmts){
+  const label = fmt.split(":")[0].trim();
+  const pct = /%\+?d%%/.test(fmt); // "+N%" 형태의 줄
+  const dmgOf = e => label===e+" 피해" || label===e+" 폭발 피해";
+  switch(stat){
+    case "화염 피해": return dmgOf("화염") ? (pct?"add":"mult") : null;
+    case "번개 피해": return dmgOf("번개") ? (pct?"add":"mult") : null;
+    case "냉기 피해": return dmgOf("냉기") ? (pct?"add":"mult") : null;
+    case "마법 피해": return dmgOf("마법") ? (pct?"add":"mult") : null;
+    case "독 피해":   return dmgOf("독")   ? (pct?"add":"mult") : null;
+    case "피해": {
+      // 공격력(물리) 줄이 있으면 거기에만 (볼케이노: 물리/화염 시너지 분리),
+      // 없으면 이 스킬의 피해 줄에 적용 (허리케인의 냉기 피해, 회오리 갑옷의 피해 흡수)
+      if(label==="공격력") return pct?"add":"mult";
+      if(fmts.some(f => f.split(":")[0].trim()==="공격력")) return null;
+      if(/^(화염|냉기|번개|마법|독) 피해$/.test(label)) return "mult";
+      if(fmt==="%d의 피해 흡수") return "mult";
+      return null;
+    }
+    case "원소 피해": return pct && ["화염 피해","냉기 피해","번개 피해"].includes(label) ? "add" : null;
+    case "빙결 지속시간": return fmt.includes("동안 빙결") ? "mult" : null;
+    case "지속시간": return (label==="지속시간"||label==="기절 지속시간") ? "mult" : null;
+    case "초당 평균 마법 피해": return label==="마법 피해" ? "mult" : null;
+    case "생명력": return label==="생명력" ? (pct?"add":"mult") : null;
+    case "생명력 치유": return label==="치유" ? "mult" : null;
+    case "명중률": return label==="명중률" ? (pct?"add":"mult") : null;
+    case "방어력": return label==="방어력" ? (pct?"add":"mult") : null;
+    case "확률": return fmt==="%d%% 확률" ? "add" : null;
+    case "악마 속박 확률": return label==="속박 확률" ? "add" : null;
+    case "분출 확률": return label==="분출 확률" ? "add" : null;
+  }
+  return null;
+}
+// 스킬의 시너지 소스 목록: [{name, effects:[{line, mode, pct, stat}]}] (계산 가능한 것만)
+function synSources(s){
+  if(s._synSrc) return s._synSrc;
+  const t = s.tooltip, by = new Map(), un = [];
+  if(t && t.synergies){
+    const fmts = t.per_level.map(l => l.fmt);
+    for(const line of t.synergies){
+      const m = line.match(SYN_LINE); if(!m) continue;
+      const [, name, stat, pctS] = m, pct = +pctS;
+      const effects = [];
+      fmts.forEach((f,i) => { const mode = synMode(stat, f, fmts); if(mode) effects.push({line:i, mode, pct, stat}); });
+      if(!effects.length){ un.push(`${name}(${stat})`); continue; }
+      if(!by.has(name)) by.set(name, {name, effects:[]});
+      by.get(name).effects.push(...effects);
+    }
+  }
+  s._synSrc = [...by.values()];
+  s._synUn = [...new Set(un)];
+  return s._synSrc;
+}
+// 현재 레벨 + 시너지 투자 상태로 수치 줄과 합계 다시 그리기
+function updateTip(s){
+  const t = s.tooltip, lv = s._lv||1, inv = s._syn||{};
+  const lis = document.querySelectorAll("#tipLines li[data-fmt]");
+  const mult = t.per_level.map(()=>0), add = t.per_level.map(()=>0);
+  for(const src of synSources(s)){
+    const n = inv[src.name]||0; if(!n) continue;
+    for(const e of src.effects) (e.mode==="mult" ? mult : add)[e.line] += e.pct*n;
+  }
+  t.per_level.forEach((l,i) => {
+    const li = lis[i]; if(!li) return;
+    const base = l.v[lv-1];
+    if(!mult[i] && !add[i]){ li.textContent = sprintf(l.fmt, base); return; }
+    const vals = base.map(v => typeof v!=="number" ? v
+      : mult[i] ? (Number.isInteger(v) ? Math.floor(v*(1+mult[i]/100)) : +(v*(1+mult[i]/100)).toFixed(1))
+      : +(v + add[i]).toFixed(1));
+    const j = l.fmt.indexOf(": ");
+    li.innerHTML = `${esc(sprintf(l.fmt, base))} <span class="syn-up">▶ ${esc(sprintf(j>0 ? l.fmt.slice(j+2) : l.fmt, vals))}</span>`;
+  });
+  const sumEl = document.getElementById("synSum");
+  if(sumEl){
+    const sums = {};
+    for(const src of synSources(s)){
+      const n = inv[src.name]||0; if(!n) continue;
+      const seen = new Set();
+      for(const e of src.effects){ if(seen.has(e.stat)) continue; seen.add(e.stat); sums[e.stat]=(sums[e.stat]||0)+e.pct*n; }
+    }
+    const parts = Object.entries(sums).map(([k,v]) => `${k} +${+v.toFixed(1)}%`);
+    sumEl.textContent = parts.length ? "시너지 합계: " + parts.join(" · ") : "";
+  }
+}
+// 레벨별 수치 블록 (슬라이더 + 인게임 툴팁 문구 + 시너지 계산기)
+function tooltipHtml(cls, s){
   const t = s.tooltip;
   if(!t || (!t.per_level.length && !t.static.length)) return "";
   const lv = s._lv || 1;
   const lines = t.per_level.map(l => `<li data-fmt="${esc(l.fmt)}">${esc(sprintf(l.fmt, l.v[lv-1]))}</li>`).join("");
   const stat = t.static.map(x => `<li class="base-stat">${esc(x)}</li>`).join("");
+  const srcs = synSources(s);
+  const inv = s._syn || (s._syn = {});
+  const d = DATA[cls];
+  const calc = srcs.length ? `<div class="syn-calc" id="synCalc">
+      <div class="syn-head"><h3>시너지 투자</h3>
+        <button class="chip plain" data-synall="20">모두 20</button>
+        <button class="chip plain" data-synall="0">초기화</button></div>
+      ${srcs.map((src,i) => {
+        const ref = d.skills.find(x => x.name_ko===src.name);
+        return `<div class="syn-row">${ref?iconHtml(cls,ref.id):""}<span class="nm">${esc(src.name)}</span>
+          <span class="stp"><button data-si="${i}" data-d="-1" aria-label="${esc(src.name)} 감소">−</button><b>${inv[src.name]||0}</b><button data-si="${i}" data-d="1" aria-label="${esc(src.name)} 증가">＋</button></span></div>`;
+      }).join("")}
+      <p class="syn-sum" id="synSum"></p>
+      ${s._synUn.length ? `<p class="hint">계산 미지원: ${s._synUn.map(esc).join(", ")}</p>` : ""}
+    </div>` : "";
   return `<div class="d-sec" id="tipBox">
     <h2>레벨별 수치</h2>
     <div class="lv-bar">
@@ -502,21 +623,39 @@ function tooltipHtml(s){
       <div class="lv-quick">${[1,5,10,15,20].map(n=>`<button class="chip plain${n===lv?" on":""}" data-lv="${n}">${n}</button>`).join("")}</div>
     </div>
     <ul class="props" id="tipLines">${lines}${stat}</ul>
-    <p class="hint">스킬 레벨만 반영한 기본 수치 (시너지·숙련·장비 보너스 제외). 게임 툴팁과 같은 수식으로 계산.</p>
+    ${calc}
+    <p class="hint">스킬 레벨과 시너지 투자만 반영한 수치 (숙련·장비 보너스 제외). 게임 툴팁과 같은 수식으로 계산.</p>
   </div>`;
 }
 function bindTooltip(s){
   const slider = document.getElementById("lvSlider"); if(!slider) return;
-  const apply = lv => {
+  const setLv = lv => {
     s._lv = lv; slider.value = lv;
     document.getElementById("lvNum").textContent = lv;
-    const t = s.tooltip;
-    const lis = document.querySelectorAll("#tipLines li[data-fmt]");
-    t.per_level.forEach((l, i) => { if(lis[i]) lis[i].textContent = sprintf(l.fmt, l.v[lv-1]); });
     document.querySelectorAll("#tipBox .lv-quick .chip").forEach(b => b.classList.toggle("on", +b.dataset.lv===lv));
+    updateTip(s);
   };
-  slider.addEventListener("input", () => apply(+slider.value));
-  document.querySelectorAll("#tipBox .lv-quick [data-lv]").forEach(b => b.addEventListener("click", () => apply(+b.dataset.lv)));
+  slider.addEventListener("input", () => setLv(+slider.value));
+  document.querySelectorAll("#tipBox .lv-quick [data-lv]").forEach(b => b.addEventListener("click", () => setLv(+b.dataset.lv)));
+  const calc = document.getElementById("synCalc");
+  if(calc){
+    const srcs = synSources(s), inv = s._syn;
+    calc.addEventListener("click", e => {
+      const b = e.target.closest("button"); if(!b) return;
+      if(b.dataset.synall !== undefined){
+        const v = +b.dataset.synall;
+        srcs.forEach(src => inv[src.name] = v);
+        calc.querySelectorAll(".syn-row b").forEach(el => el.textContent = v);
+      } else if(b.dataset.si !== undefined){
+        const src = srcs[+b.dataset.si];
+        const v = Math.max(0, Math.min(20, (inv[src.name]||0) + +b.dataset.d));
+        inv[src.name] = v;
+        b.parentElement.querySelector("b").textContent = v;
+      } else return;
+      updateTip(s);
+    });
+  }
+  updateTip(s); // 이전에 입력해 둔 투자 상태 반영
 }
 
 /* ── 유니크 아이템 ── */
