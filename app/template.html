@@ -137,6 +137,40 @@ img{max-width:100%}
   letter-spacing:.12em; text-transform:uppercase; font-family:Cinzel,Georgia,serif;
 }
 .d-sec .hint{color:var(--faint); font-size:.78rem; margin:.35rem 0 0}
+
+/* ─ 유니크 아이템 ─ */
+.kind-grid{display:grid; grid-template-columns:1fr 1fr 1fr; gap:.6rem; margin-top:.4rem}
+.kind-card{
+  display:flex; flex-direction:column; align-items:center; gap:.15rem; text-align:center;
+  background:var(--surface); border:1px solid var(--border); border-radius:12px;
+  padding:.8rem .4rem;
+}
+.kind-card:active{background:var(--raised)}
+.kind-card .nm{font-weight:700; color:var(--gold)}
+.kind-card .cnt{color:var(--faint); font-size:.75rem}
+.cat-head{
+  color:var(--gold); font-size:.8rem; font-weight:700; letter-spacing:.1em;
+  margin:1.3rem 0 .5rem; padding-bottom:.25rem; border-bottom:1px solid var(--border-soft);
+}
+.cat-head:first-child{margin-top:.2rem}
+.row .thumb-i{flex:none; width:2.6rem; height:3.2rem; display:grid; place-items:center}
+.row .thumb-i img{max-width:2.6rem; max-height:3.2rem; width:auto; height:auto}
+.tier{font-size:.68rem; padding:.05rem .4rem; border-radius:5px; border:1px solid var(--border-soft); color:var(--faint); white-space:nowrap}
+.tier.elite{color:var(--gold); border-color:var(--gold-dim)}
+.tier.exceptional{color:var(--text)}
+.i-head{display:flex; align-items:center; gap:1rem; margin:.3rem 0 .8rem}
+.i-head .pic{flex:none; width:5.2rem; height:6.4rem; display:grid; place-items:center;
+  background:radial-gradient(80% 80% at 50% 40%, #241a12 0%, #140e09 100%);
+  border:1px solid var(--border); border-radius:12px}
+.i-head .pic img{max-width:4.6rem; max-height:5.8rem; width:auto; height:auto}
+.i-head h1{margin:0; font-size:1.3rem; line-height:1.3; color:var(--gold)}
+.i-head .base{color:var(--muted); font-size:.9rem}
+.i-head .en{color:var(--faint); font-size:.8rem; display:block}
+.props{margin:.9rem 0; padding:.85rem 1rem; background:var(--surface);
+  border:1px solid var(--border-soft); border-radius:10px; list-style:none}
+.props li{color:#7f9ddb; padding:.14rem 0; font-size:.94rem}
+.props li.req{color:var(--muted); font-size:.85rem}
+.props li.base-stat{color:var(--text)}
 .foot{color:var(--faint); font-size:.72rem; text-align:center; margin-top:2.5rem; line-height:1.7}
 .foot a{color:var(--muted)}
 @media (prefers-reduced-motion:no-preference){
@@ -156,6 +190,10 @@ img{max-width:100%}
 
 <script>
 const DATA = __SKILL_DATA__;
+const ITEMS = __ITEM_DATA__;
+const ITEM_BY_ID = Object.fromEntries(ITEMS.map(e => [e.id, e]));
+const KIND_KO = {weapon:"무기", armor:"방어구", misc:"장신구·기타"};
+const TIER_KO = {normal:"노멀", exceptional:"익셉셔널", elite:"엘리트"};
 const CLASS_ORDER = ["amazon","assassin","barbarian","druid","necromancer","paladin","sorceress","warlock"];
 const CLASS_FACE = { // 홈 카드 대표 아이콘
   amazon:"multiple-shot", assassin:"dragon-talon", barbarian:"whirlwind",
@@ -193,6 +231,12 @@ function renderHome(){
     <div id="homeMain">
       <div class="sec-label">Classes</div>
       <div class="class-grid">${cards}</div>
+      <div class="sec-label">Unique Items</div>
+      <div class="kind-grid">${["weapon","armor","misc"].map(k => {
+        const n = ITEMS.filter(e => e.kind===k).length;
+        return `<button class="kind-card" data-go="u-${k}">
+          <span class="nm">${KIND_KO[k]}</span><span class="cnt">${n}개</span></button>`;
+      }).join("")}</div>
     </div>
     <p class="foot">게임 데이터·아이콘 © Blizzard Entertainment.<br>비공식 팬 제작 · 비상업적 용도</p>
   </div>`;
@@ -211,12 +255,18 @@ function doSearch(query){
   for(const c of CLASS_ORDER){
     for(const s of DATA[c].skills){
       if(s.name_ko.includes(query) || s.name_en.toLowerCase().includes(ql)) hits.push([c,s]);
-      if(hits.length >= 40) break;
+      if(hits.length >= 30) break;
     }
   }
-  out.innerHTML = hits.length
-    ? `<ul class="rows">` + hits.map(([c,s]) => rowHtml(c,s,true)).join("") + `</ul>`
-    : `<p class="empty">"${esc(query)}" 검색 결과가 없습니다</p>`;
+  const ihits = ITEMS.filter(e =>
+    e.name_ko.includes(query) || e.name_en.toLowerCase().includes(ql) ||
+    e.base.name_ko.includes(query)).slice(0, 30);
+  let html = "";
+  if(hits.length) html += `<div class="sec-label">스킬</div><ul class="rows">` +
+    hits.map(([c,s]) => rowHtml(c,s,true)).join("") + `</ul>`;
+  if(ihits.length) html += `<div class="sec-label">유니크 아이템</div><ul class="rows">` +
+    ihits.map(itemRowHtml).join("") + `</ul>`;
+  out.innerHTML = html || `<p class="empty">"${esc(query)}" 검색 결과가 없습니다</p>`;
 }
 
 function rowHtml(c,s,withClass){
@@ -317,12 +367,78 @@ function renderSkill(cls,id){
   </div>`;
 }
 
+/* ── 유니크 아이템 ── */
+function itemRowHtml(e){
+  const img = e.image_src ? `<img src="assets/items/${e.image_src}" alt="" loading="lazy">` : "";
+  return `<li><button class="row" data-go="i-${e.id}">
+    <span class="thumb-i">${img}</span>
+    <span class="b"><span class="nm" style="color:var(--gold)">${esc(e.name_ko)}</span>
+    <span class="sub">${esc(e.base.name_ko)} · ${TIER_KO[e.tier]||e.tier}</span></span>
+    <span class="lv">Lv ${e.required_level}</span>
+  </button></li>`;
+}
+
+function renderItemList(kind){
+  setHdr(`유니크 ${KIND_KO[kind]||""}`, "Unique Items", true);
+  const list = ITEMS.filter(e => e.kind===kind);
+  if(!list.length) return renderHome();
+  const cats = [];
+  for(const e of list){ if(!cats.includes(e.category_ko)) cats.push(e.category_ko); }
+  cats.sort((a,b)=>a.localeCompare(b,"ko"));
+  let html = `<div class="view">`;
+  for(const c of cats){
+    const rows = list.filter(e => e.category_ko===c)
+      .sort((a,b)=>a.required_level-b.required_level);
+    html += `<div class="cat-head">${esc(c)} <span style="color:var(--faint);font-weight:400">(${rows.length})</span></div>
+      <ul class="rows">${rows.map(itemRowHtml).join("")}</ul>`;
+  }
+  $app.innerHTML = html + `</div>`;
+}
+
+function renderItem(id){
+  const e = ITEM_BY_ID[id];
+  if(!e) return renderHome();
+  setHdr(`유니크 ${KIND_KO[e.kind]||""}`, "Unique Items", true);
+  const img = e.image_src ? `<img src="assets/items/${e.image_src}" alt="">` : "";
+  const reqs = [];
+  if(e.base_damage){
+    for(const [k,v] of Object.entries(e.base_damage)){
+      reqs.push(`<li class="base-stat">${k==="two_hand"?"양손":"한손"} 데미지: ${v[0]}–${v[1]}</li>`);
+    }
+  }
+  if(e.base_defense) reqs.push(`<li class="base-stat">방어력: ${e.base_defense[0]}–${e.base_defense[1]}</li>`);
+  if(e.required_strength) reqs.push(`<li class="req">필요 힘: ${e.required_strength}</li>`);
+  if(e.required_dexterity) reqs.push(`<li class="req">필요 민첩성: ${e.required_dexterity}</li>`);
+  reqs.push(`<li class="req">착용 레벨: ${e.required_level}</li>`);
+  $app.innerHTML = `<div class="view">
+    <div class="i-head">
+      <span class="pic">${img}</span>
+      <div><h1>${esc(e.name_ko)}</h1>
+        <span class="base">${esc(e.base.name_ko)}</span>
+        <span class="en">${esc(e.name_en)} · ${esc(e.base.name_en)}</span></div>
+    </div>
+    <div class="badges">
+      <span class="badge"><b>${esc(e.category_ko)}</b></span>
+      <span class="badge">등급 <b>${TIER_KO[e.tier]||e.tier}</b></span>
+      <span class="badge">아이템 레벨 <b>${e.item_level??"-"}</b></span>
+    </div>
+    <ul class="props">${reqs.join("")}${e.props_ko.map(p=>`<li>${esc(p)}</li>`).join("")}</ul>
+    <div class="d-sec"><h2>분류</h2>
+      <ul class="chips"><li><button class="chip plain" data-go="u-${e.kind}">유니크 ${KIND_KO[e.kind]} 전체 보기</button></li></ul>
+    </div>
+  </div>`;
+}
+
 /* ── 라우터 ── */
 function route(){
   const h = location.hash.replace(/^#/,"");
   window.scrollTo(0,0);
   if(h.startsWith("c-")){
     renderClass(h.slice(2));
+  } else if(h.startsWith("u-")){
+    renderItemList(h.slice(2));
+  } else if(h.startsWith("i-")){
+    renderItem(h.slice(2));
   } else if(h.startsWith("s-")){
     const rest = h.slice(2);
     const cls = CLASS_ORDER.find(c => rest.startsWith(c+"-"));

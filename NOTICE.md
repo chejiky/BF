@@ -29,6 +29,12 @@
 - `assets/skills/warlock/` 아이콘은 같은 저장소에 포함된 게임 원본 스프라이트
   (`waskillicon.sprite`)에서 `scripts/extract_sprite_icons.py`로 추출했습니다.
 
+## 유니크 아이템 이미지 출처
+
+- `assets/items/`의 아이템 이미지는 [d2archives](https://github.com/bartosz-kasprzyk/d2archives)
+  저장소의 이미지 자산을 사용했으며(이름→이미지 매핑 포함), 아트워크의 저작권은
+  Blizzard Entertainment에 있습니다.
+
 ## 아이콘 이미지 출처
 
 - `assets/skills/` 하위 아이콘은 GPL-3.0으로 공개된

@@ -15,11 +15,16 @@ def main():
     index = json.load(open(skills_dir / "index.json", encoding="utf-8"))
     for cls in index["classes"]:
         data[cls["slug"]] = json.load(open(skills_dir / cls["file"], encoding="utf-8"))
-    blob = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
-    # </script> 류 시퀀스가 JSON 문자열에 있어도 안전하도록 이스케이프
-    blob = blob.replace("</", "<\\/")
+    def minify(obj):
+        # </script> 류 시퀀스가 JSON 문자열에 있어도 안전하도록 이스케이프
+        return json.dumps(obj, ensure_ascii=False,
+                          separators=(",", ":")).replace("</", "<\\/")
+
+    items = json.load(open(ROOT / "data" / "items" / "uniques.json",
+                           encoding="utf-8"))["items"]
     tpl = (ROOT / "app" / "template.html").read_text(encoding="utf-8")
-    out = tpl.replace("__SKILL_DATA__", blob)
+    out = tpl.replace("__SKILL_DATA__", minify(data))
+    out = out.replace("__ITEM_DATA__", minify(items))
     (ROOT / "app" / "index.html").write_text(out, encoding="utf-8")
     print(f"app/index.html: {len(out):,} bytes")
 
