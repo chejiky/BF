@@ -1074,6 +1074,23 @@ function renderAuras(){
     <ul class="rows">${group(2)}</ul>
     <div class="sec-label" style="margin-top:1rem">${esc(treeName(3))} · Defensive Auras</div>
     <ul class="rows">${group(3)}</ul>
+    <div class="sec-label" style="margin-top:1rem">2막 용병 오라 · Act 2 Mercenary</div>
+    <div class="aff-note" style="margin:.4rem 0 .6rem">루트 고라인의 사막 용병은 고용한 <b>난이도</b>에 따라 성기사 오라
+      하나를 켜고 다닙니다 (게임 데이터 hireling 기준). 오라 레벨은 고용 레벨대(9/43/75)의 기본값에서
+      용병 레벨에 따라 더 오릅니다.</div>
+    <ul class="rows">
+      ${[["노말 고용", "오라 레벨 3 → 11 → 18", ["prayer","defiance","blessed-aim"]],
+         ["악몽 고용", "6종 전부 선택 가능 — 공격형이 필요하면 악몽에서", ["prayer","defiance","blessed-aim","thorns","holy-freeze","might"]],
+         ["지옥 고용", "가시 Lv21 · 신성한 빙결 Lv16 · 위세 Lv15 기본", ["thorns","holy-freeze","might"]]]
+        .map(([t, sub, ids]) => `<li class="aura-card" style="padding:.5rem .65rem">
+          <span class="nm" style="font-weight:600">${t}</span>
+          <span class="sub" style="display:block;color:var(--muted);font-size:.78rem;margin:.1rem 0 .35rem">${sub}</span>
+          <ul class="chips">${ids.map(id => { const s = skillOf("paladin", id);
+            return `<li><button class="chip" data-go="s-paladin-${id}">${iconHtml("paladin", id)}${esc(s.name_ko)}</button></li>`; }).join("")}</ul>
+        </li>`).join("")}
+    </ul>
+    <p class="hint">그 밖에 '오라 강화' 접두가 붙은 유니크 몬스터도 성기사 오라 중 하나를 두르고 나옵니다.
+      1·3·5막 용병에게는 오라가 없습니다.</p>
   </div>`;
 }
 
