@@ -3,9 +3,19 @@
   publish = "docs"
   command = ""
 
-# 서비스워커는 항상 최신 파일을 받도록 캐시 금지
+# 서비스워커·HTML은 항상 최신 파일을 받도록 캐시 금지
 [[headers]]
   for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/index.html"
   [headers.values]
     Cache-Control = "no-cache"
 

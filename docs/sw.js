@@ -5,9 +5,11 @@ const ASSETS = ["assets/auras/amplify-damage.jpg", "assets/auras/battle-command.
 self.addEventListener("install", (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(VERSION);
-    await cache.addAll(CORE);
+    // HTTP 캐시를 우회({cache:"reload"})해 항상 이번 배포의 최신 파일을 담는다
+    await cache.addAll(CORE.map((u) => new Request(u, { cache: "reload" })));
     // 이미지는 개별 실패를 허용하며 전부 미리 담아 오프라인에서도 열리게 한다
-    await Promise.all(ASSETS.map((u) => cache.add(u).catch(() => {})));
+    await Promise.all(ASSETS.map((u) =>
+      cache.add(new Request(u, { cache: "reload" })).catch(() => {})));
     await self.skipWaiting();
   })());
 });
@@ -25,7 +27,20 @@ self.addEventListener("fetch", (event) => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return; // 구글 폰트 등은 네트워크에 맡김
+  // 페이지(HTML)는 네트워크 우선 — 온라인이면 항상 최신 버전을 보여준다
+  const isDoc = req.mode === "navigate" || req.destination === "document";
   event.respondWith((async () => {
+    if (isDoc) {
+      try {
+        const res = await fetch(req);
+        if (res.ok) (await caches.open(VERSION)).put("index.html", res.clone());
+        return res;
+      } catch (e) {
+        return (await caches.match(req, { ignoreSearch: true }))
+            || (await caches.match("index.html"));
+      }
+    }
+    // 이미지·폰트 등 정적 자원은 캐시 우선(빠르고 오프라인 지원)
     const cached = await caches.match(req, { ignoreSearch: true });
     if (cached) return cached;
     try {
@@ -33,7 +48,6 @@ self.addEventListener("fetch", (event) => {
       if (res.ok) (await caches.open(VERSION)).put(req, res.clone());
       return res;
     } catch (e) {
-      if (req.mode === "navigate") return caches.match("index.html");
       throw e;
     }
   })());
