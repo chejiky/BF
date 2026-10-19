@@ -37,11 +37,13 @@
 
 ## 아이콘 이미지 출처
 
-- `assets/skills/` 하위 아이콘은 GPL-3.0으로 공개된
-  [d2planner](https://github.com/d2planner/d2planner) 저장소에 포함된 1.14D 스킬 트리
-  이미지를 `scripts/extract_icons.py`로 잘라내 생성했습니다.
-- d2planner의 **코드**는 GPL-3.0이지만, 이미지 속 아트워크 자체의 저작권은 위에
-  명시한 대로 Blizzard Entertainment에 있습니다.
+- `assets/skills/` 하위 스킬 아이콘은 D2R 게임 원본 스프라이트
+  (`<class>skillicon.sprite`, [D2R-Reimagined](https://github.com/D2R-Reimagined/d2r-reimagined-mod)
+  저장소에 포함)에서 `scripts/extract_sprite_icons.py`로 추출했습니다.
+  아트워크의 저작권은 Blizzard Entertainment에 있습니다.
+- 초기 버전은 GPL-3.0으로 공개된 [d2planner](https://github.com/d2planner/d2planner)
+  저장소의 1.14D 스킬 트리 이미지를 `scripts/extract_icons.py`로 잘라내 사용했습니다
+  (현재는 D2R 원본 아이콘으로 교체됨).
 
 ## 요청 시 삭제
 
