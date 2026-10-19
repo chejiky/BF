@@ -8,9 +8,10 @@
 
 ## 배포 현황 (완료)
 - 저장소: **chejiky/BF** (private). 작업 브랜치 `claude/d2r-skill-data` = `main` (동일 커밋 유지 중)
-- **Netlify 프로젝트 `yuiga-d2` → https://yuiga-d2.netlify.app** (Public 설정 완료, main 자동 배포)
-  - `netlify.toml`: publish = `docs`, 빌드 명령 없음
-  - 사용자의 Netlify GitHub 앱 권한에 BF 추가 완료
+- **호스팅: GitHub Pages → https://chejiky.github.io/BF/** (2026-10-19 이전. main 브랜치의 `docs/` 폴더 게시, 저장소 Public)
+  - 이전 호스팅 Netlify `yuiga-d2`(https://yuiga-d2.netlify.app)는 무료 크레딧 소진으로 **배포 정지** — 옛 버전만 떠 있음.
+    `netlify.toml`은 남겨둠(복귀 대비). 원인: 하루에 20회 가까운 배포 → **배포는 모아서 하루 1~3회로**.
+  - GitHub Pages는 응답 헤더 설정 불가 → 서비스워커가 HTML을 `cache:"no-cache"`로 받아 최신 유지
 - 미리보기용 아티팩트: https://claude.ai/artifact/1q74pRfhMQTV1NfdJW4vkd (비공개, Safari에서는 claude.ai 로그인 필요)
 - 아이폰: Safari로 Netlify 주소 열기 → 공유 → 홈 화면에 추가 (아이콘: 금색 링 "D2R", 이름 "D2R 사전")
 
@@ -18,7 +19,8 @@
 1. 데이터 스크립트 또는 `app/template.html` 수정
 2. `python3 scripts/build_pwa.py`  (내부에서 build_app 실행 → app/index.html, docs/ 재생성)
 3. 커밋 후 `git push origin claude/d2r-skill-data` 그리고 `git push origin claude/d2r-skill-data:main`
-   → Netlify 자동 재배포 (1~2분). 아이폰 앱은 닫았다 열면 새 버전 (서비스워커 캐시 버전 자동 갱신)
+   → GitHub Pages 자동 재배포 (1~3분, Actions의 pages-build-deployment). 아이폰 앱은 닫았다 열면 새 버전
+   (서비스워커: HTML 네트워크 우선, 이미지 캐시 우선)
 4. (선택) 아티팩트도 갱신: Artifact publish `app/index.html` + url 위 주소. 아티팩트는 파일 511개 한도 —
    이미지 이미 올라가 있음, 새 이미지 생길 때만 files로 추가.
 - 검증: scratchpad에 `npm install playwright`, chromium은 `/opt/pw-browsers/chromium`,

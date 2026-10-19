@@ -32,7 +32,8 @@ self.addEventListener("fetch", (event) => {
   event.respondWith((async () => {
     if (isDoc) {
       try {
-        const res = await fetch(req);
+        // GitHub Pages는 캐시 헤더를 못 바꾸므로 HTTP 캐시를 우회해 항상 최신 HTML을 받는다
+        const res = await fetch(req.url, { cache: "no-cache", credentials: "same-origin" });
         if (res.ok) (await caches.open(VERSION)).put("index.html", res.clone());
         return res;
       } catch (e) {
