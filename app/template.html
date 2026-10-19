@@ -171,6 +171,9 @@ img{max-width:100%}
   background:radial-gradient(80% 80% at 50% 40%, #241a12 0%, #140e09 100%);
   border:1px solid var(--border); border-radius:12px}
 .i-head .pic img{max-width:4.6rem; max-height:5.8rem; width:auto; height:auto}
+.i-head .rw-pic{width:auto; height:auto; min-width:5.2rem; min-height:6.4rem;
+  padding:.5rem .6rem; gap:.2rem .3rem; align-content:center}
+.i-head .rw-pic img{max-width:none; max-height:none}
 .i-head h1{margin:0; font-size:1.3rem; line-height:1.3; color:var(--gold)}
 .i-head .base{color:var(--muted); font-size:.9rem}
 .i-head .en{color:var(--faint); font-size:.8rem; display:block}
@@ -877,7 +880,7 @@ function renderRW(id){
   setHdr("룬워드", "Runewords", true);
   $app.innerHTML = `<div class="view">
     <div class="i-head">
-      <span class="pic" style="width:auto;min-width:5.2rem;padding:0 .6rem">${runeSeq(r,"2rem")}</span>
+      <span class="pic rw-pic" style="grid-template-columns:repeat(${r.runes.length <= 3 ? r.runes.length : Math.ceil(r.runes.length/2)}, 1fr)">${runeSeq(r,"1.9rem")}</span>
       <div><h1>${esc(r.name_ko)}</h1>
         <span class="base">${r.runes.map(x=>esc(x.name_ko)).join(" + ")}</span>
         <span class="en">${r.name_ko_classic?`${esc(r.name_ko_classic)} · `:""}${esc(r.name_en)} · ${r.runes.map(x=>esc(x.name_en)).join(" ")}</span></div>
