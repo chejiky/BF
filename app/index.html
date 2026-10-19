@@ -229,6 +229,8 @@ details.cat summary .cnt{color:var(--faint); font-size:.78rem; font-weight:400}
 .aura-card .sub{display:block; white-space:normal; line-height:1.55; margin-top:.15rem}
 .aura-card .sub b{color:var(--gold); font-weight:600}
 .a-to{color:var(--faint)}
+.aura-fx-wrap{padding:0 .65rem .55rem}
+.aura-fx{display:block; width:100%; max-height:130px; object-fit:cover; border-radius:8px; border:1px solid var(--border-soft)}
 .aura-items{margin:0; padding:.45rem .65rem .55rem; border-top:1px solid var(--border-soft)}
 .aura-items .chip{font-size:.78rem; padding:.24rem .55rem}
 .a-lv{color:var(--gold-dim)}
@@ -1036,6 +1038,7 @@ function renderAuras(){
         <span class="sub">${lines.join("<br>")}</span></span>
         <span class="lv">Lv ${s.required_level}</span>
       </button>
+      <div class="aura-fx-wrap"><img class="aura-fx" src="assets/auras/${s.id}.jpg" alt="${esc(s.name_ko)} 인게임 이펙트" loading="lazy"></div>
       ${items ? `<ul class="chips aura-items">${items}</ul>` : ""}
     </li>`;
   };
@@ -1046,7 +1049,8 @@ function renderAuras(){
   $app.innerHTML = `<div class="view">
     <p class="aff-note">오라는 켜 두는 동안 자신과 파티(또는 주변 적)에게 지속 적용됩니다. 성기사 스킬이지만
       일부 아이템은 <b>장착만 해도</b> 해당 레벨의 오라가 발동됩니다 (아래 금색 표시).
-      수치는 <b>1레벨 → 20레벨</b> 기준 — 오라를 누르면 레벨 슬라이더·시너지 계산기가 있는 상세로 이동합니다.</p>
+      수치는 <b>1레벨 → 20레벨</b> 기준 — 오라를 누르면 레벨 슬라이더·시너지 계산기가 있는 상세로 이동합니다.
+      각 오라의 사진은 <b>실제 인게임에서 발밑에 나타나는 이펙트</b>입니다.</p>
     <div class="sec-label">${esc(treeName(2))} · Offensive Auras</div>
     <ul class="rows">${group(2)}</ul>
     <div class="sec-label" style="margin-top:1rem">${esc(treeName(3))} · Defensive Auras</div>

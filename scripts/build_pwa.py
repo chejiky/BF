@@ -45,6 +45,8 @@ def referenced_assets():
             need.add(f"assets/runes/{x['code']}.png")
     for p in (ROOT / "assets/skills/sheets").glob("*.png"):
         need.add(f"assets/skills/sheets/{p.name}")
+    for p in (ROOT / "assets/auras").glob("*.jpg"):  # 오라 인게임 이펙트 캡처
+        need.add(f"assets/auras/{p.name}")
     return sorted(need)
 
 

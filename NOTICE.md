@@ -45,6 +45,9 @@
   저장소의 1.14D 스킬 트리 이미지를 `scripts/extract_icons.py`로 잘라내 사용했습니다
   (현재는 D2R 원본 아이콘으로 교체됨).
 
+- `assets/auras/` 오라 이펙트 사진은 실제 게임 화면 캡처(사용자 제공)에서 잘라낸 것입니다.
+  아트워크의 저작권은 Blizzard Entertainment에 있습니다.
+
 ## 요청 시 삭제
 
 권리자(Blizzard Entertainment)의 요청이 있을 경우 해당 자산은 즉시 삭제합니다.
