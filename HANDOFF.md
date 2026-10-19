@@ -63,6 +63,9 @@
     웹 검색 도구(WebSearch)는 인벤·나무위키 내용을 읽을 수 있음(직접 fetch는 차단).
 - 스킬 아이콘: **전 클래스 D2R 원본** — D2R-Reimagined 저장소 data/hd/global/ui/spells/<class>/<xx>skillicon.sprite
   → extract_sprite_icons.py → build_skill_sheets.py (2026-10-19 교체, 구작 d2planner 크롭은 더 이상 안 씀)
+  - **예외**: assets/skills/warlock/summon-trickster.png(파멸자 소환)는 모드가 커스텀 그림으로 바꿔놔서
+    사용자의 인게임 캡처에서 잘라 넣음(2026-10-19). 재추출 시 이 파일은 덮어쓰지 말 것.
+    오라 바닥 이펙트 실물 이미지도 웹·저장소 전부에서 구할 수 없음 — 사용자 캡처만이 유일한 소스.
 - 아이템·룬 이미지: github **bartosz-kasprzyk/d2archives** (src/images/items, src/images/Runes, src/common/config/uniqueAndSetData.json)
 - 네트워크: npm, GitHub(add_repo로 공개 저장소 clone)는 됨. namu.wiki, fandom 등 대부분 웹사이트는 차단.
 
