@@ -246,6 +246,15 @@ details.cat summary .cnt{color:var(--faint); font-size:.78rem; font-weight:400}
 .syn-sum:empty{display:none}
 .syn-calc .hint{margin:.35rem 0 0}
 .aff-note{color:var(--muted); font-size:.85rem; background:var(--surface-2); border-radius:10px; padding:.6rem .8rem; margin:.4rem 0 1rem}
+/* ─ 오라 사전 ─ */
+.aura-card{background:var(--surface); border:1px solid var(--border-soft); border-radius:10px}
+.aura-card .row{background:none; border:none}
+.aura-card .sub{display:block; white-space:normal; line-height:1.55; margin-top:.15rem}
+.aura-card .sub b{color:var(--gold); font-weight:600}
+.a-to{color:var(--faint)}
+.aura-items{margin:0; padding:.45rem .65rem .55rem; border-top:1px solid var(--border-soft)}
+.aura-items .chip{font-size:.78rem; padding:.24rem .55rem}
+.a-lv{color:var(--gold-dim)}
 .foot{color:var(--faint); font-size:.72rem; text-align:center; margin-top:2.5rem; line-height:1.7}
 .foot a{color:var(--muted)}
 @media (prefers-reduced-motion:no-preference){
@@ -351,6 +360,7 @@ function renderHome(){
         <button class="kind-card" data-go="rw"><span class="nm">룬워드</span><span class="cnt">${RWS.length}개</span></button>
         <button class="kind-card" data-go="charms"><span class="nm">부적</span><span class="cnt">종류 안내</span></button>
         <button class="kind-card" data-go="cube"><span class="nm">큐브 레시피</span><span class="cnt">${CUBE.categories.reduce((a,c)=>a+c.recipes.length,0)}개</span></button>
+        <button class="kind-card" data-go="auras"><span class="nm">오라 사전</span><span class="cnt">20종 + 발동 아이템</span></button>
       </div>
     </div>
     <p class="foot">게임 데이터·아이콘 © Blizzard Entertainment.<br>비공식 팬 제작 · 비상업적 용도</p>
@@ -1014,6 +1024,59 @@ function renderCube(){
   draw();
 }
 
+/* ── 오라 사전 ── */
+function renderAuras(){
+  setHdr("오라 사전", "Paladin & Item Auras", true);
+  const d = DATA.paladin;
+  // 아이템의 "장착 시 레벨 X 오라" 속성 수집 (유니크/룬워드/세트)
+  const AURA_RE = /^장착 시 레벨 ([\d~]+) (.+) 오라$/;
+  const src = {}; // 오라명 → [{lvl, label, go}]
+  const scan = (arr, label, go) => (arr || []).forEach(p => {
+    if(typeof p !== "string") return;
+    const m = p.match(AURA_RE);
+    if(m) (src[m[2]] = src[m[2]] || []).push({lvl: m[1], label, go});
+  });
+  ITEMS.forEach(e => scan(e.props_ko, e.name_ko, "i-" + e.id));
+  RWS.forEach(r => scan(r.props_ko, r.name_ko + " (룬워드)", "r-" + r.id));
+  SETS.forEach(s => {
+    scan(s.partial_bonuses, s.name_ko + " 세트 효과", "set-" + s.id);
+    scan(s.full_bonuses, s.name_ko + " 세트 효과", "set-" + s.id);
+    s.items.forEach(it => { scan(it.props_ko, it.name_ko + " (세트)", "ti-" + it.id);
+                            scan(it.set_bonuses, it.name_ko + " (세트)", "ti-" + it.id); });
+  });
+  const after = f => { const j = f.indexOf(": "); return j > 0 ? f.slice(j + 2) : f; };
+  const row = s => {
+    const t = s.tooltip;
+    const lines = (t ? t.per_level : []).filter(l => !l.fmt.startsWith("마나 소모")).slice(0, 3)
+      .map(l => `${esc(sprintf(l.fmt, l.v[0]))} <span class="a-to">→</span> <b>${esc(sprintf(after(l.fmt), l.v[19]))}</b>`);
+    const alias = s.name_ko_classic ? ` <span class="en" style="color:var(--faint);font-size:.74rem">${esc(s.name_ko_classic)}</span>` : "";
+    const items = (src[s.name_ko] || []).map(x =>
+      `<li><button class="chip plain" data-go="${x.go}">${esc(x.label)} <span class="a-lv">Lv ${x.lvl}</span></button></li>`).join("");
+    return `<li class="aura-card">
+      <button class="row" data-go="s-paladin-${s.id}">
+        ${iconHtml("paladin", s.id)}
+        <span class="b"><span class="nm">${esc(s.name_ko)}${alias}</span>
+        <span class="sub">${lines.join("<br>")}</span></span>
+        <span class="lv">Lv ${s.required_level}</span>
+      </button>
+      ${items ? `<ul class="chips aura-items">${items}</ul>` : ""}
+    </li>`;
+  };
+  const group = page => d.skills.filter(s => s.tree.page === page)
+    .sort((a, b) => a.required_level - b.required_level || a.position.row - b.position.row)
+    .map(row).join("");
+  const treeName = page => d.skills.find(s => s.tree.page === page).tree.name_ko;
+  $app.innerHTML = `<div class="view">
+    <p class="aff-note">오라는 켜 두는 동안 자신과 파티(또는 주변 적)에게 지속 적용됩니다. 성기사 스킬이지만
+      일부 아이템은 <b>장착만 해도</b> 해당 레벨의 오라가 발동됩니다 (아래 금색 표시).
+      수치는 <b>1레벨 → 20레벨</b> 기준 — 오라를 누르면 레벨 슬라이더·시너지 계산기가 있는 상세로 이동합니다.</p>
+    <div class="sec-label">${esc(treeName(2))} · Offensive Auras</div>
+    <ul class="rows">${group(2)}</ul>
+    <div class="sec-label" style="margin-top:1rem">${esc(treeName(3))} · Defensive Auras</div>
+    <ul class="rows">${group(3)}</ul>
+  </div>`;
+}
+
 /* ── 라우터 ── */
 function route(){
   const h = location.hash.replace(/^#/,"");
@@ -1040,6 +1103,8 @@ function route(){
     renderCharmAffixes(h.slice(3));
   } else if(h === "cube"){
     renderCube();
+  } else if(h === "auras"){
+    renderAuras();
   } else if(h.startsWith("s-")){
     const rest = h.slice(2);
     const cls = CLASS_ORDER.find(c => rest.startsWith(c+"-"));
