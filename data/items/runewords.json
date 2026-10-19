@@ -961,7 +961,7 @@
   {
    "id": "hustle-armor",
    "name_en": "Hustle (armor)",
-   "name_ko": "Hustle (armor)",
+   "name_ko": "투지 (갑옷)",
    "runes": [
     {
      "code": "r13",
@@ -995,7 +995,7 @@
   {
    "id": "hustle-weapon",
    "name_en": "Hustle (weapon)",
-   "name_ko": "Hustle (weapon)",
+   "name_ko": "투지 (무기)",
    "runes": [
     {
      "code": "r13",

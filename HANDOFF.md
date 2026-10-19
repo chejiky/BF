@@ -65,7 +65,7 @@
   → extract_sprite_icons.py → build_skill_sheets.py (2026-10-19 교체, 구작 d2planner 크롭은 더 이상 안 씀)
   - **예외**: assets/skills/warlock/summon-trickster.png(파멸자 소환)는 모드가 커스텀 그림으로 바꿔놔서
     사용자의 인게임 캡처에서 잘라 넣음(2026-10-19). 재추출 시 이 파일은 덮어쓰지 말 것.
-    오라 바닥 이펙트: assets/auras/<id>.jpg 20장 — 사용자가 보낸 인게임 캡처 모음에서 잘라 넣음(2026-10-19). 웹·저장소에서는 구할 수 없으니 덮어쓰기 금지.
+    오라 바닥 이펙트: assets/auras/<id>.jpg 27장(성기사 오라 20 + 저주/버프 7: amp·라탭·로레, BoS·페이드, 전투지시·전투명령) — 사용자가 보낸 인게임 캡처 모음에서 잘라 넣음(2026-10-19). 웹·저장소에서는 구할 수 없으니 덮어쓰기 금지.
 - 아이템·룬 이미지: github **bartosz-kasprzyk/d2archives** (src/images/items, src/images/Runes, src/common/config/uniqueAndSetData.json)
 - 네트워크: npm, GitHub(add_repo로 공개 저장소 clone)는 됨. namu.wiki, fandom 등 대부분 웹사이트는 차단.
 
